@@ -1,0 +1,5 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/edtech-05101987/blog:latest', '.']
+images:
+  - 'gcr.io/edtech-05101987/blog:latest'
