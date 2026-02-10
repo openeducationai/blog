@@ -6,6 +6,7 @@ import HeaderLink from './HeaderLink.astro';
 	<nav>
 		<div class="nav-left">
 			<a href="/blog/" class="logo">
+				<img src="/blog/padhoai.svg" alt="PadhoAI" class="logo-icon" width="28" height="27" />
 				<span class="logo-padho">Padho</span><span class="logo-ai">AI</span>
 				<span class="logo-divider">/</span>
 				<span class="logo-blog">Blog</span>
@@ -43,6 +44,11 @@ import HeaderLink from './HeaderLink.astro';
 	}
 	.logo-padho {
 		color: rgb(var(--black));
+	}
+	.logo-icon {
+		width: 28px;
+		height: 27px;
+		margin-right: 0.25em;
 	}
 	.logo-ai {
 		color: var(--accent);
