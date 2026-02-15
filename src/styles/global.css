@@ -1,7 +1,16 @@
 :root {
+	/* Purple (primary accent – links, borders, primary actions) */
 	--accent: #6C3FE2;
 	--accent-light: #8B5CF6;
 	--accent-dark: #4C1D95;
+	/* Orange (warm accent – labels, highlights, secondary emphasis) */
+	--orange: #E85D04;
+	--orange-light: #F48C06;
+	--orange-soft: #FF9F1C;
+	--orange-pale: rgba(248, 140, 6, 0.12);
+	/* Purple–orange gradient for badges and highlights */
+	--gradient-accent: linear-gradient(135deg, var(--accent) 0%, var(--orange) 100%);
+	--gradient-accent-soft: linear-gradient(135deg, var(--accent-light) 0%, var(--orange-light) 100%);
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -10,6 +19,8 @@
 	--box-shadow:
 		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%), 0 16px 32px
 		rgba(var(--gray), 33%);
+	--box-shadow-accent: 0 4px 14px rgba(108, 63, 226, 0.2);
+	--box-shadow-orange: 0 4px 16px rgba(232, 93, 4, 0.22);
 }
 
 body {
@@ -17,7 +28,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: #fff;
+	background: #faf9fc;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
@@ -64,13 +75,28 @@ a {
 	color: var(--accent);
 }
 a:hover {
-	color: var(--accent-light);
+	color: var(--orange);
 }
 p {
 	margin-bottom: 1em;
 }
 .prose p {
 	margin-bottom: 1.5em;
+}
+.prose h2 {
+	border-bottom: 2px solid var(--orange-pale);
+	padding-bottom: 0.25em;
+	margin-top: 1.5em;
+	color: rgb(var(--black));
+}
+.prose h2::after {
+	content: '';
+	display: block;
+	width: 48px;
+	height: 3px;
+	background: var(--orange);
+	border-radius: 2px;
+	margin-top: 0.25em;
 }
 textarea {
 	width: 100%;
@@ -101,11 +127,14 @@ pre > code {
 	all: unset;
 }
 blockquote {
-	border-left: 4px solid var(--accent);
+	border-left: 4px solid var(--orange);
 	padding: 0 0 0 20px;
 	margin: 0;
 	font-size: 1.1em;
 	color: rgb(var(--gray));
+	background: var(--orange-pale);
+	border-radius: 0 8px 8px 0;
+	padding: 0.75em 0 0.75em 20px;
 }
 hr {
 	border: none;

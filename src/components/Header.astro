@@ -6,7 +6,13 @@ import HeaderLink from './HeaderLink.astro';
 	<nav>
 		<div class="nav-left">
 			<a href="/blog/" class="logo">
-				<span class="logo-padho">Padho</span><span class="logo-ai">AI</span>
+				<img
+					src="https://res.cloudinary.com/ddgqbftjb/image/upload/v1755692594/padho-ai-logo_rsglwb.jpg"
+					alt="Padho.ai"
+					class="logo-img"
+					width="120"
+					height="40"
+				/>
 				<span class="logo-divider">/</span>
 				<span class="logo-blog">Blog</span>
 			</a>
@@ -22,8 +28,9 @@ import HeaderLink from './HeaderLink.astro';
 	header {
 		margin: 0;
 		padding: 0 2em;
-		background: white;
-		border-bottom: 1px solid rgba(var(--gray-light), 1);
+		background: #fff;
+		border-bottom: 2px solid var(--accent);
+		box-shadow: 0 4px 0 -2px var(--orange), 0 6px 16px rgba(108, 63, 226, 0.08);
 	}
 	nav {
 		display: flex;
@@ -39,13 +46,13 @@ import HeaderLink from './HeaderLink.astro';
 		font-weight: 700;
 		display: flex;
 		align-items: center;
-		gap: 0.15em;
+		gap: 0.5em;
 	}
-	.logo-padho {
-		color: rgb(var(--black));
-	}
-	.logo-ai {
-		color: var(--accent);
+	.logo-img {
+		height: 36px;
+		width: auto;
+		display: block;
+		object-fit: contain;
 	}
 	.logo-divider {
 		color: rgb(var(--gray));
@@ -53,8 +60,8 @@ import HeaderLink from './HeaderLink.astro';
 		margin: 0 0.2em;
 	}
 	.logo-blog {
-		color: rgb(var(--gray));
-		font-weight: 500;
+		color: var(--orange);
+		font-weight: 600;
 	}
 	.internal-links {
 		display: flex;
@@ -71,12 +78,15 @@ import HeaderLink from './HeaderLink.astro';
 		transition: background 0.15s ease;
 	}
 	.internal-links a:hover {
-		background: rgba(var(--gray-light), 0.5);
-		color: rgb(var(--black));
+		background: var(--orange-pale);
+		color: var(--orange);
 	}
 	.back-to-app {
 		color: var(--accent) !important;
 		font-weight: 600 !important;
+	}
+	.back-to-app:hover {
+		color: var(--orange) !important;
 	}
 	@media (max-width: 720px) {
 		header {
@@ -84,6 +94,9 @@ import HeaderLink from './HeaderLink.astro';
 		}
 		.logo {
 			font-size: 1em;
+		}
+		.logo-img {
+			height: 28px;
 		}
 	}
 </style>

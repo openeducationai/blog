@@ -1,6 +1,6 @@
 ---
 title: 'Why Adaptive Learning is the Future of Education'
-description: 'Every student learns differently. AI-powered adaptive learning can finally deliver personalized education at scale — here is how we are building it at PadhoAI.'
+description: 'Every student learns differently. AI-powered adaptive learning can finally deliver personalized education at scale — here is how we are building it at padho.ai.'
 pubDate: 'Feb 01 2026'
 ---
 
@@ -18,9 +18,9 @@ Adaptive learning isn't just "showing harder questions when you get things right
 - **Choosing the right content at the right time** — not just difficulty level, but the right *type* of explanation, example, or exercise
 - **Adjusting in real-time** — not waiting until the end of a chapter to discover gaps
 
-## How We Approach It at PadhoAI
+## How We Approach It at padho.ai
 
-At PadhoAI, we built a knowledge graph that maps the relationships between concepts, skills, and learning objectives. When a student works through a topic, our system doesn't just track right and wrong answers — it understands *which skills* were tested and *how they connect* to other skills.
+At padho.ai, we built a knowledge graph that maps the relationships between concepts, skills, and learning objectives. When a student works through a topic, our system doesn't just track right and wrong answers — it understands *which skills* were tested and *how they connect* to other skills.
 
 For example, if a student struggles with "applying the chain rule in calculus," our system knows this skill depends on understanding function composition and basic differentiation. Instead of just repeating chain rule problems, it can identify and fill the prerequisite gaps first.
 
@@ -39,4 +39,4 @@ This loop runs continuously, creating a learning experience that feels like work
 
 We're just getting started. Our roadmap includes deeper skill diagnostics, multi-modal content (interactive simulations, visual explanations), and collaborative learning features where students can learn together while still getting personalized support.
 
-Education is one of the most important problems to solve, and AI gives us the tools to finally make personalized learning accessible to everyone. That's what we're building at PadhoAI.
+Education is one of the most important problems to solve, and AI gives us the tools to finally make personalized learning accessible to everyone. That's what we're building at padho.ai.

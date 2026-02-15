@@ -5,9 +5,22 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'blog'>['data'] & {
+	otherPosts?: { id: string; title: string }[];
+};
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, otherPosts = [] } = Astro.props;
+
+// Use canonical blog URL for sharing (learn.padho.ai/blog/...) so the shared link is always the post URL, not the current request
+const shareUrl = new URL(Astro.url.pathname, Astro.site);
+const shareUrlString = shareUrl.toString();
+const encodedUrl = encodeURIComponent(shareUrlString);
+const encodedTitle = encodeURIComponent(title);
+
+const twitterShareUrl = `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`;
+// share-offsite shows the URL in the share flow; pass only url so LinkedIn can fetch OG preview from the page
+const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
+const whatsappShareUrl = `https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}`;
 ---
 
 <html lang="en">
@@ -19,30 +32,96 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				margin: 0 auto;
 				padding: 3em 1em 0;
 			}
+			.share-bar {
+				display: flex;
+				align-items: center;
+				gap: 0.75em;
+				flex-wrap: wrap;
+				margin-top: 1em;
+				margin-bottom: 2em;
+				padding: 1em 0;
+				border-top: 3px solid var(--orange);
+			}
+			.share-label {
+				font-size: 0.85em;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 0.06em;
+				color: var(--orange);
+			}
+			.share-links {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5em;
+			}
+			.share-button {
+				border-radius: 999px;
+				border: 1px solid var(--accent);
+				background: #fff;
+				padding: 0.35em 0.9em;
+				font-size: 0.85em;
+				font-weight: 500;
+				color: var(--accent);
+				text-decoration: none;
+				display: inline-flex;
+				align-items: center;
+				gap: 0.35em;
+				transition: background 0.15s ease, transform 0.15s ease,
+					box-shadow 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+			}
+			.share-button:hover {
+				background: var(--accent);
+				color: #fff;
+				transform: translateY(-1px);
+				box-shadow: 0 4px 12px rgba(108, 63, 226, 0.3);
+			}
+			.share-button.share-button-orange {
+				border-color: var(--orange);
+				color: var(--orange);
+			}
+			.share-button.share-button-orange:hover {
+				background: var(--orange);
+				color: #fff;
+				box-shadow: 0 4px 12px rgba(232, 93, 4, 0.35);
+			}
+			button.share-button {
+				cursor: pointer;
+				font-family: inherit;
+			}
+			button.share-button:hover {
+				background: var(--orange);
+				border-color: var(--orange);
+				color: #fff;
+				box-shadow: 0 4px 12px rgba(232, 93, 4, 0.3);
+			}
 			.back-link {
 				display: inline-flex;
 				align-items: center;
 				gap: 0.25em;
 				font-size: 0.9em;
-				color: var(--accent);
+				color: var(--orange);
 				text-decoration: none;
-				font-weight: 500;
+				font-weight: 600;
 				margin-bottom: 2em;
+				transition: color 0.15s ease, transform 0.15s ease;
 			}
 			.back-link:hover {
-				opacity: 0.8;
+				color: var(--accent);
 			}
 			.article-title {
 				font-size: 2.25em;
 				font-weight: 700;
 				line-height: 1.2;
 				margin-bottom: 0.5em;
-				color: rgb(var(--black));
+				background: var(--gradient-accent);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
 			}
 			.article-meta {
 				color: rgb(var(--gray));
 				font-size: 0.9em;
-				margin-bottom: 2em;
+				margin-bottom: 0.5em;
 			}
 			.last-updated {
 				font-style: italic;
@@ -50,12 +129,52 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.prose {
 				max-width: 720px;
 				margin: 0 auto;
-				padding: 0 1em 4em;
+				padding: 0 1em 2em;
 				color: rgb(var(--gray-dark));
+			}
+			.share-bar-end {
+				max-width: 720px;
+				margin: 0 auto;
+				padding: 0 1em 4em;
+			}
+			.also-read {
+				max-width: 720px;
+				margin: 0 auto;
+				padding: 0 1em 2em 4em;
+				border-top: 1px solid rgba(var(--gray), 0.3);
+				padding-top: 2em;
+			}
+			.also-read-title {
+				font-size: 1.1em;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 0.06em;
+				color: var(--orange);
+				margin-bottom: 0.75em;
+			}
+			.also-read-list {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.also-read-list li {
+				margin-bottom: 0.5em;
+			}
+			.also-read-link {
+				color: rgb(var(--gray-dark));
+				text-decoration: none;
+				font-weight: 500;
+				transition: color 0.15s ease;
+			}
+			.also-read-link:hover {
+				color: var(--orange);
 			}
 			@media (max-width: 720px) {
 				.article-title {
 					font-size: 1.6em;
+				}
+				.share-bar {
+					align-items: flex-start;
 				}
 			}
 		</style>
@@ -78,10 +197,132 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 							)
 						}
 					</div>
+					<div class="share-bar" role="region" aria-label="Share this post">
+						<span class="share-label">Share</span>
+						<div class="share-links">
+							<a
+								href={twitterShareUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="share-button"
+							>
+								Twitter / X
+							</a>
+							<a
+								href={linkedInShareUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="share-button linkedin-share-btn"
+								data-url={shareUrlString}
+								aria-label="Share on LinkedIn"
+							>
+								LinkedIn
+							</a>
+							<a
+								href={whatsappShareUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="share-button"
+							>
+								WhatsApp
+							</a>
+							<button
+								type="button"
+								class="share-button copy-link-btn"
+								data-url={shareUrlString}
+								aria-label="Copy link"
+							>
+								Copy link
+							</button>
+						</div>
+					</div>
+					<script>
+						document.querySelectorAll('.copy-link-btn').forEach((btn) => {
+							btn.addEventListener('click', async () => {
+								const url = btn.getAttribute('data-url');
+								if (url && navigator.clipboard?.writeText) {
+									await navigator.clipboard.writeText(url);
+									const label = btn.getAttribute('aria-label');
+									btn.textContent = 'Copied!';
+									btn.setAttribute('aria-label', 'Link copied');
+									setTimeout(() => {
+										btn.textContent = 'Copy link';
+										if (label) btn.setAttribute('aria-label', label);
+									}, 2000);
+								}
+							});
+						});
+						document.querySelectorAll('.linkedin-share-btn').forEach((a) => {
+							a.addEventListener('click', async (e) => {
+								e.preventDefault();
+								const url = a.getAttribute('data-url');
+								if (url && navigator.clipboard?.writeText) {
+									await navigator.clipboard.writeText(url);
+								}
+								const w = 600, h = 600;
+								const left = Math.round((screen.width - w) / 2);
+								const top = Math.round((screen.height - h) / 2);
+								window.open(a.getAttribute('href'), 'linkedin-share', `width=${w},height=${h},left=${left},top=${top},scrollbars=yes,resizable=yes`);
+							});
+						});
+					</script>
 				</div>
 				<div class="prose">
 					<slot />
 				</div>
+				<div class="share-bar-end">
+					<div class="share-bar" role="region" aria-label="Share this post">
+						<span class="share-label">Share</span>
+						<div class="share-links">
+							<a
+								href={twitterShareUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="share-button"
+							>
+								Twitter / X
+							</a>
+							<a
+								href={linkedInShareUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="share-button linkedin-share-btn"
+								data-url={shareUrlString}
+								aria-label="Share on LinkedIn"
+							>
+								LinkedIn
+							</a>
+							<a
+								href={whatsappShareUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="share-button"
+							>
+								WhatsApp
+							</a>
+							<button
+								type="button"
+								class="share-button copy-link-btn"
+								data-url={shareUrlString}
+								aria-label="Copy link"
+							>
+								Copy link
+							</button>
+						</div>
+					</div>
+				</div>
+				{otherPosts.length > 0 && (
+					<aside class="also-read" aria-label="Also read">
+						<h2 class="also-read-title">Also read</h2>
+						<ul class="also-read-list">
+							{otherPosts.map((p) => (
+								<li>
+									<a href={`/blog/${p.id}`} class="also-read-link">{p.title}</a>
+								</li>
+							))}
+						</ul>
+					</aside>
+				)}
 			</article>
 		</main>
 		<Footer />
