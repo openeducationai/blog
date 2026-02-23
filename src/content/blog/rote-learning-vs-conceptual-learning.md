@@ -101,13 +101,21 @@ Understanding builds confidence in a way memorisation never can.
 
 ## A Final Note
 
-If you want help building this kind of thinking at home, that is what we designed padho.ai to do — not giving answers, but guiding students until they can explain their own reasoning.
+If you want help building this kind of thinking at home, that is what we designed [padho.ai](https://padho.ai) to do — not giving answers, but guiding students until they can explain their own reasoning.
 
 Because the real goal is not getting homework done faster.
 
 It is raising learners who know how to think for themselves.
 
 **[Try padho.ai →](https://padho.ai)**
+
+---
+
+## Continue Exploring
+
+• [The Stuck Moment: Why Answers Are Not Enough](/blog/the-stuck-moment-why-answers-are-not-enough) — When they follow the solution but get stuck on the next problem  
+• [Why Adaptive Learning is the Future of Education](/blog/adaptive-learning-with-ai) — How personalised learning works at scale  
+• [Learn in Your Mother Tongue: padho.ai Supports 12 Indian Languages](/blog/multilingual-learning-12-indian-languages) — Learning in the language you think in  
 
 ---
 

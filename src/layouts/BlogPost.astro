@@ -34,9 +34,9 @@ const whatsappShareUrl = `https://api.whatsapp.com/send?text=${encodedTitle}%20$
 			}
 			.share-bar {
 				display: flex;
-				align-items: center;
+				flex-direction: column;
+				align-items: flex-start;
 				gap: 0.75em;
-				flex-wrap: wrap;
 				margin-top: 1em;
 				margin-bottom: 2em;
 				padding: 1em 0;
@@ -140,9 +140,8 @@ const whatsappShareUrl = `https://api.whatsapp.com/send?text=${encodedTitle}%20$
 			.also-read {
 				max-width: 720px;
 				margin: 0 auto;
-				padding: 0 1em 2em 4em;
+				padding: 2em 1em 4em;
 				border-top: 1px solid rgba(var(--gray), 0.3);
-				padding-top: 2em;
 			}
 			.also-read-title {
 				font-size: 1.1em;

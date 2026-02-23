@@ -18,9 +18,9 @@ Adaptive learning isn't just "showing harder questions when you get things right
 - **Choosing the right content at the right time** — not just difficulty level, but the right *type* of explanation, example, or exercise
 - **Adjusting in real-time** — not waiting until the end of a chapter to discover gaps
 
-## How We Approach It at padho.ai
+## How We Approach It at [padho.ai](https://padho.ai)
 
-At padho.ai, we built a knowledge graph that maps the relationships between concepts, skills, and learning objectives. When a student works through a topic, our system doesn't just track right and wrong answers — it understands *which skills* were tested and *how they connect* to other skills.
+At [padho.ai](https://padho.ai), we built a knowledge graph that maps the relationships between concepts, skills, and learning objectives. When a student works through a topic, our system doesn't just track right and wrong answers — it understands *which skills* were tested and *how they connect* to other skills.
 
 For example, if a student struggles with "applying the chain rule in calculus," our system knows this skill depends on understanding function composition and basic differentiation. Instead of just repeating chain rule problems, it can identify and fill the prerequisite gaps first.
 
@@ -39,4 +39,12 @@ This loop runs continuously, creating a learning experience that feels like work
 
 We're just getting started. Our roadmap includes deeper skill diagnostics, multi-modal content (interactive simulations, visual explanations), and collaborative learning features where students can learn together while still getting personalized support.
 
-Education is one of the most important problems to solve, and AI gives us the tools to finally make personalized learning accessible to everyone. That's what we're building at padho.ai.
+Education is one of the most important problems to solve, and AI gives us the tools to finally make personalized learning accessible to everyone. That's what we're building at [padho.ai](https://padho.ai).
+
+---
+
+## Continue Exploring
+
+• [The Stuck Moment: Why Answers Are Not Enough](/blog/the-stuck-moment-why-answers-are-not-enough) — Why hints and guided thinking beat giving answers  
+• [Rote Learning vs Conceptual Learning: The Difference Parents Can Actually See](/blog/rote-learning-vs-conceptual-learning) — Understanding vs memorising: what to look for  
+• [Learn in Your Mother Tongue: padho.ai Supports 12 Indian Languages](/blog/multilingual-learning-12-indian-languages) — Doubt solving in 12 Indian languages
