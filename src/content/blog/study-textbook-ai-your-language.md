@@ -57,7 +57,7 @@ When you upload a PDF to [padho.ai](https://padho.ai), you can choose to study i
 
 So a student in Bhopal studying from an English-medium CBSE textbook can now ask doubts and get explanations in Hindi. A student in Coimbatore can study the same chapter in Tamil.
 
-Same book. Same concepts. Your language.
+Same book. Same concepts. Your chosen native language.
 
 > **Why does this matter?**  
 > When you already understand a concept in your language, learning the English terminology becomes much easier. You stop struggling with two things at once — the language and the subject.
@@ -142,12 +142,11 @@ You might be thinking: *"Can't I just ask ChatGPT to explain something from my b
 
 Here's the difference:
 
-| Generic AI | [padho.ai](https://padho.ai) with your PDF |
+| Generic AI | [padho.ai](https://padho.ai) |
 |------------|------------------------|
-| Gives a general explanation | Explains exactly the method your book uses |
-| Shows any approach | Follows your board's specific approach |
+| Gives a generic explanation | Gives a relevant explanation or approach based on your PDF |
 | Often directly answers | Guides you to the answer |
-| English only (mostly) | Your language |
+| English only (mostly) | Your chosen native language |
 | No context of your syllabus | Knows exactly what you're studying |
 
 When your exam is based on a specific textbook, learning from that specific textbook with a tutor who has read it makes a real difference.
