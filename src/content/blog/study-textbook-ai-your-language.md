@@ -98,6 +98,9 @@ Highlight a passage about constraints from the Linear Programming chapter and th
 
 ### Step 5: Solve Any Question Interactively
 
+![Solve button on padho.ai for interactive step-by-step solutions](solve_pdf.png)
+*Tap Solve on any question for step-by-step guidance in your language*
+
 Any question or example in the book has a **Solve It** button. Tap it and instead of showing you the answer, [padho.ai](https://padho.ai) walks you through the solution step by step. It asks what you think the next step is, gives hints if you're stuck, and explains the why behind each step. All in your language.
 
 ---
