@@ -127,7 +127,7 @@ You don't need a special format or a specific publisher's book.
 
 - ✓ NCERT textbooks (all subjects, Class 6–12)
 - ✓ State board textbooks
-- ✓ Reference books (RD Sharma, HC Verma, etc.)
+- ✓ Reference books
 - ✓ Your own handwritten notes (scanned to PDF)
 - ✓ Coaching material and study guides
 - ✓ JEE / NEET / CUET / SSC / UPSC / GATE / CAT and other competitive exam material
