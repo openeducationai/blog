@@ -1,13 +1,12 @@
 # Blog images
 
-Blog images live in `public/` (site root). Current files:
+**Blog post images** (referenced in Markdown with relative paths like `change_lang.png`) live in **`src/content/blog/`**, not in `public/`. Astro’s content pipeline resolves them from there.
 
-| File | Used in |
-|------|--------|
-| `change_lang.png` | multilingual-learning-12-indian-languages.md, study-textbook-ai-your-language.md (language selector) |
-| `upload_pdf.png` | study-textbook-ai-your-language.md (upload step) |
-| `punjabi_pdf.png` | study-textbook-ai-your-language.md (Punjabi book) |
-| `explain_local.png` | study-textbook-ai-your-language.md (Explain popup) |
-| `screenshot-language-selector.png` | (optional alternative for language selector) |
+Current images in `src/content/blog/`:
+- `change_lang.png` — language selector
+- `upload_pdf.png` — upload step
+- `punjabi_pdf.png` — Punjabi book
+- `explain_local.png` — Explain popup
+- `solve_pdf.png` — Solve button
 
-URLs in posts use root paths, e.g. `/change_lang.png`, `/upload_pdf.png`.
+**`public/`** is for site-wide assets (e.g. `padhoai.svg`, `favicon`).
