@@ -6,6 +6,11 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
+/** Strip Markdown links [text](url) to plain text so descriptions display cleanly (card is already a link). */
+function descriptionToPlainText(desc: string): string {
+	return desc.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
+}
+
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
@@ -35,6 +40,17 @@ const remainingPosts = posts.slice(1);
 				-webkit-background-clip: text;
 				-webkit-text-fill-color: transparent;
 				background-clip: text;
+			}
+			.hero-title-link {
+				color: inherit;
+				text-decoration: none;
+				background: var(--gradient-accent);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+			.hero-title-link:hover {
+				text-decoration: underline;
 			}
 			.hero-accent {
 				display: inline-block;
@@ -197,7 +213,7 @@ const remainingPosts = posts.slice(1);
 		<Header />
 		<div class="hero">
 			<div class="hero-title-wrap">
-				<h1 class="hero-title">PadhoAI Blog</h1>
+				<h1 class="hero-title">Study your own books with <a href="https://padho.ai" class="hero-title-link">padho.ai</a>, now in your language</h1>
 				<span class="hero-accent" aria-hidden="true"></span>
 			</div>
 			<p class="hero-subtitle"><strong>Insights</strong> on AI-powered education, adaptive learning, and building the future of personalized teaching.</p>
@@ -209,7 +225,7 @@ const remainingPosts = posts.slice(1);
 					<div class="featured-content">
 						<div class="featured-label">Latest</div>
 						<h2 class="featured-title">{featuredPost.data.title}</h2>
-						<p class="featured-desc">{featuredPost.data.description}</p>
+						<p class="featured-desc">{descriptionToPlainText(featuredPost.data.description)}</p>
 						<p class="featured-date"><FormattedDate date={featuredPost.data.pubDate} /></p>
 					</div>
 				</a>
@@ -218,13 +234,13 @@ const remainingPosts = posts.slice(1);
 
 		{remainingPosts.length > 0 && (
 			<div class="posts-section">
-				<h2 class="section-title">All Posts</h2>
+				<h2 class="section-title">All posts</h2>
 				<ul class="posts-grid">
 					{remainingPosts.map((post) => (
 						<li>
 							<a href={`/blog/${post.id}/`}>
 								<h3 class="post-title">{post.data.title}</h3>
-								<p class="post-desc">{post.data.description}</p>
+								<p class="post-desc">{descriptionToPlainText(post.data.description)}</p>
 								<p class="post-date"><FormattedDate date={post.data.pubDate} /></p>
 							</a>
 						</li>

@@ -1,5 +1,5 @@
 ---
-title: "Rote Learning vs Conceptual Learning: The Difference Parents Can Actually See"
+title: "Rote learning vs conceptual learning: the difference parents can actually see"
 description: "Your child gets full marks on the test, then forgets it all. Learn how to tell rote learning from real understanding — and what to ask instead of 'What's the answer?'"
 pubDate: 2026-02-15
 ---
@@ -113,9 +113,10 @@ It is raising learners who know how to think for themselves.
 
 ## Continue Exploring
 
-• [The Stuck Moment: Why Answers Are Not Enough](/blog/the-stuck-moment-why-answers-are-not-enough) — When they follow the solution but get stuck on the next problem  
-• [Why Adaptive Learning is the Future of Education](/blog/adaptive-learning-with-ai) — How personalised learning works at scale  
-• [Learn in Your Mother Tongue: padho.ai Supports 12 Indian Languages](/blog/multilingual-learning-12-indian-languages) — Learning in the language you think in  
+• [Study your own books with padho.ai, now in your language](/blog/study-textbook-ai-your-language) — Upload any PDF, learn in 12 Indian languages  
+• [The stuck moment: why answers are not enough](/blog/the-stuck-moment-why-answers-are-not-enough) — When they follow the solution but get stuck on the next problem  
+• [Why adaptive learning is the future of education](/blog/adaptive-learning-with-ai) — How personalised learning works at scale  
+• [Learn in your mother tongue: padho.ai supports 12 Indian languages](/blog/multilingual-learning-12-indian-languages) — Learning in the language you think in  
 
 ---
 

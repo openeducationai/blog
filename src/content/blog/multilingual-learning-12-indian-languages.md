@@ -1,6 +1,6 @@
 ---
-title: "Learn in Your Mother Tongue: padho.ai Supports 12 Indian Languages | AI Learning Platform"
-description: "Learn in your mother tongue with padho.ai's AI tutor supporting 12 Indian languages. Get instant doubt solving in Hindi, Tamil, Bengali, Telugu & more. Try free today."
+title: "Learn in your mother tongue: padho.ai supports 12 Indian languages | AI learning platform"
+description: "Learn in your mother tongue with [padho.ai](https://padho.ai)'s AI tutor supporting 12 Indian languages. Get instant doubt solving in Hindi, Tamil, Bengali, Telugu & more. Try free today."
 pubDate: 2026-02-09
 updatedDate: 2026-02-09
 ---
@@ -46,7 +46,7 @@ This happens to millions of students across India in mathematics, science, and e
 
 ## Introducing Multilingual Learning on [padho.ai](https://padho.ai)
 
-![padho.ai language selector showing 12 Indian languages including English, Hindi, Bengali, Tamil, Telugu, Kannada, Malayalam, Gujarati, Marathi, Punjabi, Odia, and Assamese](/blog/screenshot-language-selector.png)
+![padho.ai language selector showing 12 Indian languages including English, Hindi, Bengali, Tamil, Telugu, Kannada, Malayalam, Gujarati, Marathi, Punjabi, Odia, and Assamese](change_lang.png)
 *Choose from 12 Indian languages with one click*
 
 Students can now use [padho.ai](https://padho.ai) in **12 Indian languages**, including:
@@ -274,9 +274,10 @@ All in the language you think in.
 
 If you found this useful, you may also like:
 
-• [The Stuck Moment: Why Answers Are Not Enough](/blog/the-stuck-moment-why-answers-are-not-enough) — Why guided thinking beats answers  
-• [Rote Learning vs Conceptual Learning: The Difference Parents Can Actually See](/blog/rote-learning-vs-conceptual-learning)  
-• [Why Adaptive Learning is the Future of Education](/blog/adaptive-learning-with-ai)  
+• [Study your own books with padho.ai, now in your language](/blog/study-textbook-ai-your-language) — Upload any PDF, learn in 12 Indian languages  
+• [The stuck moment: why answers are not enough](/blog/the-stuck-moment-why-answers-are-not-enough) — Why guided thinking beats answers  
+• [Rote learning vs conceptual learning: the difference parents can actually see](/blog/rote-learning-vs-conceptual-learning)  
+• [Why adaptive learning is the future of education](/blog/adaptive-learning-with-ai)  
 
 We will be publishing more articles on AI learning, study strategies, and education in India soon.
 

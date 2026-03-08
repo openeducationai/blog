@@ -1,6 +1,6 @@
 ---
-title: 'Why Adaptive Learning is the Future of Education'
-description: 'Every student learns differently. AI-powered adaptive learning can finally deliver personalized education at scale — here is how we are building it at padho.ai.'
+title: 'Why adaptive learning is the future of education'
+description: 'Every student learns differently. AI-powered adaptive learning can finally deliver personalized education at scale — here is how we are building it at [padho.ai](https://padho.ai).'
 pubDate: 'Feb 01 2026'
 ---
 
@@ -45,6 +45,7 @@ Education is one of the most important problems to solve, and AI gives us the to
 
 ## Continue Exploring
 
-• [The Stuck Moment: Why Answers Are Not Enough](/blog/the-stuck-moment-why-answers-are-not-enough) — Why hints and guided thinking beat giving answers  
-• [Rote Learning vs Conceptual Learning: The Difference Parents Can Actually See](/blog/rote-learning-vs-conceptual-learning) — Understanding vs memorising: what to look for  
-• [Learn in Your Mother Tongue: padho.ai Supports 12 Indian Languages](/blog/multilingual-learning-12-indian-languages) — Doubt solving in 12 Indian languages
+• [Study your own books with padho.ai, now in your language](/blog/study-textbook-ai-your-language) — Upload any PDF, learn in 12 Indian languages  
+• [The stuck moment: why answers are not enough](/blog/the-stuck-moment-why-answers-are-not-enough) — Why hints and guided thinking beat giving answers  
+• [Rote learning vs conceptual learning: the difference parents can actually see](/blog/rote-learning-vs-conceptual-learning) — Understanding vs memorising: what to look for  
+• [Learn in your mother tongue: padho.ai supports 12 Indian languages](/blog/multilingual-learning-12-indian-languages) — Doubt solving in 12 Indian languages
