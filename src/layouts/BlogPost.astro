@@ -11,6 +11,14 @@ type Props = CollectionEntry<'blog'>['data'] & {
 
 const { title, description, pubDate, updatedDate, heroImage, otherPosts = [] } = Astro.props;
 
+const articleMeta =
+	pubDate != null
+		? {
+				publishedTime: pubDate,
+				...(updatedDate != null && { modifiedTime: updatedDate }),
+			}
+		: undefined;
+
 // Use canonical blog URL for sharing (learn.padho.ai/blog/...) so the shared link is always the post URL, not the current request
 const shareUrl = new URL(Astro.url.pathname, Astro.site);
 const shareUrlString = shareUrl.toString();
@@ -25,7 +33,7 @@ const whatsappShareUrl = `https://api.whatsapp.com/send?text=${encodedTitle}%20$
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} image={heroImage} />
+		<BaseHead title={title} description={description} image={heroImage} article={articleMeta} />
 		<style>
 			.article-header {
 				max-width: 720px;
