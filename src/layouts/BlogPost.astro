@@ -34,7 +34,7 @@ const whatsappShareUrl = `https://api.whatsapp.com/send?text=${encodedTitle}%20$
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} image={heroImage} article={articleMeta} />
-		<style>
+		<style is:global>
 			.article-header {
 				max-width: 720px;
 				margin: 0 auto;
@@ -140,10 +140,126 @@ const whatsappShareUrl = `https://api.whatsapp.com/send?text=${encodedTitle}%20$
 				padding: 0 1em 2em;
 				color: rgb(var(--gray-dark));
 			}
+			/* Keep notebook article close to default blog style */
+			.prose .notebook-article {
+				text-align: left;
+			}
+			.prose .notebook-article .nb-deck {
+				font-size: 1rem;
+				line-height: 1.7;
+				color: rgb(var(--gray-dark));
+				margin-bottom: 1rem;
+			}
+			.prose .notebook-article .nb-divider {
+				height: 1px;
+				background: rgb(var(--gray-light));
+				margin: 2rem 0;
+			}
+			.prose .notebook-article .nb-section-num {
+				font-size: 0.72rem;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				color: rgb(var(--gray));
+				margin-bottom: 0.4rem;
+			}
+			.prose .notebook-article .nb-intent {
+				margin: 1.5rem 0;
+				padding: 1rem 1.15rem;
+				background: #fff;
+				border: 1px solid rgba(0, 0, 0, 0.07);
+				border-left: 5px solid var(--accent);
+				border-radius: 12px;
+			}
+			.prose .notebook-article .nb-intent-label {
+				font-size: 0.6875rem;
+				font-weight: 700;
+				letter-spacing: 0.14em;
+				text-transform: uppercase;
+				color: var(--accent);
+				margin-bottom: 0.6rem;
+			}
+			.prose .notebook-article .nb-intent p {
+				margin-bottom: 0;
+				font-style: normal;
+			}
+			.prose .notebook-article .nb-chip-tray {
+				margin: 1rem 0 1.35rem;
+			}
+			.prose .notebook-article .nb-chips {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+				margin: 0;
+			}
+			.prose .notebook-article span.nb-chip {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				padding: 8px 16px;
+				border-radius: 999px;
+				border: 1px solid #ccc;
+				background: #fff;
+				color: #2a2a2a;
+				font-size: 0.95rem;
+				line-height: 1.2;
+				white-space: nowrap;
+			}
+			.prose .notebook-article span.nb-chip.nb-chip-active {
+				border: 2px solid #6b7fcc;
+				color: #5a6fc9;
+				background: #eef0fb;
+			}
+			.prose .notebook-article .nb-wop-button {
+				display: inline-flex;
+				align-items: center;
+				gap: 6px;
+				font-size: 0.8125rem;
+				padding: 5px 12px;
+				border-radius: 8px;
+				border: 1px solid #ddd;
+				color: #555;
+				background: #fff;
+				margin: 0.75rem 0 1rem;
+			}
+			.prose .notebook-article .nb-pullquote {
+				border-left: 2px solid #ccc;
+				padding-left: 1.25rem;
+				margin: 1.5rem 0;
+				font-size: 0.9375rem;
+				font-style: italic;
+				color: #1a1a1a;
+				line-height: 1.65;
+			}
+			.prose .notebook-article .nb-figure {
+				margin: 1.25rem 0 1.5rem;
+			}
+			.prose .notebook-article .nb-figure img {
+				width: 100%;
+				height: auto;
+				border-radius: 8px;
+				border: 1px solid rgba(0, 0, 0, 0.06);
+				display: block;
+			}
+			.prose .notebook-article .nb-figure figcaption {
+				font-size: 0.8125rem;
+				line-height: 1.5;
+				color: #888;
+				margin-top: 0.65rem;
+				text-align: left;
+			}
+			.prose .notebook-article .nb-cta {
+				font-size: 0.8125rem;
+				color: #aaa;
+				margin-top: 0.5rem;
+			}
+			.prose .notebook-article .nb-cta a {
+				color: var(--accent);
+			}
 			.share-bar-end {
 				max-width: 720px;
 				margin: 0 auto;
-				padding: 0 1em 4em;
+				padding: 0 1em 1.5em;
 			}
 			.also-read {
 				max-width: 720px;
