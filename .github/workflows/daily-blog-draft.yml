@@ -1,0 +1,90 @@
+name: Prepare daily technical blog
+
+on:
+  schedule:
+    # 05:45 in India. This leaves time for research and revision before 09:00.
+    - cron: '15 0 * * *'
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: Optional topic to research
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: daily-blog-draft
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Ensure review labels exist
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create daily-blog-review --color 1D76DB --description "Padho daily blog awaiting content review" --force
+          gh label create daily-blog-approved --color 0E8A16 --description "Content approved and ready for a pull request" --force
+
+      - name: Check for an unreviewed daily draft
+        id: pending
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing="$(gh issue list --state open --label daily-blog-review --limit 1 --json number --jq '.[0].number // empty')"
+          if [ -n "$existing" ]; then
+            echo "A daily draft is already awaiting review in issue #$existing"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate researched draft
+        if: steps.pending.outputs.skip != 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-6-astra' }}
+          OPENAI_REASONING_EFFORT: ${{ vars.OPENAI_REASONING_EFFORT || 'high' }}
+          BLOG_TOPIC: ${{ inputs.topic }}
+        run: node scripts/generate-daily-blog.mjs
+
+      - name: Verify the generated article
+        if: steps.pending.outputs.skip != 'true'
+        run: |
+          post="$(node -e "const fs=require('fs'); console.log(JSON.parse(fs.readFileSync('.daily-blog/metadata.json','utf8')).file)")"
+          node scripts/check-blog-style.mjs "$post"
+          npm ci
+          npm run build
+
+      - name: Create review issue
+        if: steps.pending.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          run_date="$(TZ=Asia/Kolkata date +%F)"
+          branch="automation/daily-blog-$run_date"
+          title="$(node -e "const fs=require('fs'); console.log(JSON.parse(fs.readFileSync('.daily-blog/metadata.json','utf8')).title)")"
+          post="$(node -e "const fs=require('fs'); console.log(JSON.parse(fs.readFileSync('.daily-blog/metadata.json','utf8')).file)")"
+
+          git config user.name "padho-blog-bot"
+          git config user.email "blog-bot@padho.ai"
+          git checkout -b "$branch"
+          git add "$post"
+          git commit -m "blog: daily technical draft for $run_date"
+          git push --set-upstream origin "$branch"
+
+          issue_url="$(gh issue create --title "Daily blog review: $title" --body-file .daily-blog/review-issue-body.md --label daily-blog-review)"
+          echo "Draft ready for review: $issue_url" >> "$GITHUB_STEP_SUMMARY"

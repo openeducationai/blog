@@ -1,0 +1,65 @@
+name: Email daily blog review
+
+on:
+  schedule:
+    # 09:00 Asia/Kolkata (UTC+05:30).
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      BLOG_REVIEWER: ${{ vars.BLOG_REVIEWER }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check reviewer configuration
+        run: |
+          if [ -z "$BLOG_REVIEWER" ]; then
+            echo "Set the BLOG_REVIEWER repository variable to the GitHub username that approves posts."
+            exit 1
+          fi
+
+      - name: Find the latest unreviewed daily draft
+        id: review
+        run: |
+          mkdir -p .daily-blog
+          gh issue list --state open --label daily-blog-review --limit 100 --json number,title,url,body,createdAt \
+            --jq 'sort_by(.createdAt) | reverse | .[0]' > .daily-blog/review-issue.json
+          if [ "$(tr -d '[:space:]' < .daily-blog/review-issue.json)" = "null" ]; then
+            echo "No daily blog draft is awaiting review."
+            echo "found=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "found=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Load the article from its review branch
+        if: steps.review.outputs.found == 'true'
+        run: |
+          node scripts/read-blog-review.mjs .daily-blog/review-issue.json > .daily-blog/review-metadata.json
+          branch="$(node -e "const x=require('./.daily-blog/review-metadata.json'); console.log(x.branch)")"
+          post="$(node -e "const x=require('./.daily-blog/review-metadata.json'); console.log(x.post)")"
+          gh api "repos/$GITHUB_REPOSITORY/contents/$post?ref=$branch" > .daily-blog/post-api.json
+          node -e "const fs=require('fs'); const x=require('./.daily-blog/post-api.json'); fs.writeFileSync('.daily-blog/review-post.md', Buffer.from(x.content.replace(/\\n/g,''), 'base64'))"
+
+      - name: Prepare the review message
+        if: steps.review.outputs.found == 'true'
+        run: node scripts/prepare-blog-review.mjs .daily-blog/review-issue.json .daily-blog/review-post.md
+
+      - name: Send the 09:00 GitHub email
+        if: steps.review.outputs.found == 'true'
+        run: |
+          number="$(node -e "const x=require('./.daily-blog/review-issue.json'); console.log(x.number)")"
+          gh issue comment "$number" --body-file .daily-blog/review-comment.md
+          echo "GitHub notified @$BLOG_REVIEWER. An email reply will become an issue comment." >> "$GITHUB_STEP_SUMMARY"

@@ -6,7 +6,11 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "blog:draft": "node scripts/generate-daily-blog.mjs",
+    "blog:check": "node scripts/check-blog-style.mjs",
+    "blog:open-approved-pr": "node scripts/open-approved-blog-pr.mjs",
+    "test": "node --test scripts/*.test.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
