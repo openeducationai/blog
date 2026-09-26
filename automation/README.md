@@ -6,8 +6,8 @@ without a manual pull request merge.
 
 ## Daily flow
 
-1. At 05:45 IST, the marketing app runs `npm run blog:agent:state` in this
-   repository.
+1. At 05:45 IST, the marketing app syncs its dedicated automation checkout to
+   `origin/main`, then runs `npm run blog:agent:state` there.
 2. When the result is `generate`, its Codex specialist researches and writes a
    draft. It then calls `npm run blog:submit-draft -- /absolute/path/draft.md`.
 3. When the result is `revise`, the state includes the current article and the
@@ -32,6 +32,10 @@ is no `OPENAI_API_KEY` in this repository and no AI call in GitHub Actions.
 The Mac needs `gh` installed and authenticated as a user who can create
 branches, issues, and pull requests in `openeducationai/blog`. No reusable
 GitHub token is stored in repository secrets.
+
+The app must use its own clean blog checkout under app data. It must not switch,
+pull, clean, or write into a developer's working checkout. Draft and revision
+files also belong in app scratch space, outside every repository.
 
 Set one repository variable:
 

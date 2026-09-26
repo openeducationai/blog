@@ -8,6 +8,11 @@ The job may create branches, review issues, and pull requests only in
 `openeducationai/blog`. It must never merge a pull request. It must never edit
 the frontend repository or deployment configuration.
 
+Keep a dedicated clean checkout of `openeducationai/blog` under the app's data
+directory. Sync it to `origin/main` before each scheduled job. Never switch,
+pull, clean, or write into the developer's working checkout. Keep article
+scratch files outside every repository.
+
 ## 05:45 lifecycle job
 
 Run this from the blog repository:
