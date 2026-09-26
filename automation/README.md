@@ -53,7 +53,7 @@ organization setting that blocks Actions-created pull requests.
 
 ## Marketing app integration
 
-Run this command from the blog repository every one to five minutes:
+Run this command from the blog repository once each day at 16:05 Asia/Kolkata:
 
 ```sh
 npm run blog:open-approved-pr
@@ -71,6 +71,9 @@ opening a pull request:
 The Mac process must have `gh` installed and authenticated as a user who may
 open pull requests in `openeducationai/blog`. It does not need a reusable
 GitHub token stored in repository secrets.
+
+If approval arrives after 16:05, run the same command manually or let the next
+day's scheduled check pick it up.
 
 ## Manual checks
 
