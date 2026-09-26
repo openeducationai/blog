@@ -1,0 +1,72 @@
+name: Email daily blog review
+
+on:
+  schedule:
+    # 09:00 Asia/Kolkata (UTC+05:30).
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      BLOG_REVIEWER: ${{ vars.BLOG_REVIEWER }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check reviewer configuration
+        run: |
+          if [ -z "$BLOG_REVIEWER" ]; then
+            echo "Set the BLOG_REVIEWER repository variable to the GitHub username that approves posts."
+            exit 1
+          fi
+
+      - name: Find the latest unreviewed daily draft
+        id: review
+        run: |
+          mkdir -p .daily-blog
+          gh pr list --state open --limit 100 --json number,title,url,body,headRefName,createdAt \
+            --jq '[.[] | select(.headRefName | startswith("automation/daily-blog-"))] | sort_by(.createdAt) | reverse | .[0]' \
+            > .daily-blog/review-pr.json
+          if [ "$(tr -d '[:space:]' < .daily-blog/review-pr.json)" = "null" ]; then
+            echo "No daily blog draft is awaiting review."
+            echo "found=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "found=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Load the article from its review branch
+        if: steps.review.outputs.found == 'true'
+        run: |
+          number="$(node -e "const p=require('./.daily-blog/review-pr.json'); console.log(p.number)")"
+          branch="$(node -e "const p=require('./.daily-blog/review-pr.json'); console.log(p.headRefName)")"
+          post="$(gh pr view "$number" --json files --jq '.files[].path | select(startswith("src/content/blog/"))' | head -n 1)"
+          if [ -z "$post" ]; then
+            echo "The draft PR does not contain a blog post."
+            exit 1
+          fi
+          gh api "repos/$GITHUB_REPOSITORY/contents/$post?ref=$branch" > .daily-blog/post-api.json
+          node -e "const fs=require('fs'); const x=require('./.daily-blog/post-api.json'); fs.writeFileSync('.daily-blog/review-post.md', Buffer.from(x.content.replace(/\\n/g,''), 'base64'))"
+
+      - name: Prepare the review message
+        if: steps.review.outputs.found == 'true'
+        run: node scripts/prepare-blog-review.mjs .daily-blog/review-pr.json .daily-blog/review-post.md
+
+      - name: Send the 09:00 GitHub email
+        if: steps.review.outputs.found == 'true'
+        run: |
+          number="$(node -e "const p=require('./.daily-blog/review-pr.json'); console.log(p.number)")"
+          gh pr edit "$number" --add-reviewer "$BLOG_REVIEWER"
+          gh pr comment "$number" --body-file .daily-blog/review-comment.md
+          echo "GitHub notified @$BLOG_REVIEWER. An email reply will become a PR comment." >> "$GITHUB_STEP_SUMMARY"
