@@ -20,6 +20,7 @@ const author = event.comment?.user?.login ?? '';
 const state = reviewIssue.state ?? '';
 const body = String(event.comment?.body ?? '').trim();
 const firstLine = body.split(/\r?\n/, 1)[0].trim().toUpperCase();
+const commentId = Number(event.comment?.id);
 
 let decision = { process: false, action: 'ignore', reason: '', branch: '', post: '' };
 let metadata;
@@ -32,6 +33,8 @@ if (author.toLowerCase() !== reviewer.toLowerCase()) {
 	decision.reason = 'The draft is already approved.';
 } else if (!body) {
 	decision.reason = 'The reply is empty.';
+} else if (firstLine === 'APPROVE' && hasLabel(reviewIssue, 'daily-blog-revision-requested')) {
+	decision.reason = 'A requested revision must be completed before this draft can be approved.';
 } else if (firstLine === 'APPROVE') {
 	try {
 		metadata = parseReviewMetadata(reviewIssue);
@@ -58,15 +61,17 @@ if (author.toLowerCase() !== reviewer.toLowerCase()) {
 	}
 } else {
 	try {
+		if (!Number.isSafeInteger(commentId) || commentId <= 0) {
+			throw new Error('The feedback comment has no valid GitHub comment ID.');
+		}
 		metadata = parseReviewMetadata(reviewIssue);
 		decision = {
 			process: true,
 			action: 'revise',
 			reason: 'Reviewer supplied revision feedback.',
+			feedbackCommentId: commentId,
 			...metadata,
 		};
-		await fs.mkdir('.daily-blog', { recursive: true });
-		await fs.writeFile('.daily-blog/reviewer-feedback.txt', `${body}\n`, 'utf8');
 	} catch (error) {
 		decision.reason = error.message;
 	}

@@ -35,8 +35,8 @@ jobs:
         id: review
         run: |
           mkdir -p .daily-blog
-          gh issue list --state open --label daily-blog-review --limit 100 --json number,title,url,body,createdAt \
-            --jq 'sort_by(.createdAt) | reverse | .[0]' > .daily-blog/review-issue.json
+          gh issue list --state open --label daily-blog-review --limit 100 --json number,title,url,body,createdAt,labels \
+            --jq 'map(select((.labels | map(.name) | index("daily-blog-approved") | not) and (.labels | map(.name) | index("daily-blog-revision-requested") | not))) | sort_by(.createdAt) | reverse | .[0]' > .daily-blog/review-issue.json
           if [ "$(tr -d '[:space:]' < .daily-blog/review-issue.json)" = "null" ]; then
             echo "No daily blog draft is awaiting review."
             echo "found=false" >> "$GITHUB_OUTPUT"

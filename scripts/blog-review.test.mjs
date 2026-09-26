@@ -1,6 +1,12 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { parseApprovalMetadata, parseReviewMetadata } from './lib/blog-review.mjs';
+import {
+	clearFeedbackComments,
+	parseApprovalMetadata,
+	parseFeedbackCommentIds,
+	parseReviewMetadata,
+	queueFeedbackComment,
+} from './lib/blog-review.mjs';
 
 test('reads a constrained daily blog branch and post path', () => {
 	const metadata = parseReviewMetadata({
@@ -36,4 +42,20 @@ test('reads only a full commit SHA from an approval record', () => {
 		}),
 		null,
 	);
+});
+
+test('queues feedback IDs without copying email text into issue metadata', () => {
+	const original = '<!-- padho-daily-blog-review {"branch":"automation/daily-blog-2026-09-27","post":"src/content/blog/a-clear-title.md"} -->\n\nReview me.\n';
+	const once = queueFeedbackComment(original, 101);
+	const twice = queueFeedbackComment(once, 202);
+	const duplicate = queueFeedbackComment(twice, 101);
+	assert.deepEqual(parseFeedbackCommentIds({ body: duplicate }), [101, 202]);
+
+	const partlyCleared = clearFeedbackComments(duplicate, [101]);
+	assert.deepEqual(partlyCleared.remaining, [202]);
+	assert.deepEqual(parseFeedbackCommentIds({ body: partlyCleared.body }), [202]);
+
+	const cleared = clearFeedbackComments(partlyCleared.body, [202]);
+	assert.deepEqual(cleared.remaining, []);
+	assert.deepEqual(parseFeedbackCommentIds({ body: cleared.body }), []);
 });

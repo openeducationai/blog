@@ -31,6 +31,58 @@ export function hasLabel(reviewItem, name) {
 	);
 }
 
+const feedbackMarkerPattern = /<!--\s*padho-daily-blog-feedback\s+(\{[^\r\n]+\})\s*-->/;
+
+export function parseFeedbackCommentIds(reviewItem) {
+	const body = String(reviewItem?.body ?? '');
+	const match = body.match(feedbackMarkerPattern);
+	if (!match) return [];
+
+	let metadata;
+	try {
+		metadata = JSON.parse(match[1]);
+	} catch (error) {
+		throw new Error(`The queued blog feedback metadata is invalid: ${error.message}`);
+	}
+
+	if (!Array.isArray(metadata.commentIds)) {
+		throw new Error('The queued blog feedback must contain commentIds.');
+	}
+
+	const ids = metadata.commentIds.map(Number);
+	if (ids.some((id) => !Number.isSafeInteger(id) || id <= 0)) {
+		throw new Error('The queued blog feedback contains an invalid comment ID.');
+	}
+	return [...new Set(ids)];
+}
+
+export function queueFeedbackComment(body, commentId) {
+	const id = Number(commentId);
+	if (!Number.isSafeInteger(id) || id <= 0) {
+		throw new Error('Cannot queue feedback without a valid GitHub comment ID.');
+	}
+
+	const reviewItem = { body };
+	parseReviewMetadata(reviewItem);
+	const ids = [...new Set([...parseFeedbackCommentIds(reviewItem), id])];
+	const marker = `<!-- padho-daily-blog-feedback ${JSON.stringify({ commentIds: ids })} -->`;
+	if (feedbackMarkerPattern.test(body)) return body.replace(feedbackMarkerPattern, marker);
+	return `${String(body).trim()}\n\n${marker}\n`;
+}
+
+export function clearFeedbackComments(body, processedIds) {
+	const processed = new Set(processedIds.map(Number));
+	const remaining = parseFeedbackCommentIds({ body }).filter((id) => !processed.has(id));
+	if (remaining.length) {
+		const marker = `<!-- padho-daily-blog-feedback ${JSON.stringify({ commentIds: remaining })} -->`;
+		return { body: body.replace(feedbackMarkerPattern, marker), remaining };
+	}
+	return {
+		body: body.replace(feedbackMarkerPattern, '').replace(/\n{3,}/g, '\n\n').trimEnd() + '\n',
+		remaining,
+	};
+}
+
 export function parseApprovalMetadata(comment) {
 	const body = String(comment?.body ?? '');
 	const match = body.match(

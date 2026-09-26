@@ -30,6 +30,17 @@ test('treats a normal email reply as revision feedback', async () => {
 	});
 	assert.equal(result.process, true);
 	assert.equal(result.action, 'revise');
+	assert.equal(result.feedbackCommentId, 12345);
+});
+
+test('does not approve a draft while revision feedback is queued', async () => {
+	const result = await classify({
+		author: 'dipti-mathur',
+		body: 'APPROVE',
+		labels: [{ name: 'daily-blog-review' }, { name: 'daily-blog-revision-requested' }],
+	});
+	assert.equal(result.process, false);
+	assert.match(result.reason, /revision must be completed/i);
 });
 
 test('ignores reviewer comments on unrelated issues', async () => {
@@ -64,7 +75,7 @@ async function classify({
 	await Promise.all([
 		fs.writeFile(
 			eventFile,
-			JSON.stringify({ comment: { user: { login: author }, body } }),
+			JSON.stringify({ comment: { id: 12345, user: { login: author }, body } }),
 			'utf8',
 		),
 		fs.writeFile(reviewIssueFile, JSON.stringify({ body: reviewBody, state: 'OPEN', labels }), 'utf8'),
