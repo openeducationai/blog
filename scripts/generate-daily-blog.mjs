@@ -296,6 +296,8 @@ if (!novelty.passes || !novelty.clear_to_general_reader) {
 validateDraftSources(markdown, research);
 
 const destination = path.join(ROOT, 'src/content/blog', `${draft.slug}.md`);
+const destinationRelative = path.relative(ROOT, destination);
+const reviewBranch = `automation/daily-blog-${today}`;
 try {
 	await fs.access(destination);
 	throw new Error(`A post already exists at ${destination}. Choose a new topic or slug.`);
@@ -310,7 +312,8 @@ await fs.writeFile(
 	JSON.stringify(
 		{
 			date: today,
-			file: path.relative(ROOT, destination),
+			file: destinationRelative,
+			branch: reviewBranch,
 			title: draft.title,
 			description: draft.description,
 			thesis: research.thesis,
@@ -333,12 +336,19 @@ await fs.writeFile(
 );
 
 await fs.writeFile(
-	path.join(ROOT, '.daily-blog', 'pr-body.md'),
-	buildPrBody(draft, research, review, novelty),
+	path.join(ROOT, '.daily-blog', 'review-issue-body.md'),
+	buildReviewIssueBody(
+		draft,
+		research,
+		review,
+		novelty,
+		reviewBranch,
+		destinationRelative,
+	),
 	'utf8',
 );
 
-console.log(`Created ${path.relative(ROOT, destination)}`);
+console.log(`Created ${destinationRelative}`);
 console.log(JSON.stringify(review.metrics));
 
 async function createResponse({ instructions, input, schemaName, schema, webSearch = false }) {
@@ -616,7 +626,7 @@ function canonicalSourceKey(value) {
 	return `${hostname}${pathname}`;
 }
 
-function buildPrBody(draft, research, review, novelty) {
+function buildReviewIssueBody(draft, research, review, novelty, branch, post) {
 	const sourceRows = research.claims
 		.map(
 			(claim) =>
@@ -624,6 +634,8 @@ function buildPrBody(draft, research, review, novelty) {
 		)
 		.join('\n');
 	return [
+		`<!-- padho-daily-blog-review ${JSON.stringify({ branch, post })} -->`,
+		'',
 		'## Daily Padho technical blog draft',
 		'',
 		`**Thesis:** ${research.thesis}`,
@@ -647,9 +659,11 @@ function buildPrBody(draft, research, review, novelty) {
 		'',
 		sourceRows,
 		'',
-		'### Approval',
+		'### Content review',
 		'',
-		'Merging this pull request is the publishing approval.',
+		'Reply `APPROVE` to mark this draft ready for a pull request.',
+		'Reply `SKIP` to discard it, or reply with normal feedback for another revision.',
+		'The final publishing decision is still made by manually merging the pull request.',
 		'No frontend files or deployment configuration are changed.',
 		'',
 	].join('\n');

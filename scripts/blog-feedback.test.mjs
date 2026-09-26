@@ -14,6 +14,8 @@ test('accepts approval only from the configured reviewer', async () => {
 		process: true,
 		action: 'approve',
 		reason: 'Reviewer approved the draft.',
+		branch: 'automation/daily-blog-2026-09-26',
+		post: 'src/content/blog/example.md',
 	});
 
 	const ignored = await classify({ author: 'someone-else', body: 'APPROVE' });
@@ -30,19 +32,34 @@ test('treats a normal email reply as revision feedback', async () => {
 	assert.equal(result.action, 'revise');
 });
 
-test('ignores reviewer comments on unrelated pull requests', async () => {
+test('ignores reviewer comments on unrelated issues', async () => {
 	const result = await classify({
 		author: 'dipti-mathur',
 		body: 'APPROVE',
-		branch: 'feature/unrelated',
+		reviewBody: 'This is an unrelated issue.',
 	});
 	assert.equal(result.process, false);
 });
 
-async function classify({ author, body, branch = 'automation/daily-blog-2026-09-26' }) {
+test('ignores more replies after a draft is approved', async () => {
+	const result = await classify({
+		author: 'dipti-mathur',
+		body: 'Change the opening again.',
+		labels: [{ name: 'daily-blog-review' }, { name: 'daily-blog-approved' }],
+	});
+	assert.equal(result.process, false);
+	assert.equal(result.reason, 'The draft is already approved.');
+});
+
+async function classify({
+	author,
+	body,
+	reviewBody = '<!-- padho-daily-blog-review {"branch":"automation/daily-blog-2026-09-26","post":"src/content/blog/example.md"} -->',
+	labels = [{ name: 'daily-blog-review' }],
+}) {
 	const directory = await fs.mkdtemp(path.join(os.tmpdir(), 'padho-blog-feedback-'));
 	const eventFile = path.join(directory, 'event.json');
-	const pullRequestFile = path.join(directory, 'pr.json');
+	const reviewIssueFile = path.join(directory, 'issue.json');
 
 	await Promise.all([
 		fs.writeFile(
@@ -50,14 +67,10 @@ async function classify({ author, body, branch = 'automation/daily-blog-2026-09-
 			JSON.stringify({ comment: { user: { login: author }, body } }),
 			'utf8',
 		),
-		fs.writeFile(
-			pullRequestFile,
-			JSON.stringify({ headRefName: branch, state: 'OPEN' }),
-			'utf8',
-		),
+		fs.writeFile(reviewIssueFile, JSON.stringify({ body: reviewBody, state: 'OPEN', labels }), 'utf8'),
 	]);
 
-	const run = spawnSync(process.execPath, [script, eventFile, pullRequestFile], {
+	const run = spawnSync(process.execPath, [script, eventFile, reviewIssueFile], {
 		cwd: directory,
 		env: { ...process.env, BLOG_REVIEWER: 'dipti-mathur' },
 		encoding: 'utf8',

@@ -13,7 +13,7 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
+  issues: write
 
 concurrency:
   group: daily-blog-draft
@@ -32,14 +32,21 @@ jobs:
         with:
           node-version: 20
 
+      - name: Ensure review labels exist
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create daily-blog-review --color 1D76DB --description "Padho daily blog awaiting content review" --force
+          gh label create daily-blog-approved --color 0E8A16 --description "Content approved and ready for a pull request" --force
+
       - name: Check for an unreviewed daily draft
         id: pending
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          existing="$(gh pr list --state open --limit 100 --json headRefName --jq '.[] | select(.headRefName | startswith("automation/daily-blog-")) | .headRefName' | head -n 1)"
+          existing="$(gh issue list --state open --label daily-blog-review --limit 1 --json number --jq '.[0].number // empty')"
           if [ -n "$existing" ]; then
-            echo "A daily draft is already awaiting review: $existing"
+            echo "A daily draft is already awaiting review in issue #$existing"
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
             echo "skip=false" >> "$GITHUB_OUTPUT"
@@ -62,7 +69,7 @@ jobs:
           npm ci
           npm run build
 
-      - name: Create review pull request
+      - name: Create review issue
         if: steps.pending.outputs.skip != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
@@ -79,5 +86,5 @@ jobs:
           git commit -m "blog: daily technical draft for $run_date"
           git push --set-upstream origin "$branch"
 
-          pr_url="$(gh pr create --base main --head "$branch" --title "Daily blog: $title" --body-file .daily-blog/pr-body.md)"
-          echo "Draft ready for review: $pr_url" >> "$GITHUB_STEP_SUMMARY"
+          issue_url="$(gh issue create --title "Daily blog review: $title" --body-file .daily-blog/review-issue-body.md --label daily-blog-review)"
+          echo "Draft ready for review: $issue_url" >> "$GITHUB_STEP_SUMMARY"

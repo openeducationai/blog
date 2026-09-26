@@ -5,20 +5,25 @@ publishes directly.
 
 ## Daily flow
 
-1. At 05:45 IST, GitHub Actions checks for an open daily-blog pull request.
+1. At 05:45 IST, GitHub Actions checks for an open daily-blog review issue.
 2. If none exists, the research pass searches the curated 100-source registry.
 3. A separate writing pass produces one focused Markdown article.
 4. The local quality gate checks length, sentence structure, sourcing, and
    banned AI-style language.
-5. Astro must build successfully before a review pull request is opened.
-6. At 09:00 IST, GitHub emails the reviewer the full article in a pull-request
+5. Astro must build successfully before a review branch and GitHub issue are
+   created.
+6. At 09:00 IST, GitHub emails the reviewer the full article in an issue
    comment.
 7. The reviewer can reply to that email with `APPROVE`, `SKIP`, or normal
-   feedback. GitHub adds the reply to the pull request.
-8. `APPROVE` reruns the checks and merges the post into `main`. `SKIP` closes
-   the draft. Normal feedback revises the same draft and emails it again.
+   feedback. GitHub adds the reply to the review issue.
+8. `APPROVE` reruns the checks and marks the exact approved commit as ready for
+   a pull request. `SKIP` closes the review and deletes its branch. Normal
+   feedback revises the same branch and emails the new article again.
+9. The Padho marketing app runs `npm run blog:open-approved-pr`. That command
+   opens a pull request only for the exact approved commit. The reviewer still
+   merges that pull request manually.
 
-If a pull request is still open the next morning, the system does not create a
+If a review issue is still open the next morning, the system does not create a
 second article. The 09:00 GitHub email sends the pending draft again.
 
 The workflow does not modify the frontend repository. It does not restart the
@@ -39,15 +44,33 @@ Repository variables:
 - `OPENAI_MODEL`: defaults to `gpt-6-astra`.
 - `OPENAI_REASONING_EFFORT`: defaults to `high`.
 
-GitHub Actions must be allowed to create and approve pull requests under:
-
-`Settings → Actions → General → Workflow permissions`
-
-Select **Read and write permissions** and enable pull-request creation.
-
 The reviewer must enable GitHub email notifications for participating and
-review-requested pull requests. A reply to a GitHub notification becomes a
-comment on that pull request.
+mentioned issues. A reply to a GitHub notification becomes a comment on that
+issue. These replies go to GitHub's thread address, not to `reach@padho.ai`.
+
+GitHub Actions does not create or merge pull requests. This avoids the
+organization setting that blocks Actions-created pull requests.
+
+## Marketing app integration
+
+Run this command from the blog repository every one to five minutes:
+
+```sh
+npm run blog:open-approved-pr
+```
+
+The command is idempotent. With no approved draft, it exits successfully and
+does nothing. With an approved draft, it verifies all of the following before
+opening a pull request:
+
+- both review and approval labels are present;
+- the approval record names the current branch commit exactly;
+- the branch differs from `main` by one added blog Markdown file only;
+- no pull request already exists for the branch.
+
+The Mac process must have `gh` installed and authenticated as a user who may
+open pull requests in `openeducationai/blog`. It does not need a reusable
+GitHub token stored in repository secrets.
 
 ## Manual checks
 
@@ -70,13 +93,13 @@ manually from the GitHub Actions page.
 
 The first non-empty line controls the review:
 
-- `APPROVE` validates and merges the post.
+- `APPROVE` validates the post and marks its exact commit ready for a PR.
 - `SKIP` closes the post without publishing it.
 - Any other reply is treated as editorial feedback. The article is revised on
   the same branch, checked again, and sent back for another review.
 
-Silence never publishes a post. Only the configured GitHub reviewer can issue
-these commands.
+Silence never creates a PR or publishes a post. Only the configured GitHub
+reviewer can issue these commands. Publishing still requires a manual PR merge.
 
 ## Editorial controls
 
