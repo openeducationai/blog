@@ -7,9 +7,11 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "blog:draft": "node scripts/generate-daily-blog.mjs",
+    "blog:agent:state": "node scripts/blog-agent-state.mjs",
     "blog:check": "node scripts/check-blog-style.mjs",
     "blog:open-approved-pr": "node scripts/open-approved-blog-pr.mjs",
+    "blog:submit-draft": "node scripts/submit-blog-draft.mjs",
+    "blog:submit-revision": "node scripts/submit-blog-revision.mjs",
     "test": "node --test scripts/*.test.mjs"
   },
   "dependencies": {

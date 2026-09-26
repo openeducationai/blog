@@ -8,6 +8,10 @@ permissions:
   contents: write
   issues: write
 
+concurrency:
+  group: daily-blog-feedback-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
 jobs:
   feedback:
     if: github.event.issue.pull_request == null
@@ -16,9 +20,6 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       BLOG_REVIEWER: ${{ vars.BLOG_REVIEWER }}
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-6-astra' }}
-      OPENAI_REASONING_EFFORT: ${{ vars.OPENAI_REASONING_EFFORT || 'high' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -46,7 +47,7 @@ jobs:
           gh issue close "${{ github.event.issue.number }}" --comment "Skipped by @$BLOG_REVIEWER from the review email."
 
       - name: Check out the daily draft
-        if: steps.decision.outputs.process == 'true' && steps.decision.outputs.action != 'skip'
+        if: steps.decision.outputs.process == 'true' && steps.decision.outputs.action == 'approve'
         run: |
           branch="${{ steps.decision.outputs.branch }}"
           git fetch origin "$branch"
@@ -67,28 +68,9 @@ jobs:
           gh issue comment "${{ github.event.issue.number }}" --body-file .daily-blog/approval-comment.md
           gh issue edit "${{ github.event.issue.number }}" --add-label daily-blog-approved
 
-      - name: Revise from email feedback
+      - name: Queue feedback for the marketing Mac agent
         if: steps.decision.outputs.process == 'true' && steps.decision.outputs.action == 'revise'
         run: |
-          npm ci
-          node scripts/revise-blog-from-feedback.mjs "${{ steps.decision.outputs.post }}" .daily-blog/reviewer-feedback.txt
-          node scripts/check-blog-style.mjs "${{ steps.decision.outputs.post }}"
-          npm run build
-
-          git config user.name "padho-blog-bot"
-          git config user.email "blog-bot@padho.ai"
-          git add "${{ steps.decision.outputs.post }}"
-          if git diff --cached --quiet; then
-            echo "The feedback produced no article change."
-            exit 1
-          fi
-          git commit -m "blog: revise daily draft from review feedback"
-          git push origin HEAD:"${{ steps.decision.outputs.branch }}"
-
-      - name: Email the revised draft again
-        if: steps.decision.outputs.process == 'true' && steps.decision.outputs.action == 'revise'
-        run: |
-          number="${{ github.event.issue.number }}"
-          gh issue view "$number" --json number,title,url,body,createdAt > .daily-blog/review-issue.json
-          node scripts/prepare-blog-review.mjs .daily-blog/review-issue.json "${{ steps.decision.outputs.post }}"
-          gh issue comment "$number" --body-file .daily-blog/review-comment.md
+          gh label create daily-blog-revision-requested --color FBCA04 --description "Editorial feedback queued for the marketing agent" --force
+          node scripts/queue-blog-feedback.mjs .daily-blog/decision.json .daily-blog/review-issue.json
+          gh issue edit "${{ github.event.issue.number }}" --body-file .daily-blog/review-issue-body.md --add-label daily-blog-revision-requested

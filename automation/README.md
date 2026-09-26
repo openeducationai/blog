@@ -1,116 +1,115 @@
 # Daily blog automation
 
-This automation prepares one researched technical article each day. It never
-publishes directly.
+The Padho marketing Mac agent researches and writes one technical education
+article at a time. GitHub handles email review and approval. Nothing publishes
+without a manual pull request merge.
 
 ## Daily flow
 
-1. At 05:45 IST, GitHub Actions checks for an open daily-blog review issue.
-2. If none exists, the research pass searches the curated 100-source registry.
-3. A separate writing pass produces one focused Markdown article.
-4. The local quality gate checks length, sentence structure, sourcing, and
-   banned AI-style language.
-5. Astro must build successfully before a review branch and GitHub issue are
-   created.
-6. At 09:00 IST, GitHub emails the reviewer the full article in an issue
-   comment.
-7. The reviewer can reply to that email with `APPROVE`, `SKIP`, or normal
-   feedback. GitHub adds the reply to the review issue.
-8. `APPROVE` reruns the checks and marks the exact approved commit as ready for
-   a pull request. `SKIP` closes the review and deletes its branch. Normal
-   feedback revises the same branch and emails the new article again.
-9. The Padho marketing app runs `npm run blog:open-approved-pr`. That command
-   opens a pull request only for the exact approved commit. The reviewer still
-   merges that pull request manually.
+1. At 05:45 IST, the marketing app syncs its dedicated automation checkout to
+   `origin/main`, then runs `npm run blog:agent:state` there.
+2. When the result is `generate`, its Codex specialist researches and writes a
+   draft. It then calls `npm run blog:submit-draft -- /absolute/path/draft.md`.
+3. When the result is `revise`, the state includes the current article and the
+   reviewer's queued feedback. The specialist revises that draft and calls
+   `npm run blog:submit-revision -- ISSUE_NUMBER /absolute/path/revised.md`.
+4. At 09:00 IST, GitHub emails the reviewer the full current article through a
+   GitHub issue comment.
+5. The reviewer replies `APPROVE`, `SKIP`, or writes normal feedback. Normal
+   feedback is queued for the next 05:45 marketing-agent run.
+6. At 16:05 IST, the marketing app runs `npm run blog:open-approved-pr`.
+7. The reviewer checks and manually merges the pull request.
 
-If a review issue is still open the next morning, the system does not create a
-second article. The 09:00 GitHub email sends the pending draft again.
+Only one daily blog may be in review or awaiting merge. Silence never opens a
+pull request. The automation does not modify the frontend repository, restart
+the blog service, merge a pull request, or publish directly.
 
-The workflow does not modify the frontend repository. It does not restart the
-blog deployment. Deployment behavior stays unchanged while the initial rollout
-is observed.
+## Authentication
 
-## Required GitHub configuration
+The writing specialist uses the marketing app's existing Codex sign-in. There
+is no `OPENAI_API_KEY` in this repository and no AI call in GitHub Actions.
 
-Add this repository secret to `openeducationai/blog`:
+The Mac needs `gh` installed and authenticated as a user who can create
+branches, issues, and pull requests in `openeducationai/blog`. No reusable
+GitHub token is stored in repository secrets.
 
-- `OPENAI_API_KEY`: project API key used for research and writing.
+The app must use its own clean blog checkout under app data. It must not switch,
+pull, clean, or write into a developer's working checkout. Draft and revision
+files also belong in app scratch space, outside every repository.
 
-Repository variables:
+Set one repository variable:
 
-- `BLOG_REVIEWER`: the GitHub username allowed to approve, skip, or revise a
-  daily blog. Replies from every other account are ignored.
-
-- `OPENAI_MODEL`: defaults to `gpt-6-astra`.
-- `OPENAI_REASONING_EFFORT`: defaults to `high`.
+- `BLOG_REVIEWER`: the GitHub username allowed to approve, skip, or request a
+  revision. Replies from other accounts are ignored.
 
 The reviewer must enable GitHub email notifications for participating and
-mentioned issues. A reply to a GitHub notification becomes a comment on that
-issue. These replies go to GitHub's thread address, not to `reach@padho.ai`.
+mentioned issues. Email replies go to GitHub's unique thread address, not to
+`reach@padho.ai`.
 
-GitHub Actions does not create or merge pull requests. This avoids the
-organization setting that blocks Actions-created pull requests.
+## Safety boundaries
 
-## Marketing app integration
+The submission commands use a fresh temporary clone. They do not write into
+the developer's current checkout. Before they push, they require:
 
-Run this command from the blog repository once each day at 16:05 Asia/Kolkata:
+- a single new Markdown post under `src/content/blog/`;
+- a valid Padho article filename and frontmatter;
+- the local style and sourcing checks to pass;
+- a successful Astro production build;
+- no other review issue or daily-blog pull request to be open.
 
-```sh
-npm run blog:open-approved-pr
-```
+A revision can change only the existing draft. It must keep the publication
+date and cannot add source links that were absent from the reviewed version.
 
-The command is idempotent. With no approved draft, it exits successfully and
-does nothing. With an approved draft, it verifies all of the following before
-opening a pull request:
-
-- both review and approval labels are present;
-- the approval record names the current branch commit exactly;
-- the branch differs from `main` by one added blog Markdown file only;
-- no pull request already exists for the branch.
-
-The Mac process must have `gh` installed and authenticated as a user who may
-open pull requests in `openeducationai/blog`. It does not need a reusable
-GitHub token stored in repository secrets.
-
-If approval arrives after 16:05, run the same command manually or let the next
-day's scheduled check pick it up.
-
-## Manual checks
-
-Generate a draft for a chosen topic:
-
-```sh
-BLOG_TOPIC="How next-item correctness changes AI tutor evaluation" npm run blog:draft
-```
-
-Check a post:
-
-```sh
-npm run blog:check -- src/content/blog/example.md
-```
-
-Both scheduled workflows also support `workflow_dispatch`, so they can be run
-manually from the GitHub Actions page.
+Approval records the exact branch commit. The PR command refuses to continue
+if that commit changes or if the branch contains anything except one new blog
+post.
 
 ## Email replies
 
 The first non-empty line controls the review:
 
-- `APPROVE` validates the post and marks its exact commit ready for a PR.
-- `SKIP` closes the post without publishing it.
-- Any other reply is treated as editorial feedback. The article is revised on
-  the same branch, checked again, and sent back for another review.
+- `APPROVE` validates the post and records its exact commit for the 16:05 PR
+  run.
+- `SKIP` closes the review and deletes its branch.
+- Any other text is stored as revision feedback for the next 05:45 run.
 
-Silence never creates a PR or publishes a post. Only the configured GitHub
-reviewer can issue these commands. Publishing still requires a manual PR merge.
+Approval is rejected while revision feedback is waiting. If feedback arrives
+after 05:45, it is handled the following morning and the new version is mailed
+at 09:00.
+
+## Manual commands
+
+Inspect the current state:
+
+```sh
+npm run blog:agent:state
+```
+
+Validate a draft without submitting it:
+
+```sh
+npm run blog:check -- /absolute/path/draft.md
+```
+
+Submit a finished draft or revision:
+
+```sh
+npm run blog:submit-draft -- /absolute/path/draft.md
+npm run blog:submit-revision -- 123 /absolute/path/revised.md
+```
+
+Check once for an approved draft and safely open its PR:
+
+```sh
+npm run blog:open-approved-pr
+```
+
+The email workflow supports `workflow_dispatch`, so the 09:00 message can also
+be sent manually from the GitHub Actions page.
 
 ## Editorial controls
 
-`EDITORIAL_GUIDE.md` is injected into every writing and revision pass. The
-local checker then enforces the measurable rules. A model cannot open a pull
-request by ignoring those rules.
-
-`sources.json` is a discovery allowlist. It includes product engineering,
-learning science, academic venues, standards, core AI research, and Indian
-education infrastructure. It is inspiration and evidence, not a corpus to
-copy. Articles must link to their sources and form an original argument.
+`EDITORIAL_GUIDE.md` is the writing contract. `sources.json` contains 100
+starting points for discovery. They are inspiration and evidence, not text to
+copy. The specialist must still open the original sources, check each claim,
+compare the idea with existing Padho posts, and write a new argument.
