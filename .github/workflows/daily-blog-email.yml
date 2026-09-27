@@ -1,4 +1,4 @@
-name: Email daily blog review
+name: Email daily blog review through SES
 
 on:
   schedule:
@@ -8,7 +8,11 @@ on:
 
 permissions:
   contents: read
-  issues: write
+  issues: read
+
+concurrency:
+  group: daily-blog-email
+  cancel-in-progress: false
 
 jobs:
   email:
@@ -16,7 +20,12 @@ jobs:
     timeout-minutes: 5
     env:
       GH_TOKEN: ${{ github.token }}
-      BLOG_REVIEWER: ${{ vars.BLOG_REVIEWER }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.BLOG_SES_AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.BLOG_SES_AWS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: ${{ vars.BLOG_SES_REGION }}
+      AWS_EC2_METADATA_DISABLED: 'true'
+      BLOG_REVIEW_EMAIL: ${{ vars.BLOG_REVIEW_EMAIL }}
+      SES_SENDER_EMAIL: ${{ vars.BLOG_SES_SENDER_EMAIL }}
     steps:
       - uses: actions/checkout@v4
 
@@ -24,12 +33,14 @@ jobs:
         with:
           node-version: 20
 
-      - name: Check reviewer configuration
+      - name: Check SES configuration
         run: |
-          if [ -z "$BLOG_REVIEWER" ]; then
-            echo "Set the BLOG_REVIEWER repository variable to the GitHub username that approves posts."
-            exit 1
-          fi
+          for name in AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_DEFAULT_REGION BLOG_REVIEW_EMAIL SES_SENDER_EMAIL; do
+            if [ -z "${!name}" ]; then
+              echo "Missing required blog email setting: $name"
+              exit 1
+            fi
+          done
 
       - name: Find the latest unreviewed daily draft
         id: review
@@ -53,13 +64,16 @@ jobs:
           gh api "repos/$GITHUB_REPOSITORY/contents/$post?ref=$branch" > .daily-blog/post-api.json
           node -e "const fs=require('fs'); const x=require('./.daily-blog/post-api.json'); fs.writeFileSync('.daily-blog/review-post.md', Buffer.from(x.content.replace(/\\n/g,''), 'base64'))"
 
-      - name: Prepare the review message
+      - name: Prepare the SES message
         if: steps.review.outputs.found == 'true'
-        run: node scripts/prepare-blog-review.mjs .daily-blog/review-issue.json .daily-blog/review-post.md
+        run: node scripts/prepare-blog-email.mjs .daily-blog/review-issue.json .daily-blog/review-post.md
 
-      - name: Send the 09:00 GitHub email
+      - name: Send the blog through Amazon SES
         if: steps.review.outputs.found == 'true'
         run: |
-          number="$(node -e "const x=require('./.daily-blog/review-issue.json'); console.log(x.number)")"
-          gh issue comment "$number" --body-file .daily-blog/review-comment.md
-          echo "GitHub notified @$BLOG_REVIEWER. An email reply will become an issue comment." >> "$GITHUB_STEP_SUMMARY"
+          aws ses send-email \
+            --region "$AWS_DEFAULT_REGION" \
+            --cli-input-json file://.daily-blog/ses-email.json \
+            > .daily-blog/ses-result.json
+          message_id="$(node -e "const x=require('./.daily-blog/ses-result.json'); console.log(x.MessageId)")"
+          echo "Amazon SES accepted the daily blog email. Message ID: $message_id" >> "$GITHUB_STEP_SUMMARY"
