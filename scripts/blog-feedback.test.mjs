@@ -23,7 +23,7 @@ test('accepts approval only from the configured reviewer', async () => {
 	assert.equal(ignored.action, 'ignore');
 });
 
-test('treats a normal email reply as revision feedback', async () => {
+test('treats a normal review comment as revision feedback', async () => {
 	const result = await classify({
 		author: 'dipti-mathur',
 		body: 'The opening is still too technical. Use a simpler example.',

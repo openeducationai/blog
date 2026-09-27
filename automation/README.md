@@ -1,8 +1,8 @@
 # Daily blog automation
 
 The Padho marketing Mac agent researches and writes one technical education
-article at a time. GitHub handles email review and approval. Nothing publishes
-without a manual pull request merge.
+article at a time. Amazon SES delivers the review email, and GitHub records the
+review decision. Nothing publishes without a manual pull request merge.
 
 ## Daily flow
 
@@ -13,10 +13,11 @@ without a manual pull request merge.
 3. When the result is `revise`, the state includes the current article and the
    reviewer's queued feedback. The specialist revises that draft and calls
    `npm run blog:submit-revision -- ISSUE_NUMBER /absolute/path/revised.md`.
-4. At 09:00 IST, GitHub emails the reviewer the full current article through a
-   GitHub issue comment.
-5. The reviewer replies `APPROVE`, `SKIP`, or writes normal feedback. Normal
-   feedback is queued for the next 05:45 marketing-agent run.
+4. At 09:00 IST, GitHub Actions sends the full current article directly to the
+   reviewer through Amazon SES.
+5. The email links to its GitHub review issue. The reviewer comments `APPROVE`,
+   `SKIP`, or normal feedback there. Normal feedback is queued for the next
+   05:45 marketing-agent run. Replies to the SES message are not monitored.
 6. At 16:05 IST, the marketing app runs `npm run blog:open-approved-pr`.
 7. The reviewer checks and manually merges the pull request.
 
@@ -37,13 +38,18 @@ The app must use its own clean blog checkout under app data. It must not switch,
 pull, clean, or write into a developer's working checkout. Draft and revision
 files also belong in app scratch space, outside every repository.
 
-Set one repository variable:
+Set these repository variables:
 
 - `BLOG_REVIEWER`: the GitHub username allowed to approve, skip, or request a
   revision. Replies from other accounts are ignored.
+- `BLOG_REVIEW_EMAIL`: the address that receives the complete daily draft.
+- `BLOG_SES_REGION`: the AWS region containing the verified SES identity.
+- `BLOG_SES_SENDER_EMAIL`: the verified sender shown on the review email.
 
-The reviewer must enable GitHub email notifications for participating and
-mentioned issues. Email replies go to GitHub's unique thread address, not to
+The 09:00 workflow also needs the `BLOG_SES_AWS_ACCESS_KEY_ID` and
+`BLOG_SES_AWS_SECRET_ACCESS_KEY` repository secrets. Use a dedicated IAM user
+that can send through SES only. SES delivery does not depend on GitHub email
+notification settings, and the workflow does not send replies to
 `reach@padho.ai`.
 
 ## Safety boundaries
@@ -64,9 +70,10 @@ Approval records the exact branch commit. The PR command refuses to continue
 if that commit changes or if the branch contains anything except one new blog
 post.
 
-## Email replies
+## Review decisions
 
-The first non-empty line controls the review:
+Open the GitHub issue linked in the SES email. The first non-empty line of the
+review comment controls the workflow:
 
 - `APPROVE` validates the post and records its exact commit for the 16:05 PR
   run.

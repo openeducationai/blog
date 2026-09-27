@@ -63,7 +63,7 @@ The state JSON contains `issueNumber`, `articleMarkdown`, and `feedback`.
 npm run blog:submit-revision -- ISSUE_NUMBER /absolute/path/to/scratch/revised.md
 ```
 
-The revised article will be sent by the 09:00 GitHub email job. Do not send a
+The revised article will be sent by the 09:00 Amazon SES job. Do not send a
 second email from the marketing app.
 
 ### `wait_for_review`, `wait_for_pr`, or `wait_for_merge`
