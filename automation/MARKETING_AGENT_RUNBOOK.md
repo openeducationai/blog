@@ -46,6 +46,15 @@ Prefer short sentences and common words. Explain one mechanism with one fresh
 example. Include one real limitation. Remove jargon that the argument does not
 need. Do not reuse another post's example, opening, section pattern, or ending.
 
+Before submission, run a plain-language audit:
+
+1. Explain the whole article in one sentence without a technical term.
+2. List every acronym, formula, model name, and specialist term in the draft.
+3. Remove each item that is not essential to the reader's understanding.
+4. Reject the draft if a curious parent or teacher would need to look up more
+   than three terms.
+5. Reject any title or opening that sounds cleverer than it needs to be.
+
 ### `revise`
 
 The state JSON contains `issueNumber`, `articleMarkdown`, and `feedback`.
@@ -57,7 +66,9 @@ The state JSON contains `issueNumber`, `articleMarkdown`, and `feedback`.
    the reviewed draft. If the request needs new research, leave the claim out
    and keep the article honest.
 5. Keep the rest of the editorial guide in force.
-6. Submit the complete revised Markdown file with:
+6. Run the same plain-language audit required for a new draft. Reviewer
+   feedback about clarity overrides the original wording and structure.
+7. Submit the complete revised Markdown file with:
 
 ```sh
 npm run blog:submit-revision -- ISSUE_NUMBER /absolute/path/to/scratch/revised.md
