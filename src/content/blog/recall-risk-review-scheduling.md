@@ -1,86 +1,83 @@
 ---
-title: "Schedule reviews from recall risk, not a fixed calendar"
-description: "A spaced-review system can estimate each memory's strength, choose a recall target, and schedule practice before that memory is likely to fail."
+title: "Bring a practice question back when a learner starts to forget"
+description: "A review schedule should follow each learner's answers, so a question returns when it is becoming hard to remember."
 pubDate: 2026-09-27
 ---
 
-A learning app should schedule each review from recall risk. A fixed calendar cannot tell which memory is fading now.
+A practice question should return when a learner is starting to forget it. It should not follow the same fixed calendar for everyone.
 
-This changes the job of a practice system. It stops asking, “Which chapter comes next?” Instead, it asks, “Which answer is this learner close to forgetting?” The system estimates that risk after every attempt. It then brings the item back when recall is useful but still possible.
+Imagine a student named Asha. She is learning how water moves through a plant. Her practice question asks, “Which plant tissue carries water upward from the roots?” The answer is “xylem.”
 
-The result is a small prediction loop. It can reduce easy repetition while protecting fragile memories.
+We will follow that one question through several reviews. The example is made up, but it shows how a useful practice system can work.
 
-## Fixed gaps ignore the learner
+## Start with an answer, not a timetable
 
-Imagine that every new item returns after one day, then three days, then seven. This schedule is simple. It also treats every learner and every item alike.
+On Monday, Asha studies a labelled plant diagram. The app then hides the label and asks the question. Asha types “xylem” without a hint.
 
-One student may remember a familiar term for weeks. Another may lose an unfamiliar term by tomorrow. Repeating both on the same dates wastes time on one and arrives late for the other.
+Many practice systems would now use a fixed plan. Every new question might return after one day, three days, and seven days. That plan is easy to run. Yet it ignores what happened when Asha answered.
 
-Retrieval itself matters here. In [two experiments with prose passages](https://pubmed.ncbi.nlm.nih.gov/16507066/), restudying helped more on a test after five minutes. Retrieval practice produced better retention after two days and one week. A review should therefore require an answer before revealing it. Simply showing the page again gives the scheduler weaker evidence and the learner less retrieval practice.
+Asha may know “xylem” because she learned it last year. Another student may have met the word for the first time. Asking both students on the same days gives one unnecessary work. It may reach the other too late.
 
-Timing is the second problem. A useful review happens after some forgetting has occurred. Too early, and the answer needs little effort. Too late, and the learner repeatedly fails. The right gap depends on the current memory.
+The app should first let Asha try to answer. Showing the labelled diagram again would be easier, but it would reveal less. A [study using prose passages](https://pubmed.ncbi.nlm.nih.gov/16507066/) found that rereading helped more on a test five minutes later. Trying to remember produced better results after two days and one week.
 
-## Turn each answer into a memory estimate
+That does not mean every question must feel hard. It means the attempt matters. Asha’s answer gives the app useful evidence and gives Asha useful practice.
 
-A practical scheduler can keep one memory state for each learner-item pair. The state needs a last review time and an estimate of memory strength. It may also include past successes, failures, and item difficulty.
+## Let each answer change the next date
 
-One clear version uses a memory’s half-life. Half-life means the time until estimated recall falls to 50 percent. The [half-life regression model](https://aclanthology.org/P16-1174/) represents recall probability as:
+The app keeps a short record for this one question. It notes when Asha last saw it, how long she waited, and whether she answered correctly. A [public set of learning records from Duolingo](https://github.com/duolingo/halflife-regression) contains the same basic clues: time passed, earlier practice, earlier correct answers, and the latest result.
 
-`p = 2^(-d/h)`
+On Thursday, the question returns. The label is still hidden. Asha pauses, pictures the diagram, and types “xylem.”
 
-Here, `d` is time since review. The value `h` is the estimated half-life. If ten days have passed for a memory with a ten-day half-life, predicted recall is 50 percent.
+That correct answer came after a gap. It tells the app more than Monday’s answer did. The question can now wait longer before returning.
 
-The product then chooses a target recall probability, `r`. Solving the same equation gives the next gap:
+The app does not need to know exactly what is happening inside Asha’s mind. It only needs to make a reasonable next choice from her earlier answers. A [Duolingo research paper](https://aclanthology.org/P16-1174/) describes this kind of loop. The system uses past practice to choose a later review, then learns from the next result.
 
-`d = -h × log2(r)`
+On the following review, Asha answers correctly again. The next gap grows once more. Questions she finds easy stop taking up so much of her study time.
 
-This target is a policy choice. A higher target causes earlier reviews and more work. Anki’s [official FSRS guidance](https://docs.ankiweb.net/deck-options.html#fsrs) uses 90 percent as its default. It warns that workload rises quickly as the target approaches 100 percent.
+## Bring the question back sooner after a mistake
 
-After the learner answers, the model updates the memory state. A correct answer usually supports a longer next gap. A failure supports a shorter one. Duolingo’s [released learning-trace format](https://github.com/duolingo/halflife-regression) shows the minimum useful evidence. It records elapsed time, earlier exposures, earlier correct answers, and the new outcome.
+Two weeks later, the same question returns with a new plant diagram. This time Asha types “phloem.”
 
-Newer schedulers use different curves and state names. FSRS tracks stability, difficulty, and retrievability. Its [technical specification](https://github.com/open-spaced-repetition/awesome-fsrs/wiki/The-Algorithm) still follows the same loop. Estimate recall, observe an answer, update the state, then calculate another interval.
+The app shows the correct answer and explains the mix-up. Xylem carries water upward from the roots.
 
-## Follow one biology memory
+The wrong answer tells the app that its last wait was too long for this question. “Xylem” should return sooner. Asha’s other well-remembered questions do not need to move with it.
 
-Suppose a learner studies this prompt: “Which plant tissue carries water upward from the roots?” The expected answer is “xylem.”
+When the question returns a few days later, Asha answers correctly. The gap can grow again, but carefully. Her schedule now comes from her own pattern of answers.
 
-Assume the scheduler gives this new memory a ten-day half-life. This number is illustrative, not a measured biological constant. The product chooses an 80 percent recall target. The formula schedules the next attempt after about 3.2 days.
+This is the whole mechanism. Ask without revealing the answer. Record the result and the wait. After a correct answer, try a longer wait. After a mistake, use a shorter one.
 
-On day three, the app hides the label on a plant diagram. The learner types “xylem” without a hint. That success arrives with useful context. The system knows the item, elapsed time, prompt form, and outcome.
+There is no single perfect pattern of gaps. A [four-week vocabulary study](https://pubmed.ncbi.nlm.nih.gov/24744260/) compared gaps that grew with gaps that stayed equal. Both groups had similar results on a test eight weeks later. The growing gaps kept answers more available during practice.
 
-Suppose the update raises the estimated half-life to 30 days. The same 80 percent target now produces a gap of about 9.7 days. A later success can stretch the interval again.
+The right choice therefore depends on the goal. Asha may need steady access for weekly lessons. Another learner may be preparing for one distant exam.
 
-A failure takes the other path. The app shows corrective feedback and records that the earlier estimate was too optimistic. The item returns sooner. Other well-remembered items do not need to follow it.
+## Notice when an answer gives the wrong signal
 
-This is the key advantage over a fixed sequence. The calendar emerges from evidence about one memory. It is not assigned to the whole class in advance.
+The app never sees learning directly. It sees Asha’s answer. That answer can mislead it.
 
-## Where the prediction breaks
+Asha might guess correctly. A vague question might make her look wrong even when she understands the idea. A hint could turn a hard question into an easy one. If the app records all these answers in the same way, its future dates will drift.
 
-The model never sees memory directly. It sees answers. A lucky guess can look like knowledge. A vague prompt can make knowledge look absent. Hints and inconsistent self-ratings also corrupt the outcome.
+The learner’s buttons can also cause trouble. [Anki’s official guide](https://docs.ankiweb.net/deck-options.html#fsrs) warns that marking a forgotten card as “Hard” instead of “Again” can produce unreasonable gaps. The guide also says that personal settings need several hundred reviews. A new learner gives the app very little history to use.
 
-This problem is visible in deployed tools. Anki warns that marking a forgotten card “Hard” instead of “Again” can create unreasonable intervals. Its manual also says personalized parameters need several hundred reviews. New learners therefore face a cold start with little individual data.
+There is a deeper limit. Remembering the word “xylem” does not prove that Asha understands water movement in plants. She might still struggle to explain a wilted plant or read a new diagram.
 
-More features do not always solve the problem. Duolingo’s half-life study added item-specific language features. Some overfit and made certain words appear to decay too quickly. Learners complained, and a simpler variant performed better in a later production experiment.
+The review schedule can keep a fact available. It cannot replace questions that ask the learner to use that fact in a new situation.
 
-There is also no single best interval pattern. A [four-week vocabulary experiment](https://pubmed.ncbi.nlm.nih.gov/24744260/) compared expanding and equal gaps. Both produced similar recall on an eight-week test. Expanding gaps kept average recall higher during training. The best schedule therefore depends on whether the goal is steady access, a distant test, or limited study time.
+## Check whether the schedule helps
 
-Finally, recalling one label is not the same as understanding a system. A learner may retrieve “xylem” yet fail to explain water movement in a new setting. Memory scheduling should handle durable access to facts and steps. Transfer questions must still test whether those pieces work together.
+Builders should begin with a simple record, not a complicated system. For each question, save the time, the answer, whether a hint appeared, and the result. Use that history to choose the next date.
 
-## Measure predictions before adding complexity
+Then check the choices. When the app expects about four out of five answers to be correct, are about four out of five actually correct? Check easy and hard question types separately. Check short and long waits separately.
 
-Builders can start with a small event log and a simple forgetting curve. The first useful metric is calibration. Among attempts predicted at 80 percent recall, roughly 80 of every 100 should succeed.
+Also count the learner’s practice minutes. A schedule is not useful if it keeps knowledge steady by filling every day with reviews.
 
-Check calibration by item type and by time gap. Also track review minutes at each target. These measurements reveal whether the scheduler saves work or only moves it around.
+Finally, give Asha a delayed question with a changed diagram. That test shows whether she can use “xylem” beyond the exact card she practised.
 
-Then test learning outside the repeated prompt. Use a delayed question with a new diagram or a changed context. That separates durable access from memorizing the card.
-
-The useful design principle is precise: treat review timing as a prediction problem. Estimate which memory is becoming fragile, ask for retrieval, and learn from the answer. The schedule can then spend a learner’s limited time where one more attempt has the most value.
+The useful rule is simple. Let a question return when this learner is starting to forget it. Each answer should help choose the next date.
 
 ## Sources
 
-- [A Trainable Spaced Repetition Model for Language Learning, ACL Anthology](https://aclanthology.org/P16-1174/)
-- [Duolingo half-life regression code and learning-trace data](https://github.com/duolingo/halflife-regression)
-- [Free Spaced Repetition Scheduler algorithm specification](https://github.com/open-spaced-repetition/awesome-fsrs/wiki/The-Algorithm)
-- [Anki manual: FSRS and desired retention](https://docs.ankiweb.net/deck-options.html#fsrs)
 - [Test-enhanced learning: taking memory tests improves long-term retention](https://pubmed.ncbi.nlm.nih.gov/16507066/)
+- [Duolingo research on choosing review times from past practice](https://aclanthology.org/P16-1174/)
+- [Duolingo public learning records](https://github.com/duolingo/halflife-regression)
+- [Anki guide to choosing review gaps](https://docs.ankiweb.net/deck-options.html#fsrs)
 - [Retrieval practice over the long term: expanding or equal intervals](https://pubmed.ncbi.nlm.nih.gov/24744260/)
