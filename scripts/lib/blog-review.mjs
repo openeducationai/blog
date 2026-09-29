@@ -31,6 +31,17 @@ export function hasLabel(reviewItem, name) {
 	);
 }
 
+export function isSafeApprovedBlogComparison(comparison, post) {
+	const changedFiles = comparison?.files ?? [];
+	return (
+		['ahead', 'diverged'].includes(comparison?.status) &&
+		Number(comparison?.ahead_by) > 0 &&
+		changedFiles.length === 1 &&
+		changedFiles[0].filename === post &&
+		changedFiles[0].status === 'added'
+	);
+}
+
 const feedbackMarkerPattern = /<!--\s*padho-daily-blog-feedback\s+(\{[^\r\n]+\})\s*-->/;
 
 export function parseFeedbackCommentIds(reviewItem) {
