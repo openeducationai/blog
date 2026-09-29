@@ -1,6 +1,11 @@
 import { spawnSync } from 'node:child_process';
 import process from 'node:process';
-import { hasLabel, parseApprovalMetadata, parseReviewMetadata } from './lib/blog-review.mjs';
+import {
+	hasLabel,
+	isSafeApprovedBlogComparison,
+	parseApprovalMetadata,
+	parseReviewMetadata,
+} from './lib/blog-review.mjs';
 
 const REPOSITORY = 'openeducationai/blog';
 const GH = process.env.GH_BIN || 'gh';
@@ -73,13 +78,7 @@ for (const candidate of candidates) {
 	const comparison = JSON.parse(
 		runGh(['api', `repos/${REPOSITORY}/compare/main...${approval.sha}`]),
 	);
-	const changedFiles = comparison.files ?? [];
-	if (
-		comparison.status !== 'ahead' ||
-		changedFiles.length !== 1 ||
-		changedFiles[0].filename !== review.post ||
-		changedFiles[0].status !== 'added'
-	) {
+	if (!isSafeApprovedBlogComparison(comparison, review.post)) {
 		throw new Error(
 			`Issue #${issue.number} is not a one-file blog addition from main; refusing to open a PR.`,
 		);

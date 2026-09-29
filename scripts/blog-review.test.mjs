@@ -2,11 +2,39 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {
 	clearFeedbackComments,
+	isSafeApprovedBlogComparison,
 	parseApprovalMetadata,
 	parseFeedbackCommentIds,
 	parseReviewMetadata,
 	queueFeedbackComment,
 } from './lib/blog-review.mjs';
+
+test('allows an approved one-file draft even when main advanced during review', () => {
+	const post = 'src/content/blog/a-clear-title.md';
+	const file = { filename: post, status: 'added' };
+	assert.equal(
+		isSafeApprovedBlogComparison({ status: 'ahead', ahead_by: 1, files: [file] }, post),
+		true,
+	);
+	assert.equal(
+		isSafeApprovedBlogComparison(
+			{ status: 'diverged', ahead_by: 2, behind_by: 3, files: [file] },
+			post,
+		),
+		true,
+	);
+	assert.equal(
+		isSafeApprovedBlogComparison({ status: 'behind', ahead_by: 0, files: [] }, post),
+		false,
+	);
+	assert.equal(
+		isSafeApprovedBlogComparison(
+			{ status: 'diverged', ahead_by: 2, files: [file, { filename: 'astro.config.mjs', status: 'modified' }] },
+			post,
+		),
+		false,
+	);
+});
 
 test('reads a constrained daily blog branch and post path', () => {
 	const metadata = parseReviewMetadata({
