@@ -16,7 +16,7 @@ review decision. Nothing publishes without a manual pull request merge.
 4. At 09:00 IST, GitHub Actions sends the full current article directly to the
    reviewer through Amazon SES.
 5. The email links to its GitHub review issue. The reviewer comments `APPROVE`,
-   `SKIP`, or normal feedback there. Normal feedback is queued for the next
+   `APPROVED`, `OK`, `SKIP`, or normal feedback there. Normal feedback is queued for the next
    05:45 marketing-agent run. Replies to the SES message are not monitored.
 6. At 16:05 IST, the marketing app runs `npm run blog:open-approved-pr`.
 7. The reviewer checks and manually merges the pull request.
@@ -73,10 +73,10 @@ post.
 ## Review decisions
 
 Open the GitHub issue linked in the SES email. The first non-empty line of the
-review comment controls the workflow:
+review comment controls the workflow. Commands are case-insensitive:
 
-- `APPROVE` validates the post and records its exact commit for the 16:05 PR
-  run.
+- `APPROVE`, `APPROVED`, or `OK` validates the post and records its exact commit
+  for the 16:05 PR run. The common typo `APPPROVE` is accepted too.
 - `SKIP` closes the review and deletes its branch.
 - Any other text is stored as revision feedback for the next 05:45 run.
 

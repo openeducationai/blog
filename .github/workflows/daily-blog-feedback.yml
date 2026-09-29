@@ -53,6 +53,15 @@ jobs:
           git fetch origin "$branch"
           git checkout -B "$branch" "origin/$branch"
 
+      - name: Reopen a review closed with its approval comment
+        if: steps.decision.outputs.process == 'true' && steps.decision.outputs.action == 'approve'
+        run: |
+          number="${{ github.event.issue.number }}"
+          state="$(gh issue view "$number" --json state --jq .state)"
+          if [ "$state" = "CLOSED" ]; then
+            gh issue reopen "$number"
+          fi
+
       - name: Install and validate an approved draft
         if: steps.decision.outputs.process == 'true' && steps.decision.outputs.action == 'approve'
         run: |

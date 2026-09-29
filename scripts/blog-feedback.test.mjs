@@ -23,6 +23,31 @@ test('accepts approval only from the configured reviewer', async () => {
 	assert.equal(ignored.action, 'ignore');
 });
 
+test('accepts natural approval words and a common typo', async () => {
+	for (const body of ['approve', 'approved', 'OK', 'okay.', 'appprove']) {
+		const result = await classify({ author: 'dipti-mathur', body });
+		assert.equal(result.process, true, body);
+		assert.equal(result.action, 'approve', body);
+	}
+});
+
+test('accepts approval when GitHub closes the issue with the comment', async () => {
+	const result = await classify({
+		author: 'dipti-mathur',
+		body: 'approved',
+		state: 'CLOSED',
+	});
+	assert.equal(result.process, true);
+	assert.equal(result.action, 'approve');
+
+	const feedback = await classify({
+		author: 'dipti-mathur',
+		body: 'Please simplify the ending.',
+		state: 'CLOSED',
+	});
+	assert.equal(feedback.process, false);
+});
+
 test('treats a normal review comment as revision feedback', async () => {
 	const result = await classify({
 		author: 'dipti-mathur',
@@ -67,6 +92,7 @@ async function classify({
 	body,
 	reviewBody = '<!-- padho-daily-blog-review {"branch":"automation/daily-blog-2026-09-26","post":"src/content/blog/example.md"} -->',
 	labels = [{ name: 'daily-blog-review' }],
+	state = 'OPEN',
 }) {
 	const directory = await fs.mkdtemp(path.join(os.tmpdir(), 'padho-blog-feedback-'));
 	const eventFile = path.join(directory, 'event.json');
@@ -78,7 +104,7 @@ async function classify({
 			JSON.stringify({ comment: { id: 12345, user: { login: author }, body } }),
 			'utf8',
 		),
-		fs.writeFile(reviewIssueFile, JSON.stringify({ body: reviewBody, state: 'OPEN', labels }), 'utf8'),
+		fs.writeFile(reviewIssueFile, JSON.stringify({ body: reviewBody, state, labels }), 'utf8'),
 	]);
 
 	const run = spawnSync(process.execPath, [script, eventFile, reviewIssueFile], {
