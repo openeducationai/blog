@@ -21,7 +21,7 @@ export function buildBlogReviewEmail({
 	const prefix = revisionSummary ? '[Revised Padho blog]' : '[Padho blog review]';
 	const reviewInstructions = [
 		'Review this draft on GitHub:',
-		'- Comment APPROVE to mark this exact draft ready for a pull request.',
+		'- Comment APPROVE, APPROVED, or OK to mark this exact draft ready for a pull request.',
 		'- Comment SKIP to discard it.',
 		'- Or write normal feedback for the next revision.',
 		'',
@@ -96,7 +96,7 @@ function renderEmailHtml({ title, article, reviewUrl, revisionSummary }) {
         </td></tr>
         <tr><td style="padding:24px 34px 30px;background:#f8f6f1;border-top:1px solid #eee8dd">
           <h2 style="margin:0 0 12px;font-size:20px;color:#172033">Review the draft</h2>
-          <p style="margin:0 0 18px;line-height:1.55;color:#42506a">On GitHub, comment <strong>APPROVE</strong>, <strong>SKIP</strong>, or write normal revision feedback. Replies to this SES email are not monitored.</p>
+          <p style="margin:0 0 18px;line-height:1.55;color:#42506a">On GitHub, comment <strong>APPROVE</strong>, <strong>APPROVED</strong>, or <strong>OK</strong> to accept the draft. Comment <strong>SKIP</strong> to discard it, or write normal revision feedback. Replies to this SES email are not monitored.</p>
           <a href="${escapeAttribute(reviewUrl)}" style="display:inline-block;background:#b34d2e;color:#ffffff;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:8px">Open the review</a>
           <p style="margin:18px 0 0;font-size:13px;line-height:1.5;color:#68748a">Nothing is published from silence. A pull request still requires your review and manual merge.</p>
         </td></tr>

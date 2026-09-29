@@ -20,6 +20,8 @@ const author = event.comment?.user?.login ?? '';
 const state = reviewIssue.state ?? '';
 const body = String(event.comment?.body ?? '').trim();
 const firstLine = body.split(/\r?\n/, 1)[0].trim().toUpperCase();
+const command = firstLine.replace(/[.!]+$/u, '').trim();
+const isApproval = /^(?:AP{2,3}ROVED?|OK(?:AY)?)$/.test(command);
 const commentId = Number(event.comment?.id);
 
 let decision = { process: false, action: 'ignore', reason: '', branch: '', post: '' };
@@ -27,15 +29,13 @@ let metadata;
 
 if (author.toLowerCase() !== reviewer.toLowerCase()) {
 	decision.reason = `Comment author ${author || '(unknown)'} is not the configured reviewer.`;
-} else if (state !== 'OPEN') {
-	decision.reason = 'The review issue is not open.';
 } else if (hasLabel(reviewIssue, 'daily-blog-approved')) {
 	decision.reason = 'The draft is already approved.';
 } else if (!body) {
 	decision.reason = 'The reply is empty.';
-} else if (firstLine === 'APPROVE' && hasLabel(reviewIssue, 'daily-blog-revision-requested')) {
+} else if (isApproval && hasLabel(reviewIssue, 'daily-blog-revision-requested')) {
 	decision.reason = 'A requested revision must be completed before this draft can be approved.';
-} else if (firstLine === 'APPROVE') {
+} else if (isApproval) {
 	try {
 		metadata = parseReviewMetadata(reviewIssue);
 		decision = {
@@ -47,6 +47,8 @@ if (author.toLowerCase() !== reviewer.toLowerCase()) {
 	} catch (error) {
 		decision.reason = error.message;
 	}
+} else if (state !== 'OPEN') {
+	decision.reason = 'The review issue is not open.';
 } else if (firstLine === 'SKIP') {
 	try {
 		metadata = parseReviewMetadata(reviewIssue);
