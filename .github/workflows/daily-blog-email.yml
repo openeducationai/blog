@@ -47,13 +47,27 @@ jobs:
         run: |
           mkdir -p .daily-blog
           gh issue list --state open --label daily-blog-review --limit 100 --json number,title,url,body,createdAt,labels \
-            --jq 'map(select((.labels | map(.name) | index("daily-blog-approved") | not) and (.labels | map(.name) | index("daily-blog-revision-requested") | not))) | sort_by(.createdAt) | reverse | .[0]' > .daily-blog/review-issue.json
-          if [ "$(tr -d '[:space:]' < .daily-blog/review-issue.json)" = "null" ]; then
+            --jq 'map(select((.labels | map(.name) | index("daily-blog-approved") | not) and (.labels | map(.name) | index("daily-blog-revision-requested") | not))) | sort_by(.createdAt) | reverse | .[0] // {"number": 0}' > .daily-blog/review-issue.json
+          if ! node -e "const x=require('./.daily-blog/review-issue.json'); process.exit(Number(x.number) > 0 ? 0 : 1)"; then
             echo "No daily blog draft is awaiting review."
             echo "found=false" >> "$GITHUB_OUTPUT"
           else
             echo "found=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Prepare a missing-draft alert
+        if: steps.review.outputs.found == 'false'
+        run: node scripts/prepare-missing-blog-email.mjs
+
+      - name: Send the missing-draft alert through Amazon SES
+        if: steps.review.outputs.found == 'false'
+        run: |
+          aws ses send-email \
+            --region "$AWS_DEFAULT_REGION" \
+            --cli-input-json file://.daily-blog/ses-missing-email.json \
+            > .daily-blog/ses-missing-result.json
+          message_id="$(node -e "const x=require('./.daily-blog/ses-missing-result.json'); console.log(x.MessageId)")"
+          echo "Amazon SES accepted the missing-blog alert. Message ID: $message_id" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Load the article from its review branch
         if: steps.review.outputs.found == 'true'

@@ -59,6 +59,46 @@ export function buildBlogReviewEmail({
 	};
 }
 
+export function buildMissingBlogEmail({ reviewerEmail, senderEmail, date }) {
+	assertEmailSetting('BLOG_REVIEW_EMAIL', reviewerEmail);
+	assertEmailSetting('SES_SENDER_EMAIL', senderEmail);
+	if (!/^\d{4}-\d{2}-\d{2}$/.test(String(date ?? ''))) {
+		throw new Error('The missing-blog alert requires an ISO calendar date.');
+	}
+
+	const subject = `[Padho blog alert] No draft was created for ${date}`;
+	const text = [
+		`No Padho blog draft was ready for the 09:00 review email on ${date}.`,
+		'',
+		'The SES email service is working. The 05:45 writing job did not create a review draft.',
+		'No older article was resent.',
+		'',
+	].join('\n');
+	const html = `<!doctype html>
+<html lang="en">
+<body style="margin:0;background:#f4f1ea;color:#172033;font-family:Arial,sans-serif">
+  <div style="max-width:640px;margin:28px auto;padding:28px 32px;background:#fff;border:1px solid #ded8cc;border-radius:14px">
+    <div style="font-size:12px;letter-spacing:.14em;color:#b34d2e;font-weight:700">PADHO · BLOG ALERT</div>
+    <h1 style="font-size:28px;line-height:1.2">No draft was created for ${escapeHtml(date)}</h1>
+    <p style="font-size:16px;line-height:1.6">The SES email service is working. The 05:45 writing job did not create a review draft.</p>
+    <p style="font-size:16px;line-height:1.6">No older article was resent.</p>
+  </div>
+</body>
+</html>`;
+
+	return {
+		Source: senderEmail,
+		Destination: { ToAddresses: [reviewerEmail] },
+		Message: {
+			Subject: { Data: subject, Charset: 'UTF-8' },
+			Body: {
+				Text: { Data: text, Charset: 'UTF-8' },
+				Html: { Data: html, Charset: 'UTF-8' },
+			},
+		},
+	};
+}
+
 export function stripFrontmatter(markdown) {
 	return String(markdown ?? '').replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '');
 }

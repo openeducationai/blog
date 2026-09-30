@@ -1,6 +1,11 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { buildBlogReviewEmail, readTitle, stripFrontmatter } from './lib/blog-email.mjs';
+import {
+	buildBlogReviewEmail,
+	buildMissingBlogEmail,
+	readTitle,
+	stripFrontmatter,
+} from './lib/blog-email.mjs';
 
 const issue = {
 	number: 3,
@@ -51,6 +56,18 @@ test('marks a revised blog clearly', () => {
 	});
 	assert.match(email.Message.Subject.Data, /^\[Revised Padho blog]/);
 	assert.match(email.Message.Body.Text.Data, /What changed: Made the example shorter/);
+});
+
+test('builds a clear alert when the writing job creates no draft', () => {
+	const email = buildMissingBlogEmail({
+		reviewerEmail: 'dipti@padho.ai',
+		senderEmail: 'Padho Blog <reach@padho.ai>',
+		date: '2026-09-30',
+	});
+	assert.equal(email.Source, 'Padho Blog <reach@padho.ai>');
+	assert.match(email.Message.Subject.Data, /No draft was created for 2026-09-30/);
+	assert.match(email.Message.Body.Text.Data, /05:45 writing job did not create/);
+	assert.match(email.Message.Body.Text.Data, /No older article was resent/);
 });
 
 test('rejects headers and review URLs that are not trusted', () => {
