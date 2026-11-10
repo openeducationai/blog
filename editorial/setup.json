@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-10",
+  "status": "verified",
+  "sourceCommit": "ed6c20d057334ba0954e21c590fd445026f0479e",
+  "verifiedAt": "2026-11-10T20:07:25+05:30",
+  "schedule": {
+    "label": "ai.padho.blog-pcm-trial",
+    "loaded": true,
+    "startDate": "2026-11-11",
+    "endDate": "2026-11-17",
+    "time": "07:00",
+    "timezone": "Asia/Kolkata",
+    "requires": "Mac awake, online, signed in; usable Codex, Git, GCP and Figma access"
+  },
+  "checks": {
+    "automatedTests": 35,
+    "build": true,
+    "typecheck": true,
+    "editorial": true,
+    "githubQuality": "https://github.com/openeducationai/blog/actions/runs/42835729428",
+    "liveSearch": {
+      "mode": "live",
+      "pages": 9,
+      "articles": 3,
+      "articleUrls": [
+        "https://padho.ai/blog/if-forces-are-equal-why-do-things-move/",
+        "https://padho.ai/blog/where-does-sugar-go-when-it-dissolves/",
+        "https://padho.ai/blog/why-does-dividing-by-a-half-make-the-answer-bigger/"
+      ],
+      "images": 3,
+      "internalLinks": 10,
+      "metadataMatchesVisibleContent": true,
+      "crawlerProbes": [
+        {
+          "crawler": "Googlebot",
+          "url": "https://padho.ai/blog/if-forces-are-equal-why-do-things-move/",
+          "status": 200,
+          "sameContent": true
+        },
+        {
+          "crawler": "Googlebot",
+          "url": "https://padho.ai/blog/where-does-sugar-go-when-it-dissolves/",
+          "status": 200,
+          "sameContent": true
+        },
+        {
+          "crawler": "Googlebot",
+          "url": "https://padho.ai/blog/why-does-dividing-by-a-half-make-the-answer-bigger/",
+          "status": 200,
+          "sameContent": true
+        },
+        {
+          "crawler": "bingbot",
+          "url": "https://padho.ai/blog/if-forces-are-equal-why-do-things-move/",
+          "status": 200,
+          "sameContent": true
+        },
+        {
+          "crawler": "bingbot",
+          "url": "https://padho.ai/blog/where-does-sugar-go-when-it-dissolves/",
+          "status": 200,
+          "sameContent": true
+        },
+        {
+          "crawler": "bingbot",
+          "url": "https://padho.ai/blog/why-does-dividing-by-a-half-make-the-answer-bigger/",
+          "status": 200,
+          "sameContent": true
+        },
+        {
+          "crawler": "OAI-SearchBot",
+          "url": "https://padho.ai/blog/if-forces-are-equal-why-do-things-move/",
+          "status": 200,
+          "sameContent": true
+        },
+        {
+          "crawler": "OAI-SearchBot",
+          "url": "https://padho.ai/blog/where-does-sugar-go-when-it-dissolves/",
+          "status": 200,
+          "sameContent": true
+        },
+        {
+          "crawler": "OAI-SearchBot",
+          "url": "https://padho.ai/blog/why-does-dividing-by-a-half-make-the-answer-bigger/",
+          "status": 200,
+          "sameContent": true
+        },
+        {
+          "crawler": "PerplexityBot",
+          "url": "https://padho.ai/blog/if-forces-are-equal-why-do-things-move/",
+          "status": 200,
+          "sameContent": true
+        },
+        {
+          "crawler": "PerplexityBot",
+          "url": "https://padho.ai/blog/where-does-sugar-go-when-it-dissolves/",
+          "status": 200,
+          "sameContent": true
+        },
+        {
+          "crawler": "PerplexityBot",
+          "url": "https://padho.ai/blog/why-does-dividing-by-a-half-make-the-answer-bigger/",
+          "status": 200,
+          "sameContent": true
+        }
+      ],
+      "crawlerEvidenceLimit": "Public user-agent probes and robots rules; not proof of a visit from official crawler IPs or of indexing."
+    },
+    "liveArticles": [
+      {
+        "url": "https://padho.ai/blog/if-forces-are-equal-why-do-things-move/",
+        "matchesBuild": true,
+        "htmlSha256": "6300d755a3e351a2b6fee5c95bff27d8750df955ed809bf66cfe1a87c665833a"
+      },
+      {
+        "url": "https://padho.ai/blog/where-does-sugar-go-when-it-dissolves/",
+        "matchesBuild": true,
+        "htmlSha256": "7caaa5f478faad2d5f1245a8bc54ece7fbae210dc62a8dfb6c2dadfcd44af80b"
+      },
+      {
+        "url": "https://padho.ai/blog/why-does-dividing-by-a-half-make-the-answer-bigger/",
+        "matchesBuild": true,
+        "htmlSha256": "04923163cf4d0a94b3b05c7f0d62e131536484f28c5465b7188c087bcdbf30c3"
+      }
+    ]
+  },
+  "figma": {
+    "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+    "pageId": "0:1",
+    "verifiedFrames": 6
+  }
+}

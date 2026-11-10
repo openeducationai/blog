@@ -14,7 +14,7 @@
       "url": "https://padho.ai/blog/if-forces-are-equal-why-do-things-move/",
       "publishedAt": "2026-11-10T09:00:00+05:30",
       "mode": "baseline",
-      "status": "staged",
+      "status": "published",
       "pyqs": [],
       "recordedAt": "2026-11-10T19:44:51+05:30",
       "revisions": [
@@ -24,7 +24,10 @@
           "reason": "Owner requested simpler, more fluid teaching language and explicit setup."
         }
       ],
-      "previousSourceCommit": "49bd6bbf50cd551578b2a6f36d84200981c92a8e"
+      "previousSourceCommit": "49bd6bbf50cd551578b2a6f36d84200981c92a8e",
+      "sourceCommit": "ed6c20d057334ba0954e21c590fd445026f0479e",
+      "liveVerifiedAt": "2026-11-10T20:07:25+05:30",
+      "liveHtmlSha256": "6300d755a3e351a2b6fee5c95bff27d8750df955ed809bf66cfe1a87c665833a"
     },
     {
       "slug": "where-does-sugar-go-when-it-dissolves",
@@ -39,7 +42,7 @@
       "url": "https://padho.ai/blog/where-does-sugar-go-when-it-dissolves/",
       "publishedAt": "2026-11-10T17:45:00+05:30",
       "mode": "baseline",
-      "status": "staged",
+      "status": "published",
       "pyqs": [],
       "recordedAt": "2026-11-10T19:44:51+05:30",
       "revisions": [
@@ -49,7 +52,10 @@
           "reason": "Owner requested simpler, more fluid teaching language and explicit setup."
         }
       ],
-      "previousSourceCommit": "49bd6bbf50cd551578b2a6f36d84200981c92a8e"
+      "previousSourceCommit": "49bd6bbf50cd551578b2a6f36d84200981c92a8e",
+      "sourceCommit": "ed6c20d057334ba0954e21c590fd445026f0479e",
+      "liveVerifiedAt": "2026-11-10T20:07:25+05:30",
+      "liveHtmlSha256": "7caaa5f478faad2d5f1245a8bc54ece7fbae210dc62a8dfb6c2dadfcd44af80b"
     },
     {
       "slug": "why-does-dividing-by-a-half-make-the-answer-bigger",
@@ -64,7 +70,7 @@
       "url": "https://padho.ai/blog/why-does-dividing-by-a-half-make-the-answer-bigger/",
       "publishedAt": "2026-11-10T17:46:00+05:30",
       "mode": "baseline",
-      "status": "staged",
+      "status": "published",
       "pyqs": [],
       "recordedAt": "2026-11-10T19:44:51+05:30",
       "revisions": [
@@ -74,7 +80,10 @@
           "reason": "Owner requested simpler, more fluid teaching language and explicit setup."
         }
       ],
-      "previousSourceCommit": "49bd6bbf50cd551578b2a6f36d84200981c92a8e"
+      "previousSourceCommit": "49bd6bbf50cd551578b2a6f36d84200981c92a8e",
+      "sourceCommit": "ed6c20d057334ba0954e21c590fd445026f0479e",
+      "liveVerifiedAt": "2026-11-10T20:07:25+05:30",
+      "liveHtmlSha256": "04923163cf4d0a94b3b05c7f0d62e131536484f28c5465b7188c087bcdbf30c3"
     },
     {
       "slug": "recall-risk-review-scheduling",
