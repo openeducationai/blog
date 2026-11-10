@@ -1,9 +1,8 @@
 name: Email daily blog review through SES
 
 on:
-  schedule:
-    # 09:00 Asia/Kolkata (UTC+05:30).
-    - cron: '30 3 * * *'
+  # The 2026-11 PCM trial replaces automatic SES review emails.
+  # Retain the old workflow only for an explicitly requested manual run.
   workflow_dispatch:
 
 permissions:

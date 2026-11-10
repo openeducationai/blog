@@ -1,5 +1,6 @@
 import { spawnSync } from 'node:child_process';
 import process from 'node:process';
+import { readFileSync } from 'node:fs';
 import {
 	hasLabel,
 	isSafeApprovedBlogComparison,
@@ -8,6 +9,11 @@ import {
 } from './lib/blog-review.mjs';
 
 const REPOSITORY = 'openeducationai/blog';
+const editorialConfig = JSON.parse(readFileSync(new URL('../editorial/config.json', import.meta.url), 'utf8'));
+if (editorialConfig.legacyWorkflowEnabled === false) {
+  console.log('Legacy PR automation is disabled. The PCM trial publishes through the existing main checkout.');
+  process.exit(0);
+}
 const GH = process.env.GH_BIN || 'gh';
 
 const candidates = JSON.parse(

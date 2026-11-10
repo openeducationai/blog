@@ -1,5 +1,12 @@
 # Daily blog automation
 
+The workflow below is retained as historical documentation. As of 10 November
+2026, the active student publishing trial is described in
+[editorial/README.md](../editorial/README.md) and the
+[publishing skill](../skills/padho-blog-publish/SKILL.md).
+`editorial/config.json` disables legacy generation and PR opening, and the SES
+email workflow is manual-only. Do not re-enable them without an owner request.
+
 The Padho marketing Mac agent researches and writes one technical education
 article at a time. Amazon SES delivers the review email, and GitHub records the
 review decision. Nothing publishes without a manual pull request merge.

@@ -19,6 +19,7 @@ pnpm-debug.log*
 
 # daily blog automation scratch files
 .daily-blog/
+__pycache__/
 
 # macOS-specific files
 .DS_Store

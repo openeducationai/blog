@@ -1,4 +1,5 @@
 import process from 'node:process';
+import { readFileSync } from 'node:fs';
 import {
 	BLOG_REPOSITORY,
 	ghJson,
@@ -11,6 +12,13 @@ import {
 	parseFeedbackCommentIds,
 	parseReviewMetadata,
 } from './lib/blog-review.mjs';
+
+const editorialConfig = JSON.parse(readFileSync(new URL('../editorial/config.json', import.meta.url), 'utf8'));
+if (editorialConfig.legacyWorkflowEnabled === false) {
+  process.stdout.write(`${JSON.stringify({ action: 'wait_for_review', repository: BLOG_REPOSITORY,
+    reason: 'Legacy generation is disabled. Use the authorised PCM trial skill and editorial records.' }, null, 2)}\n`);
+  process.exit(0);
+}
 
 const reviews = listReviewIssues();
 if (reviews.length > 1) {

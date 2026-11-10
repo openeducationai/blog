@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "articles": [
+    {
+      "slug": "if-forces-are-equal-why-do-things-move",
+      "title": "If forces are equal, why do things move?",
+      "category": "physics",
+      "chapter": "laws-of-motion",
+      "conceptKey": "physics/laws-of-motion/third-law-different-bodies",
+      "learningObjective": "Equal and opposite interaction forces act on different bodies.",
+      "example": "Taking one step; foot pushes ground backwards.",
+      "sourcePath": "src/content/blog/if-forces-are-equal-why-do-things-move.mdx",
+      "sourceSha256": "d799a0abca5f318ce7faee3f66eed866e72fa25f62c6c810772b2e401aac6a6a",
+      "url": "https://padho.ai/blog/if-forces-are-equal-why-do-things-move/",
+      "publishedAt": "2026-11-10T09:00:00+05:30",
+      "mode": "baseline",
+      "status": "staged",
+      "pyqs": [],
+      "recordedAt": "2026-11-10T19:44:51+05:30",
+      "revisions": [
+        {
+          "previousSourceSha256": "8f6fc188cb2536ea6ae82c2953c5e307cf973f71b6087c5f8495995ba44f5f48",
+          "updatedAt": "2026-11-10T19:44:51+05:30",
+          "reason": "Owner requested simpler, more fluid teaching language and explicit setup."
+        }
+      ],
+      "previousSourceCommit": "49bd6bbf50cd551578b2a6f36d84200981c92a8e"
+    },
+    {
+      "slug": "where-does-sugar-go-when-it-dissolves",
+      "title": "Where does sugar go when it dissolves?",
+      "category": "chemistry",
+      "chapter": "solutions",
+      "conceptKey": "chemistry/solutions/dissolving-sugar-particle-model",
+      "learningObjective": "Sugar molecules remain present and spread through water when sugar dissolves.",
+      "example": "A glass of water containing twenty model sugar molecules.",
+      "sourcePath": "src/content/blog/where-does-sugar-go-when-it-dissolves.mdx",
+      "sourceSha256": "341786644e8a53869d0a94f5151fd2e7ec1de1b04e30c40d7eef515f24d5638f",
+      "url": "https://padho.ai/blog/where-does-sugar-go-when-it-dissolves/",
+      "publishedAt": "2026-11-10T17:45:00+05:30",
+      "mode": "baseline",
+      "status": "staged",
+      "pyqs": [],
+      "recordedAt": "2026-11-10T19:44:51+05:30",
+      "revisions": [
+        {
+          "previousSourceSha256": "63ec6eeebd590c078db8b957733c6c80b171c4ce3564b12a970470d2407025c4",
+          "updatedAt": "2026-11-10T19:44:51+05:30",
+          "reason": "Owner requested simpler, more fluid teaching language and explicit setup."
+        }
+      ],
+      "previousSourceCommit": "49bd6bbf50cd551578b2a6f36d84200981c92a8e"
+    },
+    {
+      "slug": "why-does-dividing-by-a-half-make-the-answer-bigger",
+      "title": "Why does dividing by a half make the answer bigger?",
+      "category": "maths",
+      "chapter": "arithmetic-foundations",
+      "conceptKey": "maths/arithmetic-foundations/division-as-counting-groups",
+      "learningObjective": "Division counts how many pieces of a chosen size fit into the whole.",
+      "example": "A two-metre ribbon cut into half-metre pieces.",
+      "sourcePath": "src/content/blog/why-does-dividing-by-a-half-make-the-answer-bigger.mdx",
+      "sourceSha256": "4fa9a6aa370ef36af8b1cebdbd19849aac02ccb107f2aa169ae5ac71026f6721",
+      "url": "https://padho.ai/blog/why-does-dividing-by-a-half-make-the-answer-bigger/",
+      "publishedAt": "2026-11-10T17:46:00+05:30",
+      "mode": "baseline",
+      "status": "staged",
+      "pyqs": [],
+      "recordedAt": "2026-11-10T19:44:51+05:30",
+      "revisions": [
+        {
+          "previousSourceSha256": "993a36a9084ef217df04ea44ca710a869d10107ea2780560515d8ce156c49d14",
+          "updatedAt": "2026-11-10T19:44:51+05:30",
+          "reason": "Owner requested simpler, more fluid teaching language and explicit setup."
+        }
+      ],
+      "previousSourceCommit": "49bd6bbf50cd551578b2a6f36d84200981c92a8e"
+    },
+    {
+      "slug": "recall-risk-review-scheduling",
+      "title": "Bring a practice question back when a learner starts to forget",
+      "category": "general",
+      "chapter": "learning-science",
+      "conceptKey": "general/learning-science/recall-risk-review-scheduling",
+      "learningObjective": "Use recall risk to decide when to repeat a practice question.",
+      "example": "Review scheduling for a learner",
+      "sourcePath": "archive/blog/recall-risk-review-scheduling.md",
+      "sourceSha256": "d59350f62e0f57ed71946ea17b4f0d06e7d366ec00bf9e6d39f1611cb1846928",
+      "mode": "archive",
+      "status": "archived",
+      "pyqs": [],
+      "recordedAt": "2026-11-10T19:44:51+05:30"
+    }
+  ]
+}

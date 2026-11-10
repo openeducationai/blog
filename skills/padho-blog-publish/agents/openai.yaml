@@ -1,4 +1,4 @@
 interface:
   display_name: "Padho Blog Publisher"
-  short_description: "Publish Padho articles with search discovery checks"
-  default_prompt: "Use $padho-blog-publish to prepare, verify, publish and push my Padho blog article."
+  short_description: "Research and publish Padho blogs with lasting history"
+  default_prompt: "Use $padho-blog-publish to run today's authorised PCM trial, checking history, verified PYQs, Figma and live publication."

@@ -12,6 +12,7 @@ const dryRun = process.argv.includes('--dry-run');
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.xml': 'application/xml', '.svg': 'image/svg+xml', '.woff2': 'font/woff2', '.ico': 'image/x-icon', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp' };
 
 // Reject a build with missing or inconsistent article search metadata before any upload.
+execFileSync('node', [path.join(root, 'scripts/blog-editorial.mjs'), 'check'], { cwd: root, stdio: 'inherit' });
 execFileSync('python3', [path.join(root, 'scripts/check-search.py')], { cwd: root, stdio: 'inherit' });
 
 async function walk(dir, relative = '') {

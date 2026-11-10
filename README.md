@@ -44,6 +44,16 @@ The root `robots.txt` source is `../fe/marketing-site/robots.txt`; it advertises
 
 The reusable skill is [Padho Blog Publisher](skills/padho-blog-publish/SKILL.md). Invoke it as `$padho-blog-publish`; it covers writing, existing design conventions, search checks, scoped deployment and committing/pushing approved blog changes on `main`.
 
+The [seven-day PCM trial](editorial/README.md) starts each morning at 07:00
+Asia/Kolkata on 11–17 November 2026. Versioned editorial history prevents
+repeated learning objectives; researched briefs retain the evidence behind
+topic selection and PYQs. The dedicated
+[Blogs Figma file](https://www.figma.com/design/GsBNGG7jIMvsPyhP7w0zXK/Blogs)
+holds the rolling seven-day review copy. Website articles and history are
+permanent. `npm run check:editorial` runs before every publication. The local
+Mac scheduler invokes the signed-in Codex CLI and stops agent execution after
+the trial; it requires an awake, online Mac and usable credentials.
+
 ## Hosting
 
 `padho.ai` already serves marketing paths from `gs://padho-ai-marketing`. Publish this repo's static output under `blog/`; the main React app is not involved. The bucket's existing `index.html` website suffix serves nested category pages. An exact `blog` object also serves the requested URL without redirecting visitors to `index.html`.
@@ -58,7 +68,7 @@ The publisher builds first, uploads assets before HTML, checks object generation
 
 The marketing repo's legacy deploy script must exclude `^blog(/.*)?$` from its root mirror. Do not use a root bucket mirror to publish this blog.
 
-The existing `cloudbuild.yaml` still builds the legacy container image; that is not an apex deployment. Use the command above for the static site. Automatic publishing can be wired separately once the desired trigger and service account permissions are verified.
+The existing `cloudbuild.yaml` still builds the legacy container image; that is not an apex deployment. Use the command above for the static site. The PCM trial invokes this same scoped publisher after its content, editorial and search checks.
 
 ## Legacy URL cutover
 

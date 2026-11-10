@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+  "pages": [
+    {
+      "pageId": "0:1",
+      "name": "2026-11-10",
+      "date": "2026-11-10",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "if-forces-are-equal-why-do-things-move",
+          "desktopFrameId": "3:2",
+          "phoneFrameId": "14:2"
+        },
+        {
+          "slug": "where-does-sugar-go-when-it-dissolves",
+          "desktopFrameId": "5:2",
+          "phoneFrameId": "15:2"
+        },
+        {
+          "slug": "why-does-dividing-by-a-half-make-the-answer-bigger",
+          "desktopFrameId": "12:2",
+          "phoneFrameId": "16:2"
+        }
+      ],
+      "verification": {
+        "desktopWidth": 1440,
+        "phoneWidth": 390,
+        "editableText": true,
+        "nativeFigures": true,
+        "screenshotsReviewed": 6,
+        "inlineTermsRepaired": true,
+        "developmentToolbarRemoved": true,
+        "comments": "No supported comments read performed during setup; no existing dated page expired."
+      }
+    }
+  ],
+  "removedPages": []
+}

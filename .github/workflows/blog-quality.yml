@@ -1,13 +1,11 @@
 name: Blog quality
 
 on:
+  push:
+    branches: [main]
+    paths: ['src/**', 'scripts/**', 'editorial/**', 'skills/**', 'package*.json', '.github/workflows/blog-quality.yml']
   pull_request:
-    paths:
-      - 'src/content/blog/**'
-      - 'src/content.config.ts'
-      - 'scripts/**'
-      - 'automation/**'
-      - '.github/workflows/blog-quality.yml'
+    paths: ['src/**', 'scripts/**', 'editorial/**', 'skills/**', 'package*.json', '.github/workflows/blog-quality.yml']
 
 permissions:
   contents: read
@@ -17,21 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-
       - run: npm ci
-
-      - name: Check changed blog posts
-        run: |
-          mapfile -t posts < <(git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- 'src/content/blog/*.md' 'src/content/blog/*.mdx')
-          if [ "${#posts[@]}" -gt 0 ]; then
-            node scripts/check-blog-style.mjs "${posts[@]}"
-          fi
-
+      - run: npm run check:editorial
+      - run: npm test
+      - run: npm run test:daily
       - run: npm run build
+      - run: npm run check:search
