@@ -1,0 +1,8 @@
+---
+interface Props { id: string; }
+const { id } = Astro.props;
+---
+<aside class="reading-key-idea" aria-labelledby={id}>
+  <p class="reading-key-idea-label" id={id}>Key idea</p>
+  <p><slot /></p>
+</aside>

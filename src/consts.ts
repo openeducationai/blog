@@ -1,2 +1,2 @@
-export const SITE_TITLE = 'PadhoAI Blog';
-export const SITE_DESCRIPTION = 'Insights on AI-powered education, adaptive learning, and the future of personalized teaching.';
+export const SITE_TITLE = 'Blog · Padho';
+export const SITE_DESCRIPTION = 'Physics, chemistry, maths, engineering and updates from Padho.';

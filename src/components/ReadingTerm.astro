@@ -1,0 +1,5 @@
+---
+interface Props { term: string; definition: string; }
+const { term, definition } = Astro.props;
+---
+<button type="button" class="reading-term" data-reading-term={term} data-definition={definition} title={definition} aria-label={`${term}: definition`} aria-expanded="false"><slot /></button>

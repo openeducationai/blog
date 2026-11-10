@@ -6,7 +6,12 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "typecheck": "tsc --noEmit",
+    "check:search": "python3 scripts/check-search.py",
+    "check:search:live": "python3 scripts/check-search.py --live",
+    "deploy:plan": "node scripts/publish.mjs --dry-run",
+    "deploy": "npm run build && node scripts/publish.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",

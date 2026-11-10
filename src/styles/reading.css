@@ -1,0 +1,124 @@
+/* DS Approved Padho/Reading styles, copied from Padho — Books on 2026-11-10. */
+:root {
+  --font-reading: 'Literata', Georgia, serif;
+  --reading-body-size: 17px;
+  --reading-body-line-height: 28px;
+  --reading-lede-size: 19px;
+  --reading-lede-line-height: 30px;
+  --reading-h1-size: 28px;
+  --reading-h1-line-height: 36px;
+  --reading-h2-size: 21px;
+  --reading-h2-line-height: 28px;
+  --reading-paragraph-gap: 22px;
+}
+.article-page { padding-block: calc(var(--spacing) * 10) calc(var(--spacing) * 16); }
+.reading { max-width: var(--container-reading); margin: 0 auto; font-family: var(--font-reading); font-optical-sizing: auto; }
+.reading-header { display: grid; gap: var(--reading-paragraph-gap); margin-bottom: calc(var(--spacing) * 8); }
+.reading h1 { font-size: var(--reading-h1-size); line-height: var(--reading-h1-line-height); font-weight: 600; letter-spacing: -0.005em; }
+.reading h2 { font-size: var(--reading-h2-size); line-height: var(--reading-h2-line-height); font-weight: 600; letter-spacing: -0.002em; }
+.reading-lede { font-size: var(--reading-lede-size); line-height: var(--reading-lede-line-height); font-weight: 400; }
+.reading-meta { font-family: var(--font-sans); font-size: var(--text-body-sm); line-height: var(--text-body-sm--line-height); color: var(--color-text-muted); }
+.reading-meta span { margin-inline: var(--spacing); }
+.reading-meta a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.reading-image, .prose img { max-width: 100%; height: auto; border-radius: var(--radius-card); }
+.prose { font-size: var(--reading-body-size); line-height: var(--reading-body-line-height); font-weight: 400; overflow-wrap: break-word; }
+.prose > * { margin-block: 0 var(--reading-paragraph-gap); }
+.prose figure { margin-inline: 0; }
+.reading-lede, .prose p { text-align: justify; text-justify: inter-word; hyphens: auto; }
+.prose strong { font-weight: 600; }
+.prose a { color: var(--color-link); text-decoration: underline; text-underline-offset: 3px; }
+.prose figcaption { font: 400 14px / 21px var(--font-sans); color: var(--color-text-muted); text-align: justify; hyphens: auto; }
+.prose table { font-size: 16px; line-height: 24px; width: 100%; border-collapse: collapse; }
+.prose th, .prose td { padding: calc(var(--spacing) * 3); border-bottom: var(--stroke-default) solid var(--color-border); text-align: left; }
+.prose th { font-weight: 600; }
+.prose pre { overflow: auto; padding: calc(var(--spacing) * 4); border-radius: var(--radius-control); }
+@media (min-width: 768px) {
+  :root {
+    --reading-body-size: 18px;
+    --reading-body-line-height: 30px;
+    --reading-lede-size: 21px;
+    --reading-lede-line-height: 34px;
+    --reading-h1-size: 34px;
+    --reading-h1-line-height: 42px;
+    --reading-h2-size: 23px;
+    --reading-h2-line-height: 31px;
+  }
+}
+
+.reading-check { padding: calc(var(--spacing) * 4); border: var(--stroke-default) solid var(--color-border); border-radius: var(--radius-control); background: var(--color-surface); }
+.reading-check summary { cursor: pointer; min-height: var(--spacing-target); display: list-item; padding-block: var(--spacing-inline-gap); font-family: var(--font-sans); font-size: var(--text-body); line-height: var(--text-body--line-height); }
+.reading-check p { margin-top: var(--reading-paragraph-gap); margin-bottom: 0; }
+.reading-check summary:focus-visible { outline: var(--stroke-focus) solid var(--color-ring); outline-offset: var(--focus-offset); }
+
+/* Reading treatments from Padho - 11 - Physics, Book / Colours and Book styles. */
+:root {
+  --reading-idea-bg: #e6f4ec;
+  --reading-idea-ink: #15803d;
+  --reading-term: #be185d;
+  --reading-book-ink: #2f2d38;
+  --reading-book-rule: #e9e3d9;
+  --reading-definition-size: 16px;
+  --reading-definition-line-height: 24px;
+}
+.reading-key-idea {
+  display: grid;
+  gap: calc(var(--spacing) * 2);
+  padding: calc(var(--spacing) * 5) calc(var(--spacing) * 6) var(--reading-paragraph-gap);
+  background: var(--reading-idea-bg);
+  color: var(--reading-book-ink);
+  border-radius: var(--radius-card);
+}
+.reading-key-idea p { margin: 0; }
+.reading-key-idea .reading-key-idea-label {
+  color: var(--reading-idea-ink);
+  font: 600 var(--text-caption) / var(--text-caption--line-height) var(--font-sans);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-align: left;
+}
+.reading-term {
+  display: inline;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--reading-term);
+  font: inherit;
+  font-weight: 600;
+  letter-spacing: inherit;
+  text-decoration: underline dotted;
+  text-underline-offset: .2em;
+  cursor: pointer;
+}
+.reading-term:focus-visible { outline: var(--stroke-focus) solid var(--color-ring); outline-offset: var(--focus-offset); }
+.reading-definition {
+  color: var(--reading-book-ink);
+  background: var(--color-surface);
+  border: var(--stroke-default) solid var(--reading-book-rule);
+  border-radius: var(--radius-card);
+  font: 400 var(--reading-definition-size) / var(--reading-definition-line-height) var(--font-reading);
+  box-shadow: var(--shadow-overlay);
+}
+.reading-definition p { margin: 0; }
+.reading-definition [data-definition-body] { text-align: justify; hyphens: auto; }
+.reading-definition .reading-definition-title { margin: 0 0 calc(var(--spacing) * 2); font: 600 18px / 30px var(--font-reading); color: var(--reading-term); }
+.reading-definition-popover { position: fixed; inset: auto; width: 320px; max-width: calc(100vw - 32px); padding: 18px; margin: 0; }
+.reading-definition-sheet {
+  position: fixed;
+  inset: auto 0 0;
+  width: 100%;
+  max-width: 480px;
+  max-height: 80dvh;
+  padding: calc(var(--spacing) * 6) calc(var(--spacing) * 4) max(calc(var(--spacing) * 6), env(safe-area-inset-bottom));
+  margin: 0 auto;
+  border-radius: var(--radius-sheet) var(--radius-sheet) 0 0;
+  font-size: var(--reading-body-size);
+  line-height: var(--reading-body-line-height);
+}
+.reading-definition-header { display: flex; align-items: center; justify-content: space-between; gap: calc(var(--spacing) * 4); margin-bottom: calc(var(--spacing) * 3); }
+.reading-definition-header .reading-definition-title { margin: 0; font-size: var(--reading-h2-size); line-height: var(--reading-h2-line-height); }
+.reading-definition-header button { flex: none; }
+.reading-definition-sheet::backdrop { background: var(--color-overlay); }
+body:has(.reading-definition-sheet[open]) { overflow: hidden; }
+@media (max-width: 767px) { .reading-key-idea { padding: 18px; } }
+@supports not selector(:popover-open) { .reading-definition-popover { display: none; } }

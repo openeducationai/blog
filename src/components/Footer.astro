@@ -1,35 +1,7 @@
 ---
-const today = new Date();
+import brand from '../assets/site/brand.svg?url';
 ---
-
-<footer>
-	<div class="footer-content">
-		<p>&copy; {today.getFullYear()} PadhoAI. All rights reserved.</p>
-		<p class="tagline">AI-powered adaptive learning for everyone.</p>
-	</div>
-</footer>
-<style>
-	footer {
-		padding: 3em 1em;
-		border-top: 2px solid var(--orange);
-		background: linear-gradient(180deg, rgba(232, 93, 4, 0.06) 0%, rgba(108, 63, 226, 0.04) 40%, transparent 100%);
-		color: rgb(var(--gray));
-		text-align: center;
-	}
-	.footer-content {
-		max-width: 960px;
-		margin: 0 auto;
-	}
-	p {
-		margin: 0;
-	}
-	.tagline {
-		font-size: 0.9em;
-		margin-top: 0.35em;
-		background: var(--gradient-accent);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-		font-weight: 600;
-	}
-</style>
+  <footer class="site-footer wrap">
+    <div class="footer-top"><a class="brand" href="https://padho.ai/" aria-label="Padho.ai home"><img src={brand} width="40" height="40" alt="">padho.ai</a><div class="footer-links"><div><h2>padho.ai</h2><a href="https://padho.ai/about">About us</a><a href="https://padho.ai/pricing">Pricing</a><a href="https://padho.ai/blog">Blog</a><a href="https://padho.ai/support">Contact &amp; support</a></div><div><h2>Legal</h2><a href="https://padho.ai/privacy">Privacy</a><a href="https://padho.ai/terms">Terms</a></div><div class="footer-follow"><h2>Follow us</h2><div class="footer-social"><a class="social-x" href="https://x.com/padho_ai" target="_blank" rel="noopener noreferrer" aria-label="padho.ai on X"></a><a class="social-linkedin" href="https://www.linkedin.com/company/padhoai" target="_blank" rel="noopener noreferrer" aria-label="padho.ai on LinkedIn"></a><a class="social-instagram" href="https://www.instagram.com/padhoai/" target="_blank" rel="noopener noreferrer" aria-label="padho.ai on Instagram"></a><a class="social-youtube" href="https://www.youtube.com/@learnwithpadhoai" target="_blank" rel="noopener noreferrer" aria-label="padho.ai on YouTube"></a><a class="social-discord" href="https://discord.gg/GcTyyYg7N" target="_blank" rel="noopener noreferrer" aria-label="padho.ai on Discord"></a></div></div></div></div>
+    <div class="footer-bottom"><p>© <span id="copyright-year">{new Date().getFullYear()}</span> padho.ai</p></div>
+  </footer>

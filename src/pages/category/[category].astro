@@ -1,0 +1,11 @@
+---
+import CategoryPage from '../../layouts/Category.astro';
+import { categories, getPublishedPosts, type Category } from '../../lib/blog';
+export function getStaticPaths() {
+  return categories.map((category) => ({ params: { category: category.id }, props: { category } }));
+}
+interface Props { category: Category }
+const { category } = Astro.props;
+const posts = (await getPublishedPosts()).filter(({ data }) => data.category === category.id);
+---
+<CategoryPage category={category} posts={posts} />

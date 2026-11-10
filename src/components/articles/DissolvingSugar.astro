@@ -1,0 +1,15 @@
+---
+import scene from '../../assets/articles/dissolving-sugar.svg?raw';
+---
+<figure class="sugar-figure" data-dissolving-sugar aria-labelledby="sugar-caption">
+  <div class="sugar-scene" set:html={scene} />
+  <button type="button" class="button secondary blog-button" data-sugar-replay hidden>Replay dissolving</button>
+  <figcaption id="sugar-caption">Pink dots stand for sugar molecules, greatly enlarged. They spread out as the sugar dissolves. Water molecules are not shown.</figcaption>
+</figure>
+<script>import '../../scripts/dissolving-sugar.js';</script>
+<style>
+  .sugar-figure { display: grid; gap: calc(var(--spacing) * 4); padding: calc(var(--spacing) * 6); background: var(--color-surface); border: var(--stroke-default) solid var(--color-border); border-radius: var(--radius-card); }
+  .sugar-scene { overflow: hidden; border-radius: var(--radius-small); }
+  .sugar-scene :global(svg) { display: block; width: 100%; height: auto; }
+  @media (max-width: 600px) { .sugar-figure { padding: calc(var(--spacing) * 4); } }
+</style>

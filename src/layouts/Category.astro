@@ -1,0 +1,35 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import Page from './Page.astro';
+import Button from '../components/Button.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import { articlePath, type Category } from '../lib/blog';
+interface Props { category: Category; posts: CollectionEntry<'blog'>[] }
+const { category, posts } = Astro.props;
+const [latest, ...older] = posts;
+---
+<Page title={`${category.title} · Padho Blog`} description={category.description}>
+  <section class="category-feed page-width" aria-label={`${category.title} articles`}>
+    {latest ? <>
+      <article class="category-hero">
+        <a class="category-hero__image" href={articlePath(latest.id)} aria-label={latest.data.title}>
+          <Image src={latest.data.heroImage} alt={latest.data.heroImageAlt} widths={[640, 960, 1440]} sizes="(min-width: 1024px) 60vw, 100vw" loading="eager" fetchpriority="high" />
+        </a>
+        <div class="category-hero__copy">
+          <p class="article-date"><FormattedDate date={latest.data.pubDate} /></p>
+          <h1><a href={articlePath(latest.id)}>{latest.data.title}</a></h1>
+          <p class="category-hero__excerpt">{latest.data.description}</p>
+          <Button href={articlePath(latest.id)} label={`Read ${latest.data.title}`} arrow>Read</Button>
+        </div>
+      </article>
+      {older.length > 0 && <div class="category-article-grid">
+        {older.map((post) => <article class="category-article-card">
+          <p class="article-date"><FormattedDate date={post.data.pubDate} /></p>
+          <h2><a href={articlePath(post.id)}>{post.data.title}</a></h2>
+          <Button href={articlePath(post.id)} label={`Read ${post.data.title}`} arrow>Read</Button>
+        </article>)}
+      </div>}
+    </> : <p class="category-empty">No articles</p>}
+  </section>
+</Page>

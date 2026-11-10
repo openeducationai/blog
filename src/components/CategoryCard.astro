@@ -1,0 +1,11 @@
+---
+import Button from './Button.astro';
+import { categoryPath, type Category } from '../lib/blog';
+interface Props { category: Category }
+const { category } = Astro.props;
+---
+<section class="category-card" aria-labelledby={`category-${category.id}`}>
+  <h2 id={`category-${category.id}`}>{category.title}</h2>
+  <p>{category.description}</p>
+  <Button href={categoryPath(category.id)} label={`View ${category.title} articles`} arrow>View</Button>
+</section>

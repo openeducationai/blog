@@ -1,0 +1,36 @@
+<figure class="ribbon-figure" data-ribbon-division aria-labelledby="ribbon-caption">
+  <fieldset class="ribbon-controls" data-ribbon-controls hidden>
+    <legend>Length of each piece</legend>
+    <div class="ribbon-buttons">
+      <button type="button" class="button secondary blog-button" data-ribbon-size="whole" aria-pressed="false" aria-controls="ribbon-whole ribbon-half">1 m</button>
+      <button type="button" class="button primary blog-button" data-ribbon-size="half" aria-pressed="true" aria-controls="ribbon-whole ribbon-half">½ m</button>
+    </div>
+  </fieldset>
+  <div class="ribbon-measure">2 m of ribbon</div>
+  <div class="ribbon-bar ribbon-bar--whole" id="ribbon-whole" data-ribbon-view="whole" hidden role="img" aria-label="Two pieces of ribbon, each one metre long. Total length: two metres.">
+    <span>1 m</span><span>1 m</span>
+  </div>
+  <div class="ribbon-bar ribbon-bar--half" id="ribbon-half" data-ribbon-view="half" role="img" aria-label="Four pieces of ribbon, each half a metre long. Total length: two metres.">
+    <span>½ m</span><span>½ m</span><span>½ m</span><span>½ m</span>
+  </div>
+  <div class="ribbon-result" data-ribbon-result role="status" aria-live="polite" aria-atomic="true">4 pieces · 2 ÷ ½ = 4</div>
+  <figcaption id="ribbon-caption">The full ribbon is always 2 metres long. Smaller pieces give a larger count.</figcaption>
+</figure>
+<script>import '../../scripts/ribbon-division.js';</script>
+<style>
+  .ribbon-figure { display: grid; gap: calc(var(--spacing) * 4); padding: calc(var(--spacing) * 6); background: var(--color-surface); border: var(--stroke-default) solid var(--color-border); border-radius: var(--radius-card); }
+  .ribbon-controls { border: 0; padding: 0; margin: 0; min-width: 0; font: 400 var(--text-body) / var(--text-body--line-height) var(--font-sans); }
+  .ribbon-controls legend { padding: 0; margin-bottom: calc(var(--spacing) * 3); }
+  .ribbon-buttons { display: flex; align-items: flex-start; gap: calc(var(--spacing) * 3); }
+  .ribbon-buttons .button.primary { min-height: calc(var(--spacing-control-compact) - var(--spacing)); }
+  .ribbon-measure { position: relative; padding-bottom: calc(var(--spacing) * 3); border-bottom: var(--stroke-default) solid var(--color-text-muted); font: 400 var(--text-body) / var(--text-body--line-height) var(--font-sans); text-align: center; }
+  .ribbon-measure::before,.ribbon-measure::after { content: ''; position: absolute; width: var(--stroke-default); height: calc(var(--spacing) * 2); background: var(--color-text-muted); bottom: 0; }
+  .ribbon-measure::before { left: 0; } .ribbon-measure::after { right: 0; }
+  .ribbon-bar { display: grid; min-height: calc(var(--spacing) * 24); border: var(--stroke-default) solid var(--color-primary); background: var(--color-primary-soft); color: var(--color-text); font: 400 var(--text-body) / var(--text-body--line-height) var(--font-sans); }
+  .ribbon-bar--whole { grid-template-columns: repeat(2, 1fr); }
+  .ribbon-bar--half { grid-template-columns: repeat(4, 1fr); }
+  .ribbon-bar span { display: grid; place-items: center; }
+  .ribbon-bar span + span { border-left: var(--stroke-default) dashed var(--color-primary); }
+  .ribbon-result { font: 400 var(--text-body) / var(--text-body--line-height) var(--font-sans); }
+  @media (max-width: 600px) { .ribbon-figure { padding: calc(var(--spacing) * 4); } }
+</style>

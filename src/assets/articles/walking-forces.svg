@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 600 337.5" role="img" aria-labelledby="walking-forces-title walking-forces-desc">
+  <title id="walking-forces-title">The two pushes as you push off to take a step</title>
+  <desc id="walking-forces-desc">A shoe rests on the ground, with its toe pointing right. A blue arrow on the shoe points forwards, to the right. An equally long orange arrow on the ground points backwards, to the left. The arrows show the horizontal forces at the same contact.</desc>
+  <rect width="600" height="337.5" fill="#f0ebe4" />
+  <rect y="251" width="600" height="86.5" fill="#e7e2d8" />
+  <path d="M36 251H564" fill="none" stroke="#858078" stroke-width="2" />
+  <path d="M207 28H249L274 184L239 198Z" fill="#3568ff" />
+  <path d="M234 188C246 181 254 179 266 181L291 198C304 211 331 216 355 224C370 229 375 237 374 245L370 250H228C219 250 217 241 220 230L231 194Z" fill="#ffffff" stroke="#141212" stroke-width="2" stroke-linejoin="round" />
+  <path d="M220 242H373M273 199L291 209M287 211L307 218" fill="none" stroke="#606a82" stroke-width="2" stroke-linecap="round" />
+  <g fill="none" stroke="#3568ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path class="walking-force-shaft" d="M300 232H450" />
+    <path class="walking-force-head" d="M437 222L450 232L437 242" />
+  </g>
+  <g fill="none" stroke="#ff8235" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path class="walking-force-shaft" d="M300 291H150" />
+    <path class="walking-force-head" d="M163 281L150 291L163 301" />
+  </g>
+</svg>

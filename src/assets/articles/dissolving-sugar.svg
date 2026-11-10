@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 600 337.5" role="img" aria-labelledby="sugar-scene-title sugar-scene-desc">
+  <title id="sugar-scene-title">Sugar molecules spread through water</title>
+  <desc id="sugar-scene-desc">Twenty pink dots represent sugar molecules, enlarged. The same molecules move from a cluster into different places in the water when the animation is replayed. Water molecules are not shown.</desc>
+  <rect width="600" height="337.5" fill="#f0ebe4" />
+  <ellipse cx="300" cy="295" rx="112" ry="10" fill="#e7e2d8" />
+  <path d="M191 62H409L389 276Q387 290 372 290H228Q213 290 211 276Z" fill="#ffffff" />
+  <path d="M199 111H401L386 273Q385 280 373 280H227Q215 280 214 273Z" fill="#e7eeff" />
+  <ellipse cx="300" cy="111" rx="101" ry="10" fill="#e7eeff" stroke="#86a4ff" stroke-width="1.5" />
+  <path d="M190 62L211 276Q213 290 228 290H372Q387 290 389 276L410 62" fill="none" stroke="#606a82" stroke-width="2" />
+  <ellipse cx="300" cy="62" rx="110" ry="12" fill="none" stroke="#606a82" stroke-width="2" />
+  <g fill="#be185d">
+    <circle data-sugar-molecule="1" data-from-x="52" data-from-y="74" cx="224" cy="134" r="6" />
+    <circle data-sugar-molecule="2" data-from-x="28" data-from-y="82" cx="264" cy="126" r="6" />
+    <circle data-sugar-molecule="3" data-from-x="-1" data-from-y="66" cx="309" cy="142" r="6" />
+    <circle data-sugar-molecule="4" data-from-x="-48" data-from-y="78" cx="372" cy="130" r="6" />
+    <circle data-sugar-molecule="5" data-from-x="32" data-from-y="56" cx="244" cy="166" r="6" />
+    <circle data-sugar-molecule="6" data-from-x="5" data-from-y="56" cx="287" cy="166" r="6" />
+    <circle data-sugar-molecule="7" data-from-x="-23" data-from-y="52" cx="331" cy="170" r="6" />
+    <circle data-sugar-molecule="8" data-from-x="-44" data-from-y="40" cx="368" cy="182" r="6" />
+    <circle data-sugar-molecule="9" data-from-x="54" data-from-y="34" cx="222" cy="202" r="6" />
+    <circle data-sugar-molecule="10" data-from-x="30" data-from-y="35" cx="262" cy="201" r="6" />
+    <circle data-sugar-molecule="11" data-from-x="4" data-from-y="29" cx="304" cy="207" r="6" />
+    <circle data-sugar-molecule="12" data-from-x="-24" data-from-y="24" cx="348" cy="212" r="6" />
+    <circle data-sugar-molecule="13" data-from-x="39" data-from-y="12" cx="237" cy="238" r="6" />
+    <circle data-sugar-molecule="14" data-from-x="11" data-from-y="13" cx="281" cy="237" r="6" />
+    <circle data-sugar-molecule="15" data-from-x="-18" data-from-y="5" cx="326" cy="245" r="6" />
+    <circle data-sugar-molecule="16" data-from-x="-45" data-from-y="2" cx="369" cy="248" r="6" />
+    <circle data-sugar-molecule="17" data-from-x="27" data-from-y="-3" cx="249" cy="267" r="6" />
+    <circle data-sugar-molecule="18" data-from-x="2" data-from-y="-3" cx="290" cy="267" r="6" />
+    <circle data-sugar-molecule="19" data-from-x="-27" data-from-y="-3" cx="335" cy="267" r="6" />
+    <circle data-sugar-molecule="20" data-from-x="-33" data-from-y="110" cx="357" cy="154" r="6" />
+  </g>
+</svg>

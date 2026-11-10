@@ -1,102 +1,22 @@
 ---
-import HeaderLink from './HeaderLink.astro';
+import brand from '../assets/site/brand.svg?url';
+import menu from '../assets/site/menu.svg?url';
 ---
-
-<header>
-	<nav>
-		<div class="nav-left">
-			<a href="/blog/" class="logo">
-				<img
-					src="https://res.cloudinary.com/ddgqbftjb/image/upload/v1755692594/padho-ai-logo_rsglwb.jpg"
-					alt="Padho.ai"
-					class="logo-img"
-					width="120"
-					height="40"
-				/>
-				<span class="logo-divider">/</span>
-				<span class="logo-blog">Blog</span>
-			</a>
-		</div>
-		<div class="internal-links">
-			<HeaderLink href="/blog/">Posts</HeaderLink>
-			<HeaderLink href="/blog/about/">About</HeaderLink>
-			<a href="/" class="back-to-app">Back to App</a>
-		</div>
-	</nav>
-</header>
-<style>
-	header {
-		margin: 0;
-		padding: 0 2em;
-		background: #fff;
-		border-bottom: 2px solid var(--accent);
-		box-shadow: 0 4px 0 -2px var(--orange), 0 6px 16px rgba(108, 63, 226, 0.08);
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		max-width: 960px;
-		margin: 0 auto;
-		height: 64px;
-	}
-	.logo {
-		text-decoration: none;
-		font-size: 1.2em;
-		font-weight: 700;
-		display: flex;
-		align-items: center;
-		gap: 0.5em;
-	}
-	.logo-img {
-		height: 36px;
-		width: auto;
-		display: block;
-		object-fit: contain;
-	}
-	.logo-divider {
-		color: rgb(var(--gray));
-		font-weight: 400;
-		margin: 0 0.2em;
-	}
-	.logo-blog {
-		color: var(--orange);
-		font-weight: 600;
-	}
-	.internal-links {
-		display: flex;
-		align-items: center;
-		gap: 0.25em;
-	}
-	.internal-links a {
-		padding: 0.5em 0.75em;
-		color: rgb(var(--gray-dark));
-		text-decoration: none;
-		font-size: 0.95em;
-		font-weight: 500;
-		border-radius: 6px;
-		transition: background 0.15s ease;
-	}
-	.internal-links a:hover {
-		background: var(--orange-pale);
-		color: var(--orange);
-	}
-	.back-to-app {
-		color: var(--accent) !important;
-		font-weight: 600 !important;
-	}
-	.back-to-app:hover {
-		color: var(--orange) !important;
-	}
-	@media (max-width: 720px) {
-		header {
-			padding: 0 1em;
-		}
-		.logo {
-			font-size: 1em;
-		}
-		.logo-img {
-			height: 28px;
-		}
-	}
-</style>
+<a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap" id="top">
+    <nav class="masthead" aria-label="Main navigation">
+      <a class="brand" href="https://padho.ai/" aria-label="Padho.ai home"><img src={brand} width="40" height="40" alt="">padho.ai</a>
+      <div class="desktop-nav">
+        <a href="https://padho.ai/pricing" data-marketing-cta-placement="learn">Pricing</a><a href="https://padho.ai/schools">For Schools</a><a href="https://padho.ai/blog">Blog</a><a href="https://padho.ai/support">Support</a>
+      </div>
+      <div class="nav-actions">
+        <a class="button primary login-button" href="https://learn.padho.ai/login" data-app-path="/login" data-marketing-cta-placement="header">Log in</a>
+        <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" hidden><img src={menu} width="24" height="24" alt=""></button>
+      </div>
+    </nav>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="https://padho.ai/pricing" data-marketing-cta-placement="learn">Pricing</a><a href="https://padho.ai/schools">For Schools</a><a href="https://padho.ai/blog">Blog</a><a href="https://padho.ai/support">Support</a>
+    </nav>
+    <noscript><style is:inline>@media(max-width:1023px){.desktop-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;width:100%;order:3}.masthead{flex-wrap:wrap;border-radius:24px;height:auto;padding:12px 16px;gap:12px}.site-header{position:relative}}</style></noscript>
+  </header>
+<script>import '../scripts/site.js';</script>

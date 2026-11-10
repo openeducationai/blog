@@ -1,0 +1,7 @@
+[
+  {"id": "general", "title": "General", "description": "Updates, learning and life at Padho.", "filterOrder": 4},
+  {"id": "physics", "title": "Physics", "description": "Motion, energy and matter.", "filterOrder": 1},
+  {"id": "chemistry", "title": "Chemistry", "description": "Atoms, molecules and reactions.", "filterOrder": 2},
+  {"id": "maths", "title": "Maths", "description": "Algebra, geometry and calculus.", "filterOrder": 3},
+  {"id": "engineering", "title": "Engineering", "description": "How we design, build and run Padho.", "filterOrder": 5}
+]

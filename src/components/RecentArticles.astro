@@ -1,0 +1,39 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import Button from './Button.astro';
+import FormattedDate from './FormattedDate.astro';
+import { categories, articlePath } from '../lib/blog';
+interface Props { posts: CollectionEntry<'blog'>[] }
+const { posts } = Astro.props;
+const [latest, ...older] = posts;
+const pairs = Array.from({ length: Math.ceil(older.length / 2) }, (_, index) => older.slice(index * 2, index * 2 + 2));
+---
+{latest && <section class="recent-articles" aria-labelledby="recent-heading">
+  <h2 id="recent-heading">Recent articles</h2>
+  <article class="category-hero recent-featured">
+    <a class="category-hero__image" href={articlePath(latest.id)} aria-label={latest.data.title}>
+      <Image src={latest.data.heroImage} alt={latest.data.heroImageAlt} widths={[640, 960, 1440]} sizes="(min-width: 1024px) 60vw, 100vw" loading="eager" fetchpriority="high" />
+    </a>
+    <div class="category-hero__copy">
+      <p class="article-date recent-featured__meta"><span>{categories.find(({ id }) => id === latest.data.category)?.title}</span><FormattedDate date={latest.data.pubDate} /></p>
+      <h3><a href={articlePath(latest.id)}>{latest.data.title}</a></h3>
+      <p class="category-hero__excerpt">{latest.data.description}</p>
+      <Button href={articlePath(latest.id)} label={`Read ${latest.data.title}`} arrow>Read</Button>
+    </div>
+  </article>
+  {pairs.map((pair, index) => <div class:list={['recent-pair', { 'recent-pair--reverse': index % 2 === 1, 'recent-pair--single': pair.length === 1 }]}>
+    {pair.map((post) => <article class="recent-card">
+      <div class="recent-card__visual">
+      <p class="recent-card__meta"><span>{categories.find(({ id }) => id === post.data.category)?.title}</span><FormattedDate date={post.data.pubDate} /></p>
+      <a class="recent-card__cover" href={articlePath(post.id)} aria-label={post.data.title}>
+        <Image src={post.data.heroImage} alt={post.data.heroImageAlt} widths={[480, 800, 1200]} sizes="(max-width: 767px) 100vw, 60vw" loading="lazy" />
+      </a>
+      </div>
+      <div class="recent-card__copy">
+      <h3><a href={articlePath(post.id)}>{post.data.title}</a></h3>
+      <p class="recent-card__excerpt">{post.data.description}</p>
+      </div>
+    </article>)}
+  </div>)}
+</section>}

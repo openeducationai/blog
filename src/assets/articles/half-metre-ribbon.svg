@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 600 337.5" role="img" aria-labelledby="ribbon-cover-title ribbon-cover-desc">
+  <title id="ribbon-cover-title">One ribbon, four equal pieces</title>
+  <desc id="ribbon-cover-desc">Four equal blue pieces of ribbon beneath one bracket spanning their total length.</desc>
+  <rect width="600" height="337.5" fill="#f0ebe4" />
+  <g fill="none" stroke="#606a82" stroke-width="2">
+    <path d="M150 120V107H450V120M300 107V93" />
+  </g>
+  <g fill="#e7eeff" stroke="#3568ff" stroke-width="2">
+    <path d="M150 164H216V220H150Z" />
+    <path d="M228 164H294V220H228Z" />
+    <path d="M306 164H372V220H306Z" />
+    <path d="M384 164H450V220H384Z" />
+  </g>
+  <g fill="none" stroke="#3568ff" stroke-width="2" stroke-dasharray="4 5">
+    <path d="M222 151V233M300 151V233M378 151V233" />
+  </g>
+</svg>

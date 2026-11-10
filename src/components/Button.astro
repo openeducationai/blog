@@ -1,0 +1,15 @@
+---
+import arrow from '../assets/arrow-right.svg?url';
+interface Props {
+  href: string;
+  label?: string;
+  arrow?: boolean;
+  plain?: boolean;
+  class?: string;
+}
+const { href, label, arrow: showArrow = false, plain = false, class: className = '' } = Astro.props;
+---
+<a href={href} class:list={['button', 'blog-button', { secondary: !plain, 'button--plain': plain }, className]} aria-label={label}>
+  <slot />
+  {showArrow && <span class="button__icon" aria-hidden="true"><img src={arrow} alt="" /></span>}
+</a>

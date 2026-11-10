@@ -1,0 +1,19 @@
+---
+import scene from '../../assets/articles/walking-forces.svg?raw';
+---
+<figure class="walking-forces" data-walking-forces aria-labelledby="walking-caption">
+  <div class="walking-label">The ground pushes your foot forwards →</div>
+  <div class="walking-scene" set:html={scene} />
+  <div class="walking-label">← Your foot pushes the ground backwards</div>
+  <button type="button" class="button secondary blog-button" data-walking-replay hidden>Replay arrows</button>
+  <figcaption id="walking-caption">The two pushes happen together where your shoe touches the ground. Only the forwards and backwards forces are shown.</figcaption>
+</figure>
+<script>import '../../scripts/walking-forces.js';</script>
+<style>
+  .walking-forces { display: grid; gap: calc(var(--spacing) * 4); padding: calc(var(--spacing) * 6); background: var(--color-surface); border: var(--stroke-default) solid var(--color-border); border-radius: var(--radius-card); }
+  .walking-label { font-family: var(--font-sans); font-size: var(--text-body); line-height: var(--text-body--line-height); color: var(--color-text); }
+  .walking-scene { overflow: hidden; border-radius: var(--radius-small); }
+  .walking-scene :global(svg) { display: block; width: 100%; height: auto; }
+  .walking-forces button[hidden] { display: none; }
+  @media (max-width: 600px) { .walking-forces { padding: calc(var(--spacing) * 4); } .walking-label { font-size: var(--text-body-sm); line-height: var(--text-body-sm--line-height); } }
+</style>

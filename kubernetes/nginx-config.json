@@ -1,0 +1,15 @@
+{
+  "apiVersion": "v1",
+  "kind": "ConfigMap",
+  "metadata": {
+    "name": "blog-nginx-ab4a6859127a",
+    "namespace": "default",
+    "labels": {
+      "app": "blog"
+    }
+  },
+  "immutable": true,
+  "data": {
+    "default.conf": "server {\n    listen 80;\n    server_name _;\n    root /usr/share/nginx/html;\n\n    location /blog {\n        if ($host = learn.padho.ai) {\n            return 308 https://padho.ai$request_uri;\n        }\n        if ($host = ips.padho.ai) {\n            return 308 https://padho.ai$request_uri;\n        }\n        try_files $uri $uri/ $uri/index.html =404;\n    }\n\n    location = /healthz {\n        return 200 'ok';\n        add_header Content-Type text/plain;\n    }\n\n    error_page 404 /blog/404.html;\n}\n"
+  }
+}
