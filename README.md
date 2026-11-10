@@ -18,7 +18,7 @@ npm run check:search
 npm run deploy:plan
 ```
 
-The build writes `dist/`. Only published content in `src/content/blog/` becomes an article. Figma examples are not imported into the content collection.
+The build writes `dist/`. Only published content in `src/content/blog/` becomes an article. Figma examples are not imported into the content collection. Earlier remote content that is not part of the revamped site is preserved under `archive/blog/`, outside the published collection.
 
 ## Design
 

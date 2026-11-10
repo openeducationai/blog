@@ -1,0 +1,93 @@
+name: Email daily blog review through SES
+
+on:
+  schedule:
+    # 09:00 Asia/Kolkata (UTC+05:30).
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+
+concurrency:
+  group: daily-blog-email
+  cancel-in-progress: false
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.BLOG_SES_AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.BLOG_SES_AWS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: ${{ vars.BLOG_SES_REGION }}
+      AWS_EC2_METADATA_DISABLED: 'true'
+      BLOG_REVIEW_EMAIL: ${{ vars.BLOG_REVIEW_EMAIL }}
+      SES_SENDER_EMAIL: ${{ vars.BLOG_SES_SENDER_EMAIL }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check SES configuration
+        run: |
+          for name in AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_DEFAULT_REGION BLOG_REVIEW_EMAIL SES_SENDER_EMAIL; do
+            if [ -z "${!name}" ]; then
+              echo "Missing required blog email setting: $name"
+              exit 1
+            fi
+          done
+
+      - name: Find the latest unreviewed daily draft
+        id: review
+        run: |
+          mkdir -p .daily-blog
+          gh issue list --state open --label daily-blog-review --limit 100 --json number,title,url,body,createdAt,labels \
+            --jq 'map(select((.labels | map(.name) | index("daily-blog-approved") | not) and (.labels | map(.name) | index("daily-blog-revision-requested") | not))) | sort_by(.createdAt) | reverse | .[0] // {"number": 0}' > .daily-blog/review-issue.json
+          if ! node -e "const x=require('./.daily-blog/review-issue.json'); process.exit(Number(x.number) > 0 ? 0 : 1)"; then
+            echo "No daily blog draft is awaiting review."
+            echo "found=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "found=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Prepare a missing-draft alert
+        if: steps.review.outputs.found == 'false'
+        run: node scripts/prepare-missing-blog-email.mjs
+
+      - name: Send the missing-draft alert through Amazon SES
+        if: steps.review.outputs.found == 'false'
+        run: |
+          aws ses send-email \
+            --region "$AWS_DEFAULT_REGION" \
+            --cli-input-json file://.daily-blog/ses-missing-email.json \
+            > .daily-blog/ses-missing-result.json
+          message_id="$(node -e "const x=require('./.daily-blog/ses-missing-result.json'); console.log(x.MessageId)")"
+          echo "Amazon SES accepted the missing-blog alert. Message ID: $message_id" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Load the article from its review branch
+        if: steps.review.outputs.found == 'true'
+        run: |
+          node scripts/read-blog-review.mjs .daily-blog/review-issue.json > .daily-blog/review-metadata.json
+          branch="$(node -e "const x=require('./.daily-blog/review-metadata.json'); console.log(x.branch)")"
+          post="$(node -e "const x=require('./.daily-blog/review-metadata.json'); console.log(x.post)")"
+          gh api "repos/$GITHUB_REPOSITORY/contents/$post?ref=$branch" > .daily-blog/post-api.json
+          node -e "const fs=require('fs'); const x=require('./.daily-blog/post-api.json'); fs.writeFileSync('.daily-blog/review-post.md', Buffer.from(x.content.replace(/\\n/g,''), 'base64'))"
+
+      - name: Prepare the SES message
+        if: steps.review.outputs.found == 'true'
+        run: node scripts/prepare-blog-email.mjs .daily-blog/review-issue.json .daily-blog/review-post.md
+
+      - name: Send the blog through Amazon SES
+        if: steps.review.outputs.found == 'true'
+        run: |
+          aws ses send-email \
+            --region "$AWS_DEFAULT_REGION" \
+            --cli-input-json file://.daily-blog/ses-email.json \
+            > .daily-blog/ses-result.json
+          message_id="$(node -e "const x=require('./.daily-blog/ses-result.json'); console.log(x.MessageId)")"
+          echo "Amazon SES accepted the daily blog email. Message ID: $message_id" >> "$GITHUB_STEP_SUMMARY"
