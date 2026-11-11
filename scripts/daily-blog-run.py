@@ -40,7 +40,7 @@ def command(args, timeout=120):
 
 
 def preflight():
-    for tool in ['codex', 'git', 'node', 'npm', 'gcloud']:
+    for tool in ['codex', 'git', 'node', 'npm']:
         if not shutil.which(tool):
             raise RuntimeError(f'Missing executable: {tool}')
     if command(['git', 'branch', '--show-current']) != 'main':
@@ -54,10 +54,8 @@ def preflight():
         command(['git', 'merge-base', '--is-ancestor', 'HEAD', 'origin/main'])
         command(['git', 'merge', '--ff-only', 'origin/main'])
     command(['codex', 'login', 'status'])
-    servers = json.loads(command(['codex', 'mcp', 'list', '--json']))
-    if not any(server.get('name') == 'figma' and server.get('enabled') for server in servers):
-        raise RuntimeError('The Figma MCP connection is not enabled')
-    command(['gcloud', 'auth', 'print-access-token'])  # Token stays in process memory.
+    # Release/Figma credentials are checked at their own stages. A cloud sign-in
+    # failure must not prevent research, writing, verification or saved Figma work.
     command(['node', 'scripts/blog-editorial.mjs', 'check'])
 
 

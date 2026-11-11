@@ -2,6 +2,7 @@ import importlib.util
 from datetime import datetime
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 
 
 def load(name, filename):
@@ -39,6 +40,21 @@ class TrialTests(unittest.TestCase):
 
     def test_does_not_backfill_after_morning(self):
         self.assertEqual(self.eligible('2026-11-11T15:00:00+05:30')[1], 'missed_morning_no_backfill')
+
+    def test_preparation_does_not_depend_on_deployment_credentials(self):
+        calls = []
+        def fake_command(args, timeout=120):
+            calls.append(args)
+            if args[0] == 'gcloud' or args[:3] == ['codex', 'mcp', 'list']:
+                raise RuntimeError('Release service is unavailable')
+            if args[:3] == ['git', 'branch', '--show-current']:
+                return 'main'
+            if args[:2] == ['git', 'rev-parse']:
+                return 'same-commit'
+            return ''
+        with patch.object(runner, 'command', side_effect=fake_command), patch.object(runner.shutil, 'which', side_effect=lambda name: None if name == 'gcloud' else '/bin/' + name):
+            runner.preflight()
+        self.assertIn(['node', 'scripts/blog-editorial.mjs', 'check'], calls)
 
     def test_schedule_has_exact_dates(self):
         days = installer.schedule(CONFIG)

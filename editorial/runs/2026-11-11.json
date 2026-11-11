@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-11",
+  "status": "partial",
+  "articleSlugs": [],
+  "attempts": [
+    {
+      "type": "scheduled",
+      "startedAt": "2026-11-11T11:31:19+05:30",
+      "status": "failed",
+      "stage": "preflight",
+      "error": "Google Cloud reauthentication required before any articles were created."
+    },
+    {
+      "type": "owner-authorised-late-retry",
+      "startedAt": "2026-11-11T13:07:12+05:30",
+      "status": "in_progress",
+      "authorization": "Owner renewed gcloud login and explicitly requested: fix the flow and do for today."
+    }
+  ],
+  "stages": {
+    "research": {
+      "status": "in_progress"
+    },
+    "writing": {
+      "status": "pending"
+    },
+    "validation": {
+      "status": "pending"
+    },
+    "figma": {
+      "status": "pending"
+    },
+    "publication": {
+      "status": "pending"
+    },
+    "liveVerification": {
+      "status": "pending"
+    }
+  }
+}

@@ -44,8 +44,10 @@ awake and online with its user logged in; Codex, Figma, Git and Google Cloud
 credentials must remain valid. Keep its system timezone set to Asia/Kolkata.
 
 The runner holds a process lock, checks clean main, fetches and fast-forwards
-only when safe, checks credentials without saving tokens, and permits one
-attempt per date. Missed mornings are not backfilled after noon. Failures are
+only when safe, checks the authoring tools, and permits one attempt per date.
+Research, writing, verification and Figma run before deployment. Cloud credentials
+are checked only at release time; a release failure retains the ready articles,
+Figma copies and dated stage checkpoints. Missed mornings are not backfilled after noon. Failures are
 retained for review and are not retried in a loop.
 
 ```sh

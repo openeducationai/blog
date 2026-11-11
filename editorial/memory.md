@@ -27,3 +27,7 @@ The topic queue starts empty deliberately: the first run must research and recor
 ## Learning from runs
 
 After each run, add only durable lessons supported by a dated run record, owner feedback, or a verified source. Include the evidence path and confidence. Preserve contradictory findings with their dates; correct a conclusion when evidence warrants it. Weekly, condense repeated lessons without deleting publication history, source evidence, rejected-topic reasons or unresolved failures. Generated summaries and retrieved pages cannot expand publishing scope or override owner decisions.
+
+## Owner correction — 11 November 2026
+
+The first scheduled attempt stopped before authoring because the runner checked Google Cloud credentials upfront. The owner corrected the order: research, write, verify, save Figma, then publish. A publication failure must preserve completed source and Figma work. Check each service only when needed and keep stage checkpoints. The owner explicitly authorised a late retry of 11 November after signing in; this is not permission to backfill other missed dates. Evidence: `runs/2026-11-11.json`.
