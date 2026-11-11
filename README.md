@@ -79,3 +79,52 @@ Only after the apex site is published and verified, update the legacy service wi
 The forces article follows one step. `WalkingForces.astro` uses the source SVG as an accessible inline diagram, and `walking-forces.js` draws both force arrows together when the reader presses Replay arrows. The diagram remains readable without JavaScript. Reduced-motion users receive the static diagram without the replay control.
 
 The Chemistry article uses `DissolvingSugar.astro`: the same twenty model molecules move from a cluster into the water, with a static image for reduced motion. The Maths article uses `RibbonDivision.astro` to switch the same two-metre ribbon between one-metre and half-metre pieces. Both figures have readable static states without JavaScript. Their original vector cover assets are in `src/assets/articles/`.
+
+## Blog analytics
+
+All blog pages use the existing **padho ai website** PostHog project (190793),
+through `BaseHead.astro` → `BlogAnalytics.astro`. New articles inherit tracking.
+Copy `.env.example` to `.env.production` on a publishing machine and use the
+same **public project token** and ingestion host as the Padho landing page.
+The current publisher is configured. Never use a personal API key in the browser.
+Production capture runs only on `padho.ai` and `www.padho.ai`; local development
+and previews do not send events. Missing configuration leaves the website usable,
+but `npm run check:analytics` and the publisher reject an unconfigured release.
+
+Filter [PostHog events](https://us.posthog.com/project/190793/activity/explore)
+by `product_surface = blog`. Every event has `blog_page_type` and `page_path`;
+article events also have `article_slug`, `article_title` and `blog_category`.
+Page context is added per event, never persisted into the Learn app.
+The same project and cross-subdomain identity cookie connect the existing
+marketing → blog → Learn journey. The blog has no login form and never invents
+an identity; Learn continues to identify authenticated users.
+
+| Event | Meaning |
+| --- | --- |
+| `$pageview`, `$pageleave` | Automatic page visits and exits; referrer and UTM attribution |
+| `blog_article_selected`, `blog_category_selected` | Article/card and category navigation |
+| `blog_navigation_clicked`, `blog_menu_toggled`, `blog_categories_scrolled` | Header/footer links, mobile menu and carousel movement |
+| `blog_reading_progress` | Article prose reached 25%, 50%, 75% or 100%, once per page visit |
+| `blog_article_engaged` | 30 seconds of visible, non-idle article time, once per visit |
+| `blog_reading_summary` | Cumulative active time and depth on hide/exit; sum `active_seconds_delta` for time, not the cumulative field |
+| `blog_visual_interacted` | Visual step/size selection or animation replay |
+| `blog_definition_opened` | Actual definition opening by pointer, focus or tap |
+| `blog_solution_opened` | Hint/solution disclosure opened, with its position in the article |
+| `marketing_sign_in_clicked`, `marketing_app_store_clicked` | Learn login or Android store CTA |
+| `marketing_cta_clicked` | Existing aggregate CTA funnel; do not sum it with the named CTA events |
+
+Background tabs and inactivity beyond 60 seconds do not add reading time.
+Scroll depth is a reading signal, not proof of comprehension. Reading summaries
+use incremental time to avoid double-counting visibility-change plus page-exit.
+UTMs survive internal navigation for 30 minutes and are forwarded to Learn;
+explicit destination UTMs and Android Play links are preserved. Arbitrary URL
+query parameters and fragments are excluded from custom link events and SDK
+page/referrer URL properties. Input values are masked in session replay, which
+follows the existing project's recording settings. Surveys and generic click
+autocapture are disabled; the named events above describe the actual actions.
+
+Run `npm test`, `npm run typecheck`, `npm run build`, and
+`npm run check:analytics` before publishing. After a tracking change, verify real
+browser events in this project, including mobile interactions and Learn handoff.
+A first-party ingestion proxy is an optional follow-up; the blog currently uses
+the same direct PostHog ingestion host as the landing page.

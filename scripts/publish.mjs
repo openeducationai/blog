@@ -14,6 +14,7 @@ const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=
 // Reject a build with missing or inconsistent article search metadata before any upload.
 execFileSync('node', [path.join(root, 'scripts/blog-editorial.mjs'), 'check'], { cwd: root, stdio: 'inherit' });
 execFileSync('python3', [path.join(root, 'scripts/check-search.py')], { cwd: root, stdio: 'inherit' });
+execFileSync('node', [path.join(root, 'scripts/check-analytics.mjs')], { cwd: root, stdio: 'inherit' });
 
 async function walk(dir, relative = '') {
   const files = [];

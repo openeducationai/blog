@@ -59,3 +59,14 @@ Current authoritative references to consult when needed:
 - [Google Preferred Sources](https://developers.google.com/search/docs/appearance/preferred-sources)
 - [OpenAI search and training crawlers](https://developers.openai.com/api/docs/bots)
 - [Perplexity crawlers](https://docs.perplexity.ai/docs/resources/perplexity-crawlers)
+
+## Analytics continuity
+
+The shared blog layout instruments every article in Padho's existing PostHog
+project (190793). Preserve `BlogAnalytics.astro` and the configured ignored
+`.env.production` when publishing. Never put personal API credentials in it.
+`npm run check:analytics` validates every built page and the configured browser
+bundle; `scripts/publish.mjs` runs this check before uploading. If configuration
+is missing, finish content/Figma/source work first, then repair release config.
+Do not silently deploy an untracked build. See the repository README for event
+names, reading-time semantics and the production-only capture boundary.

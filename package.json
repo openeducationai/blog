@@ -22,13 +22,15 @@
     "blog:open-approved-pr": "node scripts/open-approved-blog-pr.mjs",
     "blog:submit-draft": "node scripts/submit-blog-draft.mjs",
     "blog:submit-revision": "node scripts/submit-blog-revision.mjs",
-    "test": "node --test scripts/*.test.mjs"
+    "test": "node --test scripts/*.test.mjs",
+    "check:analytics": "node scripts/check-analytics.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/rss": "^4.0.15",
     "@astrojs/sitemap": "^3.7.0",
     "astro": "^5.17.1",
+    "posthog-js": "^1.447.12",
     "sharp": "^0.34.3"
   }
 }

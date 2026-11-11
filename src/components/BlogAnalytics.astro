@@ -1,0 +1,15 @@
+---
+interface Props { title: string; category?: string; isArticle: boolean; noindex: boolean }
+const { title, category, isArticle, noindex } = Astro.props;
+const path = Astro.url.pathname;
+const categoryId = path.match(/^\/blog\/category\/([^/]+)/)?.[1];
+const context = {
+  product_surface: 'blog',
+  blog_analytics_version: 1,
+  blog_page_type: isArticle ? 'article' : categoryId ? 'category' : noindex ? 'not_found' : 'index',
+  ...(category || categoryId ? { blog_category: category?.toLowerCase() ?? categoryId } : {}),
+  ...(isArticle ? { article_slug: path.split('/').filter(Boolean).at(-1), article_title: title } : {}),
+};
+---
+<script id="blog-analytics-context" type="application/json" set:html={JSON.stringify(context).replace(/</g, '\\u003c')} />
+<script>import '../scripts/posthog.js';</script>
