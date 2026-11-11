@@ -109,7 +109,11 @@ export function mountBlogAnalytics(client, context, { document, window }) {
   try { storage = window.sessionStorage; } catch { /* Private browser modes may deny storage. */ }
   const campaign = campaignForVisit(window.location.href, storage);
   const decorate = link => { try { link.href = learnDestination(link.href, campaign); } catch { /* Non-web link. */ } };
-  for (const link of document.querySelectorAll('a[href]')) decorate(link);
+  const decorateAll = () => { for (const link of document.querySelectorAll('a[href]')) decorate(link); };
+  decorateAll();
+  // Header's module can run after this module and replace the login destination.
+  // Reapply attribution once all deferred modules have settled, including Android.
+  if (document.readyState !== 'complete') document.addEventListener('DOMContentLoaded', decorateAll, { once: true });
   const placement = element => element.closest('#mobile-nav') ? 'mobile_nav'
     : element.closest('.site-header') ? 'header'
     : element.closest('.site-footer') ? 'footer'

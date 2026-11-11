@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { cleanUrl, cleanEvent, campaignForVisit, learnDestination, createReadingState } from '../src/scripts/blog-analytics.js';
+import { cleanUrl, cleanEvent, campaignForVisit, learnDestination, createReadingState, mountBlogAnalytics } from '../src/scripts/blog-analytics.js';
 
 const storage = () => { const data = new Map(); return { getItem: key => data.get(key), setItem: (key, value) => data.set(key, value) }; };
 
@@ -76,4 +76,28 @@ test('initially hidden article records no reading until the tab becomes visible'
   assert.equal(state.summary(100000), null);
   state.visibility(100000, true);
   assert.deepEqual(state.sample(105000, 25), [['blog_reading_progress', { progress_percent: 25, active_seconds: 5 }]]);
+});
+
+
+test('header initialization cannot remove campaign handoff, including opening in a new tab', () => {
+  const listeners = new Map();
+  const link = { href: 'https://learn.padho.ai/login' };
+  const document = {
+    readyState: 'interactive',
+    querySelectorAll: selector => selector === 'a[href]' ? [link] : [],
+    querySelector: () => null,
+    addEventListener: (name, callback) => listeners.set(name, callback),
+  };
+  const window = {
+    location: new URL('https://padho.ai/blog/?utm_source=google'),
+    sessionStorage: storage(),
+    MutationObserver: class { observe() {} },
+  };
+  mountBlogAnalytics({ capture() {} }, { blog_page_type: 'index' }, { document, window });
+  link.href = 'https://learn.padho.ai/login'; // The shared header runs next.
+  listeners.get('DOMContentLoaded')();
+  assert.equal(link.href, 'https://learn.padho.ai/login?utm_source=google');
+  link.href = 'https://play.google.com/store/apps/details?id=ai.padho.learn';
+  listeners.get('DOMContentLoaded')();
+  assert.equal(link.href, 'https://play.google.com/store/apps/details?id=ai.padho.learn');
 });
