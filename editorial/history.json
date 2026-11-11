@@ -99,6 +99,174 @@
       "status": "archived",
       "pyqs": [],
       "recordedAt": "2026-11-10T19:44:51+05:30"
+    },
+    {
+      "slug": "where-does-a-photoelectrons-energy-come-from",
+      "title": "Where does a photoelectron’s energy come from?",
+      "category": "physics",
+      "chapter": "dual-nature-of-radiation-and-matter",
+      "conceptKey": "physics/dual-nature-of-radiation-and-matter/photoelectric-energy-budget",
+      "learningObjective": "Use photon energy = work function + maximum kinetic energy to compare stopping potentials and thresholds.",
+      "example": "A photon supplies 5 eV to a surface needing 3 eV for escape.",
+      "sourcePath": "src/content/blog/where-does-a-photoelectrons-energy-come-from.mdx",
+      "sourceSha256": "b31d607461a2ae851ab10c3cfea0b23b3b639f67662c82bd5df013ccee55642a",
+      "url": "https://padho.ai/blog/where-does-a-photoelectrons-energy-come-from/",
+      "publishedAt": "2026-11-11T13:22:48+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112142",
+      "targetQuestionText": "Light of wavelength λ gives a stopping potential of 3V₀. Light of wavelength 2λ gives V₀ for the same metal. What is the metal’s threshold wavelength?",
+      "briefPath": "editorial/research/2026-11-11-physics.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112142",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "JEE Main Paper 1; 02 April 2026, Shift 1; Q42; question ID 69112142; PDF page 17",
+          "answer": "4; threshold wavelength = 4λ",
+          "verifiedAt": "2026-11-11T13:28:47+05:30",
+          "adapted": true,
+          "correctOptionId": "691121151",
+          "independentSolution": "E=φ+3eV0; E/2=φ+eV0. Subtraction gives E=4eV0, φ=eV0.",
+          "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+        },
+        {
+          "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278257",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "JEE Main Paper 1; 04 April 2026, Shift 1; Q32; question ID 695278257; PDF page 11",
+          "answer": "X1",
+          "verifiedAt": "2026-11-11T13:28:47+05:30",
+          "adapted": true,
+          "correctOptionId": "695278875",
+          "independentSolution": "φ=hν0, so the lowest threshold frequency gives the smallest work function and largest Kmax for equal incident photon energy.",
+          "sourceSha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a"
+        }
+      ],
+      "review": {
+        "sourceSha256": "b31d607461a2ae851ab10c3cfea0b23b3b639f67662c82bd5df013ccee55642a",
+        "reviewedAt": "2026-11-11T13:28:47+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "The graph question is paraphrased into threshold frequencies, with illumination above all three thresholds stated explicitly. No emission is shown below the work function; negative kinetic energy is never displayed. Read continuously as a student; each opening states the target, terms are introduced before use, and the worked solution returns to that target. All control states, no-script fallbacks and reduced-motion behavior passed on the real app at 1440 and 390 widths. Screenshots inspected for covers, justified Literata paragraphs, controls and solution disclosures. This is an agent review, not a claimed human review."
+      },
+      "recordedAt": "2026-11-11T13:28:47+05:30"
+    },
+    {
+      "slug": "how-much-of-a-first-order-reaction-is-finished",
+      "title": "How much of a first-order reaction is finished?",
+      "category": "chemistry",
+      "chapter": "chemical-kinetics",
+      "conceptKey": "chemistry/chemical-kinetics/first-order-fraction-reacted",
+      "learningObjective": "Distinguish fraction remaining from fraction reacted, and explain why two half-lives do not complete an ideal first-order reaction.",
+      "example": "100 units of R become 50, 25 and 12.5 units after successive half-lives.",
+      "sourcePath": "src/content/blog/how-much-of-a-first-order-reaction-is-finished.mdx",
+      "sourceSha256": "a439392c1a4fd82263a73bffbe6daab26dfc5bfaf9634a10778322bfdb4befd2",
+      "url": "https://padho.ai/blog/how-much-of-a-first-order-reaction-is-finished/",
+      "publishedAt": "2026-11-11T13:22:48+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278282",
+      "targetQuestionText": "For a first-order reaction R → P, what fraction of the original reactant has reacted after time t, if the rate constant is k?",
+      "briefPath": "editorial/research/2026-11-11-chemistry.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278282",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "JEE Main Paper 1; 04 April 2026, Shift 1; Q57; question ID 695278282; PDF page 20",
+          "answer": "1 − exp(−kt)",
+          "verifiedAt": "2026-11-11T13:28:47+05:30",
+          "adapted": true,
+          "correctOptionId": "695278963",
+          "independentSolution": "Initial fraction 1; remaining exp(-kt); reacted 1-exp(-kt). At t=0 answer=0; at one half-life answer=1/2.",
+          "sourceSha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112158",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "JEE Main Paper 1; 02 April 2026, Shift 1; Q58; question ID 69112158; PDF page 23",
+          "answer": "Zero order: twice the initial half-life. First order: no finite exact completion time in the ideal model.",
+          "verifiedAt": "2026-11-11T13:28:47+05:30",
+          "adapted": true,
+          "correctOptionId": "691121200",
+          "independentSolution": "Zero order R=R0-kt gives t_complete=R0/k=2 t_half. First order R=R0 exp(-kt) stays positive at finite t.",
+          "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+        }
+      ],
+      "review": {
+        "sourceSha256": "a439392c1a4fd82263a73bffbe6daab26dfc5bfaf9634a10778322bfdb4befd2",
+        "reviewedAt": "2026-11-11T13:28:47+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "The original Q58 option prints an awkward power-of-half-life notation for infinite completion. The article does not reproduce that dimensional expression: it clearly labels an adaptation and states the intended ideal-model limit in words. The keyed option ID and original image were checked. Practical detection and ideal zero are distinguished. Read continuously as a student; each opening states the target, terms are introduced before use, and the worked solution returns to that target. All control states, no-script fallbacks and reduced-motion behavior passed on the real app at 1440 and 390 widths. Screenshots inspected for covers, justified Literata paragraphs, controls and solution disclosures. This is an agent review, not a claimed human review."
+      },
+      "recordedAt": "2026-11-11T13:28:47+05:30"
+    },
+    {
+      "slug": "how-do-you-count-functions-that-miss-an-output",
+      "title": "How do you count functions that miss an output?",
+      "category": "maths",
+      "chapter": "sets-relations-and-functions",
+      "conceptKey": "maths/sets-relations-and-functions/not-onto-counting-missing-outputs",
+      "learningObjective": "Count missing-output cases and correct overlaps with inclusion-exclusion.",
+      "example": "Four labelled inputs assigned to a, b and c; the all-a function is counted in both missing-b and missing-c groups.",
+      "sourcePath": "src/content/blog/how-do-you-count-functions-that-miss-an-output.mdx",
+      "sourceSha256": "e0c6cbf1cd082053fff81047edd2a99786c5851e388781c87c67831cb00e9e4c",
+      "url": "https://padho.ai/blog/how-do-you-count-functions-that-miss-an-output/",
+      "publishedAt": "2026-11-11T13:22:48+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278229",
+      "targetQuestionText": "Each input in the set 1, 2, 3, 4 is assigned to one output from a, b, c. How many such functions leave at least one output unused?",
+      "briefPath": "editorial/research/2026-11-11-maths.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278229",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "JEE Main Paper 1; 04 April 2026, Shift 1; Q4; question ID 695278229; PDF page 2",
+          "answer": "45",
+          "verifiedAt": "2026-11-11T13:28:47+05:30",
+          "adapted": true,
+          "correctOptionId": "695278779",
+          "independentSolution": "3*(2^4)-3=45; independently enumerated all 81 functions.",
+          "sourceSha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-6911216",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "JEE Main Paper 1; 02 April 2026, Shift 1; Q6; question ID 6911216; PDF page 3",
+          "answer": "16800",
+          "verifiedAt": "2026-11-11T13:28:47+05:30",
+          "adapted": true,
+          "correctOptionId": "69112123",
+          "independentSolution": "5^7 -5*4^7 +10*3^7 -10*2^7 +5 =16800; independently enumerated all 78125 candidate seven-digit sequences.",
+          "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+        }
+      ],
+      "review": {
+        "sourceSha256": "e0c6cbf1cd082053fff81047edd2a99786c5851e388781c87c67831cb00e9e4c",
+        "reviewedAt": "2026-11-11T13:28:47+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Four labelled inputs remain the teaching example. The second question explicitly extends the same missing-choice idea to seven positions and five digits; every inclusion-exclusion term is explained. Enumeration agrees with both keyed answers. Read continuously as a student; each opening states the target, terms are introduced before use, and the worked solution returns to that target. All control states, no-script fallbacks and reduced-motion behavior passed on the real app at 1440 and 390 widths. Screenshots inspected for covers, justified Literata paragraphs, controls and solution disclosures. This is an agent review, not a claimed human review."
+      },
+      "recordedAt": "2026-11-11T13:28:47+05:30"
     }
   ]
 }

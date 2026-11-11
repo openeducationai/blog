@@ -1,0 +1,72 @@
+{
+  "id": "2026-11-11-maths",
+  "researchedAt": "2026-11-11T13:28:47+05:30",
+  "category": "maths",
+  "conceptKey": "maths/sets-relations-and-functions/not-onto-counting-missing-outputs",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027, linked from the official NTA site on 11 November 2026",
+    "scope": "Mathematics Unit 1: onto functions; Unit 4: fundamental counting principle and combinations",
+    "sha256": "823ec5afaf30f19d4f0dc375159d8b843b944633e4edda58c9d910c145c32ccd"
+  },
+  "corpus": {
+    "papersExamined": 3,
+    "paperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf"
+    ],
+    "coverageNotes": "Targeted topic scan of official Paper 1 PDFs for 2 April 2026 shifts 1 and 2 and 4 April 2026 shift 1 (225 questions total). OCR used to locate candidates; all six selected question images and their exact final-key option IDs then inspected. This is not an exhaustive topic classification, all-shift sample, five-year analysis or national chapter-weightage estimate.",
+    "selectedDirectMatches": 2
+  },
+  "priority": {
+    "rationale": "Two directly relevant verified recent JEE Main questions in the scanned corpus, current syllabus inclusion, a common conceptual distinction, and a short visual route from a prerequisite to a real exam question. Prioritised for this first trial batch; no invented frequency or marks-percentage claim.",
+    "selectionConfidence": "Verified relevance; limited frequency evidence"
+  },
+  "sources": [
+    {
+      "title": "Official NTA JEE Main 2027 syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "Official NTA 2 April 2026 Shift 1 paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf"
+    },
+    {
+      "title": "Official NTA 4 April 2026 Shift 1 paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf"
+    },
+    {
+      "title": "NTA final answer key on which the result was compiled",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278229",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "JEE Main Paper 1; 04 April 2026, Shift 1; Q4; question ID 695278229; PDF page 2",
+      "answer": "45",
+      "verifiedAt": "2026-11-11T13:28:47+05:30",
+      "adapted": true,
+      "correctOptionId": "695278779",
+      "independentSolution": "3*(2^4)-3=45; independently enumerated all 81 functions.",
+      "sourceSha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a"
+    },
+    {
+      "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-6911216",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "JEE Main Paper 1; 02 April 2026, Shift 1; Q6; question ID 6911216; PDF page 3",
+      "answer": "16800",
+      "verifiedAt": "2026-11-11T13:28:47+05:30",
+      "adapted": true,
+      "correctOptionId": "69112123",
+      "independentSolution": "5^7 -5*4^7 +10*3^7 -10*2^7 +5 =16800; independently enumerated all 78125 candidate seven-digit sequences.",
+      "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+    }
+  ],
+  "verificationNotes": "Four labelled inputs remain the teaching example. The second question explicitly extends the same missing-choice idea to seven positions and five digits; every inclusion-exclusion term is explained. Enumeration agrees with both keyed answers.",
+  "textbookAccess": "Direct NCERT PDF requests timed out and SATHEE pages returned 403. These unavailable pages are not claimed as consulted evidence. Official syllabus, original paper images, final key and independent solutions are retained as evidence."
+}

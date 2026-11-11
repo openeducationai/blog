@@ -1,0 +1,72 @@
+{
+  "id": "2026-11-11-chemistry",
+  "researchedAt": "2026-11-11T13:28:47+05:30",
+  "category": "chemistry",
+  "conceptKey": "chemistry/chemical-kinetics/first-order-fraction-reacted",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027, linked from the official NTA site on 11 November 2026",
+    "scope": "Chemistry Unit 8: Chemical Kinetics; integral zero- and first-order rate laws and half-lives",
+    "sha256": "823ec5afaf30f19d4f0dc375159d8b843b944633e4edda58c9d910c145c32ccd"
+  },
+  "corpus": {
+    "papersExamined": 3,
+    "paperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf"
+    ],
+    "coverageNotes": "Targeted topic scan of official Paper 1 PDFs for 2 April 2026 shifts 1 and 2 and 4 April 2026 shift 1 (225 questions total). OCR used to locate candidates; all six selected question images and their exact final-key option IDs then inspected. This is not an exhaustive topic classification, all-shift sample, five-year analysis or national chapter-weightage estimate.",
+    "selectedDirectMatches": 2
+  },
+  "priority": {
+    "rationale": "Two directly relevant verified recent JEE Main questions in the scanned corpus, current syllabus inclusion, a common conceptual distinction, and a short visual route from a prerequisite to a real exam question. Prioritised for this first trial batch; no invented frequency or marks-percentage claim.",
+    "selectionConfidence": "Verified relevance; limited frequency evidence"
+  },
+  "sources": [
+    {
+      "title": "Official NTA JEE Main 2027 syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "Official NTA 2 April 2026 Shift 1 paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf"
+    },
+    {
+      "title": "Official NTA 4 April 2026 Shift 1 paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf"
+    },
+    {
+      "title": "NTA final answer key on which the result was compiled",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278282",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "JEE Main Paper 1; 04 April 2026, Shift 1; Q57; question ID 695278282; PDF page 20",
+      "answer": "1 − exp(−kt)",
+      "verifiedAt": "2026-11-11T13:28:47+05:30",
+      "adapted": true,
+      "correctOptionId": "695278963",
+      "independentSolution": "Initial fraction 1; remaining exp(-kt); reacted 1-exp(-kt). At t=0 answer=0; at one half-life answer=1/2.",
+      "sourceSha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a"
+    },
+    {
+      "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112158",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "JEE Main Paper 1; 02 April 2026, Shift 1; Q58; question ID 69112158; PDF page 23",
+      "answer": "Zero order: twice the initial half-life. First order: no finite exact completion time in the ideal model.",
+      "verifiedAt": "2026-11-11T13:28:47+05:30",
+      "adapted": true,
+      "correctOptionId": "691121200",
+      "independentSolution": "Zero order R=R0-kt gives t_complete=R0/k=2 t_half. First order R=R0 exp(-kt) stays positive at finite t.",
+      "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+    }
+  ],
+  "verificationNotes": "The original Q58 option prints an awkward power-of-half-life notation for infinite completion. The article does not reproduce that dimensional expression: it clearly labels an adaptation and states the intended ideal-model limit in words. The keyed option ID and original image were checked. Practical detection and ideal zero are distinguished.",
+  "textbookAccess": "Direct NCERT PDF requests timed out and SATHEE pages returned 403. These unavailable pages are not claimed as consulted evidence. Official syllabus, original paper images, final key and independent solutions are retained as evidence."
+}

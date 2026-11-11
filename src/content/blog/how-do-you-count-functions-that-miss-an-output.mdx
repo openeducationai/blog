@@ -1,0 +1,71 @@
+---
+title: "How do you count functions that miss an output?"
+description: "Count the unused outputs, then check whether the same function slipped into your count twice."
+category: maths
+author: padho
+pubDate: "2026-11-11T13:22:48+05:30"
+heroImage: '../../assets/articles/functions-missing-output.png'
+heroImageAlt: 'Four numbered inputs point to outputs a and b. Output c has no arrow, so this function is not onto.'
+---
+
+import ArticleSteps from '../../components/articles/ArticleSteps.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+import ReadingTerm from '../../components/ReadingTerm.astro';
+
+A function sends each input to one output. Two inputs may share an output. An output may also receive nothing.
+
+We’ll learn how to solve this JEE Main question:
+
+**Each input in the set 1, 2, 3, 4 is assigned to one output from a, b, c. How many such functions leave at least one output unused?**
+
+Adapted from [JEE Main, 4 April 2026, Shift 1, Q4](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf#page=2). The original calls these functions “not onto”. You only need multiplication and small powers to start.
+
+## What does “onto” mean?
+
+Picture four labelled inputs and three output boxes. Each input must go into exactly one box. A function is <ReadingTerm term="Onto" definition="A function is onto when every output in its stated target set is used by at least one input.">onto</ReadingTerm> if all three boxes receive something. It is not onto if at least one box stays empty.
+
+For example, send 1 and 2 to a, 3 to b, and 4 to c. All three outputs are used. Now send 4 to b instead. Output c becomes empty, so the new function is not onto.
+
+<ArticleSteps kind="functions" />
+
+Choose “Only a” in the picture. This is still a valid function: each input has exactly one output. But both b and c are unused. That example will help us catch a counting mistake.
+
+## Count functions that miss c
+
+If c is unused, each input has two choices: a or b. Input 1 has two choices, input 2 has two choices, and so do inputs 3 and 4.
+
+Multiply those choices: 2 × 2 × 2 × 2 = 16 functions.
+
+There are also 16 functions that miss b, and 16 that miss a. Adding gives 48. It is tempting to stop there, but these three groups overlap.
+
+Consider the function that sends every input to a. We counted it among the functions missing b. We counted it again among those missing c. It is one function, counted twice.
+
+## Remove the extra copies
+
+There are exactly three functions that use just one output: all inputs go to a, all go to b, or all go to c. Each was counted twice, so each needs one extra copy removed.
+
+Functions that use two outputs were counted only once: they miss exactly one output. Leave those alone.
+
+No function can miss all three outputs, because every input must be assigned somewhere. We have now checked every kind of overlap.
+
+<KeyIdea id="count-overlaps">When you add groups, ask whether the same object belongs to more than one group. Correct those repeated counts before calling the total an answer.</KeyIdea>
+
+This method is called inclusion–exclusion. The name describes the steps: include a group, then exclude the extra copies. When more groups overlap, some corrections must be added back.
+
+## Try the past questions
+
+**1. Return to our opening question.** How many functions from four labelled inputs to a, b, c are not onto?
+
+<details class="reading-check"><summary>Show hint</summary><p>Start with three groups of 16. Which functions appear in two of those groups?</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>There are 3 × 16 = 48 entries in our three groups. The three functions that send every input to a single output each appear twice. Remove one extra copy of each: 48 − 3 = 45 functions.</p></details>
+
+**2. How many seven-digit numbers use only the digits 1, 2, 3, 5 and 7, with every one of those five digits appearing at least once?**
+
+Adapted from [JEE Main, 2 April 2026, Shift 1, Q6](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf#page=3). This extends the same idea from three outputs to five digits.
+
+<details class="reading-check"><summary>Show hint</summary><p>Begin with all seven-digit arrangements. Remove the ones missing a digit. Then correct for arrangements missing two or more digits.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>There are seven positions, each with five choices, so start with 5⁷. No digit is zero, so there is no leading-zero restriction.</p><p>Choose one missing digit in 5 ways. That leaves four choices per position. Subtract 5 × 4⁷.</p><p>But a number missing two chosen digits has just been subtracted twice. Add it back once. There are 10 pairs of missing digits and three choices per position, so add 10 × 3⁷.</p><p>Continue the correction: subtract 10 × 2⁷ for the 10 groups of three missing digits, then add 5 × 1⁷ for the five groups of four missing digits. Missing all five is impossible.</p><p>The count is 78,125 − 81,920 + 21,870 − 1,280 + 5 = 16,800.</p><p>Why alternate? Take a number using just three of the five digits. It starts counted once, is removed twice because it misses two digits, and is added back once for that pair. Its final count is zero, as required. The later corrections do the same job for numbers using even fewer digits.</p></details>
+
+Answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf): question IDs 695278229 and 6911216.

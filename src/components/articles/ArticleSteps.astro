@@ -1,0 +1,61 @@
+---
+interface Props { kind: 'energy' | 'reaction' | 'functions' }
+const { kind } = Astro.props;
+const options = {
+  energy: ['5 eV', '3 eV', '2 eV'],
+  reaction: ['Start', '1 half-life', '2 half-lives', '3 half-lives'],
+  functions: ['Uses a, b, c', 'Misses c', 'Only a'],
+};
+const legends = { energy: 'Energy of each photon', reaction: 'Time passed', functions: 'Where the four inputs go' };
+const captions = {
+  energy: 'This example metal needs 3 eV for escape. Orange marks that requirement; blue marks the greatest energy left for motion.',
+  reaction: 'Blue is the fraction of R remaining. Orange is the fraction that has reacted. Together they always make the original whole.',
+  functions: 'Every input has one output. A function is onto only when a, b and c are all used.',
+};
+const initial = kind === 'reaction' ? 1 : 0;
+---
+<figure class="article-steps" data-article-steps={kind} aria-labelledby={`${kind}-caption`}>
+  <fieldset data-step-controls hidden>
+    <legend>{legends[kind]}</legend>
+    <div class="step-buttons">{options[kind].map((label, index) => <button class={`button ${index === initial ? 'primary' : 'secondary'} blog-button`} type="button" aria-pressed={index === initial ? 'true' : 'false'} data-step={index} aria-controls={`${kind}-result`}>{label}</button>)}</div>
+  </fieldset>
+  {kind === 'energy' && <div class="energy-view">
+    <div class="step-label">Photon supplies <span data-energy-supply>5 eV</span></div>
+    <div class="step-track"><div class="step-fill incoming" data-energy-bar style="width:100%"></div></div>
+    <div class="step-label">Energy needed to escape: 3 eV</div>
+    <div class="step-track energy-budget"><div class="step-fill escape"></div><div class="step-fill kinetic" data-kinetic-bar style="width:40%"></div></div>
+    <div class="step-result" id="energy-result" role="status" aria-live="polite" aria-atomic="true">5 − 3 = 2 eV left for the fastest electron.</div>
+  </div>}
+  {kind === 'reaction' && <div>
+    <div class="step-track reaction-track" role="img" data-reaction-bar aria-label="Half remaining, half reacted"><div class="step-fill remaining" data-remaining style="width:50%"></div><div class="step-fill reacted" data-reacted style="width:50%"></div></div>
+    <div class="step-key"><span>Blue · remaining</span><span>Orange · reacted</span></div>
+    <div class="step-result" id="reaction-result" role="status" aria-live="polite" aria-atomic="true">50% remains. 50% has reacted.</div>
+  </div>}
+  {kind === 'functions' && <div>
+    <div class="function-inputs" aria-label="Assignments of the four inputs">{['a', 'a', 'b', 'c'].map((value, i) => <div><span>{i + 1}</span><span aria-hidden="true">→</span><span data-function-output>{value}</span></div>)}</div>
+    <div class="step-result" id="functions-result" role="status" aria-live="polite" aria-atomic="true">a, b and c are used. This function is onto.</div>
+  </div>}
+  <figcaption id={`${kind}-caption`}>{captions[kind]}</figcaption>
+</figure>
+<script>import '../../scripts/article-steps.js';</script>
+<style>
+.article-steps { display: grid; gap: calc(var(--spacing) * 4); padding: calc(var(--spacing) * 6); background: var(--color-surface); border: var(--stroke-default) solid var(--color-border); border-radius: var(--radius-card); }
+.article-steps fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.article-steps legend, .step-label, .step-result, .step-key, .function-inputs { font: 400 var(--text-body) / var(--text-body--line-height) var(--font-sans); }
+.article-steps legend { margin-bottom: calc(var(--spacing) * 3); padding: 0; }
+.step-buttons { display: flex; flex-wrap: wrap; gap: calc(var(--spacing) * 3); align-items: start; }
+.step-buttons .button.primary { min-height: var(--spacing-target); }
+.energy-view { display: grid; gap: calc(var(--spacing) * 3); }
+.step-track { display: flex; height: calc(var(--spacing) * 12); background: var(--color-surface-2); overflow: hidden; border-radius: var(--radius-small); }
+.step-fill { height: 100%; transition: width var(--duration-slow) var(--ease-move); flex: none; }
+.incoming { background: var(--color-primary); }
+.escape { width: 60%; background: var(--color-accent); }
+.kinetic, .remaining { background: var(--color-primary); }
+.reacted { background: var(--color-accent); }
+.step-key { display: flex; gap: calc(var(--spacing) * 4); flex-wrap: wrap; margin-top: calc(var(--spacing) * 3); }
+.step-result { margin-top: calc(var(--spacing) * 4); }
+.function-inputs { display: grid; grid-template-columns: repeat(4, 1fr); gap: calc(var(--spacing) * 3); }
+.function-inputs > div { display: grid; justify-items: center; gap: calc(var(--spacing) * 2); padding: calc(var(--spacing) * 3); background: var(--color-primary-soft); border-radius: var(--radius-small); }
+@media (max-width: 600px) { .article-steps { padding: calc(var(--spacing) * 4); } }
+@media (prefers-reduced-motion: reduce) { .step-fill { transition: none; } }
+</style>

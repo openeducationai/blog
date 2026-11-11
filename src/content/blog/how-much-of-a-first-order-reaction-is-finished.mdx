@@ -1,0 +1,75 @@
+---
+title: "How much of a first-order reaction is finished?"
+description: "Half left means half has reacted. A quarter left means three quarters have reacted. Keep those two amounts separate."
+category: chemistry
+author: padho
+pubDate: "2026-11-11T13:22:48+05:30"
+heroImage: '../../assets/articles/first-order-reaction.png'
+heroImageAlt: 'Two groups of sixteen circles show a reactant changing into product. Blue marks the amount remaining; orange marks the amount that has reacted.'
+---
+
+import ArticleSteps from '../../components/articles/ArticleSteps.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+import ReadingTerm from '../../components/ReadingTerm.astro';
+
+A reaction question may ask how much reactant is left. Another may ask how much has reacted. Those sound similar, but they are different amounts.
+
+We’ll learn how to solve this JEE Main question:
+
+**For a first-order reaction R → P, what fraction of the original reactant has reacted after time t, if the rate constant is k?**
+
+Adapted from [JEE Main, 4 April 2026, Shift 1, Q57](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf#page=20). We’ll build the answer from halves and fractions. You do not need calculus.
+
+## Start with 100 units of reactant
+
+R is our reactant; P is the product it changes into. Suppose we begin with 100 units of R. If 30 units have changed into P, 70 units of R remain. We have accounted for all the original R: 30 reacted plus 70 remaining equals 100.
+
+A <ReadingTerm term="First-order reaction" definition="A reaction whose rate is proportional to the amount of reactant per unit volume. At a fixed temperature, halving that concentration halves the rate.">first-order reaction</ReadingTerm> slows down as R is used up. Under fixed conditions, each equal time interval removes the same fraction of the R still present.
+
+The time needed for half of R to react is its half-life. Suppose one half-life is ten minutes. After ten minutes, 50 of our 100 units remain. During the next ten minutes, half of those 50 react. That leaves 25, not zero.
+
+<ArticleSteps kind="reaction" />
+
+After two half-lives, 25 units remain and 75 have reacted. The fraction remaining is 25/100 = ¼. The fraction reacted is 75/100 = ¾.
+
+Notice what we divide by: the original amount, 100. We are asking what fraction of our starting sample has changed.
+
+<KeyIdea id="reacted-and-remaining">Fraction reacted + fraction remaining = 1. Find one, and subtract it from 1 to find the other.</KeyIdea>
+
+## Give the remaining fraction a formula
+
+Counting half-lives works well at ten, twenty or thirty minutes. But what if we want the amount after seven minutes? The first-order formula works at any time:
+
+**Fraction remaining = e<sup>−kt</sup>.**
+
+Here e is the mathematical number about 2.718. The constant k describes how quickly the reaction proceeds, and t is the elapsed time. If k is measured per minute, use minutes for t. The product kt then has no unit.
+
+Think of e<sup>−kt</sup> as a number that starts at 1 and gradually becomes smaller. At t = 0, the whole sample remains. After one half-life, the number is ½. After two half-lives, it is ¼.
+
+The opening question asks for the fraction that has reacted. So we need the part missing from this remaining fraction. Subtract e<sup>−kt</sup> from 1.
+
+## Does two half-lives mean finished?
+
+No. In a first-order reaction, each half-life removes half of what is left. A quarter remains after two half-lives; an eighth remains after three.
+
+The ideal first-order formula approaches zero remaining reactant but never reaches exactly zero at a finite time. In a real experiment, the amount can become too small to detect. That is different from exact zero in the mathematical model.
+
+Compare this with an ideal zero-order reaction. It removes the same amount in equal times. If 50 of our original 100 units react in ten minutes, the other 50 react in the next ten minutes, provided that rate law continues to apply. Completion then takes twice the initial half-life.
+
+## Try the past questions
+
+**1. Return to our opening question.** In R → P, with first-order rate constant k, find the fraction of R that has reacted by time t.
+
+<details class="reading-check"><summary>Show hint</summary><p>The formula e<sup>−kt</sup> describes what remains. The question asks for what has changed into product.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The required fraction is 1 − e<sup>−kt</sup>. Check the start: at t = 0, the answer is 1 − 1 = 0. Nothing has reacted yet. After one half-life, the answer is 1 − ½ = ½. Both checks fit our picture.</p></details>
+
+**2. Compare ideal zero-order and first-order reactions. How does the time for complete reaction relate to the time for 50% reaction?**
+
+Adapted from [JEE Main, 2 April 2026, Shift 1, Q58](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf#page=23), with the completion-time comparison stated in words.
+
+<details class="reading-check"><summary>Show hint</summary><p>One reaction removes equal amounts in equal times. The other removes equal fractions of what remains.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>For the ideal zero-order reaction, completion takes twice the initial half-life. For the ideal first-order reaction, there is no finite time at which the formula gives exactly 100% completion. After two half-lives, only 75% has reacted.</p></details>
+
+The results match the choices identified in the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 695278282 and 69112158.

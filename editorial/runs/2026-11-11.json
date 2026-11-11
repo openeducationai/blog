@@ -1,7 +1,11 @@
 {
   "date": "2026-11-11",
   "status": "partial",
-  "articleSlugs": [],
+  "articleSlugs": [
+    "where-does-a-photoelectrons-energy-come-from",
+    "how-much-of-a-first-order-reaction-is-finished",
+    "how-do-you-count-functions-that-miss-an-output"
+  ],
   "attempts": [
     {
       "type": "scheduled",
@@ -19,16 +23,61 @@
   ],
   "stages": {
     "research": {
-      "status": "in_progress"
+      "status": "complete",
+      "completedAt": "2026-11-11T13:22:48+05:30",
+      "evidence": "Six selected questions visually inspected in official 2026 April papers; final option IDs checked in NTA result-compiled final key. Targeted scan of three shifts; no national weightage claim."
     },
     "writing": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-11T13:22:48+05:30",
+      "evidence": "Three original lessons, each with an opening target, interactive visual, KeyIdea and two identified past questions."
     },
     "validation": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-11T13:28:47+05:30",
+      "tests": {
+        "node": 30,
+        "python": 6,
+        "typecheck": "passed",
+        "build": "passed",
+        "search": "12 sitemap URLs; 6 total articles; all metadata matches visible content",
+        "browser": "6 article/viewport combinations; all figure states, no-script and reduced-motion checks passed"
+      },
+      "researchBriefs": [
+        "editorial/research/2026-11-11-physics.json",
+        "editorial/research/2026-11-11-chemistry.json",
+        "editorial/research/2026-11-11-maths.json"
+      ]
     },
     "figma": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-11T13:42:08+05:30",
+      "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+      "pageId": "27:306",
+      "url": "https://www.figma.com/design/GsBNGG7jIMvsPyhP7w0zXK/Blogs?node-id=27-306",
+      "articles": [
+        {
+          "slug": "where-does-a-photoelectrons-energy-come-from",
+          "desktopFrameId": "37:220",
+          "phoneFrameId": "37:471"
+        },
+        {
+          "slug": "how-much-of-a-first-order-reaction-is-finished",
+          "desktopFrameId": "38:312",
+          "phoneFrameId": "38:565"
+        },
+        {
+          "slug": "how-do-you-count-functions-that-miss-an-output",
+          "desktopFrameId": "38:810",
+          "phoneFrameId": "38:1088"
+        }
+      ],
+      "verifiedFrames": 6,
+      "retention": {
+        "cutoff": "2026-11-05",
+        "removedPages": []
+      },
+      "comments": "Supported comments read unavailable; no old page deletion required."
     },
     "publication": {
       "status": "pending"

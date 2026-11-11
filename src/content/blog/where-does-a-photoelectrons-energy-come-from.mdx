@@ -1,0 +1,71 @@
+---
+title: "Where does a photoelectron’s energy come from?"
+description: "Light gives an electron energy. Some is needed to leave the metal. What happens to the rest?"
+category: physics
+author: padho
+pubDate: "2026-11-11T13:22:48+05:30"
+heroImage: '../../assets/articles/photoelectron-energy.png'
+heroImageAlt: 'Light reaches a metal surface and an electron leaves. The energy bar separates the energy needed to escape from the energy left for motion.'
+---
+
+import ArticleSteps from '../../components/articles/ArticleSteps.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+import ReadingTerm from '../../components/ReadingTerm.astro';
+
+Shine suitable light on a metal, and electrons can leave its surface. The light supplies the energy. But an electron cannot use all of that energy for motion: leaving the metal takes some of it.
+
+We’ll use this idea to solve a JEE Main question:
+
+**Light of wavelength λ gives a stopping potential of 3V₀. Light of wavelength 2λ gives V₀ for the same metal. What is the metal’s threshold wavelength?**
+
+Adapted from [JEE Main, 2 April 2026, Shift 1, Q42](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf#page=17). We’ll explain those terms first. You only need to be comfortable subtracting two equations.
+
+## One packet of light, one energy budget
+
+Light transfers energy in packets called photons. A photon has energy E = hc/λ. Here h is Planck’s constant, c is the speed of light, and λ is the wavelength. For this question, the useful point is simple: **doubling the wavelength halves the photon’s energy.**
+
+An electron absorbs a photon. To leave the surface, the electron needs a minimum amount of energy called the <ReadingTerm term="Work function" definition="The minimum energy needed to remove an electron from a metal surface. Its symbol is φ, pronounced phi.">work function</ReadingTerm>, φ. For the same surface, φ stays the same when we change the light.
+
+Any energy left over can become the electron’s kinetic energy — its energy of motion. The fastest emitted electrons therefore have:
+
+**Kₘₐₓ = photon energy − work function.**
+
+For example, suppose the photon supplies 5 electronvolts and the work function is 3 electronvolts. The greatest possible kinetic energy is 2 electronvolts. An electronvolt, written eV, is simply a small unit of energy.
+
+<ArticleSteps kind="energy" />
+
+Choose a smaller photon energy. At 3 eV, the photon just meets the escape requirement. Below 3 eV, this surface does not emit an electron in the ordinary one-photon model. There is no “negative kinetic energy”; there is no emission.
+
+## What does stopping potential tell us?
+
+Imagine putting an electrical barrier in the path of the emitted electrons. Increase that barrier until even the fastest electrons cannot reach the collector. The voltage needed is the stopping potential, Vₛ.
+
+The energy needed to stop an electron is eVₛ, where e is the magnitude of the electron’s charge. So Kₘₐₓ = eVₛ. A larger stopping potential means the fastest electrons had more kinetic energy.
+
+Our energy budget can now be written as:
+
+**hc/λ = φ + eVₛ.**
+
+The left side is the energy supplied. The right side accounts for the energy needed to escape and the energy left for motion.
+
+<KeyIdea id="photoelectron-budget">For the same metal, the escape energy stays fixed. Changing the photon energy changes how much energy can remain for the emitted electron.</KeyIdea>
+
+At the threshold, a photon only just supplies φ. The threshold wavelength λ₀ therefore satisfies hc/λ₀ = φ. Longer wavelengths carry too little energy to cause emission.
+
+## Try the past questions
+
+**1. Return to our opening question.** Wavelengths λ and 2λ give stopping potentials 3V₀ and V₀. Find λ₀.
+
+<details class="reading-check"><summary>Show hint</summary><p>Call the first photon energy E. The second is E/2. Write an energy budget for each, using the same φ.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The two budgets are E = φ + 3eV₀ and E/2 = φ + eV₀. Subtract the second from the first: E/2 = 2eV₀. Hence E = 4eV₀.</p><p>Put that back into the first budget: φ = eV₀. The threshold photon has one quarter of the original photon’s energy. Since wavelength increases when photon energy decreases, its wavelength is four times as large: λ₀ = 4λ.</p></details>
+
+**2. Three metals, X₁, X₂ and X₃, have threshold frequencies of 1.0, 1.5 and 2.0 × 10¹⁴ Hz respectively. The same light, above all three thresholds, falls on them. Which gives electrons with the greatest maximum kinetic energy?**
+
+Adapted from the graph in [JEE Main, 4 April 2026, Shift 1, Q32](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf#page=11).
+
+<details class="reading-check"><summary>Show hint</summary><p>At threshold, φ = hν₀, where ν₀ is threshold frequency. Which metal needs the least energy for escape?</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>X₁ has the lowest threshold frequency, so it has the smallest work function. Each metal receives photons of the same energy. X₁ uses the least of that energy for escape, leaving the most for motion. The answer is X₁.</p></details>
+
+Answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf): question IDs 69112142 and 695278257.
