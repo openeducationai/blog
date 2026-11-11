@@ -1,6 +1,6 @@
 {
   "date": "2026-11-11",
-  "status": "partial",
+  "status": "published",
   "articleSlugs": [
     "where-does-a-photoelectrons-energy-come-from",
     "how-much-of-a-first-order-reaction-is-finished",
@@ -17,8 +17,10 @@
     {
       "type": "owner-authorised-late-retry",
       "startedAt": "2026-11-11T13:07:12+05:30",
-      "status": "in_progress",
-      "authorization": "Owner renewed gcloud login and explicitly requested: fix the flow and do for today."
+      "status": "published",
+      "authorization": "Owner renewed gcloud login and explicitly requested: fix the flow and do for today.",
+      "finishedAt": "2026-11-11T13:45:22+05:30",
+      "sourceCommit": "9fd6667e3cad3087bf261da12c828617fe0d0f76"
     }
   ],
   "stages": {
@@ -80,10 +82,78 @@
       "comments": "Supported comments read unavailable; no old page deletion required."
     },
     "publication": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-11T13:43:46+05:30",
+      "sourceCommit": "9fd6667e3cad3087bf261da12c828617fe0d0f76",
+      "publisher": "node scripts/publish.mjs",
+      "bucket": "padho-ai-marketing",
+      "scope": [
+        "blog",
+        "blog/*"
+      ],
+      "invalidation": [
+        "/blog",
+        "/blog/*"
+      ]
     },
     "liveVerification": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-11T13:45:22+05:30",
+      "articles": [
+        {
+          "slug": "where-does-a-photoelectrons-energy-come-from",
+          "url": "https://padho.ai/blog/where-does-a-photoelectrons-energy-come-from/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "a62d2b5d2d6ec5390680a95a4798a0fd4b1a1e48b97c09384c0a8848168dfde8",
+          "matchesReviewedBuild": true
+        },
+        {
+          "slug": "how-much-of-a-first-order-reaction-is-finished",
+          "url": "https://padho.ai/blog/how-much-of-a-first-order-reaction-is-finished/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "6301f77f85189c064c076fef52ad7f9153a91175fe243defbb935ff26be797b3",
+          "matchesReviewedBuild": true
+        },
+        {
+          "slug": "how-do-you-count-functions-that-miss-an-output",
+          "url": "https://padho.ai/blog/how-do-you-count-functions-that-miss-an-output/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "88724c77a42dee11c8cadbd42053c86908139dde347c2af458d5764b6ab8d8bb",
+          "matchesReviewedBuild": true
+        }
+      ],
+      "sitemapPages": 12,
+      "totalPublishedArticles": 6,
+      "metadataMatchesVisibleContent": true,
+      "crawlerProbes": {
+        "count": 24,
+        "allHTTP200": true,
+        "allSameContent": true,
+        "limit": "Public user-agent probes and robots rules; not proof of a visit from official crawler IPs or of indexing."
+      },
+      "browser": {
+        "combinations": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "interactiveStates": "passed",
+        "noScriptFallbacks": "passed",
+        "reducedMotion": "passed"
+      },
+      "sitemap": "https://padho.ai/blog/sitemap-index.xml"
     }
+  },
+  "sourceCommit": "9fd6667e3cad3087bf261da12c828617fe0d0f76",
+  "completedAt": "2026-11-11T13:45:22+05:30",
+  "schedule": {
+    "nextScheduledDate": "2026-11-12",
+    "time": "07:00",
+    "timezone": "Asia/Kolkata",
+    "trialEndDate": "2026-11-17",
+    "launchAgent": "ai.padho.blog-pcm-trial",
+    "loaded": true,
+    "nextDateEligibilityCheck": "ready",
+    "lateRetryOnlyFor": "2026-11-11"
   }
 }

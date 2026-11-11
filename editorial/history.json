@@ -113,7 +113,7 @@
       "url": "https://padho.ai/blog/where-does-a-photoelectrons-energy-come-from/",
       "publishedAt": "2026-11-11T13:22:48+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112142",
       "targetQuestionText": "Light of wavelength λ gives a stopping potential of 3V₀. Light of wavelength 2λ gives V₀ for the same metal. What is the metal’s threshold wavelength?",
       "briefPath": "editorial/research/2026-11-11-physics.json",
@@ -154,7 +154,10 @@
         },
         "notes": "The graph question is paraphrased into threshold frequencies, with illumination above all three thresholds stated explicitly. No emission is shown below the work function; negative kinetic energy is never displayed. Read continuously as a student; each opening states the target, terms are introduced before use, and the worked solution returns to that target. All control states, no-script fallbacks and reduced-motion behavior passed on the real app at 1440 and 390 widths. Screenshots inspected for covers, justified Literata paragraphs, controls and solution disclosures. This is an agent review, not a claimed human review."
       },
-      "recordedAt": "2026-11-11T13:28:47+05:30"
+      "recordedAt": "2026-11-11T13:28:47+05:30",
+      "sourceCommit": "9fd6667e3cad3087bf261da12c828617fe0d0f76",
+      "liveVerifiedAt": "2026-11-11T13:45:22+05:30",
+      "liveHtmlSha256": "a62d2b5d2d6ec5390680a95a4798a0fd4b1a1e48b97c09384c0a8848168dfde8"
     },
     {
       "slug": "how-much-of-a-first-order-reaction-is-finished",
@@ -169,7 +172,7 @@
       "url": "https://padho.ai/blog/how-much-of-a-first-order-reaction-is-finished/",
       "publishedAt": "2026-11-11T13:22:48+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278282",
       "targetQuestionText": "For a first-order reaction R → P, what fraction of the original reactant has reacted after time t, if the rate constant is k?",
       "briefPath": "editorial/research/2026-11-11-chemistry.json",
@@ -210,7 +213,10 @@
         },
         "notes": "The original Q58 option prints an awkward power-of-half-life notation for infinite completion. The article does not reproduce that dimensional expression: it clearly labels an adaptation and states the intended ideal-model limit in words. The keyed option ID and original image were checked. Practical detection and ideal zero are distinguished. Read continuously as a student; each opening states the target, terms are introduced before use, and the worked solution returns to that target. All control states, no-script fallbacks and reduced-motion behavior passed on the real app at 1440 and 390 widths. Screenshots inspected for covers, justified Literata paragraphs, controls and solution disclosures. This is an agent review, not a claimed human review."
       },
-      "recordedAt": "2026-11-11T13:28:47+05:30"
+      "recordedAt": "2026-11-11T13:28:47+05:30",
+      "sourceCommit": "9fd6667e3cad3087bf261da12c828617fe0d0f76",
+      "liveVerifiedAt": "2026-11-11T13:45:22+05:30",
+      "liveHtmlSha256": "6301f77f85189c064c076fef52ad7f9153a91175fe243defbb935ff26be797b3"
     },
     {
       "slug": "how-do-you-count-functions-that-miss-an-output",
@@ -225,7 +231,7 @@
       "url": "https://padho.ai/blog/how-do-you-count-functions-that-miss-an-output/",
       "publishedAt": "2026-11-11T13:22:48+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278229",
       "targetQuestionText": "Each input in the set 1, 2, 3, 4 is assigned to one output from a, b, c. How many such functions leave at least one output unused?",
       "briefPath": "editorial/research/2026-11-11-maths.json",
@@ -266,7 +272,10 @@
         },
         "notes": "Four labelled inputs remain the teaching example. The second question explicitly extends the same missing-choice idea to seven positions and five digits; every inclusion-exclusion term is explained. Enumeration agrees with both keyed answers. Read continuously as a student; each opening states the target, terms are introduced before use, and the worked solution returns to that target. All control states, no-script fallbacks and reduced-motion behavior passed on the real app at 1440 and 390 widths. Screenshots inspected for covers, justified Literata paragraphs, controls and solution disclosures. This is an agent review, not a claimed human review."
       },
-      "recordedAt": "2026-11-11T13:28:47+05:30"
+      "recordedAt": "2026-11-11T13:28:47+05:30",
+      "sourceCommit": "9fd6667e3cad3087bf261da12c828617fe0d0f76",
+      "liveVerifiedAt": "2026-11-11T13:45:22+05:30",
+      "liveHtmlSha256": "88724c77a42dee11c8cadbd42053c86908139dde347c2af458d5764b6ab8d8bb"
     }
   ]
 }

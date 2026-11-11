@@ -75,7 +75,8 @@
         "paragraphOverflows": 0,
         "comments": "No supported Figma comments reader is exposed in this session; no claim of comment review. No registered pages expired (cutoff 2026-11-05)."
       },
-      "verifiedAt": "2026-11-11T13:42:08+05:30"
+      "verifiedAt": "2026-11-11T13:42:08+05:30",
+      "sourceCommit": "9fd6667e3cad3087bf261da12c828617fe0d0f76"
     }
   ],
   "removedPages": []

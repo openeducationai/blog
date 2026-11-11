@@ -39,3 +39,5 @@ The first scheduled attempt stopped before authoring because the runner checked 
 - Evidence covers a targeted scan of three April 2026 shifts, not a five-year or all-shift chapter-weightage analysis. Expand the official-paper corpus before making stronger priority claims. Direct NCERT PDF access timed out; SATHEE returned 403. Do not describe either as a consulted source.
 - Source, real-app checks, six editable Figma views and the Figma registry were completed before release access was checked. A future authentication failure must retain those stages and their files.
 - Figma capture needs native repairs for CSS repeating grids, inline definition paragraphs and HTML superscripts. Use the approved Typography collection's Desktop/Mobile modes; do not override every font property after binding a text style.
+
+- Release completed and live-verified at 2026-11-11T13:45:22+05:30; all three HTML responses exactly match the reviewed build. Sitemap now contains 12 URLs and six articles; all 24 public crawler-user-agent probes returned matching content. This is access evidence, not a claim of indexing. Source commit: 9fd6667e3cad3087bf261da12c828617fe0d0f76.

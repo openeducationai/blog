@@ -9,12 +9,13 @@
       "question": "Light of wavelength λ gives a stopping potential of 3V₀. Light of wavelength 2λ gives V₀ for the same metal. What is the metal’s threshold wavelength?",
       "learningObjective": "Use photon energy = work function + maximum kinetic energy to compare stopping potentials and thresholds.",
       "example": "A photon supplies 5 eV to a surface needing 3 eV for escape.",
-      "status": "writing",
+      "status": "published",
       "slug": "where-does-a-photoelectrons-energy-come-from",
       "briefPath": "editorial/research/2026-11-11-physics.json",
       "rationale": "Two directly relevant verified recent JEE Main questions in the scanned corpus, current syllabus inclusion, a common conceptual distinction, and a short visual route from a prerequisite to a real exam question. Prioritised for this first trial batch; no invented frequency or marks-percentage claim.",
       "closestPriorSlugs": [],
-      "difference": "New chapter and learning objective; no prior published question ID or concept repeats."
+      "difference": "New chapter and learning objective; no prior published question ID or concept repeats.",
+      "publishedAt": "2026-11-11T13:22:48+05:30"
     },
     {
       "id": "2026-11-11-chemistry",
@@ -24,12 +25,13 @@
       "question": "For a first-order reaction R → P, what fraction of the original reactant has reacted after time t, if the rate constant is k?",
       "learningObjective": "Distinguish fraction remaining from fraction reacted, and explain why two half-lives do not complete an ideal first-order reaction.",
       "example": "100 units of R become 50, 25 and 12.5 units after successive half-lives.",
-      "status": "writing",
+      "status": "published",
       "slug": "how-much-of-a-first-order-reaction-is-finished",
       "briefPath": "editorial/research/2026-11-11-chemistry.json",
       "rationale": "Two directly relevant verified recent JEE Main questions in the scanned corpus, current syllabus inclusion, a common conceptual distinction, and a short visual route from a prerequisite to a real exam question. Prioritised for this first trial batch; no invented frequency or marks-percentage claim.",
       "closestPriorSlugs": [],
-      "difference": "New chapter and learning objective; no prior published question ID or concept repeats."
+      "difference": "New chapter and learning objective; no prior published question ID or concept repeats.",
+      "publishedAt": "2026-11-11T13:22:48+05:30"
     },
     {
       "id": "2026-11-11-maths",
@@ -39,12 +41,13 @@
       "question": "Each input in the set 1, 2, 3, 4 is assigned to one output from a, b, c. How many such functions leave at least one output unused?",
       "learningObjective": "Count missing-output cases and correct overlaps with inclusion-exclusion.",
       "example": "Four labelled inputs assigned to a, b and c; the all-a function is counted in both missing-b and missing-c groups.",
-      "status": "writing",
+      "status": "published",
       "slug": "how-do-you-count-functions-that-miss-an-output",
       "briefPath": "editorial/research/2026-11-11-maths.json",
       "rationale": "Two directly relevant verified recent JEE Main questions in the scanned corpus, current syllabus inclusion, a common conceptual distinction, and a short visual route from a prerequisite to a real exam question. Prioritised for this first trial batch; no invented frequency or marks-percentage claim.",
       "closestPriorSlugs": [],
-      "difference": "New chapter and learning objective; no prior published question ID or concept repeats."
+      "difference": "New chapter and learning objective; no prior published question ID or concept repeats.",
+      "publishedAt": "2026-11-11T13:22:48+05:30"
     }
   ]
 }
