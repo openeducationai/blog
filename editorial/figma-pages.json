@@ -120,7 +120,8 @@
         "comments": "Supported get_comments returned no comments. No registered pages expired (cutoff 2026-11-06).",
         "captureReferencesRemoved": true
       },
-      "verifiedAt": "2026-11-12T07:46:56+05:30"
+      "verifiedAt": "2026-11-12T07:46:56+05:30",
+      "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d"
     }
   ],
   "removedPages": []

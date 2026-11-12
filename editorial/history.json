@@ -331,7 +331,8 @@
         },
         "notes": "Original wire routing visually inspected. C1 and C2 are not in series despite their positions in a row. Dielectric problem explicitly uses half the gap and neglects edge effects; introduction to dielectric capacitance is required before this extension. Read in sequence and paraphrased paragraph by paragraph: terms precede use, the target is explicit at the start and solved last, and prerequisites for both questions are taught. Original SVG renders inspected; node-label overlap corrected. Six independent arithmetic checks passed. This is an agent review, not a claimed human review. Real Astro app reviewed at desktop 1440 and phone 390 widths: visible covers, readable figures, native disclosures, definitions, reduced motion and no-script content passed. Build, typecheck, 39 tests, editorial/search/analytics checks passed."
       },
-      "recordedAt": "2026-11-12T07:15:36+05:30"
+      "recordedAt": "2026-11-12T07:15:36+05:30",
+      "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d"
     },
     {
       "slug": "why-does-osmotic-pressure-depend-on-particle-count",
@@ -387,7 +388,8 @@
         },
         "notes": "Original MCQ is paraphrased as the keyed hypotonic-side question. The complex ion stays intact; no claims about colour mixing across the water-only membrane. Protein question assumptions made explicit. Read in sequence and paraphrased paragraph by paragraph: terms precede use, the target is explicit at the start and solved last, and prerequisites for both questions are taught. Original SVG renders inspected; node-label overlap corrected. Six independent arithmetic checks passed. This is an agent review, not a claimed human review. Real Astro app reviewed at desktop 1440 and phone 390 widths: visible covers, readable figures, native disclosures, definitions, reduced motion and no-script content passed. Build, typecheck, 39 tests, editorial/search/analytics checks passed."
       },
-      "recordedAt": "2026-11-12T07:15:36+05:30"
+      "recordedAt": "2026-11-12T07:15:36+05:30",
+      "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d"
     },
     {
       "slug": "how-can-sums-of-squares-give-standard-deviation",
@@ -443,7 +445,8 @@
         },
         "notes": "Use n, not n−1, for the descriptive variance in these JEE questions. Distinguish sum of squares from square of sum; the constant term in each shifted square occurs ten times. The second quadratic root 25/4 is inadmissible. Read in sequence and paraphrased paragraph by paragraph: terms precede use, the target is explicit at the start and solved last, and prerequisites for both questions are taught. Original SVG renders inspected; node-label overlap corrected. Six independent arithmetic checks passed. This is an agent review, not a claimed human review. Real Astro app reviewed at desktop 1440 and phone 390 widths: visible covers, readable figures, native disclosures, definitions, reduced motion and no-script content passed. Build, typecheck, 39 tests, editorial/search/analytics checks passed."
       },
-      "recordedAt": "2026-11-12T07:15:36+05:30"
+      "recordedAt": "2026-11-12T07:15:36+05:30",
+      "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d"
     }
   ]
 }
