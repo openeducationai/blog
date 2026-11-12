@@ -141,8 +141,13 @@
       "evidence": "All three prepared article URLs returned HTTP 404. No successful publication or live-content validation is claimed."
     },
     "gitRecords": {
-      "status": "pending",
-      "evidence": "Final partial outcome and resume checkpoint prepared for commit/push to main."
+      "status": "complete",
+      "completedAt": "2026-11-12T07:51:24+05:30",
+      "recordCommit": "c69423b924dc9f81ee3f137dc20281670bd4c766",
+      "pushedTo": "origin/main",
+      "sourceAndPartialOutcomeSynced": true,
+      "worktreeCleanAtVerification": true,
+      "localHeadMatchedOriginMain": true
     }
   },
   "preflight": {
