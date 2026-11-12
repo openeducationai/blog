@@ -229,8 +229,13 @@
       }
     },
     "gitRecords": {
-      "status": "pending",
-      "scope": "Publication outcome, article history, queue and memory"
+      "status": "complete",
+      "completedAt": "2026-11-12T10:43:44+05:30",
+      "recordCommit": "deb4425427d400bb973f7b6a1c859a2b38cab625",
+      "pushedTo": "origin/main",
+      "sourceAndPublicationOutcomeSynced": true,
+      "worktreeCleanAtVerification": true,
+      "localHeadMatchedOriginMain": true
     }
   },
   "preflight": {
