@@ -1,0 +1,88 @@
+{
+  "id": "2026-11-12-physics",
+  "researchedAt": "2026-11-12T07:09:22+05:30",
+  "category": "physics",
+  "conceptKey": "physics/electrostatics/capacitor-series-parallel-connections",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; official site checked 12 November 2026",
+    "scope": "Physics Unit 11 Electrostatics: capacitors, series/parallel combinations, parallel-plate capacitor with and without dielectric.",
+    "sha256": "823ec5afaf30f19d4f0dc375159d8b843b944633e4edda58c9d910c145c32ccd"
+  },
+  "corpus": {
+    "papersExamined": 5,
+    "paperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf"
+    ],
+    "coverageNotes": "Targeted candidate scan of April 2 shifts 1/2, April 4 shifts 1/2 and April 5 shift 1 (375 questions available). Expanded yesterday’s three-paper sample by two official PDFs. OCR used only to locate candidates; selected questions/options visually inspected. Not an exhaustive classification, all-shift or five-year census; no marks percentage inferred.",
+    "selectedDirectMatches": 2
+  },
+  "priority": {
+    "rationale": "Two directly relevant verified questions in a targeted five-paper April 2026 sample; syllabus inclusion, a specific misconception and prerequisite value justify this selection. Not a frequency census or weightage forecast.",
+    "selectionConfidence": "Verified relevance; limited frequency coverage"
+  },
+  "sources": [
+    {
+      "title": "Official NTA JEE Main 2027 syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "Official NTA April 2026 final key on which results were compiled",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    },
+    {
+      "title": "Official NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf"
+    },
+    {
+      "title": "Official NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf"
+    },
+    {
+      "title": "OpenStax University Physics 2, 8.1 Capacitors and Capacitance",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/8-1-capacitors-and-capacitance"
+    },
+    {
+      "title": "OpenStax University Physics 2, 8.2 Capacitors in Series and in Parallel",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel"
+    },
+    {
+      "title": "OpenStax University Physics 2, 8.4 Capacitor with a Dielectric",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/8-4-capacitor-with-a-dielectric"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278412",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "JEE Main Paper 1; 04 April 2026, Shift 2; Q37; question ID 695278412; PDF page 14",
+      "answer": "2 μF",
+      "verifiedAt": "2026-11-12T07:09:22+05:30",
+      "adapted": true,
+      "correctOptionId": "6952781405",
+      "independentSolution": "C1 and C2 share A and X, so give 2 μF in parallel. This is in series with C4=2 μF, giving 1 μF. C3=1 μF is directly between A and B, so total=2 μF. Nodal cross-check at VA=1,VB=0 gives VX=1/2 and QA=2 μC.",
+      "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+    },
+    {
+      "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112132",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "JEE Main Paper 1; 02 April 2026, Shift 1; Q32; question ID 69112132; PDF page 12–13",
+      "answer": "66.67% increase (new capacitance 5C/3)",
+      "verifiedAt": "2026-11-12T07:09:22+05:30",
+      "adapted": true,
+      "correctOptionId": "691121111",
+      "independentSolution": "The dielectric fills half the gap across the full area, not half the plate area. Each half thickness d/2: air 2C, dielectric 10C; successive voltage drops give 1/Cnew=1/(2C)+1/(10C), hence 5C/3. Increase=2/3=66.67%.",
+      "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278412",
+  "targetQuestionText": "In the circuit above, C₁ = C₂ = C₃ = 1 μF and C₄ = 2 μF. What is the equivalent capacitance between A and B?",
+  "verificationNotes": "Original wire routing visually inspected. C1 and C2 are not in series despite their positions in a row. Dielectric problem explicitly uses half the gap and neglects edge effects; introduction to dielectric capacitance is required before this extension.",
+  "textbookAccess": "Direct NCERT requests timed out or returned 502. OpenStax primary textbook pages and Stanford lecture (maths) were opened; unavailable NCERT pages are not claimed as consulted."
+}

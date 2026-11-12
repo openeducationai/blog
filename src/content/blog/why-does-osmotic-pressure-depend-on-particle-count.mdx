@@ -1,0 +1,89 @@
+---
+title: "Why does osmotic pressure depend on particle count?"
+description: "Equal molarities do not always mean equal osmotic pressures. Count the particles that actually remain dissolved."
+category: chemistry
+author: padho
+pubDate: "2026-11-12T07:14:12+05:30"
+heroImage: '../../assets/articles/osmotic-membrane.png'
+heroImageAlt: 'Two equal-volume solutions, side x and side y, separated by a membrane. The membrane lets water cross and retains the dissolved particles.'
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+import ReadingTerm from '../../components/ReadingTerm.astro';
+
+We’ll learn how to solve this JEE Main question:
+
+**At 27 °C, a membrane separates 1 L of 0.1 M K₄[Fe(CN)₆] on side x from 1 L of 0.1 M FeCl₃ on side y. Only water can cross. Assuming complete dissociation, which side is hypotonic?**
+
+Adapted from [JEE Main, 4 April 2026, Shift 2, Q54](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf#page=21). You need the mole concept and simple ionic formulae; we’ll explain “hypotonic” below.
+
+Both labels say 0.1 M. That looks like a tie. The missing step is to ask how many separate particles each dissolved formula unit produces.
+
+## What does the membrane allow?
+
+Imagine two solutions separated by a thin barrier. Water can pass through it, but the dissolved solute cannot. Such a barrier is called a semipermeable membrane. The question uses this ideal water-only membrane.
+
+Water molecules cross in both directions. For dilute ideal solutions at the same temperature and equal external pressure, the net movement is towards the side with the greater concentration of dissolved particles. This net movement is called osmosis. The water moves; the solute does not pass through the membrane.
+
+We can oppose that net movement by applying extra pressure on the more concentrated side. The pressure needed to stop osmosis from pure water into a solution is its <ReadingTerm term="Osmotic pressure" definition="The extra pressure needed on a solution to stop net solvent flow into it through a membrane that retains the solute.">osmotic pressure</ReadingTerm>, written π.
+
+A solution is hypotonic relative to another when it has the lower osmotic pressure. “Hypotonic” is a comparison, so we must say what the other solution is.
+
+## Count particles per litre
+
+Molarity c means moles of solute per litre of solution. A 0.1 M glucose solution contains 0.1 mol of glucose molecules per litre. Glucose stays as molecules in this model, so its dissolved-particle concentration is also 0.1 mol per litre.
+
+Now replace glucose with NaCl and assume complete dissociation. Each formula unit separates into one Na⁺ ion and one Cl⁻ ion. A 0.1 M NaCl solution then contains 0.1 mol of each ion per litre: 0.2 mol of particles altogether.
+
+<ArticleDiagram kind="particles">One glucose molecule stays as one particle. One NaCl formula unit gives two ions when dissociation is complete. These are particle-count symbols, not a picture of molecular sizes or of an undissolved salt molecule.</ArticleDiagram>
+
+The multiplier is called the van’t Hoff factor, i. In our ideal examples, glucose has i = 1 and NaCl has i = 2. For a dilute solution, the osmotic-pressure relation is:
+
+**π = icRT.**
+
+Here c is the molarity before multiplying by the particle factor, T is the temperature in kelvin, and R is the gas constant in units matching the pressure and volume. Thus ic is the effective concentration of dissolved particles. At the same temperature, comparing ic is enough; R and T are common to both sides.
+
+This is the dilute-solution model described in [OpenStax’s section on osmotic pressure](https://openstax.org/books/chemistry-2e/pages/11-4-colligative-properties). Real electrolytes can depart from the simple integer factors. Our opening question explicitly asks us to assume complete dissociation and use the ideal comparison.
+
+<KeyIdea id="osmotic-particle-count">Compare dissolved particles per litre, not just the molarity printed on the bottle. If the solute splits into ions, count those ions before comparing osmotic pressures.</KeyIdea>
+
+## Keep a complex ion together
+
+The brackets in K₄[Fe(CN)₆] matter. Dissolving this salt separates the potassium ions from the complex ion inside the brackets. It does not mean breaking that complex ion into a separate iron ion and six cyanide ions.
+
+The complete-dissociation equations we need are:
+
+K₄[Fe(CN)₆] → 4K⁺ + [Fe(CN)₆]⁴⁻
+
+FeCl₃ → Fe³⁺ + 3Cl⁻
+
+Count the species on the right of each equation. Then multiply each count by 0.1 mol per litre. We’ll use those results to settle the opening question after one more practice problem.
+
+## Mixing changes the amount and the volume
+
+Our next question uses a protein that stays as whole molecules. For that ideal model, i = 1. To find its molarity, divide mass by molar mass to get moles, then divide by the solution volume in litres.
+
+When two solutions are mixed, add their moles and add their volumes, assuming the volumes are additive. Then divide. Do not add their osmotic pressures: pressure depends on concentration, not on the total amount alone.
+
+If both starting solutions have the same particle concentration, their mixture has that concentration too. Doubling both the number of particles and the volume leaves particles per litre unchanged.
+
+## Try the past questions
+
+**1. Solution A contains 1 g of a protein in 0.5 L of water. Solution B contains 2 g of the same protein in 1 L of water. At 300 K, find the osmotic pressure of A, B and their complete mixture.**
+
+The protein’s molar mass is 50,000 g mol⁻¹. Use R = 0.083 L bar mol⁻¹ K⁻¹. Treat the protein as non-dissociating, the solutions as dilute and the volumes as additive; use the stated water volumes as the solution volumes in this approximation.
+
+Adapted from [JEE Main, 2 April 2026, Shift 2, Q55](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf#page=21).
+
+<details class="reading-check"><summary>Show hint</summary><p>Calculate moles per litre for each solution. For the mixture, use 3 g of protein and 1.5 L of solution.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>A contains 1/50,000 = 2 × 10⁻⁵ mol. Dividing by 0.5 L gives c = 4 × 10⁻⁵ mol L⁻¹. B contains twice as many moles in twice the volume, so its concentration is the same.</p><p>The mixture contains 3/50,000 = 6 × 10⁻⁵ mol in 1.5 L. Its concentration is again 4 × 10⁻⁵ mol L⁻¹.</p><p>For all three, π = cRT = (4 × 10⁻⁵) × 0.083 × 300 = 9.96 × 10⁻⁴ bar. The litre, mole and kelvin units cancel, leaving bar.</p></details>
+
+**2. Return to our opening question. At 27 °C, a membrane separates 1 L of 0.1 M K₄[Fe(CN)₆] on side x from 1 L of 0.1 M FeCl₃ on side y. Only water can cross. Assuming complete dissociation, which side is hypotonic?**
+
+<details class="reading-check"><summary>Show hint</summary><p>Count the potassium ions and the intact complex ion on side x. Compare that total with the number of ions produced by FeCl₃ on side y.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>One formula unit of K₄[Fe(CN)₆] gives four K⁺ ions and one complex ion: five particles. Side x therefore has effective particle concentration 5 × 0.1 = 0.5 mol L⁻¹.</p><p>One formula unit of FeCl₃ gives one Fe³⁺ and three Cl⁻ ions: four particles. Side y has effective particle concentration 4 × 0.1 = 0.4 mol L⁻¹.</p><p>Both sides have the same temperature, so side y has the lower osmotic pressure. Side y is hypotonic relative to side x. At equal external pressure, water initially moves from y towards x. The dissolved ions stay on their own sides of the membrane.</p></details>
+
+Both answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf): question IDs 691121205 and 695278429.

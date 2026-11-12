@@ -48,6 +48,281 @@
       "closestPriorSlugs": [],
       "difference": "New chapter and learning objective; no prior published question ID or concept repeats.",
       "publishedAt": "2026-11-11T13:22:48+05:30"
+    },
+    {
+      "id": "2026-11-12-physics",
+      "category": "physics",
+      "chapter": "electrostatics",
+      "conceptKey": "physics/electrostatics/capacitor-series-parallel-connections",
+      "question": "In the circuit above, C₁ = C₂ = C₃ = 1 μF and C₄ = 2 μF. What is the equivalent capacitance between A and B?",
+      "learningObjective": "Identify common-potential connections before combining capacitors; distinguish shared voltage from successive voltage drops.",
+      "example": "The four-capacitor PYQ circuit is redrawn using the same three connection points A, X and B.",
+      "slug": "when-are-capacitors-in-series-or-parallel",
+      "briefPath": "editorial/research/2026-11-12-physics.json",
+      "closestPriorSlugs": [],
+      "difference": "No previous capacitor-network or dielectric-equivalence lesson; no used question IDs.",
+      "status": "writing",
+      "rationale": "Two directly relevant verified questions in a targeted five-paper April 2026 sample; syllabus inclusion, a specific misconception and prerequisite value justify this selection. Not a frequency census or weightage forecast."
+    },
+    {
+      "id": "2026-11-12-chemistry",
+      "category": "chemistry",
+      "chapter": "solutions",
+      "conceptKey": "chemistry/solutions/osmotic-pressure-particle-concentration",
+      "question": "At 27 °C, a membrane separates 1 L of 0.1 M K₄[Fe(CN)₆] on side x from 1 L of 0.1 M FeCl₃ on side y. Only water can cross. Assuming complete dissociation, which side is hypotonic?",
+      "learningObjective": "Compare osmotic pressure using dissolved-particle concentration i times molarity, and preserve concentration when mixing equal-concentration solutions.",
+      "example": "Two equal-volume solutions separated by a membrane that passes water but retains all dissolved ions.",
+      "slug": "why-does-osmotic-pressure-depend-on-particle-count",
+      "briefPath": "editorial/research/2026-11-12-chemistry.json",
+      "closestPriorSlugs": [
+        "where-does-sugar-go-when-it-dissolves"
+      ],
+      "difference": "Baseline explains where sugar molecules go. This lesson quantitatively compares particle concentration across a selective membrane and computes osmotic pressure, including dissociation; it does not repeat the dissolving-particle objective.",
+      "status": "writing",
+      "rationale": "Two directly relevant verified questions in a targeted five-paper April 2026 sample; syllabus inclusion, a specific misconception and prerequisite value justify this selection. Not a frequency census or weightage forecast."
+    },
+    {
+      "id": "2026-11-12-maths",
+      "category": "maths",
+      "chapter": "statistics-and-probability",
+      "conceptKey": "maths/statistics-and-probability/variance-from-sums-and-squares",
+      "question": "For ten numbers x₁, x₂, …, x₁₀, the sum of all (xᵢ + 2)² is 180 and the sum of all (xᵢ − 1)² is 90. What is their standard deviation?",
+      "learningObjective": "Recover the sum and sum of squares from shifted-square totals, then calculate variance and standard deviation using divisor n.",
+      "example": "The numbers 2, 4 and 6, then the same three numbers shifted by 5, show that spread is measured about the mean.",
+      "slug": "how-can-sums-of-squares-give-standard-deviation",
+      "briefPath": "editorial/research/2026-11-12-maths.json",
+      "closestPriorSlugs": [],
+      "difference": "New statistics objective; previous maths articles covered division as groups and non-onto counting. No repeated PYQ.",
+      "status": "writing",
+      "rationale": "Two directly relevant verified questions in a targeted five-paper April 2026 sample; syllabus inclusion, a specific misconception and prerequisite value justify this selection. Not a frequency census or weightage forecast."
+    },
+    {
+      "id": "buffer-half-neutralisation",
+      "category": "chemistry",
+      "chapter": "equilibrium",
+      "conceptKey": "chemistry/equilibrium/half-neutralisation-buffer-ratio",
+      "question": "Why does half-neutralisation give pH close to pKa?",
+      "learningObjective": "Use reacted moles to find equal acid/conjugate-base amounts before applying the buffer equation.",
+      "example": "20mL acetic acid neutralised with half the required NaOH.",
+      "status": "ready",
+      "briefPath": "editorial/research/buffer-half-neutralisation.json",
+      "rationale": "Two verified half-neutralisation questions in the targeted five-paper sample, with a common confusion between half-neutralisation and neutral pH; useful prerequisite for titration questions. Limited corpus, no weightage claim.",
+      "closestPriorSlugs": [],
+      "difference": "New acid-base equilibrium objective; does not repeat dissolving, osmotic pressure or kinetics.",
+      "priority": 1
+    },
+    {
+      "id": "energy-density-dimensions",
+      "category": "physics",
+      "chapter": "units-and-measurements",
+      "conceptKey": "physics/units-and-measurements/energy-density-dimensions",
+      "question": "How can energy per volume reveal a dimensional formula?",
+      "status": "needs_research",
+      "candidateQuestionIds": [
+        "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112126"
+      ],
+      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "priority": 2,
+      "closestPriorSlugs": [],
+      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+    },
+    {
+      "id": "orbital-period-radius-central-mass",
+      "category": "physics",
+      "chapter": "gravitation",
+      "conceptKey": "physics/gravitation/orbital-period-radius-central-mass",
+      "question": "How do orbital radius and star mass change a planet’s period?",
+      "status": "needs_research",
+      "candidateQuestionIds": [
+        "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112130"
+      ],
+      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "priority": 3,
+      "closestPriorSlugs": [],
+      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+    },
+    {
+      "id": "electric-magnetic-field-direction",
+      "category": "physics",
+      "chapter": "electromagnetic-waves",
+      "conceptKey": "physics/electromagnetic-waves/electric-magnetic-field-direction",
+      "question": "How do you find the electric-field direction in an electromagnetic wave?",
+      "status": "needs_research",
+      "candidateQuestionIds": [
+        "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121187"
+      ],
+      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "priority": 4,
+      "closestPriorSlugs": [],
+      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+    },
+    {
+      "id": "voltmeter-series-range",
+      "category": "physics",
+      "chapter": "magnetic-effects-of-current",
+      "conceptKey": "physics/magnetic-effects-of-current/voltmeter-series-range",
+      "question": "Why does a series resistor extend a voltmeter’s range?",
+      "status": "needs_research",
+      "candidateQuestionIds": [
+        "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278262"
+      ],
+      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "priority": 5,
+      "closestPriorSlugs": [],
+      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+    },
+    {
+      "id": "coil-torque-angle-with-normal",
+      "category": "physics",
+      "chapter": "magnetic-effects-of-current",
+      "conceptKey": "physics/magnetic-effects-of-current/coil-torque-angle-with-normal",
+      "question": "Which angle belongs in the torque formula for a current loop?",
+      "status": "needs_research",
+      "candidateQuestionIds": [
+        "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278424"
+      ],
+      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "priority": 6,
+      "closestPriorSlugs": [],
+      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+    },
+    {
+      "id": "cycle-internal-energy-signs",
+      "category": "chemistry",
+      "chapter": "chemical-thermodynamics",
+      "conceptKey": "chemistry/chemical-thermodynamics/cycle-internal-energy-signs",
+      "question": "How do heat and work signs fit a complete cycle?",
+      "status": "needs_research",
+      "candidateQuestionIds": [
+        "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121204"
+      ],
+      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "priority": 7,
+      "closestPriorSlugs": [],
+      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+    },
+    {
+      "id": "hydrogen-like-radius-scaling",
+      "category": "chemistry",
+      "chapter": "atomic-structure",
+      "conceptKey": "chemistry/atomic-structure/hydrogen-like-radius-scaling",
+      "question": "Which hydrogen-like ions have the same orbital radius?",
+      "status": "needs_research",
+      "candidateQuestionIds": [
+        "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278427"
+      ],
+      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "priority": 8,
+      "closestPriorSlugs": [],
+      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+    },
+    {
+      "id": "mass-percent-to-mole-fraction",
+      "category": "chemistry",
+      "chapter": "solutions",
+      "conceptKey": "chemistry/solutions/mass-percent-to-mole-fraction",
+      "question": "How do you turn mass percentage into mole fraction?",
+      "status": "needs_research",
+      "candidateQuestionIds": [
+        "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278354"
+      ],
+      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "priority": 9,
+      "closestPriorSlugs": [
+        "why-does-osmotic-pressure-depend-on-particle-count",
+        "where-does-sugar-go-when-it-dissolves"
+      ],
+      "difference": "Converts mass fractions to mole fractions; exclude osmosis and the existing sugar particle-model explanation."
+    },
+    {
+      "id": "pi-antibonding-node",
+      "category": "chemistry",
+      "chapter": "chemical-bonding",
+      "conceptKey": "chemistry/chemical-bonding/pi-antibonding-node",
+      "question": "How do the signs and nodes identify an antibonding pi orbital?",
+      "status": "needs_research",
+      "candidateQuestionIds": [
+        "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278428"
+      ],
+      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "priority": 10,
+      "closestPriorSlugs": [],
+      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+    },
+    {
+      "id": "constant-term-exponent-balance",
+      "category": "maths",
+      "chapter": "binomial-theorem",
+      "conceptKey": "maths/binomial-theorem/constant-term-exponent-balance",
+      "question": "How do you find the term independent of x?",
+      "status": "needs_research",
+      "candidateQuestionIds": [
+        "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278384"
+      ],
+      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "priority": 11,
+      "closestPriorSlugs": [],
+      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+    },
+    {
+      "id": "positive-for-all-real-x",
+      "category": "maths",
+      "chapter": "quadratic-equations",
+      "conceptKey": "maths/quadratic-equations/positive-for-all-real-x",
+      "question": "When is a quadratic positive for every real x?",
+      "status": "needs_research",
+      "candidateQuestionIds": [
+        "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112123"
+      ],
+      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "priority": 12,
+      "closestPriorSlugs": [],
+      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+    },
+    {
+      "id": "left-right-inverse-order",
+      "category": "maths",
+      "chapter": "matrices-and-determinants",
+      "conceptKey": "maths/matrices-and-determinants/left-right-inverse-order",
+      "question": "Why does the side of a matrix inverse matter?",
+      "status": "needs_research",
+      "candidateQuestionIds": [
+        "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121172"
+      ],
+      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "priority": 13,
+      "closestPriorSlugs": [],
+      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+    },
+    {
+      "id": "circle-line-chord-distance",
+      "category": "maths",
+      "chapter": "coordinate-geometry",
+      "conceptKey": "maths/coordinate-geometry/circle-line-chord-distance",
+      "question": "How does the distance from a circle’s centre determine a chord?",
+      "status": "needs_research",
+      "candidateQuestionIds": [
+        "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121160"
+      ],
+      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "priority": 14,
+      "closestPriorSlugs": [],
+      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+    },
+    {
+      "id": "geometric-sum-logarithm",
+      "category": "maths",
+      "chapter": "sequence-and-series",
+      "conceptKey": "maths/sequence-and-series/geometric-sum-logarithm",
+      "question": "How do you simplify an infinite geometric sum before taking logarithms?",
+      "status": "needs_research",
+      "candidateQuestionIds": [
+        "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278382"
+      ],
+      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "priority": 15,
+      "closestPriorSlugs": [],
+      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
     }
   ]
 }

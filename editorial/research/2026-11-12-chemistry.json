@@ -1,0 +1,80 @@
+{
+  "id": "2026-11-12-chemistry",
+  "researchedAt": "2026-11-12T07:09:22+05:30",
+  "category": "chemistry",
+  "conceptKey": "chemistry/solutions/osmotic-pressure-particle-concentration",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; official site checked 12 November 2026",
+    "scope": "Chemistry Unit 5 Solutions: osmotic pressure, abnormal molar masses, van’t Hoff factor.",
+    "sha256": "823ec5afaf30f19d4f0dc375159d8b843b944633e4edda58c9d910c145c32ccd"
+  },
+  "corpus": {
+    "papersExamined": 5,
+    "paperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf"
+    ],
+    "coverageNotes": "Targeted candidate scan of April 2 shifts 1/2, April 4 shifts 1/2 and April 5 shift 1 (375 questions available). Expanded yesterday’s three-paper sample by two official PDFs. OCR used only to locate candidates; selected questions/options visually inspected. Not an exhaustive classification, all-shift or five-year census; no marks percentage inferred.",
+    "selectedDirectMatches": 2
+  },
+  "priority": {
+    "rationale": "Two directly relevant verified questions in a targeted five-paper April 2026 sample; syllabus inclusion, a specific misconception and prerequisite value justify this selection. Not a frequency census or weightage forecast.",
+    "selectionConfidence": "Verified relevance; limited frequency coverage"
+  },
+  "sources": [
+    {
+      "title": "Official NTA JEE Main 2027 syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "Official NTA April 2026 final key on which results were compiled",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    },
+    {
+      "title": "Official NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf"
+    },
+    {
+      "title": "Official NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf"
+    },
+    {
+      "title": "OpenStax Chemistry 2e, 11.4 Colligative Properties",
+      "url": "https://openstax.org/books/chemistry-2e/pages/11-4-colligative-properties"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278429",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "JEE Main Paper 1; 04 April 2026, Shift 2; Q54; question ID 695278429; PDF page 20–21",
+      "answer": "Side y (FeCl₃) is hypotonic relative to side x.",
+      "verifiedAt": "2026-11-12T07:09:22+05:30",
+      "adapted": true,
+      "correctOptionId": "6952781460",
+      "independentSolution": "Complete dissociation gives K4[Fe(CN)6] ->4K+ +[Fe(CN)6]4- (5 particles) and FeCl3 -> Fe3+ +3Cl- (4). At equal T, effective concentrations are 0.5 and 0.4 mol/L. Side y has lower osmotic pressure. Initially water flows y to x at equal external pressure.",
+      "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+    },
+    {
+      "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121205",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "JEE Main Paper 1; 02 April 2026, Shift 2; Q55; question ID 691121205; PDF page 21–22",
+      "answer": "All three osmotic pressures are 9.96 × 10⁻⁴ bar.",
+      "verifiedAt": "2026-11-12T07:09:22+05:30",
+      "adapted": true,
+      "correctOptionId": "691121697",
+      "independentSolution": "Protein A: (1/50000)/0.5=4e-5 mol/L. B: (2/50000)/1=4e-5. Mixture: (3/50000)/1.5=4e-5. Pi=cRT=4e-5*0.083*300=0.000996 bar. Dilute solution volumes approximate stated water volumes; additive volumes and non-dissociating protein are the ideal question model.",
+      "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278429",
+  "targetQuestionText": "At 27 °C, a membrane separates 1 L of 0.1 M K₄[Fe(CN)₆] on side x from 1 L of 0.1 M FeCl₃ on side y. Only water can cross. Assuming complete dissociation, which side is hypotonic?",
+  "verificationNotes": "Original MCQ is paraphrased as the keyed hypotonic-side question. The complex ion stays intact; no claims about colour mixing across the water-only membrane. Protein question assumptions made explicit.",
+  "textbookAccess": "Direct NCERT requests timed out or returned 502. OpenStax primary textbook pages and Stanford lecture (maths) were opened; unavailable NCERT pages are not claimed as consulted."
+}

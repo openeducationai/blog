@@ -1,0 +1,79 @@
+{
+  "id": "buffer-half-neutralisation",
+  "researchedAt": "2026-11-12T07:21:37+05:30",
+  "category": "chemistry",
+  "conceptKey": "chemistry/equilibrium/half-neutralisation-buffer-ratio",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; official site checked 12 November 2026",
+    "scope": "Chemistry Unit 6 Equilibrium: acid-base equilibria, ionisation constants and buffer solutions.",
+    "sha256": "823ec5afaf30f19d4f0dc375159d8b843b944633e4edda58c9d910c145c32ccd"
+  },
+  "corpus": {
+    "papersExamined": 5,
+    "paperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf"
+    ],
+    "coverageNotes": "Targeted candidate scan of April 2 shifts 1/2, April 4 shifts 1/2 and April 5 shift 1 (375 questions available). Expanded yesterday’s three-paper sample by two official PDFs. OCR used only to locate candidates; selected questions/options visually inspected. Not an exhaustive classification, all-shift or five-year census; no marks percentage inferred.",
+    "selectedDirectMatches": 2
+  },
+  "priority": {
+    "rationale": "Two verified half-neutralisation questions in the targeted five-paper sample, with a common confusion between half-neutralisation and neutral pH; useful prerequisite for titration questions. Limited corpus, no weightage claim."
+  },
+  "sources": [
+    {
+      "title": "Official NTA JEE Main 2027 syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "Official NTA April 2026 final key on which results were compiled",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    },
+    {
+      "title": "Official NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf"
+    },
+    {
+      "title": "Official NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf"
+    },
+    {
+      "title": "OpenStax Chemistry 2e, 14.6 Buffers",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-6-buffers"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278430",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "JEE Main Paper 1; 04 April 2026, Shift 2; Q55; question ID 695278430; PDF page 21",
+      "answer": "pH = 4.75",
+      "verifiedAt": "2026-11-12T07:21:37+05:30",
+      "adapted": true,
+      "correctOptionId": "6952781463",
+      "independentSolution": "Full neutralisation needs 28.4 mL of 0.1 M NaOH; adding 14.2 mL converts half the acid to acetate. Acid and conjugate-base moles are equal. Under the buffer approximation, pH=pKa+log(1)=4.75.",
+      "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+    },
+    {
+      "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121206",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "JEE Main Paper 1; 02 April 2026, Shift 2; Q56; question ID 691121206; PDF page 22",
+      "answer": "Initial pH approximately 2.0; pH at half-neutralisation approximately 3.3.",
+      "verifiedAt": "2026-11-12T07:21:37+05:30",
+      "adapted": true,
+      "correctOptionId": "691121702",
+      "independentSolution": "Initial HX=20mL*0.2M=4mmol. [H+]=sqrt(Ka*c)=sqrt(5e-4*0.2)=0.01M, pH2.0 using stated small-ionisation approximation. 10mL*0.2M NaOH=2mmol; equal2mmol HA/A-. pH=pKa=3.3. Exact initial quadratic gives2.011, supporting the stated precision.",
+      "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278430",
+  "targetQuestionText": "A 20 mL acetic-acid sample needs 28.4 mL of 0.1 M NaOH for complete neutralisation. What is the pH after adding only 14.2 mL of that NaOH, given pKa = 4.75?",
+  "verificationNotes": "Both question images and keyed options visually inspected. Teach neutralisation stoichiometry before the buffer ratio, explain weak-acid approximation, distinguish equivalence from half-equivalence. No article yet.",
+  "textbookAccess": "Direct NCERT requests timed out or returned 502. OpenStax primary textbook pages and Stanford lecture (maths) were opened; unavailable NCERT pages are not claimed as consulted."
+}

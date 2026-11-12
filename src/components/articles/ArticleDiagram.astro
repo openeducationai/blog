@@ -1,0 +1,18 @@
+---
+import capacitorConnections from '../../assets/articles/capacitor-connections.svg?raw';
+import capacitorLayers from '../../assets/articles/capacitor-layers.svg?raw';
+import osmoticParticles from '../../assets/articles/osmotic-particles.svg?raw';
+import varianceShift from '../../assets/articles/variance-shift.svg?raw';
+interface Props { kind: 'connections' | 'layers' | 'particles' | 'spread' }
+const { kind } = Astro.props;
+const diagrams = { connections: capacitorConnections, layers: capacitorLayers, particles: osmoticParticles, spread: varianceShift };
+---
+<figure class="article-diagram" aria-labelledby={`diagram-${kind}-caption`}>
+  <div class="diagram-drawing" set:html={diagrams[kind]} />
+  <figcaption id={`diagram-${kind}-caption`}><slot /></figcaption>
+</figure>
+<style>
+  .article-diagram { display: grid; gap: calc(var(--spacing) * 4); padding: calc(var(--spacing) * 4); background: var(--color-surface); border: var(--stroke-default) solid var(--color-border); border-radius: var(--radius-card); }
+  .diagram-drawing { width: 100%; }
+  .diagram-drawing :global(svg) { display: block; width: 100%; height: auto; }
+</style>

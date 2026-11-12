@@ -1,0 +1,81 @@
+---
+title: "How can sums of squares give standard deviation?"
+description: "You do not need every value in a data set. Its sum and sum of squares can tell you the spread."
+category: maths
+author: padho
+pubDate: "2026-11-12T07:14:12+05:30"
+heroImage: '../../assets/articles/variance-shift.png'
+heroImageAlt: 'The numbers 2, 4 and 6 sit two units apart around their mean 4. Adding 5 gives 7, 9 and 11 around mean 9, with the same distances from the mean.'
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+import ReadingTerm from '../../components/ReadingTerm.astro';
+
+We’ll learn how to solve this JEE Main question:
+
+**For ten numbers x₁, x₂, …, x₁₀, the sum of all (xᵢ + 2)² is 180 and the sum of all (xᵢ − 1)² is 90. What is their standard deviation?**
+
+Adapted from [JEE Main, 4 April 2026, Shift 2, Q8](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf#page=3). Here i labels each of the ten numbers; “sum of all” means add the expression once for each number. You need averages, square roots and the expansion of (x + a)².
+
+The question does not tell us the ten numbers. We will see why two totals are enough to find their spread.
+
+## Measure distance from the mean
+
+Take the three numbers 2, 4 and 6. Their mean is (2 + 4 + 6)/3 = 4. Their differences from the mean are −2, 0 and 2.
+
+Adding those differences gives zero, even though the numbers are spread out. The negative and positive differences cancel. To measure spread without this cancellation, square each difference: 4, 0 and 4. Then take the average.
+
+That average is the <ReadingTerm term="Variance" definition="For a data set of n values, variance is the sum of the squared differences from their mean, divided by n.">variance</ReadingTerm>. For 2, 4 and 6, it is (4 + 0 + 4)/3 = 8/3. Standard deviation is the non-negative square root of variance: √(8/3).
+
+These JEE questions ask for the variance of the given data, so we divide by the number of values, n. The n − 1 formula used to estimate a population variance from a sample is a different calculation.
+
+## A shift changes the mean, not the spread
+
+Add 5 to each of our three numbers. They become 7, 9 and 11, and their mean becomes 9. Their differences from their new mean are still −2, 0 and 2.
+
+<ArticleDiagram kind="spread">Each dot is one value. The middle dot marks the mean. Adding 5 moves all three values and their mean together, so the distances from the mean stay the same.</ArticleDiagram>
+
+Their variance is unchanged. But their squares are much larger. This tells us that simply averaging x² cannot measure spread about the mean: we must remove the effect of where the mean sits.
+
+## Keep just two totals
+
+Let S be the sum of the n values, and let T be the sum of their squares. The mean is S/n. The useful relation is:
+
+**Variance = T/n − (S/n)².**
+
+In words: the mean of the squares, minus the square of the mean. These are different quantities. For our numbers 2, 4 and 6, S = 12 and T = 4 + 16 + 36 = 56. The formula gives 56/3 − 4² = 8/3, just as before.
+
+Why does it work? Write the mean as m. Each squared difference is (x − m)² = x² − 2mx + m². When we add this expression for all n values, the three parts become T − 2mS + nm². Because S = nm, this simplifies to T − nm². Dividing by n gives T/n − m².
+
+The [OpenStax variance formula](https://openstax.org/books/principles-data-science/pages/3-2-measures-of-variation) gives the same relation. The interpretation as average squared distance from the mean is also illustrated in [Stanford’s lesson on variability](https://web.stanford.edu/class/stats60/lectures/07-lecture-variability.html).
+
+## Expand the shifted squares
+
+Return to the kind of information in our opening question. Expanding (x + a)² gives x² + 2ax + a². When this is added for n values, the result is:
+
+**Sum of all (x + a)² = T + 2aS + na².**
+
+The constant a² appears n times, once for every value. Missing that multiplier is an easy way to get a wrong answer.
+
+For ten values, the sum of (x + 2)² is T + 4S + 40. The sum of (x − 1)² is T − 2S + 10. Both equations contain the same T, so subtracting one from the other will remove it. That leaves an equation for S.
+
+<KeyIdea id="variance-two-totals">Find the sum and the sum of squares first. Use them to calculate variance, then take its square root only if the question asks for standard deviation.</KeyIdea>
+
+## Try the past questions
+
+**1. A set of n values has mean 8 and variance 16. The first n − 1 values add to 48, and their squares add to 496. How many values are there?**
+
+Adapted from [JEE Main, 2 April 2026, Shift 2, Q9](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf#page=4).
+
+<details class="reading-check"><summary>Show hint</summary><p>The full sum is 8n. Subtract 48 to find the last value. Use variance = T/n − 8² to find the full sum of squares.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The last value is 8n − 48. Since 16 = T/n − 64, the full sum of squares is T = 80n.</p><p>Add the last value’s square to the known total: 496 + (8n − 48)² = 80n.</p><p>Expanding gives 64n² − 848n + 2800 = 0. Divide by 16 to get 4n² − 53n + 175 = 0, or (n − 7)(4n − 25) = 0.</p><p>The two roots are 7 and 25/4. A count of values must be a positive integer, so n = 7. The last value is then 8. Check: the full sum is 48 + 8 = 56, giving mean 8; the full sum of squares is 496 + 64 = 560, giving variance 560/7 − 64 = 16.</p></details>
+
+**2. Return to our opening question. For ten numbers x₁, x₂, …, x₁₀, the sum of all (xᵢ + 2)² is 180 and the sum of all (xᵢ − 1)² is 90. What is their standard deviation?**
+
+<details class="reading-check"><summary>Show hint</summary><p>Write the two equations in S and T. Subtract them to find S, then substitute back to find T.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The first total gives T + 4S + 40 = 180. The second gives T − 2S + 10 = 90.</p><p>Subtract the second equation from the first: 6S + 30 = 90. Therefore S = 10 and the mean is S/10 = 1.</p><p>Put S = 10 into the second equation: T − 20 + 10 = 90, so T = 100.</p><p>The variance is T/10 − 1² = 10 − 1 = 9. The question asks for standard deviation, so take the square root: √9 = 3.</p><p>Check the supplied totals: 100 + 4(10) + 40 = 180, and 100 − 2(10) + 10 = 90. Both agree.</p></details>
+
+Both answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf): question IDs 691121159 and 695278383.

@@ -1,0 +1,85 @@
+---
+title: "When are capacitors in series or parallel?"
+description: "Follow the wires before choosing a formula. The connections decide which capacitors share a voltage."
+category: physics
+author: padho
+pubDate: "2026-11-12T07:14:12+05:30"
+heroImage: '../../assets/articles/capacitor-network.png'
+heroImageAlt: 'A circuit with C₁, C₂ and C₃ along a row. A wire joins A to the point after C₂; C₄ joins the point after C₁ to B. C₁, C₂ and C₃ are 1 μF each; C₄ is 2 μF.'
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+import ReadingTerm from '../../components/ReadingTerm.astro';
+
+We’ll learn how to solve this JEE Main question:
+
+**In the circuit above, C₁ = C₂ = C₃ = 1 μF and C₄ = 2 μF. What is the equivalent capacitance between A and B?**
+
+Adapted from [JEE Main, 4 April 2026, Shift 2, Q37](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf#page=14). The cover redraws the original connections. You need fractions and the idea that voltage is a difference in electric potential between two points.
+
+The three capacitors across the middle look as if they form one series chain. But the extra wires change the connections. Let’s trace those wires before doing any arithmetic.
+
+## One unbroken wire means one connection point
+
+A capacitor has two conducting plates separated by an insulator. Its capacitance C tells us the charge stored on either plate per volt across the plates: Q = CV. Here Q is the magnitude of the charge; the two plates carry equal and opposite charges. We measure C in farads, and 1 μF means one millionth of a farad.
+
+In this ideal electrostatic circuit, an unbroken wire has the same potential all along it. A long bend in a wire does not create a new voltage drop. We can therefore treat every point on that wire as one <ReadingTerm term="Node" definition="In an ideal circuit, a node is a set of points joined directly by wire, all at the same electric potential.">node</ReadingTerm>.
+
+Start at A. Follow the upper wire: it reaches the point between C₂ and C₃ without crossing a capacitor. Both places belong to node A. Now call the point between C₁ and C₂ node X. The lower wire takes X to the left plate of C₄. The right plates of C₃ and C₄ both connect to B.
+
+We can redraw the circuit without changing any of those connections:
+
+<ArticleDiagram kind="connections">Blue marks node A, orange marks node X, and dark ink marks node B. C₁ and C₂ each join A to X. C₄ joins X to B. The separate C₃ branch goes directly from A to B. The lines are wires; each pair of short bars is a capacitor.</ArticleDiagram>
+
+## Parallel means the same two endpoints
+
+C₁ and C₂ each have one plate at A and the other at X. Both therefore have the same voltage across them. This makes them parallel, even though they appear beside one another in the original drawing.
+
+For a shared voltage V, their charges are C₁V and C₂V. The total charge is (C₁ + C₂)V. So one capacitor with capacitance C₁ + C₂ can replace the pair.
+
+The parallel rule is simply **Cₚ = C₁ + C₂**. Adding another parallel capacitor gives the terminals another place to store charge at the same voltage.
+
+## Series means successive voltage drops
+
+After replacing C₁ and C₂ by Cₚ, follow the branch from A through X to B. It now contains Cₚ followed by C₄. No other branch leaves their shared internal node X. For initially uncharged capacitors, the charges on these two series capacitors have the same magnitude Q.
+
+Their voltage drops add. The first drop is Q/Cₚ and the second is Q/C₄. If Cₛ represents the whole branch, then Q/Cₛ = Q/Cₚ + Q/C₄. Cancel Q to get:
+
+**1/Cₛ = 1/Cₚ + 1/C₄.**
+
+For two capacitors, this also gives Cₛ = CₚC₄/(Cₚ + C₄). A useful check is that Cₛ must be smaller than either capacitor in that series pair.
+
+Finally, the whole branch and C₃ both start at A and end at B. Those two branches are parallel. We now know the order of the calculation; we’ll put in the numbers at the end.
+
+<KeyIdea id="capacitor-connections">Choose the rule from the connections. Parallel capacitors share both endpoints. A simple series pair shares an internal connection with no other branch leaving it.</KeyIdea>
+
+These rules follow the charge and voltage relations in [OpenStax’s explanation of capacitor combinations](https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel).
+
+## The same idea can apply inside one capacitor
+
+Our first practice question puts two insulating layers between the plates of one capacitor. The voltage drops across the layers add, so the layers behave like capacitors in series.
+
+For parallel plates of area A separated by a gap d, an air capacitor has C = ε₀A/d, ignoring effects near the edges. The constant ε₀ describes the electrical behaviour of empty space; air is close enough for this model. Halving the gap doubles the capacitance.
+
+A dielectric is an insulating material. Filling the gap with a dielectric of relative permittivity K multiplies that capacitance by K. These relations are developed in OpenStax’s sections on [parallel plates](https://openstax.org/books/university-physics-volume-2/pages/8-1-capacitors-and-capacitance) and [dielectrics](https://openstax.org/books/university-physics-volume-2/pages/8-4-capacitor-with-a-dielectric).
+
+<ArticleDiagram kind="layers">The dielectric fills half the gap, across the whole plate area. Going from the top plate to the bottom plate crosses the dielectric and then air. Their voltage drops add. This is different from filling half the plate area side by side.</ArticleDiagram>
+
+## Try the past questions
+
+**1. An air capacitor has capacitance C. A dielectric with K = 5 fills half its gap, as in the diagram above. By what percentage does the capacitance increase?**
+
+Adapted from [JEE Main, 2 April 2026, Shift 1, Q32](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf#page=13). Assume ideal parallel plates and neglect edge effects.
+
+<details class="reading-check"><summary>Show hint</summary><p>Each layer has thickness d/2. First find its capacitance if considered separately, then combine the two layers in series.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The air layer has half the original gap, so its capacitance is 2C. The dielectric layer has the same thickness and K = 5, so its capacitance is 5 × 2C = 10C.</p><p>For the two layers in series, 1/Cnew = 1/(2C) + 1/(10C) = 3/(5C). Therefore Cnew = 5C/3.</p><p>The increase is 5C/3 − C = 2C/3. Divide by the original C and multiply by 100: the increase is approximately 66.67%. The result lies below 2C, the smaller of the two layer capacitances, as a series combination should.</p></details>
+
+**2. Return to our opening question. In the circuit above, C₁ = C₂ = C₃ = 1 μF and C₄ = 2 μF. What is the equivalent capacitance between A and B?**
+
+<details class="reading-check"><summary>Show hint</summary><p>Combine C₁ and C₂ first. Combine that result with C₄. Only then include the separate C₃ branch.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>C₁ and C₂ are parallel between A and X, so Cₚ = 1 + 1 = 2 μF.</p><p>This 2 μF combination is in series with C₄ = 2 μF. Their equivalent capacitance is (2 × 2)/(2 + 2) = 1 μF.</p><p>That branch is parallel with C₃ = 1 μF between A and B. The final answer is 1 + 1 = 2 μF.</p><p>As a check, imagine applying 1 V between A and B. The two equal 2 μF parts of the series branch each get 0.5 V and store 1 μC. C₃ stores another 1 μC. The total is 2 μC per volt, which is 2 μF.</p></details>
+
+Both answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf): question IDs 69112132 and 695278412.

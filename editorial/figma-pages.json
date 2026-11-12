@@ -77,6 +77,50 @@
       },
       "verifiedAt": "2026-11-11T13:42:08+05:30",
       "sourceCommit": "9fd6667e3cad3087bf261da12c828617fe0d0f76"
+    },
+    {
+      "pageId": "51:202",
+      "name": "2026-11-12",
+      "date": "2026-11-12",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "when-are-capacitors-in-series-or-parallel",
+          "desktopFrameId": "61:242",
+          "phoneFrameId": "62:590"
+        },
+        {
+          "slug": "why-does-osmotic-pressure-depend-on-particle-count",
+          "desktopFrameId": "65:303",
+          "phoneFrameId": "65:620"
+        },
+        {
+          "slug": "how-can-sums-of-squares-give-standard-deviation",
+          "desktopFrameId": "65:933",
+          "phoneFrameId": "65:1257"
+        }
+      ],
+      "verification": {
+        "desktopWidth": 1440,
+        "phoneWidth": 390,
+        "editableText": true,
+        "nativeFigures": true,
+        "sharedHeaderFooterInstances": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "matchedTextBlocksPerArticle": [
+          49,
+          50,
+          49
+        ],
+        "paragraphOverflows": 0,
+        "disclosuresPerFrame": 4,
+        "comments": "Supported get_comments returned no comments. No registered pages expired (cutoff 2026-11-06).",
+        "captureReferencesRemoved": true
+      },
+      "verifiedAt": "2026-11-12T07:46:56+05:30"
     }
   ],
   "removedPages": []

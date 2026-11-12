@@ -276,6 +276,174 @@
       "sourceCommit": "9fd6667e3cad3087bf261da12c828617fe0d0f76",
       "liveVerifiedAt": "2026-11-11T13:45:22+05:30",
       "liveHtmlSha256": "88724c77a42dee11c8cadbd42053c86908139dde347c2af458d5764b6ab8d8bb"
+    },
+    {
+      "slug": "when-are-capacitors-in-series-or-parallel",
+      "title": "When are capacitors in series or parallel?",
+      "category": "physics",
+      "chapter": "electrostatics",
+      "conceptKey": "physics/electrostatics/capacitor-series-parallel-connections",
+      "learningObjective": "Identify common-potential connections before combining capacitors; distinguish shared voltage from successive voltage drops.",
+      "example": "The four-capacitor PYQ circuit is redrawn using the same three connection points A, X and B.",
+      "briefPath": "editorial/research/2026-11-12-physics.json",
+      "sourcePath": "src/content/blog/when-are-capacitors-in-series-or-parallel.mdx",
+      "sourceSha256": "162557c0efe8b2b641c6fc4fe7b9c7c5ee3c8df86ecda971dc54fa57616a2d8f",
+      "url": "https://padho.ai/blog/when-are-capacitors-in-series-or-parallel/",
+      "publishedAt": "2026-11-12T07:14:12+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278412",
+      "targetQuestionText": "In the circuit above, C₁ = C₂ = C₃ = 1 μF and C₄ = 2 μF. What is the equivalent capacitance between A and B?",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278412",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "JEE Main Paper 1; 04 April 2026, Shift 2; Q37; question ID 695278412; PDF page 14",
+          "answer": "2 μF",
+          "verifiedAt": "2026-11-12T07:09:22+05:30",
+          "adapted": true,
+          "correctOptionId": "6952781405",
+          "independentSolution": "C1 and C2 share A and X, so give 2 μF in parallel. This is in series with C4=2 μF, giving 1 μF. C3=1 μF is directly between A and B, so total=2 μF. Nodal cross-check at VA=1,VB=0 gives VX=1/2 and QA=2 μC.",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112132",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "JEE Main Paper 1; 02 April 2026, Shift 1; Q32; question ID 69112132; PDF page 12–13",
+          "answer": "66.67% increase (new capacitance 5C/3)",
+          "verifiedAt": "2026-11-12T07:09:22+05:30",
+          "adapted": true,
+          "correctOptionId": "691121111",
+          "independentSolution": "The dielectric fills half the gap across the full area, not half the plate area. Each half thickness d/2: air 2C, dielectric 10C; successive voltage drops give 1/Cnew=1/(2C)+1/(10C), hence 5C/3. Increase=2/3=66.67%.",
+          "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+        }
+      ],
+      "review": {
+        "sourceSha256": "162557c0efe8b2b641c6fc4fe7b9c7c5ee3c8df86ecda971dc54fa57616a2d8f",
+        "reviewedAt": "2026-11-12T07:29:39+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Original wire routing visually inspected. C1 and C2 are not in series despite their positions in a row. Dielectric problem explicitly uses half the gap and neglects edge effects; introduction to dielectric capacitance is required before this extension. Read in sequence and paraphrased paragraph by paragraph: terms precede use, the target is explicit at the start and solved last, and prerequisites for both questions are taught. Original SVG renders inspected; node-label overlap corrected. Six independent arithmetic checks passed. This is an agent review, not a claimed human review. Real Astro app reviewed at desktop 1440 and phone 390 widths: visible covers, readable figures, native disclosures, definitions, reduced motion and no-script content passed. Build, typecheck, 39 tests, editorial/search/analytics checks passed."
+      },
+      "recordedAt": "2026-11-12T07:15:36+05:30"
+    },
+    {
+      "slug": "why-does-osmotic-pressure-depend-on-particle-count",
+      "title": "Why does osmotic pressure depend on particle count?",
+      "category": "chemistry",
+      "chapter": "solutions",
+      "conceptKey": "chemistry/solutions/osmotic-pressure-particle-concentration",
+      "learningObjective": "Compare osmotic pressure using dissolved-particle concentration i times molarity, and preserve concentration when mixing equal-concentration solutions.",
+      "example": "Two equal-volume solutions separated by a membrane that passes water but retains all dissolved ions.",
+      "briefPath": "editorial/research/2026-11-12-chemistry.json",
+      "sourcePath": "src/content/blog/why-does-osmotic-pressure-depend-on-particle-count.mdx",
+      "sourceSha256": "8eb391b6d73c865dbca31d34c3778630cc467da78895d53c398e74d7a76a1d3e",
+      "url": "https://padho.ai/blog/why-does-osmotic-pressure-depend-on-particle-count/",
+      "publishedAt": "2026-11-12T07:14:12+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278429",
+      "targetQuestionText": "At 27 °C, a membrane separates 1 L of 0.1 M K₄[Fe(CN)₆] on side x from 1 L of 0.1 M FeCl₃ on side y. Only water can cross. Assuming complete dissociation, which side is hypotonic?",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278429",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "JEE Main Paper 1; 04 April 2026, Shift 2; Q54; question ID 695278429; PDF page 20–21",
+          "answer": "Side y (FeCl₃) is hypotonic relative to side x.",
+          "verifiedAt": "2026-11-12T07:09:22+05:30",
+          "adapted": true,
+          "correctOptionId": "6952781460",
+          "independentSolution": "Complete dissociation gives K4[Fe(CN)6] ->4K+ +[Fe(CN)6]4- (5 particles) and FeCl3 -> Fe3+ +3Cl- (4). At equal T, effective concentrations are 0.5 and 0.4 mol/L. Side y has lower osmotic pressure. Initially water flows y to x at equal external pressure.",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121205",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "JEE Main Paper 1; 02 April 2026, Shift 2; Q55; question ID 691121205; PDF page 21–22",
+          "answer": "All three osmotic pressures are 9.96 × 10⁻⁴ bar.",
+          "verifiedAt": "2026-11-12T07:09:22+05:30",
+          "adapted": true,
+          "correctOptionId": "691121697",
+          "independentSolution": "Protein A: (1/50000)/0.5=4e-5 mol/L. B: (2/50000)/1=4e-5. Mixture: (3/50000)/1.5=4e-5. Pi=cRT=4e-5*0.083*300=0.000996 bar. Dilute solution volumes approximate stated water volumes; additive volumes and non-dissociating protein are the ideal question model.",
+          "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+        }
+      ],
+      "review": {
+        "sourceSha256": "8eb391b6d73c865dbca31d34c3778630cc467da78895d53c398e74d7a76a1d3e",
+        "reviewedAt": "2026-11-12T07:29:39+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Original MCQ is paraphrased as the keyed hypotonic-side question. The complex ion stays intact; no claims about colour mixing across the water-only membrane. Protein question assumptions made explicit. Read in sequence and paraphrased paragraph by paragraph: terms precede use, the target is explicit at the start and solved last, and prerequisites for both questions are taught. Original SVG renders inspected; node-label overlap corrected. Six independent arithmetic checks passed. This is an agent review, not a claimed human review. Real Astro app reviewed at desktop 1440 and phone 390 widths: visible covers, readable figures, native disclosures, definitions, reduced motion and no-script content passed. Build, typecheck, 39 tests, editorial/search/analytics checks passed."
+      },
+      "recordedAt": "2026-11-12T07:15:36+05:30"
+    },
+    {
+      "slug": "how-can-sums-of-squares-give-standard-deviation",
+      "title": "How can sums of squares give standard deviation?",
+      "category": "maths",
+      "chapter": "statistics-and-probability",
+      "conceptKey": "maths/statistics-and-probability/variance-from-sums-and-squares",
+      "learningObjective": "Recover the sum and sum of squares from shifted-square totals, then calculate variance and standard deviation using divisor n.",
+      "example": "The numbers 2, 4 and 6, then the same three numbers shifted by 5, show that spread is measured about the mean.",
+      "briefPath": "editorial/research/2026-11-12-maths.json",
+      "sourcePath": "src/content/blog/how-can-sums-of-squares-give-standard-deviation.mdx",
+      "sourceSha256": "587e8917bad8b63bc5461294a856b21e9d0be11563d5d2d0256bae54a53554ee",
+      "url": "https://padho.ai/blog/how-can-sums-of-squares-give-standard-deviation/",
+      "publishedAt": "2026-11-12T07:14:12+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278383",
+      "targetQuestionText": "For ten numbers x₁, x₂, …, x₁₀, the sum of all (xᵢ + 2)² is 180 and the sum of all (xᵢ − 1)² is 90. What is their standard deviation?",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278383",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "JEE Main Paper 1; 04 April 2026, Shift 2; Q8; question ID 695278383; PDF page 3–4",
+          "answer": "3",
+          "verifiedAt": "2026-11-12T07:09:22+05:30",
+          "adapted": true,
+          "correctOptionId": "6952781307",
+          "independentSolution": "Let S=sum x and T=sum x². T+4S+40=180 and T-2S+10=90. Subtraction:6S+30=90, S=10. T=100. Mean=1, variance=100/10-1=9, standard deviation=3.",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121159",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "JEE Main Paper 1; 02 April 2026, Shift 2; Q9; question ID 691121159; PDF page 4",
+          "answer": "7",
+          "verifiedAt": "2026-11-12T07:09:22+05:30",
+          "adapted": true,
+          "correctOptionId": "691121546",
+          "independentSolution": "Last value is 8n-48. Sum squares is n(16+64)=80n. Thus496+(8n-48)²=80n, giving 4n²-53n+175=0=(n-7)(4n-25). n must be an integer; n=7 and last value=8. Remaining six can satisfy sums48,496 (mean8, variance56/3), so the root is feasible.",
+          "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+        }
+      ],
+      "review": {
+        "sourceSha256": "587e8917bad8b63bc5461294a856b21e9d0be11563d5d2d0256bae54a53554ee",
+        "reviewedAt": "2026-11-12T07:29:39+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Use n, not n−1, for the descriptive variance in these JEE questions. Distinguish sum of squares from square of sum; the constant term in each shifted square occurs ten times. The second quadratic root 25/4 is inadmissible. Read in sequence and paraphrased paragraph by paragraph: terms precede use, the target is explicit at the start and solved last, and prerequisites for both questions are taught. Original SVG renders inspected; node-label overlap corrected. Six independent arithmetic checks passed. This is an agent review, not a claimed human review. Real Astro app reviewed at desktop 1440 and phone 390 widths: visible covers, readable figures, native disclosures, definitions, reduced motion and no-script content passed. Build, typecheck, 39 tests, editorial/search/analytics checks passed."
+      },
+      "recordedAt": "2026-11-12T07:15:36+05:30"
     }
   ]
 }

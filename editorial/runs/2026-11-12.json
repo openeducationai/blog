@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-12",
+  "status": "partial",
+  "articleSlugs": [
+    "when-are-capacitors-in-series-or-parallel",
+    "why-does-osmotic-pressure-depend-on-particle-count",
+    "how-can-sums-of-squares-give-standard-deviation"
+  ],
+  "attempts": [
+    {
+      "type": "scheduled",
+      "startedAt": "2026-11-12T07:00:01+05:30",
+      "status": "in_progress",
+      "authorization": "Owner-authorised 11–17 November daily trial; invocation specifically authorises the complete ordered workflow."
+    }
+  ],
+  "stages": {
+    "research": {
+      "status": "complete",
+      "completedAt": "2026-11-12T07:09:22+05:30",
+      "briefs": [
+        "editorial/research/2026-11-12-physics.json",
+        "editorial/research/2026-11-12-chemistry.json",
+        "editorial/research/2026-11-12-maths.json"
+      ],
+      "evidence": "Six original questions and option IDs visually inspected; all matched the current NTA result-compiled final key. Targeted corpus expanded from 3 to 5 papers; semantic duplicate review passed."
+    },
+    "writing": {
+      "status": "complete",
+      "completedAt": "2026-11-12T07:14:12+05:30",
+      "evidence": "Three complete MDX lessons, opening target questions, original SVG figures and covers, and two sourced PYQs per lesson with hints and worked solutions."
+    },
+    "validation": {
+      "status": "complete",
+      "completedAt": "2026-11-12T07:29:39+05:30",
+      "checks": [
+        "check:editorial: 10 history entries, 21 queue topics",
+        "build: 16 generated pages",
+        "typecheck passed",
+        "39 automated tests passed",
+        "check:search: 15 discoverable pages, 9 articles, 9 images, 16 internal links",
+        "check:analytics passed",
+        "6 article viewports at 1440 and 390; all covers, justified Literata prose, keyboard disclosure and definition controls passed",
+        "Reduced motion and no-script reading passed; original diagrams and solutions visually reviewed"
+      ],
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-12-browser/checks.json",
+      "browserRecovery": "Installed Chrome stalled; Brave/Edge launch failed and CUA host was unavailable. Existing Playwright Chromium headless shell completed real Astro app checks."
+    },
+    "figma": {
+      "status": "complete",
+      "completedAt": "2026-11-12T07:46:56+05:30",
+      "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+      "pageId": "51:202",
+      "url": "https://www.figma.com/design/GsBNGG7jIMvsPyhP7w0zXK?node-id=51-202",
+      "articles": [
+        {
+          "slug": "when-are-capacitors-in-series-or-parallel",
+          "desktopFrameId": "61:242",
+          "phoneFrameId": "62:590"
+        },
+        {
+          "slug": "why-does-osmotic-pressure-depend-on-particle-count",
+          "desktopFrameId": "65:303",
+          "phoneFrameId": "65:620"
+        },
+        {
+          "slug": "how-can-sums-of-squares-give-standard-deviation",
+          "desktopFrameId": "65:933",
+          "phoneFrameId": "65:1257"
+        }
+      ],
+      "verification": {
+        "desktopWidth": 1440,
+        "phoneWidth": 390,
+        "editableText": true,
+        "nativeFigures": true,
+        "sharedHeaderFooterInstances": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "matchedTextBlocksPerArticle": [
+          49,
+          50,
+          49
+        ],
+        "paragraphOverflows": 0,
+        "disclosuresPerFrame": 4,
+        "comments": "Supported get_comments returned no comments. No registered pages expired (cutoff 2026-11-06).",
+        "captureReferencesRemoved": true
+      }
+    },
+    "gitSource": {
+      "status": "pending",
+      "preCommitRemoteDivergence": [
+        0,
+        0
+      ]
+    },
+    "publication": {
+      "status": "pending"
+    },
+    "liveVerification": {
+      "status": "pending"
+    },
+    "gitRecords": {
+      "status": "pending"
+    }
+  },
+  "preflight": {
+    "checkedAt": "2026-11-12T07:01:38+05:30",
+    "branch": "main",
+    "cleanAtStart": true,
+    "remoteDivergence": [
+      0,
+      0
+    ],
+    "previousDate": "2026-11-11 published",
+    "todayExistingArticles": []
+  },
+  "feedback": {
+    "checkedAt": "2026-11-12T07:09:22+05:30",
+    "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+    "comments": [],
+    "source": "Supported Figma get_comments tool returned no comments."
+  },
+  "figmaSessionId": "221a7936-6831-41f5-9aa9-da1f95264692",
+  "researchQueue": {
+    "readyFutureBriefs": [
+      "editorial/research/buffer-half-neutralisation.json"
+    ],
+    "needsResearchCandidates": 14,
+    "coverage": "One verified future brief plus fourteen tentative candidates for the remaining five trial dates; not a completed seven-day brief set."
+  },
+  "retention": {
+    "cutoff": "2026-11-06",
+    "expiredRegisteredPages": [],
+    "removedPages": []
+  }
+}
