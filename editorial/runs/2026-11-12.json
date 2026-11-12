@@ -13,7 +13,29 @@
       "status": "partial",
       "authorization": "Owner-authorised 11–17 November daily trial; invocation specifically authorises the complete ordered workflow.",
       "endedAt": "2026-11-12T07:50:26+05:30",
-      "stoppedAtStage": "publication"
+      "stoppedAtStage": "publication",
+      "publicationFailure": {
+        "status": "failed",
+        "startedAt": "2026-11-12T07:48:04+05:30",
+        "scope": "padho.ai/blog only",
+        "failedAt": "2026-11-12T07:50:26+05:30",
+        "publisher": "node scripts/publish.mjs",
+        "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d",
+        "exitCode": 1,
+        "error": "gcloud.auth.print-access-token: There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.",
+        "remediation": "Owner renews the existing Google Cloud login with gcloud auth login, then authorises a release retry.",
+        "uploadedObjects": 0,
+        "remoteWritesStarted": false,
+        "preflight": "Editorial, build search and analytics checks all passed before the credential refresh failed at scripts/publish.mjs:42."
+      }
+    },
+    {
+      "type": "owner_authorized_release_retry",
+      "startedAt": "2026-11-12T10:40:49+05:30",
+      "status": "in_progress",
+      "authorization": "Owner renewed gcloud auth login and asked to deploy the existing articles for today.",
+      "resumedAtStage": "publication",
+      "sourceAndFigmaReused": true
     }
   ],
   "stages": {
@@ -102,18 +124,12 @@
       ]
     },
     "publication": {
-      "status": "failed",
-      "startedAt": "2026-11-12T07:48:04+05:30",
+      "status": "pending",
+      "startedAt": "2026-11-12T10:40:49+05:30",
       "scope": "padho.ai/blog only",
-      "failedAt": "2026-11-12T07:50:26+05:30",
       "publisher": "node scripts/publish.mjs",
       "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d",
-      "exitCode": 1,
-      "error": "gcloud.auth.print-access-token: There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.",
-      "remediation": "Owner renews the existing Google Cloud login with gcloud auth login, then authorises a release retry.",
-      "uploadedObjects": 0,
-      "remoteWritesStarted": false,
-      "preflight": "Editorial, build search and analytics checks all passed before the credential refresh failed at scripts/publish.mjs:42."
+      "resumedAfterOwnerLogin": true
     },
     "liveVerification": {
       "status": "pending",
@@ -181,7 +197,7 @@
     "removedPages": []
   },
   "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d",
-  "lastCheckpointAt": "2026-11-12T07:50:26+05:30",
+  "lastCheckpointAt": "2026-11-12T10:40:49+05:30",
   "resume": {
     "nextStage": "publication",
     "reuseExistingArticles": true,
@@ -198,5 +214,16 @@
       "why-does-osmotic-pressure-depend-on-particle-count": "b1ec6c1332dc877ea6958fa30149f11dbeb25ac2374a7aa454fd95e96de66366",
       "how-can-sums-of-squares-give-standard-deviation": "1f6d8797401084d5a0b6b6562210ca52d1e826e723ec0968558939db32eed48a"
     }
+  },
+  "resumeVerification": {
+    "checkedAt": "2026-11-12T10:40:49+05:30",
+    "articleSourceHashesMatch": true,
+    "reviewSourceHashesMatch": true,
+    "samePublicationDate": true,
+    "preparedFigmaPageId": "51:202",
+    "preCommitRemoteDivergence": [
+      0,
+      0
+    ]
   }
 }
