@@ -61,8 +61,9 @@
       "briefPath": "editorial/research/2026-11-12-physics.json",
       "closestPriorSlugs": [],
       "difference": "No previous capacitor-network or dielectric-equivalence lesson; no used question IDs.",
-      "status": "writing",
-      "rationale": "Two directly relevant verified questions in a targeted five-paper April 2026 sample; syllabus inclusion, a specific misconception and prerequisite value justify this selection. Not a frequency census or weightage forecast."
+      "status": "published",
+      "rationale": "Two directly relevant verified questions in a targeted five-paper April 2026 sample; syllabus inclusion, a specific misconception and prerequisite value justify this selection. Not a frequency census or weightage forecast.",
+      "releaseVerifiedAt": "2026-11-12T10:43:40+05:30"
     },
     {
       "id": "2026-11-12-chemistry",
@@ -78,8 +79,9 @@
         "where-does-sugar-go-when-it-dissolves"
       ],
       "difference": "Baseline explains where sugar molecules go. This lesson quantitatively compares particle concentration across a selective membrane and computes osmotic pressure, including dissociation; it does not repeat the dissolving-particle objective.",
-      "status": "writing",
-      "rationale": "Two directly relevant verified questions in a targeted five-paper April 2026 sample; syllabus inclusion, a specific misconception and prerequisite value justify this selection. Not a frequency census or weightage forecast."
+      "status": "published",
+      "rationale": "Two directly relevant verified questions in a targeted five-paper April 2026 sample; syllabus inclusion, a specific misconception and prerequisite value justify this selection. Not a frequency census or weightage forecast.",
+      "releaseVerifiedAt": "2026-11-12T10:43:40+05:30"
     },
     {
       "id": "2026-11-12-maths",
@@ -93,8 +95,9 @@
       "briefPath": "editorial/research/2026-11-12-maths.json",
       "closestPriorSlugs": [],
       "difference": "New statistics objective; previous maths articles covered division as groups and non-onto counting. No repeated PYQ.",
-      "status": "writing",
-      "rationale": "Two directly relevant verified questions in a targeted five-paper April 2026 sample; syllabus inclusion, a specific misconception and prerequisite value justify this selection. Not a frequency census or weightage forecast."
+      "status": "published",
+      "rationale": "Two directly relevant verified questions in a targeted five-paper April 2026 sample; syllabus inclusion, a specific misconception and prerequisite value justify this selection. Not a frequency census or weightage forecast.",
+      "releaseVerifiedAt": "2026-11-12T10:43:40+05:30"
     },
     {
       "id": "buffer-half-neutralisation",

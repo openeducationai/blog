@@ -291,7 +291,7 @@
       "url": "https://padho.ai/blog/when-are-capacitors-in-series-or-parallel/",
       "publishedAt": "2026-11-12T07:14:12+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278412",
       "targetQuestionText": "In the circuit above, C₁ = C₂ = C₃ = 1 μF and C₄ = 2 μF. What is the equivalent capacitance between A and B?",
       "pyqs": [
@@ -332,7 +332,10 @@
         "notes": "Original wire routing visually inspected. C1 and C2 are not in series despite their positions in a row. Dielectric problem explicitly uses half the gap and neglects edge effects; introduction to dielectric capacitance is required before this extension. Read in sequence and paraphrased paragraph by paragraph: terms precede use, the target is explicit at the start and solved last, and prerequisites for both questions are taught. Original SVG renders inspected; node-label overlap corrected. Six independent arithmetic checks passed. This is an agent review, not a claimed human review. Real Astro app reviewed at desktop 1440 and phone 390 widths: visible covers, readable figures, native disclosures, definitions, reduced motion and no-script content passed. Build, typecheck, 39 tests, editorial/search/analytics checks passed."
       },
       "recordedAt": "2026-11-12T07:15:36+05:30",
-      "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d"
+      "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d",
+      "liveVerifiedAt": "2026-11-12T10:43:40+05:30",
+      "liveHtmlSha256": "e394d589605f71587aa5f47fb25fc3bb65b095ce2470daae247c301709d0319b",
+      "releasedAt": "2026-11-12T10:41:07+05:30"
     },
     {
       "slug": "why-does-osmotic-pressure-depend-on-particle-count",
@@ -348,7 +351,7 @@
       "url": "https://padho.ai/blog/why-does-osmotic-pressure-depend-on-particle-count/",
       "publishedAt": "2026-11-12T07:14:12+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278429",
       "targetQuestionText": "At 27 °C, a membrane separates 1 L of 0.1 M K₄[Fe(CN)₆] on side x from 1 L of 0.1 M FeCl₃ on side y. Only water can cross. Assuming complete dissociation, which side is hypotonic?",
       "pyqs": [
@@ -389,7 +392,10 @@
         "notes": "Original MCQ is paraphrased as the keyed hypotonic-side question. The complex ion stays intact; no claims about colour mixing across the water-only membrane. Protein question assumptions made explicit. Read in sequence and paraphrased paragraph by paragraph: terms precede use, the target is explicit at the start and solved last, and prerequisites for both questions are taught. Original SVG renders inspected; node-label overlap corrected. Six independent arithmetic checks passed. This is an agent review, not a claimed human review. Real Astro app reviewed at desktop 1440 and phone 390 widths: visible covers, readable figures, native disclosures, definitions, reduced motion and no-script content passed. Build, typecheck, 39 tests, editorial/search/analytics checks passed."
       },
       "recordedAt": "2026-11-12T07:15:36+05:30",
-      "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d"
+      "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d",
+      "liveVerifiedAt": "2026-11-12T10:43:40+05:30",
+      "liveHtmlSha256": "b1ec6c1332dc877ea6958fa30149f11dbeb25ac2374a7aa454fd95e96de66366",
+      "releasedAt": "2026-11-12T10:41:07+05:30"
     },
     {
       "slug": "how-can-sums-of-squares-give-standard-deviation",
@@ -405,7 +411,7 @@
       "url": "https://padho.ai/blog/how-can-sums-of-squares-give-standard-deviation/",
       "publishedAt": "2026-11-12T07:14:12+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278383",
       "targetQuestionText": "For ten numbers x₁, x₂, …, x₁₀, the sum of all (xᵢ + 2)² is 180 and the sum of all (xᵢ − 1)² is 90. What is their standard deviation?",
       "pyqs": [
@@ -446,7 +452,10 @@
         "notes": "Use n, not n−1, for the descriptive variance in these JEE questions. Distinguish sum of squares from square of sum; the constant term in each shifted square occurs ten times. The second quadratic root 25/4 is inadmissible. Read in sequence and paraphrased paragraph by paragraph: terms precede use, the target is explicit at the start and solved last, and prerequisites for both questions are taught. Original SVG renders inspected; node-label overlap corrected. Six independent arithmetic checks passed. This is an agent review, not a claimed human review. Real Astro app reviewed at desktop 1440 and phone 390 widths: visible covers, readable figures, native disclosures, definitions, reduced motion and no-script content passed. Build, typecheck, 39 tests, editorial/search/analytics checks passed."
       },
       "recordedAt": "2026-11-12T07:15:36+05:30",
-      "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d"
+      "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d",
+      "liveVerifiedAt": "2026-11-12T10:43:40+05:30",
+      "liveHtmlSha256": "1f6d8797401084d5a0b6b6562210ca52d1e826e723ec0968558939db32eed48a",
+      "releasedAt": "2026-11-12T10:41:07+05:30"
     }
   ]
 }
