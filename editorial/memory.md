@@ -54,8 +54,10 @@ The first scheduled attempt stopped before authoring because the runner checked 
 
 - Owner renewed GCP authentication and authorised the existing batch to be deployed. Release completed at 2026-11-12T10:41:07+05:30 and live verification passed at 2026-11-12T10:43:40+05:30: all three responses match the prepared HTML exactly; the sitemap now has 15 URLs and nine articles; all 36 public crawler-user-agent probes passed. Six live desktop/phone views passed, and each new page carries its PostHog context. The earlier failed attempt is preserved; no duplicate articles or Figma pages were created. Evidence: `runs/2026-11-12.json`.
 
-### 2026-11-13 — third trial batch, staged
+### 2026-11-13 — third trial batch
 
 - Selected energy-density dimensional analysis, half-neutralisation buffers and binomial exponent balancing. Research covers a targeted five-paper April 2026 sample, not all shifts or a five-year weightage study. Evidence: `research/2026-11-13-physics.json`, `research/buffer-half-neutralisation.json`, `research/2026-11-13-maths.json`.
 - NTA QID 695278323 does not explicitly require its two coefficients to be nonzero. The adapted article question states that both terms occur, and explains the extra condition. Its n = 21 answer agrees with the final key under that condition. Evidence: `research/2026-11-13-maths.json`.
 - The approved editable Figma diagram needed an equivalent decimal exponent (−0.5) because the imported superscript fraction slash rendered badly. The website source retains the original fraction. Evidence: `runs/2026-11-13.json`, page `68:202`.
+
+- Release and live verification completed at 2026-11-13T07:20:57+05:30: all three article HTML responses matched the reviewed build; 18 sitemap pages, 12 articles and 48 public crawler-user-agent probes passed. These probes do not prove indexing. Evidence: `runs/2026-11-13.json`.

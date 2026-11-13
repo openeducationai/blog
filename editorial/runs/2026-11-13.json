@@ -1,6 +1,6 @@
 {
   "date": "2026-11-13",
-  "status": "partial",
+  "status": "published",
   "articleSlugs": [
     "how-can-energy-density-reveal-dimensions",
     "why-does-half-neutralisation-give-ph-equal-to-pka",
@@ -10,8 +10,10 @@
     {
       "type": "scheduled",
       "startedAt": "2026-11-13T07:01:05+05:30",
-      "status": "in_progress",
-      "authorization": "Owner-approved trial and ordered daily publishing workflow."
+      "status": "published",
+      "authorization": "Owner-approved trial and ordered daily publishing workflow.",
+      "finishedAt": "2026-11-13T07:20:57+05:30",
+      "sourceCommit": "85e5f8cbd6e38c7bd1e5e41092b55024f9b76c2b"
     }
   ],
   "stages": {
@@ -94,16 +96,68 @@
       "fileKey": "GsBNGG7jIMvsPyhP7w0zXK"
     },
     "gitSource": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-13T07:18:54+05:30",
+      "sourceCommit": "85e5f8cbd6e38c7bd1e5e41092b55024f9b76c2b",
+      "pushedTo": "origin/main",
+      "preCommitRemoteDivergence": [
+        0,
+        0
+      ]
     },
     "publication": {
-      "status": "pending"
+      "status": "complete",
+      "sourceCommit": "85e5f8cbd6e38c7bd1e5e41092b55024f9b76c2b",
+      "publisher": "node scripts/publish.mjs",
+      "scope": "padho.ai/blog only",
+      "completedAt": "2026-11-13T07:19:39+05:30",
+      "exitCode": 0,
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ]
     },
     "liveVerification": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-13T07:20:57+05:30",
+      "articles": [
+        {
+          "slug": "how-can-energy-density-reveal-dimensions",
+          "url": "https://padho.ai/blog/how-can-energy-density-reveal-dimensions/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "990ca9f4b9877e05796450d47655dc12aee8459f2d819fd2ff2b7f2f0094b0b8",
+          "matchesReviewedBuild": true
+        },
+        {
+          "slug": "why-does-half-neutralisation-give-ph-equal-to-pka",
+          "url": "https://padho.ai/blog/why-does-half-neutralisation-give-ph-equal-to-pka/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "4bcdd7afee15feeb0cd442da1c43afda365dd8b4b2c21001bbd76f1d9591d4ee",
+          "matchesReviewedBuild": true
+        },
+        {
+          "slug": "how-do-you-find-a-constant-term-in-a-binomial",
+          "url": "https://padho.ai/blog/how-do-you-find-a-constant-term-in-a-binomial/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "e6cf1be7818fe2f79b1e99f0c8f05a4c406c84d3db279f02b5e7bd2f7c9bffa6",
+          "matchesReviewedBuild": true
+        }
+      ],
+      "sitemapPages": 18,
+      "publishedArticles": 12,
+      "images": 12,
+      "internalLinks": 19,
+      "metadataMatchesVisibleContent": true,
+      "crawlerProbes": 48,
+      "allCrawlerProbesPassed": true,
+      "articleViewports": 6,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-13-browser/checks-live.json",
+      "searchEvidence": "/tmp/padho-blog-search-live.json",
+      "evidence": "All three HTTP 200 HTML responses exactly match the verified build; six live desktop/phone views, links, covers, figures, keyboard disclosures and definition controls passed. Public user-agent probes do not establish indexing."
     },
     "gitRecords": {
-      "status": "pending"
+      "status": "pending",
+      "evidence": "Publication and live-verification outcome prepared for commit and push."
     }
   },
   "preflight": {
@@ -118,11 +172,16 @@
     "remoteFetchedAt": "2026-11-13T07:18:06+05:30"
   },
   "resume": {
-    "nextStage": "gitSource",
+    "nextStage": "gitRecords",
+    "reuseExistingArticles": true,
+    "reuseFigmaPageId": "68:202",
     "instructions": [
-      "Continue the existing dated attempt; do not create a duplicate subject/date."
+      "Publication and live verification completed. Sync the final records; do not publish another set for this date."
     ]
   },
   "figmaSessionId": "9a6fcace-ad9e-484d-b679-9a7e54781fb3",
-  "lastCheckpointAt": "2026-11-13T07:17:32+05:30"
+  "lastCheckpointAt": "2026-11-13T07:20:57+05:30",
+  "sourceCommit": "85e5f8cbd6e38c7bd1e5e41092b55024f9b76c2b",
+  "publishedAt": "2026-11-13T07:19:39+05:30",
+  "completedAt": "2026-11-13T07:20:57+05:30"
 }
