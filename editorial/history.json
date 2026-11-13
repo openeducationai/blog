@@ -456,6 +456,174 @@
       "liveVerifiedAt": "2026-11-12T10:43:40+05:30",
       "liveHtmlSha256": "1f6d8797401084d5a0b6b6562210ca52d1e826e723ec0968558939db32eed48a",
       "releasedAt": "2026-11-12T10:41:07+05:30"
+    },
+    {
+      "slug": "how-can-energy-density-reveal-dimensions",
+      "title": "How can energy density reveal dimensions?",
+      "category": "physics",
+      "chapter": "units-and-measurements",
+      "conceptKey": "physics/units-and-measurements/dimensions-from-physical-equations",
+      "learningObjective": "Derive dimensions from a known physical relation, and express them in another dimensional basis.",
+      "example": "Track energy stored in an electric field per unit volume.",
+      "sourcePath": "src/content/blog/how-can-energy-density-reveal-dimensions.mdx",
+      "sourceSha256": "996c1a1ccd3e7366c124503fdac87bf58d00be119a8f3e4f6a8afc4e7889a91e",
+      "url": "https://padho.ai/blog/how-can-energy-density-reveal-dimensions/",
+      "publishedAt": "2026-11-13T07:06:58+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112126",
+      "targetQuestionText": "If (1/2)ε₀E² has dimensions MᵃLᵇTᶜ, what is 2a − b + c? Here ε₀ is vacuum permittivity and E is electric field.",
+      "briefPath": "editorial/research/2026-11-13-physics.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112126",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift 1, Q26, PDF page 10",
+          "answer": "1",
+          "verifiedAt": "2026-11-13T07:04:03+05:30",
+          "adapted": true,
+          "correctOptionId": "69112187",
+          "independentSolution": "Electric energy density has dimensions energy/volume = ML^-1 T^-2. Therefore a=1, b=-1, c=-2 and 2a-b+c=1. Independent cross-check: ε₀ from Coulomb’s law has Q²/(force length²), E has force/Q; multiplying yields force/area = ML^-1 T^-2.",
+          "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121176",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift 2, Q26, PDF page 10",
+          "answer": "[h T^-1 L M^-2]",
+          "verifiedAt": "2026-11-13T07:04:03+05:30",
+          "adapted": true,
+          "correctOptionId": "691121597",
+          "independentSolution": "[G]=L³ M^-1 T^-2; [h]=M L² T^-1 from E=hν. Thus [G]/[h]=L M^-2 T^-1.",
+          "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+        }
+      ],
+      "review": {
+        "sourceSha256": "996c1a1ccd3e7366c124503fdac87bf58d00be119a8f3e4f6a8afc4e7889a91e",
+        "reviewedAt": "2026-11-13T07:10:02+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Agent review: checked paragraphs in sequence, source images and final-key IDs, independent solutions, diagram labels and assumptions. Six real-app desktop/phone views passed cover, complete text, keyboard disclosures, term controls, reduced motion and no-script figures. Screenshots inspected. No human review is claimed."
+      },
+      "recordedAt": "2026-11-13T07:10:02+05:30"
+    },
+    {
+      "slug": "why-does-half-neutralisation-give-ph-equal-to-pka",
+      "title": "Why does half-neutralisation give pH close to pKa?",
+      "category": "chemistry",
+      "chapter": "equilibrium",
+      "conceptKey": "chemistry/equilibrium/half-neutralisation-buffer-ratio",
+      "learningObjective": "Use reacted moles to find equal acid/conjugate-base amounts before applying the buffer equation.",
+      "example": "20mL acetic acid neutralised with half the required NaOH.",
+      "sourcePath": "src/content/blog/why-does-half-neutralisation-give-ph-equal-to-pka.mdx",
+      "sourceSha256": "57b8ecb7fe3088bed73c5d7f78bbf65dbb297441832ff0fd8e770ce6936ccbf8",
+      "url": "https://padho.ai/blog/why-does-half-neutralisation-give-ph-equal-to-pka/",
+      "publishedAt": "2026-11-13T07:06:58+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278430",
+      "targetQuestionText": "A 20 mL acetic-acid sample needs 28.4 mL of 0.1 M NaOH for complete neutralisation. What is the pH after adding only 14.2 mL of that NaOH, given pKa = 4.75?",
+      "briefPath": "editorial/research/buffer-half-neutralisation.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278430",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "JEE Main Paper 1; 04 April 2026, Shift 2; Q55; question ID 695278430; PDF page 21",
+          "answer": "pH = 4.75",
+          "verifiedAt": "2026-11-12T07:21:37+05:30",
+          "adapted": true,
+          "correctOptionId": "6952781463",
+          "independentSolution": "Full neutralisation needs 28.4 mL of 0.1 M NaOH; adding 14.2 mL converts half the acid to acetate. Acid and conjugate-base moles are equal. Under the buffer approximation, pH=pKa+log(1)=4.75.",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121206",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "JEE Main Paper 1; 02 April 2026, Shift 2; Q56; question ID 691121206; PDF page 22",
+          "answer": "Initial pH approximately 2.0; pH at half-neutralisation approximately 3.3.",
+          "verifiedAt": "2026-11-12T07:21:37+05:30",
+          "adapted": true,
+          "correctOptionId": "691121702",
+          "independentSolution": "Initial HX=20mL*0.2M=4mmol. [H+]=sqrt(Ka*c)=sqrt(5e-4*0.2)=0.01M, pH2.0 using stated small-ionisation approximation. 10mL*0.2M NaOH=2mmol; equal2mmol HA/A-. pH=pKa=3.3. Exact initial quadratic gives2.011, supporting the stated precision.",
+          "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+        }
+      ],
+      "review": {
+        "sourceSha256": "57b8ecb7fe3088bed73c5d7f78bbf65dbb297441832ff0fd8e770ce6936ccbf8",
+        "reviewedAt": "2026-11-13T07:10:02+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Agent review: checked paragraphs in sequence, source images and final-key IDs, independent solutions, diagram labels and assumptions. Six real-app desktop/phone views passed cover, complete text, keyboard disclosures, term controls, reduced motion and no-script figures. Screenshots inspected. No human review is claimed."
+      },
+      "recordedAt": "2026-11-13T07:10:02+05:30"
+    },
+    {
+      "slug": "how-do-you-find-a-constant-term-in-a-binomial",
+      "title": "How do you find a constant term in a binomial?",
+      "category": "maths",
+      "chapter": "binomial-theorem",
+      "conceptKey": "maths/binomial-theorem/exponent-balance-and-coefficients",
+      "learningObjective": "Find binomial terms by balancing exponents and then calculate their coefficients.",
+      "example": "Choose how often the second term appears across 18 identical factors.",
+      "sourcePath": "src/content/blog/how-do-you-find-a-constant-term-in-a-binomial.mdx",
+      "sourceSha256": "3e90193db45e28d2a29cb932f0c9d025725d285f6deeb2f15a407b3f7d9d2a6f",
+      "url": "https://padho.ai/blog/how-do-you-find-a-constant-term-in-a-binomial/",
+      "publishedAt": "2026-11-13T07:06:58+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278384",
+      "targetQuestionText": "In the expansion of (9x − 1/(3√x))¹⁸ for x > 0, the term independent of x is 221k. What is k?",
+      "briefPath": "editorial/research/2026-11-13-maths.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278384",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift 2, Q9, PDF page 4",
+          "answer": "k=84",
+          "verifiedAt": "2026-11-13T07:04:03+05:30",
+          "adapted": true,
+          "correctOptionId": "6952781308",
+          "independentSolution": "General term C(18,r)(9x)^(18-r)(-1/(3√x))^r. Zero x power requires 18-3r/2=0, so r=12. Numeric factors cancel, leaving C(18,12)=18564=221×84.",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        },
+        {
+          "id": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278323",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "5 April 2026 Shift 1, Q23, PDF page 8",
+          "answer": "n=21 with the explicit adapted condition that both terms occur",
+          "verifiedAt": "2026-11-13T07:04:03+05:30",
+          "adapted": true,
+          "correctOptionId": "21",
+          "independentSolution": "In (x^-3-x^4)^n, exponent is -3n+7r. For x⁷ and x¹⁴, indices r and r+1 exist. Opposite signs and equal magnitude require C(n,r)=C(n,r+1), giving n=2r+1. Also 7r-3n=7, hence n=21, r=10. Caveat: the original question does not explicitly say the coefficients are nonzero; n=1 makes both zero. The adaptation explicitly requires both terms to occur.",
+          "sourceSha256": "20a14808d521007d48289171297030a4ac18710abc180bb7e3b2d23e2a0a19fb"
+        }
+      ],
+      "review": {
+        "sourceSha256": "3e90193db45e28d2a29cb932f0c9d025725d285f6deeb2f15a407b3f7d9d2a6f",
+        "reviewedAt": "2026-11-13T07:10:02+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Agent review: checked paragraphs in sequence, source images and final-key IDs, independent solutions, diagram labels and assumptions. Six real-app desktop/phone views passed cover, complete text, keyboard disclosures, term controls, reduced motion and no-script figures. Screenshots inspected. No human review is claimed."
+      },
+      "recordedAt": "2026-11-13T07:10:02+05:30"
     }
   ]
 }

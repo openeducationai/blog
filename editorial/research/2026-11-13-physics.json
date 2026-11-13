@@ -1,0 +1,82 @@
+{
+  "id": "energy-density-dimensions",
+  "researchedAt": "2026-11-13T07:04:03+05:30",
+  "category": "physics",
+  "conceptKey": "physics/units-and-measurements/dimensions-from-physical-equations",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; official syllabus opened 13 November 2026",
+    "scope": "Physics Unit 1 Units and Measurements: dimensions of physical quantities, dimensional analysis and applications.",
+    "sha256": "823ec5afaf30f19d4f0dc375159d8b843b944633e4edda58c9d910c145c32ccd"
+  },
+  "corpus": {
+    "papersExamined": 5,
+    "paperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf"
+    ],
+    "coverageNotes": "Targeted scan of April 2 shifts 1 and 2, April 4 shifts 1 and 2, and April 5 shift 1, 2026; 375 questions available. Not an exhaustive classification, all nine shifts, or a five-year census. No marks percentages inferred.",
+    "selectedDirectMatches": 2
+  },
+  "priority": {
+    "rationale": "Two official dimensional-analysis questions from the targeted five-paper sample, with a prerequisite skill and a commonly missed negative volume exponent. The sample is not a weightage census."
+  },
+  "sources": [
+    {
+      "title": "NTA JEE Main syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final answer key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    },
+    {
+      "title": "Teaching reference",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/1-4-dimensional-analysis"
+    },
+    {
+      "title": "NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf"
+    },
+    {
+      "title": "NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf"
+    },
+    {
+      "title": "Electric field energy density, OpenStax",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/8-3-energy-stored-in-a-capacitor"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112126",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift 1, Q26, PDF page 10",
+      "answer": "1",
+      "verifiedAt": "2026-11-13T07:04:03+05:30",
+      "adapted": true,
+      "correctOptionId": "69112187",
+      "independentSolution": "Electric energy density has dimensions energy/volume = ML^-1 T^-2. Therefore a=1, b=-1, c=-2 and 2a-b+c=1. Independent cross-check: ε₀ from Coulomb’s law has Q²/(force length²), E has force/Q; multiplying yields force/area = ML^-1 T^-2.",
+      "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+    },
+    {
+      "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121176",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift 2, Q26, PDF page 10",
+      "answer": "[h T^-1 L M^-2]",
+      "verifiedAt": "2026-11-13T07:04:03+05:30",
+      "adapted": true,
+      "correctOptionId": "691121597",
+      "independentSolution": "[G]=L³ M^-1 T^-2; [h]=M L² T^-1 from E=hν. Thus [G]/[h]=L M^-2 T^-1.",
+      "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112126",
+  "targetQuestionText": "If (1/2)ε₀E² has dimensions MᵃLᵇTᶜ, what is 2a − b + c? Here ε₀ is vacuum permittivity and E is electric field.",
+  "verificationNotes": "Original question pages and keyed answer IDs visually inspected; arithmetic worked independently. Field-energy dimensions also derived directly from Coulomb’s law for an independent cross-check."
+}

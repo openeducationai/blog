@@ -3,9 +3,12 @@ import capacitorConnections from '../../assets/articles/capacitor-connections.sv
 import capacitorLayers from '../../assets/articles/capacitor-layers.svg?raw';
 import osmoticParticles from '../../assets/articles/osmotic-particles.svg?raw';
 import varianceShift from '../../assets/articles/variance-shift.svg?raw';
-interface Props { kind: 'connections' | 'layers' | 'particles' | 'spread' }
+import fieldEnergy from '../../assets/articles/field-energy-dimensions.svg?raw';
+import buffer from '../../assets/articles/buffer-neutralisation.svg?raw';
+import binomial from '../../assets/articles/binomial-choice.svg?raw';
+interface Props { kind: 'connections' | 'layers' | 'particles' | 'spread' | 'fieldEnergy' | 'buffer' | 'binomial' }
 const { kind } = Astro.props;
-const diagrams = { connections: capacitorConnections, layers: capacitorLayers, particles: osmoticParticles, spread: varianceShift };
+const diagrams = { connections: capacitorConnections, layers: capacitorLayers, particles: osmoticParticles, spread: varianceShift, fieldEnergy, buffer, binomial };
 ---
 <figure class="article-diagram" aria-labelledby={`diagram-${kind}-caption`}>
   <div class="diagram-drawing" set:html={diagrams[kind]} />

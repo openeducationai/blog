@@ -107,27 +107,30 @@
       "question": "Why does half-neutralisation give pH close to pKa?",
       "learningObjective": "Use reacted moles to find equal acid/conjugate-base amounts before applying the buffer equation.",
       "example": "20mL acetic acid neutralised with half the required NaOH.",
-      "status": "ready",
+      "status": "writing",
       "briefPath": "editorial/research/buffer-half-neutralisation.json",
       "rationale": "Two verified half-neutralisation questions in the targeted five-paper sample, with a common confusion between half-neutralisation and neutral pH; useful prerequisite for titration questions. Limited corpus, no weightage claim.",
       "closestPriorSlugs": [],
       "difference": "New acid-base equilibrium objective; does not repeat dissolving, osmotic pressure or kinetics.",
-      "priority": 1
+      "priority": 1,
+      "slug": "why-does-half-neutralisation-give-ph-equal-to-pka"
     },
     {
       "id": "energy-density-dimensions",
       "category": "physics",
       "chapter": "units-and-measurements",
-      "conceptKey": "physics/units-and-measurements/energy-density-dimensions",
-      "question": "How can energy per volume reveal a dimensional formula?",
-      "status": "needs_research",
-      "candidateQuestionIds": [
-        "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112126"
+      "conceptKey": "physics/units-and-measurements/dimensions-from-physical-equations",
+      "question": "If (1/2)ε₀E² has dimensions MᵃLᵇTᶜ, what is 2a − b + c? Here ε₀ is vacuum permittivity and E is electric field.",
+      "learningObjective": "Derive dimensions from a known physical relation, and express them in another dimensional basis.",
+      "example": "Track energy stored in an electric field per unit volume.",
+      "status": "writing",
+      "briefPath": "editorial/research/2026-11-13-physics.json",
+      "rationale": "Two official dimensional-analysis questions from the targeted five-paper sample, with a prerequisite skill and a commonly missed negative volume exponent. The sample is not a weightage census.",
+      "closestPriorSlugs": [
+        "when-are-capacitors-in-series-or-parallel"
       ],
-      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
-      "priority": 2,
-      "closestPriorSlugs": [],
-      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+      "difference": "Earlier article combines capacitor connections; this lesson derives dimensions and changes dimensional bases.",
+      "slug": "how-can-energy-density-reveal-dimensions"
     },
     {
       "id": "orbital-period-radius-central-mass",
@@ -256,16 +259,16 @@
       "id": "constant-term-exponent-balance",
       "category": "maths",
       "chapter": "binomial-theorem",
-      "conceptKey": "maths/binomial-theorem/constant-term-exponent-balance",
-      "question": "How do you find the term independent of x?",
-      "status": "needs_research",
-      "candidateQuestionIds": [
-        "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278384"
-      ],
-      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
-      "priority": 11,
+      "conceptKey": "maths/binomial-theorem/exponent-balance-and-coefficients",
+      "question": "In the expansion of (9x − 1/(3√x))¹⁸ for x > 0, the term independent of x is 221k. What is k?",
+      "learningObjective": "Find binomial terms by balancing exponents and then calculate their coefficients.",
+      "example": "Choose how often the second term appears across 18 identical factors.",
+      "status": "writing",
+      "briefPath": "editorial/research/2026-11-13-maths.json",
+      "rationale": "Two relevant binomial coefficient questions in the targeted five-paper sample; exponent balancing and coefficient signs are prerequisites. The second question needs an explicit nonzero-terms condition. No full-syllabus frequency claim.",
       "closestPriorSlugs": [],
-      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+      "difference": "New binomial exponent-balancing objective; previous mathematics lessons address grouping, functions, and variance.",
+      "slug": "how-do-you-find-a-constant-term-in-a-binomial"
     },
     {
       "id": "positive-for-all-real-x",

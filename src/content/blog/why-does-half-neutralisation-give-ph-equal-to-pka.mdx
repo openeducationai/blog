@@ -1,0 +1,73 @@
+---
+title: "Why does half-neutralisation give pH close to pKa?"
+description: "Follow the amounts of weak acid and its conjugate base to understand the half-neutralisation point."
+category: chemistry
+author: padho
+pubDate: "2026-11-13T07:06:58+05:30"
+heroImage: '../../assets/articles/buffer-neutralisation.png'
+heroImageAlt: 'A bar for acetic acid becomes two equal bars for remaining acid and acetate after half-neutralisation.'
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+import ReadingTerm from '../../components/ReadingTerm.astro';
+
+We’ll learn how to solve this JEE Main question:
+
+**A 20 mL acetic-acid sample needs 28.4 mL of 0.1 M NaOH for complete neutralisation. What is the pH after adding only 14.2 mL of that NaOH, given pKa = 4.75?**
+
+Adapted from [JEE Main, 4 April 2026, Shift 2, Q55](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf#page=21). You need moles, molarity and logarithms; we’ll explain the acid–base relationship below.
+
+The added volume is half the volume needed for complete neutralisation. But half-neutralisation does not mean the solution has pH 7. First we need to see what is left in the flask.
+
+## Follow the acid as base is added
+
+Acetic acid is a weak acid: in water, only a small fraction gives up a hydrogen ion on its own. Call one acetic-acid particle HA. When it gives up H⁺, the remaining acetate ion is A⁻, its conjugate base.
+
+NaOH supplies hydroxide ions, OH⁻. Each OH⁻ reacts with one HA to make water and one A⁻:
+
+**HA + OH⁻ → A⁻ + H₂O.**
+
+This reaction changes the amounts in a predictable way. If one mole of OH⁻ reacts, one mole of HA is consumed and one mole of A⁻ is formed. Sodium ions remain in solution; they do not change that one-to-one count.
+
+At the <ReadingTerm term="Half-neutralisation" definition="The point where added base has reacted with half the initial amount of a monoprotic weak acid.">half-neutralisation</ReadingTerm> point, half of the starting acid has reacted. The other half remains as HA, while the reacted half has become A⁻. The two amounts are equal, before the small equilibrium adjustment.
+
+<ArticleDiagram kind="buffer">The first bar represents the 2.84 mmol of acid in the opening sample. At half-neutralisation, 1.42 mmol has changed to acetate and 1.42 mmol remains as acid. The diagram shows the stoichiometric amounts before the small equilibrium adjustment.</ArticleDiagram>
+
+## Connect the ratio to pH
+
+The mixture of weak acid and conjugate base forms a buffer. For a suitable dilute solution, we use the Henderson–Hasselbalch relation:
+
+**pH ≈ pKa + log₁₀([A⁻]/[HA]).**
+
+The square brackets mean equilibrium concentrations. pKa is −log₁₀Ka, where Ka describes the acid’s tendency to donate a hydrogen ion. The relation follows from Ka = [H⁺][A⁻]/[HA], after taking logarithms.
+
+For the usual buffer approximation, we estimate the equilibrium concentrations from the amounts left after the neutralisation reaction. Both are in the same final volume, so their concentration ratio is approximately their mole ratio. At half-neutralisation the ratio is about 1. Since log₁₀(1) = 0, pH is approximately pKa.
+
+This is not a statement that all halfway points have pH 7. The pH depends on the particular acid’s pKa. The approximation assumes a sufficiently dilute solution with appreciable amounts of both acid and conjugate base; it can fail for extreme dilution or when the small equilibrium adjustment is not negligible. See [OpenStax’s buffer discussion](https://openstax.org/books/chemistry-2e/pages/14-6-buffers).
+
+<KeyIdea id="buffer-half">Count the moles after neutralisation before using the buffer ratio. Equal acid and conjugate-base amounts give pH approximately equal to pKa, not necessarily 7.</KeyIdea>
+
+## Before any base is added
+
+The second past question also asks for the starting pH. Initially there is weak acid but no added conjugate base, so the buffer approximation above is not the right starting calculation.
+
+If the initial acid concentration is c and the fraction ionised is small, write [H⁺] ≈ √(Ka c). Then pH = −log₁₀[H⁺]. After half-neutralisation, use the equal acid/base amounts instead. Keep those two stages separate.
+
+## Try the past questions
+
+**1. At 25 °C, 20.0 mL of 0.2 M weak monoprotic acid HX is titrated with 0.2 M NaOH. Find the approximate pH before base is added and after 10.0 mL is added. Use Ka = 5 × 10⁻⁴, pKa = 3.3 and the small-ionisation approximation.**
+
+Adapted from [JEE Main, 2 April 2026, Shift 2, Q56](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf#page=22).
+
+<details class="reading-check"><summary>Show hint</summary><p>Use √(Ka c) for the initial hydrogen-ion concentration. Compare initial acid moles with the moles of added NaOH for the second stage.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Initially [H⁺] ≈ √((5 × 10⁻⁴)(0.2)) = 0.01 M. Thus the initial pH is approximately 2.0.</p><p>There are initially 20.0 × 0.2 = 4.0 mmol of acid. The added base supplies 10.0 × 0.2 = 2.0 mmol of OH⁻. Half the acid reacts, leaving equal acid and conjugate-base amounts. The second pH is approximately pKa = 3.3.</p></details>
+
+**2. Return to our opening question. A 20 mL acetic-acid sample needs 28.4 mL of 0.1 M NaOH for complete neutralisation. What is the pH after adding only 14.2 mL of that NaOH, given pKa = 4.75?**
+
+<details class="reading-check"><summary>Show hint</summary><p>The same NaOH concentration is used in both volumes. How much of the acid has reacted when the added volume is half the full-neutralisation volume?</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Complete neutralisation requires 28.4 × 0.1 = 2.84 mmol of OH⁻, so the sample initially has 2.84 mmol of acid. Adding 14.2 mL supplies 1.42 mmol of OH⁻.</p><p>That leaves 1.42 mmol of acid and produces 1.42 mmol of acetate. Their approximate concentration ratio is 1, so pH ≈ pKa + log₁₀(1) = <strong>4.75</strong>.</p></details>
+
+Both answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 691121206 and 695278430.

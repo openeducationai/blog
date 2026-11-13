@@ -1,0 +1,65 @@
+---
+title: "How can energy density reveal dimensions?"
+description: "Use energy per unit volume to find the dimensions of an electric-field expression."
+category: physics
+author: padho
+pubDate: "2026-11-13T07:06:58+05:30"
+heroImage: '../../assets/articles/field-energy-dimensions.png'
+heroImageAlt: 'A region of space with electric field lines; its energy density is its energy divided by its volume.'
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+import ReadingTerm from '../../components/ReadingTerm.astro';
+
+We’ll learn how to solve this JEE Main question:
+
+**If (1/2)ε₀E² has dimensions MᵃLᵇTᶜ, what is 2a − b + c? Here ε₀ is vacuum permittivity and E is electric field.**
+
+Adapted from [JEE Main, 2 April 2026, Shift 1, Q26](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf#page=10). You need force, work and powers of numbers. We’ll explain what dimensions mean and why this expression describes energy per volume.
+
+## What do the letters measure?
+
+A dimension tells us what kind of quantity we are measuring. We use M for mass, L for length and T for time. These letters are not the units kilogram, metre and second; they describe the underlying quantities, regardless of the units chosen.
+
+Speed is distance divided by time, so its dimensions are LT⁻¹. Acceleration is speed divided by time, so its dimensions are LT⁻². Square brackets are a short way to say “the dimensions of”: for example, [acceleration] = LT⁻².
+
+Force equals mass times acceleration. Its dimensions are therefore MLT⁻². Work is force multiplied by distance in the direction of the force, so energy has dimensions ML²T⁻².
+
+## Divide energy by volume
+
+A charged capacitor stores energy in its electric field. Imagine a small region of space where that field is uniform. Its <ReadingTerm term="Energy density" definition="Energy per unit volume: the energy in a region divided by the region’s volume.">energy density</ReadingTerm> is the energy in the region divided by its volume. For an electric field in vacuum, this is (1/2)ε₀E², as described in [OpenStax’s discussion of stored electric energy](https://openstax.org/books/university-physics-volume-2/pages/8-3-energy-stored-in-a-capacitor).
+
+<ArticleDiagram kind="fieldEnergy">The blue outline marks a region of space; orange lines represent its electric field. Energy density tells us how much field energy belongs to each unit of that volume.</ArticleDiagram>
+
+Volume has dimensions L³. So divide the dimensions of energy by L³. When dividing powers with the same base, subtract their exponents. We’ll use that step in the opening question at the end.
+
+The factor 1/2 is a pure number: it changes the amount, but it has no dimensions. The same is true of π. In contrast, ε₀ is a physical constant with dimensions; we cannot simply discard it. We use the meaning of the whole expression instead.
+
+<KeyIdea id="energy-per-volume">When you recognise a whole expression as a familiar physical quantity, find its dimensions from that meaning. A dimensionless numerical factor does not change the result.</KeyIdea>
+
+The [capacitor connections lesson](/blog/when-are-capacitors-in-series-or-parallel/) looks at how capacitors combine. Here we are asking a different question: what kind of physical quantity an expression measures.
+
+## A different set of dimensional building blocks
+
+The next past question uses Planck’s constant h as one of its building blocks. From energy = h × frequency, and frequency = 1/time, we get [h] = [energy] × T = ML²T⁻¹.
+
+Newton’s gravitational relation F = Gm₁m₂/r² gives [G] = [force] × L²/M² = L³M⁻¹T⁻². To write this using h, divide [G] by [h]. The remaining factors show what must multiply h. This is a change of dimensional building blocks, not a claim that G numerically equals h times those factors.
+
+## Try the past questions
+
+**1. Express the dimensions of the gravitational constant G using Planck’s constant h, length L, mass M and time T.**
+
+Adapted from [JEE Main, 2 April 2026, Shift 2, Q26](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf#page=10).
+
+<details class="reading-check"><summary>Show hint</summary><p>Divide L³M⁻¹T⁻² by the dimensions of h, which are ML²T⁻¹.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The ratio [G]/[h] is (L³M⁻¹T⁻²)/(ML²T⁻¹) = LM⁻²T⁻¹. Multiplying by h gives [G] = [h L M⁻² T⁻¹].</p><p>Check by substituting the dimensions of h: (ML²T⁻¹)(LM⁻²T⁻¹) = L³M⁻¹T⁻², the dimensions required by Newton’s law.</p></details>
+
+**2. Return to our opening question. If (1/2)ε₀E² has dimensions MᵃLᵇTᶜ, what is 2a − b + c? Here ε₀ is vacuum permittivity and E is electric field.**
+
+<details class="reading-check"><summary>Show hint</summary><p>Use energy divided by volume. The L exponent is 2 − 3.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The expression is electric energy per volume. Its dimensions are (ML²T⁻²)/L³ = ML⁻¹T⁻².</p><p>Thus a = 1, b = −1 and c = −2. Substitution gives 2a − b + c = 2(1) − (−1) − 2 = <strong>1</strong>.</p></details>
+
+Both answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 691121176 and 69112126.

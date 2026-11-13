@@ -1,0 +1,78 @@
+{
+  "id": "constant-term-exponent-balance",
+  "researchedAt": "2026-11-13T07:04:03+05:30",
+  "category": "maths",
+  "conceptKey": "maths/binomial-theorem/exponent-balance-and-coefficients",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; official syllabus opened 13 November 2026",
+    "scope": "Mathematics Unit 5 Binomial Theorem: positive integral index and general term.",
+    "sha256": "823ec5afaf30f19d4f0dc375159d8b843b944633e4edda58c9d910c145c32ccd"
+  },
+  "corpus": {
+    "papersExamined": 5,
+    "paperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf"
+    ],
+    "coverageNotes": "Targeted scan of April 2 shifts 1 and 2, April 4 shifts 1 and 2, and April 5 shift 1, 2026; 375 questions available. Not an exhaustive classification, all nine shifts, or a five-year census. No marks percentages inferred.",
+    "selectedDirectMatches": 2
+  },
+  "priority": {
+    "rationale": "Two relevant binomial coefficient questions in the targeted five-paper sample; exponent balancing and coefficient signs are prerequisites. The second question needs an explicit nonzero-terms condition. No full-syllabus frequency claim."
+  },
+  "sources": [
+    {
+      "title": "NTA JEE Main syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final answer key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    },
+    {
+      "title": "Teaching reference",
+      "url": "https://math.libretexts.org/Bookshelves/Combinatorics_and_Discrete_Mathematics/Combinatorics_(Morris)/02:_Enumeration/03:_Permutations_Combinations_and_the_Binomial_Theorem/3.03:_The_Binomial_Theorem"
+    },
+    {
+      "title": "NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf"
+    },
+    {
+      "title": "NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278384",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "4 April 2026 Shift 2, Q9, PDF page 4",
+      "answer": "k=84",
+      "verifiedAt": "2026-11-13T07:04:03+05:30",
+      "adapted": true,
+      "correctOptionId": "6952781308",
+      "independentSolution": "General term C(18,r)(9x)^(18-r)(-1/(3√x))^r. Zero x power requires 18-3r/2=0, so r=12. Numeric factors cancel, leaving C(18,12)=18564=221×84.",
+      "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+    },
+    {
+      "id": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278323",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "5 April 2026 Shift 1, Q23, PDF page 8",
+      "answer": "n=21 with the explicit adapted condition that both terms occur",
+      "verifiedAt": "2026-11-13T07:04:03+05:30",
+      "adapted": true,
+      "correctOptionId": "21",
+      "independentSolution": "In (x^-3-x^4)^n, exponent is -3n+7r. For x⁷ and x¹⁴, indices r and r+1 exist. Opposite signs and equal magnitude require C(n,r)=C(n,r+1), giving n=2r+1. Also 7r-3n=7, hence n=21, r=10. Caveat: the original question does not explicitly say the coefficients are nonzero; n=1 makes both zero. The adaptation explicitly requires both terms to occur.",
+      "sourceSha256": "20a14808d521007d48289171297030a4ac18710abc180bb7e3b2d23e2a0a19fb"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278384",
+  "targetQuestionText": "In the expansion of (9x − 1/(3√x))¹⁸ for x > 0, the term independent of x is 221k. What is k?",
+  "verificationNotes": "Original question pages and keyed answer IDs visually inspected; arithmetic worked independently. The second original question has an ambiguity: the adaptation explicitly requires both terms to appear, and is labelled as adapted."
+}

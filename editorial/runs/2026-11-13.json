@@ -1,0 +1,128 @@
+{
+  "date": "2026-11-13",
+  "status": "partial",
+  "articleSlugs": [
+    "how-can-energy-density-reveal-dimensions",
+    "why-does-half-neutralisation-give-ph-equal-to-pka",
+    "how-do-you-find-a-constant-term-in-a-binomial"
+  ],
+  "attempts": [
+    {
+      "type": "scheduled",
+      "startedAt": "2026-11-13T07:01:05+05:30",
+      "status": "in_progress",
+      "authorization": "Owner-approved trial and ordered daily publishing workflow."
+    }
+  ],
+  "stages": {
+    "research": {
+      "status": "complete",
+      "completedAt": "2026-11-13T07:04:03+05:30",
+      "briefs": [
+        "editorial/research/2026-11-13-physics.json",
+        "editorial/research/buffer-half-neutralisation.json",
+        "editorial/research/2026-11-13-maths.json"
+      ],
+      "evidence": "Six official question images and result-compiled final key checked, with independent solutions. Existing five-paper targeted corpus; no weightage inference. The second maths exercise explicitly requires both coefficients to be nonzero because the original paper omits that condition."
+    },
+    "writing": {
+      "status": "complete",
+      "completedAt": "2026-11-13T07:07:11+05:30",
+      "evidence": "Three original MDX lessons and three original explanatory figures; each begins with the target PYQ, and includes two sourced past questions with worked solutions. Awaiting complete review."
+    },
+    "validation": {
+      "status": "complete",
+      "completedAt": "2026-11-13T07:10:02+05:30",
+      "checks": [
+        "Science and maths worked independently against official paper images and final answer key",
+        "Article screenshots inspected at 1440 and 390; six combinations passed font, width, cover, figure, target text, keyboard disclosures, term control, no-script and reduced-motion checks",
+        "npm run build passed: 19 pages",
+        "npm run typecheck passed",
+        "npm test: 39 passed",
+        "npm run test:daily: 6 passed",
+        "npm run check:search passed: 18 pages, 12 articles, 12 images, 19 internal links",
+        "npm run check:editorial passed: 13 history entries, 21 queue topics",
+        "npm run check:analytics passed: 19 pages",
+        "git diff --check passed"
+      ],
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-13-browser/checks.json",
+      "review": "Agent review only; no human review claimed."
+    },
+    "figma": {
+      "status": "complete",
+      "pageId": "68:202",
+      "url": "https://www.figma.com/design/GsBNGG7jIMvsPyhP7w0zXK/Blogs?node-id=68-202",
+      "comments": "Supported comments read: none.",
+      "retention": {
+        "cutoff": "2026-11-07",
+        "remove": []
+      },
+      "articles": [
+        {
+          "slug": "how-can-energy-density-reveal-dimensions",
+          "desktopFrameId": "71:242",
+          "phoneFrameId": "71:527"
+        },
+        {
+          "slug": "why-does-half-neutralisation-give-ph-equal-to-pka",
+          "desktopFrameId": "71:808",
+          "phoneFrameId": "71:1106"
+        },
+        {
+          "slug": "how-do-you-find-a-constant-term-in-a-binomial",
+          "desktopFrameId": "71:1400",
+          "phoneFrameId": "71:1712"
+        }
+      ],
+      "evidence": "Six editable article frames matched each website prose block; widths, covers, shared header/footer instances, font families, four disclosures per frame and screenshots checked. Temporary reference removed.",
+      "completedAt": "2026-11-13T07:17:32+05:30",
+      "verification": {
+        "desktopWidth": 1440,
+        "phoneWidth": 390,
+        "editableText": true,
+        "nativeFigures": true,
+        "sharedHeaderFooterInstances": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile inherited from approved templates",
+        "screenshotsReviewed": 6,
+        "completeProseMatch": true,
+        "disclosuresPerFrame": 4,
+        "missingOrCollapsedTextNodes": 0,
+        "comments": "Supported comments read returned none.",
+        "captureReferencesRemoved": true,
+        "mathDiagramRepair": "Used the equivalent exponent −0.5 in native diagram text to avoid a missing fraction-slash glyph."
+      },
+      "fileKey": "GsBNGG7jIMvsPyhP7w0zXK"
+    },
+    "gitSource": {
+      "status": "pending"
+    },
+    "publication": {
+      "status": "pending"
+    },
+    "liveVerification": {
+      "status": "pending"
+    },
+    "gitRecords": {
+      "status": "pending"
+    }
+  },
+  "preflight": {
+    "checkedAt": "2026-11-13T07:01:05+05:30",
+    "branch": "main",
+    "cleanAtStart": true,
+    "runner": "Scheduled attempt holds process lock; this session is the runner child.",
+    "remoteDivergence": [
+      0,
+      0
+    ],
+    "remoteFetchedAt": "2026-11-13T07:18:06+05:30"
+  },
+  "resume": {
+    "nextStage": "gitSource",
+    "instructions": [
+      "Continue the existing dated attempt; do not create a duplicate subject/date."
+    ]
+  },
+  "figmaSessionId": "9a6fcace-ad9e-484d-b679-9a7e54781fb3",
+  "lastCheckpointAt": "2026-11-13T07:17:32+05:30"
+}

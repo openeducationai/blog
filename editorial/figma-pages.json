@@ -122,6 +122,47 @@
       },
       "verifiedAt": "2026-11-12T07:46:56+05:30",
       "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d"
+    },
+    {
+      "pageId": "68:202",
+      "name": "2026-11-13",
+      "date": "2026-11-13",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "how-can-energy-density-reveal-dimensions",
+          "desktopFrameId": "71:242",
+          "phoneFrameId": "71:527"
+        },
+        {
+          "slug": "why-does-half-neutralisation-give-ph-equal-to-pka",
+          "desktopFrameId": "71:808",
+          "phoneFrameId": "71:1106"
+        },
+        {
+          "slug": "how-do-you-find-a-constant-term-in-a-binomial",
+          "desktopFrameId": "71:1400",
+          "phoneFrameId": "71:1712"
+        }
+      ],
+      "createdAt": "2026-11-13T07:11:05+05:30",
+      "verifiedAt": "2026-11-13T07:17:32+05:30",
+      "verification": {
+        "desktopWidth": 1440,
+        "phoneWidth": 390,
+        "editableText": true,
+        "nativeFigures": true,
+        "sharedHeaderFooterInstances": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile inherited from approved templates",
+        "screenshotsReviewed": 6,
+        "completeProseMatch": true,
+        "disclosuresPerFrame": 4,
+        "missingOrCollapsedTextNodes": 0,
+        "comments": "Supported comments read returned none.",
+        "captureReferencesRemoved": true,
+        "mathDiagramRepair": "Used the equivalent exponent −0.5 in native diagram text to avoid a missing fraction-slash glyph."
+      }
     }
   ],
   "removedPages": []
