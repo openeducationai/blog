@@ -156,8 +156,13 @@
       "evidence": "All three HTTP 200 HTML responses exactly match the verified build; six live desktop/phone views, links, covers, figures, keyboard disclosures and definition controls passed. Public user-agent probes do not establish indexing."
     },
     "gitRecords": {
-      "status": "pending",
-      "evidence": "Publication and live-verification outcome prepared for commit and push."
+      "status": "complete",
+      "completedAt": "2026-11-13T07:21:28+05:30",
+      "recordCommit": "0f94f353cb09bf74bfc0096022ad8c157660d090",
+      "pushedTo": "origin/main",
+      "sourceAndPublicationOutcomeSynced": true,
+      "worktreeCleanAtVerification": true,
+      "localHeadMatchedRemoteMain": true
     }
   },
   "preflight": {
@@ -172,15 +177,15 @@
     "remoteFetchedAt": "2026-11-13T07:18:06+05:30"
   },
   "resume": {
-    "nextStage": "gitRecords",
+    "nextStage": null,
     "reuseExistingArticles": true,
     "reuseFigmaPageId": "68:202",
     "instructions": [
-      "Publication and live verification completed. Sync the final records; do not publish another set for this date."
+      "This date is published and live-verified. Do not publish another set."
     ]
   },
   "figmaSessionId": "9a6fcace-ad9e-484d-b679-9a7e54781fb3",
-  "lastCheckpointAt": "2026-11-13T07:20:57+05:30",
+  "lastCheckpointAt": "2026-11-13T07:21:28+05:30",
   "sourceCommit": "85e5f8cbd6e38c7bd1e5e41092b55024f9b76c2b",
   "publishedAt": "2026-11-13T07:19:39+05:30",
   "completedAt": "2026-11-13T07:20:57+05:30"
