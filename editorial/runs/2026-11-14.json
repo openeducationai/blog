@@ -1,6 +1,6 @@
 {
   "date": "2026-11-14",
-  "status": "partial",
+  "status": "published",
   "articleSlugs": [
     "how-does-gravity-change-above-and-below-earth",
     "how-do-you-turn-mass-percentage-into-mole-fraction",
@@ -17,9 +17,11 @@
     },
     {
       "type": "manual",
-      "status": "in_progress",
+      "status": "published",
       "startedAt": "2026-11-14T11:08:54+05:30",
-      "authorization": "Owner: publish for today; also fit cropped listing diagrams inside existing blocks."
+      "authorization": "Owner: publish for today; also fit cropped listing diagrams inside existing blocks.",
+      "finishedAt": "2026-11-14T11:30:39+05:30",
+      "sourceCommit": "4488f1cc0b573bcfcc2dd3be6b02a49108994150"
     }
   ],
   "stages": {
@@ -57,7 +59,8 @@
       "review": "Agent review only; no human review claimed.",
       "initialCheckCorrections": [
         "Research source index completed with previously verified official papers and final key.",
-        "Browser harness waits for scrolling before definition clicks and explicitly loads lazy listing images; corrected checks passed."
+        "Browser harness waits for scrolling before definition clicks and explicitly loads lazy listing images; corrected checks passed.",
+        "Live listing screenshot selector changed to match both absolute production links and relative local links; no product change was required."
       ]
     },
     "figma": {
@@ -67,17 +70,71 @@
       "evidence": "All six editable views passed exact body-copy comparison, font and justification assertions, image/node-type inspection and visual review. Covers use FIT. No comments or expired pages."
     },
     "git": {
-      "status": "pending"
+      "status": "complete",
+      "sourceCommit": "4488f1cc0b573bcfcc2dd3be6b02a49108994150",
+      "pushedTo": "origin/main",
+      "evidence": "Reviewed article, design registry and diagram-fit source committed and pushed before publishing; source worktree was clean."
     },
     "publication": {
-      "status": "pending"
+      "status": "complete",
+      "sourceCommit": "4488f1cc0b573bcfcc2dd3be6b02a49108994150",
+      "publisher": "node scripts/publish.mjs",
+      "scope": "padho.ai/blog only",
+      "confirmedAt": "2026-11-14T11:26:14+05:30",
+      "exitCode": 0,
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ]
     },
     "liveVerification": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-14T11:30:39+05:30",
+      "articles": [
+        {
+          "slug": "how-does-gravity-change-above-and-below-earth",
+          "url": "https://padho.ai/blog/how-does-gravity-change-above-and-below-earth/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "02f47dff056cc7585182aee4bccc979847a41e9999a01379414123e00bfaac8b",
+          "matchesReviewedBuild": true
+        },
+        {
+          "slug": "how-do-you-turn-mass-percentage-into-mole-fraction",
+          "url": "https://padho.ai/blog/how-do-you-turn-mass-percentage-into-mole-fraction/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "20b3b417ec6ce5ce202493b30d86a5d252875ebffa1ce8e066cec03b83dc410e",
+          "matchesReviewedBuild": true
+        },
+        {
+          "slug": "when-is-a-quadratic-always-positive",
+          "url": "https://padho.ai/blog/when-is-a-quadratic-always-positive/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "264f820d8da5034f4586820bf17893798992c952790f9b6d99f7ddc69319788d",
+          "matchesReviewedBuild": true
+        }
+      ],
+      "sitemapPages": 21,
+      "publishedArticles": 15,
+      "images": 15,
+      "internalLinks": 22,
+      "metadataMatchesVisibleContent": true,
+      "crawlerProbes": 60,
+      "allCrawlerProbesPassed": true,
+      "articleViewports": 6,
+      "listingViewports": 4,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-14-browser/checks-live.json",
+      "listingEvidence": "/private/tmp/padho-blog-2026-11-14-browser/listings-live.json",
+      "searchEvidence": "/private/tmp/padho-blog-2026-11-14-browser/search-live.json",
+      "evidence": "All three live HTML responses exactly match the reviewed build. Six live article views and four homepage/category views passed at 1440 and 390 pixels. Full older diagrams and phone image blocks visually reviewed. Existing PostHog integration remains included; analytics build check passed for 22 pages. Public crawler user-agent probes are access evidence, not proof of indexing."
     }
   },
   "resume": {
-    "nextStage": "git"
+    "nextStage": null,
+    "reuseExistingArticles": true,
+    "reuseFigmaPageId": "76:202",
+    "instructions": [
+      "This date is published and live-verified. Do not create or publish another set."
+    ]
   },
   "additionalChanges": [
     "Fit complete cover diagrams inside existing homepage and category image blocks, preserving asymmetric layout.",
@@ -108,5 +165,9 @@
       "cutoff": "2026-11-08",
       "removed": []
     }
-  }
+  },
+  "sourceCommit": "4488f1cc0b573bcfcc2dd3be6b02a49108994150",
+  "publishedAt": "2026-11-14T11:26:14+05:30",
+  "completedAt": "2026-11-14T11:30:39+05:30",
+  "lastCheckpointAt": "2026-11-14T11:30:39+05:30"
 }

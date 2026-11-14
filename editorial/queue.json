@@ -244,9 +244,10 @@
       "closestPriorSlugs": [
         "why-does-osmotic-pressure-depend-on-particle-count"
       ],
-      "status": "writing",
+      "status": "published",
       "briefPath": "editorial/research/2026-11-14-chemistry.json",
-      "rationale": "Two verified relevant questions in the targeted five-paper April 2026 corpus. Chosen for a common prerequisite misconception and a short visual explanation, not an invented chapter-weightage claim."
+      "rationale": "Two verified relevant questions in the targeted five-paper April 2026 corpus. Chosen for a common prerequisite misconception and a short visual explanation, not an invented chapter-weightage claim.",
+      "releaseVerifiedAt": "2026-11-14T11:30:39+05:30"
     },
     {
       "id": "pi-antibonding-node",
@@ -296,10 +297,11 @@
         "https://openstax.org/books/college-algebra-2e/pages/2-5-quadratic-equations"
       ],
       "difference": "Earlier Maths objectives were dividing fractions, onto functions, variance and binomial exponents; this teaches quadratic sign conditions.",
-      "status": "writing",
+      "status": "published",
       "briefPath": "editorial/research/2026-11-14-maths.json",
       "rationale": "Two verified relevant questions in the targeted five-paper April 2026 corpus. Chosen for a common prerequisite misconception and a short visual explanation, not an invented chapter-weightage claim.",
-      "closestPriorSlugs": []
+      "closestPriorSlugs": [],
+      "releaseVerifiedAt": "2026-11-14T11:30:39+05:30"
     },
     {
       "id": "left-right-inverse-order",
@@ -362,10 +364,11 @@
         "https://openstax.org/books/university-physics-volume-1/pages/13-2-gravitation-near-earths-surface"
       ],
       "difference": "Earlier Physics lessons concern forces, photoelectric energy, capacitor connections and dimensions; none teaches gravity versus distance.",
-      "status": "writing",
+      "status": "published",
       "briefPath": "editorial/research/2026-11-14-physics.json",
       "rationale": "Two verified relevant questions in the targeted five-paper April 2026 corpus. Chosen for a common prerequisite misconception and a short visual explanation, not an invented chapter-weightage claim.",
-      "closestPriorSlugs": []
+      "closestPriorSlugs": [],
+      "releaseVerifiedAt": "2026-11-14T11:30:39+05:30"
     }
   ]
 }

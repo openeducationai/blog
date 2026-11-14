@@ -647,7 +647,7 @@
       "url": "https://padho.ai/blog/how-does-gravity-change-above-and-below-earth/",
       "publishedAt": "2026-11-14T11:13:56+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278405",
       "targetQuestionText": "At what height above Earth’s surface is the acceleration due to gravity one-ninth of its surface value? Write your answer using Earth’s radius R.",
       "briefPath": "editorial/research/2026-11-14-physics.json",
@@ -688,7 +688,10 @@
         },
         "notes": "Agent review: checked paragraphs in sequence, source images and final-key IDs, independent solutions, diagram labels and assumptions. Six real-app desktop/phone views passed cover, complete text, keyboard disclosures, term controls, reduced motion and no-script figures. Screenshots inspected. No human review is claimed."
       },
-      "recordedAt": "2026-11-14T11:18:40+05:30"
+      "recordedAt": "2026-11-14T11:18:40+05:30",
+      "sourceCommit": "4488f1cc0b573bcfcc2dd3be6b02a49108994150",
+      "liveVerifiedAt": "2026-11-14T11:30:39+05:30",
+      "liveHtmlSha256": "02f47dff056cc7585182aee4bccc979847a41e9999a01379414123e00bfaac8b"
     },
     {
       "slug": "how-do-you-turn-mass-percentage-into-mole-fraction",
@@ -703,7 +706,7 @@
       "url": "https://padho.ai/blog/how-do-you-turn-mass-percentage-into-mole-fraction/",
       "publishedAt": "2026-11-14T11:13:57+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278354",
       "targetQuestionText": "A solution contains 10% urea by mass in water. What is the mole fraction of water? Use molar masses of 60 g/mol for urea and 18 g/mol for water.",
       "briefPath": "editorial/research/2026-11-14-chemistry.json",
@@ -744,7 +747,10 @@
         },
         "notes": "Agent review: checked paragraphs in sequence, source images and final-key IDs, independent solutions, diagram labels and assumptions. Six real-app desktop/phone views passed cover, complete text, keyboard disclosures, term controls, reduced motion and no-script figures. Screenshots inspected. No human review is claimed."
       },
-      "recordedAt": "2026-11-14T11:18:40+05:30"
+      "recordedAt": "2026-11-14T11:18:40+05:30",
+      "sourceCommit": "4488f1cc0b573bcfcc2dd3be6b02a49108994150",
+      "liveVerifiedAt": "2026-11-14T11:30:39+05:30",
+      "liveHtmlSha256": "20b3b417ec6ce5ce202493b30d86a5d252875ebffa1ce8e066cec03b83dc410e"
     },
     {
       "slug": "when-is-a-quadratic-always-positive",
@@ -759,7 +765,7 @@
       "url": "https://padho.ai/blog/when-is-a-quadratic-always-positive/",
       "publishedAt": "2026-11-14T11:13:58+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112123",
       "targetQuestionText": "Choose a, b and c independently and equally likely from 1, 2, 3 and 4. The probability that ax² + 2√2 bx + c is positive for every real x is m/n in lowest terms. What is m + n?",
       "briefPath": "editorial/research/2026-11-14-maths.json",
@@ -800,7 +806,10 @@
         },
         "notes": "Agent review: checked paragraphs in sequence, source images and final-key IDs, independent solutions, diagram labels and assumptions. Six real-app desktop/phone views passed cover, complete text, keyboard disclosures, term controls, reduced motion and no-script figures. Screenshots inspected. No human review is claimed."
       },
-      "recordedAt": "2026-11-14T11:18:40+05:30"
+      "recordedAt": "2026-11-14T11:18:40+05:30",
+      "sourceCommit": "4488f1cc0b573bcfcc2dd3be6b02a49108994150",
+      "liveVerifiedAt": "2026-11-14T11:30:39+05:30",
+      "liveHtmlSha256": "264f820d8da5034f4586820bf17893798992c952790f9b6d99f7ddc69319788d"
     }
   ]
 }

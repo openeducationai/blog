@@ -207,7 +207,8 @@
         "comments": "Supported get_comments returned no unresolved comments. No registered page expired; cutoff 2026-11-08.",
         "coverFit": "FIT; individual cover assets only, no full-page raster"
       },
-      "verifiedAt": "2026-11-14T11:24:48+05:30"
+      "verifiedAt": "2026-11-14T11:24:48+05:30",
+      "sourceCommit": "4488f1cc0b573bcfcc2dd3be6b02a49108994150"
     }
   ],
   "removedPages": []
