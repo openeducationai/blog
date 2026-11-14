@@ -164,6 +164,50 @@
         "mathDiagramRepair": "Used the equivalent exponent −0.5 in native diagram text to avoid a missing fraction-slash glyph."
       },
       "sourceCommit": "85e5f8cbd6e38c7bd1e5e41092b55024f9b76c2b"
+    },
+    {
+      "pageId": "76:202",
+      "name": "2026-11-14",
+      "date": "2026-11-14",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "how-does-gravity-change-above-and-below-earth",
+          "desktopFrameId": "78:242",
+          "phoneFrameId": "78:557"
+        },
+        {
+          "slug": "how-do-you-turn-mass-percentage-into-mole-fraction",
+          "desktopFrameId": "78:868",
+          "phoneFrameId": "78:1181"
+        },
+        {
+          "slug": "when-is-a-quadratic-always-positive",
+          "desktopFrameId": "78:1490",
+          "phoneFrameId": "78:1802"
+        }
+      ],
+      "verification": {
+        "desktopWidth": 1440,
+        "phoneWidth": 390,
+        "editableText": true,
+        "nativeFigures": true,
+        "sharedHeaderFooterInstances": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "matchedTextBlocksPerArticle": [
+          39,
+          39,
+          39
+        ],
+        "paragraphOverflows": 0,
+        "disclosuresPerFrame": 4,
+        "comments": "Supported get_comments returned no unresolved comments. No registered page expired; cutoff 2026-11-08.",
+        "coverFit": "FIT; individual cover assets only, no full-page raster"
+      },
+      "verifiedAt": "2026-11-14T11:24:48+05:30"
     }
   ],
   "removedPages": []

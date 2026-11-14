@@ -227,20 +227,26 @@
     {
       "id": "mass-percent-to-mole-fraction",
       "category": "chemistry",
-      "chapter": "solutions",
-      "conceptKey": "chemistry/solutions/mass-percent-to-mole-fraction",
-      "question": "How do you turn mass percentage into mole fraction?",
-      "status": "needs_research",
-      "candidateQuestionIds": [
-        "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278354"
+      "chapter": "some-basic-concepts-of-chemistry",
+      "conceptKey": "chemistry/some-basic-concepts/mass-to-mole-comparisons",
+      "question": "A solution contains 10% urea by mass in water. What is the mole fraction of water? Use molar masses of 60 g/mol for urea and 18 g/mol for water.",
+      "learningObjective": "Choose a 100 g basis and convert each mass to moles before comparing amounts or using reaction ratios.",
+      "example": "100 g of urea solution contains 10 g urea and 90 g water.",
+      "slug": "how-do-you-turn-mass-percentage-into-mole-fraction",
+      "title": "How do you turn mass percentage into mole fraction?",
+      "asset": "mass-to-moles",
+      "syllabus": "Chemistry Unit 1 Some Basic Concepts: mole concept, molar mass, percentage composition, empirical and molecular formulae, stoichiometry; Unit 5 Solutions: concentration in mass percentage and mole fraction.",
+      "references": [
+        "https://openstax.org/books/chemistry-2e/pages/3-4-other-units-for-solution-concentrations",
+        "https://www.chem.purdue.edu/gchelp/solutions/character.html"
       ],
-      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
-      "priority": 9,
+      "difference": "Prior osmotic-pressure article calculates a colligative property; this lesson teaches mass basis, mole fractions and mass-to-mole stoichiometry, with distinct PYQs.",
       "closestPriorSlugs": [
-        "why-does-osmotic-pressure-depend-on-particle-count",
-        "where-does-sugar-go-when-it-dissolves"
+        "why-does-osmotic-pressure-depend-on-particle-count"
       ],
-      "difference": "Converts mass fractions to mole fractions; exclude osmosis and the existing sugar particle-model explanation."
+      "status": "writing",
+      "briefPath": "editorial/research/2026-11-14-chemistry.json",
+      "rationale": "Two verified relevant questions in the targeted five-paper April 2026 corpus. Chosen for a common prerequisite misconception and a short visual explanation, not an invented chapter-weightage claim."
     },
     {
       "id": "pi-antibonding-node",
@@ -278,15 +284,22 @@
       "category": "maths",
       "chapter": "quadratic-equations",
       "conceptKey": "maths/quadratic-equations/positive-for-all-real-x",
-      "question": "When is a quadratic positive for every real x?",
-      "status": "needs_research",
-      "candidateQuestionIds": [
-        "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112123"
+      "question": "Choose a, b and c independently and equally likely from 1, 2, 3 and 4. The probability that ax² + 2√2 bx + c is positive for every real x is m/n in lowest terms. What is m + n?",
+      "learningObjective": "Use the graph and discriminant to test strict positivity, then count allowed coefficient choices; distinguish positive values from positive roots.",
+      "example": "Raise and lower the parabola y=(x-1)²+k to see crossing, touching and staying above zero.",
+      "slug": "when-is-a-quadratic-always-positive",
+      "title": "When is a quadratic always positive?",
+      "asset": "quadratic-positive",
+      "syllabus": "Mathematics Unit 2 Complex Numbers and Quadratic Equations: nature of roots and relationships between roots and coefficients; Unit 13 Statistics and Probability: probability of an event.",
+      "references": [
+        "https://openstax.org/books/college-algebra-2e/pages/5-1-quadratic-functions",
+        "https://openstax.org/books/college-algebra-2e/pages/2-5-quadratic-equations"
       ],
-      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
-      "priority": 12,
-      "closestPriorSlugs": [],
-      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+      "difference": "Earlier Maths objectives were dividing fractions, onto functions, variance and binomial exponents; this teaches quadratic sign conditions.",
+      "status": "writing",
+      "briefPath": "editorial/research/2026-11-14-maths.json",
+      "rationale": "Two verified relevant questions in the targeted five-paper April 2026 corpus. Chosen for a common prerequisite misconception and a short visual explanation, not an invented chapter-weightage claim.",
+      "closestPriorSlugs": []
     },
     {
       "id": "left-right-inverse-order",
@@ -332,6 +345,27 @@
       "priority": 15,
       "closestPriorSlugs": [],
       "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+    },
+    {
+      "id": "gravity-height-and-depth",
+      "category": "physics",
+      "chapter": "gravitation",
+      "conceptKey": "physics/gravitation/height-depth-and-centre-distance",
+      "question": "At what height above Earth’s surface is the acceleration due to gravity one-ninth of its surface value? Write your answer using Earth’s radius R.",
+      "learningObjective": "Distinguish height from distance to Earth’s centre and use the appropriate outside or uniform-density inside gravity relation.",
+      "example": "Follow one point outward from Earth’s centre, through the surface and into space.",
+      "slug": "how-does-gravity-change-above-and-below-earth",
+      "title": "How does gravity change above and below Earth?",
+      "asset": "gravity-height-depth",
+      "syllabus": "Physics Unit 6 Gravitation: acceleration due to gravity and its variation with altitude and depth.",
+      "references": [
+        "https://openstax.org/books/university-physics-volume-1/pages/13-2-gravitation-near-earths-surface"
+      ],
+      "difference": "Earlier Physics lessons concern forces, photoelectric energy, capacitor connections and dimensions; none teaches gravity versus distance.",
+      "status": "writing",
+      "briefPath": "editorial/research/2026-11-14-physics.json",
+      "rationale": "Two verified relevant questions in the targeted five-paper April 2026 corpus. Chosen for a common prerequisite misconception and a short visual explanation, not an invented chapter-weightage claim.",
+      "closestPriorSlugs": []
     }
   ]
 }

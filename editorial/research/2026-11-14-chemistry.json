@@ -1,0 +1,81 @@
+{
+  "id": "mass-percent-to-mole-fraction",
+  "researchedAt": "2026-11-14T11:10:18+05:30",
+  "category": "chemistry",
+  "conceptKey": "chemistry/some-basic-concepts/mass-to-mole-comparisons",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; opened 14 November 2026",
+    "scope": "Chemistry Unit 1 Some Basic Concepts: mole concept, molar mass, percentage composition, empirical and molecular formulae, stoichiometry; Unit 5 Solutions: concentration in mass percentage and mole fraction."
+  },
+  "corpus": {
+    "papersExamined": 5,
+    "paperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf"
+    ],
+    "coverageNotes": "Targeted scan of five April 2026 papers, 375 questions available. Not all shifts, exhaustive topic classification or a five-year weightage analysis.",
+    "selectedRelevantQuestions": 2
+  },
+  "priority": {
+    "rationale": "Two verified relevant questions in the targeted five-paper April 2026 corpus. Chosen for a common prerequisite misconception and a short visual explanation, not an invented chapter-weightage claim."
+  },
+  "sources": [
+    {
+      "title": "Teaching reference",
+      "url": "https://openstax.org/books/chemistry-2e/pages/3-4-other-units-for-solution-concentrations"
+    },
+    {
+      "title": "Teaching reference",
+      "url": "https://www.chem.purdue.edu/gchelp/solutions/character.html"
+    },
+    {
+      "title": "NTA JEE Main 2027 syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final answer key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    },
+    {
+      "title": "NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf"
+    },
+    {
+      "title": "NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278354",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "5 April 2026, Shift 1, Q54, PDF page 20",
+      "answer": "30/31 = 0.9677419; closest listed option 0.967",
+      "correctOptionId": "6952781206",
+      "verifiedAt": "2026-11-14T11:10:18+05:30",
+      "adapted": true,
+      "independentSolution": "100 g solution contains 10 g urea and 90 g water. Urea CO(NH2)2 has molar mass 60 g/mol, water 18 g/mol. Amounts are 1/6 mol and 5 mol. Water mole fraction 5/(5+1/6)=30/31. To three decimal places this rounds to 0.968, not 0.967; the official option 0.967 is the closest listed value, which is explicitly noted.",
+      "sourceSha256": "20a14808d521007d48289171297030a4ac18710abc180bb7e3b2d23e2a0a19fb"
+    },
+    {
+      "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121201",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026, Shift 2, Q51, PDF page 20",
+      "answer": "11.44 g CO2",
+      "correctOptionId": "691121682",
+      "verifiedAt": "2026-11-14T11:10:18+05:30",
+      "adapted": true,
+      "independentSolution": "C:H mass ratio 12:1 gives atom/mole ratio 12/12:1/1=1:1. Two carbon atoms mean C2H2, molar mass 26. 3.38/26=0.13 mol hydrocarbon yields 0.26 mol CO2, hence 0.26×44=11.44 g. Cross-check: carbon mass 3.38×12/13=3.12 g -> 0.26 mol C -> 0.26 mol CO2.",
+      "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278354",
+  "targetQuestionText": "A solution contains 10% urea by mass in water. What is the mole fraction of water? Use molar masses of 60 g/mol for urea and 18 g/mol for water.",
+  "verificationNotes": "Original official question-page images inspected; exact final-key IDs matched. Solutions calculated independently and numerical cases checked. Explicit assumptions and option rounding caveats recorded in each question."
+}

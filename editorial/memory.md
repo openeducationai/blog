@@ -61,3 +61,11 @@ The first scheduled attempt stopped before authoring because the runner checked 
 - The approved editable Figma diagram needed an equivalent decimal exponent (−0.5) because the imported superscript fraction slash rendered badly. The website source retains the original fraction. Evidence: `runs/2026-11-13.json`, page `68:202`.
 
 - Release and live verification completed at 2026-11-13T07:20:57+05:30: all three article HTML responses matched the reviewed build; 18 sitemap pages, 12 articles and 48 public crawler-user-agent probes passed. These probes do not prove indexing. Evidence: `runs/2026-11-13.json`.
+
+### 2026-11-14 — preparation and listing diagrams
+
+- The scheduled agent stopped to request approval of the already approved trial plan and created no articles. The owner authorised a manual run. The recurring prompt now explicitly carries that approved plan and scope; a new decision is needed only for a genuine expansion. Evidence: `runs/2026-11-14.json` and the retained private scheduled response. This correction does not extend the trial or bypass service access.
+- Selected gravity versus height/depth, mass-to-mole comparisons, and quadratic positivity. Original NTA question images and final-key IDs were checked; the three research briefs contain independent solutions. Coverage remains the targeted five-paper sample, not a measured weightage census.
+- Chemistry QID 695278354 computes to 30/31 = 0.9677419…, which rounds to 0.968. The keyed option is 0.967, the closest listed value. Explain this distinction rather than reproducing inaccurate rounding. Physics depth calculations explicitly use a uniform-density, nonrotating model.
+- Listing illustrations must remain fully visible. The owner reported cropped diagram labels on the homepage. Reuse existing asymmetric containers with `object-fit: contain`, theme surface background and token-based padding. Check the older diagrams as well as the newest hero, at desktop and phone sizes. Evidence: four real-app listing checks and screenshots in the dated run.
+- Source, six complete editable Figma views and all local checks were completed before checking deployment access. Figma accepts requests up to 100 KiB; encode only the discrete cover efficiently rather than flattening article content. The current seven-day window has no expired registered pages.

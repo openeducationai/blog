@@ -1,0 +1,83 @@
+---
+title: "How does gravity change above and below Earth?"
+description: "Measure from Earth’s centre, then see why gravity changes differently above the surface and below it."
+category: physics
+author: padho
+pubDate: "2026-11-14T11:13:56+05:30"
+heroImage: '../../assets/articles/gravity-height-depth.png'
+heroImageAlt: 'Earth’s centre, its surface and a point above it, showing that the centre-to-point distance is R plus h.'
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+import ReadingTerm from '../../components/ReadingTerm.astro';
+
+We’ll learn how to solve this question:
+
+**At what height above Earth’s surface is the acceleration due to gravity one-ninth of its surface value? Write your answer using Earth’s radius R.**
+
+Adapted from [JEE Main, 4 April 2026, Shift 2, Q30](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf#page=11). We’ll start by drawing the distance correctly. Then we’ll look at a related question about going below the surface. You only need ratios, squares and square roots.
+
+## Where does the distance start?
+
+Imagine a small object directly above Earth. Call its height above the ground h, and call Earth’s radius R. The object is h from the surface, but R + h from Earth’s centre.
+
+That difference matters. In the gravity formula, we measure distance from the centre. Using h alone would leave out the whole radius of Earth.
+
+<ArticleDiagram kind="gravity">The blue circle represents Earth. Start at its centre and travel R to the surface, then another h to the object. The full distance is R + h. The drawing shows distances, not an orbit.</ArticleDiagram>
+
+Let g₀ mean the acceleration due to gravity at the surface. For this lesson, treat Earth as a sphere and ignore its rotation. Outside Earth, its gravitational pull follows the <ReadingTerm term="Inverse-square relation" definition="If the distance from the centre is multiplied by a number, the gravitational acceleration is divided by that number squared.">inverse-square relation</ReadingTerm>. At twice the centre-to-object distance, gravity is one-quarter as strong. At three times the distance, it is one-ninth as strong.
+
+Notice what we doubled: the distance from the centre. A height equal to R means a centre-to-object distance of 2R. So at height R, gravity is g₀/4. It has not become zero just because the object is far above the ground.
+
+## Compare with the surface
+
+Newton’s law gives g = GM/r² outside a spherical Earth. Here G is the gravitational constant, M is Earth’s mass, and r is the distance from the centre. The same relation is explained in [OpenStax’s treatment of gravity near Earth](https://openstax.org/books/university-physics-volume-1/pages/13-2-gravitation-near-earths-surface).
+
+At the surface, r = R, so g₀ = GM/R². At height h, r = R + h. Dividing the second expression by the first cancels G and M:
+
+**g at height h ÷ g₀ = (R/(R + h))².**
+
+This ratio is useful because the question gives us a fraction of surface gravity. We do not need Earth’s mass or a numerical value for G. We only need to find which distance produces that fraction.
+
+<KeyIdea id="gravity-distance">First find the distance from Earth’s centre. Only then subtract R to find the height above the surface.</KeyIdea>
+
+## What changes below the ground?
+
+Now imagine moving down through a narrow tunnel. You are getting closer to the centre, but you must not put the entire mass of Earth into GM/r² and conclude that gravity keeps increasing.
+
+Some of Earth now lies outside your distance from the centre. For a spherical shell, the gravitational pulls cancel at any point inside the shell. Only the mass enclosed within your current radius contributes to the net pull. At the centre itself, all directions balance and gravity is zero.
+
+To get a simple formula, we need one extra assumption: Earth has the same density throughout. This is the usual model for the depth question below; actual Earth has layers with different densities.
+
+In that model, at half the radius, the enclosed sphere has one-eighth of Earth’s volume and mass. The distance-squared term is one-quarter as large. So the gravity ratio is (1/8)/(1/4) = 1/2. Moving inward has reduced the contributing mass enough to reduce gravity.
+
+More generally, at depth d below the surface, the distance from the centre is R − d, and:
+
+**g at depth d ÷ g₀ = 1 − d/R.**
+
+This formula gives g₀ when d = 0 and zero when d = R. Those checks help us see that it describes the surface and centre sensibly within our model.
+
+## A short distance above and below
+
+For a height much smaller than R, the exact height ratio (1 + h/R)⁻² is approximately 1 − 2h/R. For example, if h/R = 0.01, the exact ratio is about 0.9803; the approximation gives 0.98. It is a useful shortcut for a small height, not for a height comparable with Earth’s radius.
+
+At a small depth, the uniform-density formula gives a reduction of d/R. At a small height, the reduction is approximately 2h/R. So equal small distances above and below the surface do not give equal values of gravity. That is the idea we need for the first practice question.
+
+## Try the past questions
+
+**1. Move from 16 km below Earth’s surface to 16 km above it. Approximately what percentage does gravity change by? Take R = 6400 km and use the uniform-density, nonrotating Earth model.**
+
+Adapted from [JEE Main, 5 April 2026, Shift 1, Q28](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf#page=10). The model assumption is stated explicitly here.
+
+<details class="reading-check"><summary>Show hint</summary><p>Calculate each value as a fraction of g₀. Below the surface use 1 − d/R. Just above it use approximately 1 − 2h/R.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Here 16/6400 = 0.0025. Below the surface, gravity is 0.9975g₀. Above it, gravity is approximately 0.995g₀.</p><p>The decrease is about 0.0025g₀. Relative to the starting value, the percentage decrease is about (0.0025/0.9975) × 100 = <strong>0.25%</strong>. Using the exact height expression gives about 0.249%, with the same answer to the precision of the options.</p><p>Both locations have less gravity than the surface in this model. We compare the two values; we do not add their separate reductions from g₀.</p></details>
+
+**2. Return to our opening question: at what height is gravity one-ninth of its surface value?**
+
+<details class="reading-check"><summary>Show hint</summary><p>Set (R/(R + h))² equal to 1/9. Find R + h first.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Taking the positive square root gives R/(R + h) = 1/3. So R + h = 3R.</p><p>The object is three Earth radii from the centre, but the surface is already one radius from the centre. The height above the surface is therefore 3R − R = <strong>2R</strong>.</p></details>
+
+These answers match the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 695278328 and 695278405.

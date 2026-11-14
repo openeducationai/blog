@@ -1,0 +1,81 @@
+{
+  "id": "positive-for-all-real-x",
+  "researchedAt": "2026-11-14T11:10:18+05:30",
+  "category": "maths",
+  "conceptKey": "maths/quadratic-equations/positive-for-all-real-x",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; opened 14 November 2026",
+    "scope": "Mathematics Unit 2 Complex Numbers and Quadratic Equations: nature of roots and relationships between roots and coefficients; Unit 13 Statistics and Probability: probability of an event."
+  },
+  "corpus": {
+    "papersExamined": 5,
+    "paperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf"
+    ],
+    "coverageNotes": "Targeted scan of five April 2026 papers, 375 questions available. Not all shifts, exhaustive topic classification or a five-year weightage analysis.",
+    "selectedRelevantQuestions": 2
+  },
+  "priority": {
+    "rationale": "Two verified relevant questions in the targeted five-paper April 2026 corpus. Chosen for a common prerequisite misconception and a short visual explanation, not an invented chapter-weightage claim."
+  },
+  "sources": [
+    {
+      "title": "Teaching reference",
+      "url": "https://openstax.org/books/college-algebra-2e/pages/5-1-quadratic-functions"
+    },
+    {
+      "title": "Teaching reference",
+      "url": "https://openstax.org/books/college-algebra-2e/pages/2-5-quadratic-equations"
+    },
+    {
+      "title": "NTA JEE Main 2027 syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final answer key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    },
+    {
+      "title": "NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf"
+    },
+    {
+      "title": "NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112123",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026, Shift 1, Q23, PDF page 9",
+      "answer": "81",
+      "correctOptionId": "81",
+      "verifiedAt": "2026-11-14T11:10:18+05:30",
+      "adapted": true,
+      "independentSolution": "a,b,c independently uniform in {1,2,3,4}: 64 ordered triples. Since a>0, strict positivity at every real x requires discriminant 8b²-4ac<0, hence ac>2b². For b=1 the allowed c counts by a are 2,3,4,4 =13. For b=2 they are 0,0,2,2 =4. b>=3 impossible since ac<=16<18. Probability17/64, so m+n=81. Independently enumerated all 64 cases.",
+      "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+    },
+    {
+      "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278380",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "4 April 2026, Shift 2, Q5, PDF page 2",
+      "answer": "2 integral values, lambda = -4 or -3",
+      "correctOptionId": "6952781293",
+      "verifiedAt": "2026-11-14T11:10:18+05:30",
+      "adapted": true,
+      "independentSolution": "Polynomial (lambda+2)x²-3lambda x+4lambda. Real roots: D=9lambda²-16lambda(lambda+2)=-lambda(7lambda+32)>=0, so -32/7<=lambda<=0. Positive product and sum require lambda/(lambda+2)>0, hence lambda<-2 or lambda>0. Intersection [-32/7,-2), integral values -4,-3; both have strictly positive roots. lambda=0 gives zero roots; lambda=-2 is not quadratic.",
+      "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112123",
+  "targetQuestionText": "Choose a, b and c independently and equally likely from 1, 2, 3 and 4. The probability that ax² + 2√2 bx + c is positive for every real x is m/n in lowest terms. What is m + n?",
+  "verificationNotes": "Original official question-page images inspected; exact final-key IDs matched. Solutions calculated independently and numerical cases checked. Explicit assumptions and option rounding caveats recorded in each question."
+}

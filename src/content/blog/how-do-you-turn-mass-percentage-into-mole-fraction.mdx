@@ -1,0 +1,81 @@
+---
+title: "How do you turn mass percentage into mole fraction?"
+description: "Start with 100 grams of solution, convert each substance to moles, and then compare their amounts."
+category: chemistry
+author: padho
+pubDate: "2026-11-14T11:13:57+05:30"
+heroImage: '../../assets/articles/mass-to-moles.png'
+heroImageAlt: 'A 100 gram solution split into 10 grams of urea and 90 grams of water, with each mass divided by its own molar mass.'
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+import ReadingTerm from '../../components/ReadingTerm.astro';
+
+We’ll learn how to solve this question:
+
+**A solution contains 10% urea by mass in water. What is the mole fraction of water? Use molar masses of 60 g/mol for urea and 18 g/mol for water.**
+
+Adapted from [JEE Main, 5 April 2026, Shift 1, Q54](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf#page=20). We’ll explain what each kind of fraction measures, then solve the question. You need percentages and ordinary division.
+
+## Start with a manageable amount
+
+“10% by mass” means 10 grams of urea in every 100 grams of solution. The solution includes both urea and water. So our 100 gram sample contains 10 grams of urea and 90 grams of water.
+
+We are free to choose a 100 gram sample because a percentage tells us the composition, not the size of the sample. Choosing 200 grams would give 20 grams of urea and 180 grams of water. Every amount would double, but the fractions would stay the same.
+
+This definition of [mass percentage](https://openstax.org/books/chemistry-2e/pages/3-4-other-units-for-solution-concentrations) is the first place to slow down. The water mass is 90 grams, not 100 grams. Adding 10 grams of urea to 100 grams of water would make 110 grams of solution, which is a different mixture.
+
+## Grams do not count molecules
+
+A mass fraction compares grams. A mole fraction compares amounts in moles. Those are different comparisons because the molecules of different substances can have different masses.
+
+Think of a mole as a fixed-size counting bundle. One mole of water molecules and one mole of urea molecules contain the same number of molecules. But the urea bundle weighs 60 grams, while the water bundle weighs only 18 grams.
+
+The <ReadingTerm term="Molar mass" definition="The mass of one mole of a substance. If its unit is grams per mole, divide a mass in grams by the molar mass to get moles.">molar mass</ReadingTerm> tells us how to turn a measured mass into a number of these bundles:
+
+**Amount in moles = mass in grams ÷ molar mass in grams per mole.**
+
+For instance, 36 grams of water is 36/18 = 2 moles. The same 36 grams of urea is 36/60 = 0.6 mole. Equal masses have given different amounts in moles. That is why we cannot use a mass percentage directly as a mole percentage.
+
+<ArticleDiagram kind="moles">Begin with the complete solution mass. Separate the water and urea masses, then divide each by its own molar mass. The boxes organise the calculation; their sizes do not represent the numbers of molecules.</ArticleDiagram>
+
+## Which amount goes on top?
+
+The [mole fraction of water](https://www.chem.purdue.edu/gchelp/solutions/character.html) is the amount of water divided by the total amount of both substances, all measured in moles.
+
+**Water mole fraction = water moles ÷ (water moles + urea moles).**
+
+The question names water, so water belongs in the numerator. Urea still belongs in the denominator because it is part of the solution. We will put the actual amounts into this expression in the final solution.
+
+A mole fraction has no unit: we divide moles by moles. It must lie between zero and one. For a solution containing only these two substances, the water and urea mole fractions add to one.
+
+<KeyIdea id="mass-before-moles">Choose a convenient total mass. Find each substance’s mass, divide by its molar mass, and only then compare the amounts in moles.</KeyIdea>
+
+In the [osmotic-pressure lesson](/blog/why-does-osmotic-pressure-depend-on-particle-count/), the number of dissolved particles helped explain a measurable pressure. Here, we are learning how to calculate a solution’s composition from masses.
+
+## The same conversion helps in a reaction
+
+The second use of this idea is a reaction calculation. A chemical formula counts atoms, and a balanced equation compares numbers of molecules or moles. Neither gives a mass ratio directly.
+
+Suppose a compound contains carbon and hydrogen in a mass ratio of 12:1. Divide each mass by the corresponding atomic molar mass: 12/12 for carbon and 1/1 for hydrogen. The result is 1:1 in moles of atoms. If each molecule contains two carbon atoms, it therefore contains two hydrogen atoms too: C₂H₂.
+
+When this compound burns completely, each of its carbon atoms ends up in one CO₂ molecule. One mole of C₂H₂ therefore produces two moles of CO₂. To find grams of CO₂, we first use that mole ratio, then multiply the resulting moles by the molar mass of CO₂. The next question lets you practise that sequence.
+
+## Try the past questions
+
+**1. A hydrocarbon has a carbon-to-hydrogen mass ratio of 12:1 and two carbon atoms per molecule. How many grams of CO₂ form when 3.38 g of it burns completely in oxygen? Use C = 12, H = 1 and O = 16 g/mol.**
+
+Adapted from [JEE Main, 2 April 2026, Shift 2, Q51](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf#page=20).
+
+<details class="reading-check"><summary>Show hint</summary><p>Use the mass ratio to find the formula. Convert the given hydrocarbon mass to moles, count the CO₂ moles, then convert back to grams.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The atom ratio is (12/12):(1/1) = 1:1, so the formula is C₂H₂. Its molar mass is 2 × 12 + 2 × 1 = 26 g/mol.</p><p>The sample contains 3.38/26 = 0.13 mol of C₂H₂. Each mole gives two moles of CO₂, so the product contains 0.26 mol of CO₂.</p><p>CO₂ has molar mass 12 + 2 × 16 = 44 g/mol. Its mass is 0.26 × 44 = <strong>11.44 g</strong>. The product can weigh more than the original hydrocarbon because oxygen has joined it.</p></details>
+
+**2. Return to our opening question: what is the mole fraction of water in the 10% by mass urea solution?**
+
+<details class="reading-check"><summary>Show hint</summary><p>Take 100 g of solution. Water contributes 90/18 moles and urea contributes 10/60 moles. Keep both in the denominator.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Water contributes 5 mol. Urea contributes 1/6 mol. The water mole fraction is 5/(5 + 1/6) = <strong>30/31</strong>, or about <strong>0.968</strong>.</p><p>The official multiple-choice paper lists 0.967 as the closest option, and that is the keyed answer. The calculated value is 0.9677419…, which rounds to 0.968 to three decimal places.</p><p>As a check, the urea mole fraction is 1/31. Adding the two gives 31/31 = 1.</p></details>
+
+The selected answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 691121201 and 695278354, with the option-rounding difference explained above.

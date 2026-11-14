@@ -1,0 +1,79 @@
+---
+title: "When is a quadratic always positive?"
+description: "Look at the lowest point of the curve, then use the discriminant to turn the picture into a condition."
+category: maths
+author: padho
+pubDate: "2026-11-14T11:13:58+05:30"
+heroImage: '../../assets/articles/quadratic-positive.png'
+heroImageAlt: 'An upward-opening parabola whose lowest point lies above the x-axis, so every output is positive.'
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+import ReadingTerm from '../../components/ReadingTerm.astro';
+
+We’ll learn how to solve this question:
+
+**Choose a, b and c independently and equally likely from 1, 2, 3 and 4. The probability that ax² + 2√2 bx + c is positive for every real x is m/n in lowest terms. What is m + n?**
+
+Adapted from [JEE Main, 2 April 2026, Shift 1, Q23](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf#page=9). We’ll first learn what “positive for every x” looks like, then count which choices make it happen. You need the quadratic formula and probability as favourable outcomes divided by total outcomes.
+
+## A curve that never reaches zero
+
+Start with y = (x − 1)² + 1. A real number squared is never negative, so (x − 1)² cannot be below zero. Adding 1 makes the whole expression at least 1.
+
+The smallest value occurs at x = 1, where the square is zero. Everywhere else the square is positive and the output is larger. The curve therefore stays above the x-axis, as in this [description of a quadratic’s minimum](https://openstax.org/books/college-algebra-2e/pages/5-1-quadratic-functions).
+
+<ArticleDiagram kind="positive">For y = (x − 1)² + 1, the lowest point is (1, 1). It is above the x-axis. Moving left or right makes the square larger, so the output stays positive.</ArticleDiagram>
+
+Now remove the final +1. The expression (x − 1)² touches zero at x = 1. It is never negative, but it is not positive for every x, because one output equals zero.
+
+That small distinction matters in the exam question. “Positive” means strictly greater than zero. A curve that merely touches the x-axis does not qualify.
+
+## Turn the picture into a test
+
+Write a general quadratic as Ax² + Bx + C. We are using capital letters here so that the coefficient B is easy to distinguish from the lowercase b in the opening question.
+
+If A is positive, the curve opens upward. To keep every output positive, this upward curve must never touch or cross the x-axis. In other words, the equation Ax² + Bx + C = 0 must have no real roots.
+
+The <ReadingTerm term="Discriminant" definition="For Ax² + Bx + C = 0, the discriminant is D = B² − 4AC. It tells us whether the quadratic has two distinct real roots, one repeated real root, or no real roots.">discriminant</ReadingTerm> D = B² − 4AC tells us whether those roots exist. In the quadratic formula, √D appears. If D is negative, that square root is not real, so there are no real roots. If D is zero, there is one repeated real root: the curve touches the axis.
+
+So the condition we need is **A > 0 and D < 0**. Both parts matter. A downward curve can have no real roots too, but it would sit entirely below the axis.
+
+<KeyIdea id="positive-quadratic">An upward-opening quadratic is positive for every real x exactly when it has no real roots: A > 0 and B² − 4AC < 0. Use a strict inequality because touching zero is not allowed.</KeyIdea>
+
+For the opening question, A = a, B = 2√2 b and C = c. The coefficient of x is the whole expression 2√2 b. When we square it, we get 8b². Since a is already positive, our condition becomes 8b² − 4ac < 0, or **ac > 2b²**.
+
+## Count without listing every quadratic
+
+There are four choices each for a, b and c, giving 4 × 4 × 4 = 64 equally likely ordered choices. We now need to count how many satisfy ac > 2b².
+
+Fix one value of b at a time. For each a, ask which c values make the product large enough. For example, with b = 1 and a = 1, we need c > 2. Only c = 3 and c = 4 work.
+
+The order matters: a = 1, c = 3 and a = 3, c = 1 are separate choices. Also notice that ac can never exceed 16. That observation will quickly rule out some values of b in the final solution.
+
+## Positive outputs or positive roots?
+
+A related past question asks for two positive roots. Here, “positive” describes the x-values where the output is zero. It does not describe all the outputs of the quadratic.
+
+To have positive real roots, first require D ≥ 0. Then require their sum and product to be positive. For Ax² + Bx + C = 0, the sum is −B/A and the product is C/A.
+
+Why do those two signs work? A positive product means the two nonzero roots have the same sign. A positive sum then tells us they are both positive. This is a different test from keeping the entire curve above zero; read what the question is asking before choosing the condition.
+
+## Try the past questions
+
+**1. For λ ≠ −2, the equation (λ + 2)x² − 3λx + 4λ = 0 has two positive roots. How many integer values of λ are possible?**
+
+Adapted from [JEE Main, 4 April 2026, Shift 2, Q5](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf#page=2).
+
+<details class="reading-check"><summary>Show hint</summary><p>Require real roots, a positive sum and a positive product. Keep the sign of λ + 2 in mind when solving the inequalities.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The discriminant is 9λ² − 16λ(λ + 2) = −λ(7λ + 32). Requiring it to be nonnegative gives −32/7 ≤ λ ≤ 0.</p><p>The root sum is 3λ/(λ + 2), and the product is 4λ/(λ + 2). Both are positive when λ and λ + 2 have the same sign: λ &lt; −2 or λ &gt; 0.</p><p>Both requirements hold together only for −32/7 ≤ λ &lt; −2. The integers in this interval are −4 and −3, so the answer is <strong>2</strong>.</p></details>
+
+**2. Return to the opening probability question. How many choices satisfy ac > 2b², and what is m + n?**
+
+<details class="reading-check"><summary>Show hint</summary><p>For b = 1, count pairs with ac &gt; 2. For b = 2, count pairs with ac &gt; 8. For larger b, compare the required product with its maximum, 16.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>When b = 1, the allowed c values number 2, 3, 4 and 4 as a takes the values 1, 2, 3 and 4. This gives 13 choices.</p><p>When b = 2, a = 1 and a = 2 give no choices. For either a = 3 or a = 4, c can be 3 or 4. This gives 4 choices.</p><p>For b = 3 or 4, the required product is greater than 18 or 32. Since ac is at most 16, neither value gives a choice.</p><p>There are 13 + 4 = 17 favourable choices out of 64. The probability is 17/64, already in lowest terms. Therefore m + n = 17 + 64 = <strong>81</strong>.</p></details>
+
+Both answers match the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 695278380 and 69112123.

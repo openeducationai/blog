@@ -1,0 +1,77 @@
+{
+  "id": "gravity-height-and-depth",
+  "researchedAt": "2026-11-14T11:10:18+05:30",
+  "category": "physics",
+  "conceptKey": "physics/gravitation/height-depth-and-centre-distance",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; opened 14 November 2026",
+    "scope": "Physics Unit 6 Gravitation: acceleration due to gravity and its variation with altitude and depth."
+  },
+  "corpus": {
+    "papersExamined": 5,
+    "paperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf"
+    ],
+    "coverageNotes": "Targeted scan of five April 2026 papers, 375 questions available. Not all shifts, exhaustive topic classification or a five-year weightage analysis.",
+    "selectedRelevantQuestions": 2
+  },
+  "priority": {
+    "rationale": "Two verified relevant questions in the targeted five-paper April 2026 corpus. Chosen for a common prerequisite misconception and a short visual explanation, not an invented chapter-weightage claim."
+  },
+  "sources": [
+    {
+      "title": "Teaching reference",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/13-2-gravitation-near-earths-surface"
+    },
+    {
+      "title": "NTA JEE Main 2027 syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final answer key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    },
+    {
+      "title": "NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf"
+    },
+    {
+      "title": "NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278405",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "4 April 2026, Shift 2, Q30, PDF page 11",
+      "answer": "h = 2R",
+      "correctOptionId": "6952781379",
+      "verifiedAt": "2026-11-14T11:10:18+05:30",
+      "adapted": true,
+      "independentSolution": "g(h)/g0 = R²/(R+h)² = 1/9. Positive distances give R+h=3R, so h=2R. Direct check: GM/(3R)² = g0/9.",
+      "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+    },
+    {
+      "id": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278328",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "5 April 2026, Shift 1, Q28, PDF page 10",
+      "answer": "approximately 0.25% decrease",
+      "correctOptionId": "6952781115",
+      "verifiedAt": "2026-11-14T11:10:18+05:30",
+      "adapted": true,
+      "independentSolution": "Use the explicit uniform-density, nonrotating Earth model. At depth d, g/g0=1-d/R=0.9975. At height h, g/g0=1/(1+h/R)²=0.9950186877. Relative decrease from the initial below-surface value is 0.248753%, agreeing with 0.25%. Leading order is (2h-d)/R=0.0025. The model is stated in the adaptation; the real density profile differs.",
+      "sourceSha256": "20a14808d521007d48289171297030a4ac18710abc180bb7e3b2d23e2a0a19fb"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278405",
+  "targetQuestionText": "At what height above Earth’s surface is the acceleration due to gravity one-ninth of its surface value? Write your answer using Earth’s radius R.",
+  "verificationNotes": "Original official question-page images inspected; exact final-key IDs matched. Solutions calculated independently and numerical cases checked. Explicit assumptions and option rounding caveats recorded in each question."
+}

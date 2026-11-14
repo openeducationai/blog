@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-14",
+  "status": "partial",
+  "articleSlugs": [
+    "how-does-gravity-change-above-and-below-earth",
+    "how-do-you-turn-mass-percentage-into-mole-fraction",
+    "when-is-a-quadratic-always-positive"
+  ],
+  "startedAt": "2026-11-14T11:08:54+05:30",
+  "attempts": [
+    {
+      "type": "scheduled",
+      "status": "failed",
+      "startedAt": "2026-11-14T07:00:01+05:30",
+      "reason": "Stopped to request plan approval although the daily trial was already approved; no source or Figma work was created.",
+      "evidence": ".daily-blog/pcm/2026-11-14-result.md"
+    },
+    {
+      "type": "manual",
+      "status": "in_progress",
+      "startedAt": "2026-11-14T11:08:54+05:30",
+      "authorization": "Owner: publish for today; also fit cropped listing diagrams inside existing blocks."
+    }
+  ],
+  "stages": {
+    "research": {
+      "status": "complete",
+      "completedAt": "2026-11-14T11:10:18+05:30",
+      "briefs": [
+        "editorial/research/2026-11-14-physics.json",
+        "editorial/research/2026-11-14-chemistry.json",
+        "editorial/research/2026-11-14-maths.json"
+      ],
+      "evidence": "Six original question images and final-key entries checked; calculations independently verified. No topic duplication. Existing targeted five-paper corpus, not a weightage census."
+    },
+    "writing": {
+      "status": "complete",
+      "completedAt": "2026-11-14T11:13:56+05:30",
+      "evidence": "Three complete question-led articles, original SVG diagrams, KeyIdea and ReadingTerm blocks, two verified PYQs each with hints and solutions."
+    },
+    "validation": {
+      "status": "complete",
+      "completedAt": "2026-11-14T11:18:40+05:30",
+      "checks": [
+        "Science and maths worked independently against official paper images and final answer key",
+        "Article screenshots inspected at 1440 and 390; six combinations passed font, width, cover, figure, target text, keyboard disclosures, term control, no-script and reduced-motion checks",
+        "npm run build passed: 22 pages",
+        "npm run typecheck passed",
+        "Homepage and category: four desktop/phone views passed; all diagrams use contain within padded theme blocks",
+        "npm run check:analytics passed: 22 pages",
+        "npm test: 39 passed",
+        "npm run test:daily: 6 passed",
+        "npm run check:search passed: 21 pages, 15 articles, 15 images, 22 internal links",
+        "npm run check:editorial passed: 16 historical articles, 22 queue entries; source hashes and PYQs valid"
+      ],
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-14-browser/checks.json",
+      "review": "Agent review only; no human review claimed.",
+      "initialCheckCorrections": [
+        "Research source index completed with previously verified official papers and final key.",
+        "Browser harness waits for scrolling before definition clicks and explicitly loads lazy listing images; corrected checks passed."
+      ]
+    },
+    "figma": {
+      "status": "complete",
+      "completedAt": "2026-11-14T11:24:48+05:30",
+      "pageId": "76:202",
+      "evidence": "All six editable views passed exact body-copy comparison, font and justification assertions, image/node-type inspection and visual review. Covers use FIT. No comments or expired pages."
+    },
+    "git": {
+      "status": "pending"
+    },
+    "publication": {
+      "status": "pending"
+    },
+    "liveVerification": {
+      "status": "pending"
+    }
+  },
+  "resume": {
+    "nextStage": "git"
+  },
+  "additionalChanges": [
+    "Fit complete cover diagrams inside existing homepage and category image blocks, preserving asymmetric layout.",
+    "Clarify existing approved recurring plan in daily runner prompt."
+  ],
+  "figma": {
+    "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+    "pageId": "76:202",
+    "url": "https://www.figma.com/design/GsBNGG7jIMvsPyhP7w0zXK/Blogs?node-id=76-202",
+    "articles": [
+      {
+        "slug": "how-does-gravity-change-above-and-below-earth",
+        "desktopFrameId": "78:242",
+        "phoneFrameId": "78:557"
+      },
+      {
+        "slug": "how-do-you-turn-mass-percentage-into-mole-fraction",
+        "desktopFrameId": "78:868",
+        "phoneFrameId": "78:1181"
+      },
+      {
+        "slug": "when-is-a-quadratic-always-positive",
+        "desktopFrameId": "78:1490",
+        "phoneFrameId": "78:1802"
+      }
+    ],
+    "retention": {
+      "cutoff": "2026-11-08",
+      "removed": []
+    }
+  }
+}

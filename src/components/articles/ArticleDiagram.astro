@@ -6,9 +6,12 @@ import varianceShift from '../../assets/articles/variance-shift.svg?raw';
 import fieldEnergy from '../../assets/articles/field-energy-dimensions.svg?raw';
 import buffer from '../../assets/articles/buffer-neutralisation.svg?raw';
 import binomial from '../../assets/articles/binomial-choice.svg?raw';
-interface Props { kind: 'connections' | 'layers' | 'particles' | 'spread' | 'fieldEnergy' | 'buffer' | 'binomial' }
+import gravity from '../../assets/articles/gravity-height-depth.svg?raw';
+import moles from '../../assets/articles/mass-to-moles.svg?raw';
+import positive from '../../assets/articles/quadratic-positive.svg?raw';
+interface Props { kind: 'connections' | 'layers' | 'particles' | 'spread' | 'fieldEnergy' | 'buffer' | 'binomial' | 'gravity' | 'moles' | 'positive' }
 const { kind } = Astro.props;
-const diagrams = { connections: capacitorConnections, layers: capacitorLayers, particles: osmoticParticles, spread: varianceShift, fieldEnergy, buffer, binomial };
+const diagrams = { connections: capacitorConnections, layers: capacitorLayers, particles: osmoticParticles, spread: varianceShift, fieldEnergy, buffer, binomial, gravity, moles, positive };
 ---
 <figure class="article-diagram" aria-labelledby={`diagram-${kind}-caption`}>
   <div class="diagram-drawing" set:html={diagrams[kind]} />

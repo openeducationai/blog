@@ -633,6 +633,174 @@
       "sourceCommit": "85e5f8cbd6e38c7bd1e5e41092b55024f9b76c2b",
       "liveVerifiedAt": "2026-11-13T07:20:57+05:30",
       "liveHtmlSha256": "e6cf1be7818fe2f79b1e99f0c8f05a4c406c84d3db279f02b5e7bd2f7c9bffa6"
+    },
+    {
+      "slug": "how-does-gravity-change-above-and-below-earth",
+      "title": "How does gravity change above and below Earth?",
+      "category": "physics",
+      "chapter": "gravitation",
+      "conceptKey": "physics/gravitation/height-depth-and-centre-distance",
+      "learningObjective": "Distinguish height from distance to Earth’s centre and use the appropriate outside or uniform-density inside gravity relation.",
+      "example": "Follow one point outward from Earth’s centre, through the surface and into space.",
+      "sourcePath": "src/content/blog/how-does-gravity-change-above-and-below-earth.mdx",
+      "sourceSha256": "e5c3285a532504a3180dd03c296ba29ec56fd6fe9751efe6096d02697fc64bd2",
+      "url": "https://padho.ai/blog/how-does-gravity-change-above-and-below-earth/",
+      "publishedAt": "2026-11-14T11:13:56+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278405",
+      "targetQuestionText": "At what height above Earth’s surface is the acceleration due to gravity one-ninth of its surface value? Write your answer using Earth’s radius R.",
+      "briefPath": "editorial/research/2026-11-14-physics.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278405",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026, Shift 2, Q30, PDF page 11",
+          "answer": "h = 2R",
+          "correctOptionId": "6952781379",
+          "verifiedAt": "2026-11-14T11:10:18+05:30",
+          "adapted": true,
+          "independentSolution": "g(h)/g0 = R²/(R+h)² = 1/9. Positive distances give R+h=3R, so h=2R. Direct check: GM/(3R)² = g0/9.",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        },
+        {
+          "id": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278328",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "5 April 2026, Shift 1, Q28, PDF page 10",
+          "answer": "approximately 0.25% decrease",
+          "correctOptionId": "6952781115",
+          "verifiedAt": "2026-11-14T11:10:18+05:30",
+          "adapted": true,
+          "independentSolution": "Use the explicit uniform-density, nonrotating Earth model. At depth d, g/g0=1-d/R=0.9975. At height h, g/g0=1/(1+h/R)²=0.9950186877. Relative decrease from the initial below-surface value is 0.248753%, agreeing with 0.25%. Leading order is (2h-d)/R=0.0025. The model is stated in the adaptation; the real density profile differs.",
+          "sourceSha256": "20a14808d521007d48289171297030a4ac18710abc180bb7e3b2d23e2a0a19fb"
+        }
+      ],
+      "review": {
+        "sourceSha256": "e5c3285a532504a3180dd03c296ba29ec56fd6fe9751efe6096d02697fc64bd2",
+        "reviewedAt": "2026-11-14T11:18:40+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Agent review: checked paragraphs in sequence, source images and final-key IDs, independent solutions, diagram labels and assumptions. Six real-app desktop/phone views passed cover, complete text, keyboard disclosures, term controls, reduced motion and no-script figures. Screenshots inspected. No human review is claimed."
+      },
+      "recordedAt": "2026-11-14T11:18:40+05:30"
+    },
+    {
+      "slug": "how-do-you-turn-mass-percentage-into-mole-fraction",
+      "title": "How do you turn mass percentage into mole fraction?",
+      "category": "chemistry",
+      "chapter": "some-basic-concepts-of-chemistry",
+      "conceptKey": "chemistry/some-basic-concepts/mass-to-mole-comparisons",
+      "learningObjective": "Choose a 100 g basis and convert each mass to moles before comparing amounts or using reaction ratios.",
+      "example": "100 g of urea solution contains 10 g urea and 90 g water.",
+      "sourcePath": "src/content/blog/how-do-you-turn-mass-percentage-into-mole-fraction.mdx",
+      "sourceSha256": "25880de6aea17a15dffefe2179c57e6d8dc0722bd21fd3fa8cf1ba83bcb9a36d",
+      "url": "https://padho.ai/blog/how-do-you-turn-mass-percentage-into-mole-fraction/",
+      "publishedAt": "2026-11-14T11:13:57+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278354",
+      "targetQuestionText": "A solution contains 10% urea by mass in water. What is the mole fraction of water? Use molar masses of 60 g/mol for urea and 18 g/mol for water.",
+      "briefPath": "editorial/research/2026-11-14-chemistry.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278354",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "5 April 2026, Shift 1, Q54, PDF page 20",
+          "answer": "30/31 = 0.9677419; closest listed option 0.967",
+          "correctOptionId": "6952781206",
+          "verifiedAt": "2026-11-14T11:10:18+05:30",
+          "adapted": true,
+          "independentSolution": "100 g solution contains 10 g urea and 90 g water. Urea CO(NH2)2 has molar mass 60 g/mol, water 18 g/mol. Amounts are 1/6 mol and 5 mol. Water mole fraction 5/(5+1/6)=30/31. To three decimal places this rounds to 0.968, not 0.967; the official option 0.967 is the closest listed value, which is explicitly noted.",
+          "sourceSha256": "20a14808d521007d48289171297030a4ac18710abc180bb7e3b2d23e2a0a19fb"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121201",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026, Shift 2, Q51, PDF page 20",
+          "answer": "11.44 g CO2",
+          "correctOptionId": "691121682",
+          "verifiedAt": "2026-11-14T11:10:18+05:30",
+          "adapted": true,
+          "independentSolution": "C:H mass ratio 12:1 gives atom/mole ratio 12/12:1/1=1:1. Two carbon atoms mean C2H2, molar mass 26. 3.38/26=0.13 mol hydrocarbon yields 0.26 mol CO2, hence 0.26×44=11.44 g. Cross-check: carbon mass 3.38×12/13=3.12 g -> 0.26 mol C -> 0.26 mol CO2.",
+          "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+        }
+      ],
+      "review": {
+        "sourceSha256": "25880de6aea17a15dffefe2179c57e6d8dc0722bd21fd3fa8cf1ba83bcb9a36d",
+        "reviewedAt": "2026-11-14T11:18:40+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Agent review: checked paragraphs in sequence, source images and final-key IDs, independent solutions, diagram labels and assumptions. Six real-app desktop/phone views passed cover, complete text, keyboard disclosures, term controls, reduced motion and no-script figures. Screenshots inspected. No human review is claimed."
+      },
+      "recordedAt": "2026-11-14T11:18:40+05:30"
+    },
+    {
+      "slug": "when-is-a-quadratic-always-positive",
+      "title": "When is a quadratic always positive?",
+      "category": "maths",
+      "chapter": "quadratic-equations",
+      "conceptKey": "maths/quadratic-equations/positive-for-all-real-x",
+      "learningObjective": "Use the graph and discriminant to test strict positivity, then count allowed coefficient choices; distinguish positive values from positive roots.",
+      "example": "Raise and lower the parabola y=(x-1)²+k to see crossing, touching and staying above zero.",
+      "sourcePath": "src/content/blog/when-is-a-quadratic-always-positive.mdx",
+      "sourceSha256": "c04eb4c9fc8327e15b64b12af84b24247ad62efe48fd59d8b2a929e01c8141ac",
+      "url": "https://padho.ai/blog/when-is-a-quadratic-always-positive/",
+      "publishedAt": "2026-11-14T11:13:58+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112123",
+      "targetQuestionText": "Choose a, b and c independently and equally likely from 1, 2, 3 and 4. The probability that ax² + 2√2 bx + c is positive for every real x is m/n in lowest terms. What is m + n?",
+      "briefPath": "editorial/research/2026-11-14-maths.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112123",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026, Shift 1, Q23, PDF page 9",
+          "answer": "81",
+          "correctOptionId": "81",
+          "verifiedAt": "2026-11-14T11:10:18+05:30",
+          "adapted": true,
+          "independentSolution": "a,b,c independently uniform in {1,2,3,4}: 64 ordered triples. Since a>0, strict positivity at every real x requires discriminant 8b²-4ac<0, hence ac>2b². For b=1 the allowed c counts by a are 2,3,4,4 =13. For b=2 they are 0,0,2,2 =4. b>=3 impossible since ac<=16<18. Probability17/64, so m+n=81. Independently enumerated all 64 cases.",
+          "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+        },
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278380",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026, Shift 2, Q5, PDF page 2",
+          "answer": "2 integral values, lambda = -4 or -3",
+          "correctOptionId": "6952781293",
+          "verifiedAt": "2026-11-14T11:10:18+05:30",
+          "adapted": true,
+          "independentSolution": "Polynomial (lambda+2)x²-3lambda x+4lambda. Real roots: D=9lambda²-16lambda(lambda+2)=-lambda(7lambda+32)>=0, so -32/7<=lambda<=0. Positive product and sum require lambda/(lambda+2)>0, hence lambda<-2 or lambda>0. Intersection [-32/7,-2), integral values -4,-3; both have strictly positive roots. lambda=0 gives zero roots; lambda=-2 is not quadratic.",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        }
+      ],
+      "review": {
+        "sourceSha256": "c04eb4c9fc8327e15b64b12af84b24247ad62efe48fd59d8b2a929e01c8141ac",
+        "reviewedAt": "2026-11-14T11:18:40+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Agent review: checked paragraphs in sequence, source images and final-key IDs, independent solutions, diagram labels and assumptions. Six real-app desktop/phone views passed cover, complete text, keyboard disclosures, term controls, reduced motion and no-script figures. Screenshots inspected. No human review is claimed."
+      },
+      "recordedAt": "2026-11-14T11:18:40+05:30"
     }
   ]
 }
