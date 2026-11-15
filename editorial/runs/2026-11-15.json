@@ -44,20 +44,44 @@
       "evidence": "Six editable frames passed source text comparison, widths, fonts, justified paragraphs, native diagrams, shared header/footer and screenshot review; comments none, no expired registered pages."
     },
     "git": {
-      "status": "pending"
+      "status": "complete",
+      "sourceCommit": "9f4d4e8bcb031408cae9126b7ea8ff9e48bbda46",
+      "pushedTo": "origin/main",
+      "completedAt": "2026-11-15T07:16:40+05:30",
+      "evidence": "Fetched origin/main with no divergence; reviewed and committed scoped source and review records."
     },
     "publication": {
-      "status": "pending"
+      "status": "failed",
+      "attemptedAt": "2026-11-15T07:17:23+05:30",
+      "publisher": "node scripts/publish.mjs",
+      "sourceCommit": "9f4d4e8bcb031408cae9126b7ea8ff9e48bbda46",
+      "scope": "padho.ai/blog only",
+      "error": "gcloud auth print-access-token: token refresh failed; reauthentication failed because the non-interactive process cannot prompt.",
+      "evidence": "Preflight editorial, built search, and analytics checks passed. Publisher obtains token before any Cloud Storage request or upload; no upload or CDN invalidation occurred.",
+      "exitCode": 1
     },
     "liveVerification": {
-      "status": "pending"
+      "status": "pending",
+      "checkedAt": "2026-11-15T07:17:23+05:30",
+      "evidence": "Read-only URL probes returned 404 for all three prepared articles; release did not run. Full live verification remains pending.",
+      "httpStatuses": [
+        404,
+        404,
+        404
+      ]
     }
   },
   "resume": {
-    "nextStage": "git",
-    "reuseExistingArticles": true
+    "nextStage": "publication",
+    "reuseExistingArticles": true,
+    "reuseFigmaPageId": "81:202",
+    "instructions": [
+      "After Google Cloud reauthentication, confirm main and the staged source hashes, then resume the existing 15 November batch. Do not research or create a second set.",
+      "If the release date has changed, follow daily.md on publication timestamps, rebuild, Figma visible dates, and revalidation before release.",
+      "After publish, run live search and page checks; then mark history and queue published, record evidence, and commit/push the final records."
+    ]
   },
-  "lastCheckpointAt": "2026-11-15T07:15:51+05:30",
+  "lastCheckpointAt": "2026-11-15T07:17:23+05:30",
   "figma": {
     "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
     "pageId": "81:202",
@@ -83,5 +107,6 @@
       "cutoff": "2026-11-09",
       "removed": []
     }
-  }
+  },
+  "sourceCommit": "9f4d4e8bcb031408cae9126b7ea8ff9e48bbda46"
 }

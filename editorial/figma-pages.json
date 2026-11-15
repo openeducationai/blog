@@ -252,7 +252,8 @@
         "comments": "Supported get_comments returned no comments. No registered pages expired; cutoff 2026-11-09.",
         "coverFit": "FIT; discrete cover assets only"
       },
-      "verifiedAt": "2026-11-15T07:14:26+05:30"
+      "verifiedAt": "2026-11-15T07:14:26+05:30",
+      "sourceCommit": "9f4d4e8bcb031408cae9126b7ea8ff9e48bbda46"
     }
   ],
   "removedPages": []
