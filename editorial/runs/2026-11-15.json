@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-15",
+  "status": "partial",
+  "articleSlugs": [
+    "how-does-a-series-resistor-extend-a-voltmeters-range",
+    "how-do-you-compare-bohr-orbit-radii",
+    "how-does-the-distance-from-a-circles-centre-determine-a-chord"
+  ],
+  "startedAt": "2026-11-15T07:00:39+05:30",
+  "stages": {
+    "research": {
+      "status": "complete",
+      "completedAt": "2026-11-15T07:03:25+05:30",
+      "briefs": [
+        "editorial/research/2026-11-15-physics.json",
+        "editorial/research/2026-11-15-chemistry.json",
+        "editorial/research/2026-11-15-maths.json"
+      ],
+      "evidence": "All six original NTA question-page images inspected against final-key IDs and independently worked; 6 April PDF hash and page locators saved. Targeted coverage only."
+    },
+    "writing": {
+      "status": "complete",
+      "completedAt": "2026-11-15T07:05:44+05:30",
+      "evidence": "Three question-led drafts and original accessible diagrams created; history entries staged, visual review pending."
+    },
+    "validation": {
+      "status": "complete",
+      "completedAt": "2026-11-15T07:10:20+05:30",
+      "checks": [
+        "Official question statements and final key matched; solutions independently worked",
+        "Real Astro app inspected at 1440 and 390 for each article: text, original figure, cover, keyboard disclosures, no-script and reduced-motion states",
+        "Chemistry cover corrected and rechecked at both widths",
+        "npm run check:editorial passed (19 history entries, 22 queued topics)",
+        "npm run build passed (25 pages); npm run typecheck passed; npm run check:search passed (24 pages, 18 articles)",
+        "npm test: 39 passed; npm run test:daily: 6 passed; npm run check:analytics passed"
+      ],
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-15-browser/",
+      "review": "Agent review only; no human review claimed."
+    },
+    "figma": {
+      "status": "complete",
+      "completedAt": "2026-11-15T07:14:26+05:30",
+      "pageId": "81:202",
+      "evidence": "Six editable frames passed source text comparison, widths, fonts, justified paragraphs, native diagrams, shared header/footer and screenshot review; comments none, no expired registered pages."
+    },
+    "git": {
+      "status": "pending"
+    },
+    "publication": {
+      "status": "pending"
+    },
+    "liveVerification": {
+      "status": "pending"
+    }
+  },
+  "resume": {
+    "nextStage": "git",
+    "reuseExistingArticles": true
+  },
+  "lastCheckpointAt": "2026-11-15T07:15:51+05:30",
+  "figma": {
+    "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+    "pageId": "81:202",
+    "url": "https://www.figma.com/design/GsBNGG7jIMvsPyhP7w0zXK/Blogs?node-id=81-202",
+    "articles": [
+      {
+        "slug": "how-does-a-series-resistor-extend-a-voltmeters-range",
+        "desktopFrameId": "82:242",
+        "phoneFrameId": "82:526"
+      },
+      {
+        "slug": "how-do-you-compare-bohr-orbit-radii",
+        "desktopFrameId": "82:806",
+        "phoneFrameId": "82:1091"
+      },
+      {
+        "slug": "how-does-the-distance-from-a-circles-centre-determine-a-chord",
+        "desktopFrameId": "82:1372",
+        "phoneFrameId": "82:1663"
+      }
+    ],
+    "retention": {
+      "cutoff": "2026-11-09",
+      "removed": []
+    }
+  }
+}

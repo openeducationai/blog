@@ -1,0 +1,76 @@
+{
+  "id": "voltmeter-series-range",
+  "researchedAt": "2026-11-15T07:03:25+05:30",
+  "category": "physics",
+  "conceptKey": "physics/current-electricity/series-resistance-voltage-budget",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027",
+    "scope": "Physics current electricity: Ohm’s law, resistances in series and parallel; moving coil galvanometer and conversion to voltmeter; electronic devices: Zener diode."
+  },
+  "corpus": {
+    "papersExamined": 6,
+    "paperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf"
+    ],
+    "coverageNotes": "Previously targeted scan of five April 2026 shifts, plus selected questions in 6 April Shift 2. Not an exhaustive classification of six papers, all shifts, or five years; no rate or weightage claim.",
+    "selectedRelevantQuestions": 2
+  },
+  "priority": {
+    "rationale": "Two identified questions with independent solutions and official final-key matches; selected for a useful prerequisite and misconception. No exhaustive recurrence or weightage comparison."
+  },
+  "sources": [
+    {
+      "title": "NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel"
+    },
+    {
+      "title": "NTA final answer key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    },
+    {
+      "title": "NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf"
+    },
+    {
+      "title": "NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278262",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "4 April 2026 Shift 1 Q37, PDF page 13",
+      "answer": "x/2 Ω in series",
+      "correctOptionId": "695278895",
+      "verifiedAt": "2026-11-15T07:03:25+05:30",
+      "adapted": true,
+      "independentSolution": "At full scale I=20/x A. The added drop is 10 V so R=10/I=x/2 Ω."
+    },
+    {
+      "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278421",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "4 April 2026 Shift 2 Q46, PDF pages 17–18",
+      "answer": "300 Ω",
+      "correctOptionId": "300",
+      "verifiedAt": "2026-11-15T07:03:25+05:30",
+      "adapted": true,
+      "independentSolution": "The Zener is assumed in breakdown with 10 V across it; maximum diode current is 0.5/10=0.05 A. Resistor drop is 25−10=15 V, and R≥15/0.05=300 Ω."
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278262",
+  "targetQuestionText": "A voltmeter has resistance x Ω and reads up to 20 V. What resistor should be added, and how, to extend its range to 30 V?",
+  "verificationNotes": "First question original page image examined. Second question inspected in official paper page image; independently calculated and matched against NTA final key. Paper corpus selection is targeted."
+}

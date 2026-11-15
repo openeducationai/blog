@@ -1,0 +1,60 @@
+---
+title: "How does the distance from a circle’s centre determine a chord?"
+description: "Use a right triangle to connect a circle’s radius, a chord and the distance from its centre."
+category: maths
+author: padho
+pubDate: "2026-11-15T07:04:51+05:30"
+heroImage: '../../assets/articles/circle-chord.png'
+heroImageAlt: 'A radius and a perpendicular from a circle’s centre form a right triangle with half a chord.'
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**A circle passes through the origin. Its centre is where the perpendicular lines x + (k − 1)y + 3 = 0 and 2x + k²y − 4 = 0 meet. The line x − y + 2 = 0 cuts the circle at A and B. What is AB²?**
+
+Adapted from [JEE Main, 2 April 2026 Shift 2 Q10](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf). We’ll use a right triangle, then find the centre of the circle. You need the distance formula, perpendicular lines and simple algebra.
+
+## Draw a radius to the chord
+
+A chord is a straight line segment joining two points on a circle. Call its ends A and B and the centre O. Draw a perpendicular from O to the chord, meeting it at M. This perpendicular cuts the chord into two equal halves.
+
+Now draw the radius OA. Triangle OMA is a right triangle. Its hypotenuse OA has length r, the radius. Let OM, the perpendicular distance from the centre to the chord, be d. Pythagoras gives:
+
+**(half the chord)² = r² − d²**, so **AB² = 4(r² − d²)**.
+
+<ArticleDiagram kind="circleChord">O is the centre, A and B are the chord endpoints, and M is the foot of the perpendicular. OA is a radius r; OM is the distance d; AM and MB are equal.</ArticleDiagram>
+
+For example, if r = 5 and d = 3, half the chord is √(25 − 9) = 4. The whole chord is 8. If the chord moves through the centre, d becomes zero and its length becomes 2r, the diameter. If d reaches r, the line just touches the circle and the chord length becomes zero.
+
+<KeyIdea id="chord-distance">The perpendicular distance gives half a chord through a right triangle. Double that half to get the full chord.</KeyIdea>
+
+## Find the centre and the distance
+
+For a line ax + by + c = 0, the perpendicular distance from a point (h, j) to the line is |ah + bj + c|/√(a² + b²). The absolute value makes the distance non-negative. The equation of a circle records its centre and radius; [OpenStax reviews the circle and distance formulas](https://openstax.org/books/intermediate-algebra-2e/pages/11-1-distance-and-midpoint-formulas-circles).
+
+Our opening question first asks us to find the centre. The two given lines are perpendicular, so their normal vectors are perpendicular too. Their normal vectors are (1, k − 1) and (2, k²). Their dot product must be zero:
+
+**2 + (k − 1)k² = 0.**
+
+The left side factors as (k + 1)(k² − 2k + 2). The second factor is (k − 1)² + 1, which is always positive for real k. Thus k = −1. We can now solve the two line equations for the centre and use the right triangle.
+
+## Try the past questions
+
+**1. A circle has its centre in the first quadrant and touches the x-axis at (3, 0). Its chord on the y-axis has length 6√3. Find the length of its chord on x − y = 3.**
+
+Adapted from [JEE Main, 6 April 2026, Shift 2, Q10](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf).
+
+<details class="reading-check"><summary>Show hint</summary><p>Write the centre as (3, r). Use half the y-axis chord to find r, then calculate the perpendicular distance to x − y = 3.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The centre is (3, r), with r positive. The distance to the y-axis is 3 and half its chord is 3√3. Hence r² = 3² + (3√3)² = 36, so r = 6.</p><p>The distance from (3, 6) to x − y − 3 = 0 is |3 − 6 − 3|/√2 = 3√2. The required chord is 2√(36 − 18) = <strong>6√2</strong>.</p></details>
+
+**2. Return to our opening question: what is AB² for the circle through the origin?**
+
+<details class="reading-check"><summary>Show hint</summary><p>Put k = −1 into the two centre lines. The origin is on the circle, so its distance from the centre is the radius.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The centre lines become x − 2y + 3 = 0 and 2x + y − 4 = 0. Their intersection is O = (1, 2). The radius squared is 1² + 2² = 5.</p><p>The distance to x − y + 2 = 0 is |1 − 2 + 2|/√2 = 1/√2, so d² = 1/2. Thus AB² = 4(5 − 1/2) = <strong>18</strong>.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 6911211210 and 691121160.

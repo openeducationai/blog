@@ -1,0 +1,77 @@
+{
+  "id": "circle-line-chord-distance",
+  "researchedAt": "2026-11-15T07:03:25+05:30",
+  "category": "maths",
+  "conceptKey": "maths/coordinate-geometry/circle-line-chord-distance",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027",
+    "scope": "Mathematics Unit 9 Coordinate Geometry: straight lines, circles, equations and intersections."
+  },
+  "corpus": {
+    "papersExamined": 6,
+    "paperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf"
+    ],
+    "coverageNotes": "Previously targeted scan of five April 2026 shifts, plus selected questions in 6 April Shift 2. Not an exhaustive classification of six papers, all shifts, or five years; no rate or weightage claim.",
+    "selectedRelevantQuestions": 2
+  },
+  "priority": {
+    "rationale": "Two identified questions with independent solutions and official final-key matches; selected for a useful prerequisite and misconception. No exhaustive recurrence or weightage comparison."
+  },
+  "sources": [
+    {
+      "title": "NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/intermediate-algebra-2e/pages/11-1-distance-and-midpoint-formulas-circles"
+    },
+    {
+      "title": "NTA final answer key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    },
+    {
+      "title": "NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf"
+    },
+    {
+      "title": "NTA question paper",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121160",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift 2 Q10, PDF page 4",
+      "answer": "AB² = 18",
+      "correctOptionId": "691121549",
+      "verifiedAt": "2026-11-15T07:03:25+05:30",
+      "adapted": true,
+      "independentSolution": "Perpendicular normals give k³−k²+2=0=(k+1)(k²−2k+2), so real k=−1. Centre=(1,2), r²=5, d²=1/2; AB²=4(r²−d²)=18."
+    },
+    {
+      "id": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211210",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "6 April 2026 Shift 2 Q10, PDF pages 4–5",
+      "answer": "6√2",
+      "correctOptionId": "6911214119",
+      "verifiedAt": "2026-11-15T07:15:51+05:30",
+      "adapted": true,
+      "independentSolution": "Centre=(3,r), r>0; y-axis intercept 6√3 gives r²−9=27, r=6. Distance to x−y=3 is 3√2; chord=2√(36−18)=6√2.",
+      "sourceSha256": "2983baca258ad15a77a4bc66968aa57239a217298a73e3f4e51caad1777368d5"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121160",
+  "targetQuestionText": "A circle passes through the origin. Its centre is where the perpendicular lines x + (k − 1)y + 3 = 0 and 2x + k²y − 4 = 0 meet. The line x − y + 2 = 0 cuts the circle at A and B. What is AB²?",
+  "verificationNotes": "Both original official question-page images and answer-key entries inspected, independently calculated, and matched. Paper corpus selection is targeted."
+}

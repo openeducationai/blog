@@ -167,17 +167,23 @@
     {
       "id": "voltmeter-series-range",
       "category": "physics",
-      "chapter": "magnetic-effects-of-current",
-      "conceptKey": "physics/magnetic-effects-of-current/voltmeter-series-range",
-      "question": "Why does a series resistor extend a voltmeter’s range?",
-      "status": "needs_research",
+      "chapter": "current-electricity",
+      "conceptKey": "physics/current-electricity/series-resistance-voltage-budget",
+      "question": "A voltmeter has resistance x Ω and reads up to 20 V. What resistor should be added, and how, to extend its range to 30 V?",
+      "status": "writing",
       "candidateQuestionIds": [
         "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278262"
       ],
-      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "rationale": "Two identified questions with independent solutions and official final-key matches; selected for a useful prerequisite and misconception. No exhaustive recurrence or weightage comparison.",
       "priority": 5,
-      "closestPriorSlugs": [],
-      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+      "closestPriorSlugs": [
+        "when-are-capacitors-in-series-or-parallel"
+      ],
+      "difference": "Earlier capacitor article combines capacitors by shared nodes; this teaches a series voltage budget and current limit in resistive circuits.",
+      "learningObjective": "Use a shared series current and voltage drops to size a resistor that limits current.",
+      "example": "A 20 V meter shares a 30 V supply with a series resistor.",
+      "slug": "how-does-a-series-resistor-extend-a-voltmeters-range",
+      "briefPath": "editorial/research/2026-11-15-physics.json"
     },
     {
       "id": "coil-torque-angle-with-normal",
@@ -214,15 +220,21 @@
       "category": "chemistry",
       "chapter": "atomic-structure",
       "conceptKey": "chemistry/atomic-structure/hydrogen-like-radius-scaling",
-      "question": "Which hydrogen-like ions have the same orbital radius?",
-      "status": "needs_research",
+      "question": "In the Bohr model, which two have equal orbit radii: H in its first orbit, He⁺ in its first or second orbit, Li²⁺ in its first orbit, or Be³⁺ in its second orbit?",
+      "status": "writing",
       "candidateQuestionIds": [
         "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278427"
       ],
-      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "rationale": "Two identified questions with independent solutions and official final-key matches; selected for a useful prerequisite and misconception. No exhaustive recurrence or weightage comparison.",
       "priority": 8,
-      "closestPriorSlugs": [],
-      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+      "closestPriorSlugs": [
+        "where-does-a-photoelectrons-energy-come-from"
+      ],
+      "difference": "Earlier photoelectric lesson concerns photon energy and stopping potential; this is the Bohr radius of one-electron species.",
+      "learningObjective": "Compare one-electron orbit radii by evaluating n²/Z in the Bohr model.",
+      "example": "Compare H at n = 1 with Be³⁺ at n = 2.",
+      "slug": "how-do-you-compare-bohr-orbit-radii",
+      "briefPath": "editorial/research/2026-11-15-chemistry.json"
     },
     {
       "id": "mass-percent-to-mole-fraction",
@@ -323,15 +335,19 @@
       "category": "maths",
       "chapter": "coordinate-geometry",
       "conceptKey": "maths/coordinate-geometry/circle-line-chord-distance",
-      "question": "How does the distance from a circle’s centre determine a chord?",
-      "status": "needs_research",
+      "question": "A circle passes through the origin. Its centre is where the perpendicular lines x + (k − 1)y + 3 = 0 and 2x + k²y − 4 = 0 meet. The line x − y + 2 = 0 cuts the circle at A and B. What is AB²?",
+      "status": "writing",
       "candidateQuestionIds": [
         "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121160"
       ],
-      "rationale": "Candidate located in the targeted official April paper scan. Needs a second relevant PYQ, complete original-page/key verification and a teaching brief before selection. No recurrence or marks estimate established.",
+      "rationale": "Two identified questions with independent solutions and official final-key matches; selected for a useful prerequisite and misconception. No exhaustive recurrence or weightage comparison.",
       "priority": 14,
       "closestPriorSlugs": [],
-      "difference": "Candidate objective appears distinct; repeat the semantic history review after full research."
+      "difference": "Prior mathematics articles teach functions, statistics, binomial coefficients and quadratic sign; none covers chord geometry.",
+      "learningObjective": "Use the perpendicular centre-to-chord distance with the radius to find chord length.",
+      "example": "A circle of radius 5 with a chord 3 units from its centre.",
+      "slug": "how-does-the-distance-from-a-circles-centre-determine-a-chord",
+      "briefPath": "editorial/research/2026-11-15-maths.json"
     },
     {
       "id": "geometric-sum-logarithm",

@@ -71,3 +71,9 @@ The first scheduled attempt stopped before authoring because the runner checked 
 - Source, six complete editable Figma views and all local checks were completed before checking deployment access. Figma accepts requests up to 100 KiB; encode only the discrete cover efficiently rather than flattening article content. The current seven-day window has no expired registered pages.
 
 - Release and live verification completed at 2026-11-14T11:30:39+05:30: all three article HTML responses exactly match source commit `4488f1cc0b573bcfcc2dd3be6b02a49108994150`. Sitemap has 21 URLs and 15 articles; 60 public crawler-user-agent probes passed. Six live article views and four homepage/category views passed, including complete older diagrams in padded image blocks. These checks do not establish search indexing. The scheduled failure is retained with its manual recovery; no duplicate articles or Figma pages were created. Evidence: `runs/2026-11-14.json`.
+
+### 2026-11-15 — prepared trial batch
+
+- Selected series-resistor voltage budgets, Bohr orbit radii, and centre-to-chord geometry. Official question IDs, final keys and worked solutions are recorded in `research/2026-11-15-*.json`; the targeted coverage is not a full-shift or five-year weightage study. Confidence: high for checked answers; limited for frequency.
+- The Chemistry cover was changed after visual review because the first version revealed the target answer. A neutral radius relation now appears in the cover; the detailed comparison remains in the lesson. Evidence: `runs/2026-11-15.json`.
+- Three sources passed local validation and six editable Figma copies were verified before checking release access. Evidence: `runs/2026-11-15.json`, `figma-pages.json`. Publication remains pending until live verification.

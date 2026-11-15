@@ -209,6 +209,50 @@
       },
       "verifiedAt": "2026-11-14T11:24:48+05:30",
       "sourceCommit": "4488f1cc0b573bcfcc2dd3be6b02a49108994150"
+    },
+    {
+      "pageId": "81:202",
+      "name": "2026-11-15",
+      "date": "2026-11-15",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "how-does-a-series-resistor-extend-a-voltmeters-range",
+          "desktopFrameId": "82:242",
+          "phoneFrameId": "82:526"
+        },
+        {
+          "slug": "how-do-you-compare-bohr-orbit-radii",
+          "desktopFrameId": "82:806",
+          "phoneFrameId": "82:1091"
+        },
+        {
+          "slug": "how-does-the-distance-from-a-circles-centre-determine-a-chord",
+          "desktopFrameId": "82:1372",
+          "phoneFrameId": "82:1663"
+        }
+      ],
+      "verification": {
+        "desktopWidth": 1440,
+        "phoneWidth": 390,
+        "editableText": true,
+        "nativeFigures": true,
+        "sharedHeaderFooterInstances": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "matchedTextBlocksPerArticle": [
+          25,
+          27,
+          27
+        ],
+        "missingOrCollapsedTextNodes": 0,
+        "disclosuresPerFrame": 4,
+        "comments": "Supported get_comments returned no comments. No registered pages expired; cutoff 2026-11-09.",
+        "coverFit": "FIT; discrete cover assets only"
+      },
+      "verifiedAt": "2026-11-15T07:14:26+05:30"
     }
   ],
   "removedPages": []

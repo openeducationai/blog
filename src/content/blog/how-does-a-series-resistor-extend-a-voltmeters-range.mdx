@@ -1,0 +1,56 @@
+---
+title: "How does a series resistor extend a voltmeter’s range?"
+description: "Follow the voltage across a meter and a series resistor to find the resistance needed for a wider range."
+category: physics
+author: padho
+pubDate: "2026-11-15T07:04:51+05:30"
+heroImage: '../../assets/articles/series-voltmeter.png'
+heroImageAlt: 'A 30 volt supply shared between a 20 volt meter and a series resistor.'
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**A voltmeter has resistance x Ω and reads up to 20 V. What resistor should be added, and how, to extend its range to 30 V?**
+
+Adapted from [JEE Main, 4 April 2026 Shift 1 Q37](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf). We’ll use Ohm’s law and see how the voltage is shared. You need ratios and simple algebra.
+
+## Follow the same current
+
+A voltmeter measures the potential difference, or voltage, between two points. This meter is designed to reach the end of its scale when 20 V is across it. Its resistance is x Ω. At that point, Ohm’s law gives a current of 20/x amperes through the meter.
+
+Suppose we want to measure 30 V without pushing more current through the meter than it carries at the end of its original scale. We can put a resistor in series with it. “In series” means the current has one path through both components. The same current passes through the resistor and the meter.
+
+<ArticleDiagram kind="seriesVoltmeter">The supply provides 30 V across both components together. At full scale the meter has 20 V across it, leaving 10 V across the series resistor. Both carry the same current I.</ArticleDiagram>
+
+The voltage across the two components adds to the supply voltage. So when the meter has its full 20 V, the added resistor must have the remaining 10 V. The resistor does not remove the meter’s voltage; it shares the total voltage with it.
+
+## Find the extra resistance
+
+[Ohm’s law](https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel) connects voltage V, current I and resistance R: V = IR. The same current I flows through both parts. Therefore, the part with half the voltage drop needs half the resistance.
+
+Here the meter has 20 V across resistance x. The added resistor has 10 V across it at the same current. Its resistance must be x/2. A parallel resistor would have the same voltage as the meter rather than taking a share of the voltage in series.
+
+<KeyIdea id="series-drop">In a series path, find the current limit first. Then divide the voltage left for the extra resistor by that same current.</KeyIdea>
+
+The same reasoning works when a component’s limit is given as power instead of current. For a component with voltage V and power P, P = VI. Dividing P by V gives its current. The resistor must keep the current at or below that limit.
+
+## Try the past questions
+
+**1. A Zener diode has a 10 V Zener voltage and a maximum power of 0.5 W. It is connected in series with a resistor across a 25 V supply. What is the minimum resistance for the diode to remain within its power limit? Assume the diode is operating at its Zener voltage.**
+
+Adapted from [JEE Main, 4 April 2026, Shift 2, Q46](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf#page=18).
+
+<details class="reading-check"><summary>Show hint</summary><p>Use P = VI to find the largest diode current. How much of the 25 V is left across the resistor?</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The largest diode current is 0.5/10 = 0.05 A. The resistor has 25 − 10 = 15 V across it.</p><p>At the current limit, R = 15/0.05 = <strong>300 Ω</strong>. A larger resistance reduces the current; 300 Ω is the minimum in this model.</p></details>
+
+**2. Return to our opening question: what should we add to the 20 V meter to measure up to 30 V?**
+
+<details class="reading-check"><summary>Show hint</summary><p>At the meter’s full-scale current, the added component must take the remaining 10 V.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The full-scale current is I = 20/x A. The extra drop is 30 − 20 = 10 V, so R = 10/I = 10/(20/x) = <strong>x/2 Ω</strong>.</p><p>Connect that resistor <strong>in series</strong> with the voltmeter. At the new end of the scale, the original meter still has 20 V across it.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 695278421 and 695278262.

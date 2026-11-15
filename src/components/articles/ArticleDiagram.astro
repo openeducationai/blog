@@ -9,9 +9,12 @@ import binomial from '../../assets/articles/binomial-choice.svg?raw';
 import gravity from '../../assets/articles/gravity-height-depth.svg?raw';
 import moles from '../../assets/articles/mass-to-moles.svg?raw';
 import positive from '../../assets/articles/quadratic-positive.svg?raw';
-interface Props { kind: 'connections' | 'layers' | 'particles' | 'spread' | 'fieldEnergy' | 'buffer' | 'binomial' | 'gravity' | 'moles' | 'positive' }
+import seriesVoltmeter from '../../assets/articles/series-voltmeter.svg?raw';
+import bohrRadius from '../../assets/articles/bohr-radius.svg?raw';
+import circleChord from '../../assets/articles/circle-chord.svg?raw';
+interface Props { kind: 'connections' | 'layers' | 'particles' | 'spread' | 'fieldEnergy' | 'buffer' | 'binomial' | 'gravity' | 'moles' | 'positive' | 'seriesVoltmeter' | 'bohrRadius' | 'circleChord' }
 const { kind } = Astro.props;
-const diagrams = { connections: capacitorConnections, layers: capacitorLayers, particles: osmoticParticles, spread: varianceShift, fieldEnergy, buffer, binomial, gravity, moles, positive };
+const diagrams = { connections: capacitorConnections, layers: capacitorLayers, particles: osmoticParticles, spread: varianceShift, fieldEnergy, buffer, binomial, gravity, moles, positive, seriesVoltmeter, bohrRadius, circleChord };
 ---
 <figure class="article-diagram" aria-labelledby={`diagram-${kind}-caption`}>
   <div class="diagram-drawing" set:html={diagrams[kind]} />
