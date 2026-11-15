@@ -1,6 +1,6 @@
 {
   "date": "2026-11-15",
-  "status": "partial",
+  "status": "published",
   "articleSlugs": [
     "how-does-a-series-resistor-extend-a-voltmeters-range",
     "how-do-you-compare-bohr-orbit-radii",
@@ -51,37 +51,70 @@
       "evidence": "Fetched origin/main with no divergence; reviewed and committed scoped source and review records."
     },
     "publication": {
-      "status": "failed",
-      "attemptedAt": "2026-11-15T07:17:23+05:30",
+      "status": "complete",
+      "confirmedAt": "2026-11-15T10:16:43+05:30",
       "publisher": "node scripts/publish.mjs",
       "sourceCommit": "9f4d4e8bcb031408cae9126b7ea8ff9e48bbda46",
+      "checkoutCommit": "fbd3fa7b3a6955a27783ea6cc6ab5149f825a058",
       "scope": "padho.ai/blog only",
-      "error": "gcloud auth print-access-token: token refresh failed; reauthentication failed because the non-interactive process cannot prompt.",
-      "evidence": "Preflight editorial, built search, and analytics checks passed. Publisher obtains token before any Cloud Storage request or upload; no upload or CDN invalidation occurred.",
-      "exitCode": 1
+      "exitCode": 0,
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ],
+      "evidence": "Owner renewed authentication. Rebuilt unchanged, reviewed source; editorial, search and analytics checks passed before upload. Both scoped CDN invalidations completed."
     },
     "liveVerification": {
-      "status": "pending",
-      "checkedAt": "2026-11-15T07:17:23+05:30",
-      "evidence": "Read-only URL probes returned 404 for all three prepared articles; release did not run. Full live verification remains pending.",
-      "httpStatuses": [
-        404,
-        404,
-        404
-      ]
+      "status": "complete",
+      "completedAt": "2026-11-15T10:17:59+05:30",
+      "articles": [
+        {
+          "slug": "how-does-a-series-resistor-extend-a-voltmeters-range",
+          "url": "https://padho.ai/blog/how-does-a-series-resistor-extend-a-voltmeters-range/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "3928371a2bc09871af684de7d1b40dd1f0292783c76c51ad6dd8036326f65c00",
+          "matchesReviewedBuild": true,
+          "postHogContextPresent": true
+        },
+        {
+          "slug": "how-do-you-compare-bohr-orbit-radii",
+          "url": "https://padho.ai/blog/how-do-you-compare-bohr-orbit-radii/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "e1a34a41dc52a401dd64173083ecac656eb3a79aff617678c7c0be0b6f224fb4",
+          "matchesReviewedBuild": true,
+          "postHogContextPresent": true
+        },
+        {
+          "slug": "how-does-the-distance-from-a-circles-centre-determine-a-chord",
+          "url": "https://padho.ai/blog/how-does-the-distance-from-a-circles-centre-determine-a-chord/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "4eb23c6485f28ed1824f4bb2d0db440f500e3515e08d276c8d66a7bbc06b9c4d",
+          "matchesReviewedBuild": true,
+          "postHogContextPresent": true
+        }
+      ],
+      "sitemapPages": 24,
+      "publishedArticles": 18,
+      "images": 18,
+      "internalLinks": 25,
+      "metadataMatchesVisibleContent": true,
+      "crawlerProbes": 72,
+      "allCrawlerProbesPassed": true,
+      "articleViewports": 6,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-15-browser/checks-live.json",
+      "searchEvidence": "/private/tmp/padho-blog-2026-11-15-browser/search-live.json",
+      "evidence": "All three live HTML responses exactly match the reviewed build. Six desktop/phone views passed layout, covers, figures and keyboard disclosures; screenshots reviewed. Shared analytics configuration passed for all 25 built pages. Public crawler-user-agent probes do not prove indexing."
     }
   },
   "resume": {
-    "nextStage": "publication",
+    "nextStage": null,
     "reuseExistingArticles": true,
     "reuseFigmaPageId": "81:202",
     "instructions": [
-      "After Google Cloud reauthentication, confirm main and the staged source hashes, then resume the existing 15 November batch. Do not research or create a second set.",
-      "If the release date has changed, follow daily.md on publication timestamps, rebuild, Figma visible dates, and revalidation before release.",
-      "After publish, run live search and page checks; then mark history and queue published, record evidence, and commit/push the final records."
+      "This date is published and live-verified. Do not create or publish a second set."
     ]
   },
-  "lastCheckpointAt": "2026-11-15T07:17:23+05:30",
+  "lastCheckpointAt": "2026-11-15T10:17:59+05:30",
   "figma": {
     "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
     "pageId": "81:202",
@@ -108,5 +141,45 @@
       "removed": []
     }
   },
-  "sourceCommit": "9f4d4e8bcb031408cae9126b7ea8ff9e48bbda46"
+  "sourceCommit": "9f4d4e8bcb031408cae9126b7ea8ff9e48bbda46",
+  "attempts": [
+    {
+      "type": "scheduled",
+      "status": "failed",
+      "startedAt": "2026-11-15T07:00:39+05:30",
+      "publication": {
+        "status": "failed",
+        "attemptedAt": "2026-11-15T07:17:23+05:30",
+        "publisher": "node scripts/publish.mjs",
+        "sourceCommit": "9f4d4e8bcb031408cae9126b7ea8ff9e48bbda46",
+        "scope": "padho.ai/blog only",
+        "error": "gcloud auth print-access-token: token refresh failed; reauthentication failed because the non-interactive process cannot prompt.",
+        "evidence": "Preflight editorial, built search, and analytics checks passed. Publisher obtains token before any Cloud Storage request or upload; no upload or CDN invalidation occurred.",
+        "exitCode": 1
+      },
+      "liveVerification": {
+        "status": "pending",
+        "checkedAt": "2026-11-15T07:17:23+05:30",
+        "evidence": "Read-only URL probes returned 404 for all three prepared articles; release did not run. Full live verification remains pending.",
+        "httpStatuses": [
+          404,
+          404,
+          404
+        ]
+      },
+      "evidence": ".daily-blog/pcm/2026-11-15.json"
+    },
+    {
+      "type": "manual",
+      "status": "published",
+      "startedAt": "2026-11-15T10:15:02+05:30",
+      "finishedAt": "2026-11-15T10:17:59+05:30",
+      "authorization": "Owner renewed gcloud authentication and requested publication for today if not done.",
+      "sourceCommit": "9f4d4e8bcb031408cae9126b7ea8ff9e48bbda46",
+      "checkoutCommit": "fbd3fa7b3a6955a27783ea6cc6ab5149f825a058",
+      "sourceUnchanged": true
+    }
+  ],
+  "publishedAt": "2026-11-15T10:16:43+05:30",
+  "completedAt": "2026-11-15T10:17:59+05:30"
 }

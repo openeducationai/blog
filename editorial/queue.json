@@ -170,7 +170,7 @@
       "chapter": "current-electricity",
       "conceptKey": "physics/current-electricity/series-resistance-voltage-budget",
       "question": "A voltmeter has resistance x Ω and reads up to 20 V. What resistor should be added, and how, to extend its range to 30 V?",
-      "status": "writing",
+      "status": "published",
       "candidateQuestionIds": [
         "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278262"
       ],
@@ -183,7 +183,8 @@
       "learningObjective": "Use a shared series current and voltage drops to size a resistor that limits current.",
       "example": "A 20 V meter shares a 30 V supply with a series resistor.",
       "slug": "how-does-a-series-resistor-extend-a-voltmeters-range",
-      "briefPath": "editorial/research/2026-11-15-physics.json"
+      "briefPath": "editorial/research/2026-11-15-physics.json",
+      "releaseVerifiedAt": "2026-11-15T10:17:59+05:30"
     },
     {
       "id": "coil-torque-angle-with-normal",
@@ -221,7 +222,7 @@
       "chapter": "atomic-structure",
       "conceptKey": "chemistry/atomic-structure/hydrogen-like-radius-scaling",
       "question": "In the Bohr model, which two have equal orbit radii: H in its first orbit, He⁺ in its first or second orbit, Li²⁺ in its first orbit, or Be³⁺ in its second orbit?",
-      "status": "writing",
+      "status": "published",
       "candidateQuestionIds": [
         "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278427"
       ],
@@ -234,7 +235,8 @@
       "learningObjective": "Compare one-electron orbit radii by evaluating n²/Z in the Bohr model.",
       "example": "Compare H at n = 1 with Be³⁺ at n = 2.",
       "slug": "how-do-you-compare-bohr-orbit-radii",
-      "briefPath": "editorial/research/2026-11-15-chemistry.json"
+      "briefPath": "editorial/research/2026-11-15-chemistry.json",
+      "releaseVerifiedAt": "2026-11-15T10:17:59+05:30"
     },
     {
       "id": "mass-percent-to-mole-fraction",
@@ -336,7 +338,7 @@
       "chapter": "coordinate-geometry",
       "conceptKey": "maths/coordinate-geometry/circle-line-chord-distance",
       "question": "A circle passes through the origin. Its centre is where the perpendicular lines x + (k − 1)y + 3 = 0 and 2x + k²y − 4 = 0 meet. The line x − y + 2 = 0 cuts the circle at A and B. What is AB²?",
-      "status": "writing",
+      "status": "published",
       "candidateQuestionIds": [
         "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121160"
       ],
@@ -347,7 +349,8 @@
       "learningObjective": "Use the perpendicular centre-to-chord distance with the radius to find chord length.",
       "example": "A circle of radius 5 with a chord 3 units from its centre.",
       "slug": "how-does-the-distance-from-a-circles-centre-determine-a-chord",
-      "briefPath": "editorial/research/2026-11-15-maths.json"
+      "briefPath": "editorial/research/2026-11-15-maths.json",
+      "releaseVerifiedAt": "2026-11-15T10:17:59+05:30"
     },
     {
       "id": "geometric-sum-logarithm",

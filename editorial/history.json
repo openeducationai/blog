@@ -824,7 +824,7 @@
       "url": "https://padho.ai/blog/how-does-a-series-resistor-extend-a-voltmeters-range/",
       "publishedAt": "2026-11-15T07:04:51+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278262",
       "targetQuestionText": "A voltmeter has resistance x Ω and reads up to 20 V. What resistor should be added, and how, to extend its range to 30 V?",
       "briefPath": "editorial/research/2026-11-15-physics.json",
@@ -860,7 +860,10 @@
           "visuals": true
         },
         "notes": "Agent checked prose and independent calculations against official papers and key; original figures, covers and six real-app desktop/phone layouts inspected. Chemistry cover changed to avoid revealing target answer."
-      }
+      },
+      "sourceCommit": "9f4d4e8bcb031408cae9126b7ea8ff9e48bbda46",
+      "liveVerifiedAt": "2026-11-15T10:17:59+05:30",
+      "liveHtmlSha256": "3928371a2bc09871af684de7d1b40dd1f0292783c76c51ad6dd8036326f65c00"
     },
     {
       "slug": "how-do-you-compare-bohr-orbit-radii",
@@ -875,7 +878,7 @@
       "url": "https://padho.ai/blog/how-do-you-compare-bohr-orbit-radii/",
       "publishedAt": "2026-11-15T07:04:51+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278427",
       "targetQuestionText": "In the Bohr model, which two have equal orbit radii: H in its first orbit, He⁺ in its first or second orbit, Li²⁺ in its first orbit, or Be³⁺ in its second orbit?",
       "briefPath": "editorial/research/2026-11-15-chemistry.json",
@@ -912,7 +915,10 @@
           "visuals": true
         },
         "notes": "Agent checked prose and independent calculations against official papers and key; original figures, covers and six real-app desktop/phone layouts inspected. Chemistry cover changed to avoid revealing target answer."
-      }
+      },
+      "sourceCommit": "9f4d4e8bcb031408cae9126b7ea8ff9e48bbda46",
+      "liveVerifiedAt": "2026-11-15T10:17:59+05:30",
+      "liveHtmlSha256": "e1a34a41dc52a401dd64173083ecac656eb3a79aff617678c7c0be0b6f224fb4"
     },
     {
       "slug": "how-does-the-distance-from-a-circles-centre-determine-a-chord",
@@ -927,7 +933,7 @@
       "url": "https://padho.ai/blog/how-does-the-distance-from-a-circles-centre-determine-a-chord/",
       "publishedAt": "2026-11-15T07:04:51+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121160",
       "targetQuestionText": "A circle passes through the origin. Its centre is where the perpendicular lines x + (k − 1)y + 3 = 0 and 2x + k²y − 4 = 0 meet. The line x − y + 2 = 0 cuts the circle at A and B. What is AB²?",
       "briefPath": "editorial/research/2026-11-15-maths.json",
@@ -964,7 +970,10 @@
           "visuals": true
         },
         "notes": "Agent checked prose and independent calculations against official papers and key; original figures, covers and six real-app desktop/phone layouts inspected. Chemistry cover changed to avoid revealing target answer."
-      }
+      },
+      "sourceCommit": "9f4d4e8bcb031408cae9126b7ea8ff9e48bbda46",
+      "liveVerifiedAt": "2026-11-15T10:17:59+05:30",
+      "liveHtmlSha256": "4eb23c6485f28ed1824f4bb2d0db440f500e3515e08d276c8d66a7bbc06b9c4d"
     }
   ]
 }
