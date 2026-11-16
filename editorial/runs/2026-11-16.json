@@ -1,6 +1,6 @@
 {
   "date": "2026-11-16",
-  "status": "partial",
+  "status": "published",
   "startedAt": "2026-11-16T07:02:04+05:30",
   "articleSlugs": [
     "how-do-you-find-the-electric-field-in-an-electromagnetic-wave",
@@ -45,21 +45,77 @@
       "evidence": "Six editable desktop/phone frames passed full source-text comparison, approved fonts and modes, justified paragraphs, native SVG diagrams, shared header/footer, width/overlap checks and full-composition screenshot review. Supported comments read returned none. No registered page expired; cutoff 2026-11-10."
     },
     "git": {
-      "status": "pending"
+      "status": "complete",
+      "sourceCommit": "a1c0d2908f5957e7cd0fa0c00b42a500da148b7c",
+      "pushedTo": "origin/main",
+      "completedAt": "2026-11-16T07:24:44+05:30",
+      "evidence": "Existing main had no divergence. Scoped source, research, review and Figma registry committed and pushed."
     },
     "publication": {
-      "status": "pending"
+      "status": "complete",
+      "confirmedAt": "2026-11-16T07:25:30+05:30",
+      "publisher": "node scripts/publish.mjs",
+      "sourceCommit": "a1c0d2908f5957e7cd0fa0c00b42a500da148b7c",
+      "scope": "padho.ai/blog only",
+      "exitCode": 0,
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ],
+      "evidence": "Publisher editorial, built search and analytics checks passed. Scoped object upload and both CDN invalidations completed.",
+      "log": "/private/tmp/padho-pcm-2026-11-16/publish.log"
     },
     "liveVerification": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-16T07:27:01+05:30",
+      "articles": [
+        {
+          "slug": "how-do-you-find-the-electric-field-in-an-electromagnetic-wave",
+          "url": "https://padho.ai/blog/how-do-you-find-the-electric-field-in-an-electromagnetic-wave/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "81c7c671a7cf0744270189d65eacbddf7b4c58a64487cb88a5cc325ae6e71deb",
+          "matchesReviewedBuild": true,
+          "postHogContextPresent": true
+        },
+        {
+          "slug": "how-do-heat-and-work-signs-fit-a-complete-cycle",
+          "url": "https://padho.ai/blog/how-do-heat-and-work-signs-fit-a-complete-cycle/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "127661e1c8169b7a24ee60ee3d2e3aaae7717bd25a01379fb6f014908e245788",
+          "matchesReviewedBuild": true,
+          "postHogContextPresent": true
+        },
+        {
+          "slug": "how-do-you-simplify-a-sum-inside-another-sum",
+          "url": "https://padho.ai/blog/how-do-you-simplify-a-sum-inside-another-sum/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "c5c3e23fb34b89c4575a2899e0c2309c382b053eec8aac1646bb47621c5e320f",
+          "matchesReviewedBuild": true,
+          "postHogContextPresent": true
+        }
+      ],
+      "sitemapPages": 27,
+      "publishedArticles": 21,
+      "images": 21,
+      "internalLinks": 28,
+      "metadataMatchesVisibleContent": true,
+      "crawlerProbes": 84,
+      "allCrawlerProbesPassed": true,
+      "articleViewports": 6,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-16-browser/checks-live.json",
+      "searchEvidence": "/private/tmp/padho-blog-2026-11-16-browser/search-live.json",
+      "evidence": "All three live HTML responses exactly match the reviewed build. Six desktop/phone views passed layout, covers, figures and keyboard disclosures; representative live screenshots reviewed for all three subjects. Shared PostHog context is present. Public crawler-user-agent probes do not prove indexing."
     }
   },
   "resume": {
-    "nextStage": "git",
+    "nextStage": null,
     "reuseExistingArticles": true,
-    "reuseFigmaPageId": "89:202"
+    "reuseFigmaPageId": "89:202",
+    "instructions": [
+      "This date is published and live-verified. Do not create or publish a second set."
+    ]
   },
-  "lastCheckpointAt": "2026-11-16T07:23:57+05:30",
+  "lastCheckpointAt": "2026-11-16T07:27:01+05:30",
   "figmaFeedback": {
     "checkedAt": "2026-11-16T07:09:53+05:30",
     "comments": []
@@ -89,5 +145,8 @@
       "cutoff": "2026-11-10",
       "removed": []
     }
-  }
+  },
+  "sourceCommit": "a1c0d2908f5957e7cd0fa0c00b42a500da148b7c",
+  "publishedAt": "2026-11-16T07:25:30+05:30",
+  "completedAt": "2026-11-16T07:27:01+05:30"
 }

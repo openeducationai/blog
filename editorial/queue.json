@@ -169,9 +169,10 @@
         "where-does-a-photoelectrons-energy-come-from"
       ],
       "difference": "Prior radiation article concerns photon energy and electron escape. This teaches mutually perpendicular wave fields, propagation and cross-product order.",
-      "status": "writing",
+      "status": "published",
       "briefPath": "editorial/research/2026-11-16-physics.json",
-      "rationale": "Two verified JEE Main questions with exact final-key matches support this narrow prerequisite and misconception. Selection uses targeted evidence, not an exhaustive recurrence ranking or forecast."
+      "rationale": "Two verified JEE Main questions with exact final-key matches support this narrow prerequisite and misconception. Selection uses targeted evidence, not an exhaustive recurrence ranking or forecast.",
+      "releaseVerifiedAt": "2026-11-16T07:27:01+05:30"
     },
     {
       "id": "voltmeter-series-range",
@@ -229,9 +230,10 @@
       ],
       "closestPriorSlugs": [],
       "difference": "No earlier Chemistry article teaches the first law or heat/work sign convention.",
-      "status": "writing",
+      "status": "published",
       "briefPath": "editorial/research/2026-11-16-chemistry.json",
-      "rationale": "Two verified JEE Main questions with exact final-key matches support this narrow prerequisite and misconception. Selection uses targeted evidence, not an exhaustive recurrence ranking or forecast."
+      "rationale": "Two verified JEE Main questions with exact final-key matches support this narrow prerequisite and misconception. Selection uses targeted evidence, not an exhaustive recurrence ranking or forecast.",
+      "releaseVerifiedAt": "2026-11-16T07:27:01+05:30"
     },
     {
       "id": "hydrogen-like-radius-scaling",
@@ -426,9 +428,10 @@
         "how-can-sums-of-squares-give-standard-deviation"
       ],
       "difference": "Statistics lesson uses sums as data summaries to calculate spread. This lesson simplifies nested indexed series with square/cube identities and endpoint changes.",
-      "status": "writing",
+      "status": "published",
       "briefPath": "editorial/research/2026-11-16-maths.json",
-      "rationale": "Two verified JEE Main questions with exact final-key matches support this narrow prerequisite and misconception. Selection uses targeted evidence, not an exhaustive recurrence ranking or forecast."
+      "rationale": "Two verified JEE Main questions with exact final-key matches support this narrow prerequisite and misconception. Selection uses targeted evidence, not an exhaustive recurrence ranking or forecast.",
+      "releaseVerifiedAt": "2026-11-16T07:27:01+05:30"
     }
   ]
 }

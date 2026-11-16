@@ -989,7 +989,7 @@
       "url": "https://padho.ai/blog/how-do-you-find-the-electric-field-in-an-electromagnetic-wave/",
       "publishedAt": "2026-11-16T07:12:41+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121187",
       "targetQuestionText": "An electromagnetic wave travels through free space along +x. At one point and instant, its magnetic field is 2 × 10⁻⁷ T along +y. What is the electric field there?",
       "pyqs": [
@@ -1026,7 +1026,11 @@
           "visuals": true
         },
         "notes": "Agent review only. Read full prose in order and checked each paragraph for clear referents and prerequisite coverage. Original official questions and final keys inspected; solutions independently calculated. Six real Astro desktop/phone layouts pass covers, original SVGs, exact target text, justified Literata paragraphs, keyboard disclosures, static HTML and reduced motion. Chemistry source wording is explicitly clarified; no human review claimed."
-      }
+      },
+      "sourceCommit": "a1c0d2908f5957e7cd0fa0c00b42a500da148b7c",
+      "liveVerifiedAt": "2026-11-16T07:27:01+05:30",
+      "releaseConfirmedAt": "2026-11-16T07:25:30+05:30",
+      "liveHtmlSha256": "81c7c671a7cf0744270189d65eacbddf7b4c58a64487cb88a5cc325ae6e71deb"
     },
     {
       "slug": "how-do-heat-and-work-signs-fit-a-complete-cycle",
@@ -1042,7 +1046,7 @@
       "url": "https://padho.ai/blog/how-do-heat-and-work-signs-fit-a-complete-cycle/",
       "publishedAt": "2026-11-16T07:12:41+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121204",
       "targetQuestionText": "A gas goes from state X to state Y, absorbing 10 J of heat and doing 18 J of work. It returns to X by another path and releases 6 J of heat. How much work is done on or by the gas on the return path?",
       "pyqs": [
@@ -1079,7 +1083,11 @@
           "visuals": true
         },
         "notes": "Agent review only. Read full prose in order and checked each paragraph for clear referents and prerequisite coverage. Original official questions and final keys inspected; solutions independently calculated. Six real Astro desktop/phone layouts pass covers, original SVGs, exact target text, justified Literata paragraphs, keyboard disclosures, static HTML and reduced motion. Chemistry source wording is explicitly clarified; no human review claimed."
-      }
+      },
+      "sourceCommit": "a1c0d2908f5957e7cd0fa0c00b42a500da148b7c",
+      "liveVerifiedAt": "2026-11-16T07:27:01+05:30",
+      "releaseConfirmedAt": "2026-11-16T07:25:30+05:30",
+      "liveHtmlSha256": "127661e1c8169b7a24ee60ee3d2e3aaae7717bd25a01379fb6f014908e245788"
     },
     {
       "slug": "how-do-you-simplify-a-sum-inside-another-sum",
@@ -1095,7 +1103,7 @@
       "url": "https://padho.ai/blog/how-do-you-simplify-a-sum-inside-another-sum/",
       "publishedAt": "2026-11-16T07:12:41+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121155",
       "targetQuestionText": "Find the sum of the first eight terms of 1³/1 + (1³ + 2³)/(1 + 3) + (1³ + 2³ + 3³)/(1 + 3 + 5) + ⋯.",
       "pyqs": [
@@ -1132,7 +1140,11 @@
           "visuals": true
         },
         "notes": "Agent review only. Read full prose in order and checked each paragraph for clear referents and prerequisite coverage. Original official questions and final keys inspected; solutions independently calculated. Six real Astro desktop/phone layouts pass covers, original SVGs, exact target text, justified Literata paragraphs, keyboard disclosures, static HTML and reduced motion. Chemistry source wording is explicitly clarified; no human review claimed. Figure caption corrected to identify the two stacked blocks, not columns."
-      }
+      },
+      "sourceCommit": "a1c0d2908f5957e7cd0fa0c00b42a500da148b7c",
+      "liveVerifiedAt": "2026-11-16T07:27:01+05:30",
+      "releaseConfirmedAt": "2026-11-16T07:25:30+05:30",
+      "liveHtmlSha256": "c5c3e23fb34b89c4575a2899e0c2309c382b053eec8aac1646bb47621c5e320f"
     }
   ]
 }

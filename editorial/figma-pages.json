@@ -302,7 +302,8 @@
         "screenshotsReviewed": true,
         "comments": "Supported get_comments returned no comments. No registered page expired; cutoff 2026-11-10.",
         "coverFit": "FIT; individual cover assets only, no full-page raster"
-      }
+      },
+      "sourceCommit": "a1c0d2908f5957e7cd0fa0c00b42a500da148b7c"
     }
   ],
   "removedPages": []
