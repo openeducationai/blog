@@ -254,6 +254,55 @@
       },
       "verifiedAt": "2026-11-15T07:14:26+05:30",
       "sourceCommit": "9f4d4e8bcb031408cae9126b7ea8ff9e48bbda46"
+    },
+    {
+      "date": "2026-11-16",
+      "name": "2026-11-16",
+      "pageId": "89:202",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "how-do-you-find-the-electric-field-in-an-electromagnetic-wave",
+          "desktopFrameId": "90:242",
+          "phoneFrameId": "90:532"
+        },
+        {
+          "slug": "how-do-heat-and-work-signs-fit-a-complete-cycle",
+          "desktopFrameId": "90:818",
+          "phoneFrameId": "90:1114"
+        },
+        {
+          "slug": "how-do-you-simplify-a-sum-inside-another-sum",
+          "desktopFrameId": "90:1406",
+          "phoneFrameId": "90:1706"
+        }
+      ],
+      "verifiedAt": "2026-11-16T07:23:57+05:30",
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          32,
+          33,
+          37
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": true,
+        "comments": "Supported get_comments returned no comments. No registered page expired; cutoff 2026-11-10.",
+        "coverFit": "FIT; individual cover assets only, no full-page raster"
+      }
     }
   ],
   "removedPages": []

@@ -1,0 +1,64 @@
+---
+title: "How do you find the electric field in an electromagnetic wave?"
+description: "Use the wave’s direction and magnetic field to find both the size and direction of its electric field."
+category: physics
+author: padho
+pubDate: "2026-11-16T07:12:41+05:30"
+heroImage: '../../assets/articles/em-field-directions.png'
+heroImageAlt: 'Three perpendicular directions: electric field upward, magnetic field out of the page, and wave travel to the right.'
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**An electromagnetic wave travels through free space along +x. At one point and instant, its magnetic field is 2 × 10⁻⁷ T along +y. What is the electric field there?**
+
+Adapted from [JEE Main, 2 April 2026 Shift 2 Q37](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf#page=14). We have made the positive travel direction explicit. You need powers of ten and the three perpendicular coordinate axes. We’ll explain the direction rule as we go.
+
+## Keep three directions separate
+
+An electromagnetic wave carries an electric field and a magnetic field. At a point, each field has a size and a direction, so we represent it by an arrow. These arrows do not show the motion of a particle. They show the directions of the fields at that instant.
+
+For a plane wave in free space, both fields are perpendicular to the direction in which the wave travels. The fields are also perpendicular to each other. Knowing one field and the travel direction therefore leaves two opposite possibilities for the other field.
+
+Consider a wave travelling to the right, along +x. In the example below, the electric field points upward, along +y, and the magnetic field points out of the page, along +z. The dot inside the circle represents an arrow tip coming towards you.
+
+<ArticleDiagram kind="emDirections">This example has E along +y and B along +z. The right-hand rule gives travel along +x. All three directions are perpendicular; the arrow lengths do not compare field strengths.</ArticleDiagram>
+
+## Use E first, then B
+
+The [direction of travel](https://openstax.org/books/university-physics-volume-2/pages/16-2-plane-electromagnetic-waves) is the direction of E × B. The cross, ×, means a vector cross product. To find its direction, curl the fingers of your right hand from the E arrow towards the B arrow through the smaller angle. Your thumb points along the wave’s travel direction.
+
+Order matters. For the coordinate axes, +y crossed with +z gives +x. Reversing that order gives −x. In the usual unit-vector notation, these directions are written ĵ, k̂ and î, so ĵ × k̂ = î but k̂ × ĵ = −î.
+
+Our opening question gives B along +y, unlike the picture’s example. That means E must lie along the z-axis. At the end, we’ll choose between +z and −z by checking which one makes E × B point along +x.
+
+<KeyIdea id="em-direction-order">Find the size with E = cB. Find the direction separately, making sure E × B points along the wave’s travel direction.</KeyIdea>
+
+## Find the size, then keep the wave in step
+
+In free space, the field magnitudes obey E = cB, where c = 3 × 10⁸ m/s. Use B in tesla to obtain E in volts per metre. For example, B = 1 × 10⁻⁸ T corresponds to E = 3 V/m. Multiplication gives a magnitude; it cannot choose the arrow’s direction for you.
+
+If a question gives a full wave expression, identify its travel direction first. For a factor sin(2πνt − 2πx/λ), hold the angle inside the sine fixed. As time t increases, x must increase too. The wave therefore travels along +x, at speed νλ. Here ν is frequency and λ is wavelength.
+
+The electric and magnetic fields change sign together. When both arrows reverse, E × B keeps the same direction. The light does not reverse its travel direction every half-cycle.
+
+## Try the past questions
+
+**1. A plane electromagnetic wave has B = B₀ sin(2πνt − 2πx/λ) ĵ. Write the corresponding electric field, using νλ for the wave speed.**
+
+Adapted from [JEE Main, 4 April 2026 Shift 2 Q40](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf#page=15).
+
+<details class="reading-check"><summary>Show hint</summary><p>The phase gives travel along +x. Which sign of the z-direction makes its cross product with +y point along +x?</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The electric-field amplitude is νλB₀. Since (−k̂) × ĵ = +î, the required expression is <strong>E = −νλB₀ sin(2πνt − 2πx/λ) k̂</strong>.</p><p>When the sine is negative, both fields reverse. Their cross product still points along +x. At an instant when both fields vanish, the same expression remains valid.</p></details>
+
+**2. Return to our opening question: the wave travels along +x and B is 2 × 10⁻⁷ T along +y. What is E?**
+
+<details class="reading-check"><summary>Show hint</summary><p>Calculate cB. Then test +k̂ and −k̂ in E × B.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The magnitude is (3 × 10⁸)(2 × 10⁻⁷) = 6 × 10¹ = 60 V/m. Choosing E along +z would give k̂ × ĵ = −î, the wrong travel direction.</p><p>Choose −z instead. The answer is <strong>E = −60 k̂ V/m</strong>, or 60 V/m along −z.</p></details>
+
+These answers match the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 695278415 and 691121187.

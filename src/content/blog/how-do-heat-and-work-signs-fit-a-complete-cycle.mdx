@@ -1,0 +1,68 @@
+---
+title: "How do heat and work signs fit a complete cycle?"
+description: "Follow energy entering and leaving a gas, then use its return to the starting state to find the missing work."
+category: chemistry
+author: padho
+pubDate: "2026-11-16T07:12:41+05:30"
+heroImage: '../../assets/articles/heat-work-cycle.png'
+heroImageAlt: 'Heat enters a gas while work leaves it; a return path brings the gas to its original state.'
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**A gas goes from state X to state Y, absorbing 10 J of heat and doing 18 J of work. It returns to X by another path and releases 6 J of heat. How much work is done on or by the gas on the return path?**
+
+Adapted from [JEE Main, 2 April 2026 Shift 2 Q54](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf#page=21). We’ll track energy from the gas’s point of view. You need only signed numbers and simple algebra.
+
+## Choose what you are following
+
+Imagine gas trapped in a cylinder by a movable piston. We will follow the gas, which we call the system. The piston and everything outside the gas are its surroundings. When the gas pushes the piston outward, energy leaves the gas as work. When the surroundings push the piston inward, energy enters the gas as work.
+
+Heat is another way energy crosses this boundary. Heat entering the gas counts as positive. Heat leaving the gas counts as negative. The word “heat” does not mean that energy must enter: a hot gas can give heat to cooler surroundings.
+
+We will use the chemistry convention: q is heat entering the gas, and w is work done on the gas. Each symbol includes its sign. The [first law](https://openstax.org/books/chemistry-2e/pages/5-3-enthalpy) then reads ΔU = q + w. Here U is the gas’s internal energy, and ΔU means its final internal energy minus its initial internal energy.
+
+## Put the signs in before calculating
+
+Suppose the gas absorbs 12 J of heat and does 5 J of work pushing the piston. The heat enters, so q = +12 J. The work carries energy out, so w = −5 J. The gas’s internal energy rises by 12 − 5 = 7 J.
+
+<ArticleDiagram kind="heatWorkCycle">In this example, 12 J enters as heat and 5 J leaves as work. The gas gains 7 J of internal energy. A return to its original state must remove that 7 J, regardless of the return path.</ArticleDiagram>
+
+The signs come from what happens to the gas. “Work done by the gas” gives a negative w in our convention. Some Physics books instead use W for work done by the gas and write ΔU = q − W. Both conventions describe the same energy balance. Do not use the positive “work by” number in the chemistry formula without changing its sign.
+
+## Returning to the same state fixes ΔU
+
+Internal energy is a state function: its value depends on the gas’s state, not on the path used to reach that state. If our example gas gains 7 J from X to Y, it must lose 7 J to get back from Y to the same X.
+
+The complete trip therefore has ΔU = 0. That does not mean the total heat or total work must separately be zero. The gas might take in heat and use that energy to do work during the cycle. Only their signed sum must vanish.
+
+<KeyIdea id="cycle-energy">For the return path, reverse the sign of ΔU. Then use the return path’s own heat and work in ΔU = q + w.</KeyIdea>
+
+This is the step we need in the opening question. First find the change from X to Y. Reverse that change for Y to X. Finally, use the heat released on the return path to find the missing work.
+
+## What if the piston cannot move?
+
+At fixed volume, the gas does no expansion work. If that is the only possible kind of work, w = 0 and any heat absorbed raises U. For an ideal gas, U depends only on temperature, so its temperature rises too.
+
+At constant pressure, heating an ideal gas also makes it expand and do work. More heat is needed for the same temperature rise. This is why its molar heat capacities satisfy Cₚ = Cᵥ + R: Cₚ is greater than Cᵥ. A molar heat capacity is the heat needed per mole for a one-kelvin temperature rise under the stated constraint.
+
+## Try the past questions
+
+**1. For an ideal gas, consider these statements. I: Cᵥ is greater than Cₚ. II: At fixed volume, with only expansion work possible, heat absorbed by the gas raises its internal energy and temperature. Which statements are correct?**
+
+Adapted from [JEE Main, 4 April 2026 Shift 1 Q54](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf#page=19). The original says “heat withdrawn” without naming its source. Here we explicitly mean heat absorbed by the gas, consistent with the keyed second statement.
+
+<details class="reading-check"><summary>Show hint</summary><p>At fixed volume, can the gas move the piston? At constant pressure, where does some of the supplied heat go?</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p><strong>I is false; II is true</strong> with the stated meaning. Cₚ = Cᵥ + R, so Cₚ is larger. At fixed volume, w = 0 and ΔU = q. Positive absorbed heat raises the ideal gas’s temperature. Heat removed from the gas would instead lower it.</p></details>
+
+**2. Return to our opening question: find the work on the Y → X path when the gas releases 6 J of heat.**
+
+<details class="reading-check"><summary>Show hint</summary><p>On X → Y, q = +10 J and w = −18 J. Find ΔU before considering the return path.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>From X to Y, ΔU = 10 − 18 = −8 J. Returning to X therefore requires ΔU = +8 J. The return heat leaves the gas, so q = −6 J.</p><p>Now 8 = −6 + w, giving <strong>w = +14 J: 14 J of work is done on the gas</strong>. Across the full cycle, q = 10 − 6 = 4 J and w = −18 + 14 = −4 J. Their sum is zero, as it must be.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 695278279 and 691121204, with the first question’s wording clarification stated above.

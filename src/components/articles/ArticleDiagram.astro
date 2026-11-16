@@ -12,9 +12,12 @@ import positive from '../../assets/articles/quadratic-positive.svg?raw';
 import seriesVoltmeter from '../../assets/articles/series-voltmeter.svg?raw';
 import bohrRadius from '../../assets/articles/bohr-radius.svg?raw';
 import circleChord from '../../assets/articles/circle-chord.svg?raw';
-interface Props { kind: 'connections' | 'layers' | 'particles' | 'spread' | 'fieldEnergy' | 'buffer' | 'binomial' | 'gravity' | 'moles' | 'positive' | 'seriesVoltmeter' | 'bohrRadius' | 'circleChord' }
+import emDirections from '../../assets/articles/em-field-directions.svg?raw';
+import heatWorkCycle from '../../assets/articles/heat-work-cycle.svg?raw';
+import nestedSums from '../../assets/articles/nested-sum-steps.svg?raw';
+interface Props { kind: 'connections' | 'layers' | 'particles' | 'spread' | 'fieldEnergy' | 'buffer' | 'binomial' | 'gravity' | 'moles' | 'positive' | 'seriesVoltmeter' | 'bohrRadius' | 'circleChord' | 'emDirections' | 'heatWorkCycle' | 'nestedSums' }
 const { kind } = Astro.props;
-const diagrams = { connections: capacitorConnections, layers: capacitorLayers, particles: osmoticParticles, spread: varianceShift, fieldEnergy, buffer, binomial, gravity, moles, positive, seriesVoltmeter, bohrRadius, circleChord };
+const diagrams = { connections: capacitorConnections, layers: capacitorLayers, particles: osmoticParticles, spread: varianceShift, fieldEnergy, buffer, binomial, gravity, moles, positive, seriesVoltmeter, bohrRadius, circleChord, emDirections, heatWorkCycle, nestedSums };
 ---
 <figure class="article-diagram" aria-labelledby={`diagram-${kind}-caption`}>
   <div class="diagram-drawing" set:html={diagrams[kind]} />

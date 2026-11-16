@@ -1,0 +1,64 @@
+{
+  "id": "nested-sums-simplify-one-term",
+  "researchedAt": "2026-11-16T07:09:53+05:30",
+  "category": "maths",
+  "conceptKey": "maths/sequence-and-series/nested-sums-simplify-one-term",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; current official site checked 16 November 2026",
+    "scope": "Mathematics Unit 6 Sequence and Series; algebraic finite sums used with arithmetic progressions."
+  },
+  "corpus": {
+    "papersExamined": 6,
+    "coverageNotes": "Builds on targeted scans of 2 April both shifts, 4 April both shifts, 5 April Shift 1 and selected 6 April Shift 2 questions. Not an all-shift, five-year or exhaustive topic classification; no recurrence percentage or weightage claim.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two verified JEE Main questions with exact final-key matches support this narrow prerequisite and misconception. Selection uses targeted evidence, not an exhaustive recurrence ranking or forecast."
+  },
+  "sources": [
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/5-1-approximating-areas"
+    },
+    {
+      "title": "NTA current official syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final answer key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121155",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift 2 Q5, PDF page 3",
+      "answer": "71",
+      "correctOptionId": "691121528",
+      "verifiedAt": "2026-11-16T07:09:53+05:30",
+      "adapted": true,
+      "independentSolution": "Term n=(sum k³ from 1 to n)/(1+3+...+(2n−1))=[n(n+1)/2]²/n²=(n+1)²/4. Sum n=1..8=(sum j² j=1..9−1)/4=(285−1)/4=71. Direct rational enumeration also gives71."
+    },
+    {
+      "id": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211206",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "6 April 2026 Shift 2 Q6, PDF page 3",
+      "answer": "315/2",
+      "correctOptionId": "6911214103",
+      "verifiedAt": "2026-11-16T07:09:53+05:30",
+      "adapted": true,
+      "independentSolution": "Term n=(sum k² k=1..n)/n=(n+1)(2n+1)/6=(2n²+3n+1)/6. For n=1..10 sums squares385, integers55, ones10 give (770+165+10)/6=315/2. Direct rational enumeration independently agrees."
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121155",
+  "targetQuestionText": "Find the sum of the first eight terms of 1³/1 + (1³ + 2³)/(1 + 3) + (1³ + 2³ + 3³)/(1 + 3 + 5) + ⋯.",
+  "verificationNotes": "Original official PDF images visually inspected and exact final-key entries read. Solutions worked independently. Chemistry second question discloses source-wording clarification; Physics direction explicitly states positive x. Mathematics answers cross-checked by exact rational summation."
+}

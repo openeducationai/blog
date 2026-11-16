@@ -1,0 +1,64 @@
+{
+  "id": "electric-magnetic-field-direction",
+  "researchedAt": "2026-11-16T07:09:53+05:30",
+  "category": "physics",
+  "conceptKey": "physics/electromagnetic-waves/electric-magnetic-field-direction",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; current official site checked 16 November 2026",
+    "scope": "Physics Unit 15: electromagnetic waves and transverse nature; Unit 2: vector products as prerequisite."
+  },
+  "corpus": {
+    "papersExamined": 6,
+    "coverageNotes": "Builds on targeted scans of 2 April both shifts, 4 April both shifts, 5 April Shift 1 and selected 6 April Shift 2 questions. Not an all-shift, five-year or exhaustive topic classification; no recurrence percentage or weightage claim.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two verified JEE Main questions with exact final-key matches support this narrow prerequisite and misconception. Selection uses targeted evidence, not an exhaustive recurrence ranking or forecast."
+  },
+  "sources": [
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/16-2-plane-electromagnetic-waves"
+    },
+    {
+      "title": "NTA current official syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final answer key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121187",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift 2 Q37, PDF page 14",
+      "answer": "−60 k̂ V/m",
+      "correctOptionId": "691121641",
+      "verifiedAt": "2026-11-16T07:09:53+05:30",
+      "adapted": true,
+      "independentSolution": "In free space E=cB=3e8*2e-7=60 V/m. Direction must satisfy E cross B along +x. (−k) cross j = +i. Original x-direction is stated explicitly as +x in adaptation, consistent with final key."
+    },
+    {
+      "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278415",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "4 April 2026 Shift 2 Q40, PDF page 15",
+      "answer": "E = −νλB₀ sin(2πνt − 2πx/λ) k̂",
+      "correctOptionId": "6952781417",
+      "verifiedAt": "2026-11-16T07:09:53+05:30",
+      "adapted": true,
+      "independentSolution": "A constant phase gives dx/dt=νλ>0. Since B is along j with scalar sine factor, E has negative k coefficient. Magnitude factor speed νλ. The cross product is +i times νλ B₀² sin², so direction holds when both fields reverse."
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121187",
+  "targetQuestionText": "An electromagnetic wave travels through free space along +x. At one point and instant, its magnetic field is 2 × 10⁻⁷ T along +y. What is the electric field there?",
+  "verificationNotes": "Original official PDF images visually inspected and exact final-key entries read. Solutions worked independently. Chemistry second question discloses source-wording clarification; Physics direction explicitly states positive x. Mathematics answers cross-checked by exact rational summation."
+}

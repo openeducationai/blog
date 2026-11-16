@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-16",
+  "status": "partial",
+  "startedAt": "2026-11-16T07:02:04+05:30",
+  "articleSlugs": [
+    "how-do-you-find-the-electric-field-in-an-electromagnetic-wave",
+    "how-do-heat-and-work-signs-fit-a-complete-cycle",
+    "how-do-you-simplify-a-sum-inside-another-sum"
+  ],
+  "stages": {
+    "research": {
+      "status": "complete",
+      "completedAt": "2026-11-16T07:09:53+05:30",
+      "briefs": [
+        "editorial/research/2026-11-16-physics.json",
+        "editorial/research/2026-11-16-chemistry.json",
+        "editorial/research/2026-11-16-maths.json"
+      ],
+      "evidence": "Six original questions and final-key IDs inspected. Semantic overlap reviewed against all published/staged/archived history. Selected distinct objectives. Source-wording clarification recorded in Chemistry brief."
+    },
+    "write": {
+      "status": "complete",
+      "completedAt": "2026-11-16T07:12:41+05:30",
+      "evidence": "Three complete question-led articles, original SVG figures and covers, two sourced adapted PYQs each with hints and worked solutions; opening target repeated at the end."
+    },
+    "verify": {
+      "status": "complete",
+      "completedAt": "2026-11-16T07:17:34+05:30",
+      "evidence": [
+        "Six official question images and final-key matches; independent calculations and exact rational sums",
+        "Full prose reviewed for simple language and logical continuity; source-wording clarification disclosed",
+        "Real Astro app: six desktop/phone views passed static HTML, covers, native SVG figures, target question, keyboard disclosures and reduced motion",
+        "Maths caption corrected and rechecked at both widths",
+        "npm run check:editorial passed: 22 historical articles, 23 queue topics",
+        "npm run build passed: 28 pages; npm run typecheck passed",
+        "npm run check:search passed: 27 sitemap pages, 21 articles; npm run check:analytics passed"
+      ],
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-16-browser/",
+      "review": "Agent review only; no human review claimed."
+    },
+    "figma": {
+      "status": "complete",
+      "completedAt": "2026-11-16T07:23:57+05:30",
+      "pageId": "89:202",
+      "evidence": "Six editable desktop/phone frames passed full source-text comparison, approved fonts and modes, justified paragraphs, native SVG diagrams, shared header/footer, width/overlap checks and full-composition screenshot review. Supported comments read returned none. No registered page expired; cutoff 2026-11-10."
+    },
+    "git": {
+      "status": "pending"
+    },
+    "publication": {
+      "status": "pending"
+    },
+    "liveVerification": {
+      "status": "pending"
+    }
+  },
+  "resume": {
+    "nextStage": "git",
+    "reuseExistingArticles": true,
+    "reuseFigmaPageId": "89:202"
+  },
+  "lastCheckpointAt": "2026-11-16T07:23:57+05:30",
+  "figmaFeedback": {
+    "checkedAt": "2026-11-16T07:09:53+05:30",
+    "comments": []
+  },
+  "figma": {
+    "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+    "pageId": "89:202",
+    "url": "https://www.figma.com/design/GsBNGG7jIMvsPyhP7w0zXK/Blogs?node-id=89-202",
+    "articles": [
+      {
+        "slug": "how-do-you-find-the-electric-field-in-an-electromagnetic-wave",
+        "desktopFrameId": "90:242",
+        "phoneFrameId": "90:532"
+      },
+      {
+        "slug": "how-do-heat-and-work-signs-fit-a-complete-cycle",
+        "desktopFrameId": "90:818",
+        "phoneFrameId": "90:1114"
+      },
+      {
+        "slug": "how-do-you-simplify-a-sum-inside-another-sum",
+        "desktopFrameId": "90:1406",
+        "phoneFrameId": "90:1706"
+      }
+    ],
+    "retention": {
+      "cutoff": "2026-11-10",
+      "removed": []
+    }
+  }
+}

@@ -1,0 +1,74 @@
+---
+title: "How do you simplify a sum inside another sum?"
+description: "Simplify one fraction at a time, then use finite-sum formulas and careful endpoints to add the whole series."
+category: maths
+author: padho
+pubDate: "2026-11-16T07:12:41+05:30"
+heroImage: '../../assets/articles/nested-sum-steps.png'
+heroImageAlt: 'The third term is simplified from a sum of cubes over a sum of odd numbers into 36 divided by 9.'
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**Find the sum of the first eight terms of 1³/1 + (1³ + 2³)/(1 + 3) + (1³ + 2³ + 3³)/(1 + 3 + 5) + ⋯.**
+
+Adapted from [JEE Main, 2 April 2026 Shift 2 Q5](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf#page=3). Each fraction contains smaller sums. We’ll simplify those before adding the fractions. You need basic algebra; the finite-sum formulas we use are given below.
+
+## Decide what counts as one term
+
+The first term is the whole fraction 1³/1. The second term is the whole fraction (1³ + 2³)/(1 + 3). Adding another cube to the numerator and another odd number to the denominator creates the next term.
+
+Take the third term. Its numerator is 1 + 8 + 27 = 36. Its denominator is 1 + 3 + 5 = 9. So the third term is 36/9 = 4. We have simplified one fraction; we have not yet found the total of the first three fractions.
+
+<ArticleDiagram kind="nestedSums">The blue and orange blocks are the numerator and denominator of the third fraction. Add within the numerator and denominator first, then divide. Repeat the same reasoning with n in place of 3 to find a formula for any term.</ArticleDiagram>
+
+This distinction matters because fractions are added as fractions. You cannot put every numerator into one large sum and divide by the sum of all the denominators. For example, 1/1 + 9/4 is 13/4, whereas (1 + 9)/(1 + 4) is 2.
+
+## Write the nth fraction
+
+Let n be the position of a term: n = 1 for the first, n = 2 for the second, and so on. The nth numerator adds the cubes from 1³ to n³. The nth denominator adds the first n odd numbers, ending at 2n − 1.
+
+The first n odd numbers add to n². One way to see this is to build a square from successive L-shaped strips: one cell makes a 1 × 1 square, three more make a 2 × 2 square, five more make a 3 × 3 square. Each new strip contains the next odd number.
+
+The [standard finite-sum identities](https://openstax.org/books/calculus-volume-1/pages/5-1-approximating-areas) we need are:
+
+1 + 2 + ⋯ + n = n(n + 1)/2.
+
+1² + 2² + ⋯ + n² = n(n + 1)(2n + 1)/6.
+
+1³ + 2³ + ⋯ + n³ = [n(n + 1)/2]².
+
+These hold for positive integers n. In particular, the sum of cubes is the square of the sum of integers. Check n = 3: 1³ + 2³ + 3³ = 36, and (1 + 2 + 3)² = 36 too.
+
+## Simplify before adding
+
+Our nth fraction is [n(n + 1)/2]² divided by n². Squaring the numerator gives n²(n + 1)²/4. Since n is positive, we can cancel n². The result is simply (n + 1)²/4.
+
+Check that formula against the third term: (3 + 1)²/4 = 4, agreeing with the direct calculation. The first term also checks: (1 + 1)²/4 = 1.
+
+<KeyIdea id="nested-one-term">First find a formula for one whole term. Then add those simplified terms, keeping the original first and last term positions.</KeyIdea>
+
+When n runs from 1 to 8, n + 1 runs from 2 to 9. So our final addition will involve the squares from 2² through 9². The square-sum formula starts at 1²; subtract that first square when using it for this range.
+
+For another nested sum, the same method may leave a polynomial such as 2n² + 3n + 1. Add each part separately. The constant 1 appears once per term, so adding it over ten terms gives 10, not 1.
+
+## Try the past questions
+
+**1. Find the sum of the first ten terms of 1 + (1² + 2²)/2 + (1² + 2² + 3²)/3 + ⋯.**
+
+Adapted from [JEE Main, 6 April 2026 Shift 2 Q6](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf#page=3).
+
+<details class="reading-check"><summary>Show hint</summary><p>The nth term is the sum of squares from 1² to n², divided by n. Cancel n before expanding.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The nth term is (n + 1)(2n + 1)/6 = (2n² + 3n + 1)/6. For n from 1 to 10, the integers add to 55 and their squares add to 385.</p><p>The required sum is [2(385) + 3(55) + 10]/6 = 945/6 = <strong>315/2</strong>. The first term is included by n = 1; it is not an extra term outside this total.</p></details>
+
+**2. Return to our opening question: add the first eight fractions whose numerators are sums of cubes and denominators are sums of odd numbers.**
+
+<details class="reading-check"><summary>Show hint</summary><p>We found the nth fraction to be (n + 1)²/4. Its first square is 2² and its last is 9².</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The sum is (2² + 3² + ⋯ + 9²)/4. Using the square-sum formula, 1² + 2² + ⋯ + 9² = 9 × 10 × 19/6 = 285.</p><p>Remove 1², then divide by 4: (285 − 1)/4 = <strong>71</strong>. As a direct check, the eight squares are 4, 9, 16, 25, 36, 49, 64 and 81; they add to 284.</p></details>
+
+The answers match the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 6911211206 and 691121155.
