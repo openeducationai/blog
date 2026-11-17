@@ -1,0 +1,68 @@
+---
+title: "When do linear equations have infinitely many solutions?"
+description: "Use elimination to distinguish repeated information from a contradiction, then solve two JEE Main parameter questions."
+category: "maths"
+author: "padho"
+pubDate: "2026-11-17T07:09:03+05:30"
+heroImage: "../../assets/articles/linear-system-consistency.png"
+heroImageAlt: "Two sets of fruit bills illustrate a repeated equation and a contradiction after subtraction."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**The equations x + 5y + 6z = 4, 2x + 3y + 4z = 7 and x + 6y + az = b have infinitely many solutions. Which relation holds: b − a = 3, a − b = 3, a + b = 11, or a + b = 12?**
+
+Adapted from [JEE Main, 2 April 2026 Shift 2 Q3](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf#page=2), question ID 691121153. We’ll eliminate variables and see what the remaining equation says. You need only multiplication, subtraction and simple algebra.
+
+## Repeating information is different from contradicting it
+
+Suppose one apple costs x rupees and one orange costs y rupees. A bill tells us that an apple and an orange cost 10 rupees: x + y = 10. A second bill says two of each cost 20 rupees: 2x + 2y = 20.
+
+The second bill repeats the first. Subtracting twice the first equation from the second gives 0 = 0. It adds no new restriction. We still cannot determine both prices separately.
+
+Now suppose the second bill says two of each cost 23 rupees, with the same prices and no extra charges. Subtracting gives 0 = 3. No prices can satisfy both bills. That is a contradiction, so the system has no solution.
+
+<ArticleDiagram kind="linearConsistency">Subtract twice the first bill from the second. A matching total gives 0 = 0 and repeats information. A conflicting total gives 0 = 3 and makes the two bills impossible to satisfy together.</ArticleDiagram>
+
+## Keep both sides of an equation together
+
+The same idea works with three unknowns. A solution is one triple (x, y, z) that satisfies every equation at once. We can replace an equation by itself minus a multiple of another equation without changing which triples satisfy the whole system.
+
+This process is called [elimination](https://openstax.org/books/college-algebra-2e/pages/7-2-systems-of-linear-equations-three-variables). We choose the multiple so that one variable disappears. Always subtract the right-hand sides too. Equal coefficients with unequal totals are exactly how a contradiction can appear.
+
+For the opening question, call the equations R₁, R₂ and R₃ in the order shown. The notation R₂ − 2R₁ means subtract twice every term of the first equation from the second, including its right-hand side.
+
+## Reduce the last condition to one variable
+
+The first two opening equations are x + 5y + 6z = 4 and 2x + 3y + 4z = 7. Subtracting twice the first from the second gives −7y − 8z = −1. We now have a relation between y and z, with x removed.
+
+For any chosen z, this relation fixes y. The first equation then fixes x. So the first two equations allow a family of triples, one for each possible z. The third equation will decide whether to select one member, accept the whole family, or reject every member.
+
+After eliminating x and y from that third condition, it will have the form Az = B. Here A and B are expressions involving the given parameters a and b. These capital letters are temporary names for the two sides, not extra unknowns.
+
+If A is nonzero, z = B/A is fixed. If A = 0 but B is nonzero, the equation is impossible. If A = B = 0, this last equation places no restriction on z, so the family survives.
+
+<KeyIdea id="free-variable">For infinitely many solutions, the reduced equations must be consistent and at least one variable must remain free. A single 0 = 0 row is not enough if another row is a contradiction.</KeyIdea>
+
+You may also see the coefficient determinant used. A nonzero determinant gives one solution. A zero determinant only tells you that the unique-solution method fails: you must still check whether the equations repeat information or contradict it.
+
+## Try the past questions
+
+**1. Let α and β be real numbers with α ≠ 0. The equations x + 2y + z = 5, 2x + y + αz = 5 and 8x + 4y + βz = 18 have no solution. Find β/α.**
+
+Adapted from [JEE Main, 2 April 2026 Shift 1 Q3](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf#page=2), question ID 6911213. We explicitly require α ≠ 0 so the requested ratio is defined; the original does not state that condition.
+
+<details class="reading-check"><summary>Show hint</summary><p>Compare the third equation with four times the second. Their x and y terms will cancel.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Subtracting four times the second equation from the third gives (β − 4α)z = 18 − 20 = −2. This becomes a contradiction precisely when β − 4α = 0. Thus <strong>β/α = 4</strong>, using α ≠ 0.</p><p>If β − 4α were nonzero, z would be fixed. The remaining x and y equations have independent coefficient pairs (1, 2) and (2, 1), so they would give a unique solution. If α = β = 0, the system would still be inconsistent, but β/α would be undefined; this explains the added condition.</p></details>
+
+**2. Return to the opening question: x + 5y + 6z = 4, 2x + 3y + 4z = 7 and x + 6y + az = b have infinitely many solutions. Which of the four relations holds?**
+
+<details class="reading-check"><summary>Show hint</summary><p>We already have −7y − 8z = −1. Subtract the first original equation from the third, then multiply the result by 7 to eliminate y.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>R₃ − R₁ gives y + (a − 6)z = b − 4. Multiply this by 7 and add −7y − 8z = −1. The result is (7a − 50)z = 7b − 29.</p><p>For z to remain free, both sides must reduce to zero: a = 50/7 and b = 29/7. Therefore <strong>a − b = 3</strong>.</p><p>To check the freedom directly, put z = t. Then y = (1 − 8t)/7 and x = (23 − 2t)/7. Every real t satisfies all three equations with these a and b, so there are indeed infinitely many solutions.</p></details>
+
+The answers match the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 6911213 and 691121153, with the ratio condition stated above.

@@ -1,0 +1,66 @@
+{
+  "id": "de-broglie-momentum-comparison",
+  "researchedAt": "2026-11-17T07:06:42+05:30",
+  "category": "physics",
+  "conceptKey": "physics/dual-nature-of-radiation-and-matter/de-broglie-momentum-comparison",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; official homepage checked 17 November 2026",
+    "scope": "Physics Unit 17: matter waves and de Broglie relation; Units 2, 3 and 11 provide motion, force and potential-energy prerequisites."
+  },
+  "corpus": {
+    "papersExamined": 6,
+    "coverageNotes": "Cumulative targeted scans: 2 April both shifts, 4 April both shifts, 5 April Shift 1 and selected 6 April Shift 2 questions. Today re-examined originals in four of those papers. Not exhaustive topic coding, all shifts or a five-year census.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two inspected official questions with final-key matches support a precise misconception and prerequisite objective. No measured weightage or prediction is claimed."
+  },
+  "sources": [
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-5-de-broglies-matter-waves"
+    },
+    {
+      "title": "NTA official syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278419",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "4 April 2026 Shift 2 Q44, PDF page 16",
+      "answer": "λe/λp = √(mp/me)",
+      "correctOptionId": "6952781433",
+      "verifiedAt": "2026-11-17T07:06:42+05:30",
+      "adapted": true,
+      "independentSolution": "Starting from rest, each gains eV. Nonrelativistically p²=2mK=2meV, so λ=h/√(2meV). Dividing electron by proton expression yields √(mp/me). Both charges have magnitude e; acceleration uses opposite directions of electric force. Zero voltage is excluded; equal speed would instead give mp/me.",
+      "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+    },
+    {
+      "id": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278335",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "5 April 2026 Shift 1 Q35, PDF page 13",
+      "answer": "4λ₀/[1+2eE₀t/(mv₀)]",
+      "correctOptionId": "6952781144",
+      "verifiedAt": "2026-11-17T07:06:42+05:30",
+      "adapted": true,
+      "independentSolution": "Define e>0 as charge magnitude: q=−e, field −2E₀ along x, force +2eE₀ along x. v=v₀+2eE₀t/m, p=mv, λ=h/(mv). Since λ₀=h/(4mv₀), λ(0)=4λ₀. Wavelength decreases for t≥0; nonrelativistic regime explicitly stated.",
+      "sourceSha256": "20a14808d521007d48289171297030a4ac18710abc180bb7e3b2d23e2a0a19fb"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278419",
+  "targetQuestionText": "An electron and a proton start from rest and are each accelerated through the same positive potential difference V. Their masses are mₑ and mₚ. In the nonrelativistic regime, what is the ratio λₑ/λₚ of their de Broglie wavelengths?",
+  "verificationNotes": "Original question pages visually inspected; exact final-key IDs read; solutions worked independently. All question text is labelled adapted. Maths α≠0 assumption is added explicitly and its need disclosed. Physics charge sign and nonrelativistic assumptions are explicit. Chemistry equal unpaired counts are preserved."
+}

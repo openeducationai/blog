@@ -1,0 +1,122 @@
+{
+  "date": "2026-11-17",
+  "status": "partial",
+  "startedAt": "2026-11-17T07:01:20+05:30",
+  "articleSlugs": [
+    "how-does-momentum-set-the-de-broglie-wavelength",
+    "how-do-antibonding-electrons-change-an-oxygen-bond",
+    "when-do-linear-equations-have-infinitely-many-solutions"
+  ],
+  "stages": {
+    "research": {
+      "status": "complete",
+      "completedAt": "2026-11-17T07:06:42+05:30",
+      "briefs": [
+        "editorial/research/2026-11-17-physics.json",
+        "editorial/research/2026-11-17-chemistry.json",
+        "editorial/research/2026-11-17-maths.json"
+      ],
+      "evidence": "Six original NTA questions checked visually and independently solved against exact final-key IDs. Current official syllabus checked. All history objectives, examples and PYQ IDs reviewed for semantic duplication."
+    },
+    "writing": {
+      "status": "complete",
+      "completedAt": "2026-11-17T07:11:41+05:30",
+      "evidence": "Three complete articles, original accessible SVG figures and separate PNG covers. Opening targets and two adapted PYQs with hints and solutions are present. Shared article styles preserved."
+    },
+    "validation": {
+      "status": "complete",
+      "contentAndBrowserReviewedAt": "2026-11-17T07:14:21+05:30",
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-17-browser/checks.json",
+      "checks": [
+        "Six independent PYQ solutions and exact final-key matches",
+        "All three full drafts read sequentially for clarity",
+        "Six real-app desktop/phone checks and screenshots passed",
+        "TypeScript passed",
+        "39 node tests passed",
+        "6 daily runner tests passed",
+        "Editorial checks passed: 25 historical records, 26 queue entries",
+        "Final build passed: 31 generated pages",
+        "Built search passed: 30 sitemap pages, 24 articles/images, 31 internal links and consistent metadata",
+        "Analytics passed: 31 pages share the configured SDK"
+      ],
+      "resolvedEnvironmentIssue": "Initial local server bind was denied in sandbox; authorised normal Astro server launch succeeded. Browser checks then passed.",
+      "completedAt": "2026-11-17T07:15:20+05:30"
+    },
+    "figma": {
+      "status": "complete",
+      "completedAt": "2026-11-17T07:25:10+05:30",
+      "pageId": "97:202",
+      "evidence": "Six editable frames matched all source blocks and passed approved fonts/modes, native figures, shared header/footer, layout checks and full-composition screenshots. Empty comments result retained before deleting only registered expired page 0:1; four shared components preserved unchanged on permanent page 100:202."
+    },
+    "git": {
+      "status": "pending"
+    },
+    "publication": {
+      "status": "pending"
+    },
+    "liveVerification": {
+      "status": "pending"
+    }
+  },
+  "preflight": {
+    "branch": "main",
+    "clean": true,
+    "priorDateComplete": true,
+    "existingDateArticles": 0
+  },
+  "resume": {
+    "nextStage": "git",
+    "reuseExistingArticles": true,
+    "reuseFigmaPageId": "97:202"
+  },
+  "lastCheckpointAt": "2026-11-17T07:25:10+05:30",
+  "figmaFeedback": {
+    "checkedAt": "2026-11-17T07:11:41+05:30",
+    "comments": [],
+    "evidence": "Supported Figma get_comments returned an empty comments array."
+  },
+  "figmaSessionId": "64ab6dbe-e09c-4455-98f3-ef57d8e4ddb9",
+  "figma": {
+    "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+    "pageId": "97:202",
+    "url": "https://www.figma.com/design/GsBNGG7jIMvsPyhP7w0zXK/Blogs?node-id=97-202",
+    "articles": [
+      {
+        "slug": "how-does-momentum-set-the-de-broglie-wavelength",
+        "desktopFrameId": "98:242",
+        "phoneFrameId": "98:541"
+      },
+      {
+        "slug": "how-do-antibonding-electrons-change-an-oxygen-bond",
+        "desktopFrameId": "98:836",
+        "phoneFrameId": "98:1139"
+      },
+      {
+        "slug": "when-do-linear-equations-have-infinitely-many-solutions",
+        "desktopFrameId": "98:1438",
+        "phoneFrameId": "98:1734"
+      }
+    ],
+    "retention": {
+      "cutoff": "2026-11-11",
+      "removed": [
+        {
+          "pageId": "0:1",
+          "name": "2026-11-10",
+          "removedAt": "2026-11-17T07:25:10+05:30"
+        }
+      ],
+      "preservedSharedPageId": "100:202",
+      "remainingGeneratedDates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-15",
+        "2026-11-16",
+        "2026-11-17"
+      ]
+    }
+  },
+  "trialReviewPath": "editorial/trial-review.md"
+}

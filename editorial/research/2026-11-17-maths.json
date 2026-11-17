@@ -1,0 +1,66 @@
+{
+  "id": "linear-systems-consistency",
+  "researchedAt": "2026-11-17T07:06:42+05:30",
+  "category": "maths",
+  "conceptKey": "maths/matrices-and-determinants/linear-systems-consistency",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; official homepage checked 17 November 2026",
+    "scope": "Mathematics Unit 3: matrices and determinants, consistency and solution of simultaneous linear equations in two or three variables."
+  },
+  "corpus": {
+    "papersExamined": 6,
+    "coverageNotes": "Cumulative targeted scans: 2 April both shifts, 4 April both shifts, 5 April Shift 1 and selected 6 April Shift 2 questions. Today re-examined originals in four of those papers. Not exhaustive topic coding, all shifts or a five-year census.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two inspected official questions with final-key matches support a precise misconception and prerequisite objective. No measured weightage or prediction is claimed."
+  },
+  "sources": [
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/college-algebra-2e/pages/7-2-systems-of-linear-equations-three-variables"
+    },
+    {
+      "title": "NTA official syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121153",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift 2 Q3, PDF page 2",
+      "answer": "a−b=3; a=50/7, b=29/7",
+      "correctOptionId": "691121520",
+      "verifiedAt": "2026-11-17T07:06:42+05:30",
+      "adapted": true,
+      "independentSolution": "R2−2R1 gives −7y−8z=−1. R3−R1 gives y+(a−6)z=b−4. Seven times second reduced row plus first gives (7a−50)z=7b−29. Infinite solutions require a=50/7,b=29/7. Then z=t,y=(1−8t)/7,x=(23−2t)/7 satisfies all equations. First two coefficient rows are independent, so exactly one free variable.",
+      "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+    },
+    {
+      "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-6911213",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift 1 Q3, PDF page 2",
+      "answer": "β/α = 4, for α≠0",
+      "correctOptionId": "69112110",
+      "verifiedAt": "2026-11-17T07:06:42+05:30",
+      "adapted": true,
+      "independentSolution": "R3−4R2 gives (β−4α)z=−2. If coefficient nonzero, z is fixed, and x/y block determinant −3 gives a unique solution. If β=4α contradiction 0=−2 means no solution. The source omits α≠0; at α=β=0 the system has no solution but ratio undefined. Adaptation explicitly adds α≠0, disclosed in article.",
+      "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121153",
+  "targetQuestionText": "The equations x + 5y + 6z = 4, 2x + 3y + 4z = 7 and x + 6y + az = b have infinitely many solutions. Which relation holds: b − a = 3, a − b = 3, a + b = 11, or a + b = 12?",
+  "verificationNotes": "Original question pages visually inspected; exact final-key IDs read; solutions worked independently. All question text is labelled adapted. Maths α≠0 assumption is added explicitly and its need disclosed. Physics charge sign and nonrelativistic assumptions are explicit. Chemistry equal unpaired counts are preserved."
+}

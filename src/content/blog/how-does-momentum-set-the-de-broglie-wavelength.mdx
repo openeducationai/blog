@@ -1,0 +1,72 @@
+---
+title: "How does momentum set the de Broglie wavelength?"
+description: "Compare matter wavelengths by finding momentum first, then solve two JEE Main questions about acceleration by an electric field."
+category: "physics"
+author: "padho"
+pubDate: "2026-11-17T07:09:03+05:30"
+heroImage: "../../assets/articles/matter-wave-momentum.png"
+heroImageAlt: "Two schematic matter waves compare momentum p and twice that momentum, with the second wavelength halved."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**An electron and a proton start from rest and are each accelerated through the same positive potential difference V. Their masses are mₑ and mₚ. In the nonrelativistic regime, what is the ratio λₑ/λₚ of their de Broglie wavelengths?**
+
+Adapted from [JEE Main, 4 April 2026 Shift 2 Q44](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf#page=16), question ID 695278419. We’ll use momentum and kinetic energy. You need square roots and the formulas for constant acceleration. Starting from rest and the nonrelativistic approximation are stated explicitly in this adaptation.
+
+## A moving electron has a wavelength
+
+Imagine an electron moving through an evacuated tube. Experiments show that electrons can produce diffraction patterns, a behaviour associated with waves. The wavelength associated with the electron is called its de Broglie wavelength. It is not the size of the electron, and a wave drawing does not mean the electron follows a wavy path.
+
+The [de Broglie relation](https://openstax.org/books/university-physics-volume-3/pages/6-5-de-broglies-matter-waves) is λ = h/p. Here λ is wavelength, h is Planck’s constant and p is the magnitude of momentum. For speeds much smaller than the speed of light, p = mv, where m is mass and v is speed. All calculations below use that approximation.
+
+For our electron, increasing the speed increases momentum. Since momentum is in the denominator, the wavelength becomes shorter. If the speed doubles, the momentum doubles and the wavelength halves.
+
+<ArticleDiagram kind="matterWave">The two rows compare the same particle at momentum p and 2p. The second wavelength is half the first. The curves show wavelength spacing, not the particle’s path.</ArticleDiagram>
+
+## Equal voltage means equal energy here
+
+The opening question compares two particles: an electron and a proton. Their masses differ, so we need to know what is held equal before comparing wavelengths.
+
+An electron has charge −e and a proton has charge +e, where e is the positive magnitude of either charge. When either particle starts from rest and is accelerated through a potential difference of magnitude V, it gains kinetic energy eV. The electric force accelerates the two charges in opposite directions, but the energy gained has the same positive value.
+
+Equal kinetic energy does not mean equal speed. The energy formula K = mv²/2 contains both mass and speed. At the same energy, the heavier particle must move more slowly. That still does not tell us directly which momentum is larger, because momentum contains mass as well as speed.
+
+## Turn energy into momentum
+
+Start with K = mv²/2 and multiply both sides by 2m. The result is 2mK = m²v² = p². Taking the positive square root gives p = √(2mK), because p here is a magnitude.
+
+Substitute that momentum into λ = h/p. We get λ = h/√(2mK). For acceleration from rest through voltage V, K = eV, so λ = h/√(2meV).
+
+<KeyIdea id="momentum-first">First find the momentum using the condition the question gives. Equal speed and equal kinetic energy lead to different momentum comparisons.</KeyIdea>
+
+For example, compare hypothetical particles of masses m and 4m. At equal speed, the heavier one has four times the momentum. At equal kinetic energy, it has only twice the momentum, because √4 = 2. Their wavelength ratios therefore depend on which quantity is held equal.
+
+In the opening question, h, e and V will be common to both expressions. Write the electron expression above the proton expression before cancelling. This keeps the requested ratio from being reversed.
+
+## If the speed changes with time
+
+Sometimes the question gives an electric field instead of a voltage. Then find the electric force qE, use acceleration = force/mass, and calculate the velocity before using λ = h/p.
+
+The charge sign matters. If the field points left, the force on an electron points right because its charge is negative. An electron already moving right will speed up, so its wavelength must decrease. That physical check helps catch a wrong minus sign in the algebra.
+
+## Try the past questions
+
+**1. An electron of mass m starts with velocity v₀ along +x in a uniform electric field directed along −x with magnitude 2E₀. Let e > 0 be the magnitude of its charge and λ₀ = h/(4mv₀). Find its wavelength at time t ≥ 0 while its speed remains nonrelativistic.**
+
+Adapted from [JEE Main, 5 April 2026 Shift 1 Q35](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf#page=13), question ID 695278335. We have stated the charge convention explicitly.
+
+<details class="reading-check"><summary>Show hint</summary><p>Multiply the negative electron charge by the negative x-component of the field. Also check whether λ₀ is actually the initial wavelength.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The force points along +x and has magnitude 2eE₀. Thus v(t) = v₀ + 2eE₀t/m. The momentum is mv₀ + 2eE₀t, so λ(t) = h/(mv₀ + 2eE₀t).</p><p>Using h = 4λ₀mv₀ gives <strong>λ(t) = 4λ₀/[1 + 2eE₀t/(mv₀)]</strong>. At t = 0 the wavelength is 4λ₀, not λ₀. As time increases, the denominator grows and the wavelength decreases.</p></details>
+
+**2. Return to the opening question: an electron and a proton start from rest and gain energy through the same voltage V. What is λₑ/λₚ?**
+
+<details class="reading-check"><summary>Show hint</summary><p>Write λ = h/√(2meV) separately for the electron and the proton. Divide in the order requested.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>For the electron, λₑ = h/√(2mₑeV). For the proton, λₚ = h/√(2mₚeV). Dividing gives <strong>λₑ/λₚ = √(mₚ/mₑ)</strong>.</p><p>The proton is heavier, so at equal kinetic energy it has the larger momentum and the shorter wavelength. The ratio is greater than one, consistent with our result. Using mₚ/mₑ without the square root would correspond to equal speeds, which the question does not give.</p></details>
+
+The answers match the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 695278335 and 695278419.

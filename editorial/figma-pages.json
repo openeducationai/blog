@@ -3,42 +3,6 @@
   "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
   "pages": [
     {
-      "pageId": "0:1",
-      "name": "2026-11-10",
-      "date": "2026-11-10",
-      "generated": true,
-      "verified": true,
-      "articles": [
-        {
-          "slug": "if-forces-are-equal-why-do-things-move",
-          "desktopFrameId": "3:2",
-          "phoneFrameId": "14:2"
-        },
-        {
-          "slug": "where-does-sugar-go-when-it-dissolves",
-          "desktopFrameId": "5:2",
-          "phoneFrameId": "15:2"
-        },
-        {
-          "slug": "why-does-dividing-by-a-half-make-the-answer-bigger",
-          "desktopFrameId": "12:2",
-          "phoneFrameId": "16:2"
-        }
-      ],
-      "verification": {
-        "desktopWidth": 1440,
-        "phoneWidth": 390,
-        "editableText": true,
-        "nativeFigures": true,
-        "screenshotsReviewed": 6,
-        "inlineTermsRepaired": true,
-        "developmentToolbarRemoved": true,
-        "comments": "No supported comments read performed during setup; no existing dated page expired."
-      },
-      "sourceCommit": "ed6c20d057334ba0954e21c590fd445026f0479e",
-      "verifiedAt": "2026-11-10T20:07:25+05:30"
-    },
-    {
       "pageId": "27:306",
       "name": "2026-11-11",
       "date": "2026-11-11",
@@ -304,7 +268,119 @@
         "coverFit": "FIT; individual cover assets only, no full-page raster"
       },
       "sourceCommit": "a1c0d2908f5957e7cd0fa0c00b42a500da148b7c"
+    },
+    {
+      "date": "2026-11-17",
+      "name": "2026-11-17",
+      "pageId": "97:202",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "how-does-momentum-set-the-de-broglie-wavelength",
+          "desktopFrameId": "98:242",
+          "phoneFrameId": "98:541"
+        },
+        {
+          "slug": "how-do-antibonding-electrons-change-an-oxygen-bond",
+          "desktopFrameId": "98:836",
+          "phoneFrameId": "98:1139"
+        },
+        {
+          "slug": "when-do-linear-equations-have-infinitely-many-solutions",
+          "desktopFrameId": "98:1438",
+          "phoneFrameId": "98:1734"
+        }
+      ],
+      "verifiedAt": "2026-11-17T07:25:10+05:30",
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          36,
+          35,
+          35
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "coverFit": "FIT; discrete cover assets only",
+        "comments": "Supported get_comments returned no comments; archived in dated run before retention."
+      }
     }
   ],
-  "removedPages": []
+  "removedPages": [
+    {
+      "pageId": "0:1",
+      "name": "2026-11-10",
+      "date": "2026-11-10",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "if-forces-are-equal-why-do-things-move",
+          "desktopFrameId": "3:2",
+          "phoneFrameId": "14:2"
+        },
+        {
+          "slug": "where-does-sugar-go-when-it-dissolves",
+          "desktopFrameId": "5:2",
+          "phoneFrameId": "15:2"
+        },
+        {
+          "slug": "why-does-dividing-by-a-half-make-the-answer-bigger",
+          "desktopFrameId": "12:2",
+          "phoneFrameId": "16:2"
+        }
+      ],
+      "verification": {
+        "desktopWidth": 1440,
+        "phoneWidth": 390,
+        "editableText": true,
+        "nativeFigures": true,
+        "screenshotsReviewed": 6,
+        "inlineTermsRepaired": true,
+        "developmentToolbarRemoved": true,
+        "comments": "No supported comments read performed during setup; no existing dated page expired."
+      },
+      "sourceCommit": "ed6c20d057334ba0954e21c590fd445026f0479e",
+      "verifiedAt": "2026-11-10T20:07:25+05:30",
+      "removedAt": "2026-11-17T07:25:10+05:30",
+      "removedOn": "2026-11-17",
+      "reason": "Registered generated page precedes the inclusive seven-day cutoff 2026-11-11.",
+      "feedbackArchive": "editorial/runs/2026-11-17.json#figmaFeedback",
+      "preservedComponentIds": [
+        "18:2",
+        "18:37",
+        "18:112",
+        "18:135"
+      ]
+    }
+  ],
+  "sharedUi": {
+    "pageId": "100:202",
+    "name": "Shared UI",
+    "generated": false,
+    "permanent": true,
+    "componentIds": [
+      "18:2",
+      "18:37",
+      "18:112",
+      "18:135"
+    ],
+    "preservedAt": "2026-11-17T07:25:10+05:30",
+    "notes": "Original component IDs, names and dimensions preserved before deleting expired daily copy."
+  }
 }

@@ -1145,6 +1145,171 @@
       "liveVerifiedAt": "2026-11-16T07:27:01+05:30",
       "releaseConfirmedAt": "2026-11-16T07:25:30+05:30",
       "liveHtmlSha256": "c5c3e23fb34b89c4575a2899e0c2309c382b053eec8aac1646bb47621c5e320f"
+    },
+    {
+      "slug": "how-does-momentum-set-the-de-broglie-wavelength",
+      "title": "How does momentum set the de Broglie wavelength?",
+      "category": "physics",
+      "chapter": "dual-nature-of-radiation-and-matter",
+      "conceptKey": "physics/dual-nature-of-radiation-and-matter/de-broglie-momentum-comparison",
+      "learningObjective": "Find a matter wavelength from momentum, distinguishing equal speed from equal accelerating voltage and checking the charge sign.",
+      "example": "Speed up one electron, then compare it with a proton given the same kinetic energy.",
+      "sourcePath": "src/content/blog/how-does-momentum-set-the-de-broglie-wavelength.mdx",
+      "sourceSha256": "fa1a35092e236792c8d1e1dfe13163659bdfc9995698a539e89c787d54a7b106",
+      "url": "https://padho.ai/blog/how-does-momentum-set-the-de-broglie-wavelength/",
+      "publishedAt": "2026-11-17T07:09:03+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278419",
+      "targetQuestionText": "An electron and a proton start from rest and are each accelerated through the same positive potential difference V. Their masses are mₑ and mₚ. In the nonrelativistic regime, what is the ratio λₑ/λₚ of their de Broglie wavelengths?",
+      "briefPath": "editorial/research/2026-11-17-physics.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278419",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift 2 Q44, PDF page 16",
+          "answer": "λe/λp = √(mp/me)",
+          "correctOptionId": "6952781433",
+          "verifiedAt": "2026-11-17T07:06:42+05:30",
+          "adapted": true,
+          "independentSolution": "Starting from rest, each gains eV. Nonrelativistically p²=2mK=2meV, so λ=h/√(2meV). Dividing electron by proton expression yields √(mp/me). Both charges have magnitude e; acceleration uses opposite directions of electric force. Zero voltage is excluded; equal speed would instead give mp/me.",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        },
+        {
+          "id": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278335",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "5 April 2026 Shift 1 Q35, PDF page 13",
+          "answer": "4λ₀/[1+2eE₀t/(mv₀)]",
+          "correctOptionId": "6952781144",
+          "verifiedAt": "2026-11-17T07:06:42+05:30",
+          "adapted": true,
+          "independentSolution": "Define e>0 as charge magnitude: q=−e, field −2E₀ along x, force +2eE₀ along x. v=v₀+2eE₀t/m, p=mv, λ=h/(mv). Since λ₀=h/(4mv₀), λ(0)=4λ₀. Wavelength decreases for t≥0; nonrelativistic regime explicitly stated.",
+          "sourceSha256": "20a14808d521007d48289171297030a4ac18710abc180bb7e3b2d23e2a0a19fb"
+        }
+      ],
+      "review": {
+        "sourceSha256": "fa1a35092e236792c8d1e1dfe13163659bdfc9995698a539e89c787d54a7b106",
+        "reviewedAt": "2026-11-17T07:14:21+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Agent review: read full drafts in order and checked each paragraph for plain-language meaning and connected reasoning. Independently solved all six PYQs against original pages and exact final-key IDs. Checked charge sign, units, t=0 limit, nonrelativistic assumptions, pi phases, oxygen occupancies, and a parametric solution for the linear system. Disclosed alpha nonzero requirement. All six real-app 1440/390 views passed keyboard disclosures, complete targets, readable figures, static no-JS content and reduced motion. Top, figure and final-solution screenshots inspected for all six; no clipping or overflow found. No human review claimed."
+      }
+    },
+    {
+      "slug": "how-do-antibonding-electrons-change-an-oxygen-bond",
+      "title": "How do antibonding electrons change an oxygen bond?",
+      "category": "chemistry",
+      "chapter": "chemical-bonding",
+      "conceptKey": "chemistry/chemical-bonding/oxygen-antibonding-electrons",
+      "learningObjective": "Track electrons in oxygen’s two antibonding pi orbitals to compare bond order, bond length and unpaired electrons.",
+      "example": "Add electrons one at a time to the two equal-energy π* orbitals of the oxygen family.",
+      "sourcePath": "src/content/blog/how-do-antibonding-electrons-change-an-oxygen-bond.mdx",
+      "sourceSha256": "417f7bf14f60846407e756d8f5ebfc610b04e9de0220d1095d260e2b9f5b2cad",
+      "url": "https://padho.ai/blog/how-do-antibonding-electrons-change-an-oxygen-bond/",
+      "publishedAt": "2026-11-17T07:09:03+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112153",
+      "targetQuestionText": "Consider two statements about O₂⁺, O₂, O₂⁻ and O₂²⁻. I: Their bond lengths increase in that order. II: Their numbers of unpaired electrons follow O₂ > O₂⁺ > O₂⁻ > O₂²⁻. Which statements are correct?",
+      "briefPath": "editorial/research/2026-11-17-chemistry.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112153",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift 1 Q53, PDF page 21",
+          "answer": "Statement I true; Statement II false",
+          "correctOptionId": "691121181",
+          "verifiedAt": "2026-11-17T07:06:42+05:30",
+          "adapted": true,
+          "independentSolution": "O2+ / O2 / O2− / O2²− have 1/2/3/4 electrons in the two degenerate π*2p orbitals. Remaining valence orbitals contribute Nb=8 and Na=2. Bond orders 2.5/2/1.5/1; bond lengths increase in this order. Unpaired counts 1/2/1/0: O2+ and O2− tie, invalidating strict > in statement II.",
+          "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+        },
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278428",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift 2 Q53, PDF page 20",
+          "answer": "Third diagram: opposite phases on facing side-by-side lobes, with an internuclear node",
+          "correctOptionId": "6952781456",
+          "verifiedAt": "2026-11-17T07:06:42+05:30",
+          "adapted": true,
+          "independentSolution": "Internuclear axis z: π orbitals arise from side-on p orbitals perpendicular to z. Opposite phase on facing upper lobes, and on facing lower lobes, cancels density between nuclei. Third diagram has this arrangement. First is bonding π; fourth is end-on, hence σ type. Shading denotes phase, not charge.",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        }
+      ],
+      "review": {
+        "sourceSha256": "417f7bf14f60846407e756d8f5ebfc610b04e9de0220d1095d260e2b9f5b2cad",
+        "reviewedAt": "2026-11-17T07:14:21+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Agent review: read full drafts in order and checked each paragraph for plain-language meaning and connected reasoning. Independently solved all six PYQs against original pages and exact final-key IDs. Checked charge sign, units, t=0 limit, nonrelativistic assumptions, pi phases, oxygen occupancies, and a parametric solution for the linear system. Disclosed alpha nonzero requirement. All six real-app 1440/390 views passed keyboard disclosures, complete targets, readable figures, static no-JS content and reduced motion. Top, figure and final-solution screenshots inspected for all six; no clipping or overflow found. No human review claimed."
+      }
+    },
+    {
+      "slug": "when-do-linear-equations-have-infinitely-many-solutions",
+      "title": "When do linear equations have infinitely many solutions?",
+      "category": "maths",
+      "chapter": "matrices-and-determinants",
+      "conceptKey": "maths/matrices-and-determinants/linear-systems-consistency",
+      "learningObjective": "Use elimination to distinguish a contradiction from a redundant equation, and verify that a variable remains free.",
+      "example": "Two purchases of the same fruit lead either to the same bill or an impossible conflicting bill.",
+      "sourcePath": "src/content/blog/when-do-linear-equations-have-infinitely-many-solutions.mdx",
+      "sourceSha256": "5e7c11c687191f5e14405d793667eec03b6d34ee898c5272d9e80cdd765adbfb",
+      "url": "https://padho.ai/blog/when-do-linear-equations-have-infinitely-many-solutions/",
+      "publishedAt": "2026-11-17T07:09:03+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121153",
+      "targetQuestionText": "The equations x + 5y + 6z = 4, 2x + 3y + 4z = 7 and x + 6y + az = b have infinitely many solutions. Which relation holds: b − a = 3, a − b = 3, a + b = 11, or a + b = 12?",
+      "briefPath": "editorial/research/2026-11-17-maths.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121153",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift 2 Q3, PDF page 2",
+          "answer": "a−b=3; a=50/7, b=29/7",
+          "correctOptionId": "691121520",
+          "verifiedAt": "2026-11-17T07:06:42+05:30",
+          "adapted": true,
+          "independentSolution": "R2−2R1 gives −7y−8z=−1. R3−R1 gives y+(a−6)z=b−4. Seven times second reduced row plus first gives (7a−50)z=7b−29. Infinite solutions require a=50/7,b=29/7. Then z=t,y=(1−8t)/7,x=(23−2t)/7 satisfies all equations. First two coefficient rows are independent, so exactly one free variable.",
+          "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-6911213",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift 1 Q3, PDF page 2",
+          "answer": "β/α = 4, for α≠0",
+          "correctOptionId": "69112110",
+          "verifiedAt": "2026-11-17T07:06:42+05:30",
+          "adapted": true,
+          "independentSolution": "R3−4R2 gives (β−4α)z=−2. If coefficient nonzero, z is fixed, and x/y block determinant −3 gives a unique solution. If β=4α contradiction 0=−2 means no solution. The source omits α≠0; at α=β=0 the system has no solution but ratio undefined. Adaptation explicitly adds α≠0, disclosed in article.",
+          "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+        }
+      ],
+      "review": {
+        "sourceSha256": "5e7c11c687191f5e14405d793667eec03b6d34ee898c5272d9e80cdd765adbfb",
+        "reviewedAt": "2026-11-17T07:14:21+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Agent review: read full drafts in order and checked each paragraph for plain-language meaning and connected reasoning. Independently solved all six PYQs against original pages and exact final-key IDs. Checked charge sign, units, t=0 limit, nonrelativistic assumptions, pi phases, oxygen occupancies, and a parametric solution for the linear system. Disclosed alpha nonzero requirement. All six real-app 1440/390 views passed keyboard disclosures, complete targets, readable figures, static no-JS content and reduced motion. Top, figure and final-solution screenshots inspected for all six; no clipping or overflow found. No human review claimed."
+      }
     }
   ]
 }

@@ -1,0 +1,72 @@
+---
+title: "How do antibonding electrons change an oxygen bond?"
+description: "Use two antibonding orbitals to compare oxygen bond lengths and unpaired electrons, with two worked JEE Main questions."
+category: "chemistry"
+author: "padho"
+pubDate: "2026-11-17T07:09:03+05:30"
+heroImage: "../../assets/articles/oxygen-antibonding.png"
+heroImageAlt: "Side-on p orbitals have opposite facing phases and a node between two oxygen nuclei."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**Consider two statements about O₂⁺, O₂, O₂⁻ and O₂²⁻. I: Their bond lengths increase in that order. II: Their numbers of unpaired electrons follow O₂ > O₂⁺ > O₂⁻ > O₂²⁻. Which statements are correct?**
+
+Adapted from [JEE Main, 2 April 2026 Shift 1 Q53](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf#page=21), question ID 69112153. We’ll follow the electrons in two orbitals. You need only electron counts; the filling rules are explained below.
+
+## Follow the electrons that change
+
+An oxygen molecule contains two oxygen atoms. Each atom contributes six valence electrons, giving twelve in O₂. Valence electrons are the outer electrons used in this bonding picture. Adding one electron makes O₂⁻; removing one makes O₂⁺. The nuclei remain the same.
+
+To understand what those changes do, we use molecular orbitals: allowed electron states spread over the molecule. An electron in a bonding orbital helps hold the atoms together. An electron in an antibonding orbital works against that bonding. The star in π* means antibonding; it does not mean an excited atom.
+
+The [molecular-orbital model](https://openstax.org/books/chemistry-2e/pages/8-4-molecular-orbital-theory) puts the electrons that change across this oxygen family in two π* orbitals of equal energy. We can therefore keep the lower orbitals fixed and concentrate on these two.
+
+## What makes a pi orbital antibonding?
+
+A p orbital has two lobes with opposite wave-function signs, often shown by different colours or shading. These signs describe phase. They are not positive and negative electric charges.
+
+For a π orbital, two p orbitals overlap side by side, with their lobes perpendicular to the line joining the nuclei. Matching phases reinforce one another between the atoms. Opposite phases cancel there, producing an extra node between the nuclei: a region where the wave function is zero. This is the π* arrangement.
+
+<ArticleDiagram kind="oxygenAntibonding">The dots mark the nuclei, and the horizontal z-axis joins them. Blue + and orange − show opposite phases, not charges. Facing lobes have opposite phases, so the dashed line marks the extra node between the nuclei. The shapes are schematic.</ArticleDiagram>
+
+A π orbital also has a nodal plane containing the internuclear axis. The extra node between the nuclei is what distinguishes the antibonding combination in this comparison. A drawing with p orbitals pointing along the internuclear axis instead describes end-on, σ-type overlap.
+
+## Fill two equal-energy orbitals carefully
+
+An orbital can hold two electrons with opposite spins. When two available orbitals have equal energy, put one electron in each before pairing them. This is Hund’s rule. An unpaired electron is an electron that has no opposite-spin partner in its orbital.
+
+O₂ has two electrons in the π* pair. They occupy separate orbitals, so both are unpaired. If we remove one electron to make O₂⁺, one electron remains in that pair. If we add one to make O₂⁻, one orbital contains a pair and the other contains a single electron.
+
+Add a second electron to make O₂²⁻ and both orbitals are filled with pairs. Notice that O₂⁺ and O₂⁻ each have one unpaired electron, even though their total electron counts differ. Count the single electrons after filling; do not assume that adding an electron always increases the unpaired count.
+
+## Count bonding and antibonding electrons
+
+Bond order is half the difference between the number of bonding electrons and the number of antibonding electrons. We write this as bond order = (Nᵦ − Nₐ)/2. For the oxygen family, there are eight bonding valence electrons. There are also two antibonding valence electrons in a lower orbital, in addition to those in the π* pair.
+
+Let n be the number of electrons in the π* pair. The bond order is therefore [8 − (2 + n)]/2 = (6 − n)/2. Every extra π* electron lowers the bond order by one-half. Removing a π* electron raises it by one-half.
+
+<KeyIdea id="oxygen-counts">Use the same orbital filling twice: count all antibonding electrons for bond order, then count the electrons without partners for magnetism.</KeyIdea>
+
+Within this oxygen family, a higher bond order corresponds to a stronger, shorter bond. Adding antibonding electrons lowers the bond order and lengthens the bond. Unpaired electrons give paramagnetism, meaning attraction to an applied magnetic field. Bond length and magnetism come from the same filling diagram, but they are different things to count.
+
+## Try the past questions
+
+**1. With the internuclear axis along z, which arrangement represents a π* molecular orbital: side-on p orbitals with matching facing phases, side-on p orbitals with opposite facing phases, or end-on p orbitals along z?**
+
+Adapted from [JEE Main, 4 April 2026 Shift 2 Q53](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf#page=20), question ID 695278428. The original has four diagrams; these verbal choices describe the deciding features.
+
+<details class="reading-check"><summary>Show hint</summary><p>First identify side-on overlap for π. Then look for cancellation between the nuclei for the star.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Choose <strong>side-on p orbitals with opposite facing phases</strong>. Their cancellation produces the extra internuclear node. This is the third diagram in the official paper, option ID 6952781456. Matching facing phases give bonding π overlap; end-on overlap is σ type.</p></details>
+
+**2. Return to the opening question. I: bond lengths increase as O₂⁺, O₂, O₂⁻, O₂²⁻. II: unpaired-electron counts follow O₂ > O₂⁺ > O₂⁻ > O₂²⁻. Which statements are correct?**
+
+<details class="reading-check"><summary>Show hint</summary><p>Place 1, 2, 3 and 4 electrons into the two π* orbitals. Use bond order = (6 − n)/2, then count unpaired electrons separately.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>For O₂⁺, O₂, O₂⁻ and O₂²⁻, the bond orders are 2.5, 2, 1.5 and 1. The bond lengths therefore increase in that order, so <strong>statement I is true</strong>.</p><p>The unpaired counts in the same order are 1, 2, 1 and 0. Thus the correct comparison is O₂ > O₂⁺ = O₂⁻ > O₂²⁻. The strict inequality between O₂⁺ and O₂⁻ is wrong, so <strong>statement II is false</strong>.</p></details>
+
+The answers match the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 695278428 and 69112153.
