@@ -1,8 +1,8 @@
 # Padho PCM trial review — 11–17 November 2026
 
-Updated 2026-11-17T07:26:25+05:30. The approved trial ends on 17 November. It has not been extended.
+Updated 2026-11-17T07:31:01+05:30. The approved trial ends on 17 November. It has not been extended.
 
-18 of 21 trial articles are published and verified live. The three 17 November articles have verified source and Figma copies; release and live verification are still pending. Earlier dates are complete.
+21 of 21 trial articles are published and verified live. There are no missing subject/date publications.
 
 ## Publication ledger
 
@@ -28,9 +28,9 @@ These are the permanent URLs. Status comes from history and dated live-verificat
 | 2026-11-16 | Physics | [How do you find the electric field in an electromagnetic wave?](https://padho.ai/blog/how-do-you-find-the-electric-field-in-an-electromagnetic-wave/) | published |
 | 2026-11-16 | Chemistry | [How do heat and work signs fit a complete cycle?](https://padho.ai/blog/how-do-heat-and-work-signs-fit-a-complete-cycle/) | published |
 | 2026-11-16 | Maths | [How do you simplify a sum inside another sum?](https://padho.ai/blog/how-do-you-simplify-a-sum-inside-another-sum/) | published |
-| 2026-11-17 | Physics | [How does momentum set the de Broglie wavelength?](https://padho.ai/blog/how-does-momentum-set-the-de-broglie-wavelength/) | staged |
-| 2026-11-17 | Chemistry | [How do antibonding electrons change an oxygen bond?](https://padho.ai/blog/how-do-antibonding-electrons-change-an-oxygen-bond/) | staged |
-| 2026-11-17 | Maths | [When do linear equations have infinitely many solutions?](https://padho.ai/blog/when-do-linear-equations-have-infinitely-many-solutions/) | staged |
+| 2026-11-17 | Physics | [How does momentum set the de Broglie wavelength?](https://padho.ai/blog/how-does-momentum-set-the-de-broglie-wavelength/) | published |
+| 2026-11-17 | Chemistry | [How do antibonding electrons change an oxygen bond?](https://padho.ai/blog/how-do-antibonding-electrons-change-an-oxygen-bond/) | published |
+| 2026-11-17 | Maths | [When do linear equations have infinitely many solutions?](https://padho.ai/blog/when-do-linear-equations-have-infinitely-many-solutions/) | published |
 
 The three 10 November baseline articles remain public and are excluded from the trial count. The older archived article remains in permanent history. No website article or source was deleted for Figma retention.
 
@@ -46,7 +46,7 @@ The scheduled time was 07:00 Asia/Kolkata. The following are actual live-verific
 | 14 November | 2026-11-14T11:30:39+05:30 | Scheduled agent incorrectly asked to approve the existing trial and authored nothing. Owner-authorised manual run completed; listing-image crop correction included. |
 | 15 November | 2026-11-15T10:17:59+05:30 | GCP reauthentication failed before upload. Verified source/Figma retained; owner-authorised release retry succeeded. |
 | 16 November | 2026-11-16T07:27:01+05:30 | Completed in the morning run; no unresolved deployment failure. |
-| 17 November | Pending | Source, local checks and Figma completed before release credentials were checked. |
+| 17 November | 2026-11-17T07:31:01+05:30 | Source, local checks and Figma completed before release credentials were checked. Scoped release and live checks passed. |
 
 Four dates required a later owner-authorised recovery (11, 12, 14 and 15 November). The seven daily sets were not all completed autonomously at the scheduled time. Failed attempts are retained in dated records. This is an operational reliability issue, not evidence about students’ learning.
 
@@ -87,7 +87,7 @@ Supported comments reads returned no comments on available later runs. The 11 No
 
 ## Live discovery, analytics and remaining decisions
 
-Final-day release/live results are pending. Earlier days’ live checks are retained in their dated run records. This review must be updated after the authorised release attempt.
+Final live checks passed: 30 sitemap URLs, 24 public articles including the three baseline articles, 24 images and 96 public crawler-user-agent probes. All three new live HTML responses match the reviewed build; six live desktop/phone views and shared PostHog context passed.
 
 Crawler-user-agent responses and sitemap validity do not prove indexing or access from providers’ actual crawler IPs. Search Console is owner-managed; the last recorded setup observation was Success with nine discovered URLs on 10 November. No current indexing, impression, click, referral or learning-outcome result was measured for this review. Existing PostHog instrumentation was preserved and checked; instrumentation presence is not traffic evidence.
 

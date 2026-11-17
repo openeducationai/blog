@@ -1,6 +1,6 @@
 {
   "date": "2026-11-17",
-  "status": "partial",
+  "status": "published",
   "startedAt": "2026-11-17T07:01:20+05:30",
   "articleSlugs": [
     "how-does-momentum-set-the-de-broglie-wavelength",
@@ -49,13 +49,66 @@
       "evidence": "Six editable frames matched all source blocks and passed approved fonts/modes, native figures, shared header/footer, layout checks and full-composition screenshots. Empty comments result retained before deleting only registered expired page 0:1; four shared components preserved unchanged on permanent page 100:202."
     },
     "git": {
-      "status": "pending"
+      "status": "complete",
+      "sourceCommit": "8ebb9ce89b20059c144a1f21e18594766fa78614",
+      "pushedTo": "origin/main",
+      "completedAt": "2026-11-17T07:27:15+05:30",
+      "evidence": "Fetched origin/main; no divergence. Scoped verified source, Figma registry, research and trial review committed and pushed on existing main."
     },
     "publication": {
-      "status": "pending"
+      "status": "complete",
+      "confirmedAt": "2026-11-17T07:28:33+05:30",
+      "publisher": "node scripts/publish.mjs",
+      "sourceCommit": "8ebb9ce89b20059c144a1f21e18594766fa78614",
+      "scope": "padho.ai/blog only",
+      "exitCode": 0,
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ],
+      "evidence": "Publisher editorial, built search and analytics gates passed. Scoped uploads and both CDN invalidations completed.",
+      "log": "/private/tmp/padho-pcm-2026-11-17/publish.log"
     },
     "liveVerification": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-17T07:31:01+05:30",
+      "articles": [
+        {
+          "slug": "how-does-momentum-set-the-de-broglie-wavelength",
+          "url": "https://padho.ai/blog/how-does-momentum-set-the-de-broglie-wavelength/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "c4bdaef51b7b91a2aa6bfabbc985514649819d2656a1a865db3120e18765735e",
+          "matchesReviewedBuild": true,
+          "postHogContextPresent": true
+        },
+        {
+          "slug": "how-do-antibonding-electrons-change-an-oxygen-bond",
+          "url": "https://padho.ai/blog/how-do-antibonding-electrons-change-an-oxygen-bond/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "23381aaf70a4eb07db384101e6d27595b4daf449df0ba15dda0e63e7f47a3efe",
+          "matchesReviewedBuild": true,
+          "postHogContextPresent": true
+        },
+        {
+          "slug": "when-do-linear-equations-have-infinitely-many-solutions",
+          "url": "https://padho.ai/blog/when-do-linear-equations-have-infinitely-many-solutions/",
+          "httpStatus": 200,
+          "liveHtmlSha256": "9647d00e6d20866e8b38679e78ac46a50dfc250d08af76c83235a7731478abb4",
+          "matchesReviewedBuild": true,
+          "postHogContextPresent": true
+        }
+      ],
+      "sitemapPages": 30,
+      "publishedArticles": 24,
+      "images": 24,
+      "internalLinks": 31,
+      "metadataMatchesVisibleContent": true,
+      "crawlerProbes": 96,
+      "allCrawlerProbesPassed": true,
+      "articleViewports": 6,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-17-browser/checks-live.json",
+      "searchEvidence": "/private/tmp/padho-blog-2026-11-17-browser/search-live.json",
+      "evidence": "All three live HTML responses exactly match the reviewed build. Six desktop/phone views passed layout, covers, figures and keyboard disclosures. Representative live desktop openings and phone final solutions reviewed for all three subjects. Shared PostHog context present. Public user-agent probes do not prove indexing."
     }
   },
   "preflight": {
@@ -65,11 +118,14 @@
     "existingDateArticles": 0
   },
   "resume": {
-    "nextStage": "git",
+    "nextStage": null,
     "reuseExistingArticles": true,
-    "reuseFigmaPageId": "97:202"
+    "reuseFigmaPageId": "97:202",
+    "instructions": [
+      "This date is published and live-verified. Do not create or publish a second set. The configured trial ends today and must not continue without a new owner decision."
+    ]
   },
-  "lastCheckpointAt": "2026-11-17T07:25:10+05:30",
+  "lastCheckpointAt": "2026-11-17T07:31:01+05:30",
   "figmaFeedback": {
     "checkedAt": "2026-11-17T07:11:41+05:30",
     "comments": [],
@@ -118,5 +174,8 @@
       ]
     }
   },
-  "trialReviewPath": "editorial/trial-review.md"
+  "trialReviewPath": "editorial/trial-review.md",
+  "sourceCommit": "8ebb9ce89b20059c144a1f21e18594766fa78614",
+  "publishedAt": "2026-11-17T07:28:33+05:30",
+  "completedAt": "2026-11-17T07:31:01+05:30"
 }

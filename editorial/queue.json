@@ -458,9 +458,10 @@
         "how-do-you-compare-bohr-orbit-radii"
       ],
       "difference": "Earlier lessons address photon energy at a metal surface and bound orbit radii. This teaches matter wavelength versus momentum for free accelerated particles.",
-      "status": "writing",
+      "status": "published",
       "briefPath": "editorial/research/2026-11-17-physics.json",
-      "rationale": "Two inspected official questions with final-key matches support a precise misconception and prerequisite objective. No measured weightage or prediction is claimed."
+      "rationale": "Two inspected official questions with final-key matches support a precise misconception and prerequisite objective. No measured weightage or prediction is claimed.",
+      "releaseVerifiedAt": "2026-11-17T07:31:01+05:30"
     },
     {
       "id": "oxygen-antibonding-electrons",
@@ -482,9 +483,10 @@
         "how-do-you-compare-bohr-orbit-radii"
       ],
       "difference": "Bohr lesson compares one-electron atomic radii. This concerns molecular orbital phase, occupancy and bond order in oxygen molecules/ions.",
-      "status": "writing",
+      "status": "published",
       "briefPath": "editorial/research/2026-11-17-chemistry.json",
-      "rationale": "Two inspected official questions with final-key matches support a precise misconception and prerequisite objective. No measured weightage or prediction is claimed."
+      "rationale": "Two inspected official questions with final-key matches support a precise misconception and prerequisite objective. No measured weightage or prediction is claimed.",
+      "releaseVerifiedAt": "2026-11-17T07:31:01+05:30"
     },
     {
       "id": "linear-systems-consistency",
@@ -506,9 +508,10 @@
         "when-is-a-quadratic-always-positive"
       ],
       "difference": "Quadratic article tests a polynomial sign. This tests whether simultaneous linear constraints contradict or repeat one another.",
-      "status": "writing",
+      "status": "published",
       "briefPath": "editorial/research/2026-11-17-maths.json",
-      "rationale": "Two inspected official questions with final-key matches support a precise misconception and prerequisite objective. No measured weightage or prediction is claimed."
+      "rationale": "Two inspected official questions with final-key matches support a precise misconception and prerequisite objective. No measured weightage or prediction is claimed.",
+      "releaseVerifiedAt": "2026-11-17T07:31:01+05:30"
     }
   ]
 }

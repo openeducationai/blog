@@ -318,7 +318,8 @@
         "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
         "coverFit": "FIT; discrete cover assets only",
         "comments": "Supported get_comments returned no comments; archived in dated run before retention."
-      }
+      },
+      "sourceCommit": "8ebb9ce89b20059c144a1f21e18594766fa78614"
     }
   ],
   "removedPages": [

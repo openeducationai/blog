@@ -1159,7 +1159,7 @@
       "url": "https://padho.ai/blog/how-does-momentum-set-the-de-broglie-wavelength/",
       "publishedAt": "2026-11-17T07:09:03+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278419",
       "targetQuestionText": "An electron and a proton start from rest and are each accelerated through the same positive potential difference V. Their masses are mₑ and mₚ. In the nonrelativistic regime, what is the ratio λₑ/λₚ of their de Broglie wavelengths?",
       "briefPath": "editorial/research/2026-11-17-physics.json",
@@ -1199,7 +1199,8 @@
           "visuals": true
         },
         "notes": "Agent review: read full drafts in order and checked each paragraph for plain-language meaning and connected reasoning. Independently solved all six PYQs against original pages and exact final-key IDs. Checked charge sign, units, t=0 limit, nonrelativistic assumptions, pi phases, oxygen occupancies, and a parametric solution for the linear system. Disclosed alpha nonzero requirement. All six real-app 1440/390 views passed keyboard disclosures, complete targets, readable figures, static no-JS content and reduced motion. Top, figure and final-solution screenshots inspected for all six; no clipping or overflow found. No human review claimed."
-      }
+      },
+      "releaseVerifiedAt": "2026-11-17T07:31:01+05:30"
     },
     {
       "slug": "how-do-antibonding-electrons-change-an-oxygen-bond",
@@ -1214,7 +1215,7 @@
       "url": "https://padho.ai/blog/how-do-antibonding-electrons-change-an-oxygen-bond/",
       "publishedAt": "2026-11-17T07:09:03+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112153",
       "targetQuestionText": "Consider two statements about O₂⁺, O₂, O₂⁻ and O₂²⁻. I: Their bond lengths increase in that order. II: Their numbers of unpaired electrons follow O₂ > O₂⁺ > O₂⁻ > O₂²⁻. Which statements are correct?",
       "briefPath": "editorial/research/2026-11-17-chemistry.json",
@@ -1254,7 +1255,8 @@
           "visuals": true
         },
         "notes": "Agent review: read full drafts in order and checked each paragraph for plain-language meaning and connected reasoning. Independently solved all six PYQs against original pages and exact final-key IDs. Checked charge sign, units, t=0 limit, nonrelativistic assumptions, pi phases, oxygen occupancies, and a parametric solution for the linear system. Disclosed alpha nonzero requirement. All six real-app 1440/390 views passed keyboard disclosures, complete targets, readable figures, static no-JS content and reduced motion. Top, figure and final-solution screenshots inspected for all six; no clipping or overflow found. No human review claimed."
-      }
+      },
+      "releaseVerifiedAt": "2026-11-17T07:31:01+05:30"
     },
     {
       "slug": "when-do-linear-equations-have-infinitely-many-solutions",
@@ -1269,7 +1271,7 @@
       "url": "https://padho.ai/blog/when-do-linear-equations-have-infinitely-many-solutions/",
       "publishedAt": "2026-11-17T07:09:03+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121153",
       "targetQuestionText": "The equations x + 5y + 6z = 4, 2x + 3y + 4z = 7 and x + 6y + az = b have infinitely many solutions. Which relation holds: b − a = 3, a − b = 3, a + b = 11, or a + b = 12?",
       "briefPath": "editorial/research/2026-11-17-maths.json",
@@ -1309,7 +1311,8 @@
           "visuals": true
         },
         "notes": "Agent review: read full drafts in order and checked each paragraph for plain-language meaning and connected reasoning. Independently solved all six PYQs against original pages and exact final-key IDs. Checked charge sign, units, t=0 limit, nonrelativistic assumptions, pi phases, oxygen occupancies, and a parametric solution for the linear system. Disclosed alpha nonzero requirement. All six real-app 1440/390 views passed keyboard disclosures, complete targets, readable figures, static no-JS content and reduced motion. Top, figure and final-solution screenshots inspected for all six; no clipping or overflow found. No human review claimed."
-      }
+      },
+      "releaseVerifiedAt": "2026-11-17T07:31:01+05:30"
     }
   ]
 }
