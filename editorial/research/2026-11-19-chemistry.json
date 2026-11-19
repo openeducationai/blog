@@ -1,0 +1,70 @@
+{
+  "id": "nernst-reaction-before-concentration",
+  "researchedAt": "2026-11-19T10:15:20+05:30",
+  "category": "chemistry",
+  "conceptKey": "chemistry/electrochemistry/balanced-reaction-nernst-quotient",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; official homepage and syllabus checked 19 November 2026",
+    "scope": "Chemistry Unit 7: electrochemical cells, electrode potentials and Nernst equation."
+  },
+  "corpus": {
+    "papersExamined": 7,
+    "coverageNotes": "Targeted scans of 2 April both shifts, 4 April both shifts, 5 April both shifts and selected 6 April Shift 2 questions. Today expanded to 5 April Shift 2 and re-examined selected originals in earlier papers. Not a five-year census or exhaustive topic-frequency analysis.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two inspected official questions and final-key matches support a distinct, useful misconception and prerequisite objective. No measured weightage or prediction claimed."
+  },
+  "sources": [
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-3-electrode-and-cell-potentials"
+    },
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-4-potential-free-energy-and-equilibrium"
+    },
+    {
+      "title": "NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121507",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "5 April 2026 Shift 2, Q57, PDF page 23",
+      "answer": "log₁₀ x = 4/5.9 ≈ 0.678",
+      "correctOptionId": "6911211726",
+      "verifiedAt": "2026-11-19T10:15:20+05:30",
+      "adapted": true,
+      "independentSolution": "Zn+2Ag+→Zn2++2Ag, n=2, E°=0.80−(−0.76)=1.56 V. In the exam concentration approximation Q=1/x². E=1.56−0.059/2 log(1/x²)=1.56+0.059 log x. Thus log x=(1.60−1.56)/0.059=4/5.9, x≈4.764. Since E>E°, Q<1; consistent. Activities are dimensionless; concentration values stand for activities only under the question’s model.",
+      "sourceSha256": "876efb4250b5d8e096f28bb48d9078e39f25f1ad70473701e5c13523716588d4"
+    },
+    {
+      "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112157",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift 1, Q57, PDF page 22–23",
+      "answer": "Fe + 2OH⁻ + 2AgBr → Fe(OH)₂ + 2Ag + 2Br⁻; E° = +0.95 V",
+      "correctOptionId": "691121195",
+      "verifiedAt": "2026-11-19T10:15:20+05:30",
+      "adapted": true,
+      "independentSolution": "Compare standard reduction potentials +0.07 V and −0.88 V. Keep AgBr reduction; reverse the iron half-reaction. Double AgBr coefficients to cancel two electrons, without doubling its potential. E°=0.07−(−0.88)=0.95 V. Iron is oxidised and potential is intensive; correct original option is the balanced overall reaction.",
+      "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121507",
+  "targetQuestionText": "At 298 K, a zinc–silver cell has [Zn²⁺] = 1 mol/L and a measured voltage of 1.60 V. The standard reduction potentials are −0.76 V for Zn²⁺/Zn and +0.80 V for Ag⁺/Ag. If x is the numerical value of [Ag⁺] in mol/L, find log₁₀ x. Use 2.303RT/F = 0.059 V.",
+  "verificationNotes": "Original pages visually inspected, exact final-key IDs checked, solutions independently worked. Adapted statements explicitly identify modelling assumptions; no invented question is labelled a PYQ."
+}

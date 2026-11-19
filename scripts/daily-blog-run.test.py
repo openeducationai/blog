@@ -15,19 +15,22 @@ def load(name, filename):
 runner = load('runner', 'daily-blog-run.py')
 installer = load('installer', 'install-daily-blog.py')
 CONFIG = {'timezone': 'Asia/Kolkata', 'startTime': '07:00',
-          'trial': {'enabled': True, 'startDate': '2026-11-11', 'endDate': '2026-11-17'}}
+          'schedule': {'enabled': True, 'startDate': '2026-11-11'}}
 
 
-class TrialTests(unittest.TestCase):
+class DailyTests(unittest.TestCase):
     def eligible(self, at, **kwargs):
         return runner.eligibility(CONFIG, datetime.fromisoformat(at), **kwargs)
 
-    def test_only_seven_mornings(self):
+    def test_daily_schedule_continues_beyond_seven_days(self):
         self.assertTrue(self.eligible('2026-11-11T07:00:00+05:30')[0])
         self.assertTrue(self.eligible('2026-11-17T07:00:00+05:30')[0])
         self.assertFalse(self.eligible('2026-11-10T07:00:00+05:30')[0])
-        self.assertFalse(self.eligible('2026-11-18T07:00:00+05:30')[0])
-        self.assertFalse(self.eligible('2027-11-11T07:00:00+05:30')[0])
+        self.assertTrue(self.eligible('2026-11-18T07:00:00+05:30')[0])
+        self.assertTrue(self.eligible('2026-11-19T07:00:00+05:30')[0])
+        self.assertTrue(self.eligible('2027-11-11T07:00:00+05:30')[0])
+        disabled = {**CONFIG, 'schedule': {**CONFIG['schedule'], 'enabled': False}}
+        self.assertFalse(runner.eligibility(disabled, datetime.fromisoformat('2026-11-19T07:00:00+05:30'))[0])
 
     def test_uses_ist_and_waits_for_start(self):
         self.assertTrue(self.eligible('2026-11-11T01:30:00+00:00')[0])
@@ -56,10 +59,8 @@ class TrialTests(unittest.TestCase):
             runner.preflight()
         self.assertIn(['node', 'scripts/blog-editorial.mjs', 'check'], calls)
 
-    def test_schedule_has_exact_dates(self):
-        days = installer.schedule(CONFIG)
-        self.assertEqual([d['Day'] for d in days], list(range(11, 18)))
-        self.assertTrue(all(d['Hour'] == 7 and d['Minute'] == 0 and d['Month'] == 11 for d in days))
+    def test_schedule_runs_every_day_at_seven(self):
+        self.assertEqual(installer.schedule(CONFIG), {'Hour': 7, 'Minute': 0})
 
 
 if __name__ == '__main__':

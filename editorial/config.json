@@ -1,15 +1,13 @@
 {
   "version": 1,
   "audience": "JEE Main",
-  "subjects": ["physics", "chemistry", "maths"],
+  "subjects": [
+    "physics",
+    "chemistry",
+    "maths"
+  ],
   "timezone": "Asia/Kolkata",
   "startTime": "07:00",
-  "trial": {
-    "enabled": true,
-    "startDate": "2026-11-11",
-    "endDate": "2026-11-17",
-    "maxArticlesPerSubjectPerDay": 1
-  },
   "legacyWorkflowEnabled": false,
   "figma": {
     "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
@@ -22,5 +20,10 @@
     "if-forces-are-equal-why-do-things-move",
     "where-does-sugar-go-when-it-dissolves",
     "why-does-dividing-by-a-half-make-the-answer-bigger"
-  ]
+  ],
+  "schedule": {
+    "enabled": true,
+    "startDate": "2026-11-11",
+    "maxArticlesPerSubjectPerDay": 1
+  }
 }

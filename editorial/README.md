@@ -1,10 +1,10 @@
-# PCM publishing trial
+# Daily PCM publishing
 
 The owner approved one Physics, Chemistry and Maths article per morning, starting
-at **07:00 Asia/Kolkata, 11–17 November 2026**. JEE Main is the primary audience.
+at **07:00 Asia/Kolkata every day**. JEE Main is the primary audience.
 Publication finishes after research and verification; 07:00 is the start time,
-not a promise that all three articles are live at that minute. The trial does not
-continue without a new owner decision.
+not a promise that all three articles are live at that minute. Publishing continues until the owner pauses or changes the schedule. Seven
+days is the rolling Figma retention window, not a publication end date.
 
 Invoke `$padho-blog-publish` with the daily mode. Its
 [daily workflow](../skills/padho-blog-publish/references/daily.md) is the editorial
@@ -30,7 +30,7 @@ and factual accuracy take priority over filling a quota.
 
 The memory approach borrows the useful pattern from
 [Anthropic's dreaming example](https://platform.claude.com/cookbook/managed-agents-cma-dreaming-with-a-dynamic-workflow):
-future runs read compact, maintained lessons from earlier work. For this trial,
+future runs read compact, maintained lessons from earlier work. For this workflow,
 Git-versioned records supply the evidence. No Claude API service or transcript
 export is required.
 
@@ -54,9 +54,9 @@ retained for review and are not retried in a loop.
 npm run blog:daily:status
 npm run blog:daily:check
 python3 scripts/daily-blog-run.py --check --at 2026-11-11T07:00:00+05:30
-python3 scripts/install-daily-blog.py            # print the exact seven-date schedule
+python3 scripts/install-daily-blog.py            # print the daily schedule
 python3 scripts/install-daily-blog.py --install  # install/load; does not run it now
-python3 scripts/install-daily-blog.py --remove   # remove only this trial schedule
+python3 scripts/install-daily-blog.py --remove   # remove only this PCM schedule
 ```
 
 Local logs: `~/Library/Logs/PadhoBlogTrial/` and `.daily-blog/pcm/`. Agent event
@@ -66,7 +66,7 @@ the skill. Do not delete the attempt marker just to create another set of posts.
 
 The old marketing-agent generation/PR commands are disabled by
 `legacyWorkflowEnabled: false`. The old SES review email workflow is manual-only.
-No messages or emails are part of this trial.
+No messages or emails are part of daily publishing.
 
 ## Checks
 
@@ -80,5 +80,6 @@ and rendered pages. The publisher runs it before uploading any object.
 `npm run test:daily` checks date, timezone, retry and scheduler boundaries.
 Run `npm run build`, `npm run check:search` and live checks for every release.
 
-At the trial's end, `trial-review.md` records actual output, gaps, corrections and
-owner feedback. Continue only after the owner decides.
+`trial-review.md` retains the historical 11–17 November review. The owner
+corrected the stop-date misunderstanding on 19 November; daily publishing now
+continues, with prepared batches retained whenever release authentication fails.

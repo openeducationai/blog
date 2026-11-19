@@ -1,0 +1,70 @@
+---
+title: "Why does mgh fail far above Earth?"
+description: "Follow the changing gravitational pull as a mass rises, then calculate energy using distance from Earth’s centre."
+category: "physics"
+author: "padho"
+pubDate: "2026-11-19T10:17:18+05:30"
+heroImage: "../../assets/articles/gravitational-energy-distance.png"
+heroImageAlt: "Earth’s centre, surface and a point at height 2R show why the final centre-distance is 3R."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**A mass m is moved from Earth’s surface to a height 2R above it. Earth’s radius is R and its surface gravitational acceleration is g. What is the increase in gravitational potential energy?**
+
+Adapted from [JEE Main, 5 April 2026 Shift 2 Q32](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf#page=13), question ID 691121482. We’ll follow one small payload moving away from a spherical Earth. Ignore Earth’s rotation and other bodies. You need fractions and the idea that energy can change between potential and kinetic forms.
+
+## A long climb does not have a constant weight
+
+Near the ground, lifting a payload through a height h increases its gravitational potential energy by approximately mgh. Here m is the payload’s mass and g is the gravitational acceleration near the surface. This works because the pull hardly changes over a small height.
+
+But the opening question takes the payload much farther away. As we saw when looking at [gravity above Earth](/blog/how-does-gravity-change-above-and-below-earth/), the pull becomes weaker as the distance from Earth’s centre grows. Using the surface value of mg for the whole climb would overestimate the work needed.
+
+Keep two distances separate. R is Earth’s radius. A height h is measured from the surface, so the distance from the centre is r = R + h. For the opening journey, mark the starting and finishing distances before doing any energy calculation.
+
+<ArticleDiagram kind="gravityEnergy">The payload begins at r = R. A height of 2R above the surface puts it at r = 3R from the centre. The orange length is the height; the full centre-to-payload distance includes Earth’s radius.</ArticleDiagram>
+
+## Choose a useful zero for energy
+
+Gravitational potential energy belongs to the Earth–payload pair. We choose its value to be zero when the two are infinitely far apart. With this choice, the [energy at a centre-distance r](https://openstax.org/books/university-physics-volume-1/pages/13-3-gravitational-potential-energy-and-total-energy) is U = −GMm/r. G is the gravitational constant and M is Earth’s mass. This expression applies outside a spherical Earth.
+
+The minus sign follows from the chosen zero. Separating the two masses requires energy, so a pair at a finite distance has less potential energy than the infinitely separated pair. As the payload rises, U becomes less negative. That is an increase: −3 is greater than −9.
+
+To find the change, subtract the starting energy from the finishing energy. For centre-distances r₁ and r₂, this gives ΔU = GMm(1/r₁ − 1/r₂). If r₂ is larger than r₁, the bracket is positive, as a climb requires.
+
+<KeyIdea id="gravity-energy-difference">Use the two centre-distances in U = −GMm/r. The increase is U₂ − U₁, including both minus signs.</KeyIdea>
+
+## Connect this expression with mgh
+
+At Earth’s surface, g = GM/R², so GM = gR². This substitution lets us answer a question that supplies g and R instead of G and M.
+
+For any height h above the surface, put r₁ = R and r₂ = R + h. Simplifying gives ΔU = mgRh/(R + h). When h is much smaller than R, the factor R/(R + h) is almost 1, and we recover mgh. For a large height, that factor matters.
+
+There is another useful check. As h grows without bound, the required increase approaches mgR. It does not grow without bound like mgh. The gravitational pull keeps weakening during the outward journey.
+
+## Follow the energy during a fall
+
+Now let the payload fall freely. With no air resistance or other energy transfer, its [total mechanical energy K + U stays constant](https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy). K = ½mv² is its kinetic energy. As U decreases, K increases by the same amount.
+
+This gives the speed without treating g as constant throughout the fall. Write the starting K + U and the finishing K + U, then set the totals equal.
+
+## Try the past questions
+
+**1. A 1 kg body starts from rest infinitely far from Earth and falls to its surface. Neglect air resistance. Find its speed and kinetic energy there, using R = 6400 km and g = 9.8 m/s².**
+
+Adapted from [JEE Main, 2 April 2026 Shift 2 Q31](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf#page=12), question ID 691121181. The starting rest condition and idealised fall are stated explicitly here.
+
+<details class="reading-check"><summary>Show hint</summary><p>At the starting point, both K and U are zero. At the surface, U = −mgR. Convert the radius to metres.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Energy conservation gives K − mgR = 0. Thus K = 1 × 9.8 × 6.4 × 10⁶ = <strong>6.272 × 10⁷ J</strong>. Then v = √(2K/m) = √(2gR) = <strong>11.2 km/s</strong>.</p><p>This is also the ideal escape speed at the surface: reversing the motion would let the body reach infinity with zero speed remaining.</p></details>
+
+**2. Return to the opening question: what is the potential-energy increase when mass m rises from the surface to height 2R?**
+
+<details class="reading-check"><summary>Show hint</summary><p>The finishing centre-distance is 3R. Use ΔU = GMm(1/R − 1/3R), then replace GM with gR².</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The change is ΔU = GMm × 2/(3R) = <strong>2mgR/3</strong>. It is positive and less than the mgh estimate, 2mgR, because the pull weakens as the payload rises.</p><p>This is the change in potential energy. Giving the payload an additional final speed would require additional kinetic energy as well.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 691121181 and 691121482.

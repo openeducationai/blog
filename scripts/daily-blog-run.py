@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the bounded PCM trial through the signed-in local Codex CLI."""
+"""Run the daily PCM publication through the signed-in local Codex CLI."""
 import argparse
 from datetime import datetime, time
 import fcntl
@@ -17,9 +17,9 @@ ROOT = Path(__file__).resolve().parents[1]
 def eligibility(config, now, completed=False, attempted=False):
     local = now.astimezone(ZoneInfo(config['timezone']))
     date = local.date().isoformat()
-    trial = config['trial']
-    if not trial['enabled'] or not trial['startDate'] <= date <= trial['endDate']:
-        return False, 'outside_trial'
+    schedule = config['schedule']
+    if not schedule['enabled'] or date < schedule['startDate']:
+        return False, 'schedule_disabled_or_before_start'
     if local.time() < time.fromisoformat(config['startTime']):
         return False, 'before_start_time'
     if local.hour >= 12:
@@ -80,7 +80,7 @@ def run(args):
     attempt_path = scratch / f'{date}.json'
     eligible, reason = eligibility(config, now, run_record.get('status') == 'published', attempt_path.exists())
     plan = {'date': date, 'eligible': eligible, 'reason': reason, 'startTime': config['startTime'],
-            'timezone': config['timezone'], 'trial': config['trial'], 'cwd': str(ROOT),
+            'timezone': config['timezone'], 'schedule': config['schedule'], 'cwd': str(ROOT),
             'figma': config['figma']['url']}
     if args.check or not eligible:
         print(json.dumps(plan, indent=2))

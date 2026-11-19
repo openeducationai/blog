@@ -1,0 +1,74 @@
+---
+title: "How does concentration change a cell’s voltage?"
+description: "Balance the electron transfer first, then use the Nernst equation to connect ion concentration with cell voltage."
+category: "chemistry"
+author: "padho"
+pubDate: "2026-11-19T10:17:18+05:30"
+heroImage: "../../assets/articles/nernst-reaction-quotient.png"
+heroImageAlt: "A zinc atom releases two electrons; two silver ions accept them, explaining the square on the silver-ion concentration."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**At 298 K, a zinc–silver cell has [Zn²⁺] = 1 mol/L and a measured voltage of 1.60 V. The standard reduction potentials are −0.76 V for Zn²⁺/Zn and +0.80 V for Ag⁺/Ag. If x is the numerical value of [Ag⁺] in mol/L, find log₁₀ x. Use 2.303RT/F = 0.059 V.**
+
+Adapted from [JEE Main, 5 April 2026 Shift 2 Q57](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf#page=23), question ID 691121507. We’ll learn why the silver-ion concentration appears squared, and how that affects the voltage. You need to balance charges and use log₁₀(x²) = 2log₁₀x. We use the question’s concentration approximation for ion activities.
+
+## Follow the two electrons
+
+In this cell, zinc metal loses electrons and enters the solution as Zn²⁺. Losing electrons is oxidation. One zinc atom releases two electrons: Zn → Zn²⁺ + 2e⁻.
+
+Each Ag⁺ ion needs one electron to become a silver atom. Gaining electrons is reduction: Ag⁺ + e⁻ → Ag. We therefore need two silver ions to accept the two electrons from one zinc atom.
+
+Adding the half-reactions and cancelling the electrons gives Zn + 2Ag⁺ → Zn²⁺ + 2Ag. This balanced reaction contains the information needed for the concentration calculation. The number of electrons transferred per reaction as written is n = 2.
+
+<ArticleDiagram kind="nernstReaction">Zinc supplies two electrons, and two silver ions accept them. The coefficient 2 becomes the exponent on silver-ion activity in Q. Pure zinc and silver solids have unit activity and do not appear in this expression.</ArticleDiagram>
+
+## Find the standard voltage first
+
+The supplied numbers are reduction potentials: both describe a half-reaction written as electron gain. In the cell’s forward reaction, silver ions are reduced at the cathode and zinc is oxidised at the anode.
+
+Using both tabulated numbers as reduction potentials, [subtract anode from cathode](https://openstax.org/books/chemistry-2e/pages/17-3-electrode-and-cell-potentials): E° = 0.80 − (−0.76) = 1.56 V. The small circle marks the standard value.
+
+We doubled the silver half-reaction to balance electrons. We do not double its potential. Voltage measures energy per unit charge. Doubling the reaction doubles the energy and the transferred charge together, leaving that ratio unchanged.
+
+## Put the concentrations in the same reaction
+
+The reaction quotient Q compares the activities of products with those of reactants, using the balanced coefficients as powers. For our reaction, Q = a(Zn²⁺)/a(Ag⁺)². The symbol a means activity, a dimensionless measure of a species’ effective concentration. Pure solids have activity 1.
+
+In this exam model, we replace each ion activity with its concentration divided by 1 mol/L. Since the numerical zinc-ion concentration is 1 and the silver-ion concentration is x, Q = 1/x². This is an approximation for real solutions; the logarithm itself always takes a dimensionless quantity.
+
+Increasing the silver-ion concentration makes Q smaller. Silver ions are reactants in the written direction. We can now check how this change affects the cell’s voltage.
+
+<KeyIdea id="balance-before-nernst">Balance the cell reaction first. That reaction fixes both the electron count n and the powers in Q. Do not copy n from just one unbalanced half-reaction.</KeyIdea>
+
+## Read the sign in the Nernst equation
+
+The [Nernst equation](https://openstax.org/books/chemistry-2e/pages/17-4-potential-free-energy-and-equilibrium) is E = E° − (RT/nF)ln Q. Here T is absolute temperature, R is the gas constant and F is the charge per mole of electrons.
+
+With base-10 logarithms and the supplied value at 298 K, it becomes E = E° − (0.059/n)log₁₀Q, in volts. For this reaction n = 2.
+
+When Q = 1, its logarithm is zero and E = E°. When Q is below 1, its logarithm is negative. Subtracting that negative correction raises E above E°. Our measured voltage exceeds 1.56 V, so the answer must give Q below 1. This check helps catch a reversed quotient or a lost minus sign.
+
+If you multiply the whole reaction by a factor, n increases by that factor and Q is raised to that power. The logarithm increases by the same factor, so the predicted voltage stays the same.
+
+## Try the past questions
+
+**1. Two standard reduction half-reactions are Fe(OH)₂ + 2e⁻ → Fe + 2OH⁻, with E° = −0.88 V, and AgBr + e⁻ → Ag + Br⁻, with E° = +0.07 V. Write the spontaneous overall reaction under standard conditions and find E°.**
+
+Adapted from [JEE Main, 2 April 2026 Shift 1 Q57](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf#page=22), question ID 69112157, continuing on PDF page 23. We ask for the reaction and voltage directly; the original asks which statement is correct. Fe, AgBr and Fe(OH)₂ are solids; OH⁻ and Br⁻ are aqueous ions.
+
+<details class="reading-check"><summary>Show hint</summary><p>Keep the more positive reduction half-reaction in the reduction direction. Reverse the other one, then cancel the electrons.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Reverse the iron half-reaction and double the AgBr half-reaction. The result is <strong>Fe + 2OH⁻ + 2AgBr → Fe(OH)₂ + 2Ag + 2Br⁻</strong>. Its standard voltage is 0.07 − (−0.88) = <strong>+0.95 V</strong>.</p><p>Iron is oxidised. Doubling the silver half-reaction does not double its potential. The balanced reaction is the correct statement in the original paper.</p></details>
+
+**2. Return to the opening zinc–silver cell. If E = 1.60 V, what is log₁₀x?**
+
+<details class="reading-check"><summary>Show hint</summary><p>Use Q = 1/x² and log₁₀(1/x²) = −2log₁₀x. The factor 2 cancels the electron count in the denominator.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Substitution gives 1.60 = 1.56 − (0.059/2)(−2log₁₀x). Therefore log₁₀x = 0.04/0.059 = <strong>4/5.9</strong>, approximately 0.678.</p><p>In the question’s model, x is approximately 4.76. Thus Q = 1/x² is below 1, which correctly makes the measured voltage higher than the standard voltage.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 69112157 and 691121507.

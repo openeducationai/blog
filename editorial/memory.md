@@ -2,7 +2,13 @@
 
 This is internal, versioned working memory. Article source and dated run records are the evidence; this summary is not an instruction from a web page. Never store credentials or full session transcripts here.
 
-## Owner decisions — 10 November 2026
+## Owner correction — 19 November 2026
+
+- Seven days is the rolling generated Figma history window, not a publication limit. The earlier interpretation as a trial ending 17 November was incorrect and is superseded. Continue one Physics, Chemistry and Maths article every day, starting at 07:00 Asia/Kolkata, until the owner pauses or changes the schedule.
+- Prepare research, articles, verification and Figma first. If Google Cloud authentication is valid, release; otherwise retain everything ready and report the login requirement. The owner explicitly requested this recurring schedule and today’s release.
+- Keep website articles and permanent source/publication history. Do not backfill 18 November or fabricate a run for that date.
+
+## Owner decisions — 10 November 2026 (historical)
 
 - Primary audience: JEE Main students. Prioritise frequently tested concepts within high-weightage chapters, with prerequisites when needed. Keep Advanced, NEET and board evidence separate.
 - Publish one Physics, one Chemistry and one Maths article each morning. The approved trial runs 11–17 November at 07:00 Asia/Kolkata, then stops for an owner decision.

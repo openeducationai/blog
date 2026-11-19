@@ -1,12 +1,12 @@
-# Daily PCM publication — seven-day trial
+# Daily PCM publication
 
 Use this mode only for the requested daily run or an explicitly requested queue/research task. A routine article edit uses SKILL.md's normal workflow. Start by reading `editorial/config.json`, `editorial/memory.md`, `editorial/history.json`, `editorial/queue.json`, `editorial/figma-pages.json` and the current dated run record if one exists.
 
 ## Scope and stopping condition
 
-The owner approved three researched student articles daily (one Physics, Chemistry, Maths), a rolling Figma review file, scoped deployment and main synchronization. The trial is 11–17 November 2026, starts each morning at 07:00 Asia/Kolkata, and must not continue without a new owner decision. Read the actual clock and config; do not backdate posts or make up missed days. Stop if the date is outside the enabled trial. The local Mac must be awake, online, signed in and have usable Git, GCP and Figma access. Check each service when its stage needs it. An unavailable deployment credential blocks publishing only; continue research, writing, validation and the Figma review. An unavailable Figma credential blocks that copy only; preserve verified source and record the incomplete stage. Never bypass access controls.
+The owner approved three researched student articles daily (one Physics, Chemistry, Maths), a rolling Figma review file, scoped deployment and main synchronization. The ongoing schedule starts each morning at 07:00 Asia/Kolkata. The owner clarified on 19 November 2026 that seven days applies to rolling Figma history, not publishing duration. Continue daily until the owner pauses or changes the schedule. Read the actual clock and config; do not backdate posts or make up missed days. Stop scheduled runs when disabled or before the start date. The local Mac must be awake, online, signed in and have usable Git, GCP and Figma access. Check each service when its stage needs it. An unavailable deployment credential blocks publishing only; continue research, writing, validation and the Figma review. An unavailable Figma credential blocks that copy only; preserve verified source and record the incomplete stage. Never bypass access controls.
 
-The scheduled runner uses the existing main checkout, a process lock and one attempt per date. Never run the old SES/PR workflow, send mail, create branches/worktrees/clones, change root marketing files or extend the trial. Preserve dirty work; if its ownership is unclear, stop and report instead of stashing/resetting it. Do not replace a failed article with filler to satisfy the cadence.
+The scheduled runner uses the existing main checkout, a process lock and one attempt per date. Never run the old SES/PR workflow, send mail, create branches/worktrees/clones, change root marketing files or change the approved cadence. Preserve dirty work; if its ownership is unclear, stop and report instead of stashing/resetting it. Do not replace a failed article with filler to satisfy the cadence.
 
 ## Research and select
 
@@ -96,6 +96,6 @@ Re-read Figma comments before each run when an available supported tool exposes 
 
 After successful creation and verification, plan retention with `node scripts/blog-editorial.mjs prune-figma YYYY-MM-DD`. Delete only registered generated pages whose dates are before the start of the latest seven calendar dates. Match the configured file key and recorded page ID/name again before deleting. Update `removedPages` with the deletion date; preserve article history and feedback. Never delete a file, unregistered page, Core Views screen, design-system component or website article.
 
-## Trial review
+## Ongoing review
 
-On the final trial run, report all 21 article URLs actually published (or exact gaps), any repeats or corrections, research provenance, readability feedback and deployment/Figma failures. Distinguish observations from hypotheses. The runner stops after 17 November; do not extend it or schedule continued work automatically. The owner decides after reviewing the week's quality.
+Keep dated run outcomes and permanent article history. The 11–17 November review is historical evidence, not a stop condition. Seven-day pruning applies only to registered generated Figma pages. Each morning prepare the complete source and Figma copies; release when Google Cloud authentication is valid, otherwise preserve the prepared batch for an authorised retry.

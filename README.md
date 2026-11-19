@@ -44,15 +44,16 @@ The root `robots.txt` source is `../fe/marketing-site/robots.txt`; it advertises
 
 The reusable skill is [Padho Blog Publisher](skills/padho-blog-publish/SKILL.md). Invoke it as `$padho-blog-publish`; it covers writing, existing design conventions, search checks, scoped deployment and committing/pushing approved blog changes on `main`.
 
-The [seven-day PCM trial](editorial/README.md) starts each morning at 07:00
-Asia/Kolkata on 11–17 November 2026. Versioned editorial history prevents
+The [daily PCM publishing schedule](editorial/README.md) starts each morning at 07:00
+Asia/Kolkata every day. Versioned editorial history prevents
 repeated learning objectives; researched briefs retain the evidence behind
 topic selection and PYQs. The dedicated
 [Blogs Figma file](https://www.figma.com/design/GsBNGG7jIMvsPyhP7w0zXK/Blogs)
 holds the rolling seven-day review copy. Website articles and history are
 permanent. `npm run check:editorial` runs before every publication. The local
-Mac scheduler invokes the signed-in Codex CLI and stops agent execution after
-the trial; it requires an awake, online Mac and usable credentials.
+Mac scheduler invokes the signed-in Codex CLI daily; it requires an awake,
+online Mac and usable authoring credentials. Release follows preparation when
+Google Cloud authentication is valid. Seven days limits Figma retention only.
 
 ## Hosting
 
@@ -68,7 +69,7 @@ The publisher builds first, uploads assets before HTML, checks object generation
 
 The marketing repo's legacy deploy script must exclude `^blog(/.*)?$` from its root mirror. Do not use a root bucket mirror to publish this blog.
 
-The existing `cloudbuild.yaml` still builds the legacy container image; that is not an apex deployment. Use the command above for the static site. The PCM trial invokes this same scoped publisher after its content, editorial and search checks.
+The existing `cloudbuild.yaml` still builds the legacy container image; that is not an apex deployment. Use the command above for the static site. Daily PCM publishing invokes this same scoped publisher after its content, editorial and search checks.
 
 ## Legacy URL cutover
 

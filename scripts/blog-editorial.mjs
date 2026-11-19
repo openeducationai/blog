@@ -20,8 +20,8 @@ export function localDate(now = new Date(), timezone = 'Asia/Kolkata') {
   return `${parts.year}-${parts.month}-${parts.day}`;
 }
 
-export function trialEligible(config, date) {
-  return config.trial.enabled && date >= config.trial.startDate && date <= config.trial.endDate;
+export function dailyEligible(config, date) {
+  return config.schedule.enabled && date >= config.schedule.startDate;
 }
 
 export function prunePlan(config, registry, date) {
@@ -178,7 +178,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     if (command === 'prune-figma') console.log(JSON.stringify(prunePlan(state.config, state.registry, date), null, 2));
     else if (command === 'status') {
       const runPath = path.join(ROOT, `editorial/runs/${date}.json`);
-      console.log(JSON.stringify({ date, eligible: trialEligible(state.config, date), trial: state.config.trial,
+      console.log(JSON.stringify({ date, eligible: dailyEligible(state.config, date), schedule: state.config.schedule,
         history: state.history.articles.map(r => ({ slug: r.slug, conceptKey: r.conceptKey, status: r.status })),
         readyTopics: state.queue.topics.filter(t => t.status === 'ready'),
         run: fs.existsSync(runPath) ? readJSON(runPath) : null,

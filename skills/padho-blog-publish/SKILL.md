@@ -1,6 +1,6 @@
 ---
 name: padho-blog-publish
-description: "Research, write, verify and publish Padho blog articles, including the daily JEE Main PCM trial, publication history, PYQs, Figma review copies, search checks and main synchronization. Use for Padho blog publishing; textbook chapters and marketing-page redesigns have separate workflows."
+description: "Research, write, verify and publish Padho blog articles, including the daily JEE Main PCM publishing, publication history, PYQs, Figma review copies, search checks and main synchronization. Use for Padho blog publishing; textbook chapters and marketing-page redesigns have separate workflows."
 ---
 
 # Padho Blog Publish
@@ -9,7 +9,7 @@ Publish the requested article or article edits through the existing Astro blog. 
 
 ## Choose the mode
 
-For the daily three-subject trial, queue research, publication memory or rolling Figma review, read [daily.md](references/daily.md). The approved trial is 11–17 November 2026, starting at 07:00 Asia/Kolkata; it stops afterward. The daily mode includes exact target-question setup, verified PYQs, duplicate checks and dated run records. A routine one-off article or edit follows this file and does not create a schedule.
+For daily three-subject publishing, queue research, publication memory or rolling Figma review, read [daily.md](references/daily.md). The approved schedule starts every day at 07:00 Asia/Kolkata and continues until the owner pauses or changes it. Seven days is the rolling Figma review retention window, not a publication stop date. The daily mode includes exact target-question setup, verified PYQs, duplicate checks and dated run records. A routine one-off article or edit follows this file and does not create a schedule.
 
 ## Source and scope
 
@@ -17,7 +17,7 @@ For the daily three-subject trial, queue research, publication memory or rolling
 - Work in the existing `main` checkout. Preserve unrelated work. The owner wants approved blog changes committed and pushed to `origin/main`; never force-push or create another branch/worktree for this workflow.
 - `src/content/blog/` contains the source articles; `src/assets/articles/` contains their illustrations. Figma is a design reference, not the content database.
 - A request to publish authorizes the necessary article edits, validation, scoped blog deployment, commit and push. Honor draft-only or review-only requests without publishing. Reuse existing session authorization rather than adding another approval step.
-- Do not infer a daily schedule, create extra articles, prune Figma, add analytics services, or enable Bing/IndexNow from a routine publication request. The explicitly approved daily trial and Figma scope are recorded in daily.md and editorial/config.json. Bing setup remains deferred.
+- Do not infer a daily schedule, create extra articles, prune Figma, add analytics services, or enable Bing/IndexNow from a routine publication request. The explicitly approved daily schedule and Figma scope are recorded in daily.md and editorial/config.json. Bing setup remains deferred.
 - The owner currently handles Google Search Console in another app. Supply exact URLs and any remaining indexing actions; only operate Search Console when subsequently requested and a supported connected surface is available.
 
 ## Write for the student

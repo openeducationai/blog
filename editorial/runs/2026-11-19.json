@@ -1,0 +1,232 @@
+{
+  "date": "2026-11-19",
+  "status": "partial",
+  "startedAt": "2026-11-19T10:09:54+05:30",
+  "articleSlugs": [
+    "why-does-mgh-fail-far-above-earth",
+    "how-does-concentration-change-a-cells-voltage",
+    "how-do-you-find-an-arithmetic-progression-from-its-sum"
+  ],
+  "stages": {
+    "research": {
+      "status": "complete",
+      "completedAt": "2026-11-19T10:15:20+05:30",
+      "briefs": [
+        "editorial/research/2026-11-19-physics.json",
+        "editorial/research/2026-11-19-chemistry.json",
+        "editorial/research/2026-11-19-maths.json"
+      ],
+      "evidence": "Six original NTA questions visually checked and independently solved against exact final-key IDs; all history concepts and selected PYQs checked for duplication."
+    },
+    "writing": {
+      "status": "complete",
+      "completedAt": "2026-11-19T10:17:18+05:30",
+      "evidence": "Three complete student articles with opening target, connected teaching sequence, assumptions, source links and two adapted PYQs with hints and worked solutions."
+    },
+    "validation": {
+      "status": "complete",
+      "completedAt": "2026-11-19T10:29:45+05:30",
+      "checks": {
+        "typecheck": "passed",
+        "unitTests": 39,
+        "runnerTests": 6,
+        "build": "passed",
+        "localSearch": "passed",
+        "analytics": "passed",
+        "browserViewports": 6,
+        "skillValidation": "passed"
+      },
+      "evidenceDirectory": "/private/tmp/padho-blog-2026-11-19-browser"
+    },
+    "figma": {
+      "status": "complete",
+      "completedAt": "2026-11-19T10:29:45+05:30",
+      "pageId": "105:302",
+      "frames": [
+        {
+          "id": "107:632",
+          "slug": "why-does-mgh-fail-far-above-earth",
+          "width": 1440,
+          "height": 5142,
+          "columnId": "107:794",
+          "bodyId": "107:800",
+          "coverId": "107:799",
+          "textNodes": 46,
+          "figureIds": [
+            "107:817"
+          ],
+          "solutionIds": [
+            "107:869",
+            "107:876",
+            "107:885",
+            "107:892"
+          ]
+        },
+        {
+          "id": "107:900",
+          "slug": "why-does-mgh-fail-far-above-earth",
+          "width": 390,
+          "height": 6187,
+          "columnId": "107:1058",
+          "bodyId": "107:1064",
+          "coverId": "107:1063",
+          "textNodes": 46,
+          "figureIds": [
+            "107:1081"
+          ],
+          "solutionIds": [
+            "107:1133",
+            "107:1140",
+            "107:1149",
+            "107:1156"
+          ]
+        },
+        {
+          "id": "107:1164",
+          "slug": "how-does-concentration-change-a-cells-voltage",
+          "width": 1440,
+          "height": 5339,
+          "columnId": "107:1326",
+          "bodyId": "107:1332",
+          "coverId": "107:1331",
+          "textNodes": 49,
+          "figureIds": [
+            "107:1349"
+          ],
+          "solutionIds": [
+            "107:1400",
+            "107:1407",
+            "107:1416",
+            "107:1423"
+          ]
+        },
+        {
+          "id": "107:1431",
+          "slug": "how-does-concentration-change-a-cells-voltage",
+          "width": 390,
+          "height": 6679,
+          "columnId": "107:1589",
+          "bodyId": "107:1595",
+          "coverId": "107:1594",
+          "textNodes": 49,
+          "figureIds": [
+            "107:1612"
+          ],
+          "solutionIds": [
+            "107:1663",
+            "107:1670",
+            "107:1679",
+            "107:1686"
+          ]
+        },
+        {
+          "id": "107:1694",
+          "slug": "how-do-you-find-an-arithmetic-progression-from-its-sum",
+          "width": 1440,
+          "height": 5198,
+          "columnId": "107:1856",
+          "bodyId": "107:1862",
+          "coverId": "107:1861",
+          "textNodes": 53,
+          "figureIds": [
+            "107:1879"
+          ],
+          "solutionIds": [
+            "107:1946",
+            "107:1953",
+            "107:1962",
+            "107:1969"
+          ]
+        },
+        {
+          "id": "107:1977",
+          "slug": "how-do-you-find-an-arithmetic-progression-from-its-sum",
+          "width": 390,
+          "height": 6141,
+          "columnId": "107:2135",
+          "bodyId": "107:2141",
+          "coverId": "107:2140",
+          "textNodes": 53,
+          "figureIds": [
+            "107:2158"
+          ],
+          "solutionIds": [
+            "107:2225",
+            "107:2232",
+            "107:2241",
+            "107:2248"
+          ]
+        }
+      ],
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          35,
+          37,
+          37
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "coverFit": "FIT; discrete cover assets only",
+        "comments": "Supported get_comments returned no comments; archived in dated run before retention."
+      },
+      "removedPageIds": [
+        "27:306",
+        "51:202"
+      ],
+      "preservedComponentIds": [
+        "27:202",
+        "27:219",
+        "27:256",
+        "27:267"
+      ]
+    },
+    "git": {
+      "status": "pending"
+    },
+    "publication": {
+      "status": "pending"
+    },
+    "liveVerification": {
+      "status": "pending"
+    }
+  },
+  "preflight": {
+    "branch": "main",
+    "clean": true,
+    "existingDateArticles": 0
+  },
+  "ownerCorrection": "Ongoing daily 07:00 IST preparation and conditional release; seven-day Figma retention only.",
+  "resume": {
+    "nextStage": "git",
+    "reuseExistingArticles": true
+  },
+  "lastCheckpointAt": "2026-11-19T10:29:45+05:30",
+  "schedule": {
+    "status": "installed",
+    "label": "ai.padho.blog-pcm-trial",
+    "calendar": {
+      "Hour": 7,
+      "Minute": 0
+    },
+    "timezone": "Asia/Kolkata",
+    "endDate": null,
+    "checks": "6 Python runner and 8 editorial tests passed; 20 November eligibility passed; launchctl confirms daily trigger."
+  },
+  "figmaSessionId": "857183ef-d8e7-45e0-9a28-afe4479e48be",
+  "figmaFeedback": {
+    "checkedAt": "2026-11-19T10:15:20+05:30",
+    "comments": [],
+    "evidence": "Supported Figma get_comments returned no comments."
+  }
+}

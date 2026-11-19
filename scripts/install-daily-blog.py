@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Install the explicitly authorised seven-morning local launchd schedule."""
+"""Install the authorised daily local launchd schedule."""
 import argparse
-from datetime import date, datetime, timedelta
+from datetime import datetime
 import json
 import os
 from pathlib import Path
@@ -16,12 +16,8 @@ LABEL = 'ai.padho.blog-pcm-trial'
 
 
 def schedule(config):
-    start, end = (date.fromisoformat(config['trial'][key]) for key in ('startDate', 'endDate'))
-    if (end - start).days != 6:
-        raise ValueError('This installer is scoped to the approved seven-day trial')
     hour, minute = map(int, config['startTime'].split(':'))
-    return [{'Month': d.month, 'Day': d.day, 'Hour': hour, 'Minute': minute}
-            for d in (start + timedelta(days=n) for n in range(7))]
+    return {'Hour': hour, 'Minute': minute}
 
 
 def main():
@@ -82,7 +78,7 @@ def main():
     subprocess.run(['plutil', '-lint', str(target)], check=True)
     subprocess.run(['launchctl', 'bootstrap', domain, str(target)], check=True)
     subprocess.run(['launchctl', 'print', service], check=True)
-    print(f'Installed seven-morning trial: {target}')
+    print(f'Installed daily PCM schedule: {target}')
 
 
 if __name__ == '__main__':

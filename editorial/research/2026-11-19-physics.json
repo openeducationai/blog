@@ -1,0 +1,70 @@
+{
+  "id": "gravitational-energy-large-heights",
+  "researchedAt": "2026-11-19T10:15:20+05:30",
+  "category": "physics",
+  "conceptKey": "physics/gravitation/potential-energy-large-separations",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; official homepage and syllabus checked 19 November 2026",
+    "scope": "Physics Unit 6: gravitational potential energy and escape velocity; Unit 4: conservation of mechanical energy."
+  },
+  "corpus": {
+    "papersExamined": 7,
+    "coverageNotes": "Targeted scans of 2 April both shifts, 4 April both shifts, 5 April both shifts and selected 6 April Shift 2 questions. Today expanded to 5 April Shift 2 and re-examined selected originals in earlier papers. Not a five-year census or exhaustive topic-frequency analysis.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two inspected official questions and final-key matches support a distinct, useful misconception and prerequisite objective. No measured weightage or prediction claimed."
+  },
+  "sources": [
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/13-3-gravitational-potential-energy-and-total-energy"
+    },
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy"
+    },
+    {
+      "title": "NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121482",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "5 April 2026 Shift 2, Q32, PDF page 13",
+      "answer": "2mgR/3",
+      "correctOptionId": "6911211643",
+      "verifiedAt": "2026-11-19T10:15:20+05:30",
+      "adapted": true,
+      "independentSolution": "Initial radius R; final radius 3R. ΔU=GMm(1/R−1/3R)=2GMm/(3R)=2mgR/3. Positive and below mg(2R). For h≪R the exact expression mgRh/(R+h) reduces to mgh; as h→∞ it approaches mgR.",
+      "sourceSha256": "876efb4250b5d8e096f28bb48d9078e39f25f1ad70473701e5c13523716588d4"
+    },
+    {
+      "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121181",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift 2, Q31, PDF page 12",
+      "answer": "v ≈ 11.2 km/s; K ≈ 6.27 × 10⁷ J",
+      "correctOptionId": "691121616",
+      "verifiedAt": "2026-11-19T10:15:20+05:30",
+      "adapted": true,
+      "independentSolution": "Explicitly start from rest at infinity and neglect atmosphere/rotation. Initial total energy zero; K=GMm/R=mgR=1×9.8×6.4e6=6.272e7 J. v=√(2gR)=11199.999... m/s. Other celestial bodies and Earth recoil ignored.",
+      "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121482",
+  "targetQuestionText": "A mass m is moved from Earth’s surface to a height 2R above it. Earth’s radius is R and its surface gravitational acceleration is g. What is the increase in gravitational potential energy?",
+  "verificationNotes": "Original pages visually inspected, exact final-key IDs checked, solutions independently worked. Adapted statements explicitly identify modelling assumptions; no invented question is labelled a PYQ."
+}

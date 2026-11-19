@@ -1313,6 +1313,171 @@
         "notes": "Agent review: read full drafts in order and checked each paragraph for plain-language meaning and connected reasoning. Independently solved all six PYQs against original pages and exact final-key IDs. Checked charge sign, units, t=0 limit, nonrelativistic assumptions, pi phases, oxygen occupancies, and a parametric solution for the linear system. Disclosed alpha nonzero requirement. All six real-app 1440/390 views passed keyboard disclosures, complete targets, readable figures, static no-JS content and reduced motion. Top, figure and final-solution screenshots inspected for all six; no clipping or overflow found. No human review claimed."
       },
       "releaseVerifiedAt": "2026-11-17T07:31:01+05:30"
+    },
+    {
+      "slug": "why-does-mgh-fail-far-above-earth",
+      "title": "Why does mgh fail far above Earth?",
+      "category": "physics",
+      "chapter": "gravitation",
+      "conceptKey": "physics/gravitation/potential-energy-large-separations",
+      "learningObjective": "Use changes in −GMm/r and energy conservation when gravity varies with distance.",
+      "example": "Lift one small payload from the surface to a height twice Earth’s radius, then follow its fall in the reverse direction.",
+      "publishedAt": "2026-11-19T10:17:18+05:30",
+      "briefPath": "editorial/research/2026-11-19-physics.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121482",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "5 April 2026 Shift 2, Q32, PDF page 13",
+          "answer": "2mgR/3",
+          "correctOptionId": "6911211643",
+          "verifiedAt": "2026-11-19T10:15:20+05:30",
+          "adapted": true,
+          "independentSolution": "Initial radius R; final radius 3R. ΔU=GMm(1/R−1/3R)=2GMm/(3R)=2mgR/3. Positive and below mg(2R). For h≪R the exact expression mgRh/(R+h) reduces to mgh; as h→∞ it approaches mgR.",
+          "sourceSha256": "876efb4250b5d8e096f28bb48d9078e39f25f1ad70473701e5c13523716588d4"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121181",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift 2, Q31, PDF page 12",
+          "answer": "v ≈ 11.2 km/s; K ≈ 6.27 × 10⁷ J",
+          "correctOptionId": "691121616",
+          "verifiedAt": "2026-11-19T10:15:20+05:30",
+          "adapted": true,
+          "independentSolution": "Explicitly start from rest at infinity and neglect atmosphere/rotation. Initial total energy zero; K=GMm/R=mgR=1×9.8×6.4e6=6.272e7 J. v=√(2gR)=11199.999... m/s. Other celestial bodies and Earth recoil ignored.",
+          "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+        }
+      ],
+      "targetQuestionId": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121482",
+      "sourcePath": "src/content/blog/why-does-mgh-fail-far-above-earth.mdx",
+      "sourceSha256": "1bec464f17ec41679c9423535dc34a03954ba88d5919a8ab86e621261dd4c896",
+      "url": "https://padho.ai/blog/why-does-mgh-fail-far-above-earth/",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionText": "A mass m is moved from Earth’s surface to a height 2R above it. Earth’s radius is R and its surface gravitational acceleration is g. What is the increase in gravitational potential energy?",
+      "review": {
+        "sourceSha256": "1bec464f17ec41679c9423535dc34a03954ba88d5919a8ab86e621261dd4c896",
+        "reviewedAt": "2026-11-19T10:29:45+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Full science, readability and independently solved PYQ review passed; real Astro browser at 1440/390 passed overflow, fonts, image, keyboard-disclosure, no-JS and reduced-motion checks. Covers, figures and worked solutions inspected; six editable Figma compositions also inspected."
+      }
+    },
+    {
+      "slug": "how-does-concentration-change-a-cells-voltage",
+      "title": "How does concentration change a cell’s voltage?",
+      "category": "chemistry",
+      "chapter": "redox-reactions-and-electrochemistry",
+      "conceptKey": "chemistry/electrochemistry/balanced-reaction-nernst-quotient",
+      "learningObjective": "Derive n and Q from the balanced cell reaction, then use the sign of the Nernst correction to check concentration calculations.",
+      "example": "One zinc atom supplies the two electrons needed to turn two dissolved silver ions into silver metal.",
+      "publishedAt": "2026-11-19T10:17:18+05:30",
+      "briefPath": "editorial/research/2026-11-19-chemistry.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121507",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "5 April 2026 Shift 2, Q57, PDF page 23",
+          "answer": "log₁₀ x = 4/5.9 ≈ 0.678",
+          "correctOptionId": "6911211726",
+          "verifiedAt": "2026-11-19T10:15:20+05:30",
+          "adapted": true,
+          "independentSolution": "Zn+2Ag+→Zn2++2Ag, n=2, E°=0.80−(−0.76)=1.56 V. In the exam concentration approximation Q=1/x². E=1.56−0.059/2 log(1/x²)=1.56+0.059 log x. Thus log x=(1.60−1.56)/0.059=4/5.9, x≈4.764. Since E>E°, Q<1; consistent. Activities are dimensionless; concentration values stand for activities only under the question’s model.",
+          "sourceSha256": "876efb4250b5d8e096f28bb48d9078e39f25f1ad70473701e5c13523716588d4"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112157",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift 1, Q57, PDF page 22–23",
+          "answer": "Fe + 2OH⁻ + 2AgBr → Fe(OH)₂ + 2Ag + 2Br⁻; E° = +0.95 V",
+          "correctOptionId": "691121195",
+          "verifiedAt": "2026-11-19T10:15:20+05:30",
+          "adapted": true,
+          "independentSolution": "Compare standard reduction potentials +0.07 V and −0.88 V. Keep AgBr reduction; reverse the iron half-reaction. Double AgBr coefficients to cancel two electrons, without doubling its potential. E°=0.07−(−0.88)=0.95 V. Iron is oxidised and potential is intensive; correct original option is the balanced overall reaction.",
+          "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+        }
+      ],
+      "targetQuestionId": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121507",
+      "sourcePath": "src/content/blog/how-does-concentration-change-a-cells-voltage.mdx",
+      "sourceSha256": "74b78e1688204012be97422af51d006a98061ba7b2d97d5395a461c68bb4dc00",
+      "url": "https://padho.ai/blog/how-does-concentration-change-a-cells-voltage/",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionText": "At 298 K, a zinc–silver cell has [Zn²⁺] = 1 mol/L and a measured voltage of 1.60 V. The standard reduction potentials are −0.76 V for Zn²⁺/Zn and +0.80 V for Ag⁺/Ag. If x is the numerical value of [Ag⁺] in mol/L, find log₁₀ x. Use 2.303RT/F = 0.059 V.",
+      "review": {
+        "sourceSha256": "74b78e1688204012be97422af51d006a98061ba7b2d97d5395a461c68bb4dc00",
+        "reviewedAt": "2026-11-19T10:29:45+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Full science, readability and independently solved PYQ review passed; real Astro browser at 1440/390 passed overflow, fonts, image, keyboard-disclosure, no-JS and reduced-motion checks. Covers, figures and worked solutions inspected; six editable Figma compositions also inspected."
+      }
+    },
+    {
+      "slug": "how-do-you-find-an-arithmetic-progression-from-its-sum",
+      "title": "How do you find an arithmetic progression from its sum?",
+      "category": "maths",
+      "chapter": "sequence-and-series",
+      "conceptKey": "maths/sequence-and-series/arithmetic-progression-terms-from-sums",
+      "learningObjective": "Distinguish terms from partial sums and recover arithmetic-progression terms by subtracting successive totals; use endpoint pairing when only one total is known.",
+      "example": "Three rows with 3, 5 and 7 seats produce cumulative seat totals of 3, 8 and 15.",
+      "publishedAt": "2026-11-19T10:17:18+05:30",
+      "briefPath": "editorial/research/2026-11-19-maths.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278302",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "5 April 2026 Shift 1, Q2, PDF page 1–2",
+          "answer": "15220",
+          "correctOptionId": "6952781027",
+          "verifiedAt": "2026-11-19T10:15:20+05:30",
+          "adapted": true,
+          "independentSolution": "t_n=S_n−S_(n−1)=6n+2, valid also at n=1 since S0=0. Sum_(n=1)^10 (6n+2)² =36×385+24×55+4×10=15220. Direct sum of squares of 8,14,20,26,32,38,44,50,56,62 also yields 15220.",
+          "sourceSha256": "20a14808d521007d48289171297030a4ac18710abc180bb7e3b2d23e2a0a19fb"
+        },
+        {
+          "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278232",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift 1, Q7, PDF page 3",
+          "answer": "5/87",
+          "correctOptionId": "695278790",
+          "verifiedAt": "2026-11-19T10:15:20+05:30",
+          "adapted": true,
+          "independentSolution": "Let last term L. L³=30/2(10/3+L)=50+15L. Factor L³−15L−50=(L−5)(L²+5L+10). Quadratic discriminant 25−40<0; only real L=5. d=(5−10/3)/29=5/87. All 30 terms are positive, and the total 125 matches L³.",
+          "sourceSha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a"
+        }
+      ],
+      "targetQuestionId": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278302",
+      "sourcePath": "src/content/blog/how-do-you-find-an-arithmetic-progression-from-its-sum.mdx",
+      "sourceSha256": "620c0a4d390eb9cb89a9f16bd748053f5f361c31eda33dc8a7ea9a9e38a3823d",
+      "url": "https://padho.ai/blog/how-do-you-find-an-arithmetic-progression-from-its-sum/",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionText": "The sum of the first n terms of an arithmetic progression is Sₙ = 3n² + 5n. What is the sum of the squares of its first ten terms?",
+      "review": {
+        "sourceSha256": "620c0a4d390eb9cb89a9f16bd748053f5f361c31eda33dc8a7ea9a9e38a3823d",
+        "reviewedAt": "2026-11-19T10:29:45+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Full science, readability and independently solved PYQ review passed; real Astro browser at 1440/390 passed overflow, fonts, image, keyboard-disclosure, no-JS and reduced-motion checks. Covers, figures and worked solutions inspected; six editable Figma compositions also inspected."
+      }
     }
   ]
 }

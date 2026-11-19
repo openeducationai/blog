@@ -3,91 +3,6 @@
   "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
   "pages": [
     {
-      "pageId": "27:306",
-      "name": "2026-11-11",
-      "date": "2026-11-11",
-      "generated": true,
-      "verified": true,
-      "articles": [
-        {
-          "slug": "where-does-a-photoelectrons-energy-come-from",
-          "desktopFrameId": "37:220",
-          "phoneFrameId": "37:471"
-        },
-        {
-          "slug": "how-much-of-a-first-order-reaction-is-finished",
-          "desktopFrameId": "38:312",
-          "phoneFrameId": "38:565"
-        },
-        {
-          "slug": "how-do-you-count-functions-that-miss-an-output",
-          "desktopFrameId": "38:810",
-          "phoneFrameId": "38:1088"
-        }
-      ],
-      "verification": {
-        "desktopWidth": 1440,
-        "phoneWidth": 390,
-        "editableText": true,
-        "nativeFigures": true,
-        "sharedHeaderFooterInstances": true,
-        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
-        "screenshotsReviewed": 6,
-        "inlineTermsRepaired": true,
-        "equationSuperscriptsRepaired": true,
-        "landingGridRestored": true,
-        "paragraphOverflows": 0,
-        "comments": "No supported Figma comments reader is exposed in this session; no claim of comment review. No registered pages expired (cutoff 2026-11-05)."
-      },
-      "verifiedAt": "2026-11-11T13:42:08+05:30",
-      "sourceCommit": "9fd6667e3cad3087bf261da12c828617fe0d0f76"
-    },
-    {
-      "pageId": "51:202",
-      "name": "2026-11-12",
-      "date": "2026-11-12",
-      "generated": true,
-      "verified": true,
-      "articles": [
-        {
-          "slug": "when-are-capacitors-in-series-or-parallel",
-          "desktopFrameId": "61:242",
-          "phoneFrameId": "62:590"
-        },
-        {
-          "slug": "why-does-osmotic-pressure-depend-on-particle-count",
-          "desktopFrameId": "65:303",
-          "phoneFrameId": "65:620"
-        },
-        {
-          "slug": "how-can-sums-of-squares-give-standard-deviation",
-          "desktopFrameId": "65:933",
-          "phoneFrameId": "65:1257"
-        }
-      ],
-      "verification": {
-        "desktopWidth": 1440,
-        "phoneWidth": 390,
-        "editableText": true,
-        "nativeFigures": true,
-        "sharedHeaderFooterInstances": true,
-        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
-        "screenshotsReviewed": 6,
-        "completeCopyMatch": true,
-        "matchedTextBlocksPerArticle": [
-          49,
-          50,
-          49
-        ],
-        "paragraphOverflows": 0,
-        "disclosuresPerFrame": 4,
-        "comments": "Supported get_comments returned no comments. No registered pages expired (cutoff 2026-11-06).",
-        "captureReferencesRemoved": true
-      },
-      "verifiedAt": "2026-11-12T07:46:56+05:30",
-      "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d"
-    },
-    {
       "pageId": "68:202",
       "name": "2026-11-13",
       "date": "2026-11-13",
@@ -320,6 +235,54 @@
         "comments": "Supported get_comments returned no comments; archived in dated run before retention."
       },
       "sourceCommit": "8ebb9ce89b20059c144a1f21e18594766fa78614"
+    },
+    {
+      "date": "2026-11-19",
+      "name": "2026-11-19",
+      "pageId": "105:302",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "why-does-mgh-fail-far-above-earth",
+          "desktopFrameId": "107:632",
+          "phoneFrameId": "107:900"
+        },
+        {
+          "slug": "how-does-concentration-change-a-cells-voltage",
+          "desktopFrameId": "107:1164",
+          "phoneFrameId": "107:1431"
+        },
+        {
+          "slug": "how-do-you-find-an-arithmetic-progression-from-its-sum",
+          "desktopFrameId": "107:1694",
+          "phoneFrameId": "107:1977"
+        }
+      ],
+      "verifiedAt": "2026-11-19T10:29:45+05:30",
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          35,
+          37,
+          37
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "coverFit": "FIT; discrete cover assets only",
+        "comments": "Supported get_comments returned no comments; archived in dated run before retention."
+      },
+      "sourceCommit": "pending-source-commit"
     }
   ],
   "removedPages": [
@@ -368,6 +331,106 @@
         "18:112",
         "18:135"
       ]
+    },
+    {
+      "pageId": "27:306",
+      "name": "2026-11-11",
+      "date": "2026-11-11",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "where-does-a-photoelectrons-energy-come-from",
+          "desktopFrameId": "37:220",
+          "phoneFrameId": "37:471"
+        },
+        {
+          "slug": "how-much-of-a-first-order-reaction-is-finished",
+          "desktopFrameId": "38:312",
+          "phoneFrameId": "38:565"
+        },
+        {
+          "slug": "how-do-you-count-functions-that-miss-an-output",
+          "desktopFrameId": "38:810",
+          "phoneFrameId": "38:1088"
+        }
+      ],
+      "verification": {
+        "desktopWidth": 1440,
+        "phoneWidth": 390,
+        "editableText": true,
+        "nativeFigures": true,
+        "sharedHeaderFooterInstances": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "screenshotsReviewed": 6,
+        "inlineTermsRepaired": true,
+        "equationSuperscriptsRepaired": true,
+        "landingGridRestored": true,
+        "paragraphOverflows": 0,
+        "comments": "No supported Figma comments reader is exposed in this session; no claim of comment review. No registered pages expired (cutoff 2026-11-05)."
+      },
+      "verifiedAt": "2026-11-11T13:42:08+05:30",
+      "sourceCommit": "9fd6667e3cad3087bf261da12c828617fe0d0f76",
+      "removedAt": "2026-11-19T10:29:45+05:30",
+      "removedOn": "2026-11-19",
+      "reason": "Registered generated page precedes inclusive seven-day cutoff 2026-11-13.",
+      "feedbackArchive": "editorial/runs/2026-11-19.json#figmaFeedback",
+      "preservedComponentIds": [
+        "27:202",
+        "27:219",
+        "27:256",
+        "27:267"
+      ]
+    },
+    {
+      "pageId": "51:202",
+      "name": "2026-11-12",
+      "date": "2026-11-12",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "when-are-capacitors-in-series-or-parallel",
+          "desktopFrameId": "61:242",
+          "phoneFrameId": "62:590"
+        },
+        {
+          "slug": "why-does-osmotic-pressure-depend-on-particle-count",
+          "desktopFrameId": "65:303",
+          "phoneFrameId": "65:620"
+        },
+        {
+          "slug": "how-can-sums-of-squares-give-standard-deviation",
+          "desktopFrameId": "65:933",
+          "phoneFrameId": "65:1257"
+        }
+      ],
+      "verification": {
+        "desktopWidth": 1440,
+        "phoneWidth": 390,
+        "editableText": true,
+        "nativeFigures": true,
+        "sharedHeaderFooterInstances": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "matchedTextBlocksPerArticle": [
+          49,
+          50,
+          49
+        ],
+        "paragraphOverflows": 0,
+        "disclosuresPerFrame": 4,
+        "comments": "Supported get_comments returned no comments. No registered pages expired (cutoff 2026-11-06).",
+        "captureReferencesRemoved": true
+      },
+      "verifiedAt": "2026-11-12T07:46:56+05:30",
+      "sourceCommit": "78ea73babff082f8a404c7b47137ba0b70a5895d",
+      "removedAt": "2026-11-19T10:29:45+05:30",
+      "removedOn": "2026-11-19",
+      "reason": "Registered generated page precedes inclusive seven-day cutoff 2026-11-13.",
+      "feedbackArchive": "editorial/runs/2026-11-19.json#figmaFeedback",
+      "preservedComponentIds": []
     }
   ],
   "sharedUi": {
@@ -379,9 +442,15 @@
       "18:2",
       "18:37",
       "18:112",
-      "18:135"
+      "18:135",
+      "27:202",
+      "27:219",
+      "27:256",
+      "27:267",
+      "107:316",
+      "107:322"
     ],
-    "preservedAt": "2026-11-17T07:25:10+05:30",
+    "preservedAt": "2026-11-19T10:29:45+05:30",
     "notes": "Original component IDs, names and dimensions preserved before deleting expired daily copy."
   }
 }

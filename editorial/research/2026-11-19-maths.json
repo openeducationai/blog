@@ -1,0 +1,70 @@
+{
+  "id": "arithmetic-progression-terms-from-sums",
+  "researchedAt": "2026-11-19T10:15:20+05:30",
+  "category": "maths",
+  "conceptKey": "maths/sequence-and-series/arithmetic-progression-terms-from-sums",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; official homepage and syllabus checked 19 November 2026",
+    "scope": "Mathematics Unit 6: arithmetic progressions; basic algebra and finite sums."
+  },
+  "corpus": {
+    "papersExamined": 7,
+    "coverageNotes": "Targeted scans of 2 April both shifts, 4 April both shifts, 5 April both shifts and selected 6 April Shift 2 questions. Today expanded to 5 April Shift 2 and re-examined selected originals in earlier papers. Not a five-year census or exhaustive topic-frequency analysis.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two inspected official questions and final-key matches support a distinct, useful misconception and prerequisite objective. No measured weightage or prediction claimed."
+  },
+  "sources": [
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/college-algebra-2e/pages/9-2-arithmetic-sequences"
+    },
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/college-algebra-2e/pages/9-4-series-and-their-notations"
+    },
+    {
+      "title": "NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278302",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "5 April 2026 Shift 1, Q2, PDF page 1–2",
+      "answer": "15220",
+      "correctOptionId": "6952781027",
+      "verifiedAt": "2026-11-19T10:15:20+05:30",
+      "adapted": true,
+      "independentSolution": "t_n=S_n−S_(n−1)=6n+2, valid also at n=1 since S0=0. Sum_(n=1)^10 (6n+2)² =36×385+24×55+4×10=15220. Direct sum of squares of 8,14,20,26,32,38,44,50,56,62 also yields 15220.",
+      "sourceSha256": "20a14808d521007d48289171297030a4ac18710abc180bb7e3b2d23e2a0a19fb"
+    },
+    {
+      "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278232",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "4 April 2026 Shift 1, Q7, PDF page 3",
+      "answer": "5/87",
+      "correctOptionId": "695278790",
+      "verifiedAt": "2026-11-19T10:15:20+05:30",
+      "adapted": true,
+      "independentSolution": "Let last term L. L³=30/2(10/3+L)=50+15L. Factor L³−15L−50=(L−5)(L²+5L+10). Quadratic discriminant 25−40<0; only real L=5. d=(5−10/3)/29=5/87. All 30 terms are positive, and the total 125 matches L³.",
+      "sourceSha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278302",
+  "targetQuestionText": "The sum of the first n terms of an arithmetic progression is Sₙ = 3n² + 5n. What is the sum of the squares of its first ten terms?",
+  "verificationNotes": "Original pages visually inspected, exact final-key IDs checked, solutions independently worked. Adapted statements explicitly identify modelling assumptions; no invented question is labelled a PYQ."
+}

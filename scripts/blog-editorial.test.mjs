@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { localDate, trialEligible, prunePlan, validateHistory, sha256 } from './blog-editorial.mjs';
+import { localDate, dailyEligible, prunePlan, validateHistory, sha256 } from './blog-editorial.mjs';
 
 const config = { timezone: 'Asia/Kolkata', subjects: ['physics', 'chemistry', 'maths'], baselineSlugs: [],
-  trial: { enabled: true, startDate: '2026-11-11', endDate: '2026-11-17' },
+  schedule: { enabled: true, startDate: '2026-11-11' },
   figma: { fileKey: 'blogs', retentionDays: 7 } };
 function sample(slug = 'friction', concept = 'physics/mechanics/friction', at = '2026-11-11T07:30:00+05:30') {
   const sourcePath = `src/content/blog/${slug}.mdx`;
@@ -20,10 +20,11 @@ function sample(slug = 'friction', concept = 'physics/mechanics/friction', at = 
 const briefs = { 'editorial/research/friction.json': { syllabus: { url: 'https://jeemain.nta.nic.in/syllabus/' },
   corpus: { papersExamined: 2, coverageNotes: 'Only two official papers examined.' }, priority: { rationale: 'Both questions test force direction.' },
   sources: [{ url: 'https://jeemain.nta.nic.in/paper.pdf' }, { url: 'https://ncert.nic.in/chapter.pdf' }] } };
-test('trial has an inclusive seven-date boundary and IST date', () => {
+test('daily publishing continues beyond retention and uses IST dates', () => {
   assert.equal(localDate(new Date('2026-11-10T20:00:00Z')), '2026-11-11');
-  for (const date of ['2026-11-11', '2026-11-17']) assert.equal(trialEligible(config, date), true);
-  for (const date of ['2026-11-10', '2026-11-18']) assert.equal(trialEligible(config, date), false);
+  for (const date of ['2026-11-11', '2026-11-17', '2026-11-19', '2027-11-19']) assert.equal(dailyEligible(config, date), true);
+  assert.equal(dailyEligible(config, '2026-11-10'), false);
+  assert.equal(dailyEligible({ ...config, schedule: { ...config.schedule, enabled: false } }, '2026-11-19'), false);
 });
 test('retention selects only registered generated pages before the seven-date window', () => {
   const registry = { fileKey: 'blogs', pages: [

@@ -512,6 +512,61 @@
       "briefPath": "editorial/research/2026-11-17-maths.json",
       "rationale": "Two inspected official questions with final-key matches support a precise misconception and prerequisite objective. No measured weightage or prediction is claimed.",
       "releaseVerifiedAt": "2026-11-17T07:31:01+05:30"
+    },
+    {
+      "id": "gravitational-energy-large-heights",
+      "category": "physics",
+      "chapter": "gravitation",
+      "conceptKey": "physics/gravitation/potential-energy-large-separations",
+      "question": "A mass m is moved from Earth’s surface to a height 2R above it. Earth’s radius is R and its surface gravitational acceleration is g. What is the increase in gravitational potential energy?",
+      "learningObjective": "Use changes in −GMm/r and energy conservation when gravity varies with distance.",
+      "example": "Lift one small payload from the surface to a height twice Earth’s radius, then follow its fall in the reverse direction.",
+      "closestPriorSlugs": [
+        "how-does-gravity-change-above-and-below-earth"
+      ],
+      "difference": "The prior article finds acceleration at positions. This article calculates work, gravitational potential energy and falling speed over a path.",
+      "briefPath": "editorial/research/2026-11-19-physics.json",
+      "status": "writing",
+      "rationale": "Verified official-paper pair; distinct from all recorded learning objectives.",
+      "priority": 1,
+      "slug": "why-does-mgh-fail-far-above-earth"
+    },
+    {
+      "id": "nernst-reaction-before-concentration",
+      "category": "chemistry",
+      "chapter": "redox-reactions-and-electrochemistry",
+      "conceptKey": "chemistry/electrochemistry/balanced-reaction-nernst-quotient",
+      "question": "At 298 K, a zinc–silver cell has [Zn²⁺] = 1 mol/L and a measured voltage of 1.60 V. The standard reduction potentials are −0.76 V for Zn²⁺/Zn and +0.80 V for Ag⁺/Ag. If x is the numerical value of [Ag⁺] in mol/L, find log₁₀ x. Use 2.303RT/F = 0.059 V.",
+      "learningObjective": "Derive n and Q from the balanced cell reaction, then use the sign of the Nernst correction to check concentration calculations.",
+      "example": "One zinc atom supplies the two electrons needed to turn two dissolved silver ions into silver metal.",
+      "closestPriorSlugs": [
+        "why-does-osmotic-pressure-depend-on-particle-count",
+        "how-do-heat-and-work-signs-fit-a-complete-cycle"
+      ],
+      "difference": "Uses electrode potentials, balanced electron transfer and reaction quotient; neither colligative particle count nor heat/work cycle accounting is the objective.",
+      "briefPath": "editorial/research/2026-11-19-chemistry.json",
+      "status": "writing",
+      "rationale": "Verified official-paper pair; distinct from all recorded learning objectives.",
+      "priority": 1,
+      "slug": "how-does-concentration-change-a-cells-voltage"
+    },
+    {
+      "id": "arithmetic-progression-terms-from-sums",
+      "category": "maths",
+      "chapter": "sequence-and-series",
+      "conceptKey": "maths/sequence-and-series/arithmetic-progression-terms-from-sums",
+      "question": "The sum of the first n terms of an arithmetic progression is Sₙ = 3n² + 5n. What is the sum of the squares of its first ten terms?",
+      "learningObjective": "Distinguish terms from partial sums and recover arithmetic-progression terms by subtracting successive totals; use endpoint pairing when only one total is known.",
+      "example": "Three rows with 3, 5 and 7 seats produce cumulative seat totals of 3, 8 and 15.",
+      "closestPriorSlugs": [
+        "how-do-you-simplify-a-sum-inside-another-sum"
+      ],
+      "difference": "The earlier article simplifies already-given nested terms. This article recovers missing terms from cumulative totals and uses the AP endpoint-sum relation.",
+      "briefPath": "editorial/research/2026-11-19-maths.json",
+      "status": "writing",
+      "rationale": "Verified official-paper pair; distinct from all recorded learning objectives.",
+      "priority": 1,
+      "slug": "how-do-you-find-an-arithmetic-progression-from-its-sum"
     }
   ]
 }

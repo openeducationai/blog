@@ -1,0 +1,72 @@
+---
+title: "How do you find an arithmetic progression from its sum?"
+description: "Separate one term from a running total, then use equal-step patterns to recover an arithmetic progression."
+category: "maths"
+author: "padho"
+pubDate: "2026-11-19T10:17:18+05:30"
+heroImage: "../../assets/articles/arithmetic-running-sums.png"
+heroImageAlt: "Rows containing 3, 5 and 7 seats give totals 3, 8 and 15; subtracting 8 from 15 recovers the third row."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**The sum of the first n terms of an arithmetic progression is Sₙ = 3n² + 5n. What is the sum of the squares of its first ten terms?**
+
+Adapted from [JEE Main, 5 April 2026 Shift 1 Q2](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf#page=1), question ID 695278302; the options continue on PDF page 2. We’ll recover the individual terms before squaring them. You need simple algebra and the standard sums 1 + ⋯ + 10 = 55 and 1² + ⋯ + 10² = 385.
+
+## One row is different from all the rows so far
+
+Imagine rows containing 3, 5, 7 and 9 seats. Each new row has two more seats than the previous row. This is an [arithmetic progression](https://openstax.org/books/college-algebra-2e/pages/9-2-arithmetic-sequences), or AP: the difference between consecutive terms is constant.
+
+Let tₙ mean the number of seats in row n. Let Sₙ mean the total in the first n rows. These symbols describe different things. For the first three rows, t₁ = 3, t₂ = 5 and t₃ = 7, while S₁ = 3, S₂ = 8 and S₃ = 15.
+
+Suppose you know only the totals. The first three rows contain 15 seats and the first two contain 8 seats. Subtracting removes the first two rows. What remains is exactly the third row: 15 − 8 = 7.
+
+<ArticleDiagram kind="arithmeticSums">Each blue dot is one seat. The running totals count every row so far. Subtracting S₂ = 8 from S₃ = 15 leaves the seven seats in row 3.</ArticleDiagram>
+
+## Subtract two neighbouring totals
+
+The same reasoning works for any list of numbers, whether or not it is an AP. Sₙ contains the first n terms. Sₙ₋₁ contains all of those except the last. Therefore tₙ = Sₙ − Sₙ₋₁.
+
+For n = 1, use S₀ = 0: the sum of no terms is zero. Then t₁ = S₁. If a supplied formula for Sₙ is stated only for positive integers, check that first term separately before extending the formula to n = 0.
+
+In the seating example, Sₙ = n² + 2n. Replacing n with n − 1 gives Sₙ₋₁ = (n − 1)² + 2(n − 1) = n² − 1. Their difference is tₙ = 2n + 1. Putting n = 1, 2 and 3 gives 3, 5 and 7, matching the actual rows.
+
+<KeyIdea id="term-from-total">A term is the increase in the running total: tₙ = Sₙ − Sₙ₋₁. A formula for Sₙ is not a formula for tₙ.</KeyIdea>
+
+## If only one total is given, use the endpoints
+
+Sometimes we are told one AP sum, rather than a formula for every Sₙ. Then subtraction of neighbouring totals is unavailable. We can instead use the fact that the terms change by equal steps.
+
+For our four rows, pair the first and last: 3 + 9 = 12. Pair the middle two: 5 + 7 = 12. Every pair has the same sum because one term moves up by 2 while the other moves down by 2.
+
+If an AP has n terms, first term a and last term L, its sum is [Sₙ = n(a + L)/2](https://openstax.org/books/college-algebra-2e/pages/9-4-series-and-their-notations). One way to see why this also works for odd n is to write the list twice, once forwards and once backwards. The two lists make n pairs of value a + L. Divide their combined total by 2.
+
+There are n − 1 steps from the first term to the last, so L = a + (n − 1)d, where d is the common difference. Once L is known, d = (L − a)/(n − 1), provided n is greater than 1.
+
+## Square the terms after recovering them
+
+The opening question asks for t₁² + t₂² + ⋯ + t₁₀². It does not ask for S₁₀². Squaring a total introduces cross-products: for example, (3 + 5)² = 64, while 3² + 5² = 34.
+
+If the recovered term has the form An + B, square that expression first: (An + B)² = A²n² + 2ABn + B². Then add each part over n = 1 to 10. Use the sum of the squares, the sum of the integers, and ten copies of the constant term. This is the same habit of [simplifying one term before adding](/blog/how-do-you-simplify-a-sum-inside-another-sum/).
+
+## Try the past questions
+
+**1. An AP has 30 non-negative terms and first term 10/3. Its total equals the cube of its last term. Find its common difference.**
+
+Adapted from [JEE Main, 4 April 2026 Shift 1 Q7](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf#page=3), question ID 695278232.
+
+<details class="reading-check"><summary>Show hint</summary><p>Call the last term L. The endpoint formula gives 15(10/3 + L) = L³. Try L = 5, then factor to check whether another real value is possible.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The equation is L³ − 15L − 50 = 0, or (L − 5)(L² + 5L + 10) = 0. The quadratic factor has discriminant 25 − 40 = −15, so it has no real zero. Thus L = 5.</p><p>There are 29 steps, so d = (5 − 10/3)/29 = <strong>5/87</strong>. Every term is positive, and the total is 15(10/3 + 5) = 125 = 5³.</p></details>
+
+**2. Return to the opening question: Sₙ = 3n² + 5n. Find the sum of the squares of the first ten terms.**
+
+<details class="reading-check"><summary>Show hint</summary><p>Expand Sₙ₋₁ = 3(n − 1)² + 5(n − 1), subtract it from Sₙ, and only then square the result.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>We get Sₙ₋₁ = 3n² − n − 2. Hence tₙ = 6n + 2. The first term is 8, which also equals S₁, so the formula includes the first term correctly.</p><p>Now tₙ² = 36n² + 24n + 4. Summing for n = 1 to 10 gives 36 × 385 + 24 × 55 + 4 × 10 = <strong>15220</strong>.</p><p>The terms are 8, 14, 20, …, 62. Their common difference is 6; their total is 350. That total and the requested sum of squares are different quantities.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 695278232 and 695278302.
