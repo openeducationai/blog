@@ -282,7 +282,7 @@
         "coverFit": "FIT; discrete cover assets only",
         "comments": "Supported get_comments returned no comments; archived in dated run before retention."
       },
-      "sourceCommit": "pending-source-commit"
+      "sourceCommit": "e51aacf30f9236d0fe71370b1b9b518f542f2985"
     }
   ],
   "removedPages": [

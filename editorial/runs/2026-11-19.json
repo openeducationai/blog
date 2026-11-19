@@ -1,6 +1,6 @@
 {
   "date": "2026-11-19",
-  "status": "partial",
+  "status": "published",
   "startedAt": "2026-11-19T10:09:54+05:30",
   "articleSlugs": [
     "why-does-mgh-fail-far-above-earth",
@@ -34,7 +34,8 @@
         "localSearch": "passed",
         "analytics": "passed",
         "browserViewports": 6,
-        "skillValidation": "passed"
+        "skillValidation": "passed",
+        "editorial": "passed: 28 historical records, 29 queued topics"
       },
       "evidenceDirectory": "/private/tmp/padho-blog-2026-11-19-browser"
     },
@@ -192,13 +193,60 @@
       ]
     },
     "git": {
-      "status": "pending"
+      "status": "complete",
+      "sourceCommit": "e51aacf30f9236d0fe71370b1b9b518f542f2985",
+      "pushedTo": "origin/main",
+      "completedAt": "2026-11-19T10:34:28+05:30"
     },
     "publication": {
-      "status": "pending"
+      "status": "complete",
+      "confirmedAt": "2026-11-19T10:31:46+05:30",
+      "publisher": "node scripts/publish.mjs",
+      "sourceCommit": "e51aacf30f9236d0fe71370b1b9b518f542f2985",
+      "scope": "padho.ai/blog only",
+      "exitCode": 0,
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ],
+      "log": "/private/tmp/padho-pcm-2026-11-19/publish.log"
     },
     "liveVerification": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-19T10:34:28+05:30",
+      "articles": [
+        {
+          "url": "https://padho.ai/blog/why-does-mgh-fail-far-above-earth/",
+          "status": 200,
+          "sha256": "4c6b68e71a14f695cedf1472a71b865f15475072ca1b8947163509e54b9b0c0d",
+          "matchesBuild": true
+        },
+        {
+          "url": "https://padho.ai/blog/how-does-concentration-change-a-cells-voltage/",
+          "status": 200,
+          "sha256": "fd94b86a99c1a8dddc0b38c569649ef84693caf5af6e5025e3b84ce30907d707",
+          "matchesBuild": true
+        },
+        {
+          "url": "https://padho.ai/blog/how-do-you-find-an-arithmetic-progression-from-its-sum/",
+          "status": 200,
+          "sha256": "cfaa6ed6fa0331c5e30c9439e8333814c61be8cc3ffc4b90e8a310953256d25a",
+          "matchesBuild": true
+        }
+      ],
+      "sitemapPages": 33,
+      "publishedArticles": 27,
+      "images": 27,
+      "internalLinks": 34,
+      "metadataMatchesVisibleContent": true,
+      "crawlerProbes": 108,
+      "allCrawlerProbesPassed": true,
+      "articleViewports": 6,
+      "navigationViewports": 8,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-19-browser/checks-live.json",
+      "navigationEvidence": "/private/tmp/padho-blog-2026-11-19-browser/index-checks-live.json",
+      "searchEvidence": "/private/tmp/padho-pcm-2026-11-19/search-live.json",
+      "evidence": "Live HTML exactly matches the reviewed build. Six article and eight home/category desktop/phone viewports passed. All covers loaded and new links are present; representative live screenshots inspected. Public crawler probes do not prove indexing."
     }
   },
   "preflight": {
@@ -208,10 +256,10 @@
   },
   "ownerCorrection": "Ongoing daily 07:00 IST preparation and conditional release; seven-day Figma retention only.",
   "resume": {
-    "nextStage": "git",
+    "nextStage": null,
     "reuseExistingArticles": true
   },
-  "lastCheckpointAt": "2026-11-19T10:29:45+05:30",
+  "lastCheckpointAt": "2026-11-19T10:34:28+05:30",
   "schedule": {
     "status": "installed",
     "label": "ai.padho.blog-pcm-trial",
@@ -221,12 +269,16 @@
     },
     "timezone": "Asia/Kolkata",
     "endDate": null,
-    "checks": "6 Python runner and 8 editorial tests passed; 20 November eligibility passed; launchctl confirms daily trigger."
+    "checks": "6 Python runner and 8 editorial tests passed; 20 November eligibility passed; launchctl confirms daily trigger.",
+    "nextEligibleRun": "2026-11-20T07:00:00+05:30",
+    "verifiedAt": "2026-11-19T10:34:28+05:30"
   },
   "figmaSessionId": "857183ef-d8e7-45e0-9a28-afe4479e48be",
   "figmaFeedback": {
     "checkedAt": "2026-11-19T10:15:20+05:30",
     "comments": [],
     "evidence": "Supported Figma get_comments returned no comments."
-  }
+  },
+  "sourceCommit": "e51aacf30f9236d0fe71370b1b9b518f542f2985",
+  "completedAt": "2026-11-19T10:34:28+05:30"
 }

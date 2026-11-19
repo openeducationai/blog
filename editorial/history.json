@@ -1355,7 +1355,7 @@
       "sourceSha256": "1bec464f17ec41679c9423535dc34a03954ba88d5919a8ab86e621261dd4c896",
       "url": "https://padho.ai/blog/why-does-mgh-fail-far-above-earth/",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionText": "A mass m is moved from Earth’s surface to a height 2R above it. Earth’s radius is R and its surface gravitational acceleration is g. What is the increase in gravitational potential energy?",
       "review": {
         "sourceSha256": "1bec464f17ec41679c9423535dc34a03954ba88d5919a8ab86e621261dd4c896",
@@ -1410,7 +1410,7 @@
       "sourceSha256": "74b78e1688204012be97422af51d006a98061ba7b2d97d5395a461c68bb4dc00",
       "url": "https://padho.ai/blog/how-does-concentration-change-a-cells-voltage/",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionText": "At 298 K, a zinc–silver cell has [Zn²⁺] = 1 mol/L and a measured voltage of 1.60 V. The standard reduction potentials are −0.76 V for Zn²⁺/Zn and +0.80 V for Ag⁺/Ag. If x is the numerical value of [Ag⁺] in mol/L, find log₁₀ x. Use 2.303RT/F = 0.059 V.",
       "review": {
         "sourceSha256": "74b78e1688204012be97422af51d006a98061ba7b2d97d5395a461c68bb4dc00",
@@ -1465,7 +1465,7 @@
       "sourceSha256": "620c0a4d390eb9cb89a9f16bd748053f5f361c31eda33dc8a7ea9a9e38a3823d",
       "url": "https://padho.ai/blog/how-do-you-find-an-arithmetic-progression-from-its-sum/",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionText": "The sum of the first n terms of an arithmetic progression is Sₙ = 3n² + 5n. What is the sum of the squares of its first ten terms?",
       "review": {
         "sourceSha256": "620c0a4d390eb9cb89a9f16bd748053f5f361c31eda33dc8a7ea9a9e38a3823d",

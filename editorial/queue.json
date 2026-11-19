@@ -526,7 +526,7 @@
       ],
       "difference": "The prior article finds acceleration at positions. This article calculates work, gravitational potential energy and falling speed over a path.",
       "briefPath": "editorial/research/2026-11-19-physics.json",
-      "status": "writing",
+      "status": "published",
       "rationale": "Verified official-paper pair; distinct from all recorded learning objectives.",
       "priority": 1,
       "slug": "why-does-mgh-fail-far-above-earth"
@@ -545,7 +545,7 @@
       ],
       "difference": "Uses electrode potentials, balanced electron transfer and reaction quotient; neither colligative particle count nor heat/work cycle accounting is the objective.",
       "briefPath": "editorial/research/2026-11-19-chemistry.json",
-      "status": "writing",
+      "status": "published",
       "rationale": "Verified official-paper pair; distinct from all recorded learning objectives.",
       "priority": 1,
       "slug": "how-does-concentration-change-a-cells-voltage"
@@ -563,7 +563,7 @@
       ],
       "difference": "The earlier article simplifies already-given nested terms. This article recovers missing terms from cumulative totals and uses the AP endpoint-sum relation.",
       "briefPath": "editorial/research/2026-11-19-maths.json",
-      "status": "writing",
+      "status": "published",
       "rationale": "Verified official-paper pair; distinct from all recorded learning objectives.",
       "priority": 1,
       "slug": "how-do-you-find-an-arithmetic-progression-from-its-sum"
