@@ -1478,6 +1478,171 @@
         },
         "notes": "Full science, readability and independently solved PYQ review passed; real Astro browser at 1440/390 passed overflow, fonts, image, keyboard-disclosure, no-JS and reduced-motion checks. Covers, figures and worked solutions inspected; six editable Figma compositions also inspected."
       }
+    },
+    {
+      "slug": "how-do-measurement-errors-combine-in-a-formula",
+      "title": "How do measurement errors combine in a formula?",
+      "category": "physics",
+      "chapter": "units-and-measurements",
+      "conceptKey": "physics/units-and-measurements/maximum-fractional-error-products",
+      "learningObjective": "Estimate the first-order maximum fractional error in a product or quotient, including the multiplier from a power.",
+      "example": "A measured cylinder has density 4m/(πd²l); a larger measured diameter lowers the calculated density.",
+      "publishedAt": "2026-11-20T07:07:57+05:30",
+      "briefPath": "editorial/research/2026-11-20-physics.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782161",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 1, Q26, PDF page 10",
+          "answer": "0.82%",
+          "correctOptionId": "6952787582",
+          "verifiedAt": "2026-11-20T07:05:58+05:30",
+          "adapted": true,
+          "independentSolution": "ρ=4m/(πd²l); Δρ/ρ≈Δm/m+2Δd/d+Δl/l. Percentage contributions: 0.0205297, 0.1980198, 0.5988024. Total 0.8173519%=0.82%. All input errors zero gives zero output error; exact extrema bracket the first-order estimate. This is a maximum-error estimate, not independent-random-error quadrature.",
+          "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+        },
+        {
+          "id": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121477",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "5 April 2026 Shift 2, Q27, PDF page 10–11",
+          "answer": "0.18 Ω",
+          "correctOptionId": "6911211623",
+          "verifiedAt": "2026-11-20T07:05:58+05:30",
+          "adapted": true,
+          "independentSolution": "R=V/I=2 Ω. Treat the stated least counts as input uncertainty estimates, as intended by the exam. ΔV=0.500 V, ΔI=0.200 A; ΔR/R≈0.5/10+0.2/5=0.09. ΔR≈0.18 Ω. Do not subtract the errors because the denominator can vary in the opposite direction. Exact Rmax=10.5/4.8=2.1875 Ω; first-order estimate is not an exact bound.",
+          "sourceSha256": "876efb4250b5d8e096f28bb48d9078e39f25f1ad70473701e5c13523716588d4"
+        }
+      ],
+      "targetQuestionId": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782161",
+      "sourcePath": "src/content/blog/how-do-measurement-errors-combine-in-a-formula.mdx",
+      "sourceSha256": "b90e394e6f0d9649d126d00f362bc78036fcff9cbc6e104fad18e2fa2098a85c",
+      "url": "https://padho.ai/blog/how-do-measurement-errors-combine-in-a-formula/",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionText": "A uniform cylinder has mass 97.42 ± 0.02 g, length 8.35 ± 0.05 mm and diameter 20.20 ± 0.02 mm. What is the approximate maximum percentage error in its calculated density?",
+      "review": {
+        "sourceSha256": "b90e394e6f0d9649d126d00f362bc78036fcff9cbc6e104fad18e2fa2098a85c",
+        "reviewedAt": "2026-11-20T07:11:02+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "All drafts read sequentially and paraphrased for clarity. Original NTA question pages and final-key option IDs checked; solutions independently calculated. First-order maximum error model, inert-gas mole accounting and pressure convention, and explicit Bayes priors/reveal process verified. Desktop and phone covers, diagrams and worked solutions visually inspected; keyboard disclosures, no-JavaScript content, reduced-motion and normal listing navigation passed."
+      }
+    },
+    {
+      "slug": "how-do-you-find-partial-pressures-at-equilibrium",
+      "title": "How do you find partial pressures at equilibrium?",
+      "category": "chemistry",
+      "chapter": "equilibrium",
+      "conceptKey": "chemistry/equilibrium/mole-balance-partial-pressures",
+      "learningObjective": "Use the reaction mole balance to find equilibrium amounts, then distinguish partial pressures from total pressure.",
+      "example": "A sealed rigid flask contains inert helium while one mole of A partly changes into B.",
+      "publishedAt": "2026-11-20T07:07:57+05:30",
+      "briefPath": "editorial/research/2026-11-20-chemistry.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782192",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 1, Q57, PDF page 21",
+          "answer": "p(He) = 3.28 atm; p(B) = 2.624 atm",
+          "correctOptionId": "6952787690",
+          "verifiedAt": "2026-11-20T07:05:58+05:30",
+          "adapted": true,
+          "independentSolution": "Write nA=1−x, nB=x, nHe=1. Kc=(x/10)/((1−x)/10)=x/(1−x)=4, so x=0.8 mol. RT/V=0.082×400/10=3.28 atm per mol. pHe=3.28, pB=2.624, pA=0.656; sum 6.56 atm and pB/pA=4. He absent from equilibrium expression but present in total pressure.",
+          "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+        },
+        {
+          "id": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121506",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "5 April 2026 Shift 2, Q56, PDF page 22–23",
+          "answer": "Kp = px²/(a²−x²), in the paper’s pressure convention",
+          "correctOptionId": "6911211722",
+          "verifiedAt": "2026-11-20T07:05:58+05:30",
+          "adapted": true,
+          "independentSolution": "Start with only a mol A in A⇌B+C; equilibrium amounts a−x,x,x and total a+x, not a. Partial pressures are p(a−x)/(a+x), px/(a+x), px/(a+x). Kp=pB pC/pA=px²/[(a+x)(a−x)]. Domain a>0,0<x<a. Dimensionless thermodynamic K uses p/p° instead of p; the article states the exam convention.",
+          "sourceSha256": "876efb4250b5d8e096f28bb48d9078e39f25f1ad70473701e5c13523716588d4"
+        }
+      ],
+      "targetQuestionId": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782192",
+      "sourcePath": "src/content/blog/how-do-you-find-partial-pressures-at-equilibrium.mdx",
+      "sourceSha256": "1bc56a343f6142b9f48a7d2178f7f18e9ccb1c4f4e473d33f7e41c4bb5886840",
+      "url": "https://padho.ai/blog/how-do-you-find-partial-pressures-at-equilibrium/",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionText": "A 10 L flask initially contains 1 mol of helium and 1 mol of A, with no B. At 400 K, A(g) ⇌ B(g) has Kc = 4.0. Assuming ideal gases and R = 0.082 L atm K⁻¹ mol⁻¹, find the equilibrium partial pressures of helium and B.",
+      "review": {
+        "sourceSha256": "1bc56a343f6142b9f48a7d2178f7f18e9ccb1c4f4e473d33f7e41c4bb5886840",
+        "reviewedAt": "2026-11-20T07:11:02+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "All drafts read sequentially and paraphrased for clarity. Original NTA question pages and final-key option IDs checked; solutions independently calculated. First-order maximum error model, inert-gas mole accounting and pressure convention, and explicit Bayes priors/reveal process verified. Desktop and phone covers, diagrams and worked solutions visually inspected; keyboard disclosures, no-JavaScript content, reduced-motion and normal listing navigation passed."
+      }
+    },
+    {
+      "slug": "how-does-new-information-change-a-probability",
+      "title": "How does new information change a probability?",
+      "category": "maths",
+      "chapter": "statistics-and-probability",
+      "conceptKey": "maths/statistics-and-probability/bayes-weighted-paths",
+      "learningObjective": "Combine disjoint weighted paths and restrict to the observed event to distinguish P(evidence|source) from P(source|evidence).",
+      "example": "A partly hidden city name shows AN; compare its five or seven possible adjacent-letter positions.",
+      "publishedAt": "2026-11-20T07:07:57+05:30",
+      "briefPath": "editorial/research/2026-11-20-maths.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278307",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "5 April 2026 Shift 1, Q7, PDF page 3",
+          "answer": "10/17",
+          "correctOptionId": "6952781046",
+          "verifiedAt": "2026-11-20T07:05:58+05:30",
+          "adapted": true,
+          "independentSolution": "The original omits the prior and reveal mechanism. Explicit adaptation: equal prior city probabilities; conditional on the city, select an adjacent pair uniformly. KANPUR has 5 pairs and one AN. ANANTPUR has 7 pairs and two AN. P(A|AN)=(1/2×2/7)/(1/2×1/5+1/2×2/7)=10/17, matching final key. Without these assumptions the answer is not uniquely determined. Cross-check 70 model letters from each city: 14 and 20 reveal AN, giving 20/34.",
+          "sourceSha256": "20a14808d521007d48289171297030a4ac18710abc180bb7e3b2d23e2a0a19fb"
+        },
+        {
+          "id": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121458",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "5 April 2026 Shift 2, Q8, PDF page 4",
+          "answer": "0.76",
+          "correctOptionId": "6911211560",
+          "verifiedAt": "2026-11-20T07:05:58+05:30",
+          "adapted": true,
+          "independentSolution": "Captains A and B are exclusive and exhaustive with probabilities .6 and .4. Win routes have probabilities .6×.8=.48 and .4×.7=.28. Add to .76. Independent cross-check 100 model tournaments: 60 under A produce 48 wins; 40 under B produce 28. Bounds .7≤.76≤.8; unweighted average .75 is wrong.",
+          "sourceSha256": "876efb4250b5d8e096f28bb48d9078e39f25f1ad70473701e5c13523716588d4"
+        }
+      ],
+      "targetQuestionId": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278307",
+      "sourcePath": "src/content/blog/how-does-new-information-change-a-probability.mdx",
+      "sourceSha256": "2780fee093aea1cb6d591be942790b694fbe49507f89174ce914c47531158d3b",
+      "url": "https://padho.ai/blog/how-does-new-information-change-a-probability/",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionText": "A letter is equally likely to come from KANPUR or ANANTPUR. One adjacent pair of letters in its city name is chosen uniformly and is the only pair visible. The visible pair is AN. What is the probability that the letter came from ANANTPUR?",
+      "review": {
+        "sourceSha256": "2780fee093aea1cb6d591be942790b694fbe49507f89174ce914c47531158d3b",
+        "reviewedAt": "2026-11-20T07:11:02+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "All drafts read sequentially and paraphrased for clarity. Original NTA question pages and final-key option IDs checked; solutions independently calculated. First-order maximum error model, inert-gas mole accounting and pressure convention, and explicit Bayes priors/reveal process verified. Desktop and phone covers, diagrams and worked solutions visually inspected; keyboard disclosures, no-JavaScript content, reduced-motion and normal listing navigation passed."
+      }
     }
   ]
 }

@@ -1,0 +1,75 @@
+{
+  "id": "gas-equilibrium-partial-pressures",
+  "researchedAt": "2026-11-20T07:05:58+05:30",
+  "category": "chemistry",
+  "conceptKey": "chemistry/equilibrium/mole-balance-partial-pressures",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; current official homepage checked 20 November 2026",
+    "scope": "Chemistry Unit 6: chemical equilibrium, Kp and Kc, significance of equilibrium constants and factors affecting equilibrium."
+  },
+  "corpus": {
+    "papersExamined": 8,
+    "coverageNotes": "Targeted cumulative scans: 2, 4 and 5 April both shifts; selected 6 April Shift 2; expanded today to 6 April Shift 1. Not a complete classification, all-shift census or five-year weightage study. Today’s selected six questions come from three papers.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two exact official-paper/key matches; prerequisite value and a clear misconception. Eight-paper sample is not used to claim frequency or forecast marks."
+  },
+  "sources": [
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants"
+    },
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/chemistry-2e/pages/9-3-stoichiometry-of-gaseous-substances-mixtures-and-reactions"
+    },
+    {
+      "title": "NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782192",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "6 April 2026 Shift 1, Q57, PDF page 21",
+      "answer": "p(He) = 3.28 atm; p(B) = 2.624 atm",
+      "correctOptionId": "6952787690",
+      "verifiedAt": "2026-11-20T07:05:58+05:30",
+      "adapted": true,
+      "independentSolution": "Write nA=1−x, nB=x, nHe=1. Kc=(x/10)/((1−x)/10)=x/(1−x)=4, so x=0.8 mol. RT/V=0.082×400/10=3.28 atm per mol. pHe=3.28, pB=2.624, pA=0.656; sum 6.56 atm and pB/pA=4. He absent from equilibrium expression but present in total pressure.",
+      "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+    },
+    {
+      "id": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121506",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "5 April 2026 Shift 2, Q56, PDF page 22–23",
+      "answer": "Kp = px²/(a²−x²), in the paper’s pressure convention",
+      "correctOptionId": "6911211722",
+      "verifiedAt": "2026-11-20T07:05:58+05:30",
+      "adapted": true,
+      "independentSolution": "Start with only a mol A in A⇌B+C; equilibrium amounts a−x,x,x and total a+x, not a. Partial pressures are p(a−x)/(a+x), px/(a+x), px/(a+x). Kp=pB pC/pA=px²/[(a+x)(a−x)]. Domain a>0,0<x<a. Dimensionless thermodynamic K uses p/p° instead of p; the article states the exam convention.",
+      "sourceSha256": "876efb4250b5d8e096f28bb48d9078e39f25f1ad70473701e5c13523716588d4"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782192",
+  "targetQuestionText": "A 10 L flask initially contains 1 mol of helium and 1 mol of A, with no B. At 400 K, A(g) ⇌ B(g) has Kc = 4.0. Assuming ideal gases and R = 0.082 L atm K⁻¹ mol⁻¹, find the equilibrium partial pressures of helium and B.",
+  "closestPriorSlugs": [
+    "why-does-half-neutralisation-give-ph-equal-to-pka",
+    "how-does-concentration-change-a-cells-voltage"
+  ],
+  "difference": "Gas stoichiometry, inert-gas accounting and partial pressures; does not reteach buffer pH or Nernst cell voltage.",
+  "verificationNotes": "All selected original question pages visually inspected; exact final-key IDs checked. Independent worked calculations and limiting checks recorded. Original questions are paraphrased and modelling additions explicitly disclosed."
+}

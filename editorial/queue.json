@@ -567,6 +567,62 @@
       "rationale": "Verified official-paper pair; distinct from all recorded learning objectives.",
       "priority": 1,
       "slug": "how-do-you-find-an-arithmetic-progression-from-its-sum"
+    },
+    {
+      "id": "maximum-fractional-error-products",
+      "category": "physics",
+      "chapter": "units-and-measurements",
+      "conceptKey": "physics/units-and-measurements/maximum-fractional-error-products",
+      "question": "A uniform cylinder has mass 97.42 ± 0.02 g, length 8.35 ± 0.05 mm and diameter 20.20 ± 0.02 mm. What is the approximate maximum percentage error in its calculated density?",
+      "learningObjective": "Estimate the first-order maximum fractional error in a product or quotient, including the multiplier from a power.",
+      "example": "A measured cylinder has density 4m/(πd²l); a larger measured diameter lowers the calculated density.",
+      "closestPriorSlugs": [
+        "how-can-energy-density-reveal-dimensions"
+      ],
+      "difference": "Tracks measurement uncertainty and sensitivity, not dimensions or a change of dimensional basis.",
+      "briefPath": "editorial/research/2026-11-20-physics.json",
+      "status": "writing",
+      "rationale": "Verified question pair; fills a distinct prerequisite or misconception gap in history. No measured topic weightage.",
+      "priority": 1,
+      "slug": "how-do-measurement-errors-combine-in-a-formula"
+    },
+    {
+      "id": "gas-equilibrium-partial-pressures",
+      "category": "chemistry",
+      "chapter": "equilibrium",
+      "conceptKey": "chemistry/equilibrium/mole-balance-partial-pressures",
+      "question": "A 10 L flask initially contains 1 mol of helium and 1 mol of A, with no B. At 400 K, A(g) ⇌ B(g) has Kc = 4.0. Assuming ideal gases and R = 0.082 L atm K⁻¹ mol⁻¹, find the equilibrium partial pressures of helium and B.",
+      "learningObjective": "Use the reaction mole balance to find equilibrium amounts, then distinguish partial pressures from total pressure.",
+      "example": "A sealed rigid flask contains inert helium while one mole of A partly changes into B.",
+      "closestPriorSlugs": [
+        "why-does-half-neutralisation-give-ph-equal-to-pka",
+        "how-does-concentration-change-a-cells-voltage"
+      ],
+      "difference": "Gas stoichiometry, inert-gas accounting and partial pressures; does not reteach buffer pH or Nernst cell voltage.",
+      "briefPath": "editorial/research/2026-11-20-chemistry.json",
+      "status": "writing",
+      "rationale": "Verified question pair; fills a distinct prerequisite or misconception gap in history. No measured topic weightage.",
+      "priority": 1,
+      "slug": "how-do-you-find-partial-pressures-at-equilibrium"
+    },
+    {
+      "id": "bayes-weighted-paths",
+      "category": "maths",
+      "chapter": "statistics-and-probability",
+      "conceptKey": "maths/statistics-and-probability/bayes-weighted-paths",
+      "question": "A letter is equally likely to come from KANPUR or ANANTPUR. One adjacent pair of letters in its city name is chosen uniformly and is the only pair visible. The visible pair is AN. What is the probability that the letter came from ANANTPUR?",
+      "learningObjective": "Combine disjoint weighted paths and restrict to the observed event to distinguish P(evidence|source) from P(source|evidence).",
+      "example": "A partly hidden city name shows AN; compare its five or seven possible adjacent-letter positions.",
+      "closestPriorSlugs": [
+        "how-do-you-count-functions-that-miss-an-output",
+        "when-is-a-quadratic-always-positive"
+      ],
+      "difference": "Conditional probability and evidence-weighted source attribution, not inclusion-exclusion or uniform counting of coefficient choices.",
+      "briefPath": "editorial/research/2026-11-20-maths.json",
+      "status": "writing",
+      "rationale": "Verified question pair; fills a distinct prerequisite or misconception gap in history. No measured topic weightage.",
+      "priority": 1,
+      "slug": "how-does-new-information-change-a-probability"
     }
   ]
 }

@@ -1,0 +1,70 @@
+---
+title: "How do measurement errors combine in a formula?"
+description: "Turn each uncertainty into a fraction, then see why division and squared measurements add to the possible error."
+category: "physics"
+author: "padho"
+pubDate: "2026-11-20T07:07:57+05:30"
+heroImage: "../../assets/articles/measurement-error-budget.png"
+heroImageAlt: "The mass, length and twice the diameter uncertainty feed into the maximum fractional error in cylinder density."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**A uniform cylinder has mass 97.42 ± 0.02 g, length 8.35 ± 0.05 mm and diameter 20.20 ± 0.02 mm. What is the approximate maximum percentage error in its calculated density?**
+
+Adapted from [JEE Main, 6 April 2026 Shift 1 Q26](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf#page=10), question ID 6952782161. We’ll follow the cylinder’s measurements through the density formula. You need percentages, the volume of a cylinder and the meaning of a squared quantity.
+
+## A measurement is a value with some uncertainty
+
+The mass is written as 97.42 ± 0.02 g. The central reading is 97.42 g; the stated uncertainty is 0.02 g on either side. This does not tell us whether the reading is too large or too small. It tells us how far it might be from the true value under the stated estimate.
+
+To compare errors in different measurements, divide each uncertainty by its own reading. An uncertainty of 0.02 g has a different meaning for a 1 g object and a 100 g object. The ratio Δm/m is called the fractional error. Multiply it by 100 to express it as a percentage. Here Δm means the positive size of the uncertainty.
+
+Keep matching units inside each ratio. You may divide grams by grams and millimetres by millimetres. You do not need to turn every measurement into SI units just to calculate these dimensionless ratios.
+
+## Write the formula before combining the errors
+
+Density is mass divided by volume. A cylinder of diameter d has radius d/2, so its volume is πd²l/4, where l is its length. Therefore its density is ρ = 4m/(πd²l). The Greek letter ρ, pronounced rho, means density.
+
+This formula tells us which measurements matter. Increasing m increases the calculated density. Increasing l or d increases the calculated volume, so it decreases the calculated density. The diameter matters twice because the formula contains d², or d multiplied by d.
+
+<ArticleDiagram kind="measurementError">Each box shows a contribution to the fractional error in density. The diameter appears twice because the cross-sectional area contains d². Δm, Δl and Δd are positive uncertainty estimates; the boxes do not represent signed changes.</ArticleDiagram>
+
+Suppose the measured diameter is 1% larger while the other readings stay the same. Its square is multiplied by 1.01² = 1.0201, so the calculated area is about 2% larger. For small errors, a power of two doubles the fractional contribution. The small extra 0.01% is why this is an approximation.
+
+## Why errors add even when the formula divides
+
+Imagine the combination that makes the calculated density too large. The mass could be overestimated while the length and diameter are underestimated. All three changes would push the density in the same direction. We cannot assume they cancel.
+
+The [method of adding percentage uncertainties](https://openstax.org/books/physics/pages/1-3-the-language-of-physics-physical-quantities-and-units) therefore gives the approximate maximum error as Δρ/ρ ≈ Δm/m + 2Δd/d + Δl/l. The constant 4/π adds no measurement error. It is a fixed mathematical factor, not another instrument reading.
+
+<KeyIdea id="maximum-error-budget">For small maximum-error estimates, add the fractional contributions in a product or quotient. A power multiplies the contribution by the size of that power.</KeyIdea>
+
+This rule estimates the largest combined effect to first order. It is different from combining independent random standard uncertainties by taking a square root of a sum of squares. Use the error model the question asks for. The JEE questions here use the maximum-error estimate.
+
+## Keep fractional, percentage and absolute error separate
+
+If a resistance is 2 Ω and its fractional error is 0.09, its percentage error is 9%. Its absolute error is 2 × 0.09 = 0.18 Ω. The ratio has no unit; the absolute error has the same unit as the calculated quantity.
+
+Before reporting an answer, check which form is requested. In our opening question it is a percentage, so the final sum of fractions must be multiplied by 100. We do not need the cylinder’s numerical density.
+
+## Try the past questions
+
+**1. A resistance is calculated from a voltmeter reading of 10 V and an ammeter reading of 5 A. Their least counts are 500 mV and 200 mA. Using these as uncertainty estimates, find the approximate maximum absolute error in the resistance.**
+
+Adapted from [JEE Main, 5 April 2026 Shift 2 Q27](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf#page=10), question ID 691121477; the statement continues on page 11. Using the least counts as the error estimates makes the paper’s intended convention explicit.
+
+<details class="reading-check"><summary>Show hint</summary><p>Use R = V/I. Convert 500 mV to 0.5 V and 200 mA to 0.2 A. Add ΔV/V and ΔI/I, then multiply by R.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The resistance is R = 10/5 = 2 Ω. Its fractional error is approximately 0.5/10 + 0.2/5 = 0.05 + 0.04 = 0.09. Hence ΔR ≈ 2 × 0.09 = <strong>0.18 Ω</strong>.</p><p>The two errors add even though R is a quotient. A larger voltage reading and a smaller current reading both raise the calculated resistance.</p></details>
+
+**2. Return to the opening question: find the maximum percentage error in the cylinder’s density from m = 97.42 ± 0.02 g, l = 8.35 ± 0.05 mm and d = 20.20 ± 0.02 mm.**
+
+<details class="reading-check"><summary>Show hint</summary><p>Write 100(Δm/m + Δl/l + 2Δd/d). Keep extra digits until the contributions have been added.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The mass contributes about 0.02053%, the length 0.59880%, and the diameter 2 × 0.09901% = 0.19802%. The total is 0.81735%, or <strong>0.82%</strong> to two decimal places.</p><p>The length dominates this error budget. The mass and diameter have the same numerical uncertainty, 0.02, but their fractional contributions differ because their readings and powers differ.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 691121477 and 6952782161.

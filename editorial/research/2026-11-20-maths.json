@@ -1,0 +1,75 @@
+{
+  "id": "bayes-weighted-paths",
+  "researchedAt": "2026-11-20T07:05:58+05:30",
+  "category": "maths",
+  "conceptKey": "maths/statistics-and-probability/bayes-weighted-paths",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; current official homepage checked 20 November 2026",
+    "scope": "Mathematics Unit 13: addition and multiplication theorems of probability and Bayes theorem."
+  },
+  "corpus": {
+    "papersExamined": 8,
+    "coverageNotes": "Targeted cumulative scans: 2, 4 and 5 April both shifts; selected 6 April Shift 2; expanded today to 6 April Shift 1. Not a complete classification, all-shift census or five-year weightage study. Today’s selected six questions come from three papers.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two exact official-paper/key matches; prerequisite value and a clear misconception. Eight-paper sample is not used to claim frequency or forecast marks."
+  },
+  "sources": [
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/3-3-two-basic-rules-of-probability"
+    },
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/3-5-tree-and-venn-diagrams"
+    },
+    {
+      "title": "NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278307",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "5 April 2026 Shift 1, Q7, PDF page 3",
+      "answer": "10/17",
+      "correctOptionId": "6952781046",
+      "verifiedAt": "2026-11-20T07:05:58+05:30",
+      "adapted": true,
+      "independentSolution": "The original omits the prior and reveal mechanism. Explicit adaptation: equal prior city probabilities; conditional on the city, select an adjacent pair uniformly. KANPUR has 5 pairs and one AN. ANANTPUR has 7 pairs and two AN. P(A|AN)=(1/2×2/7)/(1/2×1/5+1/2×2/7)=10/17, matching final key. Without these assumptions the answer is not uniquely determined. Cross-check 70 model letters from each city: 14 and 20 reveal AN, giving 20/34.",
+      "sourceSha256": "20a14808d521007d48289171297030a4ac18710abc180bb7e3b2d23e2a0a19fb"
+    },
+    {
+      "id": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121458",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "5 April 2026 Shift 2, Q8, PDF page 4",
+      "answer": "0.76",
+      "correctOptionId": "6911211560",
+      "verifiedAt": "2026-11-20T07:05:58+05:30",
+      "adapted": true,
+      "independentSolution": "Captains A and B are exclusive and exhaustive with probabilities .6 and .4. Win routes have probabilities .6×.8=.48 and .4×.7=.28. Add to .76. Independent cross-check 100 model tournaments: 60 under A produce 48 wins; 40 under B produce 28. Bounds .7≤.76≤.8; unweighted average .75 is wrong.",
+      "sourceSha256": "876efb4250b5d8e096f28bb48d9078e39f25f1ad70473701e5c13523716588d4"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278307",
+  "targetQuestionText": "A letter is equally likely to come from KANPUR or ANANTPUR. One adjacent pair of letters in its city name is chosen uniformly and is the only pair visible. The visible pair is AN. What is the probability that the letter came from ANANTPUR?",
+  "closestPriorSlugs": [
+    "how-do-you-count-functions-that-miss-an-output",
+    "when-is-a-quadratic-always-positive"
+  ],
+  "difference": "Conditional probability and evidence-weighted source attribution, not inclusion-exclusion or uniform counting of coefficient choices.",
+  "verificationNotes": "All selected original question pages visually inspected; exact final-key IDs checked. Independent worked calculations and limiting checks recorded. Original questions are paraphrased and modelling additions explicitly disclosed."
+}

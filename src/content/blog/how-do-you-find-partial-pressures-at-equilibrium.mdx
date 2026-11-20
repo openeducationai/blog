@@ -1,0 +1,72 @@
+---
+title: "How do you find partial pressures at equilibrium?"
+description: "Track the moles of each gas before calculating its pressure, including an inert gas that stays in the flask."
+category: "chemistry"
+author: "padho"
+pubDate: "2026-11-20T07:07:57+05:30"
+heroImage: "../../assets/articles/gas-equilibrium-amounts.png"
+heroImageAlt: "For A changing into B, the flask has 1−x mol of A, x mol of B and an unchanged 1 mol of helium."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**A 10 L flask initially contains 1 mol of helium and 1 mol of A, with no B. At 400 K, A(g) ⇌ B(g) has Kc = 4.0. Assuming ideal gases and R = 0.082 L atm K⁻¹ mol⁻¹, find the equilibrium partial pressures of helium and B.**
+
+Adapted from [JEE Main, 6 April 2026 Shift 1 Q57](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf#page=21), question ID 6952782192. We’ll keep track of every gas in the same rigid flask. You need the mole, simple ratios and the ideal-gas equation pV = nRT.
+
+## Count what changes in the flask
+
+At chemical equilibrium, A continues changing into B and B continues changing back into A. The two rates are equal, so the amounts stop changing overall. Equilibrium does not mean that the two amounts must be equal.
+
+Let x be the number of moles of A that change into B before equilibrium is reached. The reaction A ⇌ B uses one mole of A for each mole of B formed. Starting with 1 mol A and no B therefore gives 1 − x mol A and x mol B.
+
+Helium does not take part in this reaction. Its amount stays at 1 mol. Keep that amount in the list even though helium will not appear in the equilibrium expression.
+
+<ArticleDiagram kind="gasEquilibrium">The change x is measured in moles. One mole of A becomes one mole of B, so their combined amount stays at 1 mol. The helium row stays unchanged. Every gas occupies the whole flask.</ArticleDiagram>
+
+## Use the equilibrium ratio to find the amounts
+
+The [concentration equilibrium constant](https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants) for A(g) ⇌ B(g) is Kc = [B]/[A]. Square brackets mean concentration in moles per litre. There are no extra powers here because both reaction coefficients are one.
+
+Both gases share the same volume V. Their concentrations are x/V and (1 − x)/V, so the common volume cancels: Kc = x/(1 − x). This ratio compares B with the A that remains. It does not compare B with the starting amount of A.
+
+For example, if Kc were 3, there would be three moles of B for every mole of A at equilibrium. The starting mole would be split into four equal parts: one part A and three parts B. Apply that same reasoning to the actual Kc in the opening question.
+
+## Each gas contributes its own pressure
+
+The [partial pressure](https://openstax.org/books/chemistry-2e/pages/9-3-stoichiometry-of-gaseous-substances-mixtures-and-reactions) of one ideal gas is the pressure that gas would exert if it alone occupied the same volume at the same temperature. For gas i, pᵢ = nᵢRT/V. The subscript i simply labels which gas we mean.
+
+All gases in our flask have the same T and V, so RT/V is a common multiplier. First find the moles of a gas, then multiply by RT/V. The total pressure is the sum of all these partial pressures, including helium’s.
+
+<KeyIdea id="partial-pressure-amount">Find each equilibrium amount before finding its partial pressure. An inert gas stays out of the reaction’s equilibrium expression, but it still contributes to total pressure.</KeyIdea>
+
+For ideal gases at fixed temperature and volume, adding helium would raise the total pressure without changing p(A) or p(B). Their amounts and RT/V would be unchanged. That statement relies on fixed volume; keeping total pressure fixed while adding a gas would be a different situation.
+
+## Watch the total when one gas makes two
+
+Now consider A(g) ⇌ B(g) + C(g), starting with a mol of A only. If x mol react, the equilibrium amounts are a − x, x and x. Adding them gives a + x mol in total. The total is no longer a, because each mole of A that reacts produces two moles of gas.
+
+If total pressure p is supplied, each partial pressure is its mole fraction times p. Thus p(A) = p(a − x)/(a + x), while p(B) = p(C) = px/(a + x). The denominator must include every gas present.
+
+For this reaction, the exam’s pressure expression is Kp = p(B)p(C)/p(A). In a fully dimensionless thermodynamic expression, each pressure is divided by a standard pressure p°. We will use the paper’s pressure convention below so that its algebraic options can be compared directly.
+
+## Try the past questions
+
+**1. A(g) ⇌ B(g) + C(g) starts with a mol of A only. At equilibrium, a − x mol of A remain and the total pressure is p. Express Kp in terms of a, x and p using the paper’s pressure convention.**
+
+Adapted from [JEE Main, 5 April 2026 Shift 2 Q56](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf#page=22), question ID 691121506; the options continue on page 23. Assume ideal gases and 0 &lt; x &lt; a.
+
+<details class="reading-check"><summary>Show hint</summary><p>The total amount is a + x. Find the three partial pressures, then substitute them into p(B)p(C)/p(A).</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Substitution gives Kp = [px/(a + x)]² ÷ [p(a − x)/(a + x)]. Cancel one factor p and one factor a + x to obtain <strong>Kp = px²/(a² − x²)</strong>.</p><p>Using a as the total amount would give the wrong denominator. If a dimensionless standard-pressure convention is required, replace p in this result by p/p°.</p></details>
+
+**2. Return to the opening question: the 10 L flask has 1 mol helium and initially 1 mol A. For A ⇌ B at 400 K, Kc = 4.0. Find p(He) and p(B), using R = 0.082 L atm K⁻¹ mol⁻¹.**
+
+<details class="reading-check"><summary>Show hint</summary><p>Solve x/(1 − x) = 4. Then calculate RT/V once and multiply it by the amount of each requested gas.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>We have x = 4 − 4x, so x = 0.8 mol. The flask contains 0.2 mol A, 0.8 mol B and 1 mol helium. Also RT/V = 0.082 × 400/10 = 3.28 atm per mole.</p><p>Therefore <strong>p(He) = 3.28 atm</strong> and <strong>p(B) = 2.624 atm</strong>. As a check, p(A) = 0.656 atm, and p(B)/p(A) = 4. The three partial pressures sum to 6.56 atm.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 691121506 and 6952782192.

@@ -1,0 +1,241 @@
+{
+  "date": "2026-11-20",
+  "status": "partial",
+  "startedAt": "2026-11-20T07:01:20+05:30",
+  "articleSlugs": [
+    "how-do-measurement-errors-combine-in-a-formula",
+    "how-do-you-find-partial-pressures-at-equilibrium",
+    "how-does-new-information-change-a-probability"
+  ],
+  "preflight": {
+    "branch": "main",
+    "clean": true,
+    "headMatchesOriginMain": true,
+    "existingDateArticles": 0,
+    "scheduleEnabled": true
+  },
+  "stages": {
+    "research": {
+      "status": "complete",
+      "completedAt": "2026-11-20T07:05:58+05:30",
+      "briefs": [
+        "editorial/research/2026-11-20-physics.json",
+        "editorial/research/2026-11-20-chemistry.json",
+        "editorial/research/2026-11-20-maths.json"
+      ],
+      "evidence": "Six distinct original NTA questions inspected, exact final key matched, solutions calculated independently. All published, staged and archived history objectives checked.",
+      "corpus": "Targeted eight-paper sample, not exhaustive recurrence analysis.",
+      "queueCoverage": "Three ready briefs selected today; four older candidates still need research. Seven-day advance brief goal remains unmet; no unverified topic selected."
+    },
+    "writing": {
+      "status": "complete",
+      "completedAt": "2026-11-20T07:07:57+05:30",
+      "articles": [
+        {
+          "slug": "how-do-measurement-errors-combine-in-a-formula",
+          "sourcePath": "src/content/blog/how-do-measurement-errors-combine-in-a-formula.mdx"
+        },
+        {
+          "slug": "how-do-you-find-partial-pressures-at-equilibrium",
+          "sourcePath": "src/content/blog/how-do-you-find-partial-pressures-at-equilibrium.mdx"
+        },
+        {
+          "slug": "how-does-new-information-change-a-probability",
+          "sourcePath": "src/content/blog/how-does-new-information-change-a-probability.mdx"
+        }
+      ],
+      "evidence": "Target PYQ in every opening; explicit learning goal; two sourced questions with hints and solutions; original diagrams prepared next."
+    },
+    "validation": {
+      "status": "complete",
+      "completedAt": "2026-11-20T07:12:00+05:30",
+      "commands": [
+        "npm run check:editorial",
+        "npm run build",
+        "npm run typecheck",
+        "npm run check:search",
+        "npm run check:analytics",
+        "git diff --check"
+      ],
+      "articleViewports": 6,
+      "navigationViewports": 8,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-20-browser/checks.json",
+      "navigationEvidence": "/private/tmp/padho-blog-2026-11-20-browser/index-checks.json",
+      "searchEvidence": "/private/tmp/padho-pcm-2026-11-20/search-build.json",
+      "evidence": "All checks passed; readable desktop/phone diagrams, covers and target solutions inspected. Four native disclosures per article; keyboard, static HTML and reduced-motion checks passed."
+    },
+    "figma": {
+      "status": "complete",
+      "completedAt": "2026-11-20T07:21:49+05:30",
+      "pageId": "110:722",
+      "frames": [
+        {
+          "id": "112:722",
+          "slug": "how-do-measurement-errors-combine-in-a-formula",
+          "width": 1440,
+          "height": 5475,
+          "columnId": "112:867",
+          "bodyId": "112:873",
+          "coverId": "112:872",
+          "textNodes": 48,
+          "figureIds": [
+            "112:896"
+          ],
+          "solutionIds": [
+            "112:939",
+            "112:946",
+            "112:955",
+            "112:962"
+          ]
+        },
+        {
+          "id": "112:970",
+          "slug": "how-do-measurement-errors-combine-in-a-formula",
+          "width": 390,
+          "height": 6778,
+          "columnId": "112:1111",
+          "bodyId": "112:1117",
+          "coverId": "112:1116",
+          "textNodes": 48,
+          "figureIds": [
+            "112:1140"
+          ],
+          "solutionIds": [
+            "112:1183",
+            "112:1190",
+            "112:1199",
+            "112:1206"
+          ]
+        },
+        {
+          "id": "112:1214",
+          "slug": "how-do-you-find-partial-pressures-at-equilibrium",
+          "width": 1440,
+          "height": 5356,
+          "columnId": "112:1359",
+          "bodyId": "112:1365",
+          "coverId": "112:1364",
+          "textNodes": 54,
+          "figureIds": [
+            "112:1382"
+          ],
+          "solutionIds": [
+            "112:1439",
+            "112:1446",
+            "112:1455",
+            "112:1462"
+          ]
+        },
+        {
+          "id": "112:1470",
+          "slug": "how-do-you-find-partial-pressures-at-equilibrium",
+          "width": 390,
+          "height": 6496,
+          "columnId": "112:1611",
+          "bodyId": "112:1617",
+          "coverId": "112:1616",
+          "textNodes": 54,
+          "figureIds": [
+            "112:1634"
+          ],
+          "solutionIds": [
+            "112:1691",
+            "112:1698",
+            "112:1707",
+            "112:1714"
+          ]
+        },
+        {
+          "id": "112:1722",
+          "slug": "how-does-new-information-change-a-probability",
+          "width": 1440,
+          "height": 5476,
+          "columnId": "112:1867",
+          "bodyId": "112:1873",
+          "coverId": "112:1872",
+          "textNodes": 58,
+          "figureIds": [
+            "112:1890"
+          ],
+          "solutionIds": [
+            "112:1959",
+            "112:1966",
+            "112:1975",
+            "112:1982"
+          ]
+        },
+        {
+          "id": "112:1990",
+          "slug": "how-does-new-information-change-a-probability",
+          "width": 390,
+          "height": 6784,
+          "columnId": "112:2131",
+          "bodyId": "112:2137",
+          "coverId": "112:2136",
+          "textNodes": 58,
+          "figureIds": [
+            "112:2154"
+          ],
+          "solutionIds": [
+            "112:2223",
+            "112:2230",
+            "112:2239",
+            "112:2246"
+          ]
+        }
+      ],
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          35,
+          36,
+          36
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "coverFit": "FIT; discrete cover assets only",
+        "captureReferencesRemoved": true,
+        "comments": "Supported get_comments returned no comments; result archived before retention."
+      },
+      "removedPageIds": [
+        "68:202"
+      ],
+      "preservedComponentIds": [],
+      "retentionEvidence": "Expired page contained no main components. Shared header/footer and disclosure components remain on permanent Shared UI 100:202. Only registered 2026-11-13 page removed; page absence verified."
+    },
+    "git": {
+      "status": "pending"
+    },
+    "publication": {
+      "status": "pending"
+    },
+    "liveVerification": {
+      "status": "pending"
+    }
+  },
+  "resume": {
+    "nextStage": "git",
+    "reuseExistingArticles": true
+  },
+  "lastCheckpointAt": "2026-11-20T07:21:49+05:30",
+  "figmaSessionId": "50dd184f-7135-40c5-a108-1db88e925740",
+  "figmaFeedback": {
+    "checkedAt": "2026-11-20T07:12:00+05:30",
+    "comments": [],
+    "evidence": "Supported get_comments returned no comments before retention."
+  }
+}

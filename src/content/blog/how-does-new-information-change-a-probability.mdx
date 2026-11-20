@@ -1,0 +1,72 @@
+---
+title: "How does new information change a probability?"
+description: "Multiply along each possible route, then compare only the routes that agree with what you have observed."
+category: "maths"
+author: "padho"
+pubDate: "2026-11-20T07:07:57+05:30"
+heroImage: "../../assets/articles/bayes-visible-pairs.png"
+heroImageAlt: "KANPUR has five adjacent pairs with one AN; ANANTPUR has seven adjacent pairs with two AN pairs."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**A letter is equally likely to come from KANPUR or ANANTPUR. One adjacent pair of letters in its city name is chosen uniformly and is the only pair visible. The visible pair is AN. What is the probability that the letter came from ANANTPUR?**
+
+Adapted from [JEE Main, 5 April 2026 Shift 1 Q7](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf#page=3), question ID 695278307. The original leaves the starting city probabilities and the reveal process unstated. We have stated the assumptions that produce its keyed answer. You need fractions and the idea of probability as a share of possible outcomes.
+
+## Start with what was possible before the clue
+
+Imagine the letter before any part of the city name becomes visible. Under our stated model, either city is equally likely. KANPUR has probability 1/2 and ANANTPUR has probability 1/2. These starting probabilities are often called priors: they describe what we know before the new clue.
+
+Now reveal one adjacent pair. KANPUR has six letters, so it has five possible pair positions: KA, AN, NP, PU and UR. Only one position shows AN. If the city is KANPUR, the probability of seeing AN is therefore 1/5.
+
+ANANTPUR has eight letters and seven possible pair positions. Two positions show AN. Notice that the two AN positions are separate possible outcomes even though the visible letters look the same.
+
+<ArticleDiagram kind="bayesPaths">Each small box is one adjacent-pair position, not one whole city name. Blue boxes show AN. The positions are equally likely within a city; the two cities have equal starting probabilities.</ArticleDiagram>
+
+## Multiply along a route
+
+There are two stages: the letter comes from a city, then a pair is revealed. To find the chance of one complete route, [multiply the starting probability by the conditional probability](https://openstax.org/books/introductory-statistics-2e/pages/3-3-two-basic-rules-of-probability). “Conditional” means that we already know the city when assigning the second probability.
+
+For the KANPUR-and-AN route, the probability is (1/2)(1/5). For the ANANTPUR-and-AN route, it is (1/2)(2/7). These products account for both parts of each route. Using 1/5 and 2/7 alone would leave out how likely the cities were in the first place.
+
+To find the chance of seeing AN from either city, add the two route probabilities. The routes cannot happen together: one letter cannot have both origins. This is why we can add without subtracting an overlap.
+
+## After the clue, compare only the matching routes
+
+We now know that AN is visible. Routes showing KA, NP or another pair no longer fit the observation. Among the remaining routes, what share came from ANANTPUR?
+
+That share is the ANANTPUR-and-AN route divided by the sum of both AN routes. This is the reasoning behind Bayes’ theorem. We will do the final fraction in the worked solution.
+
+<KeyIdea id="bayes-matching-routes">Multiply to find the probability of each complete route. Once evidence is known, divide the desired matching route by the total probability of all matching routes.</KeyIdea>
+
+Let A mean “the city is ANANTPUR” and E mean “AN is visible”. P(E|A) asks how often we see AN when the city is already known. P(A|E) asks how often the city is ANANTPUR among letters showing AN. The bar means “given”. Reversing what is given changes the group we are comparing.
+
+## A probability tree also works before any evidence is known
+
+The same [multiply-then-add reasoning](https://openstax.org/books/introductory-statistics-2e/pages/3-5-tree-and-venn-diagrams) can find an overall probability. Suppose a team can have one of two captains. To calculate its chance of winning, find the route “captain A and a win” and the route “captain B and a win”, then add them.
+
+If the captains have different selection probabilities, do not simply average their win rates. A captain selected more often should contribute more to the overall result. You only divide by an evidence total when the question tells you that an event has already occurred and asks about the possibilities within it.
+
+The model matters in the letter question too. If one city sent many more letters, the priors would change. If some pair positions were more likely to be exposed, the likelihoods would change. Seeing the same two letters does not determine one answer without these assumptions.
+
+## Try the past questions
+
+**1. A team selects captain A with probability 0.6 and captain B with probability 0.4. Its win probability is 0.8 with A and 0.7 with B. What is the overall probability of a win?**
+
+Adapted from [JEE Main, 5 April 2026 Shift 2 Q8](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf#page=4), question ID 691121458.
+
+<details class="reading-check"><summary>Show hint</summary><p>Multiply along each captain-and-win route, then add. The captain choices are mutually exclusive and cover all possibilities.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The two win routes have probabilities 0.6 × 0.8 = 0.48 and 0.4 × 0.7 = 0.28. Their total is <strong>0.76</strong>.</p><p>This lies between 0.7 and 0.8, as a weighted average should. The unweighted average, 0.75, would incorrectly treat the two captains as equally likely.</p></details>
+
+**2. Return to the opening question: with equal city probabilities and a uniformly chosen adjacent pair within each name, AN is visible. What is the probability that the letter came from ANANTPUR?**
+
+<details class="reading-check"><summary>Show hint</summary><p>The two matching route probabilities are (1/2)(1/5) and (1/2)(2/7). Divide the second by their sum.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The KANPUR route has probability 1/10 = 7/70. The ANANTPUR route has probability 1/7 = 10/70. Therefore P(ANANTPUR | AN) = (10/70)/(17/70) = <strong>10/17</strong>.</p><p>For a counting check, imagine 70 model letters from each city, spread evenly over that city’s pair positions. Then 14 KANPUR letters and 20 ANANTPUR letters show AN. Of those 34 matching letters, 20 came from ANANTPUR: 20/34 = 10/17.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 691121458 and 695278307, using the explicit sampling model above.
