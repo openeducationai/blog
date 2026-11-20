@@ -292,7 +292,8 @@
         "captureReferencesRemoved": true,
         "comments": "Supported get_comments returned no comments; result archived before retention."
       },
-      "verifiedAt": "2026-11-20T07:21:49+05:30"
+      "verifiedAt": "2026-11-20T07:21:49+05:30",
+      "sourceCommit": "b8bf8a9376511ea07effed3cbb57fdf2c60d7090"
     }
   ],
   "removedPages": [

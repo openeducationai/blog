@@ -1,6 +1,6 @@
 {
   "date": "2026-11-20",
-  "status": "partial",
+  "status": "published",
   "startedAt": "2026-11-20T07:01:20+05:30",
   "articleSlugs": [
     "how-do-measurement-errors-combine-in-a-formula",
@@ -218,24 +218,103 @@
       "retentionEvidence": "Expired page contained no main components. Shared header/footer and disclosure components remain on permanent Shared UI 100:202. Only registered 2026-11-13 page removed; page absence verified."
     },
     "git": {
-      "status": "pending"
+      "status": "complete",
+      "sourceCommit": "b8bf8a9376511ea07effed3cbb57fdf2c60d7090",
+      "pushedTo": "origin/main",
+      "completedAt": "2026-11-20T07:22:24+05:30"
     },
     "publication": {
-      "status": "pending"
+      "status": "complete",
+      "startedAt": "2026-11-20T07:22:24+05:30",
+      "publisher": "node scripts/publish.mjs",
+      "sourceCommit": "b8bf8a9376511ea07effed3cbb57fdf2c60d7090",
+      "scope": "padho.ai/blog only",
+      "log": "/private/tmp/padho-pcm-2026-11-20/publish.log",
+      "confirmedAt": "2026-11-20T07:23:21+05:30",
+      "exitCode": 0,
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ]
     },
     "liveVerification": {
-      "status": "pending"
+      "status": "complete",
+      "startedAt": "2026-11-20T07:23:21+05:30",
+      "completedAt": "2026-11-20T07:25:11+05:30",
+      "articles": [
+        {
+          "url": "https://padho.ai/blog/how-do-measurement-errors-combine-in-a-formula/",
+          "status": 200,
+          "sha256": "3d6a11e68774efc6e0f58fe3048b175ec3f489bfe2bacedab3dc9642449772d5",
+          "matchesBuild": true,
+          "analyticsContext": {
+            "product_surface": "blog",
+            "blog_analytics_version": 1,
+            "blog_page_type": "article",
+            "blog_category": "physics",
+            "article_slug": "how-do-measurement-errors-combine-in-a-formula",
+            "article_title": "How do measurement errors combine in a formula?"
+          },
+          "analyticsBundleMatchesBuild": true
+        },
+        {
+          "url": "https://padho.ai/blog/how-do-you-find-partial-pressures-at-equilibrium/",
+          "status": 200,
+          "sha256": "d886c5d0b2a73c10f89265167460c92c876a394a71c3be53607d8b5d969553ca",
+          "matchesBuild": true,
+          "analyticsContext": {
+            "product_surface": "blog",
+            "blog_analytics_version": 1,
+            "blog_page_type": "article",
+            "blog_category": "chemistry",
+            "article_slug": "how-do-you-find-partial-pressures-at-equilibrium",
+            "article_title": "How do you find partial pressures at equilibrium?"
+          },
+          "analyticsBundleMatchesBuild": true
+        },
+        {
+          "url": "https://padho.ai/blog/how-does-new-information-change-a-probability/",
+          "status": 200,
+          "sha256": "4bc8c08a29deefc27f94ea2e568e6890c8b043eb4b012b93b520d698cb7639e0",
+          "matchesBuild": true,
+          "analyticsContext": {
+            "product_surface": "blog",
+            "blog_analytics_version": 1,
+            "blog_page_type": "article",
+            "blog_category": "maths",
+            "article_slug": "how-does-new-information-change-a-probability",
+            "article_title": "How does new information change a probability?"
+          },
+          "analyticsBundleMatchesBuild": true
+        }
+      ],
+      "sitemapPages": 36,
+      "publishedArticles": 30,
+      "images": 30,
+      "internalLinks": 37,
+      "metadataMatchesVisibleContent": true,
+      "crawlerProbes": 120,
+      "allCrawlerProbesPassed": true,
+      "articleViewports": 6,
+      "navigationViewports": 8,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-20-browser/checks-live.json",
+      "navigationEvidence": "/private/tmp/padho-blog-2026-11-20-browser/index-checks-live.json",
+      "searchEvidence": "/private/tmp/padho-pcm-2026-11-20/search-live.json",
+      "evidence": "Live HTML and shared analytics bundle exactly match the reviewed build. Six article and eight home/category desktop/phone viewports passed. Covers loaded, target questions and keyboard disclosures worked, and representative live screenshots were inspected. Public crawler probes do not prove indexing.",
+      "searchConsole": "No indexing submission or indexing-status claim made by this run."
     }
   },
   "resume": {
-    "nextStage": "git",
+    "nextStage": null,
     "reuseExistingArticles": true
   },
-  "lastCheckpointAt": "2026-11-20T07:21:49+05:30",
+  "lastCheckpointAt": "2026-11-20T07:25:11+05:30",
   "figmaSessionId": "50dd184f-7135-40c5-a108-1db88e925740",
   "figmaFeedback": {
     "checkedAt": "2026-11-20T07:12:00+05:30",
     "comments": [],
     "evidence": "Supported get_comments returned no comments before retention."
-  }
+  },
+  "sourceCommit": "b8bf8a9376511ea07effed3cbb57fdf2c60d7090",
+  "completedAt": "2026-11-20T07:25:11+05:30"
 }

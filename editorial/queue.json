@@ -581,7 +581,7 @@
       ],
       "difference": "Tracks measurement uncertainty and sensitivity, not dimensions or a change of dimensional basis.",
       "briefPath": "editorial/research/2026-11-20-physics.json",
-      "status": "writing",
+      "status": "published",
       "rationale": "Verified question pair; fills a distinct prerequisite or misconception gap in history. No measured topic weightage.",
       "priority": 1,
       "slug": "how-do-measurement-errors-combine-in-a-formula"
@@ -600,7 +600,7 @@
       ],
       "difference": "Gas stoichiometry, inert-gas accounting and partial pressures; does not reteach buffer pH or Nernst cell voltage.",
       "briefPath": "editorial/research/2026-11-20-chemistry.json",
-      "status": "writing",
+      "status": "published",
       "rationale": "Verified question pair; fills a distinct prerequisite or misconception gap in history. No measured topic weightage.",
       "priority": 1,
       "slug": "how-do-you-find-partial-pressures-at-equilibrium"
@@ -619,7 +619,7 @@
       ],
       "difference": "Conditional probability and evidence-weighted source attribution, not inclusion-exclusion or uniform counting of coefficient choices.",
       "briefPath": "editorial/research/2026-11-20-maths.json",
-      "status": "writing",
+      "status": "published",
       "rationale": "Verified question pair; fills a distinct prerequisite or misconception gap in history. No measured topic weightage.",
       "priority": 1,
       "slug": "how-does-new-information-change-a-probability"

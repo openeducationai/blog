@@ -1520,7 +1520,7 @@
       "sourceSha256": "b90e394e6f0d9649d126d00f362bc78036fcff9cbc6e104fad18e2fa2098a85c",
       "url": "https://padho.ai/blog/how-do-measurement-errors-combine-in-a-formula/",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionText": "A uniform cylinder has mass 97.42 ± 0.02 g, length 8.35 ± 0.05 mm and diameter 20.20 ± 0.02 mm. What is the approximate maximum percentage error in its calculated density?",
       "review": {
         "sourceSha256": "b90e394e6f0d9649d126d00f362bc78036fcff9cbc6e104fad18e2fa2098a85c",
@@ -1532,7 +1532,11 @@
           "visuals": true
         },
         "notes": "All drafts read sequentially and paraphrased for clarity. Original NTA question pages and final-key option IDs checked; solutions independently calculated. First-order maximum error model, inert-gas mole accounting and pressure convention, and explicit Bayes priors/reveal process verified. Desktop and phone covers, diagrams and worked solutions visually inspected; keyboard disclosures, no-JavaScript content, reduced-motion and normal listing navigation passed."
-      }
+      },
+      "sourceCommit": "b8bf8a9376511ea07effed3cbb57fdf2c60d7090",
+      "liveVerifiedAt": "2026-11-20T07:25:11+05:30",
+      "liveHtmlSha256": "3d6a11e68774efc6e0f58fe3048b175ec3f489bfe2bacedab3dc9642449772d5",
+      "releaseConfirmedAt": "2026-11-20T07:23:21+05:30"
     },
     {
       "slug": "how-do-you-find-partial-pressures-at-equilibrium",
@@ -1575,7 +1579,7 @@
       "sourceSha256": "1bc56a343f6142b9f48a7d2178f7f18e9ccb1c4f4e473d33f7e41c4bb5886840",
       "url": "https://padho.ai/blog/how-do-you-find-partial-pressures-at-equilibrium/",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionText": "A 10 L flask initially contains 1 mol of helium and 1 mol of A, with no B. At 400 K, A(g) ⇌ B(g) has Kc = 4.0. Assuming ideal gases and R = 0.082 L atm K⁻¹ mol⁻¹, find the equilibrium partial pressures of helium and B.",
       "review": {
         "sourceSha256": "1bc56a343f6142b9f48a7d2178f7f18e9ccb1c4f4e473d33f7e41c4bb5886840",
@@ -1587,7 +1591,11 @@
           "visuals": true
         },
         "notes": "All drafts read sequentially and paraphrased for clarity. Original NTA question pages and final-key option IDs checked; solutions independently calculated. First-order maximum error model, inert-gas mole accounting and pressure convention, and explicit Bayes priors/reveal process verified. Desktop and phone covers, diagrams and worked solutions visually inspected; keyboard disclosures, no-JavaScript content, reduced-motion and normal listing navigation passed."
-      }
+      },
+      "sourceCommit": "b8bf8a9376511ea07effed3cbb57fdf2c60d7090",
+      "liveVerifiedAt": "2026-11-20T07:25:11+05:30",
+      "liveHtmlSha256": "d886c5d0b2a73c10f89265167460c92c876a394a71c3be53607d8b5d969553ca",
+      "releaseConfirmedAt": "2026-11-20T07:23:21+05:30"
     },
     {
       "slug": "how-does-new-information-change-a-probability",
@@ -1630,7 +1638,7 @@
       "sourceSha256": "2780fee093aea1cb6d591be942790b694fbe49507f89174ce914c47531158d3b",
       "url": "https://padho.ai/blog/how-does-new-information-change-a-probability/",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionText": "A letter is equally likely to come from KANPUR or ANANTPUR. One adjacent pair of letters in its city name is chosen uniformly and is the only pair visible. The visible pair is AN. What is the probability that the letter came from ANANTPUR?",
       "review": {
         "sourceSha256": "2780fee093aea1cb6d591be942790b694fbe49507f89174ce914c47531158d3b",
@@ -1642,7 +1650,11 @@
           "visuals": true
         },
         "notes": "All drafts read sequentially and paraphrased for clarity. Original NTA question pages and final-key option IDs checked; solutions independently calculated. First-order maximum error model, inert-gas mole accounting and pressure convention, and explicit Bayes priors/reveal process verified. Desktop and phone covers, diagrams and worked solutions visually inspected; keyboard disclosures, no-JavaScript content, reduced-motion and normal listing navigation passed."
-      }
+      },
+      "sourceCommit": "b8bf8a9376511ea07effed3cbb57fdf2c60d7090",
+      "liveVerifiedAt": "2026-11-20T07:25:11+05:30",
+      "liveHtmlSha256": "4bc8c08a29deefc27f94ea2e568e6890c8b043eb4b012b93b520d698cb7639e0",
+      "releaseConfirmedAt": "2026-11-20T07:23:21+05:30"
     }
   ]
 }
