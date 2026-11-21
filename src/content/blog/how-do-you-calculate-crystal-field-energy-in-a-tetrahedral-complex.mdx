@@ -1,0 +1,68 @@
+---
+title: "How do you calculate crystal field energy in a tetrahedral complex?"
+description: "Place electrons in the two tetrahedral energy levels, then add their signed contributions to crystal field stabilisation."
+category: "chemistry"
+author: "padho"
+pubDate: "2026-11-21T07:07:17+05:30"
+heroImage: "../../assets/articles/tetrahedral-energy-levels.png"
+heroImageAlt: "Two lower e orbitals and three upper t₂ orbitals separated by Δt, with their energies measured from the average level."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**For high-spin tetrahedral metal ions with d², d⁴, d⁶ and d⁸ configurations, find the crystal field stabilisation energy of each in units of Δt. Include only the energy from orbital splitting.**
+
+Adapted from [JEE Main, 6 April 2026 Shift 1 Q61](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf#page=22), question ID 6952782196; the matching table continues on page 23. We make the usual high-spin, splitting-only model explicit. You need the idea that one orbital holds at most two electrons.
+
+## Start with five orbitals, not five different energies
+
+A metal ion has five d orbitals. An orbital describes a possible electron state; each orbital can hold at most two electrons with opposite spins. The notation d³, for example, means there are three electrons to place among the five d orbitals.
+
+In a tetrahedral complex, four surrounding atoms or groups bind to the metal. These surrounding groups are called ligands. They sit around the metal in a tetrahedral arrangement. Their interaction with the metal’s electrons makes some d orbitals higher in energy than others.
+
+The [tetrahedral crystal-field model](https://openstax.org/books/chemistry-2e/pages/19-3-spectroscopic-and-magnetic-properties-of-coordination-compounds) puts two orbitals in a lower group called e and three in an upper group called t₂. Orbitals within either group have the same energy. The energy gap between the groups is called Δt, pronounced delta t.
+
+The lower e group contains d(z²) and d(x² − y²). The upper t₂ group contains d(xy), d(xz) and d(yz). The expressions in brackets name the orbitals; they are not numbers to substitute into our energy calculation. Keep this grouping nearby when answering the comparison question at the end.
+
+## Measure energy from the average level
+
+We measure the splitting energies from the average energy of all five d orbitals. Each lower e orbital lies 0.6Δt below that reference, and each upper t₂ orbital lies 0.4Δt above it.
+
+Why are these distances unequal? There are two lower orbitals but three upper ones. The average must stay at the reference level, so the total downward shift equals the total upward shift: 2 × 0.6Δt = 3 × 0.4Δt. The gap is still one Δt because 0.6Δt + 0.4Δt = Δt.
+
+<ArticleDiagram kind="tetrahedralEnergy">Each short horizontal line is one d orbital. The two lower e orbitals lie at −0.6Δt; the three upper t₂ orbitals lie at +0.4Δt. The dashed line is the average-energy reference, not an extra orbital.</ArticleDiagram>
+
+An electron in a lower orbital contributes −0.6Δt to the splitting energy. An electron in an upper orbital contributes +0.4Δt. A negative total means that the occupied arrangement lies below the unsplit reference for the same number of electrons. It does not mean the complex’s total energy is negative in an absolute sense.
+
+## Place electrons before adding their energies
+
+Our question specifies high spin. In the usual tetrahedral case, the gap is small enough that electrons occupy the higher orbitals before pairing in the lower ones. Put one electron in each of the two lower orbitals, then one in each of the three upper orbitals. Only after those five places are singly occupied do further electrons start to pair, beginning in the lower group.
+
+Follow a d³ ion. Its first two electrons occupy the two e orbitals separately. Its third electron occupies one t₂ orbital. There are therefore two lower electrons and one upper electron. The splitting contribution is 2(−0.6Δt) + 1(+0.4Δt) = −0.8Δt.
+
+Now imagine adding a fourth electron. Under the high-spin assumption, it goes into another upper orbital instead of pairing below. This is why we cannot simply fill the lower group completely before using the upper group.
+
+<KeyIdea id="tetrahedral-cfse">First count electrons in e and t₂. Then calculate CFSE = (−0.6 × number in e + 0.4 × number in t₂)Δt.</KeyIdea>
+
+CFSE means crystal field stabilisation energy. Here it counts only the energy from orbital splitting. Electron-pairing energy is a separate contribution and is not included in the values requested by this question.
+
+## Try the past questions
+
+**1. In a tetrahedral complex, which comparisons are correct? A: d(xy) and d(xz) have equal energy, both above d(x² − y²). B: d(xy) and d(yz) have equal energy, both above d(z²). C: d(x² − y²) is above d(z²), which is above d(xz). D: d(x² − y²) and d(z²) have equal energy, both below d(xz).**
+
+Adapted from [JEE Main, 6 April 2026 Shift 1 Q62](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf#page=23), question ID 6952782197. The orbital comparisons are written in words.
+
+<details class="reading-check"><summary>Show hint</summary><p>Group d(z²) with d(x² − y²) in the lower e level. The other three orbitals belong to the upper t₂ level.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p><strong>A, B and D are correct.</strong> Each uses either equality within a group or the fact that t₂ lies above e. C is false: its first two orbitals have equal energy, and both lie below d(xz).</p></details>
+
+**2. Return to the opening question: find the splitting-only CFSE for high-spin tetrahedral d², d⁴, d⁶ and d⁸ configurations.**
+
+<details class="reading-check"><summary>Show hint</summary><p>For d², both electrons are in e. For d⁴, two are in e and two in t₂. After d⁵, start pairing in e. Count electrons, not just occupied orbitals.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>For d², the counts are 2 and 0: CFSE = 2(−0.6)Δt = <strong>−1.2Δt</strong>. For d⁴, the counts are 2 and 2: CFSE = (−1.2 + 0.8)Δt = <strong>−0.4Δt</strong>.</p><p>For d⁶, the counts are 3 and 3: CFSE = (−1.8 + 1.2)Δt = <strong>−0.6Δt</strong>. For d⁸, the counts are 4 and 4: CFSE = (−2.4 + 1.6)Δt = <strong>−0.8Δt</strong>.</p><p>Each pair of counts adds to the stated number of d electrons. That simple check helps catch a missed electron or an early pairing mistake.</p></details>
+
+These answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 6952782197 and 6952782196.

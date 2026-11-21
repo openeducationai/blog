@@ -24,9 +24,12 @@ import arithmeticSums from '../../assets/articles/arithmetic-running-sums.svg?ra
 import measurementError from '../../assets/articles/measurement-error-budget.svg?raw';
 import gasEquilibrium from '../../assets/articles/gas-equilibrium-amounts.svg?raw';
 import bayesPaths from '../../assets/articles/bayes-visible-pairs.svg?raw';
-interface Props { kind: 'connections' | 'layers' | 'particles' | 'spread' | 'fieldEnergy' | 'buffer' | 'binomial' | 'gravity' | 'moles' | 'positive' | 'seriesVoltmeter' | 'bohrRadius' | 'circleChord' | 'emDirections' | 'heatWorkCycle' | 'nestedSums' | 'matterWave' | 'oxygenAntibonding' | 'linearConsistency' | 'gravityEnergy' | 'nernstReaction' | 'arithmeticSums' | 'measurementError' | 'gasEquilibrium' | 'bayesPaths' }
+import surfaceArea from '../../assets/articles/drop-surface-area.svg?raw';
+import tetrahedralEnergy from '../../assets/articles/tetrahedral-energy-levels.svg?raw';
+import inverseOrder from '../../assets/articles/matrix-inverse-order.svg?raw';
+interface Props { kind: 'connections' | 'layers' | 'particles' | 'spread' | 'fieldEnergy' | 'buffer' | 'binomial' | 'gravity' | 'moles' | 'positive' | 'seriesVoltmeter' | 'bohrRadius' | 'circleChord' | 'emDirections' | 'heatWorkCycle' | 'nestedSums' | 'matterWave' | 'oxygenAntibonding' | 'linearConsistency' | 'gravityEnergy' | 'nernstReaction' | 'arithmeticSums' | 'measurementError' | 'gasEquilibrium' | 'bayesPaths' | 'surfaceArea' | 'tetrahedralEnergy' | 'inverseOrder' }
 const { kind } = Astro.props;
-const diagrams = { connections: capacitorConnections, layers: capacitorLayers, particles: osmoticParticles, spread: varianceShift, fieldEnergy, buffer, binomial, gravity, moles, positive, seriesVoltmeter, bohrRadius, circleChord, emDirections, heatWorkCycle, nestedSums, matterWave, oxygenAntibonding, linearConsistency, gravityEnergy, nernstReaction, arithmeticSums, measurementError, gasEquilibrium, bayesPaths };
+const diagrams = { connections: capacitorConnections, layers: capacitorLayers, particles: osmoticParticles, spread: varianceShift, fieldEnergy, buffer, binomial, gravity, moles, positive, seriesVoltmeter, bohrRadius, circleChord, emDirections, heatWorkCycle, nestedSums, matterWave, oxygenAntibonding, linearConsistency, gravityEnergy, nernstReaction, arithmeticSums, measurementError, gasEquilibrium, bayesPaths, surfaceArea, tetrahedralEnergy, inverseOrder };
 ---
 <figure class="article-diagram" aria-labelledby={`diagram-${kind}-caption`}>
   <div class="diagram-drawing" set:html={diagrams[kind]} />

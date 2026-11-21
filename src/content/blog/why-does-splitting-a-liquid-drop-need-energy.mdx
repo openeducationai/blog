@@ -1,0 +1,68 @@
+---
+title: "Why does splitting a liquid drop need energy?"
+description: "Keep the liquid volume fixed, count the new surface area, and distinguish a liquid drop from a two-sided soap film."
+category: "physics"
+author: "padho"
+pubDate: "2026-11-21T07:07:17+05:30"
+heroImage: "../../assets/articles/drop-surface-area.png"
+heroImageAlt: "One spherical drop divides into eight equal drops of half the radius, preserving volume while doubling total surface area."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**A spherical liquid drop of diameter 2 mm breaks into 512 equal spherical droplets without losing liquid. If its surface tension is 0.08 N/m, what is the increase in surface energy, to the nearest microjoule?**
+
+Adapted from [JEE Main, 2 April 2026 Shift 1 Q45](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf#page=18), question ID 69112145. We make the equal-droplet assumption explicit. You need the volume and area of a sphere; we’ll use both below.
+
+## The liquid stays, but its surface grows
+
+Imagine dividing one spherical drop into eight equal drops. We have not added or removed any liquid. The eight smaller volumes must add up to the original volume.
+
+A sphere’s volume is 4πr³/3, where r is its radius. If each new radius is half the old radius, each new volume is one-eighth as large. Eight of these smaller drops therefore contain exactly the original amount of liquid.
+
+Surface area behaves differently. The area of a sphere is 4πr². Halving the radius makes each new area one-quarter as large. Eight drops, each with one-quarter of the original area, have twice the original area altogether.
+
+<ArticleDiagram kind="surfaceArea">One drop of radius R divides into eight equal drops of radius R/2. The blue circles represent spherical drops. Their total volume is unchanged, but their total surface area doubles.</ArticleDiagram>
+
+This is the step that matters in our opening question. We must use volume to find the new radius first. Then we use area to find the energy change. Dividing the original area by the number of drops would confuse these two different quantities.
+
+## More surface requires energy
+
+A liquid tends to reduce its exposed surface. This is why a small, freely suspended drop is nearly spherical: a sphere encloses a given volume with the least surface area. Gravity can distort larger drops, so we use the spherical model stated in the question.
+
+Creating extra surface requires work. At constant temperature and surface tension, the surface-energy increase is ΔE = γΔA. Here γ, pronounced gamma, is the surface tension, and ΔA means final total area minus initial total area.
+
+You can connect this energy rule to the [force from surface tension](https://openstax.org/books/college-physics-2e/pages/11-8-cohesion-and-adhesion-in-liquids-surface-tension-and-capillary-action). For one surface bounded by a movable edge of length l, the force is γl. Moving that edge a small distance s creates area ls and requires work γls. Work per added area is therefore γ.
+
+The units agree: N/m multiplied by m² gives N m, or joules. Use metres for the radii when γ is given in N/m. Remember that a diameter is twice the radius.
+
+<KeyIdea id="surface-area-energy">Conserve volume to find the new drop size. Then subtract the initial total surface area from the final total surface area and multiply by surface tension.</KeyIdea>
+
+## Count the surfaces before using the formula
+
+A liquid drop in air has one liquid–air interface: its outer surface. Its surface area is 4πr². Splitting a drop creates more outer surface, so its surface energy increases. Merging drops reverses that change and can release surface energy.
+
+A soap bubble is different. A thin liquid film surrounds air, with air outside as well. The film has an inner surface and an outer surface. When the film is very thin, both radii are approximately r, so the total area is about 8πr².
+
+For a slowly enlarged soap bubble, the work used to increase surface energy is therefore γ × 8π(r₂² − r₁²). This counts both interfaces. It is the surface-energy part of the work, not any additional work against an external atmospheric pressure. We assume constant surface tension and neglect losses.
+
+## Try the past questions
+
+**1. A thin soap bubble has surface tension 0.03 N/m. Its diameter increases from 2 cm to 6 cm. The work used to increase its surface energy is απ × 10⁻⁴ J. Find α.**
+
+Adapted from [JEE Main, 2 April 2026 Shift 2 Q33](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf#page=13), question ID 691121183. We make the thin-film, constant-tension surface-work model explicit.
+
+<details class="reading-check"><summary>Show hint</summary><p>The radii are 0.01 m and 0.03 m. Count two surfaces and keep π as a factor, because the question asks for its coefficient.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The added area is 8π(0.03² − 0.01²) = 0.0064π m². The work is 0.03 × 0.0064π = 1.92π × 10⁻⁴ J. Thus <strong>α = 1.92</strong>.</p><p>Using π = 3.14 gives about 6.03 × 10⁻⁴ J. That is the energy; 6.03 is not the requested coefficient α.</p></details>
+
+**2. Return to the opening question: a drop of diameter 2 mm splits into 512 equal spherical droplets. Find the surface-energy increase when γ = 0.08 N/m, to the nearest microjoule.**
+
+<details class="reading-check"><summary>Show hint</summary><p>The original radius R is 0.001 m. Use 512r³ = R³ and 512 = 8³. A liquid drop has one outer surface.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Each new radius is r = R/8. The final total area is 512 × 4π(R/8)² = 8 × 4πR². Subtracting the original 4πR² leaves an increase of 7 × 4πR².</p><p>Hence ΔE = 0.08 × 7 × 4π × (0.001)² ≈ 7.04 × 10⁻⁶ J. One microjoule is 10⁻⁶ J, so the answer is <strong>7 μJ</strong> to the nearest microjoule. The positive sign agrees with the increase in exposed surface.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 691121183 and 69112145.

@@ -1,0 +1,70 @@
+{
+  "id": "surface-energy-area-change",
+  "category": "physics",
+  "conceptKey": "physics/properties-of-solids-and-liquids/surface-energy-area-change",
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112145",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift 1, Q45, PDF page 18",
+      "answer": "7 μJ (7.0336 μJ using π=3.14)",
+      "correctOptionId": "691121163",
+      "verifiedAt": "2026-11-21T07:05:12+05:30",
+      "adapted": true,
+      "independentSolution": "R=0.001 m; 512r³=R³ gives r=R/8. Total final area=512×4πR²/64=8×4πR². ΔE=0.08×7×4π×10^-6=7.0336×10^-6 J. Positive; one drop N=1 gives zero; inverse coalescence reduces energy.",
+      "adaptation": "Original does not explicitly say equal droplets; equal spherical droplets and volume conservation are stated. Nearest microjoule matches the keyed option.",
+      "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+    },
+    {
+      "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121183",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift 2, Q33, PDF page 13",
+      "answer": "α=1.92; W=1.92π×10^-4 J",
+      "correctOptionId": "691121626",
+      "verifiedAt": "2026-11-21T07:05:12+05:30",
+      "adapted": true,
+      "independentSolution": "Thin soap film has two interfaces. Radii 0.01 and 0.03 m; ΔA=8π(0.03²−0.01²)=0.0064π m². W=0.03×0.0064π=1.92π×10^-4 J. α is coefficient of π, not numerical energy in units of 10^-4 J.",
+      "adaptation": "Uses the paper’s coefficient of π exactly; explicitly treats the work as the reversible surface-energy increase at constant tension.",
+      "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+    }
+  ],
+  "closestPriorSlugs": [],
+  "difference": "No previous article teaches surface energy, volume conservation on fragmentation, or counting liquid interfaces.",
+  "researchedAt": "2026-11-21T07:05:12+05:30",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; current official homepage checked 21 November 2026",
+    "scope": "Physics Unit 7: surface energy, surface tension, drops and bubbles."
+  },
+  "corpus": {
+    "papersExamined": 8,
+    "coverageNotes": "Targeted cumulative scans of 2, 4, 5 and 6 April 2026, both shifts, with only selected pages of 6 April Shift 2. Not an exhaustive classification, all-shift census or five-year frequency study. Today selected six questions across four official papers.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two exact official-paper/final-key matches, a specific misconception and prerequisite value. Targeted eight-paper sample; no exhaustive recurrence or marks forecast."
+  },
+  "sources": [
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/college-physics-2e/pages/11-8-cohesion-and-adhesion-in-liquids-surface-tension-and-capillary-action"
+    },
+    {
+      "title": "NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112145",
+  "targetQuestionText": "A spherical liquid drop of diameter 2 mm breaks into 512 equal spherical droplets without losing liquid. If its surface tension is 0.08 N/m, what is the increase in surface energy, to the nearest microjoule?",
+  "verificationNotes": "Original pages visually inspected, exact final-key identifiers matched and calculations independently worked. Explicit adaptations preserve assumptions; no human reviewer claimed."
+}

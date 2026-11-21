@@ -1,0 +1,180 @@
+{
+  "date": "2026-11-21",
+  "status": "partial",
+  "startedAt": "2026-11-21T07:01:13+05:30",
+  "articleSlugs": [
+    "why-does-splitting-a-liquid-drop-need-energy",
+    "how-do-you-calculate-crystal-field-energy-in-a-tetrahedral-complex",
+    "which-side-should-you-multiply-by-a-matrix-inverse"
+  ],
+  "preflight": {
+    "branch": "main",
+    "clean": true,
+    "existingDateArticles": 0,
+    "scheduleEnabled": true,
+    "headMatchesOriginMain": true
+  },
+  "stages": {
+    "research": {
+      "status": "complete",
+      "completedAt": "2026-11-21T07:05:12+05:30",
+      "briefs": [
+        "editorial/research/2026-11-21-physics.json",
+        "editorial/research/2026-11-21-chemistry.json",
+        "editorial/research/2026-11-21-maths.json"
+      ],
+      "evidence": "Six new question IDs and original pages inspected, exact final keys matched, solutions independently calculated. Semantic history review includes archived and staged entries.",
+      "queueCoverage": "Three verified briefs selected; three older candidates remain unverified. Seven-day advance-brief aim remains unmet."
+    },
+    "writing": {
+      "status": "complete",
+      "completedAt": "2026-11-21T07:07:17+05:30",
+      "articles": [
+        {
+          "slug": "why-does-splitting-a-liquid-drop-need-energy",
+          "sourcePath": "src/content/blog/why-does-splitting-a-liquid-drop-need-energy.mdx"
+        },
+        {
+          "slug": "how-do-you-calculate-crystal-field-energy-in-a-tetrahedral-complex",
+          "sourcePath": "src/content/blog/how-do-you-calculate-crystal-field-energy-in-a-tetrahedral-complex.mdx"
+        },
+        {
+          "slug": "which-side-should-you-multiply-by-a-matrix-inverse",
+          "sourcePath": "src/content/blog/which-side-should-you-multiply-by-a-matrix-inverse.mdx"
+        }
+      ],
+      "evidence": "Each opening displays a verified target and explicit learning goal. Original prose builds to that target; two sourced questions include hints and worked solutions. Original figures are prepared during verification."
+    },
+    "validation": {
+      "status": "complete",
+      "completedAt": "2026-11-21T07:10:31+05:30",
+      "commands": [
+        "npm run check:editorial",
+        "npm run build",
+        "npm run typecheck",
+        "npm run check:search",
+        "npm run check:analytics",
+        "git diff --check"
+      ],
+      "articleViewports": 6,
+      "navigationViewports": 8,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-21-browser/checks.json",
+      "navigationEvidence": "/private/tmp/padho-blog-2026-11-21-browser/index-checks.json",
+      "searchEvidence": "/private/tmp/padho-pcm-2026-11-21/search-build.log",
+      "evidence": "Real Astro pages at 1440/390 widths pass title, cover, target question, justified Literata, no overflow, four native disclosures, keyboard, no-JavaScript and reduced-motion checks. Source questions, original diagrams and worked solutions visually reviewed."
+    },
+    "figma": {
+      "status": "complete",
+      "completedAt": "2026-11-21T07:19:42+05:30",
+      "pageId": "119:722",
+      "frames": [
+        {
+          "id": "121:722",
+          "slug": "why-does-splitting-a-liquid-drop-need-energy",
+          "width": 1440,
+          "columnId": "121:864",
+          "bodyId": "121:870",
+          "coverId": "121:869",
+          "height": 5071
+        },
+        {
+          "id": "121:971",
+          "slug": "why-does-splitting-a-liquid-drop-need-energy",
+          "width": 390,
+          "columnId": "121:1109",
+          "bodyId": "121:1115",
+          "coverId": "121:1114",
+          "height": 6172
+        },
+        {
+          "id": "121:1216",
+          "slug": "how-do-you-calculate-crystal-field-energy-in-a-tetrahedral-complex",
+          "width": 1440,
+          "columnId": "121:1358",
+          "bodyId": "121:1364",
+          "coverId": "121:1363",
+          "height": 5281
+        },
+        {
+          "id": "121:1463",
+          "slug": "how-do-you-calculate-crystal-field-energy-in-a-tetrahedral-complex",
+          "width": 390,
+          "columnId": "121:1601",
+          "bodyId": "121:1607",
+          "coverId": "121:1606",
+          "height": 6567
+        },
+        {
+          "id": "121:1706",
+          "slug": "which-side-should-you-multiply-by-a-matrix-inverse",
+          "width": 1440,
+          "columnId": "121:1848",
+          "bodyId": "121:1854",
+          "coverId": "121:1853",
+          "height": 5392
+        },
+        {
+          "id": "121:1953",
+          "slug": "which-side-should-you-multiply-by-a-matrix-inverse",
+          "width": 390,
+          "columnId": "121:2091",
+          "bodyId": "121:2097",
+          "coverId": "121:2096",
+          "height": 6759
+        }
+      ],
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          34,
+          34,
+          39
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "coverFit": "FIT; discrete cover assets only",
+        "captureReferencesRemoved": true,
+        "comments": "Supported get_comments returned no comments; result archived before retention."
+      },
+      "removedPageIds": [
+        "76:202"
+      ],
+      "preservedComponentIds": [],
+      "retentionEvidence": "Registered expired 2026-11-14 page contained no main components and was removed after feedback archival. Remaining pages verified: 15,16,17,19,20,21 November plus permanent Shared UI 100:202. Capture references removed; exactly six current article frames remain."
+    },
+    "git": {
+      "status": "pending"
+    },
+    "publication": {
+      "status": "pending"
+    },
+    "liveVerification": {
+      "status": "pending"
+    }
+  },
+  "figmaFeedback": {
+    "readAt": "2026-11-21T07:11:23+05:30",
+    "comments": [],
+    "evidence": "Supported get_comments returned an empty list before retention; no pagination cursor."
+  },
+  "figmaSessionId": "069e7138-3be9-4121-be4b-e9e020c579c7",
+  "lastCheckpointAt": "2026-11-21T07:19:42+05:30",
+  "resume": {
+    "nextStage": "git",
+    "reuseExistingArticles": true
+  }
+}

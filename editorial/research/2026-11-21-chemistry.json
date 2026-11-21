@@ -1,0 +1,71 @@
+{
+  "id": "tetrahedral-crystal-field-energy",
+  "category": "chemistry",
+  "conceptKey": "chemistry/coordination-compounds/tetrahedral-splitting-cfse",
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782196",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "6 April 2026 Shift 1, Q61, PDF pages 22–23",
+      "answer": "d² −1.2Δt; d⁴ −0.4Δt; d⁶ −0.6Δt; d⁸ −0.8Δt (A-III, B-IV, C-I, D-II)",
+      "correctOptionId": "6952787708",
+      "verifiedAt": "2026-11-21T07:05:12+05:30",
+      "adapted": true,
+      "independentSolution": "e orbitals lie at −0.6Δt and t₂ at +0.4Δt. High-spin occupancies e²t₂⁰,e²t₂²,e³t₂³,e⁴t₂⁴ give −1.2,−0.4,−0.6,−0.8. Barycentre check 2(−.6)+3(.4)=0; d5 and d10 splitting contributions zero. Pairing energy excluded.",
+      "adaptation": "Paraphrases matching table and states high-spin and splitting-only assumptions.",
+      "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+    },
+    {
+      "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782197",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "6 April 2026 Shift 1, Q62, PDF page 23",
+      "answer": "A, B and D true; C false",
+      "correctOptionId": "6952787710",
+      "verifiedAt": "2026-11-21T07:05:12+05:30",
+      "adapted": true,
+      "independentSolution": "e={dz²,dx²−y²} lower; t₂={dxy,dxz,dyz} higher. Thus A dxy=dxz>dx²−y² true; B dxy=dyz>dz² true; C dx²−y²>dz²>dxz false; D dx²−y²=dz²<dxz true.",
+      "adaptation": "Restates orbital comparisons in words to preserve accessible notation.",
+      "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+    }
+  ],
+  "closestPriorSlugs": [
+    "how-do-antibonding-electrons-change-an-oxygen-bond"
+  ],
+  "difference": "Prior article fills molecular orbitals of oxygen and calculates bond order. This fills metal d orbitals split by tetrahedral ligands and calculates CFSE.",
+  "researchedAt": "2026-11-21T07:05:12+05:30",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; current official homepage checked 21 November 2026",
+    "scope": "Chemistry Unit 12 Coordination Compounds: crystal field theory and colour/magnetic properties."
+  },
+  "corpus": {
+    "papersExamined": 8,
+    "coverageNotes": "Targeted cumulative scans of 2, 4, 5 and 6 April 2026, both shifts, with only selected pages of 6 April Shift 2. Not an exhaustive classification, all-shift census or five-year frequency study. Today selected six questions across four official papers.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two exact official-paper/final-key matches, a specific misconception and prerequisite value. Targeted eight-paper sample; no exhaustive recurrence or marks forecast."
+  },
+  "sources": [
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/chemistry-2e/pages/19-3-spectroscopic-and-magnetic-properties-of-coordination-compounds"
+    },
+    {
+      "title": "NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782196",
+  "targetQuestionText": "For high-spin tetrahedral metal ions with d², d⁴, d⁶ and d⁸ configurations, find the crystal field stabilisation energy of each in units of Δt. Include only the energy from orbital splitting.",
+  "verificationNotes": "Original pages visually inspected, exact final-key identifiers matched and calculations independently worked. Explicit adaptations preserve assumptions; no human reviewer claimed."
+}

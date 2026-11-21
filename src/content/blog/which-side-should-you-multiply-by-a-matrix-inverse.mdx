@@ -1,0 +1,76 @@
+---
+title: "Which side should you multiply by a matrix inverse?"
+description: "Use ordered transformations to understand PA = B and AQ = B, then put the inverse on the side that cancels A."
+category: "maths"
+author: "padho"
+pubDate: "2026-11-21T07:07:17+05:30"
+heroImage: "../../assets/articles/matrix-inverse-order.png"
+heroImageAlt: "Right multiplication isolates P in PA = B, while left multiplication isolates Q in AQ = B."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**Let A = [2, −2; 4, −2] and B = [3, 9; 1, 3], where the semicolon separates the two rows. If PA = B and AQ = B, find the absolute value of the sum of the diagonal entries of 2(P + Q).**
+
+Adapted from [JEE Main, 2 April 2026 Shift 2 Q22](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf#page=9), question ID 691121172. You need row-by-column multiplication and basic arithmetic with fractions. We’ll explain the inverse and the choice of side.
+
+## A matrix can describe an operation
+
+Think of a column containing two numbers, x and y. A matrix can turn that input column into a new output column. For example, the matrix [1, 1; 0, 1] changes (x, y) into (x + y, y). Its first row adds the two input numbers; its second row keeps y.
+
+Throughout this article, brackets list a matrix row by row, with a semicolon between rows. Thus [1, 1; 0, 1] has first row 1, 1 and second row 0, 1. A coordinate pair such as (x, y) represents a column when a matrix acts on it.
+
+Now suppose a second operation doubles the first coordinate and leaves the second alone. Apply the first operation to (1, 1), then double: (1, 1) becomes (2, 1), then (4, 1). Reverse the order and the result changes: (1, 1) becomes (2, 1), then (3, 1).
+
+The same two operations have produced different outputs. Matrix multiplication generally depends on order. If Av means “apply A to the column v”, then BAv means “apply A first, then B”. The matrix nearest the input acts first.
+
+## What does an inverse undo?
+
+The identity matrix I leaves every input unchanged. For two coordinates, I = [1, 0; 0, 1]. An invertible matrix A has an inverse A⁻¹ that undoes its operation: AA⁻¹ = A⁻¹A = I.
+
+For the operation (x, y) → (x + y, y), the inverse subtracts the second coordinate from the first. It changes (u, v) into (u − v, v). Applying these operations consecutively returns the starting pair.
+
+An inverse is not found by taking the reciprocal of every entry. For A = [a, b; c, d], first calculate the determinant ad − bc. If this is nonzero, the [inverse formula](https://openstax.org/books/college-algebra-2e/pages/7-7-solving-systems-with-inverses) gives A⁻¹ = [d, −b; −c, a]/(ad − bc). The division applies to every entry in the bracket.
+
+If ad − bc is zero, this inverse does not exist. Check that condition before trying to cancel A.
+
+## Put the inverse beside the matrix it must cancel
+
+In PA = B, A is on the right of P. Multiply both sides on the right by A⁻¹. This gives PAA⁻¹ = BA⁻¹, so P = BA⁻¹. The neighbouring A and A⁻¹ become I, and PI = P.
+
+In AQ = B, A is on the left of Q. Multiply both sides on the left by A⁻¹ instead. This gives A⁻¹AQ = A⁻¹B, so Q = A⁻¹B.
+
+<ArticleDiagram kind="inverseOrder">The inverse is placed on the same side of both sides of an equation. In the first line it cancels A on the right; in the second it cancels A on the left. The order of the remaining factors is preserved.</ArticleDiagram>
+
+Multiplying PA = B on the left would give A⁻¹PA = A⁻¹B. The inverse cannot pass through P to reach A. That equation is valid, but it has not isolated P.
+
+<KeyIdea id="inverse-side">Choose the side that puts A⁻¹ next to A. Multiply both sides of the equation on that same side, and keep the order of all other factors.</KeyIdea>
+
+## Columns tell you what a matrix does
+
+A matrix times the column (1, 0) gives its first column. Multiplying it by (0, 1) gives its second column. These inputs pick out one column at a time because all the other weights are zero.
+
+The same idea works for three coordinates. If a matrix M has columns c₁, c₂ and c₃, then M(x, y, z) = xc₁ + yc₂ + zc₃. This lets us recover a matrix from the outputs of (1, 0, 0), (0, 1, 0) and (0, 0, 1).
+
+Once the columns are known, an equation Mv = b can be solved by v = M⁻¹b when M is invertible. For a small numerical question, expanding into ordinary equations can be quicker. Both methods must reproduce b when the answer is substituted back.
+
+## Try the past questions
+
+**1. A matrix M sends the columns (1, 0, 0), (0, 1, 0) and (0, 0, 1) to (1, 2, 3), (0, 1, 2) and (−1, 1, 1), respectively. If M(x, y, z) = (1, 7, 11), find x + y + z.**
+
+Adapted from [JEE Main, 5 April 2026 Shift 2 Q4](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf#page=2), question ID 691121454. All triples represent columns, as in the original question. You need basic elimination of simultaneous equations for the short solution below.
+
+<details class="reading-check"><summary>Show hint</summary><p>The given outputs are the three columns of M. Expand x(1, 2, 3) + y(0, 1, 2) + z(−1, 1, 1) = (1, 7, 11).</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The three rows give x − z = 1, 2x + y + z = 7, and 3x + 2y + z = 11. Subtract twice the second equation from the third: −x − z = −3, so x + z = 3.</p><p>Combining x + z = 3 with x − z = 1 gives x = 2 and z = 1. Then y = 2, and <strong>x + y + z = 5</strong>. Substitution gives (1, 7, 11), as required.</p></details>
+
+**2. Return to the opening question: A = [2, −2; 4, −2], B = [3, 9; 1, 3], PA = B and AQ = B. Find the absolute value of the diagonal sum of 2(P + Q).**
+
+<details class="reading-check"><summary>Show hint</summary><p>Find A⁻¹, then use P = BA⁻¹ and Q = A⁻¹B. The main diagonal of a two-by-two matrix contains its top-left and bottom-right entries.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The determinant of A is 2(−2) − (−2)(4) = 4. Hence A⁻¹ = [−1/2, 1/2; −1, 1/2]. Multiplication gives P = [−21/2, 6; −7/2, 2] and Q = [−1, −3; −5/2, −15/2].</p><p>The diagonal sum of P is −21/2 + 2 = −17/2. For Q it is −1 − 15/2 = −17/2. The diagonal sum of 2(P + Q) is therefore 2(−17/2 − 17/2) = −34. Its absolute value is <strong>34</strong>.</p><p>P and Q have the same diagonal sum here, but they are different matrices. Multiplying back confirms PA = B and AQ = B. Equal diagonal sums do not make matrix multiplication interchangeable.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 691121454 and 691121172.

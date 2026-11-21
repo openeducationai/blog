@@ -1,0 +1,72 @@
+{
+  "id": "left-right-inverse-order",
+  "category": "maths",
+  "conceptKey": "maths/matrices-and-determinants/left-right-inverse-order",
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121172",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift 2, Q22, PDF page 9",
+      "answer": "34",
+      "correctOptionId": "34",
+      "verifiedAt": "2026-11-21T07:05:12+05:30",
+      "adapted": true,
+      "independentSolution": "det(A)=4; A^-1=[−1/2,1/2;−1,1/2]. P=BA^-1=[−21/2,6;−7/2,2]; Q=A^-1B=[−1,−3;−5/2,−15/2]. tr(P)=tr(Q)=−17/2, so abs(tr(2(P+Q)))=34. Direct multiplication verifies PA=AQ=B.",
+      "adaptation": "Original matrices rendered as row-separated plain text; same values and requested quantity.",
+      "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+    },
+    {
+      "id": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121454",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "5 April 2026 Shift 2, Q4, PDF pages 2–3",
+      "answer": "x+y+z=5 (x=2,y=2,z=1)",
+      "correctOptionId": "6911211544",
+      "verifiedAt": "2026-11-21T07:05:12+05:30",
+      "adapted": true,
+      "independentSolution": "Images of unit column vectors give M=[1,0,−1;2,1,1;3,2,1]. M[x,y,z]^T=[1,7,11]^T gives x−z=1,2x+y+z=7,3x+2y+z=11. Eliminate: x+z=3, so x=2,z=1,y=2; substitution checks all three. det(M)=−2≠0.",
+      "adaptation": "The same three unit-vector images are described as columns; explains this equivalent form before solving.",
+      "sourceSha256": "876efb4250b5d8e096f28bb48d9078e39f25f1ad70473701e5c13523716588d4"
+    }
+  ],
+  "closestPriorSlugs": [
+    "when-do-linear-equations-have-infinitely-many-solutions"
+  ],
+  "difference": "Earlier lesson classifies inconsistent/redundant equations. This teaches ordered matrix multiplication, columns as outputs and inverse cancellation.",
+  "researchedAt": "2026-11-21T07:05:12+05:30",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; current official homepage checked 21 November 2026",
+    "scope": "Mathematics Unit 3: matrix algebra, inverse of a square matrix and simultaneous equations."
+  },
+  "corpus": {
+    "papersExamined": 8,
+    "coverageNotes": "Targeted cumulative scans of 2, 4, 5 and 6 April 2026, both shifts, with only selected pages of 6 April Shift 2. Not an exhaustive classification, all-shift census or five-year frequency study. Today selected six questions across four official papers.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two exact official-paper/final-key matches, a specific misconception and prerequisite value. Targeted eight-paper sample; no exhaustive recurrence or marks forecast."
+  },
+  "sources": [
+    {
+      "title": "Educational reference",
+      "url": "https://openstax.org/books/college-algebra-2e/pages/7-7-solving-systems-with-inverses"
+    },
+    {
+      "title": "NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121172",
+  "targetQuestionText": "Let A = [2, −2; 4, −2] and B = [3, 9; 1, 3], where the semicolon separates the two rows. If PA = B and AQ = B, find the absolute value of the sum of the diagonal entries of 2(P + Q).",
+  "verificationNotes": "Original pages visually inspected, exact final-key identifiers matched and calculations independently worked. Explicit adaptations preserve assumptions; no human reviewer claimed."
+}
