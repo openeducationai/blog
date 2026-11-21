@@ -1,6 +1,6 @@
 {
   "date": "2026-11-21",
-  "status": "partial",
+  "status": "published",
   "startedAt": "2026-11-21T07:01:13+05:30",
   "articleSlugs": [
     "why-does-splitting-a-liquid-drop-need-energy",
@@ -163,39 +163,84 @@
       "completedAt": "2026-11-21T07:20:21+05:30"
     },
     "publication": {
-      "status": "failed",
-      "startedAt": "2026-11-21T07:20:21+05:30",
+      "status": "complete",
+      "startedAt": "2026-11-21T11:20:21+05:30",
       "publisher": "node scripts/publish.mjs",
       "sourceCommit": "d92e8a4ae69c2ad978a30d67bd8bdd8d2893ef2a",
       "scope": "padho.ai/blog only",
-      "log": "/private/tmp/padho-pcm-2026-11-21/publish.log",
-      "failedAt": "2026-11-21T07:20:40+05:30",
-      "exitCode": 1,
-      "error": "ERROR: (gcloud.auth.print-access-token) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.",
-      "requiredAction": "Run gcloud auth login interactively to obtain new credentials.",
-      "uploadedObjects": 0,
-      "evidence": "Publisher failed at access-token refresh before storage inspection, upload or CDN invalidation. Editorial, search and analytics preflight passed."
+      "log": "/private/tmp/padho-pcm-2026-11-21/publish-retry.log",
+      "confirmedAt": "2026-11-21T11:21:00+05:30",
+      "exitCode": 0,
+      "uploadedObjects": 69,
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ]
     },
     "liveVerification": {
-      "status": "pending",
-      "reason": "Publication blocked before upload by Google Cloud reauthentication. Read-only URL checks are not a release verification.",
-      "checkedAt": "2026-11-21T07:20:54+05:30",
+      "status": "complete",
+      "completedAt": "2026-11-21T11:23:18+05:30",
       "articles": [
         {
           "url": "https://padho.ai/blog/why-does-splitting-a-liquid-drop-need-energy/",
-          "status": 404
+          "status": 200,
+          "sha256": "64415fc2aba5eb6f2fae6a1a06f39f0badb9a71a83390eb9f1c2301c66060590",
+          "matchesBuild": true,
+          "analyticsContext": {
+            "product_surface": "blog",
+            "blog_analytics_version": 1,
+            "blog_page_type": "article",
+            "blog_category": "physics",
+            "article_slug": "why-does-splitting-a-liquid-drop-need-energy",
+            "article_title": "Why does splitting a liquid drop need energy?"
+          },
+          "analyticsBundleMatchesBuild": true
         },
         {
           "url": "https://padho.ai/blog/how-do-you-calculate-crystal-field-energy-in-a-tetrahedral-complex/",
-          "status": 404
+          "status": 200,
+          "sha256": "c30a1d6d85b9b2e7efbb2b4d312284e19196e292380077e30444c92115d05839",
+          "matchesBuild": true,
+          "analyticsContext": {
+            "product_surface": "blog",
+            "blog_analytics_version": 1,
+            "blog_page_type": "article",
+            "blog_category": "chemistry",
+            "article_slug": "how-do-you-calculate-crystal-field-energy-in-a-tetrahedral-complex",
+            "article_title": "How do you calculate crystal field energy in a tetrahedral complex?"
+          },
+          "analyticsBundleMatchesBuild": true
         },
         {
           "url": "https://padho.ai/blog/which-side-should-you-multiply-by-a-matrix-inverse/",
-          "status": 404
+          "status": 200,
+          "sha256": "bcbea16d0df00489cc4dbbcfffdf751df1de84eb787dd74fdfa3827ab444cf71",
+          "matchesBuild": true,
+          "analyticsContext": {
+            "product_surface": "blog",
+            "blog_analytics_version": 1,
+            "blog_page_type": "article",
+            "blog_category": "maths",
+            "article_slug": "which-side-should-you-multiply-by-a-matrix-inverse",
+            "article_title": "Which side should you multiply by a matrix inverse?"
+          },
+          "analyticsBundleMatchesBuild": true
         }
       ],
-      "searchEvidence": null,
-      "evidence": "All three prepared public URLs returned 404. No content or indexing success claimed."
+      "sitemapPages": 39,
+      "publishedArticles": 33,
+      "images": 33,
+      "internalLinks": 40,
+      "metadataMatchesVisibleContent": true,
+      "crawlerProbes": 132,
+      "allCrawlerProbesPassed": true,
+      "articleViewports": 6,
+      "navigationViewports": 8,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-21-browser/checks-live.json",
+      "navigationEvidence": "/private/tmp/padho-blog-2026-11-21-browser/index-checks-live.json",
+      "searchEvidence": "/private/tmp/padho-pcm-2026-11-21/search-live.json",
+      "evidence": "Live HTML and shared analytics bundle match the reviewed build byte for byte. Six article and eight home/category desktop/phone views passed. Covers, target questions and keyboard disclosures checked; representative live screenshots inspected. Public crawler probes do not establish indexing.",
+      "searchConsole": "No indexing submission performed; owner handles Search Console."
     }
   },
   "figmaFeedback": {
@@ -204,19 +249,18 @@
     "evidence": "Supported get_comments returned an empty list before retention; no pagination cursor."
   },
   "figmaSessionId": "069e7138-3be9-4121-be4b-e9e020c579c7",
-  "lastCheckpointAt": "2026-11-21T11:20:21+05:30",
+  "lastCheckpointAt": "2026-11-21T11:23:18+05:30",
   "resume": {
-    "nextStage": "publication",
+    "nextStage": null,
     "reuseExistingArticles": true,
-    "reuseFigmaPageId": "119:722",
-    "requiredAction": "Renew Google Cloud login, then resume the existing verified build under an authorised retry. Do not create another article set. If the release date changes, refresh source timestamps, review hashes, build and visible Figma date."
+    "reuseFigmaPageId": "119:722"
   },
   "sourceCommit": "d92e8a4ae69c2ad978a30d67bd8bdd8d2893ef2a",
   "retries": [
     {
       "requestedAt": "2026-11-21T11:20:00+05:30",
       "authorization": "Owner requested today’s blog be made and published; resumed the existing prepared batch.",
-      "status": "ready_to_publish",
+      "status": "published",
       "sourceCommit": "d92e8a4ae69c2ad978a30d67bd8bdd8d2893ef2a",
       "reusedFigmaPageId": "119:722",
       "validation": {
@@ -233,15 +277,70 @@
         "builtArticles": 33
       },
       "authentication": {
-        "status": "failed",
-        "checkedAt": "2026-11-21T11:20:00+05:30",
-        "error": "gcloud.auth.print-access-token: Reauthentication failed. cannot prompt during non-interactive execution.",
-        "requiredAction": "Owner runs gcloud auth login interactively.",
-        "resolvedAt": "2026-11-21T11:20:21+05:30",
-        "resolution": "Owner completed gcloud auth login; access-token refresh now succeeds without exposing token."
+        "status": "complete",
+        "verifiedAt": "2026-11-21T11:20:21+05:30",
+        "evidence": "Owner completed gcloud auth login; access-token refresh now succeeds without exposing token."
       },
-      "publicationAttempted": false,
-      "uploadedObjects": 0
+      "publicationAttempted": true,
+      "uploadedObjects": 69,
+      "completedAt": "2026-11-21T11:23:18+05:30",
+      "publication": {
+        "status": "complete",
+        "startedAt": "2026-11-21T11:20:21+05:30",
+        "publisher": "node scripts/publish.mjs",
+        "sourceCommit": "d92e8a4ae69c2ad978a30d67bd8bdd8d2893ef2a",
+        "scope": "padho.ai/blog only",
+        "log": "/private/tmp/padho-pcm-2026-11-21/publish-retry.log",
+        "confirmedAt": "2026-11-21T11:21:00+05:30",
+        "exitCode": 0,
+        "uploadedObjects": 69,
+        "cdnInvalidations": [
+          "/blog",
+          "/blog/*"
+        ]
+      },
+      "authenticationAttempts": [
+        {
+          "status": "failed",
+          "checkedAt": "2026-11-21T11:20:00+05:30",
+          "error": "gcloud.auth.print-access-token: Reauthentication failed. cannot prompt during non-interactive execution.",
+          "requiredAction": "Owner runs gcloud auth login interactively.",
+          "resolvedAt": "2026-11-21T11:20:21+05:30",
+          "resolution": "Owner completed gcloud auth login; access-token refresh now succeeds without exposing token."
+        }
+      ]
     }
-  ]
+  ],
+  "publicationAttempts": [
+    {
+      "status": "failed",
+      "startedAt": "2026-11-21T07:20:21+05:30",
+      "publisher": "node scripts/publish.mjs",
+      "sourceCommit": "d92e8a4ae69c2ad978a30d67bd8bdd8d2893ef2a",
+      "scope": "padho.ai/blog only",
+      "log": "/private/tmp/padho-pcm-2026-11-21/publish.log",
+      "failedAt": "2026-11-21T07:20:40+05:30",
+      "exitCode": 1,
+      "error": "ERROR: (gcloud.auth.print-access-token) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.",
+      "requiredAction": "Run gcloud auth login interactively to obtain new credentials.",
+      "uploadedObjects": 0,
+      "evidence": "Publisher failed at access-token refresh before storage inspection, upload or CDN invalidation. Editorial, search and analytics preflight passed."
+    },
+    {
+      "status": "complete",
+      "startedAt": "2026-11-21T11:20:21+05:30",
+      "publisher": "node scripts/publish.mjs",
+      "sourceCommit": "d92e8a4ae69c2ad978a30d67bd8bdd8d2893ef2a",
+      "scope": "padho.ai/blog only",
+      "log": "/private/tmp/padho-pcm-2026-11-21/publish-retry.log",
+      "confirmedAt": "2026-11-21T11:21:00+05:30",
+      "exitCode": 0,
+      "uploadedObjects": 69,
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ]
+    }
+  ],
+  "completedAt": "2026-11-21T11:23:18+05:30"
 }

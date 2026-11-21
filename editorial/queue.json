@@ -346,7 +346,7 @@
       "chapter": "matrices-and-determinants",
       "conceptKey": "maths/matrices-and-determinants/left-right-inverse-order",
       "question": "Let A = [2, −2; 4, −2] and B = [3, 9; 1, 3], where the semicolon separates the two rows. If PA = B and AQ = B, find the absolute value of the sum of the diagonal entries of 2(P + Q).",
-      "status": "writing",
+      "status": "published",
       "candidateQuestionIds": [
         "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121172"
       ],
@@ -392,7 +392,8 @@
           "sourceSha256": "876efb4250b5d8e096f28bb48d9078e39f25f1ad70473701e5c13523716588d4"
         }
       ],
-      "briefPath": "editorial/research/2026-11-21-maths.json"
+      "briefPath": "editorial/research/2026-11-21-maths.json",
+      "releaseVerifiedAt": "2026-11-21T11:23:18+05:30"
     },
     {
       "id": "circle-line-chord-distance",
@@ -708,8 +709,9 @@
         }
       ],
       "briefPath": "editorial/research/2026-11-21-physics.json",
-      "status": "writing",
-      "rationale": "Two exact official-paper/final-key matches, a specific misconception and prerequisite value. Targeted eight-paper sample; no exhaustive recurrence or marks forecast."
+      "status": "published",
+      "rationale": "Two exact official-paper/final-key matches, a specific misconception and prerequisite value. Targeted eight-paper sample; no exhaustive recurrence or marks forecast.",
+      "releaseVerifiedAt": "2026-11-21T11:23:18+05:30"
     },
     {
       "id": "tetrahedral-crystal-field-energy",
@@ -758,8 +760,9 @@
         }
       ],
       "briefPath": "editorial/research/2026-11-21-chemistry.json",
-      "status": "writing",
-      "rationale": "Two exact official-paper/final-key matches, a specific misconception and prerequisite value. Targeted eight-paper sample; no exhaustive recurrence or marks forecast."
+      "status": "published",
+      "rationale": "Two exact official-paper/final-key matches, a specific misconception and prerequisite value. Targeted eight-paper sample; no exhaustive recurrence or marks forecast.",
+      "releaseVerifiedAt": "2026-11-21T11:23:18+05:30"
     }
   ]
 }
