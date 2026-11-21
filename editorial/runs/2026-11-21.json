@@ -204,12 +204,44 @@
     "evidence": "Supported get_comments returned an empty list before retention; no pagination cursor."
   },
   "figmaSessionId": "069e7138-3be9-4121-be4b-e9e020c579c7",
-  "lastCheckpointAt": "2026-11-21T07:21:14+05:30",
+  "lastCheckpointAt": "2026-11-21T11:20:21+05:30",
   "resume": {
     "nextStage": "publication",
     "reuseExistingArticles": true,
     "reuseFigmaPageId": "119:722",
     "requiredAction": "Renew Google Cloud login, then resume the existing verified build under an authorised retry. Do not create another article set. If the release date changes, refresh source timestamps, review hashes, build and visible Figma date."
   },
-  "sourceCommit": "d92e8a4ae69c2ad978a30d67bd8bdd8d2893ef2a"
+  "sourceCommit": "d92e8a4ae69c2ad978a30d67bd8bdd8d2893ef2a",
+  "retries": [
+    {
+      "requestedAt": "2026-11-21T11:20:00+05:30",
+      "authorization": "Owner requested today’s blog be made and published; resumed the existing prepared batch.",
+      "status": "ready_to_publish",
+      "sourceCommit": "d92e8a4ae69c2ad978a30d67bd8bdd8d2893ef2a",
+      "reusedFigmaPageId": "119:722",
+      "validation": {
+        "status": "complete",
+        "checks": [
+          "source SHA256 matches history and reviewed source for all three articles",
+          "npm run check:editorial",
+          "npm run check:search",
+          "npm run check:analytics",
+          "git diff --check",
+          "git fetch origin main; HEAD equals origin/main"
+        ],
+        "sitemapPages": 39,
+        "builtArticles": 33
+      },
+      "authentication": {
+        "status": "failed",
+        "checkedAt": "2026-11-21T11:20:00+05:30",
+        "error": "gcloud.auth.print-access-token: Reauthentication failed. cannot prompt during non-interactive execution.",
+        "requiredAction": "Owner runs gcloud auth login interactively.",
+        "resolvedAt": "2026-11-21T11:20:21+05:30",
+        "resolution": "Owner completed gcloud auth login; access-token refresh now succeeds without exposing token."
+      },
+      "publicationAttempted": false,
+      "uploadedObjects": 0
+    }
+  ]
 }
