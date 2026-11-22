@@ -1,6 +1,6 @@
 {
   "date": "2026-11-22",
-  "status": "partial",
+  "status": "published",
   "startedAt": "2026-11-22T07:01:37+05:30",
   "articleSlugs": [
     "which-angle-gives-the-torque-on-a-current-loop",
@@ -105,16 +105,210 @@
         "absenceVerified": true,
         "sharedUiPreserved": true
       },
-      "renderEvidence": "/private/tmp/padho-blog-2026-11-22-browser/figma-review-0.png through figma-review-3.png"
+      "renderEvidence": "/private/tmp/padho-blog-2026-11-22-browser/figma-review-0.png through figma-review-3.png",
+      "frames": [
+        {
+          "id": "129:722",
+          "slug": "which-angle-gives-the-torque-on-a-current-loop",
+          "width": 1440,
+          "height": 5429,
+          "columnId": "129:868",
+          "bodyId": "129:874",
+          "coverId": "129:873",
+          "textNodes": 47,
+          "figureIds": [
+            "129:891"
+          ],
+          "solutionIds": [
+            "129:943",
+            "129:950",
+            "129:959",
+            "129:966"
+          ]
+        },
+        {
+          "id": "129:974",
+          "slug": "which-angle-gives-the-torque-on-a-current-loop",
+          "width": 390,
+          "height": 6595,
+          "columnId": "129:1116",
+          "bodyId": "129:1122",
+          "coverId": "129:1121",
+          "textNodes": 47,
+          "figureIds": [
+            "129:1139"
+          ],
+          "solutionIds": [
+            "129:1191",
+            "129:1198",
+            "129:1207",
+            "129:1214"
+          ]
+        },
+        {
+          "id": "129:1222",
+          "slug": "how-does-rewriting-a-reaction-change-its-equilibrium-constant",
+          "width": 1440,
+          "height": 5610,
+          "columnId": "129:1368",
+          "bodyId": "129:1374",
+          "coverId": "129:1373",
+          "textNodes": 50,
+          "figureIds": [
+            "129:1409"
+          ],
+          "solutionIds": [
+            "129:1445",
+            "129:1452",
+            "129:1461",
+            "129:1468"
+          ]
+        },
+        {
+          "id": "129:1476",
+          "slug": "how-does-rewriting-a-reaction-change-its-equilibrium-constant",
+          "width": 390,
+          "height": 6940,
+          "columnId": "129:1618",
+          "bodyId": "129:1624",
+          "coverId": "129:1623",
+          "textNodes": 50,
+          "figureIds": [
+            "129:1659"
+          ],
+          "solutionIds": [
+            "129:1695",
+            "129:1702",
+            "129:1711",
+            "129:1718"
+          ]
+        },
+        {
+          "id": "129:1726",
+          "slug": "how-do-you-turn-a-geometric-progression-into-equations",
+          "width": 1440,
+          "height": 5490,
+          "columnId": "129:1872",
+          "bodyId": "129:1878",
+          "coverId": "129:1877",
+          "textNodes": 54,
+          "figureIds": [
+            "129:1901"
+          ],
+          "solutionIds": [
+            "129:1951",
+            "129:1958",
+            "129:1967",
+            "129:1974"
+          ]
+        },
+        {
+          "id": "129:1982",
+          "slug": "how-do-you-turn-a-geometric-progression-into-equations",
+          "width": 390,
+          "height": 6851,
+          "columnId": "129:2124",
+          "bodyId": "129:2130",
+          "coverId": "129:2129",
+          "textNodes": 54,
+          "figureIds": [
+            "129:2153"
+          ],
+          "solutionIds": [
+            "129:2203",
+            "129:2210",
+            "129:2219",
+            "129:2226"
+          ]
+        }
+      ]
     },
     "git": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-22T07:24:07+05:30",
+      "branch": "main",
+      "sourceCommit": "bbd9377e7e618f5c6f5246e5509ad07b84ed49f3",
+      "pushedTo": "origin/main"
     },
     "publication": {
-      "status": "pending"
+      "status": "complete",
+      "startedAt": "2026-11-22T07:24:07+05:30",
+      "command": "node scripts/publish.mjs",
+      "log": "/private/tmp/padho-pcm-2026-11-22/publish.log",
+      "scope": "blog/* and exact blog object only",
+      "confirmedAt": "2026-11-22T07:24:55+05:30",
+      "exitCode": 0,
+      "uploadedObjects": 75,
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ],
+      "sourceCommit": "bbd9377e7e618f5c6f5246e5509ad07b84ed49f3"
     },
     "liveVerification": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-22T07:26:35+05:30",
+      "articles": [
+        {
+          "url": "https://padho.ai/blog/which-angle-gives-the-torque-on-a-current-loop/",
+          "status": 200,
+          "sha256": "bdbe8d9093e142182d96bca02d835f0426f27a592099973ef75eb117d03d7bc0",
+          "matchesBuild": true,
+          "analyticsContext": {
+            "product_surface": "blog",
+            "blog_analytics_version": 1,
+            "blog_page_type": "article",
+            "blog_category": "physics",
+            "article_slug": "which-angle-gives-the-torque-on-a-current-loop",
+            "article_title": "Which angle gives the torque on a current loop?"
+          },
+          "analyticsBundleMatchesBuild": true
+        },
+        {
+          "url": "https://padho.ai/blog/how-does-rewriting-a-reaction-change-its-equilibrium-constant/",
+          "status": 200,
+          "sha256": "23dd8a6efc32ccd9046465a4b97cfb956799b8fa30d2b10a9b798af6c6ec3b2b",
+          "matchesBuild": true,
+          "analyticsContext": {
+            "product_surface": "blog",
+            "blog_analytics_version": 1,
+            "blog_page_type": "article",
+            "blog_category": "chemistry",
+            "article_slug": "how-does-rewriting-a-reaction-change-its-equilibrium-constant",
+            "article_title": "How does rewriting a reaction change its equilibrium constant?"
+          },
+          "analyticsBundleMatchesBuild": true
+        },
+        {
+          "url": "https://padho.ai/blog/how-do-you-turn-a-geometric-progression-into-equations/",
+          "status": 200,
+          "sha256": "eb9745d1333473b85f092e1222dbf68e2b30cb05dc9e3580457275eb7d538d1a",
+          "matchesBuild": true,
+          "analyticsContext": {
+            "product_surface": "blog",
+            "blog_analytics_version": 1,
+            "blog_page_type": "article",
+            "blog_category": "maths",
+            "article_slug": "how-do-you-turn-a-geometric-progression-into-equations",
+            "article_title": "How do you turn a geometric progression into equations?"
+          },
+          "analyticsBundleMatchesBuild": true
+        }
+      ],
+      "sitemapPages": 42,
+      "publishedArticles": 36,
+      "images": 36,
+      "internalLinks": 43,
+      "metadataMatchesVisibleContent": true,
+      "crawlerProbes": 144,
+      "allCrawlerProbesPassed": true,
+      "articleViewports": 6,
+      "navigationViewports": 8,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-22-browser/checks-live.json",
+      "navigationEvidence": "/private/tmp/padho-blog-2026-11-22-browser/index-checks-live.json",
+      "searchEvidence": "/private/tmp/padho-pcm-2026-11-22/search-live.json",
+      "evidence": "All three live HTML responses and the shared analytics bundle match the reviewed build byte for byte. Six article and eight homepage/category desktop/phone views passed. Representative live openings, worked solutions and both homepage sizes visually inspected. Public crawler probes do not establish indexing.",
+      "searchConsole": "No indexing submission performed; owner handles Search Console."
     }
   },
   "figmaFeedback": {
@@ -122,5 +316,30 @@
     "tool": "get_comments",
     "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
     "comments": []
-  }
+  },
+  "sourceCommit": "bbd9377e7e618f5c6f5246e5509ad07b84ed49f3",
+  "completedAt": "2026-11-22T07:26:35+05:30",
+  "lastCheckpointAt": "2026-11-22T07:26:35+05:30",
+  "resume": {
+    "nextStage": null,
+    "reuseExistingArticles": true,
+    "reuseFigmaPageId": "127:302"
+  },
+  "publicationAttempts": [
+    {
+      "status": "complete",
+      "startedAt": "2026-11-22T07:24:07+05:30",
+      "command": "node scripts/publish.mjs",
+      "log": "/private/tmp/padho-pcm-2026-11-22/publish.log",
+      "scope": "blog/* and exact blog object only",
+      "confirmedAt": "2026-11-22T07:24:55+05:30",
+      "exitCode": 0,
+      "uploadedObjects": 75,
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ],
+      "sourceCommit": "bbd9377e7e618f5c6f5246e5509ad07b84ed49f3"
+    }
+  ]
 }

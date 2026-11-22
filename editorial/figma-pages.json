@@ -309,7 +309,7 @@
         "captureReferencesRemoved": true,
         "comments": "Supported get_comments returned no comments; result archived before retention."
       },
-      "sourceCommit": "pending"
+      "sourceCommit": "bbd9377e7e618f5c6f5246e5509ad07b84ed49f3"
     }
   ],
   "removedPages": [

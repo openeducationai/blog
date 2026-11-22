@@ -1872,7 +1872,7 @@
       "url": "https://padho.ai/blog/which-angle-gives-the-torque-on-a-current-loop/",
       "publishedAt": "2026-11-22T07:10:15+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278424",
       "targetQuestionText": "A circular coil has radius 2 cm, 125 turns and current 1 A. Its axis makes 30° with a uniform magnetic field of 0.4 T. If the torque magnitude is α × 10⁻⁴ N m, find α using π = 3.14.",
       "review": {
@@ -1885,7 +1885,8 @@
           "visuals": true
         },
         "notes": "Original questions/options and final-key rows inspected. Independent derivations check loop normals, cross-product order, SI area, reaction powers, positive K, integer restrictions and boundary cases. Full prose read sequentially and paraphrased for clarity. Original SVG/PNG diagrams visually reviewed; real-app viewport validation checkpointed separately."
-      }
+      },
+      "releaseVerifiedAt": "2026-11-22T07:26:35+05:30"
     },
     {
       "slug": "how-does-rewriting-a-reaction-change-its-equilibrium-constant",
@@ -1929,7 +1930,7 @@
       "url": "https://padho.ai/blog/how-does-rewriting-a-reaction-change-its-equilibrium-constant/",
       "publishedAt": "2026-11-22T07:10:15+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121580",
       "targetQuestionText": "At one temperature, 2XY ⇌ X₂ + Y₂ has K₁ = 2.5 × 10⁵, and XY + ½Z₂ ⇌ XYZ has K₂ = 5 × 10⁻³. All species are gases. Find K₃ for ½X₂ + ½Y₂ + ½Z₂ ⇌ XYZ, using the same equilibrium-constant convention throughout.",
       "review": {
@@ -1942,7 +1943,8 @@
           "visuals": true
         },
         "notes": "Original questions/options and final-key rows inspected. Independent derivations check loop normals, cross-product order, SI area, reaction powers, positive K, integer restrictions and boundary cases. Full prose read sequentially and paraphrased for clarity. Original SVG/PNG diagrams visually reviewed; real-app viewport validation checkpointed separately."
-      }
+      },
+      "releaseVerifiedAt": "2026-11-22T07:26:35+05:30"
     },
     {
       "slug": "how-do-you-turn-a-geometric-progression-into-equations",
@@ -1986,7 +1988,7 @@
       "url": "https://padho.ai/blog/how-do-you-turn-a-geometric-progression-into-equations/",
       "publishedAt": "2026-11-22T07:10:15+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121451",
       "targetQuestionText": "The roots of x² − x + p = 0 are α and β, and the roots of x² − 4x + q = 0 are γ and δ. The numbers p and q are integers. If α, β, γ, δ form a geometric progression in that order, find |p + q|.",
       "review": {
@@ -1999,7 +2001,8 @@
           "visuals": true
         },
         "notes": "Original questions/options and final-key rows inspected. Independent derivations check loop normals, cross-product order, SI area, reaction powers, positive K, integer restrictions and boundary cases. Full prose read sequentially and paraphrased for clarity. Original SVG/PNG diagrams visually reviewed; real-app viewport validation checkpointed separately."
-      }
+      },
+      "releaseVerifiedAt": "2026-11-22T07:26:35+05:30"
     }
   ]
 }

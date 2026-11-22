@@ -202,7 +202,7 @@
       "chapter": "magnetic-effects-of-current",
       "conceptKey": "physics/magnetic-effects-of-current/coil-torque-angle-with-normal",
       "question": "A circular coil has radius 2 cm, 125 turns and current 1 A. Its axis makes 30° with a uniform magnetic field of 0.4 T. If the torque magnitude is α × 10⁻⁴ N m, find α using π = 3.14.",
-      "status": "writing",
+      "status": "published",
       "candidateQuestionIds": [
         "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278424"
       ],
@@ -250,7 +250,9 @@
           "sourceSha256": "079e3b7ae67b70309f22b33e37b720cba65b47c6d96760113a4302cee1122416"
         }
       ],
-      "briefPath": "editorial/research/2026-11-22-physics.json"
+      "briefPath": "editorial/research/2026-11-22-physics.json",
+      "publishedAt": "2026-11-22T07:10:15+05:30",
+      "releaseVerifiedAt": "2026-11-22T07:26:35+05:30"
     },
     {
       "id": "cycle-internal-energy-signs",
@@ -855,8 +857,10 @@
         }
       ],
       "briefPath": "editorial/research/2026-11-22-chemistry.json",
-      "status": "writing",
-      "rationale": "Two original official-paper/final-key matches plus a distinct prerequisite or misconception gap. Targeted nine-paper cumulative sample; no exhaustive frequency or marks forecast."
+      "status": "published",
+      "rationale": "Two original official-paper/final-key matches plus a distinct prerequisite or misconception gap. Targeted nine-paper cumulative sample; no exhaustive frequency or marks forecast.",
+      "publishedAt": "2026-11-22T07:10:15+05:30",
+      "releaseVerifiedAt": "2026-11-22T07:26:35+05:30"
     },
     {
       "id": "geometric-progression-equations",
@@ -908,8 +912,10 @@
         }
       ],
       "briefPath": "editorial/research/2026-11-22-maths.json",
-      "status": "writing",
-      "rationale": "Two original official-paper/final-key matches plus a distinct prerequisite or misconception gap. Targeted nine-paper cumulative sample; no exhaustive frequency or marks forecast."
+      "status": "published",
+      "rationale": "Two original official-paper/final-key matches plus a distinct prerequisite or misconception gap. Targeted nine-paper cumulative sample; no exhaustive frequency or marks forecast.",
+      "publishedAt": "2026-11-22T07:10:15+05:30",
+      "releaseVerifiedAt": "2026-11-22T07:26:35+05:30"
     },
     {
       "id": "conductivity-to-concentration",
