@@ -1,0 +1,74 @@
+---
+title: "How do you turn a geometric progression into equations?"
+description: "Write consecutive terms as u, ur, ur² and ur³, then turn the given information into equations and check every restriction."
+category: "maths"
+author: "padho"
+pubDate: "2026-11-22T07:10:15+05:30"
+heroImage: "../../assets/articles/geometric-pair-sums.png"
+heroImageAlt: "The pair u and ur becomes ur squared and ur cubed when both terms are multiplied by r squared."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**The roots of x² − x + p = 0 are α and β, and the roots of x² − 4x + q = 0 are γ and δ. The numbers p and q are integers. If α, β, γ, δ form a geometric progression in that order, find |p + q|.**
+
+Adapted from [JEE Main, 5 April 2026 Shift 2 Q1](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf#page=1), question ID 691121451. You need basic algebra and the idea of a quadratic root. We’ll recall the relation between roots and coefficients before using it.
+
+## Write the multiplication into the terms
+
+A geometric progression, or GP, uses the same multiplier at every step. This multiplier is called the common ratio. For example, 3, 6, 12 and 24 form a GP because multiplying by 2 always gives the next term.
+
+When the terms are unknown, call the first term u and the common ratio r. Four consecutive terms are then u, ur, ur² and ur³. We now have only two unknowns instead of four unrelated numbers. The repeated multiplication is built into the way we wrote them.
+
+The ratio can be negative. Starting with 3 and multiplying by −2 gives 3, −6, 12, −24. The signs alternate, but the multiplier stays the same. Do not discard a negative ratio merely because the terms look different in sign.
+
+## Compare the same-sized groups of terms
+
+Look at the first pair, u and ur. Their sum is u + ur = u(1 + r). The next pair is ur² and ur³. Each term in this second pair is r² times the corresponding term in the first pair.
+
+The second pair’s sum must therefore also be r² times the first pair’s sum: ur² + ur³ = r²u(1 + r). This lets us compare the pair sums without finding all four terms first.
+
+<ArticleDiagram kind="geometricEquations">Each term in the lower pair is r² times the term above it. The whole pair sum is multiplied by r² as well. This holds for a negative ratio too, because two successive multiplications produce r².</ArticleDiagram>
+
+For an ordinary numerical example, take 3, 6, 12, 24. The pair sums are 9 and 36. Their ratio is 4, which is 2². For 3, −6, 12, −24, the pair sums are −3 and −12; their ratio is still 4, now equal to (−2)².
+
+If the first pair’s sum is zero, we cannot divide by it. Check that condition before using the ratio of sums. In our opening question, the quadratic equations will tell us whether this division is allowed.
+
+<KeyIdea id="geometric-equation-model">Write consecutive GP terms as u, ur, ur² and ur³. Then translate each given sum or product into an equation before calculating.</KeyIdea>
+
+## Read the information in a quadratic
+
+If α and β are the roots of x² − sx + p = 0, the expression factors as (x − α)(x − β). Multiplying out gives x² − (α + β)x + αβ. Comparing coefficients shows α + β = s and αβ = p.
+
+The opening question therefore gives us two pair sums. It also tells us that the two pair products must be integers, because they are p and q. We need both kinds of information. A candidate ratio can fit the sums and still fail the integer condition.
+
+This is a useful order of work: use sums to find possible ratios, find the terms for each ratio, and finally check products and other restrictions. Substitute into the original equations when a candidate survives.
+
+## Keep the GP ratio separate from an AP difference
+
+An arithmetic progression, or AP, adds the same difference each time. A GP multiplies by the same ratio. The [AP sum formula](/blog/how-do-you-find-an-arithmetic-progression-from-its-sum/) is Sₙ = n[2a + (n − 1)d]/2, where a is its first term and d its common difference.
+
+A question can link an AP and a GP by giving the same number two different roles. Write those roles down explicitly. For example, if a GP has first term u and ratio r, an AP might have first term r and difference u. The GP begins u, ur; the AP begins r, r + u, r + 2u. These are different sequences.
+
+The [common-ratio definition](https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-3-geometric-sequences) works for finite GPs even when |r| is greater than one. The restriction |r| less than one belongs to a nonzero infinite geometric series having a finite sum. Neither question below asks for such an infinite sum.
+
+## Try the past questions
+
+**1. An AP has first-ten-term sum 160. A GP has first-two-term sum 8. The AP’s first term equals the GP’s ratio, and the AP’s difference equals the GP’s first term. Find the sum of all possible values of the GP’s first term.**
+
+Adapted from [JEE Main, 6 April 2026 Shift 1 Q6](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf#page=3), question ID 6952782141.
+
+<details class="reading-check"><summary>Show hint</summary><p>Call the GP’s first term u and ratio r. The two sums give u(1 + r) = 8 and 5(2r + 9u) = 160. Eliminate r. You need the sum of the resulting roots, not each root separately.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The AP equation gives r = 16 − 9u/2. Substituting into the GP equation gives u(17 − 9u/2) = 8, or 9u² − 34u + 16 = 0.</p><p>The discriminant is 580, which is positive, so there are two real possibilities. Neither is zero because their product is 16/9. Both give a valid finite GP and AP. Their sum is <strong>34/9</strong>, from the coefficient of u.</p></details>
+
+**2. Return to the opening question: α, β are the roots of x² − x + p = 0, and γ, δ are the roots of x² − 4x + q = 0. They form a GP in that order, with integers p and q. Find |p + q|.**
+
+<details class="reading-check"><summary>Show hint</summary><p>Write the four roots as u, ur, ur², ur³. The pair sums are 1 and 4. Their ratio gives r². Keep both signs of r until you check the integer products.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>We have u(1 + r) = 1 and ur²(1 + r) = 4. The first expression is nonzero, so division gives r² = 4. Thus r is either 2 or −2.</p><p>If r = 2, then u = ⅓ and p = u²r = 2/9. This is not an integer, so that candidate is excluded. If r = −2, then u = −1 and the roots are −1, 2, −4, 8. Their pair products give p = −2 and q = −32.</p><p>Both products are integers. The pairs have sums 1 and 4, as required, and factor the quadratics as (x + 1)(x − 2) and (x + 4)(x − 8). Therefore <strong>|p + q| = 34</strong>.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 6952782141 and 691121451.

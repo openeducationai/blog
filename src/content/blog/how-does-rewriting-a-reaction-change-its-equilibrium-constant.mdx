@@ -1,0 +1,76 @@
+---
+title: "How does rewriting a reaction change its equilibrium constant?"
+description: "Track what happens to K when an equation is reversed, multiplied by a number, or added to another reaction."
+category: "chemistry"
+author: "padho"
+pubDate: "2026-11-22T07:10:15+05:30"
+heroImage: "../../assets/articles/equilibrium-reaction-steps.png"
+heroImageAlt: "A to B and B to C combine to A to C; the intermediate B cancels and the two equilibrium constants multiply."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**At one temperature, 2XY ⇌ X₂ + Y₂ has K₁ = 2.5 × 10⁵, and XY + ½Z₂ ⇌ XYZ has K₂ = 5 × 10⁻³. All species are gases. Find K₃ for ½X₂ + ½Y₂ + ½Z₂ ⇌ XYZ, using the same equilibrium-constant convention throughout.**
+
+Adapted from [JEE Main, 8 April 2026 Shift 2 Q55](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf#page=22), question ID 691121580. We make the common temperature and consistent convention explicit. You need powers, roots and fractions. We’ll build the reaction rules from a simple example.
+
+## K belongs to the equation as written
+
+Imagine a reversible change A ⇌ B in a closed mixture at a fixed temperature. At equilibrium, A keeps changing into B and B keeps changing into A at equal rates. The amounts remain steady even though both changes continue.
+
+For this simple equation, K = [B]/[A]. Square brackets mean equilibrium concentrations. If that ratio is 4, then the equation A ⇌ B has K = 4 in this concentration convention.
+
+Now write the very same change backwards: B ⇌ A. The mixture has not changed. But the product is now A, so the ratio becomes [A]/[B] = ¼. Reversing an equation replaces K by 1/K.
+
+This is why the written reaction must accompany its equilibrium constant. A statement such as “the constant is 4” needs a direction and a set of coefficients to have a clear meaning.
+
+## Changing coefficients changes powers
+
+For a general reaction, each coefficient becomes an exponent in the equilibrium expression. Thus 2A ⇌ 2B has Knew = [B]²/[A]² = ([B]/[A])². If A ⇌ B has K = 4, the doubled equation has Knew = 16.
+
+We have doubled the written coefficients, not poured extra material into the flask. The composition can be exactly the same while the mathematical expression changes. This is different from calculating the [amounts and partial pressures in an equilibrium mixture](/blog/how-do-you-find-partial-pressures-at-equilibrium/).
+
+The same reasoning works for a fractional coefficient. Halving every coefficient gives Knew = √K. Dividing every coefficient by three gives Knew = K to the power ⅓, the cube root of K. Fractional coefficients describe a ratio of reacting amounts; they do not require us to split an individual molecule.
+
+We can combine reversal and scaling. Reverse A ⇌ B and then halve the coefficients. The new constant is 1/√K. This is K raised to the power −½. The minus sign represents reversal; the half represents halving the coefficients.
+
+## Adding equations multiplies their constants
+
+Keep the same A and B, and introduce one more reversible change, B ⇌ C. Its constant is K₂ = [C]/[B]. Call the constant for A ⇌ B, K₁.
+
+Adding the equations gives A + B ⇌ B + C. The B on each side cancels, leaving A ⇌ C. The corresponding ratios also cancel when we multiply: ([B]/[A]) × ([C]/[B]) = [C]/[A]. Therefore the overall constant is K₁K₂.
+
+<ArticleDiagram kind="equilibriumRewrite">The two steps share B. Adding the equations removes B from both sides, leaving A ⇌ C. Multiplying the two concentration ratios cancels the same intermediate concentration.</ArticleDiagram>
+
+These [three transformation rules](https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants) let us build the opening reaction. Reverse or scale the needed equations first. Then add them, cancel matching species, and multiply the transformed constants.
+
+<KeyIdea id="equilibrium-rewrite-rules">Reverse the equation: use 1/K. Multiply every coefficient by a: use Kᵃ. Add equations: multiply their constants.</KeyIdea>
+
+## Check the final equation before calculating
+
+A quick numerical calculation is useful only after the species match. Check every coefficient and which side each species appears on. An intermediate cancels only when the same amount appears on opposite sides.
+
+Keep the temperature fixed and use one convention throughout. For gases, a pressure-based expression uses partial pressures; a concentration-based expression uses concentrations. Do not mix Kp and Kc without converting them. More formally, equilibrium constants use activities, which are dimensionless relative measures; the same transformation rules apply.
+
+A useful check is to undo your change. If you halve an equation, squaring its new constant should recover the original. If you reverse it, multiplying the old and new constants should give one. Adding reaction equations does not mean adding their K values.
+
+## Try the past questions
+
+**1. At temperature T, the formal reaction A₂(g) + B₂(g) ⇌ C(g) has K = 2.7 × 10⁻⁵. Find the constant for ⅓A₂(g) + ⅓B₂(g) ⇌ ⅓C(g) at the same temperature.**
+
+Adapted from [JEE Main, 4 April 2026 Shift 1 Q55](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf#page=19), question ID 695278280. The symbols A₂, B₂ and C are the species labels supplied in the paper.
+
+<details class="reading-check"><summary>Show hint</summary><p>Every coefficient is divided by three. Take a cube root. Writing 2.7 × 10⁻⁵ as 27 × 10⁻⁶ makes that root easy to calculate.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The new constant is (27 × 10⁻⁶) to the power ⅓, which equals <strong>3 × 10⁻²</strong>. It is not one-third of the old constant.</p><p>Check: (3 × 10⁻²)³ = 27 × 10⁻⁶ = 2.7 × 10⁻⁵. Tripling the new equation recovers both the old equation and its constant.</p></details>
+
+**2. Return to the opening question. Use 2XY ⇌ X₂ + Y₂, K₁ = 2.5 × 10⁵, and XY + ½Z₂ ⇌ XYZ, K₂ = 5 × 10⁻³, to find K₃ for ½X₂ + ½Y₂ + ½Z₂ ⇌ XYZ. All species are gases at the same temperature.**
+
+<details class="reading-check"><summary>Show hint</summary><p>Make the first equation produce one XY. Then add the second equation so that this XY cancels. Reverse and halve the first equation.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Reversing and halving the first equation gives ½X₂ + ½Y₂ ⇌ XY, with constant 1/√K₁. Add XY + ½Z₂ ⇌ XYZ. The XY cancels and the remaining equation is exactly the one requested.</p><p>Therefore K₃ = K₂/√K₁. Since √(2.5 × 10⁵) = 500, K₃ = (5 × 10⁻³)/500 = <strong>1.0 × 10⁻⁵</strong>. The small result is consistent with multiplying K₂ by the reciprocal of a large square root.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 695278280 and 691121580.

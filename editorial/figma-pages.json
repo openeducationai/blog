@@ -3,51 +3,6 @@
   "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
   "pages": [
     {
-      "pageId": "81:202",
-      "name": "2026-11-15",
-      "date": "2026-11-15",
-      "generated": true,
-      "verified": true,
-      "articles": [
-        {
-          "slug": "how-does-a-series-resistor-extend-a-voltmeters-range",
-          "desktopFrameId": "82:242",
-          "phoneFrameId": "82:526"
-        },
-        {
-          "slug": "how-do-you-compare-bohr-orbit-radii",
-          "desktopFrameId": "82:806",
-          "phoneFrameId": "82:1091"
-        },
-        {
-          "slug": "how-does-the-distance-from-a-circles-centre-determine-a-chord",
-          "desktopFrameId": "82:1372",
-          "phoneFrameId": "82:1663"
-        }
-      ],
-      "verification": {
-        "desktopWidth": 1440,
-        "phoneWidth": 390,
-        "editableText": true,
-        "nativeFigures": true,
-        "sharedHeaderFooterInstances": true,
-        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
-        "screenshotsReviewed": 6,
-        "completeCopyMatch": true,
-        "matchedTextBlocksPerArticle": [
-          25,
-          27,
-          27
-        ],
-        "missingOrCollapsedTextNodes": 0,
-        "disclosuresPerFrame": 4,
-        "comments": "Supported get_comments returned no comments. No registered pages expired; cutoff 2026-11-09.",
-        "coverFit": "FIT; discrete cover assets only"
-      },
-      "verifiedAt": "2026-11-15T07:14:26+05:30",
-      "sourceCommit": "9f4d4e8bcb031408cae9126b7ea8ff9e48bbda46"
-    },
-    {
       "date": "2026-11-16",
       "name": "2026-11-16",
       "pageId": "89:202",
@@ -302,6 +257,59 @@
         "comments": "Supported get_comments returned no comments; result archived before retention."
       },
       "sourceCommit": "d92e8a4ae69c2ad978a30d67bd8bdd8d2893ef2a"
+    },
+    {
+      "pageId": "127:302",
+      "name": "2026-11-22",
+      "date": "2026-11-22",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "which-angle-gives-the-torque-on-a-current-loop",
+          "desktopFrameId": "129:722",
+          "phoneFrameId": "129:974"
+        },
+        {
+          "slug": "how-does-rewriting-a-reaction-change-its-equilibrium-constant",
+          "desktopFrameId": "129:1222",
+          "phoneFrameId": "129:1476"
+        },
+        {
+          "slug": "how-do-you-turn-a-geometric-progression-into-equations",
+          "desktopFrameId": "129:1726",
+          "phoneFrameId": "129:1982"
+        }
+      ],
+      "verifiedAt": "2026-11-22T07:23:20+05:30",
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          37,
+          38,
+          38
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "coverFit": "FIT; discrete cover assets only",
+        "captureReferencesRemoved": true,
+        "comments": "Supported get_comments returned no comments; result archived before retention."
+      },
+      "sourceCommit": "pending"
     }
   ],
   "removedPages": [
@@ -546,6 +554,56 @@
       "removedOn": "2026-11-21",
       "reason": "Registered generated page precedes inclusive seven-day cutoff 2026-11-15.",
       "feedbackArchive": "editorial/runs/2026-11-21.json#figmaFeedback",
+      "preservedComponentIds": []
+    },
+    {
+      "pageId": "81:202",
+      "name": "2026-11-15",
+      "date": "2026-11-15",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "how-does-a-series-resistor-extend-a-voltmeters-range",
+          "desktopFrameId": "82:242",
+          "phoneFrameId": "82:526"
+        },
+        {
+          "slug": "how-do-you-compare-bohr-orbit-radii",
+          "desktopFrameId": "82:806",
+          "phoneFrameId": "82:1091"
+        },
+        {
+          "slug": "how-does-the-distance-from-a-circles-centre-determine-a-chord",
+          "desktopFrameId": "82:1372",
+          "phoneFrameId": "82:1663"
+        }
+      ],
+      "verification": {
+        "desktopWidth": 1440,
+        "phoneWidth": 390,
+        "editableText": true,
+        "nativeFigures": true,
+        "sharedHeaderFooterInstances": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "matchedTextBlocksPerArticle": [
+          25,
+          27,
+          27
+        ],
+        "missingOrCollapsedTextNodes": 0,
+        "disclosuresPerFrame": 4,
+        "comments": "Supported get_comments returned no comments. No registered pages expired; cutoff 2026-11-09.",
+        "coverFit": "FIT; discrete cover assets only"
+      },
+      "verifiedAt": "2026-11-15T07:14:26+05:30",
+      "sourceCommit": "9f4d4e8bcb031408cae9126b7ea8ff9e48bbda46",
+      "removedAt": "2026-11-22T07:23:20+05:30",
+      "removedOn": "2026-11-22",
+      "reason": "Registered generated page precedes inclusive seven-day cutoff 2026-11-16.",
+      "feedbackArchive": "editorial/runs/2026-11-22.json#figmaFeedback",
       "preservedComponentIds": []
     }
   ],

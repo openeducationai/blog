@@ -1,0 +1,72 @@
+{
+  "id": "coil-torque-angle-with-normal",
+  "category": "physics",
+  "conceptKey": "physics/magnetic-effects-of-current/coil-torque-angle-with-normal",
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278424",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "4 April 2026 Shift 2, Q49, PDF pages 18–19",
+      "answer": "α = 314; torque = 0.0314 N m",
+      "correctOptionId": "314",
+      "verifiedAt": "2026-11-22T07:08:15+05:30",
+      "adapted": true,
+      "independentSolution": "A=3.14×0.02²=0.001256 m²; μ=125×1×A=0.157 A m²; τ=μ×0.4×sin30°=0.0314 N m=314×10^-4. Angle is from axis, not plane. τ=0 for normal parallel B and maximal for perpendicular.",
+      "adaptation": "Paraphrases the numerical question and explicitly asks for magnitude.",
+      "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+    },
+    {
+      "id": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121564",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "8 April 2026 Shift 2, Q39, PDF pages 15–16",
+      "answer": "5.024 × 10⁻⁴ ĵ N m",
+      "correctOptionId": "6911211926",
+      "verifiedAt": "2026-11-22T07:08:15+05:30",
+      "adapted": true,
+      "independentSolution": "One turn; A=0.001256 m². μ=100√2 A×A×(î+k̂)/√2=0.1256(î+k̂) A m². B=0.004(3î+2k̂) T. Cross product (î+k̂)×(3î+2k̂)=−2ĵ+3ĵ=ĵ, hence 0.0005024ĵ N m. Reversing current reverses torque.",
+      "adaptation": "Uses N m instead of the equivalent Wb A; states one turn and that the given unit normal follows the right-hand rule.",
+      "sourceSha256": "079e3b7ae67b70309f22b33e37b720cba65b47c6d96760113a4302cee1122416"
+    }
+  ],
+  "closestPriorSlugs": [
+    "how-do-you-find-the-electric-field-in-an-electromagnetic-wave"
+  ],
+  "difference": "Earlier article uses E cross B for wave propagation. This uses the current-loop normal and magnetic moment to calculate mechanical torque.",
+  "researchedAt": "2026-11-22T07:08:15+05:30",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; official homepage checked 22 November 2026",
+    "scope": "Physics Unit 13: torque on a current loop in a uniform magnetic field and magnetic dipole moment."
+  },
+  "corpus": {
+    "papersExamined": 9,
+    "coverageNotes": "Cumulative targeted scans: 2,4,5,6 April 2026 both shifts, plus 8 April Shift 2. Earlier 6 April Shift 2 coverage is partial. Today inspected all pages of 4 April Shift 1 and 8 April Shift 2 plus selected original pages of 4 April Shift 2, 5 April Shift 2 and 6 April Shift 1. Not a complete classification or five-year/all-shift census.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two original official-paper/final-key matches plus a distinct prerequisite or misconception gap. Targeted nine-paper cumulative sample; no exhaustive frequency or marks forecast."
+  },
+  "sources": [
+    {
+      "title": "Primary educational reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/11-5-force-and-torque-on-a-current-loop"
+    },
+    {
+      "title": "Current NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final answer key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278424",
+  "targetQuestionText": "A circular coil has radius 2 cm, 125 turns and current 1 A. Its axis makes 30° with a uniform magnetic field of 0.4 T. If the torque magnitude is α × 10⁻⁴ N m, find α using π = 3.14.",
+  "verificationNotes": "Six original question pages and option continuations visually inspected, exact final-key rows matched, and each solution independently calculated. No human review claimed."
+}

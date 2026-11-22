@@ -1829,6 +1829,177 @@
         "notes": "Original NTA pages and exact final keys matched; volume/area, orbital counts and matrix products independently checked. Sequential prose review passed. Six real desktop/phone views passed: full target/solution, readable static diagrams, keyboard disclosures, no overflow and shared styling."
       },
       "releaseVerifiedAt": "2026-11-21T11:23:18+05:30"
+    },
+    {
+      "slug": "which-angle-gives-the-torque-on-a-current-loop",
+      "title": "Which angle gives the torque on a current loop?",
+      "category": "physics",
+      "chapter": "magnetic-effects-of-current",
+      "conceptKey": "physics/magnetic-effects-of-current/coil-torque-angle-with-normal",
+      "learningObjective": "Measure the angle from the loop normal, use NIA for its magnetic moment, and preserve vector order when finding torque direction.",
+      "example": "Rotate one current loop in a uniform field while following its perpendicular normal.",
+      "briefPath": "editorial/research/2026-11-22-physics.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278424",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift 2, Q49, PDF pages 18–19",
+          "answer": "α = 314; torque = 0.0314 N m",
+          "correctOptionId": "314",
+          "verifiedAt": "2026-11-22T07:08:15+05:30",
+          "adapted": true,
+          "independentSolution": "A=3.14×0.02²=0.001256 m²; μ=125×1×A=0.157 A m²; τ=μ×0.4×sin30°=0.0314 N m=314×10^-4. Angle is from axis, not plane. τ=0 for normal parallel B and maximal for perpendicular.",
+          "adaptation": "Paraphrases the numerical question and explicitly asks for magnitude.",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        },
+        {
+          "id": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121564",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "8 April 2026 Shift 2, Q39, PDF pages 15–16",
+          "answer": "5.024 × 10⁻⁴ ĵ N m",
+          "correctOptionId": "6911211926",
+          "verifiedAt": "2026-11-22T07:08:15+05:30",
+          "adapted": true,
+          "independentSolution": "One turn; A=0.001256 m². μ=100√2 A×A×(î+k̂)/√2=0.1256(î+k̂) A m². B=0.004(3î+2k̂) T. Cross product (î+k̂)×(3î+2k̂)=−2ĵ+3ĵ=ĵ, hence 0.0005024ĵ N m. Reversing current reverses torque.",
+          "adaptation": "Uses N m instead of the equivalent Wb A; states one turn and that the given unit normal follows the right-hand rule.",
+          "sourceSha256": "079e3b7ae67b70309f22b33e37b720cba65b47c6d96760113a4302cee1122416"
+        }
+      ],
+      "sourcePath": "src/content/blog/which-angle-gives-the-torque-on-a-current-loop.mdx",
+      "sourceSha256": "24fbc483eb6f786ee38b87ef48753bce8d33507e49e658f4c41c3357d99c9e11",
+      "url": "https://padho.ai/blog/which-angle-gives-the-torque-on-a-current-loop/",
+      "publishedAt": "2026-11-22T07:10:15+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278424",
+      "targetQuestionText": "A circular coil has radius 2 cm, 125 turns and current 1 A. Its axis makes 30° with a uniform magnetic field of 0.4 T. If the torque magnitude is α × 10⁻⁴ N m, find α using π = 3.14.",
+      "review": {
+        "sourceSha256": "24fbc483eb6f786ee38b87ef48753bce8d33507e49e658f4c41c3357d99c9e11",
+        "reviewedAt": "2026-11-22T07:11:45+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Original questions/options and final-key rows inspected. Independent derivations check loop normals, cross-product order, SI area, reaction powers, positive K, integer restrictions and boundary cases. Full prose read sequentially and paraphrased for clarity. Original SVG/PNG diagrams visually reviewed; real-app viewport validation checkpointed separately."
+      }
+    },
+    {
+      "slug": "how-does-rewriting-a-reaction-change-its-equilibrium-constant",
+      "title": "How does rewriting a reaction change its equilibrium constant?",
+      "category": "chemistry",
+      "chapter": "equilibrium",
+      "conceptKey": "chemistry/equilibrium/reverse-scale-add-equilibrium-constants",
+      "learningObjective": "Reverse, scale and add chemical equations while taking the reciprocal, power and product of their equilibrium constants.",
+      "example": "Follow the same A, B and C species through A ⇌ B and B ⇌ C, cancelling the intermediate B.",
+      "briefPath": "editorial/research/2026-11-22-chemistry.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121580",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "8 April 2026 Shift 2, Q55, PDF pages 22–23",
+          "answer": "K₃ = 1.0 × 10⁻⁵",
+          "correctOptionId": "6911211974",
+          "verifiedAt": "2026-11-22T07:08:15+05:30",
+          "adapted": true,
+          "independentSolution": "Reverse first and divide coefficients by 2: 1/2 X2+1/2 Y2⇌XY, K=K1^(-1/2). Add second reaction, cancel XY. K3=K2/√K1=.005/500=10^-5. Direct quotient multiplication cancels XY. All positive, same temperature and same K convention.",
+          "adaptation": "Capitalises the symbolic species; makes common temperature and consistent K convention explicit.",
+          "sourceSha256": "079e3b7ae67b70309f22b33e37b720cba65b47c6d96760113a4302cee1122416"
+        },
+        {
+          "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278280",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift 1, Q55, PDF pages 19–20",
+          "answer": "3 × 10⁻²",
+          "correctOptionId": "695278955",
+          "verifiedAt": "2026-11-22T07:08:15+05:30",
+          "adapted": true,
+          "independentSolution": "New equation is one third of old: Knew=(2.7×10^-5)^(1/3)=(27×10^-6)^(1/3)=3×10^-2. Cubing result returns original K; not K/3.",
+          "adaptation": "Preserves paper’s formal symbolic species A₂, B₂ and C, explaining fractional coefficients as ratios.",
+          "sourceSha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a"
+        }
+      ],
+      "sourcePath": "src/content/blog/how-does-rewriting-a-reaction-change-its-equilibrium-constant.mdx",
+      "sourceSha256": "746bb7ba0bd1373b97e585b8cf860443a684a99f0a11e21a9fc0d3584d554238",
+      "url": "https://padho.ai/blog/how-does-rewriting-a-reaction-change-its-equilibrium-constant/",
+      "publishedAt": "2026-11-22T07:10:15+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121580",
+      "targetQuestionText": "At one temperature, 2XY ⇌ X₂ + Y₂ has K₁ = 2.5 × 10⁵, and XY + ½Z₂ ⇌ XYZ has K₂ = 5 × 10⁻³. All species are gases. Find K₃ for ½X₂ + ½Y₂ + ½Z₂ ⇌ XYZ, using the same equilibrium-constant convention throughout.",
+      "review": {
+        "sourceSha256": "746bb7ba0bd1373b97e585b8cf860443a684a99f0a11e21a9fc0d3584d554238",
+        "reviewedAt": "2026-11-22T07:11:45+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Original questions/options and final-key rows inspected. Independent derivations check loop normals, cross-product order, SI area, reaction powers, positive K, integer restrictions and boundary cases. Full prose read sequentially and paraphrased for clarity. Original SVG/PNG diagrams visually reviewed; real-app viewport validation checkpointed separately."
+      }
+    },
+    {
+      "slug": "how-do-you-turn-a-geometric-progression-into-equations",
+      "title": "How do you turn a geometric progression into equations?",
+      "category": "maths",
+      "chapter": "sequence-and-series",
+      "conceptKey": "maths/sequence-and-series/common-ratio-equation-model",
+      "learningObjective": "Represent consecutive geometric-progression terms with a first term and a common ratio, convert given sums/products into equations, and check integer restrictions.",
+      "example": "Four successive terms u, ur, ur² and ur³ have pair sums related by r².",
+      "briefPath": "editorial/research/2026-11-22-maths.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121451",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "5 April 2026 Shift 2, Q1, PDF page 1",
+          "answer": "34",
+          "correctOptionId": "6911211533",
+          "verifiedAt": "2026-11-22T07:08:15+05:30",
+          "adapted": true,
+          "independentSolution": "Let roots u,ur,ur²,ur³. u(1+r)=1, ur²(1+r)=4 so r²=4; sum1 nonzero permits division. r=2 gives u=1/3,p=2/9, excluded by integer p. r=−2 gives u=−1; roots −1,2,−4,8; p=−2,q=−32; |p+q|=34. Verify roots in both quadratics.",
+          "adaptation": "Paraphrases while preserving order and both integer constraints.",
+          "sourceSha256": "876efb4250b5d8e096f28bb48d9078e39f25f1ad70473701e5c13523716588d4"
+        },
+        {
+          "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782141",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 1, Q6, PDF page 3",
+          "answer": "34/9",
+          "correctOptionId": "6952787516",
+          "verifiedAt": "2026-11-22T07:08:15+05:30",
+          "adapted": true,
+          "independentSolution": "Let GP first term u, ratio r; AP first term r,difference u. GP: u(1+r)=8. AP sum10=5(2r+9u)=160, so r=16−9u/2. Hence 9u²−34u+16=0. u=(17±√145)/9, both valid, nonzero; requested sum34/9 by Vieta. Neither finite progression requires |r|<1.",
+          "adaptation": "Restates cross-identification of first term, ratio and difference explicitly.",
+          "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+        }
+      ],
+      "sourcePath": "src/content/blog/how-do-you-turn-a-geometric-progression-into-equations.mdx",
+      "sourceSha256": "36b55b529317d244e381b83824a49ae237bed97ca0cb651b3ed610589d93fff2",
+      "url": "https://padho.ai/blog/how-do-you-turn-a-geometric-progression-into-equations/",
+      "publishedAt": "2026-11-22T07:10:15+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121451",
+      "targetQuestionText": "The roots of x² − x + p = 0 are α and β, and the roots of x² − 4x + q = 0 are γ and δ. The numbers p and q are integers. If α, β, γ, δ form a geometric progression in that order, find |p + q|.",
+      "review": {
+        "sourceSha256": "36b55b529317d244e381b83824a49ae237bed97ca0cb651b3ed610589d93fff2",
+        "reviewedAt": "2026-11-22T07:11:45+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Original questions/options and final-key rows inspected. Independent derivations check loop normals, cross-product order, SI area, reaction powers, positive K, integer restrictions and boundary cases. Full prose read sequentially and paraphrased for clarity. Original SVG/PNG diagrams visually reviewed; real-app viewport validation checkpointed separately."
+      }
     }
   ]
 }

@@ -1,0 +1,74 @@
+---
+title: "Which angle gives the torque on a current loop?"
+description: "Find the loop normal before using N I A B sin θ, then use the cross product to check the torque direction."
+category: "physics"
+author: "padho"
+pubDate: "2026-11-22T07:10:15+05:30"
+heroImage: "../../assets/articles/current-loop-normal.png"
+heroImageAlt: "A loop seen edge-on has a normal at right angles to its plane; theta is measured from that normal to the magnetic field."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**A circular coil has radius 2 cm, 125 turns and current 1 A. Its axis makes 30° with a uniform magnetic field of 0.4 T. If the torque magnitude is α × 10⁻⁴ N m, find α using π = 3.14.**
+
+Adapted from [JEE Main, 4 April 2026 Shift 2 Q49](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf#page=18), question ID 695278424. You need the area of a circle and sin 30° = ½. We’ll also explain the vector rule needed for the second question.
+
+## Give the loop a direction
+
+Imagine a flat loop of wire carrying a current. A magnetic field can make this loop turn. The turning effect is called torque. To calculate it, we first need a clear way to describe which way the loop faces.
+
+Draw a short arrow perpendicular to the loop’s flat surface. This arrow is its normal. The coil’s axis lies along this perpendicular direction. An angle measured from the axis is therefore an angle measured from the normal, not from the plane of the wire.
+
+There are two opposite perpendicular directions. The current tells us which one to choose: curl the fingers of your right hand in the direction of the current. Your thumb gives the positive normal. Reversing the current reverses this normal.
+
+<ArticleDiagram kind="loopTorque">The blue line is the loop seen edge-on. The orange arrow is its normal, at right angles to that line. The magnetic field B points right. The marked angle θ lies between the normal and B, not between the loop’s plane and B.</ArticleDiagram>
+
+Our opening question gives the angle between the coil’s axis and the magnetic field. We can use that angle directly once we know the torque rule.
+
+## Find the magnetic moment first
+
+A larger loop gives the magnetic force more room to produce a turning effect. More current also strengthens the effect. We combine these two quantities in the loop’s magnetic moment: μ = IA. Here I is the current and A is the area enclosed by one turn.
+
+For N equal turns carrying the same current, the moments add. Their total magnitude is μ = NIA, measured in ampere square metres. Its direction is the normal we just found. This is the [current-loop model](https://openstax.org/books/university-physics-volume-2/pages/11-5-force-and-torque-on-a-current-loop) used in the torque formula.
+
+For a circular coil, A = πr². Convert the radius to metres before squaring it. A radius of 3 cm means 0.03 m, so the area is π × (0.03)² m². Multiplying N by the area already counts all the turns; do not multiply by N again later.
+
+## Use the angle from the normal
+
+The torque magnitude is τ = μB sin θ = NIAB sin θ. The symbol τ, pronounced tau, means torque. B is the magnetic-field magnitude, and θ is the angle between the magnetic moment and the field.
+
+Two positions help us check this formula. If the normal points along the field, θ = 0° and the torque is zero. If the normal is perpendicular to the field, θ = 90° and the torque is largest. In the second position, the loop’s plane contains the field direction.
+
+If a question instead gives an acute angle φ between the plane and the field, then θ = 90° − φ. The same torque can be written NIAB cos φ. The sine has not changed its meaning; we have changed which angle is named.
+
+<KeyIdea id="loop-normal-angle">Find the loop normal first. Use the angle between that normal and the magnetic field in τ = NIAB sin θ.</KeyIdea>
+
+## When the question asks for a direction
+
+The vector rule is torque = magnetic moment × magnetic field, in that order. The cross product gives a direction perpendicular to both arrows. Reversing their order would reverse the torque, so keep μ first and B second.
+
+In Cartesian coordinates, î, ĵ and k̂ are unit arrows along the x, y and z axes. For the question below, we need î × k̂ = −ĵ and k̂ × î = ĵ. Parallel arrows have zero cross product. Multiply out the brackets, just as in algebra, while keeping these directions.
+
+A unit normal has length one. Multiply it by NIA to get the magnetic-moment vector. The field vector already includes its components; do not multiply by its magnitude a second time.
+
+## Try the past questions
+
+**1. A single circular loop has radius 2 cm and current 100√2 A. Its current-defined unit normal is (î + k̂)/√2. The field is B = 4 × 10⁻³(3î + 2k̂) T. Find the torque vector using π = 3.14.**
+
+Adapted from [JEE Main, 8 April 2026 Shift 2 Q39](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf#page=15), question ID 691121564. We state that the given normal follows the current. The paper uses Wb A for torque; this equals N m.
+
+<details class="reading-check"><summary>Show hint</summary><p>First multiply the area, current and unit normal. Then use (î + k̂) × (3î + 2k̂). The two parallel products vanish.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The area is 3.14 × (0.02)² = 0.001256 m². The √2 in the current cancels the √2 in the unit normal, giving μ = 0.1256(î + k̂) A m².</p><p>The direction factor is 2(î × k̂) + 3(k̂ × î) = −2ĵ + 3ĵ = ĵ. Thus the torque is <strong>5.024 × 10⁻⁴ ĵ N m</strong>. Its direction is positive y. Reversing the current would reverse that direction.</p></details>
+
+**2. Return to the opening question: a 125-turn coil of radius 2 cm carries 1 A. Its axis makes 30° with a 0.4 T field. Find α when the torque magnitude is α × 10⁻⁴ N m, using π = 3.14.**
+
+<details class="reading-check"><summary>Show hint</summary><p>The given axis is the normal. Use A = π(0.02)² and sin 30° = ½. Convert the final torque to the requested coefficient α.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The area is 0.001256 m². The magnetic moment is 125 × 1 × 0.001256 = 0.157 A m². Therefore τ = 0.157 × 0.4 × ½ = 0.0314 N m.</p><p>Since 0.0314 = 314 × 10⁻⁴, <strong>α = 314</strong>. The torque is half the maximum possible value for this coil and field, which agrees with sin 30° = ½.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 691121564 and 695278424.

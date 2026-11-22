@@ -1,0 +1,73 @@
+{
+  "id": "equilibrium-constant-reaction-rewriting",
+  "category": "chemistry",
+  "conceptKey": "chemistry/equilibrium/reverse-scale-add-equilibrium-constants",
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121580",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "8 April 2026 Shift 2, Q55, PDF pages 22–23",
+      "answer": "K₃ = 1.0 × 10⁻⁵",
+      "correctOptionId": "6911211974",
+      "verifiedAt": "2026-11-22T07:08:15+05:30",
+      "adapted": true,
+      "independentSolution": "Reverse first and divide coefficients by 2: 1/2 X2+1/2 Y2⇌XY, K=K1^(-1/2). Add second reaction, cancel XY. K3=K2/√K1=.005/500=10^-5. Direct quotient multiplication cancels XY. All positive, same temperature and same K convention.",
+      "adaptation": "Capitalises the symbolic species; makes common temperature and consistent K convention explicit.",
+      "sourceSha256": "079e3b7ae67b70309f22b33e37b720cba65b47c6d96760113a4302cee1122416"
+    },
+    {
+      "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278280",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "4 April 2026 Shift 1, Q55, PDF pages 19–20",
+      "answer": "3 × 10⁻²",
+      "correctOptionId": "695278955",
+      "verifiedAt": "2026-11-22T07:08:15+05:30",
+      "adapted": true,
+      "independentSolution": "New equation is one third of old: Knew=(2.7×10^-5)^(1/3)=(27×10^-6)^(1/3)=3×10^-2. Cubing result returns original K; not K/3.",
+      "adaptation": "Preserves paper’s formal symbolic species A₂, B₂ and C, explaining fractional coefficients as ratios.",
+      "sourceSha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a"
+    }
+  ],
+  "closestPriorSlugs": [
+    "how-do-you-find-partial-pressures-at-equilibrium",
+    "how-does-concentration-change-a-cells-voltage"
+  ],
+  "difference": "Prior lessons calculate equilibrium amounts/partial pressures or a Nernst reaction quotient. This changes the written reaction and transforms its equilibrium constant algebraically at fixed temperature.",
+  "researchedAt": "2026-11-22T07:08:15+05:30",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; official homepage checked 22 November 2026",
+    "scope": "Chemistry Unit 6: law of chemical equilibrium and equilibrium constants Kp and Kc; Unit 4 relates standard Gibbs energy to K."
+  },
+  "corpus": {
+    "papersExamined": 9,
+    "coverageNotes": "Cumulative targeted scans: 2,4,5,6 April 2026 both shifts, plus 8 April Shift 2. Earlier 6 April Shift 2 coverage is partial. Today inspected all pages of 4 April Shift 1 and 8 April Shift 2 plus selected original pages of 4 April Shift 2, 5 April Shift 2 and 6 April Shift 1. Not a complete classification or five-year/all-shift census.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two original official-paper/final-key matches plus a distinct prerequisite or misconception gap. Targeted nine-paper cumulative sample; no exhaustive frequency or marks forecast."
+  },
+  "sources": [
+    {
+      "title": "Primary educational reference",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants"
+    },
+    {
+      "title": "Current NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final answer key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121580",
+  "targetQuestionText": "At one temperature, 2XY ⇌ X₂ + Y₂ has K₁ = 2.5 × 10⁵, and XY + ½Z₂ ⇌ XYZ has K₂ = 5 × 10⁻³. All species are gases. Find K₃ for ½X₂ + ½Y₂ + ½Z₂ ⇌ XYZ, using the same equilibrium-constant convention throughout.",
+  "verificationNotes": "Six original question pages and option continuations visually inspected, exact final-key rows matched, and each solution independently calculated. No human review claimed."
+}

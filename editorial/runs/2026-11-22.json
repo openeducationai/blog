@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-22",
+  "status": "partial",
+  "startedAt": "2026-11-22T07:01:37+05:30",
+  "articleSlugs": [
+    "which-angle-gives-the-torque-on-a-current-loop",
+    "how-does-rewriting-a-reaction-change-its-equilibrium-constant",
+    "how-do-you-turn-a-geometric-progression-into-equations"
+  ],
+  "preflight": {
+    "branch": "main",
+    "clean": true,
+    "existingDateArticles": 0,
+    "scheduleEnabled": true,
+    "headMatchesOriginMain": true
+  },
+  "stages": {
+    "research": {
+      "status": "complete",
+      "completedAt": "2026-11-22T07:08:15+05:30",
+      "briefs": [
+        "editorial/research/2026-11-22-physics.json",
+        "editorial/research/2026-11-22-chemistry.json",
+        "editorial/research/2026-11-22-maths.json"
+      ],
+      "evidence": "Six original questions and final-key matches verified; independent calculations; semantic overlap reviewed against all 34 history entries.",
+      "queueCoverage": "Three verified briefs selected; four candidates remain needs_research. Seven-day advance brief goal not yet met.",
+      "rejectedCandidate": "Conductivity Q6952782193 has an undefined alpha in keyed expression; no silent correction or publication."
+    },
+    "writing": {
+      "status": "complete",
+      "completedAt": "2026-11-22T07:10:15+05:30",
+      "articles": [
+        {
+          "slug": "which-angle-gives-the-torque-on-a-current-loop",
+          "sourcePath": "src/content/blog/which-angle-gives-the-torque-on-a-current-loop.mdx"
+        },
+        {
+          "slug": "how-does-rewriting-a-reaction-change-its-equilibrium-constant",
+          "sourcePath": "src/content/blog/how-does-rewriting-a-reaction-change-its-equilibrium-constant.mdx"
+        },
+        {
+          "slug": "how-do-you-turn-a-geometric-progression-into-equations",
+          "sourcePath": "src/content/blog/how-do-you-turn-a-geometric-progression-into-equations.mdx"
+        }
+      ],
+      "evidence": "Three complete original lessons; opening verified target questions and explicit learning goal; two sourced PYQs each, with hints and full solutions returning to the target."
+    },
+    "validation": {
+      "status": "complete",
+      "completedAt": "2026-11-22T07:14:45+05:30",
+      "commands": [
+        "npm run check:editorial",
+        "npm run build",
+        "npm run typecheck",
+        "npm run check:search",
+        "npm run check:analytics",
+        "git diff --check"
+      ],
+      "articleViewports": 6,
+      "navigationViewports": 8,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-22-browser/checks.json",
+      "navigationEvidence": "/private/tmp/padho-blog-2026-11-22-browser/index-checks.json",
+      "searchEvidence": "/private/tmp/padho-pcm-2026-11-22/search-build.log",
+      "evidence": "Six real Astro pages passed title, target, cover, Literata/justification, no overflow, four disclosures, keyboard, no-JavaScript and reduced-motion checks. Desktop/phone screenshots of openings, diagrams, question solutions and landing views visually inspected. 43 built pages and 36 article images passed search/analytics validation."
+    },
+    "figma": {
+      "status": "complete",
+      "completedAt": "2026-11-22T07:23:20+05:30",
+      "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+      "pageId": "127:302",
+      "reviewUrl": "https://www.figma.com/design/GsBNGG7jIMvsPyhP7w0zXK?node-id=127-302",
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          37,
+          38,
+          38
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "coverFit": "FIT; discrete cover assets only",
+        "captureReferencesRemoved": true,
+        "comments": "Supported get_comments returned no comments; result archived before retention."
+      },
+      "retention": {
+        "cutoff": "2026-11-16",
+        "removedPageIds": [
+          "81:202"
+        ],
+        "absenceVerified": true,
+        "sharedUiPreserved": true
+      },
+      "renderEvidence": "/private/tmp/padho-blog-2026-11-22-browser/figma-review-0.png through figma-review-3.png"
+    },
+    "git": {
+      "status": "pending"
+    },
+    "publication": {
+      "status": "pending"
+    },
+    "liveVerification": {
+      "status": "pending"
+    }
+  },
+  "figmaFeedback": {
+    "checkedAt": "2026-11-22T07:08:15+05:30",
+    "tool": "get_comments",
+    "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+    "comments": []
+  }
+}
