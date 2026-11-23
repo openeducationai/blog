@@ -1,0 +1,72 @@
+---
+title: "Does an absolute value always make a sharp corner?"
+description: "Compare the left and right slopes at each possible join. A modulus is a place to check, rather than proof of a corner."
+category: "maths"
+author: "padho"
+pubDate: "2026-11-23T11:59:58+05:30"
+heroImage: "../../assets/articles/slopes-at-a-join.png"
+heroImageAlt: "The graph of absolute x has slopes minus one and plus one at zero, while x squared has slope zero from both sides."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**Let f(x) = e^(sin |x|) − |x| for all real x. Is f differentiable everywhere, and is it increasing on (−π, −π/2)?**
+
+Adapted from [JEE Main, 8 April 2026 Shift 2 Q13](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf#page=6), question ID 691121538. The notation e^(sin |x|) means e raised to sin |x|. Angles are in radians. You need basic derivatives of exponentials and sine, and the chain rule.
+
+## Look at the slopes where two pieces meet
+
+The graph of y = |x| is made from y = −x on the left of zero and y = x on the right. Both pieces reach the same point at zero. The function is continuous there, but the left slope is −1 and the right slope is 1. The two slopes do not agree, so there is no single derivative at zero.
+
+Now compare y = x². Its slope is 2x, which approaches zero from either side of zero. The curve flattens smoothly at its lowest point. The distinction is the agreement of slopes, not whether the graph has a minimum.
+
+<ArticleDiagram kind="joinSlopes">The blue graph y = |x| has different slopes on the two sides of zero. The orange graph y = x² has slope zero from both sides. Both graphs are continuous at zero, but only the orange graph is differentiable there.</ArticleDiagram>
+
+To check a join at x = a, first check that the function is continuous there. Then compare the one-sided difference quotients, [f(a + h) − f(a)]/h as h approaches zero from each side. They must approach the same finite number. This is the [definition of differentiability](https://openstax.org/books/calculus-volume-1/pages/3-2-the-derivative-as-a-function) that the slope picture represents.
+
+## A modulus tells us where to check
+
+An absolute value can appear in a function that is perfectly smooth. For example, |x|² = x². Squaring removes the corner. Similarly, cos |u| = cos u because cosine has the same value at opposite angles. An absolute value inside cosine can disappear before we differentiate.
+
+Adding two expressions can also cancel their corners. The expression |x| − |x| is zero everywhere. More subtly, two changing slopes can cancel only at the joining point. We must test the whole function rather than count modulus signs.
+
+For a function F(|x|), the only possible join introduced by this absolute value is at zero. If F is differentiable at zero, the right slope there is F′(0) and the left slope is −F′(0). They agree when F′(0) = 0. Our opening function has exactly this structure, with F(t) = e^(sin t) − t.
+
+<KeyIdea id="join-slopes">Simplify first. Find the possible joining points, then compare the slopes of the complete function on both sides. A visible modulus does not by itself prove a corner.</KeyIdea>
+
+## A maximum can join two different formulas
+
+The expression max(g(x), h(x)) chooses whichever value is larger at each x. A possible switch occurs where g(x) = h(x). Solve that equation, then check which branch is larger on each side.
+
+If the selected branch changes and the two branch slopes differ at the crossing, the maximum has a corner. For example, max(x, −x) is |x|. At zero, its chosen slope changes from −1 to 1.
+
+A crossing alone is not enough. The branches might have equal slopes, or one might remain the larger branch on both sides. After finding candidates, test them. Also check whether another term in the complete function cancels a slope jump.
+
+## Use the derivative’s sign on an interval
+
+Once the joining points are settled, an increasing-function question asks something different: is the derivative positive on the specified interval? Write the correct formula for that interval before differentiating it.
+
+For negative x, |x| = −x and sin |x| = −sin x. This lets us rewrite the opening function using an ordinary exponential and x, with no absolute value left. We can then use the signs of sine and cosine on the given interval.
+
+If the derivative is positive throughout an open interval, the function is strictly increasing there. The derivative need not be positive everywhere on the real line to establish this interval-specific claim.
+
+## Try the past questions
+
+**1. On −π &lt; x &lt; π, let g(x) be the larger of 6x and 2 + 3x², plus |x − 1| cos(|x² − 1/4|). At how many points is g not differentiable?**
+
+Adapted from [JEE Main, 4 April 2026 Shift 1 Q25](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf#page=8), question ID 695278250. “The larger of” means max(6x, 2 + 3x²).
+
+<details class="reading-check"><summary>Show hint</summary><p>Cosine is even, so remove the absolute value inside cosine. Solve 6x = 2 + 3x² for possible branch switches, and separately check x = 1.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Since cos(|x² − 1/4|) = cos(x² − 1/4), x = ±1/2 causes no corner. The two maximum branches meet where 3(x − 1)² = 1, giving x = 1 ± 1/√3. The line is larger between these roots and the parabola is larger outside. Their slopes, 6 and 6x, differ at both crossings. The other term is smooth there, so both corners remain.</p><p>At x = 1, the maximum equals 6x in a neighbourhood and is smooth. The term |x − 1| cos(x² − 1/4) has left slope −cos(3/4) and right slope cos(3/4). These differ because cos(3/4) is nonzero. All three candidate points are inside the open domain, and there are no others. The answer is <strong>3</strong>.</p></details>
+
+**2. Return to the opening question: is f(x) = e^(sin |x|) − |x| differentiable for every real x, and increasing on (−π, −π/2)?**
+
+<details class="reading-check"><summary>Show hint</summary><p>Use F(t) = e^(sin t) − t to check the join at zero. For the negative interval, rewrite f(x) as e^(−sin x) + x and examine the sign of its derivative.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Here F′(t) = e^(sin t) cos t − 1, so F′(0) = 0. The right and left derivatives of F(|x|) are therefore both zero at x = 0. The function is continuous there, with f(0) = 1. Away from zero it is a composition of differentiable functions. Thus <strong>f is differentiable everywhere</strong>.</p><p>For x &lt; 0, f′(x) = 1 − e^(−sin x) cos x. On (−π, −π/2), cosine is negative and the exponential is positive. Their product is negative, so subtracting it gives f′(x) &gt; 0. Thus <strong>f is increasing on that interval</strong>. Both statements are true.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 695278250 and 691121538.

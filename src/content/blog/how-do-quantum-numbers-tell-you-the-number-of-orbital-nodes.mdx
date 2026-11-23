@@ -1,0 +1,76 @@
+---
+title: "How do quantum numbers tell you the number of orbital nodes?"
+description: "Separate radial nodes from angular nodes, then use n and l to count them without confusing every angular node with a plane."
+category: "chemistry"
+author: "padho"
+pubDate: "2026-11-23T11:59:58+05:30"
+heroImage: "../../assets/articles/orbital-node-types.png"
+heroImageAlt: "A circular section represents a spherical radial node; a straight section represents the nodal plane separating two p-orbital lobes."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**For the orbitals 2s, 3s, 3p and 4d, find the number of radial nodes and angular nodes in each.**
+
+Adapted from [JEE Main, 6 April 2026 Shift 1 Q53](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf#page=19), question ID 6952782188. The original is a matching question and says “nodal planes”. We ask for angular nodes because an unspecified d orbital need not have two planes. We’ll explain that distinction below. You only need subtraction; the orbital labels will be explained here.
+
+## A node is a place where the wavefunction vanishes
+
+An atomic orbital describes an electron using a wavefunction, usually written ψ. The square of its magnitude gives the probability density for finding the electron. A node is a place where ψ is zero, so the probability density is also zero there.
+
+An orbital is not a circular track followed by an electron. The [Bohr orbit-radius model](/blog/how-do-you-compare-bohr-orbit-radii/) answers a different kind of question. Here we are describing the shape of a wavefunction in space.
+
+There are two kinds of nodes to count. A radial node occurs at a particular nonzero distance from the nucleus. In three dimensions, that distance forms a spherical surface. An angular node occurs along particular directions from the nucleus. For a familiar real p orbital, its angular node is a plane through the nucleus.
+
+<ArticleDiagram kind="orbitalNodes">The left drawing cuts through a spherical radial node, so the node appears as a circle. The right drawing cuts through a real p orbital’s nodal plane, so the plane appears as a line between the lobes. These are schematic sections, not electron paths.</ArticleDiagram>
+
+The word “radial” refers to distance from the centre. “Angular” refers to direction. The drawings are only a way to see this difference; the numbers of nodes come from the orbital’s quantum numbers.
+
+## Read two numbers from the orbital label
+
+In a label such as 3p, the first number is n, the principal quantum number. For 3p, n = 3. The letter gives another quantum number, l, written as a lowercase L. The correspondence is s: l = 0, p: l = 1, d: l = 2 and f: l = 3.
+
+For the hydrogen-like orbital model used in these counting questions, the number of angular nodes is l. The number of radial nodes is n − l − 1. Adding them gives n − 1 nodes in total. These are the [standard orbital node counts](https://openstax.org/books/chemistry-2e/pages/6-3-development-of-quantum-theory).
+
+Try an orbital outside our opening list: 4p has n = 4 and l = 1. It has one angular node and 4 − 1 − 1 = 2 radial nodes. Their sum is three, which agrees with n − 1. This total is a useful check on the subtraction.
+
+<KeyIdea id="orbital-node-counts">Read n from the number and l from the letter. Angular nodes = l; radial nodes = n − l − 1. Together they add to n − 1.</KeyIdea>
+
+The nucleus itself is not counted as an extra radial node in this rule. Nor do we count the wavefunction approaching zero at infinite distance. Radial nodes are the finite, nonzero radii where the radial wavefunction crosses zero.
+
+## Keep angular nodes separate from planes
+
+A real p orbital such as pₓ has one nodal plane: the plane perpendicular to the x-axis through the nucleus. Every point in that plane is a node, but we count the plane as one angular nodal surface, not as infinitely many separate nodes.
+
+For the usual real d orbitals, the angular-node count is two. Their shape matters when the question specifically asks for planes. For example, dₓᵧ has two nodal planes. The d orbital usually called dz² instead has two conical nodal surfaces. A cone is not a plane, even though it is still an angular node.
+
+That is why our opening adaptation asks for angular nodes. The original key’s two-plane description is suitable for a real d orbital such as dₓᵧ, but it should not be treated as a statement about every d orbital.
+
+## Change n or l one at a time
+
+Within the same letter, l stays fixed. Moving from 4p to 5p adds one radial node while leaving the angular-node count at one. The extra principal quantum number has added a radial zero.
+
+Within the same shell, n stays fixed. Compare 4s, 4p, 4d and 4f. Their angular-node counts are 0, 1, 2 and 3, while their radial-node counts are 3, 2, 1 and 0. Each still has three nodes in total. Increasing one kind reduces the other in this comparison.
+
+These two checks catch a common mistake: using n − 1 for radial nodes alone. That expression counts both kinds together. Subtract l as well when the question asks only for radial nodes.
+
+## Try the past questions
+
+**1. A statement claims that none of the orbitals 5f, 6s, 4d, 5p and 5d has two radial nodes. Is the statement true?**
+
+Adapted from statement D of [JEE Main, 5 April 2026 Shift 2 Q52](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf#page=20), question ID 691121502. This exercise uses only that statement from the original multi-statement question.
+
+<details class="reading-check"><summary>Show hint</summary><p>Write l = 3 for f, 0 for s, 2 for d and 1 for p. Calculate n − l − 1 for all five orbitals before deciding.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The radial-node counts are 5f: 1, 6s: 5, 4d: 1, 5p: 3 and 5d: 2. Therefore the statement is <strong>false: 5d has two radial nodes</strong>.</p><p>The original final key selects “A and C only”, so it also excludes statement D. Our calculation checks the node statement directly.</p></details>
+
+**2. Return to the opening question: how many radial and angular nodes occur in 2s, 3s, 3p and 4d?**
+
+<details class="reading-check"><summary>Show hint</summary><p>The l values are 0, 0, 1 and 2. For each orbital, subtract l and then one from n to get the radial count.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>For 2s, the counts are <strong>one radial and zero angular</strong>. For 3s, they are <strong>two radial and zero angular</strong>. For 3p, they are <strong>one radial and one angular</strong>. For 4d, they are <strong>one radial and two angular</strong>.</p><p>The totals are 1, 2, 2 and 3, each equal to n − 1. The original matching answer is A–IV, B–III, C–II, D–I. Its d-orbital entry should be read with the nodal-plane qualification explained above.</p></details>
+
+The [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf) gives these selections for question IDs 691121502 and 6952782188.

@@ -1,0 +1,72 @@
+{
+  "id": "differentiability-at-joins",
+  "category": "maths",
+  "conceptKey": "maths/limits-continuity-and-differentiability/one-sided-slopes-at-joins",
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121538",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "8 April 2026 Shift 2, Q13, PDF page 6",
+      "answer": "Both statements are true. f′(0)=0 and f′(x)>0 on (−π,−π/2).",
+      "correctOptionId": "6911211834",
+      "verifiedAt": "2026-11-23T11:57:30+05:30",
+      "adapted": true,
+      "independentSolution": "For x>0 derivative e^(sin x)cosx−1 tends0; x<0 derivative1−e^(−sin x)cosx tends0. Direct difference quotient at0 also tends0, using (e^(sin t)−1)/t→1. Elsewhere smooth. For −π<x<−π/2, cosx<0 so1−e^(−sin x)cosx>0.",
+      "adaptation": "Paraphrases the two statements without changing the function or interval.",
+      "sourceSha256": "079e3b7ae67b70309f22b33e37b720cba65b47c6d96760113a4302cee1122416"
+    },
+    {
+      "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278250",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "4 April 2026 Shift 1, Q25, PDF pages 8–9",
+      "answer": "3 points: 1−1/√3, 1 and 1+1/√3",
+      "correctOptionId": "3",
+      "verifiedAt": "2026-11-23T11:57:30+05:30",
+      "adapted": true,
+      "independentSolution": "cos|u|=cosu makes x=±1/2 smooth. Branches6x and2+3x² cross at1±1/√3; slopes6 versus6x differ there. |x−1|cos(x²−1/4) is smooth at those crossings. At1 max selects6x locally and derivative jump of other term is2cos(3/4)≠0. All three lie in (−π,π).",
+      "adaptation": "Writes max(6x,2+3x²) in words to avoid notation ambiguity; preserves cosine applied to absolute x²−1/4 and the open domain.",
+      "sourceSha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a"
+    }
+  ],
+  "closestPriorSlugs": [
+    "when-is-a-quadratic-always-positive"
+  ],
+  "difference": "The earlier quadratic article tests global sign; this checks local slopes where formulas meet, including cancellation of corners.",
+  "researchedAt": "2026-11-23T11:57:30+05:30",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; official homepage checked 23 November 2026",
+    "scope": "Mathematics Unit 7: continuity, differentiability, composite functions and monotonicity."
+  },
+  "corpus": {
+    "papersExamined": 4,
+    "coverageNotes": "Selected original pages and final-key entries from 4 April Shift1,5 April Shift2,6 April Shift1,8 April Shift2 inspected today. Cumulative records cover targeted portions of nine April2026 papers. Neither complete all-shift classification nor five-year frequency analysis.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two verified question IDs address a distinct prerequisite or misconception. Four official April papers inspected for today; cumulative nine-paper targeted corpus, without an exhaustive frequency or marks estimate."
+  },
+  "sources": [
+    {
+      "title": "Primary educational reference",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-2-the-derivative-as-a-function"
+    },
+    {
+      "title": "Official current syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final answer key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121538",
+  "targetQuestionText": "Let f(x) = e^(sin |x|) − |x| for all real x. Is f differentiable everywhere, and is it increasing on (−π, −π/2)?",
+  "verificationNotes": "Original questions, continuations and final-key rows inspected; solutions derived independently. Adaptation boundaries and approximation are explicit. No human review claimed."
+}

@@ -3,56 +3,6 @@
   "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
   "pages": [
     {
-      "date": "2026-11-16",
-      "name": "2026-11-16",
-      "pageId": "89:202",
-      "generated": true,
-      "verified": true,
-      "articles": [
-        {
-          "slug": "how-do-you-find-the-electric-field-in-an-electromagnetic-wave",
-          "desktopFrameId": "90:242",
-          "phoneFrameId": "90:532"
-        },
-        {
-          "slug": "how-do-heat-and-work-signs-fit-a-complete-cycle",
-          "desktopFrameId": "90:818",
-          "phoneFrameId": "90:1114"
-        },
-        {
-          "slug": "how-do-you-simplify-a-sum-inside-another-sum",
-          "desktopFrameId": "90:1406",
-          "phoneFrameId": "90:1706"
-        }
-      ],
-      "verifiedAt": "2026-11-16T07:23:57+05:30",
-      "verification": {
-        "frames": 6,
-        "widths": [
-          1440,
-          390
-        ],
-        "matchedTextBlocksPerArticle": [
-          32,
-          33,
-          37
-        ],
-        "missingTextBlocks": 0,
-        "overlappingBodyBlocks": 0,
-        "disclosuresPerFrame": 4,
-        "fonts": [
-          "Inter",
-          "Literata"
-        ],
-        "nativeDiagrams": true,
-        "sharedHeaderFooter": true,
-        "screenshotsReviewed": true,
-        "comments": "Supported get_comments returned no comments. No registered page expired; cutoff 2026-11-10.",
-        "coverFit": "FIT; individual cover assets only, no full-page raster"
-      },
-      "sourceCommit": "a1c0d2908f5957e7cd0fa0c00b42a500da148b7c"
-    },
-    {
       "date": "2026-11-17",
       "name": "2026-11-17",
       "pageId": "97:202",
@@ -310,6 +260,58 @@
         "comments": "Supported get_comments returned no comments; result archived before retention."
       },
       "sourceCommit": "bbd9377e7e618f5c6f5246e5509ad07b84ed49f3"
+    },
+    {
+      "pageId": "138:302",
+      "name": "2026-11-23",
+      "date": "2026-11-23",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "how-do-you-find-the-time-between-two-shm-positions",
+          "desktopFrameId": "140:722",
+          "phoneFrameId": "140:976"
+        },
+        {
+          "slug": "how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes",
+          "desktopFrameId": "142:722",
+          "phoneFrameId": "142:977"
+        },
+        {
+          "slug": "does-an-absolute-value-always-make-a-sharp-corner",
+          "desktopFrameId": "144:722",
+          "phoneFrameId": "144:973"
+        }
+      ],
+      "verifiedAt": "2026-11-23T12:13:54+05:30",
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          37,
+          38,
+          36
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "coverFit": "FIT; discrete cover assets only",
+        "captureReferencesRemoved": true,
+        "comments": "Supported get_comments returned no comments; result archived before retention."
+      }
     }
   ],
   "removedPages": [
@@ -605,6 +607,62 @@
       "reason": "Registered generated page precedes inclusive seven-day cutoff 2026-11-16.",
       "feedbackArchive": "editorial/runs/2026-11-22.json#figmaFeedback",
       "preservedComponentIds": []
+    },
+    {
+      "date": "2026-11-16",
+      "name": "2026-11-16",
+      "pageId": "89:202",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "how-do-you-find-the-electric-field-in-an-electromagnetic-wave",
+          "desktopFrameId": "90:242",
+          "phoneFrameId": "90:532"
+        },
+        {
+          "slug": "how-do-heat-and-work-signs-fit-a-complete-cycle",
+          "desktopFrameId": "90:818",
+          "phoneFrameId": "90:1114"
+        },
+        {
+          "slug": "how-do-you-simplify-a-sum-inside-another-sum",
+          "desktopFrameId": "90:1406",
+          "phoneFrameId": "90:1706"
+        }
+      ],
+      "verifiedAt": "2026-11-16T07:23:57+05:30",
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          32,
+          33,
+          37
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": true,
+        "comments": "Supported get_comments returned no comments. No registered page expired; cutoff 2026-11-10.",
+        "coverFit": "FIT; individual cover assets only, no full-page raster"
+      },
+      "sourceCommit": "a1c0d2908f5957e7cd0fa0c00b42a500da148b7c",
+      "removedAt": "2026-11-23T12:13:54+05:30",
+      "removedOn": "2026-11-23",
+      "reason": "Registered generated page precedes inclusive seven-day cutoff 2026-11-17.",
+      "feedbackArchive": "editorial/runs/2026-11-23.json#figmaFeedback",
+      "preservedComponentIds": [],
+      "verifiedAbsent": true
     }
   ],
   "sharedUi": {

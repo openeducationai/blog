@@ -1,0 +1,74 @@
+---
+title: "How do you find the time between two SHM positions?"
+description: "Use the starting position to choose a cosine, then turn the phase change into a fraction of one period."
+category: "physics"
+author: "padho"
+pubDate: "2026-11-23T11:59:58+05:30"
+heroImage: "../../assets/articles/shm-phase-clock.png"
+heroImageAlt: "A block at a spring’s rightmost position corresponds to phase zero; a quarter cycle later it reaches the centre."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**A particle performs simple harmonic motion with amplitude A and period 5 s. Starting at x = A, how long does it take to reach x = A/√2 for the first time?**
+
+Adapted from [JEE Main, 6 April 2026 Shift 1 Q37](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf#page=13), question ID 6952782172. We have made “first time” explicit. You need the cosine of familiar angles and the idea that one full turn is 2π radians.
+
+## Follow one block from its turning point
+
+Imagine a block attached to a spring on a smooth horizontal surface. Pull the block to the right and release it. The block moves towards the centre, crosses it, reaches the left extreme and comes back. In the ideal model there is no friction to slow the repeated motion.
+
+Measure the block’s displacement x from the centre. Its greatest distance from the centre is the amplitude A, so the two extremes are x = A and x = −A. The period T is the time for one complete cycle, returning to the same position with the same direction of motion.
+
+The block is momentarily at rest at either extreme. It moves fastest at the centre. Its speed therefore changes during the journey. A quarter of the distance need not take a quarter of the time.
+
+## Use a phase to keep track of the cycle
+
+Start the clock when the block is at x = A. Its displacement can then be written x = A cos θ, where θ = ωt. The angle θ is called the phase. It tells us how far through the cycle the block has moved. The symbol ω, pronounced omega, is the angular frequency: ω = 2π/T.
+
+Think of a clock hand turning steadily. The hand turns through 2π radians in one period, while its horizontal projection moves back and forth. This projection gives the cosine rule. The block itself still moves along a straight line; the rotating hand is a way to represent its timing.
+
+<ArticleDiagram kind="shmPhase">The horizontal line is the block’s path. Starting at the right extreme gives x = A and phase zero. A quarter cycle later the block reaches x = 0. The phase advances steadily even though the block’s speed changes.</ArticleDiagram>
+
+The [SHM position rule](https://openstax.org/books/university-physics-volume-1/pages/15-1-simple-harmonic-motion) passes a few useful checks. At t = 0, cos 0 = 1, so x = A. At t = T/4, the phase is π/2 and x = 0. At t = T/2, the phase is π and x = −A. One whole period brings the block back to A.
+
+## Turn the required position into an angle
+
+Divide x = A cos θ by A. This gives cos θ = x/A. The fraction x/A tells us which angle to look for. On the first journey from the right extreme to the centre, choose an angle between zero and π/2.
+
+For example, suppose the required position is x = A/2. Then cos θ = 1/2, so the first suitable phase is π/3. Since one cycle is 2π, this journey takes (π/3)/(2π) = 1/6 of the period. That is how we turn a position into a time.
+
+The general conversion is t = θ/ω = Tθ/(2π). Our opening question uses a different fraction of A, but the same steps apply: divide by A, find the first angle, then take that fraction of T.
+
+<KeyIdea id="shm-phase-time">Starting at x = A, use x/A = cos θ. The first arrival uses the first suitable phase, and the elapsed time is Tθ/(2π).</KeyIdea>
+
+One position can be reached more than once during a cycle. The block passes a position once while moving left and again while moving right. A starting position and a direction, or a request for the first arrival, tell us which phase to choose.
+
+## What if the period is hidden in a speed equation?
+
+For the same block, the velocity is v = −Aω sin θ. Squaring it and using sin² θ = 1 − cos² θ gives v² = A²ω² − ω²x², or v² = ω²(A² − x²).
+
+This relation gives zero speed at x = ±A and the largest speed at x = 0. If a question gives v² as a constant minus a multiple of x², the coefficient multiplying x² is ω². Once we know ω, we can find T from 2π/ω.
+
+Squaring removes the sign of the velocity. The speed equation alone cannot tell us whether the block is travelling left or right. That is another reason to keep track of the starting point when calculating a travel time.
+
+## Try the past questions
+
+**1. A particle in SHM obeys v² = 50 − x² when x is measured in metres and v in metres per second. Find its exact period.**
+
+Adapted from [JEE Main, 4 April 2026 Shift 1 Q48](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf#page=17), question ID 695278273. We state the units and ask for the exact period. The original asks for an integer coefficient in T = X/7 s, using the same letter x for two different quantities; we call that coefficient X.
+
+<details class="reading-check"><summary>Show hint</summary><p>Compare the coefficient of x² with the coefficient in v² = ω²A² − ω²x². The constant 50 contains both amplitude and angular frequency.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The coefficient gives ω² = 1 s⁻², so ω = 1 rad/s. Therefore <strong>T = 2π s</strong>. The constant term then gives A² = 50 m², which is consistent with zero speed at either extreme.</p><p>The paper’s coefficient is exactly X = 14π. Its final key gives 44, corresponding to π ≈ 22/7. Thus 44/7 s is the exam approximation, while 2π s is the exact period in this model.</p></details>
+
+**2. Return to the opening question: with amplitude A and period 5 s, how long does the particle take to go from x = A to x = A/√2 for the first time?**
+
+<details class="reading-check"><summary>Show hint</summary><p>Use cos θ = 1/√2. Choose the first angle after zero, then divide it by 2π to find the fraction of a period.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The first angle with cosine 1/√2 is θ = π/4. Therefore t = 5 × (π/4)/(2π) = <strong>5/8 s</strong>, or 0.625 s.</p><p>This is less than T/4 = 1.25 s, as it should be: the particle reaches A/√2 before reaching the centre. The amplitude cancels because the destination is given as a fraction of A.</p></details>
+
+These results agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 695278273 and 6952782172, with the approximation for the first question explained above.

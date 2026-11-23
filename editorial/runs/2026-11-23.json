@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-23",
+  "status": "partial",
+  "startedAt": "2026-11-23T09:46:56+05:30",
+  "articleSlugs": [
+    "how-do-you-find-the-time-between-two-shm-positions",
+    "how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes",
+    "does-an-absolute-value-always-make-a-sharp-corner"
+  ],
+  "preflight": {
+    "branch": "main",
+    "clean": true,
+    "scheduleEnabled": true,
+    "existingDateArticles": 0,
+    "headMatchesOriginMain": true
+  },
+  "stages": {
+    "research": {
+      "status": "complete",
+      "completedAt": "2026-11-23T11:57:30+05:30",
+      "briefs": [
+        "editorial/research/2026-11-23-physics.json",
+        "editorial/research/2026-11-23-chemistry.json",
+        "editorial/research/2026-11-23-maths.json"
+      ],
+      "evidence": "Six original question IDs and final-key rows verified; all37 history objectives, examples and PYQ IDs checked for overlap. Full independent solutions in briefs.",
+      "queueCoverage": "Three selected ready briefs; three remaining candidates need research. Seven-day advance-brief goal not yet met.",
+      "adaptations": "Chemistry distinguishes angular nodes from planes and labels a statement-D-only exercise. Physics retains exact2πs and explains final-key integer44 approximation."
+    },
+    "writing": {
+      "status": "complete",
+      "completedAt": "2026-11-23T11:59:58+05:30",
+      "articles": [
+        {
+          "slug": "how-do-you-find-the-time-between-two-shm-positions",
+          "sourcePath": "src/content/blog/how-do-you-find-the-time-between-two-shm-positions.mdx"
+        },
+        {
+          "slug": "how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes",
+          "sourcePath": "src/content/blog/how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes.mdx"
+        },
+        {
+          "slug": "does-an-absolute-value-always-make-a-sharp-corner",
+          "sourcePath": "src/content/blog/does-an-absolute-value-always-make-a-sharp-corner.mdx"
+        }
+      ],
+      "evidence": "Three full lessons with exact opening target text, explicit teaching goal, two identified adapted PYQs each, hints and worked solutions returning to the target."
+    },
+    "validation": {
+      "status": "complete",
+      "completedAt": "2026-11-23T12:03:41+05:30",
+      "commands": [
+        "npm run check:editorial",
+        "npm run build",
+        "npm run typecheck",
+        "npm run check:search",
+        "npm run check:analytics",
+        "git diff --check"
+      ],
+      "articleViewports": 6,
+      "navigationViewports": 8,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-23-browser/checks.json",
+      "navigationEvidence": "/private/tmp/padho-blog-2026-11-23-browser/index-checks.json",
+      "buildEvidence": "/private/tmp/padho-pcm-2026-11-23/build.log",
+      "evidence": "Six real Astro pages pass cover load, target, Literata/justification, overflow, keyboard disclosure, no-JavaScript and reduced-motion checks. Original diagrams and page openings/final solutions visually inspected. 46 built pages,45 sitemap URLs,39 article images and metadata pass search and analytics checks. Independent numerical checks confirm one-sided derivatives and SHM phase."
+    },
+    "figma": {
+      "status": "complete",
+      "pageId": "138:302",
+      "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+      "reviewUrl": "https://www.figma.com/design/GsBNGG7jIMvsPyhP7w0zXK?node-id=138-302",
+      "evidence": "All six full-frame screenshots visually reviewed after exact prose matching. Complete editable text, native diagrams, discrete cover images and approved shared UI preserved. Empty feedback read archived before removing the registered expired page.",
+      "completedAt": "2026-11-23T12:13:54+05:30",
+      "articles": [
+        {
+          "slug": "how-do-you-find-the-time-between-two-shm-positions",
+          "desktopFrameId": "140:722",
+          "phoneFrameId": "140:976"
+        },
+        {
+          "slug": "how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes",
+          "desktopFrameId": "142:722",
+          "phoneFrameId": "142:977"
+        },
+        {
+          "slug": "does-an-absolute-value-always-make-a-sharp-corner",
+          "desktopFrameId": "144:722",
+          "phoneFrameId": "144:973"
+        }
+      ],
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          37,
+          38,
+          36
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "coverFit": "FIT; discrete cover assets only",
+        "captureReferencesRemoved": true,
+        "comments": "Supported get_comments returned no comments; result archived before retention."
+      },
+      "retention": {
+        "cutoff": "2026-11-17",
+        "removedPageIds": [
+          "89:202"
+        ],
+        "absenceVerified": true,
+        "sharedUIPageId": "100:202",
+        "sharedUIPreserved": true
+      }
+    },
+    "git": {
+      "status": "pending",
+      "evidence": "Source and Figma verified; final diff reviewed and origin/main fetched before commit."
+    },
+    "publication": {
+      "status": "pending"
+    },
+    "liveVerification": {
+      "status": "pending"
+    }
+  },
+  "figmaFeedback": {
+    "checkedAt": "2026-11-23T11:57:30+05:30",
+    "tool": "get_comments",
+    "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+    "comments": []
+  }
+}

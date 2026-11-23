@@ -938,16 +938,158 @@
       "category": "chemistry",
       "chapter": "atomic-structure",
       "conceptKey": "chemistry/atomic-structure/radial-angular-nodes",
-      "question": "How do quantum numbers give the number of orbital nodes?",
+      "question": "For the orbitals 2s, 3s, 3p and 4d, find the number of radial nodes and angular nodes in each.",
       "candidateQuestionIds": [
         "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782188"
       ],
-      "status": "needs_research",
-      "rationale": "Original matching question located; requires final-key and nodal-plane ambiguity review plus a second focused question.",
+      "status": "writing",
+      "rationale": "Two verified question IDs address a distinct prerequisite or misconception. Four official April papers inspected for today; cumulative nine-paper targeted corpus, without an exhaustive frequency or marks estimate.",
       "closestPriorSlugs": [
-        "how-do-you-compare-bohr-orbit-radii"
+        "how-do-you-compare-bohr-orbit-radii",
+        "how-do-antibonding-electrons-change-an-oxygen-bond"
       ],
-      "difference": "Wavefunction nodes, not orbit radii."
+      "difference": "Counts nodes of atomic orbitals from quantum numbers. Earlier lessons compare Bohr radii or occupy molecular antibonding orbitals.",
+      "title": "How do quantum numbers tell you the number of orbital nodes?",
+      "slug": "how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes",
+      "learningObjective": "Read n and l from an orbital label, count n−l−1 radial and l angular nodes, and distinguish angular nodes from nodal planes.",
+      "example": "Compare a radial spherical node with the angular nodal plane of a real p orbital.",
+      "asset": "orbital-node-types",
+      "kind": "orbitalNodes",
+      "description": "Separate radial nodes from angular nodes, then use n and l to count them without confusing every angular node with a plane.",
+      "alt": "A circular section represents a spherical radial node; a straight section represents the nodal plane separating two p-orbital lobes.",
+      "scope": "Chemistry Unit 2: quantum numbers and shapes of s, p and d orbitals.",
+      "reference": "https://openstax.org/books/chemistry-2e/pages/6-3-development-of-quantum-theory",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782188",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 1, Q53, PDF page 19",
+          "answer": "2s: (1,0); 3s: (2,0); 3p: (1,1); 4d: (1,2), ordered as radial/angular",
+          "correctOptionId": "6952787677",
+          "verifiedAt": "2026-11-23T11:57:30+05:30",
+          "adapted": true,
+          "independentSolution": "Use l=0,0,1,2 and radial n−l−1. Totals are n−1. Original A-IV B-III C-II D-I agrees with these counts, but says nodal planes for unspecified4d. Real dxy has two planes whereas dz² has two conical nodes.",
+          "adaptation": "Changes the original heading nodal planes to angular nodes and converts matching choices into counts. Explicitly discloses why unspecified4d does not imply two planes.",
+          "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+        },
+        {
+          "id": "JEE-Main-2026-04-05-Shift-2-Paper1-QID-691121502",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409829414602.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "5 April 2026 Shift 2, Q52 statement D, PDF pages 20–21",
+          "answer": "Statement D is false: 5d has two radial nodes. Counts for 5f,6s,4d,5p,5d are 1,5,1,3,2.",
+          "correctOptionId": "6911211706",
+          "verifiedAt": "2026-11-23T11:57:30+05:30",
+          "adapted": true,
+          "independentSolution": "n−l−1 gives 5−3−1=1,6−0−1=5,4−2−1=1,5−1−1=3,5−2−1=2. Full-key A and C only excludes D. Original A follows n+l tie rule, B incorrectly says same-subshell energy increases with Z, C compares sizes2px<3px.",
+          "adaptation": "Uses only statement D of the original multi-statement question, clearly labelled; does not claim the resulting short exercise is the full original.",
+          "sourceSha256": "876efb4250b5d8e096f28bb48d9078e39f25f1ad70473701e5c13523716588d4"
+        }
+      ],
+      "briefPath": "editorial/research/2026-11-23-chemistry.json"
+    },
+    {
+      "id": "shm-phase-time",
+      "category": "physics",
+      "chapter": "oscillations-and-waves",
+      "conceptKey": "physics/oscillations-and-waves/phase-to-elapsed-time",
+      "title": "How do you find the time between two SHM positions?",
+      "slug": "how-do-you-find-the-time-between-two-shm-positions",
+      "question": "A particle performs simple harmonic motion with amplitude A and period 5 s. Starting at x = A, how long does it take to reach x = A/√2 for the first time?",
+      "learningObjective": "Choose a phase from the starting position, convert its change to elapsed time, and recover angular frequency from a speed-displacement equation.",
+      "example": "A spring-mounted block starts at its rightmost position and moves towards the centre.",
+      "asset": "shm-phase-clock",
+      "kind": "shmPhase",
+      "description": "Use the starting position to choose a cosine, then turn the phase change into a fraction of one period.",
+      "alt": "A block at a spring’s rightmost position corresponds to phase zero; a quarter cycle later it reaches the centre.",
+      "scope": "Physics Unit 10: simple harmonic motion, displacement as a function of time, phase and time period.",
+      "reference": "https://openstax.org/books/university-physics-volume-1/pages/15-1-simple-harmonic-motion",
+      "closestPriorSlugs": [],
+      "difference": "No earlier article teaches SHM phase or elapsed time. It is distinct from electromagnetic-wave field direction and force interaction pairs.",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782172",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 1, Q37, PDF pages 13–14",
+          "answer": "5/8 s",
+          "correctOptionId": "6952787627",
+          "verifiedAt": "2026-11-23T11:57:30+05:30",
+          "adapted": true,
+          "independentSolution": "x=A cos(2πt/T) from right extreme. First arrival gives cosθ=1/√2, θ=π/4, t=T/8=5/8 s. A cancels; t<T/4 as required.",
+          "adaptation": "Makes the first arrival explicit; preserves the original amplitude and period.",
+          "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+        },
+        {
+          "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278273",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift 1, Q48, PDF page 17",
+          "answer": "T = 2π s; keyed coefficient 44 corresponds to π ≈ 22/7",
+          "correctOptionId": "44",
+          "verifiedAt": "2026-11-23T11:57:30+05:30",
+          "adapted": true,
+          "independentSolution": "In SI units v²=50−x² matches ω²(A²−x²), so ω=1 rad/s, A=√50 m and T=2π s. Original T=X/7 gives exact X=14π≈43.9823 and keyed integer44; do not present 44/7 as exact.",
+          "adaptation": "Asks for the exact period, states SI units, renames the paper’s repeated x coefficient X, and explains the integer-key approximation.",
+          "sourceSha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a"
+        }
+      ],
+      "briefPath": "editorial/research/2026-11-23-physics.json",
+      "status": "writing",
+      "rationale": "Two verified question IDs address a distinct prerequisite or misconception. Four official April papers inspected for today; cumulative nine-paper targeted corpus, without an exhaustive frequency or marks estimate."
+    },
+    {
+      "id": "differentiability-at-joins",
+      "category": "maths",
+      "chapter": "limits-continuity-and-differentiability",
+      "conceptKey": "maths/limits-continuity-and-differentiability/one-sided-slopes-at-joins",
+      "title": "Does an absolute value always make a sharp corner?",
+      "slug": "does-an-absolute-value-always-make-a-sharp-corner",
+      "question": "Let f(x) = e^(sin |x|) − |x| for all real x. Is f differentiable everywhere, and is it increasing on (−π, −π/2)?",
+      "learningObjective": "Locate possible joins, simplify even outer functions, and compare one-sided slopes before deciding whether an absolute value or maximum causes nondifferentiability.",
+      "example": "Compare the slopes of y=|x| and y=x² at their common joining point x=0.",
+      "asset": "slopes-at-a-join",
+      "kind": "joinSlopes",
+      "description": "Compare the left and right slopes at each possible join. A modulus is a place to check, rather than proof of a corner.",
+      "alt": "The graph of absolute x has slopes minus one and plus one at zero, while x squared has slope zero from both sides.",
+      "scope": "Mathematics Unit 7: continuity, differentiability, composite functions and monotonicity.",
+      "reference": "https://openstax.org/books/calculus-volume-1/pages/3-2-the-derivative-as-a-function",
+      "closestPriorSlugs": [
+        "when-is-a-quadratic-always-positive"
+      ],
+      "difference": "The earlier quadratic article tests global sign; this checks local slopes where formulas meet, including cancellation of corners.",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121538",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "8 April 2026 Shift 2, Q13, PDF page 6",
+          "answer": "Both statements are true. f′(0)=0 and f′(x)>0 on (−π,−π/2).",
+          "correctOptionId": "6911211834",
+          "verifiedAt": "2026-11-23T11:57:30+05:30",
+          "adapted": true,
+          "independentSolution": "For x>0 derivative e^(sin x)cosx−1 tends0; x<0 derivative1−e^(−sin x)cosx tends0. Direct difference quotient at0 also tends0, using (e^(sin t)−1)/t→1. Elsewhere smooth. For −π<x<−π/2, cosx<0 so1−e^(−sin x)cosx>0.",
+          "adaptation": "Paraphrases the two statements without changing the function or interval.",
+          "sourceSha256": "079e3b7ae67b70309f22b33e37b720cba65b47c6d96760113a4302cee1122416"
+        },
+        {
+          "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278250",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift 1, Q25, PDF pages 8–9",
+          "answer": "3 points: 1−1/√3, 1 and 1+1/√3",
+          "correctOptionId": "3",
+          "verifiedAt": "2026-11-23T11:57:30+05:30",
+          "adapted": true,
+          "independentSolution": "cos|u|=cosu makes x=±1/2 smooth. Branches6x and2+3x² cross at1±1/√3; slopes6 versus6x differ there. |x−1|cos(x²−1/4) is smooth at those crossings. At1 max selects6x locally and derivative jump of other term is2cos(3/4)≠0. All three lie in (−π,π).",
+          "adaptation": "Writes max(6x,2+3x²) in words to avoid notation ambiguity; preserves cosine applied to absolute x²−1/4 and the open domain.",
+          "sourceSha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a"
+        }
+      ],
+      "briefPath": "editorial/research/2026-11-23-maths.json",
+      "status": "writing",
+      "rationale": "Two verified question IDs address a distinct prerequisite or misconception. Four official April papers inspected for today; cumulative nine-paper targeted corpus, without an exhaustive frequency or marks estimate."
     }
   ]
 }

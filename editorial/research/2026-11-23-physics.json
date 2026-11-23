@@ -1,0 +1,70 @@
+{
+  "id": "shm-phase-time",
+  "category": "physics",
+  "conceptKey": "physics/oscillations-and-waves/phase-to-elapsed-time",
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782172",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "6 April 2026 Shift 1, Q37, PDF pages 13–14",
+      "answer": "5/8 s",
+      "correctOptionId": "6952787627",
+      "verifiedAt": "2026-11-23T11:57:30+05:30",
+      "adapted": true,
+      "independentSolution": "x=A cos(2πt/T) from right extreme. First arrival gives cosθ=1/√2, θ=π/4, t=T/8=5/8 s. A cancels; t<T/4 as required.",
+      "adaptation": "Makes the first arrival explicit; preserves the original amplitude and period.",
+      "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+    },
+    {
+      "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278273",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "4 April 2026 Shift 1, Q48, PDF page 17",
+      "answer": "T = 2π s; keyed coefficient 44 corresponds to π ≈ 22/7",
+      "correctOptionId": "44",
+      "verifiedAt": "2026-11-23T11:57:30+05:30",
+      "adapted": true,
+      "independentSolution": "In SI units v²=50−x² matches ω²(A²−x²), so ω=1 rad/s, A=√50 m and T=2π s. Original T=X/7 gives exact X=14π≈43.9823 and keyed integer44; do not present 44/7 as exact.",
+      "adaptation": "Asks for the exact period, states SI units, renames the paper’s repeated x coefficient X, and explains the integer-key approximation.",
+      "sourceSha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a"
+    }
+  ],
+  "closestPriorSlugs": [],
+  "difference": "No earlier article teaches SHM phase or elapsed time. It is distinct from electromagnetic-wave field direction and force interaction pairs.",
+  "researchedAt": "2026-11-23T11:57:30+05:30",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main 2027; official homepage checked 23 November 2026",
+    "scope": "Physics Unit 10: simple harmonic motion, displacement as a function of time, phase and time period."
+  },
+  "corpus": {
+    "papersExamined": 4,
+    "coverageNotes": "Selected original pages and final-key entries from 4 April Shift1,5 April Shift2,6 April Shift1,8 April Shift2 inspected today. Cumulative records cover targeted portions of nine April2026 papers. Neither complete all-shift classification nor five-year frequency analysis.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two verified question IDs address a distinct prerequisite or misconception. Four official April papers inspected for today; cumulative nine-paper targeted corpus, without an exhaustive frequency or marks estimate."
+  },
+  "sources": [
+    {
+      "title": "Primary educational reference",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/15-1-simple-harmonic-motion"
+    },
+    {
+      "title": "Official current syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final answer key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782172",
+  "targetQuestionText": "A particle performs simple harmonic motion with amplitude A and period 5 s. Starting at x = A, how long does it take to reach x = A/√2 for the first time?",
+  "verificationNotes": "Original questions, continuations and final-key rows inspected; solutions derived independently. Adaptation boundaries and approximation are explicit. No human review claimed."
+}
