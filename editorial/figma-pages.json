@@ -311,7 +311,8 @@
         "coverFit": "FIT; discrete cover assets only",
         "captureReferencesRemoved": true,
         "comments": "Supported get_comments returned no comments; result archived before retention."
-      }
+      },
+      "sourceCommit": "727b00e0d4fbd433a61fa7ec9307d367649d0c59"
     }
   ],
   "removedPages": [

@@ -123,17 +123,166 @@
         "absenceVerified": true,
         "sharedUIPageId": "100:202",
         "sharedUIPreserved": true
-      }
+      },
+      "frames": [
+        {
+          "id": "140:722",
+          "slug": "how-do-you-find-the-time-between-two-shm-positions",
+          "width": 1440,
+          "height": 5489,
+          "columnId": "140:867",
+          "bodyId": "140:873",
+          "coverId": "140:872",
+          "textNodes": 48,
+          "figureIds": [
+            "140:896"
+          ],
+          "solutionIds": [
+            "140:945",
+            "140:952",
+            "140:961",
+            "140:968"
+          ]
+        },
+        {
+          "id": "140:976",
+          "slug": "how-do-you-find-the-time-between-two-shm-positions",
+          "width": 390,
+          "height": 6771,
+          "columnId": "140:1117",
+          "bodyId": "140:1123",
+          "coverId": "140:1122",
+          "textNodes": 48,
+          "figureIds": [
+            "140:1146"
+          ],
+          "solutionIds": [
+            "140:1195",
+            "140:1202",
+            "140:1211",
+            "140:1218"
+          ]
+        },
+        {
+          "id": "142:722",
+          "slug": "how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes",
+          "width": 1440,
+          "height": 5601,
+          "columnId": "142:867",
+          "bodyId": "142:873",
+          "coverId": "142:872",
+          "textNodes": 48,
+          "figureIds": [
+            "142:890"
+          ],
+          "solutionIds": [
+            "142:946",
+            "142:953",
+            "142:962",
+            "142:969"
+          ]
+        },
+        {
+          "id": "142:977",
+          "slug": "how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes",
+          "width": 390,
+          "height": 6928,
+          "columnId": "142:1118",
+          "bodyId": "142:1124",
+          "coverId": "142:1123",
+          "textNodes": 48,
+          "figureIds": [
+            "142:1141"
+          ],
+          "solutionIds": [
+            "142:1197",
+            "142:1204",
+            "142:1213",
+            "142:1220"
+          ]
+        },
+        {
+          "id": "144:722",
+          "slug": "does-an-absolute-value-always-make-a-sharp-corner",
+          "width": 1440,
+          "height": 5527,
+          "columnId": "144:867",
+          "bodyId": "144:873",
+          "coverId": "144:872",
+          "textNodes": 49,
+          "figureIds": [
+            "144:888"
+          ],
+          "solutionIds": [
+            "144:942",
+            "144:949",
+            "144:958",
+            "144:965"
+          ]
+        },
+        {
+          "id": "144:973",
+          "slug": "does-an-absolute-value-always-make-a-sharp-corner",
+          "width": 390,
+          "height": 6917,
+          "columnId": "144:1114",
+          "bodyId": "144:1120",
+          "coverId": "144:1119",
+          "textNodes": 49,
+          "figureIds": [
+            "144:1135"
+          ],
+          "solutionIds": [
+            "144:1189",
+            "144:1196",
+            "144:1205",
+            "144:1212"
+          ]
+        }
+      ],
+      "renderEvidence": "Six inline get_screenshot images visually inspected in the run conversation; frame IDs recorded here and in figma-pages.json."
     },
     "git": {
-      "status": "pending",
-      "evidence": "Source and Figma verified; final diff reviewed and origin/main fetched before commit."
+      "status": "complete",
+      "completedAt": "2026-11-23T12:14:46+05:30",
+      "sourceCommit": "727b00e0d4fbd433a61fa7ec9307d367649d0c59",
+      "branch": "main",
+      "pushed": true
     },
     "publication": {
-      "status": "pending"
+      "status": "failed",
+      "startedAt": "2026-11-23T12:14:46+05:30",
+      "scope": "https://padho.ai/blog only",
+      "evidence": "Editorial, search and analytics preflights passed; token refresh failed before bucket inspection or any upload.",
+      "failedAt": "2026-11-23T12:15:36+05:30",
+      "command": "node scripts/publish.mjs",
+      "log": "/private/tmp/padho-pcm-2026-11-23/publish.log",
+      "exitCode": 1,
+      "uploadedObjects": 0,
+      "cdnInvalidations": [],
+      "sourceCommit": "727b00e0d4fbd433a61fa7ec9307d367649d0c59",
+      "error": "ERROR: (gcloud.auth.print-access-token) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.",
+      "requiredAction": "Run gcloud auth login interactively to obtain new credentials."
     },
     "liveVerification": {
-      "status": "pending"
+      "status": "pending",
+      "blockedBy": "publication",
+      "checkedAt": "2026-11-23T12:15:16+05:30",
+      "articles": [
+        {
+          "url": "https://padho.ai/blog/how-do-you-find-the-time-between-two-shm-positions/",
+          "status": 404
+        },
+        {
+          "url": "https://padho.ai/blog/how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes/",
+          "status": 404
+        },
+        {
+          "url": "https://padho.ai/blog/does-an-absolute-value-always-make-a-sharp-corner/",
+          "status": 404
+        }
+      ],
+      "evidence": "Read-only checks confirmed all three prepared URLs return 404. No publication or indexing claim."
     }
   },
   "figmaFeedback": {
@@ -141,5 +290,31 @@
     "tool": "get_comments",
     "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
     "comments": []
+  },
+  "sourceCommit": "727b00e0d4fbd433a61fa7ec9307d367649d0c59",
+  "publicationAttempts": [
+    {
+      "status": "failed",
+      "startedAt": "2026-11-23T12:14:46+05:30",
+      "scope": "https://padho.ai/blog only",
+      "evidence": "Editorial, search and analytics preflights passed; token refresh failed before bucket inspection or any upload.",
+      "failedAt": "2026-11-23T12:15:36+05:30",
+      "command": "node scripts/publish.mjs",
+      "log": "/private/tmp/padho-pcm-2026-11-23/publish.log",
+      "exitCode": 1,
+      "uploadedObjects": 0,
+      "cdnInvalidations": [],
+      "sourceCommit": "727b00e0d4fbd433a61fa7ec9307d367649d0c59",
+      "error": "ERROR: (gcloud.auth.print-access-token) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.",
+      "requiredAction": "Run gcloud auth login interactively to obtain new credentials."
+    }
+  ],
+  "lastCheckpointAt": "2026-11-23T12:15:36+05:30",
+  "resume": {
+    "nextStage": "publication",
+    "reuseExistingArticles": true,
+    "reuseFigmaPageId": "138:302",
+    "requiredAction": "Interactive gcloud auth login, followed by an authorised retry of the prepared batch.",
+    "rebuildIfPublicationDateChanges": true
   }
 }
