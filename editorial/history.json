@@ -2046,7 +2046,7 @@
       "url": "https://padho.ai/blog/how-do-you-find-the-time-between-two-shm-positions/",
       "publishedAt": "2026-11-24T07:03:27+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782172",
       "targetQuestionText": "A particle performs simple harmonic motion with amplitude A and period 5 s. Starting at x = A, how long does it take to reach x = A/√2 for the first time?",
       "review": {
@@ -2066,7 +2066,11 @@
           "updatedAt": "2026-11-24T07:03:27+05:30",
           "reason": "Refresh the unpublished batch date for the authorised 24 November delayed release; lesson content unchanged."
         }
-      ]
+      ],
+      "sourceCommit": "9a4784cdaebb5a92083163d2fead3484dc3c8efa",
+      "releaseConfirmedAt": "2026-11-24T07:10:33+05:30",
+      "liveVerifiedAt": "2026-11-24T07:12:01+05:30",
+      "liveHtmlSha256": "ed97d790c2abe98386005d38bec87db4c1c53721dd3dfcdaa5c7093296f7d1c2"
     },
     {
       "slug": "how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes",
@@ -2110,7 +2114,7 @@
       "url": "https://padho.ai/blog/how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes/",
       "publishedAt": "2026-11-24T07:03:27+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782188",
       "targetQuestionText": "For the orbitals 2s, 3s, 3p and 4d, find the number of radial nodes and angular nodes in each.",
       "review": {
@@ -2130,7 +2134,11 @@
           "updatedAt": "2026-11-24T07:03:27+05:30",
           "reason": "Refresh the unpublished batch date for the authorised 24 November delayed release; lesson content unchanged."
         }
-      ]
+      ],
+      "sourceCommit": "9a4784cdaebb5a92083163d2fead3484dc3c8efa",
+      "releaseConfirmedAt": "2026-11-24T07:10:33+05:30",
+      "liveVerifiedAt": "2026-11-24T07:12:01+05:30",
+      "liveHtmlSha256": "15ac7b8641c8ebdfb9f99e27b2c70ce6c562ba41c264bee0743311f30bedc53b"
     },
     {
       "slug": "does-an-absolute-value-always-make-a-sharp-corner",
@@ -2174,7 +2182,7 @@
       "url": "https://padho.ai/blog/does-an-absolute-value-always-make-a-sharp-corner/",
       "publishedAt": "2026-11-24T07:03:27+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121538",
       "targetQuestionText": "Let f(x) = e^(sin |x|) − |x| for all real x. Is f differentiable everywhere, and is it increasing on (−π, −π/2)?",
       "review": {
@@ -2194,7 +2202,11 @@
           "updatedAt": "2026-11-24T07:03:27+05:30",
           "reason": "Refresh the unpublished batch date for the authorised 24 November delayed release; lesson content unchanged."
         }
-      ]
+      ],
+      "sourceCommit": "9a4784cdaebb5a92083163d2fead3484dc3c8efa",
+      "releaseConfirmedAt": "2026-11-24T07:10:33+05:30",
+      "liveVerifiedAt": "2026-11-24T07:12:01+05:30",
+      "liveHtmlSha256": "65f05003b81cc0d4161d6e19f3c1cc4895290042a4c124a659a08a4f688a9b96"
     }
   ]
 }

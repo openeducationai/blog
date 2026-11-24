@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "status": "partial",
+  "status": "published",
   "startedAt": "2026-11-24T07:02:24+05:30",
   "articleSlugs": [
     "how-do-you-find-the-time-between-two-shm-positions",
@@ -250,13 +250,75 @@
       "reusedFrom": "editorial/runs/2026-11-23.json#stages.figma"
     },
     "git": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-24T07:09:35+05:30",
+      "sourceCommit": "9a4784cdaebb5a92083163d2fead3484dc3c8efa",
+      "branch": "main",
+      "pushed": true
     },
     "publication": {
-      "status": "pending"
+      "status": "complete",
+      "startedAt": "2026-11-24T07:09:35+05:30",
+      "scope": "https://padho.ai/blog only",
+      "command": "node scripts/publish.mjs",
+      "sourceCommit": "9a4784cdaebb5a92083163d2fead3484dc3c8efa",
+      "authorisation": "Owner-authorised recurring invocation explicitly resumes prior partial batch.",
+      "completedAt": "2026-11-24T07:10:33+05:30",
+      "log": "/private/tmp/padho-blog-2026-11-24-browser/publish.log",
+      "exitCode": 0,
+      "evidence": "Existing Google Cloud authentication succeeded. Scoped publisher uploaded blog build and completed both /blog and /blog/* CDN invalidations.",
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ]
     },
     "liveVerification": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-24T07:12:01+05:30",
+      "searchEvidence": "/tmp/padho-blog-search-live.json",
+      "searchResult": {
+        "mode": "live",
+        "pages": 45,
+        "articles": 39,
+        "images": 39,
+        "internalLinks": 46,
+        "metadataMatchesVisibleContent": true,
+        "crawlerProbes": 156,
+        "crawlerEvidenceLimit": "Public user-agent probes and robots rules; not proof of a visit from official crawler IPs or of indexing."
+      },
+      "articleViewports": 6,
+      "navigationViewports": 8,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-24-browser/checks-live.json",
+      "navigationEvidence": "/private/tmp/padho-blog-2026-11-24-browser/index-checks-live.json",
+      "contentEvidence": "/private/tmp/padho-blog-2026-11-24-browser/live-content.json",
+      "articles": [
+        {
+          "url": "https://padho.ai/blog/how-do-you-find-the-time-between-two-shm-positions/",
+          "status": 200,
+          "matchesVerifiedBuild": true,
+          "sha256": "ed97d790c2abe98386005d38bec87db4c1c53721dd3dfcdaa5c7093296f7d1c2"
+        },
+        {
+          "url": "https://padho.ai/blog/how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes/",
+          "status": 200,
+          "matchesVerifiedBuild": true,
+          "sha256": "15ac7b8641c8ebdfb9f99e27b2c70ce6c562ba41c264bee0743311f30bedc53b"
+        },
+        {
+          "url": "https://padho.ai/blog/does-an-absolute-value-always-make-a-sharp-corner/",
+          "status": 200,
+          "matchesVerifiedBuild": true,
+          "sha256": "65f05003b81cc0d4161d6e19f3c1cc4895290042a4c124a659a08a4f688a9b96"
+        }
+      ],
+      "assets": [
+        {
+          "path": "/blog/_astro/BlogAnalytics.astro_astro_type_script_index_0_lang.C8EDOPLN.js",
+          "matchesVerifiedBuild": true,
+          "sha256": "007c077cc1f63a67eb3d8b8ead7cf48c5cde440a9e69fe60121c7b1b65f2f37f"
+        }
+      ],
+      "evidence": "All three live HTML responses and analytics bundle match the verified build exactly. Live desktop/phone articles and home/category navigation passed. Visual dates, covers and opening target questions inspected. Search and public crawler-user-agent checks passed; no indexing claim."
     }
   },
   "figmaFeedback": {
@@ -265,11 +327,31 @@
     "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
     "comments": []
   },
-  "lastCheckpointAt": "2026-11-24T07:08:46+05:30",
+  "lastCheckpointAt": "2026-11-24T07:12:01+05:30",
   "resume": {
+    "nextStage": "complete",
     "reuseExistingArticles": true,
     "reuseFigmaPageId": "138:302",
-    "reason": "Resume the prepared 23 November batch after its pre-upload authentication failure. Do not create another set.",
-    "nextStage": "git"
-  }
+    "resolvedPriorRun": "editorial/runs/2026-11-23.json"
+  },
+  "sourceCommit": "9a4784cdaebb5a92083163d2fead3484dc3c8efa",
+  "publicationAttempts": [
+    {
+      "status": "complete",
+      "startedAt": "2026-11-24T07:09:35+05:30",
+      "scope": "https://padho.ai/blog only",
+      "command": "node scripts/publish.mjs",
+      "sourceCommit": "9a4784cdaebb5a92083163d2fead3484dc3c8efa",
+      "authorisation": "Owner-authorised recurring invocation explicitly resumes prior partial batch.",
+      "completedAt": "2026-11-24T07:10:33+05:30",
+      "log": "/private/tmp/padho-blog-2026-11-24-browser/publish.log",
+      "exitCode": 0,
+      "evidence": "Existing Google Cloud authentication succeeded. Scoped publisher uploaded blog build and completed both /blog and /blog/* CDN invalidations.",
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ]
+    }
+  ],
+  "completedAt": "2026-11-24T07:12:01+05:30"
 }

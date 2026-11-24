@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "status": "partial",
+  "status": "published",
   "startedAt": "2026-11-23T09:46:56+05:30",
   "articleSlugs": [
     "how-do-you-find-the-time-between-two-shm-positions",
@@ -250,39 +250,68 @@
       "pushed": true
     },
     "publication": {
-      "status": "failed",
-      "startedAt": "2026-11-23T12:14:46+05:30",
+      "status": "complete",
+      "startedAt": "2026-11-24T07:09:35+05:30",
       "scope": "https://padho.ai/blog only",
-      "evidence": "Editorial, search and analytics preflights passed; token refresh failed before bucket inspection or any upload.",
-      "failedAt": "2026-11-23T12:15:36+05:30",
       "command": "node scripts/publish.mjs",
-      "log": "/private/tmp/padho-pcm-2026-11-23/publish.log",
-      "exitCode": 1,
-      "uploadedObjects": 0,
-      "cdnInvalidations": [],
-      "sourceCommit": "727b00e0d4fbd433a61fa7ec9307d367649d0c59",
-      "error": "ERROR: (gcloud.auth.print-access-token) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.",
-      "requiredAction": "Run gcloud auth login interactively to obtain new credentials."
+      "sourceCommit": "9a4784cdaebb5a92083163d2fead3484dc3c8efa",
+      "authorisation": "Owner-authorised recurring invocation explicitly resumes prior partial batch.",
+      "completedAt": "2026-11-24T07:10:33+05:30",
+      "log": "/private/tmp/padho-blog-2026-11-24-browser/publish.log",
+      "exitCode": 0,
+      "evidence": "Existing Google Cloud authentication succeeded. Scoped publisher uploaded blog build and completed both /blog and /blog/* CDN invalidations.",
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ]
     },
     "liveVerification": {
-      "status": "pending",
-      "blockedBy": "publication",
-      "checkedAt": "2026-11-23T12:15:16+05:30",
+      "status": "complete",
+      "completedAt": "2026-11-24T07:12:01+05:30",
+      "searchEvidence": "/tmp/padho-blog-search-live.json",
+      "searchResult": {
+        "mode": "live",
+        "pages": 45,
+        "articles": 39,
+        "images": 39,
+        "internalLinks": 46,
+        "metadataMatchesVisibleContent": true,
+        "crawlerProbes": 156,
+        "crawlerEvidenceLimit": "Public user-agent probes and robots rules; not proof of a visit from official crawler IPs or of indexing."
+      },
+      "articleViewports": 6,
+      "navigationViewports": 8,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-24-browser/checks-live.json",
+      "navigationEvidence": "/private/tmp/padho-blog-2026-11-24-browser/index-checks-live.json",
+      "contentEvidence": "/private/tmp/padho-blog-2026-11-24-browser/live-content.json",
       "articles": [
         {
           "url": "https://padho.ai/blog/how-do-you-find-the-time-between-two-shm-positions/",
-          "status": 404
+          "status": 200,
+          "matchesVerifiedBuild": true,
+          "sha256": "ed97d790c2abe98386005d38bec87db4c1c53721dd3dfcdaa5c7093296f7d1c2"
         },
         {
           "url": "https://padho.ai/blog/how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes/",
-          "status": 404
+          "status": 200,
+          "matchesVerifiedBuild": true,
+          "sha256": "15ac7b8641c8ebdfb9f99e27b2c70ce6c562ba41c264bee0743311f30bedc53b"
         },
         {
           "url": "https://padho.ai/blog/does-an-absolute-value-always-make-a-sharp-corner/",
-          "status": 404
+          "status": 200,
+          "matchesVerifiedBuild": true,
+          "sha256": "65f05003b81cc0d4161d6e19f3c1cc4895290042a4c124a659a08a4f688a9b96"
         }
       ],
-      "evidence": "Read-only checks confirmed all three prepared URLs return 404. No publication or indexing claim."
+      "assets": [
+        {
+          "path": "/blog/_astro/BlogAnalytics.astro_astro_type_script_index_0_lang.C8EDOPLN.js",
+          "matchesVerifiedBuild": true,
+          "sha256": "007c077cc1f63a67eb3d8b8ead7cf48c5cde440a9e69fe60121c7b1b65f2f37f"
+        }
+      ],
+      "evidence": "All three live HTML responses and analytics bundle match the verified build exactly. Live desktop/phone articles and home/category navigation passed. Visual dates, covers and opening target questions inspected. Search and public crawler-user-agent checks passed; no indexing claim."
     }
   },
   "figmaFeedback": {
@@ -291,7 +320,7 @@
     "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
     "comments": []
   },
-  "sourceCommit": "727b00e0d4fbd433a61fa7ec9307d367649d0c59",
+  "sourceCommit": "9a4784cdaebb5a92083163d2fead3484dc3c8efa",
   "publicationAttempts": [
     {
       "status": "failed",
@@ -307,16 +336,33 @@
       "sourceCommit": "727b00e0d4fbd433a61fa7ec9307d367649d0c59",
       "error": "ERROR: (gcloud.auth.print-access-token) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.",
       "requiredAction": "Run gcloud auth login interactively to obtain new credentials."
+    },
+    {
+      "status": "complete",
+      "startedAt": "2026-11-24T07:09:35+05:30",
+      "scope": "https://padho.ai/blog only",
+      "command": "node scripts/publish.mjs",
+      "sourceCommit": "9a4784cdaebb5a92083163d2fead3484dc3c8efa",
+      "authorisation": "Owner-authorised recurring invocation explicitly resumes prior partial batch.",
+      "completedAt": "2026-11-24T07:10:33+05:30",
+      "log": "/private/tmp/padho-blog-2026-11-24-browser/publish.log",
+      "exitCode": 0,
+      "evidence": "Existing Google Cloud authentication succeeded. Scoped publisher uploaded blog build and completed both /blog and /blog/* CDN invalidations.",
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ]
     }
   ],
-  "lastCheckpointAt": "2026-11-23T12:15:36+05:30",
+  "lastCheckpointAt": "2026-11-24T07:12:01+05:30",
   "resume": {
-    "nextStage": "publication",
+    "nextStage": "complete",
+    "continuedIn": "editorial/runs/2026-11-24.json",
     "reuseExistingArticles": true,
     "reuseFigmaPageId": "138:302",
-    "requiredAction": "Interactive gcloud auth login, followed by an authorised retry of the prepared batch.",
-    "rebuildIfPublicationDateChanges": true,
-    "continuedIn": "editorial/runs/2026-11-24.json",
-    "reason": "24 November authorised invocation resumes the same batch with refreshed unpublished dates and the same Figma page/frame IDs."
-  }
+    "reason": "Prepared batch successfully published on 24 November; original failed attempt remains in publicationAttempts."
+  },
+  "completedAt": "2026-11-24T07:12:01+05:30",
+  "completionRunPath": "editorial/runs/2026-11-24.json",
+  "previousSourceCommit": "727b00e0d4fbd433a61fa7ec9307d367649d0c59"
 }

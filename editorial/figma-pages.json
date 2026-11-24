@@ -260,7 +260,7 @@
         "captureReferencesRemoved": true,
         "comments": "Supported get_comments returned no comments; empty result archived in this run before retention."
       },
-      "sourceCommit": "727b00e0d4fbd433a61fa7ec9307d367649d0c59",
+      "sourceCommit": "9a4784cdaebb5a92083163d2fead3484dc3c8efa",
       "resumedFrom": "editorial/runs/2026-11-23.json"
     }
   ],

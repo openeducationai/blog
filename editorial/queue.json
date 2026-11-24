@@ -942,7 +942,7 @@
       "candidateQuestionIds": [
         "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782188"
       ],
-      "status": "writing",
+      "status": "published",
       "rationale": "Two verified question IDs address a distinct prerequisite or misconception. Four official April papers inspected for today; cumulative nine-paper targeted corpus, without an exhaustive frequency or marks estimate.",
       "closestPriorSlugs": [
         "how-do-you-compare-bohr-orbit-radii",
@@ -988,7 +988,9 @@
         }
       ],
       "briefPath": "editorial/research/2026-11-23-chemistry.json",
-      "resumeRunPath": "editorial/runs/2026-11-24.json"
+      "resumeRunPath": "editorial/runs/2026-11-24.json",
+      "publishedAt": "2026-11-24T07:03:27+05:30",
+      "releaseVerifiedAt": "2026-11-24T07:12:01+05:30"
     },
     {
       "id": "shm-phase-time",
@@ -1037,9 +1039,11 @@
         }
       ],
       "briefPath": "editorial/research/2026-11-23-physics.json",
-      "status": "writing",
+      "status": "published",
       "rationale": "Two verified question IDs address a distinct prerequisite or misconception. Four official April papers inspected for today; cumulative nine-paper targeted corpus, without an exhaustive frequency or marks estimate.",
-      "resumeRunPath": "editorial/runs/2026-11-24.json"
+      "resumeRunPath": "editorial/runs/2026-11-24.json",
+      "publishedAt": "2026-11-24T07:03:27+05:30",
+      "releaseVerifiedAt": "2026-11-24T07:12:01+05:30"
     },
     {
       "id": "differentiability-at-joins",
@@ -1090,9 +1094,11 @@
         }
       ],
       "briefPath": "editorial/research/2026-11-23-maths.json",
-      "status": "writing",
+      "status": "published",
       "rationale": "Two verified question IDs address a distinct prerequisite or misconception. Four official April papers inspected for today; cumulative nine-paper targeted corpus, without an exhaustive frequency or marks estimate.",
-      "resumeRunPath": "editorial/runs/2026-11-24.json"
+      "resumeRunPath": "editorial/runs/2026-11-24.json",
+      "publishedAt": "2026-11-24T07:03:27+05:30",
+      "releaseVerifiedAt": "2026-11-24T07:12:01+05:30"
     }
   ]
 }
