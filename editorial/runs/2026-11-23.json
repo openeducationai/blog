@@ -315,6 +315,8 @@
     "reuseExistingArticles": true,
     "reuseFigmaPageId": "138:302",
     "requiredAction": "Interactive gcloud auth login, followed by an authorised retry of the prepared batch.",
-    "rebuildIfPublicationDateChanges": true
+    "rebuildIfPublicationDateChanges": true,
+    "continuedIn": "editorial/runs/2026-11-24.json",
+    "reason": "24 November authorised invocation resumes the same batch with refreshed unpublished dates and the same Figma page/frame IDs."
   }
 }

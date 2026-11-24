@@ -3,58 +3,6 @@
   "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
   "pages": [
     {
-      "date": "2026-11-17",
-      "name": "2026-11-17",
-      "pageId": "97:202",
-      "generated": true,
-      "verified": true,
-      "articles": [
-        {
-          "slug": "how-does-momentum-set-the-de-broglie-wavelength",
-          "desktopFrameId": "98:242",
-          "phoneFrameId": "98:541"
-        },
-        {
-          "slug": "how-do-antibonding-electrons-change-an-oxygen-bond",
-          "desktopFrameId": "98:836",
-          "phoneFrameId": "98:1139"
-        },
-        {
-          "slug": "when-do-linear-equations-have-infinitely-many-solutions",
-          "desktopFrameId": "98:1438",
-          "phoneFrameId": "98:1734"
-        }
-      ],
-      "verifiedAt": "2026-11-17T07:25:10+05:30",
-      "verification": {
-        "frames": 6,
-        "widths": [
-          1440,
-          390
-        ],
-        "matchedTextBlocksPerArticle": [
-          36,
-          35,
-          35
-        ],
-        "missingTextBlocks": 0,
-        "overlappingBodyBlocks": 0,
-        "disclosuresPerFrame": 4,
-        "fonts": [
-          "Inter",
-          "Literata"
-        ],
-        "nativeDiagrams": true,
-        "sharedHeaderFooter": true,
-        "screenshotsReviewed": 6,
-        "completeCopyMatch": true,
-        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
-        "coverFit": "FIT; discrete cover assets only",
-        "comments": "Supported get_comments returned no comments; archived in dated run before retention."
-      },
-      "sourceCommit": "8ebb9ce89b20059c144a1f21e18594766fa78614"
-    },
-    {
       "date": "2026-11-19",
       "name": "2026-11-19",
       "pageId": "105:302",
@@ -263,8 +211,8 @@
     },
     {
       "pageId": "138:302",
-      "name": "2026-11-23",
-      "date": "2026-11-23",
+      "name": "2026-11-24",
+      "date": "2026-11-24",
       "generated": true,
       "verified": true,
       "articles": [
@@ -284,7 +232,7 @@
           "phoneFrameId": "144:973"
         }
       ],
-      "verifiedAt": "2026-11-23T12:13:54+05:30",
+      "verifiedAt": "2026-11-24T07:08:46+05:30",
       "verification": {
         "frames": 6,
         "widths": [
@@ -310,9 +258,10 @@
         ],
         "coverFit": "FIT; discrete cover assets only",
         "captureReferencesRemoved": true,
-        "comments": "Supported get_comments returned no comments; result archived before retention."
+        "comments": "Supported get_comments returned no comments; empty result archived in this run before retention."
       },
-      "sourceCommit": "727b00e0d4fbd433a61fa7ec9307d367649d0c59"
+      "sourceCommit": "727b00e0d4fbd433a61fa7ec9307d367649d0c59",
+      "resumedFrom": "editorial/runs/2026-11-23.json"
     }
   ],
   "removedPages": [
@@ -662,6 +611,64 @@
       "removedOn": "2026-11-23",
       "reason": "Registered generated page precedes inclusive seven-day cutoff 2026-11-17.",
       "feedbackArchive": "editorial/runs/2026-11-23.json#figmaFeedback",
+      "preservedComponentIds": [],
+      "verifiedAbsent": true
+    },
+    {
+      "date": "2026-11-17",
+      "name": "2026-11-17",
+      "pageId": "97:202",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "how-does-momentum-set-the-de-broglie-wavelength",
+          "desktopFrameId": "98:242",
+          "phoneFrameId": "98:541"
+        },
+        {
+          "slug": "how-do-antibonding-electrons-change-an-oxygen-bond",
+          "desktopFrameId": "98:836",
+          "phoneFrameId": "98:1139"
+        },
+        {
+          "slug": "when-do-linear-equations-have-infinitely-many-solutions",
+          "desktopFrameId": "98:1438",
+          "phoneFrameId": "98:1734"
+        }
+      ],
+      "verifiedAt": "2026-11-17T07:25:10+05:30",
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          36,
+          35,
+          35
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "coverFit": "FIT; discrete cover assets only",
+        "comments": "Supported get_comments returned no comments; archived in dated run before retention."
+      },
+      "sourceCommit": "8ebb9ce89b20059c144a1f21e18594766fa78614",
+      "removedAt": "2026-11-24T07:08:46+05:30",
+      "removedOn": "2026-11-24",
+      "reason": "Registered generated page precedes inclusive seven-day cutoff 2026-11-18.",
+      "feedbackArchive": "editorial/runs/2026-11-24.json#figmaFeedback",
       "preservedComponentIds": [],
       "verifiedAbsent": true
     }

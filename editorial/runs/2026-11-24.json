@@ -1,0 +1,275 @@
+{
+  "date": "2026-11-24",
+  "status": "partial",
+  "startedAt": "2026-11-24T07:02:24+05:30",
+  "articleSlugs": [
+    "how-do-you-find-the-time-between-two-shm-positions",
+    "how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes",
+    "does-an-absolute-value-always-make-a-sharp-corner"
+  ],
+  "resumedFrom": "editorial/runs/2026-11-23.json",
+  "preflight": {
+    "branch": "main",
+    "clean": true,
+    "scheduleEnabled": true,
+    "headMatchesOriginMain": true,
+    "existingDateArticles": 0,
+    "priorPartialReconciliation": [
+      {
+        "url": "https://padho.ai/blog/how-do-you-find-the-time-between-two-shm-positions/",
+        "httpStatus": 404,
+        "sourceHashMatchesPriorReview": true
+      },
+      {
+        "url": "https://padho.ai/blog/how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes/",
+        "httpStatus": 404,
+        "sourceHashMatchesPriorReview": true
+      },
+      {
+        "url": "https://padho.ai/blog/does-an-absolute-value-always-make-a-sharp-corner/",
+        "httpStatus": 404,
+        "sourceHashMatchesPriorReview": true
+      }
+    ]
+  },
+  "stages": {
+    "research": {
+      "status": "complete",
+      "completedAt": "2026-11-24T07:03:27+05:30",
+      "reusedFrom": "editorial/runs/2026-11-23.json#stages.research",
+      "briefs": [
+        "editorial/research/2026-11-23-physics.json",
+        "editorial/research/2026-11-23-chemistry.json",
+        "editorial/research/2026-11-23-maths.json"
+      ],
+      "evidence": "Reused the same six verified PYQs and complete research briefs. Official current syllabus and original paper/key URLs reopened. All history learning objectives, examples and PYQ IDs checked; no new article or duplicated daily slot created.",
+      "queueCoverage": "Three existing verified selected briefs reused; three remaining candidates need research. Seven-day advance-brief goal remains unmet."
+    },
+    "writing": {
+      "status": "complete",
+      "completedAt": "2026-11-24T07:03:27+05:30",
+      "reusedFrom": "editorial/runs/2026-11-23.json#stages.writing",
+      "evidence": "Same three source articles and assets reused. Only pubDate refreshed from actual clock; target question IDs/text and complete lessons preserved. Prior source hashes retained in existing revisions records.",
+      "publicationTimestamp": "2026-11-24T07:03:27+05:30"
+    },
+    "validation": {
+      "status": "complete",
+      "completedAt": "2026-11-24T07:05:48+05:30",
+      "commands": [
+        "npm run check:editorial",
+        "npm run build",
+        "npm run check:search",
+        "npm run check:analytics",
+        "git diff --check"
+      ],
+      "articleViewports": 6,
+      "navigationViewports": 8,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-24-browser/checks.json",
+      "navigationEvidence": "/private/tmp/padho-blog-2026-11-24-browser/index-checks.json",
+      "visualEvidence": "/private/tmp/padho-blog-2026-11-24-browser/review-date.png",
+      "buildEvidence": "/private/tmp/padho-blog-2026-11-24-browser/build.log",
+      "evidence": "All six real Astro article views and eight listings pass. Actual Nov 24 dates, visible covers and target question openings visually inspected; Literata, justification, no overflow, keyboard disclosure, static figures and no-JavaScript content verified. Search validates 45 sitemap routes and 39 articles/images; analytics validates 46 pages. Unchanged solution/diagram review reused from prior approved preparation."
+    },
+    "figma": {
+      "status": "complete",
+      "pageId": "138:302",
+      "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+      "reviewUrl": "https://www.figma.com/design/GsBNGG7jIMvsPyhP7w0zXK?node-id=138-302",
+      "evidence": "Reused all six existing editable frames and their node IDs. Renamed the unpublished batch page to 2026-11-24 and refreshed all six visible dates. Exact rebuilt article text matches, zero missing blocks/overlaps, correct covers and fonts. All six complete compositions visually inspected through use_figma screenshots.",
+      "completedAt": "2026-11-24T07:08:46+05:30",
+      "articles": [
+        {
+          "slug": "how-do-you-find-the-time-between-two-shm-positions",
+          "desktopFrameId": "140:722",
+          "phoneFrameId": "140:976"
+        },
+        {
+          "slug": "how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes",
+          "desktopFrameId": "142:722",
+          "phoneFrameId": "142:977"
+        },
+        {
+          "slug": "does-an-absolute-value-always-make-a-sharp-corner",
+          "desktopFrameId": "144:722",
+          "phoneFrameId": "144:973"
+        }
+      ],
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          37,
+          38,
+          36
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "coverFit": "FIT; discrete cover assets only",
+        "captureReferencesRemoved": true,
+        "comments": "Supported get_comments returned no comments; empty result archived in this run before retention."
+      },
+      "retention": {
+        "cutoff": "2026-11-18",
+        "removedPageIds": [
+          "97:202"
+        ],
+        "absenceVerified": true,
+        "sharedUIPageId": "100:202",
+        "sharedUIPreserved": true
+      },
+      "frames": [
+        {
+          "id": "140:722",
+          "slug": "how-do-you-find-the-time-between-two-shm-positions",
+          "width": 1440,
+          "height": 5489,
+          "columnId": "140:867",
+          "bodyId": "140:873",
+          "coverId": "140:872",
+          "textNodes": 48,
+          "figureIds": [
+            "140:896"
+          ],
+          "solutionIds": [
+            "140:945",
+            "140:952",
+            "140:961",
+            "140:968"
+          ]
+        },
+        {
+          "id": "140:976",
+          "slug": "how-do-you-find-the-time-between-two-shm-positions",
+          "width": 390,
+          "height": 6771,
+          "columnId": "140:1117",
+          "bodyId": "140:1123",
+          "coverId": "140:1122",
+          "textNodes": 48,
+          "figureIds": [
+            "140:1146"
+          ],
+          "solutionIds": [
+            "140:1195",
+            "140:1202",
+            "140:1211",
+            "140:1218"
+          ]
+        },
+        {
+          "id": "142:722",
+          "slug": "how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes",
+          "width": 1440,
+          "height": 5601,
+          "columnId": "142:867",
+          "bodyId": "142:873",
+          "coverId": "142:872",
+          "textNodes": 48,
+          "figureIds": [
+            "142:890"
+          ],
+          "solutionIds": [
+            "142:946",
+            "142:953",
+            "142:962",
+            "142:969"
+          ]
+        },
+        {
+          "id": "142:977",
+          "slug": "how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes",
+          "width": 390,
+          "height": 6928,
+          "columnId": "142:1118",
+          "bodyId": "142:1124",
+          "coverId": "142:1123",
+          "textNodes": 48,
+          "figureIds": [
+            "142:1141"
+          ],
+          "solutionIds": [
+            "142:1197",
+            "142:1204",
+            "142:1213",
+            "142:1220"
+          ]
+        },
+        {
+          "id": "144:722",
+          "slug": "does-an-absolute-value-always-make-a-sharp-corner",
+          "width": 1440,
+          "height": 5527,
+          "columnId": "144:867",
+          "bodyId": "144:873",
+          "coverId": "144:872",
+          "textNodes": 49,
+          "figureIds": [
+            "144:888"
+          ],
+          "solutionIds": [
+            "144:942",
+            "144:949",
+            "144:958",
+            "144:965"
+          ]
+        },
+        {
+          "id": "144:973",
+          "slug": "does-an-absolute-value-always-make-a-sharp-corner",
+          "width": 390,
+          "height": 6917,
+          "columnId": "144:1114",
+          "bodyId": "144:1120",
+          "coverId": "144:1119",
+          "textNodes": 49,
+          "figureIds": [
+            "144:1135"
+          ],
+          "solutionIds": [
+            "144:1189",
+            "144:1196",
+            "144:1205",
+            "144:1212"
+          ]
+        }
+      ],
+      "renderEvidence": "Six inline use_figma screenshot images visually inspected; get_screenshot download endpoint returned HTTP 202 with empty body, so no successful download claimed.",
+      "reusedFrom": "editorial/runs/2026-11-23.json#stages.figma"
+    },
+    "git": {
+      "status": "pending"
+    },
+    "publication": {
+      "status": "pending"
+    },
+    "liveVerification": {
+      "status": "pending"
+    }
+  },
+  "figmaFeedback": {
+    "checkedAt": "2026-11-24T07:02:24+05:30",
+    "tool": "get_comments",
+    "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+    "comments": []
+  },
+  "lastCheckpointAt": "2026-11-24T07:08:46+05:30",
+  "resume": {
+    "reuseExistingArticles": true,
+    "reuseFigmaPageId": "138:302",
+    "reason": "Resume the prepared 23 November batch after its pre-upload authentication failure. Do not create another set.",
+    "nextStage": "git"
+  }
+}

@@ -987,7 +987,8 @@
           "sourceSha256": "876efb4250b5d8e096f28bb48d9078e39f25f1ad70473701e5c13523716588d4"
         }
       ],
-      "briefPath": "editorial/research/2026-11-23-chemistry.json"
+      "briefPath": "editorial/research/2026-11-23-chemistry.json",
+      "resumeRunPath": "editorial/runs/2026-11-24.json"
     },
     {
       "id": "shm-phase-time",
@@ -1037,7 +1038,8 @@
       ],
       "briefPath": "editorial/research/2026-11-23-physics.json",
       "status": "writing",
-      "rationale": "Two verified question IDs address a distinct prerequisite or misconception. Four official April papers inspected for today; cumulative nine-paper targeted corpus, without an exhaustive frequency or marks estimate."
+      "rationale": "Two verified question IDs address a distinct prerequisite or misconception. Four official April papers inspected for today; cumulative nine-paper targeted corpus, without an exhaustive frequency or marks estimate.",
+      "resumeRunPath": "editorial/runs/2026-11-24.json"
     },
     {
       "id": "differentiability-at-joins",
@@ -1089,7 +1091,8 @@
       ],
       "briefPath": "editorial/research/2026-11-23-maths.json",
       "status": "writing",
-      "rationale": "Two verified question IDs address a distinct prerequisite or misconception. Four official April papers inspected for today; cumulative nine-paper targeted corpus, without an exhaustive frequency or marks estimate."
+      "rationale": "Two verified question IDs address a distinct prerequisite or misconception. Four official April papers inspected for today; cumulative nine-paper targeted corpus, without an exhaustive frequency or marks estimate.",
+      "resumeRunPath": "editorial/runs/2026-11-24.json"
     }
   ]
 }

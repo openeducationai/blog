@@ -2042,24 +2042,31 @@
         }
       ],
       "sourcePath": "src/content/blog/how-do-you-find-the-time-between-two-shm-positions.mdx",
-      "sourceSha256": "8f7f13c6ccb5a376ac61badf904d569f5a910d6533443c79ee163814dd8a466f",
+      "sourceSha256": "60caca7115b2766801e7e89d570a59cae074ef575d3d62effae5a1564428e890",
       "url": "https://padho.ai/blog/how-do-you-find-the-time-between-two-shm-positions/",
-      "publishedAt": "2026-11-23T11:59:58+05:30",
+      "publishedAt": "2026-11-24T07:03:27+05:30",
       "mode": "daily",
       "status": "staged",
       "targetQuestionId": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782172",
       "targetQuestionText": "A particle performs simple harmonic motion with amplitude A and period 5 s. Starting at x = A, how long does it take to reach x = A/√2 for the first time?",
       "review": {
-        "sourceSha256": "8f7f13c6ccb5a376ac61badf904d569f5a910d6533443c79ee163814dd8a466f",
-        "reviewedAt": "2026-11-23T12:01:01+05:30",
+        "sourceSha256": "60caca7115b2766801e7e89d570a59cae074ef575d3d62effae5a1564428e890",
+        "reviewedAt": "2026-11-24T07:03:27+05:30",
         "checks": {
           "science": true,
           "readability": true,
           "pyqSolutions": true,
           "visuals": true
         },
-        "notes": "All six solutions independently derived. SHM phase and units, node-count assumptions, nodal-plane qualification, final-key approximation and one-sided derivative checks verified. Full prose read sequentially and paraphrased; original static figures visually inspected. Real-app viewport checks follow."
-      }
+        "notes": "All six solutions independently derived. SHM phase and units, node-count assumptions, nodal-plane qualification, final-key approximation and one-sided derivative checks verified. Full prose read sequentially and paraphrased; original static figures visually inspected. Real-app viewport checks follow. 24 November resumption: full lessons and solution reasoning reread; only unpublished pubDate changed. Prior content and visual review remains applicable; rebuilt real-app verification recorded in the 24 November run."
+      },
+      "revisions": [
+        {
+          "previousSourceSha256": "8f7f13c6ccb5a376ac61badf904d569f5a910d6533443c79ee163814dd8a466f",
+          "updatedAt": "2026-11-24T07:03:27+05:30",
+          "reason": "Refresh the unpublished batch date for the authorised 24 November delayed release; lesson content unchanged."
+        }
+      ]
     },
     {
       "slug": "how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes",
@@ -2099,24 +2106,31 @@
         }
       ],
       "sourcePath": "src/content/blog/how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes.mdx",
-      "sourceSha256": "5030f0c8b12269f9239e49a7e78e272d21b95699b5cd95000b8e96a8b5da0995",
+      "sourceSha256": "3a06ea1d51102142c12a80d55ab85d1842e2f58f5ea537e891d98e5ddab0eb27",
       "url": "https://padho.ai/blog/how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes/",
-      "publishedAt": "2026-11-23T11:59:58+05:30",
+      "publishedAt": "2026-11-24T07:03:27+05:30",
       "mode": "daily",
       "status": "staged",
       "targetQuestionId": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782188",
       "targetQuestionText": "For the orbitals 2s, 3s, 3p and 4d, find the number of radial nodes and angular nodes in each.",
       "review": {
-        "sourceSha256": "5030f0c8b12269f9239e49a7e78e272d21b95699b5cd95000b8e96a8b5da0995",
-        "reviewedAt": "2026-11-23T12:01:01+05:30",
+        "sourceSha256": "3a06ea1d51102142c12a80d55ab85d1842e2f58f5ea537e891d98e5ddab0eb27",
+        "reviewedAt": "2026-11-24T07:03:27+05:30",
         "checks": {
           "science": true,
           "readability": true,
           "pyqSolutions": true,
           "visuals": true
         },
-        "notes": "All six solutions independently derived. SHM phase and units, node-count assumptions, nodal-plane qualification, final-key approximation and one-sided derivative checks verified. Full prose read sequentially and paraphrased; original static figures visually inspected. Real-app viewport checks follow."
-      }
+        "notes": "All six solutions independently derived. SHM phase and units, node-count assumptions, nodal-plane qualification, final-key approximation and one-sided derivative checks verified. Full prose read sequentially and paraphrased; original static figures visually inspected. Real-app viewport checks follow. 24 November resumption: full lessons and solution reasoning reread; only unpublished pubDate changed. Prior content and visual review remains applicable; rebuilt real-app verification recorded in the 24 November run."
+      },
+      "revisions": [
+        {
+          "previousSourceSha256": "5030f0c8b12269f9239e49a7e78e272d21b95699b5cd95000b8e96a8b5da0995",
+          "updatedAt": "2026-11-24T07:03:27+05:30",
+          "reason": "Refresh the unpublished batch date for the authorised 24 November delayed release; lesson content unchanged."
+        }
+      ]
     },
     {
       "slug": "does-an-absolute-value-always-make-a-sharp-corner",
@@ -2156,24 +2170,31 @@
         }
       ],
       "sourcePath": "src/content/blog/does-an-absolute-value-always-make-a-sharp-corner.mdx",
-      "sourceSha256": "135c01bdb275becc6f32a64cdff20cbcb62052129654c568b5f5450de5b8de0c",
+      "sourceSha256": "1eed6bdb65f576279a88d06a3531d0cebeeed4e5719b788749182e9e3a400852",
       "url": "https://padho.ai/blog/does-an-absolute-value-always-make-a-sharp-corner/",
-      "publishedAt": "2026-11-23T11:59:58+05:30",
+      "publishedAt": "2026-11-24T07:03:27+05:30",
       "mode": "daily",
       "status": "staged",
       "targetQuestionId": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121538",
       "targetQuestionText": "Let f(x) = e^(sin |x|) − |x| for all real x. Is f differentiable everywhere, and is it increasing on (−π, −π/2)?",
       "review": {
-        "sourceSha256": "135c01bdb275becc6f32a64cdff20cbcb62052129654c568b5f5450de5b8de0c",
-        "reviewedAt": "2026-11-23T12:01:01+05:30",
+        "sourceSha256": "1eed6bdb65f576279a88d06a3531d0cebeeed4e5719b788749182e9e3a400852",
+        "reviewedAt": "2026-11-24T07:03:27+05:30",
         "checks": {
           "science": true,
           "readability": true,
           "pyqSolutions": true,
           "visuals": true
         },
-        "notes": "All six solutions independently derived. SHM phase and units, node-count assumptions, nodal-plane qualification, final-key approximation and one-sided derivative checks verified. Full prose read sequentially and paraphrased; original static figures visually inspected. Real-app viewport checks follow."
-      }
+        "notes": "All six solutions independently derived. SHM phase and units, node-count assumptions, nodal-plane qualification, final-key approximation and one-sided derivative checks verified. Full prose read sequentially and paraphrased; original static figures visually inspected. Real-app viewport checks follow. 24 November resumption: full lessons and solution reasoning reread; only unpublished pubDate changed. Prior content and visual review remains applicable; rebuilt real-app verification recorded in the 24 November run."
+      },
+      "revisions": [
+        {
+          "previousSourceSha256": "135c01bdb275becc6f32a64cdff20cbcb62052129654c568b5f5450de5b8de0c",
+          "updatedAt": "2026-11-24T07:03:27+05:30",
+          "reason": "Refresh the unpublished batch date for the authorised 24 November delayed release; lesson content unchanged."
+        }
+      ]
     }
   ]
 }
