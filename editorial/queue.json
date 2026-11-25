@@ -1099,6 +1099,163 @@
       "resumeRunPath": "editorial/runs/2026-11-24.json",
       "publishedAt": "2026-11-24T07:03:27+05:30",
       "releaseVerifiedAt": "2026-11-24T07:12:01+05:30"
+    },
+    {
+      "id": "flow-area-speed-pressure",
+      "category": "physics",
+      "chapter": "properties-of-solids-and-liquids",
+      "conceptKey": "physics/fluids/continuity-before-bernoulli",
+      "title": "Why does water speed up in a narrow pipe?",
+      "slug": "why-does-water-speed-up-in-a-narrow-pipe",
+      "question": "A liquid of density 600 kg/m³ flows steadily through a horizontal tube. Its cross-sectional areas at A and B are 1.0 cm² and 20 mm². The speed at A is 10 cm/s. For ideal incompressible flow, find the pressure difference p_A − p_B.",
+      "learningObjective": "Conserve volume flow to find speed before using Bernoulli’s equation to compare pressures at equal height.",
+      "example": "Follow the same volume of water through the wide and narrow parts of one horizontal tube.",
+      "asset": "flow-area-speed",
+      "kind": "flowArea",
+      "description": "Count the water passing each section, then use its change in speed to find the pressure difference.",
+      "alt": "Equal volumes pass the wide and narrow parts of a tube in the same time; the narrower section needs a higher speed.",
+      "scope": "Physics Unit7: streamline flow, equation of continuity and Bernoulli’s principle.",
+      "reference": "https://openstax.org/books/university-physics-volume-1/pages/14-5-fluid-dynamics",
+      "closestPriorSlugs": [
+        "why-does-splitting-a-liquid-drop-need-energy"
+      ],
+      "difference": "Volume flow per unit time and pressure-driven motion, rather than fixed-volume surface area changes.",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121558",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "8 April 2026 Shift2 Q33, PDF page13",
+          "answer": "72 Pa",
+          "correctOptionId": "6911211902",
+          "independentSolution": "Areas100 and20 mm² give vB=5vA=0.5m/s. pA−pB=600(0.25−0.01)/2=72Pa. Faster B has lower pressure.",
+          "adaptation": "Makes ideal incompressible flow and the sign pA−pB explicit.",
+          "adapted": true,
+          "verifiedAt": "2026-11-25T14:07:37+05:30",
+          "sourceSha256": "079e3b7ae67b70309f22b33e37b720cba65b47c6d96760113a4302cee1122416"
+        },
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278407",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift2 Q32, PDF page12",
+          "answer": "10 m/s",
+          "correctOptionId": "6952781386",
+          "independentSolution": "Inlet30cm²=3000mm². Ten holes total150mm². vout=(3000/150)*0.50=10m/s. Flow rates both0.0015m³/s.",
+          "adaptation": "Paraphrases; assumes equal flow through identical holes as in the question.",
+          "adapted": true,
+          "verifiedAt": "2026-11-25T14:07:37+05:30",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        }
+      ],
+      "briefPath": "editorial/research/2026-11-25-physics.json",
+      "status": "writing",
+      "rationale": "Two verified PYQs support a focused misconception or prerequisite. Targeted April2026 corpus; no exhaustive shift, marks or frequency estimate."
+    },
+    {
+      "id": "successive-ionisation",
+      "category": "chemistry",
+      "chapter": "periodicity",
+      "conceptKey": "chemistry/periodicity/successive-ionisation-starting-ion",
+      "title": "Why does the next electron need more ionisation energy?",
+      "slug": "why-does-the-next-electron-need-more-ionisation-energy",
+      "question": "The first ionisation enthalpy of magnesium is +737 kJ/mol. Which is the most plausible second ionisation enthalpy: −906, −856, +1450 or +590 kJ/mol?",
+      "learningObjective": "Identify the gaseous ion before each electron removal and use charge and electronic configuration to compare successive ionisation energies.",
+      "example": "Remove the two outer 3s electrons from magnesium one at a time, then identify the different shell needed for a third removal.",
+      "asset": "magnesium-ionisation",
+      "kind": "ionisationSteps",
+      "description": "Write the ion before removing an electron. Its charge and remaining electrons explain the next energy cost.",
+      "alt": "Magnesium becomes Mg plus and then Mg two plus as its two 3s electrons are removed in separate steps.",
+      "scope": "Chemistry Unit3: periodic properties and ionisation enthalpy; Unit4/11 electronic configuration of ions.",
+      "reference": "https://openstax.org/books/chemistry-2e/pages/6-5-periodic-variations-in-element-properties",
+      "closestPriorSlugs": [
+        "how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes"
+      ],
+      "difference": "Energy cost and starting ionic state, rather than geometry or nodes of an orbital.",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278432",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift2 Q57, PDF page22",
+          "answer": "+1450 kJ/mol",
+          "correctOptionId": "6952781472",
+          "independentSolution": "Ionisation of an isolated ground-state species requires energy; IE2>IE1 for Mg. Only1450 is positive and above737. No rule computes1450 from737 alone.",
+          "adaptation": "Original choices retained, with a plain-language question.",
+          "adapted": true,
+          "verifiedAt": "2026-11-25T14:07:37+05:30",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121210",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift2 Q60 statement I, PDF pages23–24",
+          "answer": "True: Zn highest, Sc lowest among Zn, Mn, Sc and Cu.",
+          "correctOptionId": "691121717",
+          "independentSolution": "Third removal starts at M2+. Sc2+=[Ar]3d1 reaches[Ar]; Mn2+=[Ar]3d5,Cu2+=[Ar]3d9,Zn2+=[Ar]3d10. Zn3+ disrupts filled3d under higher nuclear charge; Sc loses its only3d electron. Final full-question key says both statements true and confirmsI.",
+          "adaptation": "Uses only statement I; does not ask or teach the unrelated CFSE statement II.",
+          "adapted": true,
+          "verifiedAt": "2026-11-25T14:07:37+05:30",
+          "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+        }
+      ],
+      "briefPath": "editorial/research/2026-11-25-chemistry.json",
+      "status": "writing",
+      "rationale": "Two verified PYQs support a focused misconception or prerequisite. Targeted April2026 corpus; no exhaustive shift, marks or frequency estimate."
+    },
+    {
+      "id": "pascal-counting-difference",
+      "category": "maths",
+      "chapter": "permutations-and-combinations",
+      "conceptKey": "maths/combinations/pascal-identity-by-inclusion",
+      "title": "How does adding one choice lead to Pascal’s identity?",
+      "slug": "how-does-adding-one-choice-lead-to-pascals-identity",
+      "question": "Let p_n be the number of triangles formed by joining vertices of a regular n-sided polygon. If p_(n+1) − p_n = 66, find the sum of the distinct prime divisors of n.",
+      "learningObjective": "Split selections by whether they include a new item, using Pascal’s identity to simplify differences and repeated sums of combinations.",
+      "example": "Add one new vertex to a convex polygon and count the triangles that include it.",
+      "asset": "pascal-new-vertex",
+      "kind": "pascalVertex",
+      "description": "Separate selections that use a new item from those that leave it out, then turn the count into a useful identity.",
+      "alt": "Adding one vertex creates a triangle for each choice of two old vertices; existing triangles remain.",
+      "scope": "Mathematics Unit4: combinations and simple applications; Unit5: binomial coefficients.",
+      "reference": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-6-binomial-theorem",
+      "closestPriorSlugs": [
+        "how-do-you-find-a-constant-term-in-a-binomial",
+        "how-do-you-count-functions-that-miss-an-output"
+      ],
+      "difference": "Disjoint include/exclude counting proves Pascal’s identity; earlier work balances powers or corrects overlapping missing-output sets.",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121157",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift2 Q7, PDF page3",
+          "answer": "5",
+          "correctOptionId": "691121537",
+          "independentSolution": "p_n=C(n,3). Difference=C(n,2)=66; n(n−1)=132 gives n12 (reject−11). Distinct primes2,3 sum5. Direct check C13,3−C12,3=286−220=66.",
+          "adaptation": "Rewrites subscripts in accessible plain text; preserves regular polygons.",
+          "adapted": true,
+          "verifiedAt": "2026-11-25T14:07:37+05:30",
+          "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121156",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift2 Q6, PDF page3",
+          "answer": "m=33",
+          "correctOptionId": "691121533",
+          "independentSolution": "Symmetry changes indices to r,r−1,r−2,r−3. Count r items from30 ordinary plus3 special: sum C3,j C30,r−j=C33,r. Exact integer check for every r3..30.",
+          "adaptation": "Uses C(n,r) notation and states integer r and m≥r, as implicit in ordinary combinations.",
+          "adapted": true,
+          "verifiedAt": "2026-11-25T14:07:37+05:30",
+          "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+        }
+      ],
+      "briefPath": "editorial/research/2026-11-25-maths.json",
+      "status": "writing",
+      "rationale": "Two verified PYQs support a focused misconception or prerequisite. Targeted April2026 corpus; no exhaustive shift, marks or frequency estimate."
     }
   ]
 }

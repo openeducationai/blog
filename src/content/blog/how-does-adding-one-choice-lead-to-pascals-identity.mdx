@@ -1,0 +1,76 @@
+---
+title: "How does adding one choice lead to Pascal’s identity?"
+description: "Separate selections that use a new item from those that leave it out, then turn the count into a useful identity."
+category: "maths"
+author: "padho"
+pubDate: "2026-11-25T14:11:12+05:30"
+heroImage: "../../assets/articles/pascal-new-vertex.png"
+heroImageAlt: "Adding one vertex creates a triangle for each choice of two old vertices; existing triangles remain."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**Let p_n be the number of triangles formed by joining vertices of a regular n-sided polygon. If p_(n+1) − p_n = 66, find the sum of the distinct prime divisors of n.**
+
+Adapted from [JEE Main, 2 April 2026 Shift2 Q7](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf#page=3), question ID 691121157. Here p_n means the count for n vertices. You need combinations, quadratic factorisation and prime factors.
+
+## Count triangles by choosing vertices
+
+A triangle needs three different vertices. On a circle, no three different points lie on one straight line, so every choice of three vertices of a regular polygon makes a triangle. The order in which we name the three vertices does not create a new triangle.
+
+We write C(n, 3) for the number of ways to choose three vertices from n. More generally, C(n, r) means the number of r-item selections from n different items, with order ignored. For two items, C(n, 2) = n(n − 1)/2: count ordered pairs, then divide by two because each pair was counted in both orders.
+
+Thus p_n in the opening question is C(n, 3). We could expand two factorial expressions to subtract p_n from p_(n+1). But it is easier to ask which triangles are new.
+
+## Separate the old triangles from the new ones
+
+Take n labelled points on a circle and add one more, labelled X. Any triangle now either uses X or does not use X. Those two groups cannot overlap, and together they contain every triangle.
+
+The triangles that leave X out use only the old n points. There are C(n, 3) of them. Every new triangle uses X and two old points. We therefore choose only those two old points, giving C(n, 2) new triangles.
+
+<ArticleDiagram kind="pascalVertex">The blue points are old vertices and X is the added orange vertex. The highlighted triangle uses X and one pair of old vertices. Each pair produces exactly one new triangle. The picture explains the count; the enlarged polygon need not remain regular.</ArticleDiagram>
+
+Why can we use that picture when the exam specifies regular polygons? The triangle count depends only on having distinct points on a circle, not on equal side lengths. We can compare the counts by adding a point without pretending that one regular polygon literally grows into the next.
+
+So C(n + 1, 3) = C(n, 3) + C(n, 2). Subtracting the old count leaves C(n + 1, 3) − C(n, 3) = C(n, 2). This is the difference in the opening question.
+
+## The same split works for any selection size
+
+Suppose we select r items from n old items and one new item X. If X is left out, we choose all r from the n old items: C(n, r). If X is included, only r − 1 old items are still needed: C(n, r − 1).
+
+Adding the two disjoint counts gives Pascal’s identity: C(n + 1, r) = C(n, r) + C(n, r − 1). This is why neighbouring entries add to the next entry in [Pascal’s triangle](https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-6-binomial-theorem).
+
+<KeyIdea id="pascal-new-item">Split selections into those that include the new item and those that leave it out. These groups are disjoint, so their counts add directly.</KeyIdea>
+
+For example, choose three items from five old items and X. Leaving X out gives C(5, 3) = 10 choices. Including X gives C(5, 2) = 10 choices. The total is 20, equal to C(6, 3).
+
+## What if three extra items are available?
+
+Now start with 30 ordinary items and add three special items. A selection of r items can contain zero, one, two or three special items. These are again separate cases.
+
+With no special item, there are C(30, r) choices. With one, choose which of the three special items to include, then choose r − 1 ordinary items: 3C(30, r − 1). With two special items, there are three possible pairs, giving 3C(30, r − 2). With all three, the count is C(30, r − 3).
+
+Adding these four cases must equal C(33, r), because we are simply choosing r items from all 33. The coefficients 1, 3, 3, 1 count subsets of the three special items; they are not arbitrary multipliers.
+
+One more identity helps recognise the expression in the past question. C(n, k) = C(n, n − k), because selecting the items to keep also determines exactly which items to leave out. This is symmetry of combinations. For instance, C(30, 31 − r) = C(30, r − 1).
+
+## Try the past questions
+
+**1. For an integer r with 3 ≤ r ≤ 30, C(30, 30 − r) + 3C(30, 31 − r) + 3C(30, 32 − r) + C(30, 33 − r) = C(m, r). Find the integer m ≥ r.**
+
+Adapted from [JEE Main, 2 April 2026 Shift 2 Q6](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf#page=3), question ID 691121156. We use C(n, r) notation and state the integer conditions implicit in ordinary combinations.
+
+<details class="reading-check"><summary>Show hint</summary><p>Use symmetry to change the lower indices to r, r − 1, r − 2 and r − 3. Then count selections from 30 ordinary and three special items.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The expression becomes C(30, r) + 3C(30, r − 1) + 3C(30, r − 2) + C(30, r − 3). The four terms count selections using zero, one, two or three special items. Their sum is C(33, r), so <strong>m = 33</strong>.</p><p>For a fixed positive r, C(m, r) increases as the integer m ≥ r increases. Thus this value of m is unique.</p></details>
+
+**2. Return to the opening question: if p_(n+1) − p_n = 66, find the sum of the distinct prime divisors of n.**
+
+<details class="reading-check"><summary>Show hint</summary><p>The new triangles use the added vertex and two old vertices. Set C(n, 2) = 66 before finding the prime divisors.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>We have n(n − 1)/2 = 66, so n² − n − 132 = 0. Factoring gives (n − 12)(n + 11) = 0. A polygon cannot have −11 vertices, so n = 12.</p><p>Since 12 = 2² × 3, its distinct prime divisors are 2 and 3. Count 2 only once: the requested sum is <strong>5</strong>. As a check, C(13, 3) − C(12, 3) = 286 − 220 = 66.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 691121156 and 691121157.

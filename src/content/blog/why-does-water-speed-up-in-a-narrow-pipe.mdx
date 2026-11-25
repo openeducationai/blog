@@ -1,0 +1,70 @@
+---
+title: "Why does water speed up in a narrow pipe?"
+description: "Count the water passing each section, then use its change in speed to find the pressure difference."
+category: "physics"
+author: "padho"
+pubDate: "2026-11-25T14:11:12+05:30"
+heroImage: "../../assets/articles/flow-area-speed.png"
+heroImageAlt: "Equal volumes pass the wide and narrow parts of a tube in the same time; the narrower section needs a higher speed."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**A liquid of density 600 kg/m³ flows steadily through a horizontal tube. Its cross-sectional areas at A and B are 1.0 cm² and 20 mm². The speed at A is 10 cm/s. For ideal incompressible flow, find the pressure difference p_A − p_B.**
+
+Adapted from [JEE Main, 8 April 2026 Shift2 Q33](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf#page=13), question ID 691121558. We make the ideal-flow assumptions and the sign of the pressure difference explicit. You need area conversions, ratios and squares.
+
+## Follow the water through one tube
+
+Imagine water flowing steadily through a horizontal tube that becomes narrower. In steady flow, water does not keep collecting at the narrow part. The amount entering each second must also leave each second. We treat water as incompressible, which means its density stays constant.
+
+Picture a flat slice across the wide part of the tube. If the water moves at speed v, it travels a distance vΔt in a short time Δt. The water that passes the slice in that time occupies a cylinder: its volume is area × length, or AvΔt.
+
+Dividing by Δt gives the volume passing per second: Q = Av. Q is the volume flow rate. Area is measured across the tube, perpendicular to the flow; it is not the curved area of the pipe wall.
+
+## A smaller area needs a larger speed
+
+Call the two cross-sectional areas A_A and A_B, and the corresponding speeds v_A and v_B. Since the same volume passes both sections each second, A_Av_A = A_Bv_B. This is the [continuity relation](https://openstax.org/books/university-physics-volume-1/pages/14-5-fluid-dynamics).
+
+Suppose the narrow section has half the area of the wide section. The water must move twice as fast there. Half the area multiplied by twice the speed gives the same volume per second. This comparison assumes the inlet flow is maintained; changing a real tap or nozzle can also change the total flow rate.
+
+<ArticleDiagram kind="flowArea">The shaded lengths show how far water moves in the same time. The narrow section has half the cross-sectional area, so its water travels twice as far. Equal volumes pass both sections. The drawing is schematic; its width is not an area scale.</ArticleDiagram>
+
+For the opening question, start by finding the ratio of areas. Do not put 1.0 and 20 directly into that ratio: they use different units. Since 1 cm = 10 mm, one square centimetre is 100 square millimetres.
+
+<KeyIdea id="flow-continuity">For steady incompressible flow without a leak, area × speed stays the same. If flow divides among several outlets, add the volume flow rates of all the outlets.</KeyIdea>
+
+A spray head makes the last point useful. If it has N identical holes, each with area a and the same exit speed u, the total outflow is Nau. Equate that with the inlet flow Av. Using just one hole would predict a speed N times too large.
+
+## Use the new speed to compare pressures
+
+Continuity tells us the speed ratio. To find pressure, we also need an energy relation. For ideal flow along a streamline, [Bernoulli’s equation](https://openstax.org/books/university-physics-volume-1/pages/14-6-bernoullis-equation) says that p + ½ρv² + ρgh stays constant. Here p is pressure, ρ is density, h is height and g is gravitational acceleration.
+
+Our tube is horizontal, so the two height terms are equal and cancel. What remains is p_A + ½ρv_A² = p_B + ½ρv_B². Rearranging gives p_A − p_B = ½ρ(v_B² − v_A²).
+
+This sign has a physical meaning. Water gains speed on its way into the narrow part. A higher pressure behind the water than ahead of it does work on it. In this ideal horizontal tube, the faster section therefore has the lower pressure.
+
+Use metres per second for speed and kilograms per cubic metre for density to obtain pressure in pascals. Keep the speeds squared: doubling a speed makes its squared value four times as large. If both areas were equal, continuity would give equal speeds and this ideal model would give no pressure difference.
+
+Real pipes lose mechanical energy through viscosity. A pump between the two points would also add energy. Our equation assumes these effects are absent, as intended in the opening problem.
+
+## Try the past questions
+
+**1. A hose of cross-sectional area 30 cm² supplies a spray head with ten identical holes, each of area 15 mm². Water moves through the hose at 50 cm/s. Neglect edge effects and find the speed through each hole.**
+
+Adapted from [JEE Main, 4 April 2026 Shift 2 Q32](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf#page=12), question ID 695278407. The identical holes share the flow equally.
+
+<details class="reading-check"><summary>Show hint</summary><p>Convert the inlet area to mm² and add the areas of all ten holes. Use the inlet speed in m/s.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The inlet area is 3000 mm². The total outlet area is 10 × 15 = 150 mm². Continuity gives u = (3000/150) × 0.50 = <strong>10 m/s</strong>.</p><p>Both sides carry 0.0015 m³ each second: 0.003 × 0.50 at the inlet and 0.00015 × 10 at the outlet. This checks the area conversion and the ten-hole factor.</p></details>
+
+**2. Return to the opening question: find p_A − p_B for the liquid of density 600 kg/m³, with areas 1.0 cm² and 20 mm² and inlet speed 10 cm/s.**
+
+<details class="reading-check"><summary>Show hint</summary><p>Find v_B from continuity first. Then use p_A − p_B = ½ρ(v_B² − v_A²), with both speeds in m/s.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The areas are 100 mm² and 20 mm², so v_B = 5v_A. Since v_A = 0.10 m/s, v_B = 0.50 m/s. Thus p_A − p_B = ½ × 600 × (0.50² − 0.10²) = <strong>72 Pa</strong>.</p><p>The positive result means the wide section A has the higher pressure. That agrees with the pressure drop needed to speed the liquid up towards B.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 695278407 and 691121558.

@@ -1,0 +1,74 @@
+---
+title: "Why does the next electron need more ionisation energy?"
+description: "Write the ion before removing an electron. Its charge and remaining electrons explain the next energy cost."
+category: "chemistry"
+author: "padho"
+pubDate: "2026-11-25T14:11:12+05:30"
+heroImage: "../../assets/articles/magnesium-ionisation.png"
+heroImageAlt: "Magnesium becomes Mg plus and then Mg two plus as its two 3s electrons are removed in separate steps."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**The first ionisation enthalpy of magnesium is +737 kJ/mol. Which is the most plausible second ionisation enthalpy: −906, −856, +1450 or +590 kJ/mol?**
+
+Adapted from [JEE Main, 4 April 2026 Shift2 Q57](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf#page=22), question ID 695278432. The four options are retained. You need electron configurations and the meaning of an ionic charge.
+
+## The second removal starts from an ion
+
+Imagine removing electrons from one isolated magnesium atom. At the start the atom is neutral: its twelve protons are balanced by twelve electrons. Removing one electron leaves an ion with charge +1. The nucleus still has twelve protons, but only eleven electrons remain.
+
+The first ionisation step is Mg(g) → Mg⁺(g) + e⁻. The symbol g means gas. We compare isolated gaseous species so that bonding in a solid or interactions with a solvent do not enter the question.
+
+The second step is Mg⁺(g) → Mg²⁺(g) + e⁻. It begins with Mg⁺, not a fresh neutral magnesium atom. The word “second” identifies the starting ion as well as the electron being removed.
+
+## Keep the remaining electrons in view
+
+Magnesium has the electron arrangement [Ne]3s². The symbol [Ne] stands for the ten-electron inner arrangement of neon. The two electrons outside it occupy the 3s orbital.
+
+After the first removal, Mg⁺ is [Ne]3s¹. After the second, Mg²⁺ is [Ne]. Neither step changes the number of protons. Instead, the electrons left behind experience less screening and repulsion from other electrons, and the positive ion holds its remaining electrons more strongly.
+
+<ArticleDiagram kind="ionisationSteps">Each arrow removes one electron. The boxes show the outer 3s occupancy; [Ne] represents the unchanged ten-electron inner arrangement. The second arrow starts from Mg⁺. A third removal would have to take an electron from the inner arrangement.</ArticleDiagram>
+
+For ground-state gaseous magnesium, the second removal costs more energy than the first. Both require an energy input, so both ionisation enthalpies are positive. This [successive-ionisation trend](https://openstax.org/books/chemistry-2e/pages/6-5-periodic-variations-in-element-properties) lets us compare the four choices in the opening question.
+
+It does not let us calculate an exact second value from the first value alone. There is no rule saying “double the first number”. We will select the option consistent with the sign and the increase.
+
+<KeyIdea id="ionisation-start">Before comparing an ionisation energy, write the species that loses the electron. The first, second and third removals start from M, M⁺ and M²⁺ respectively.</KeyIdea>
+
+## A large jump tells us something extra
+
+Consider a third removal from magnesium. Mg²⁺ has already lost both 3s electrons. The next electron must come from the more tightly bound inner arrangement. This causes a much larger increase in the energy needed.
+
+That is different from the ordinary increase between the first two removals. Both of those take a 3s electron. The especially large jump comes after the two outer electrons have gone. When a question supplies several successive values, locating a large jump can help identify how many outer electrons were present.
+
+Do not confuse this process with adding an electron. Ionisation removes an electron; electron affinity describes the energy change when an electron is added. The sign rules for the two processes are different.
+
+## Compare third removals from the correct ions
+
+The same starting-state check helps with transition metals. A third ionisation always starts from the 2+ ion. For scandium, manganese, copper and zinc, those ions have arrangements [Ar]3d¹, [Ar]3d⁵, [Ar]3d⁹ and [Ar]3d¹⁰ respectively. Here [Ar] stands for the eighteen-electron argon core. The 4s electrons have already been removed; copper also loses a 3d electron on reaching Cu²⁺.
+
+Sc²⁺ loses its only 3d electron and becomes [Ar]. Zn²⁺, in contrast, has a filled 3d subshell, and a third removal breaks that filled arrangement. Zinc also has a larger nuclear charge. Among these four elements, the third removal is easiest for scandium and hardest for zinc.
+
+Electronic configuration helps explain that comparison. It is not a universal shortcut in which any filled subshell must defeat every other factor. Nuclear charge, screening and the electron’s shell all matter. Always identify the particular ions being compared.
+
+## Try the past questions
+
+**1. Among Zn, Mn, Sc and Cu, is the third ionisation energy highest for Zn and lowest for Sc?**
+
+Adapted from statement I of [JEE Main, 2 April 2026 Shift 2 Q60](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf#page=23), question ID 691121210. This exercise uses only statement I; the original question also has an unrelated statement about crystal field energy.
+
+<details class="reading-check"><summary>Show hint</summary><p>The third electron is removed from M²⁺. Write the four 2+ configurations before comparing them.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p><strong>Yes.</strong> Sc²⁺ is [Ar]3d¹, so the removal leaves the argon core. Zn²⁺ is [Ar]3d¹⁰, and the removal breaks the filled 3d subshell. Mn²⁺ and Cu²⁺ are 3d⁵ and 3d⁹. Among the four, Zn has the highest third ionisation energy and Sc the lowest.</p><p>The full official question is keyed “both statements true”, which confirms statement I. We are not treating the shortened exercise as the whole original question.</p></details>
+
+**2. Return to the opening question: given Mg’s first ionisation enthalpy of +737 kJ/mol, choose its most plausible second value from −906, −856, +1450 and +590 kJ/mol.**
+
+<details class="reading-check"><summary>Show hint</summary><p>The second step removes an electron from Mg⁺. Its energy cost must be positive and larger than the first cost.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The negative values cannot describe the required ionisation. The positive value +590 kJ/mol is smaller than +737 kJ/mol, so it also fails. The remaining choice is <strong>+1450 kJ/mol</strong>.</p><p>We used a comparison to select the answer. We did not derive 1450 by multiplying 737 by a fixed factor.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 691121210 and 695278432.

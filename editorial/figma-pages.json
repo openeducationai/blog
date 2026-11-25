@@ -262,6 +262,58 @@
       },
       "sourceCommit": "9a4784cdaebb5a92083163d2fead3484dc3c8efa",
       "resumedFrom": "editorial/runs/2026-11-23.json"
+    },
+    {
+      "pageId": "157:2",
+      "name": "2026-11-25",
+      "date": "2026-11-25",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "why-does-water-speed-up-in-a-narrow-pipe",
+          "desktopFrameId": "157:423",
+          "phoneFrameId": "157:670"
+        },
+        {
+          "slug": "why-does-the-next-electron-need-more-ionisation-energy",
+          "desktopFrameId": "157:913",
+          "phoneFrameId": "157:1171"
+        },
+        {
+          "slug": "how-does-adding-one-choice-lead-to-pascals-identity",
+          "desktopFrameId": "157:1425",
+          "phoneFrameId": "157:1679"
+        }
+      ],
+      "verifiedAt": "2026-11-25T14:20:09+05:30",
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          35,
+          37,
+          38
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "coverFit": "FIT; discrete cover assets only",
+        "captureReferencesRemoved": true,
+        "comments": "Supported get_comments returned no comments; archived in this run."
+      }
     }
   ],
   "removedPages": [

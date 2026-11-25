@@ -1,0 +1,72 @@
+{
+  "id": "pascal-counting-difference",
+  "category": "maths",
+  "conceptKey": "maths/combinations/pascal-identity-by-inclusion",
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121157",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift2 Q7, PDF page3",
+      "answer": "5",
+      "correctOptionId": "691121537",
+      "independentSolution": "p_n=C(n,3). Difference=C(n,2)=66; n(n−1)=132 gives n12 (reject−11). Distinct primes2,3 sum5. Direct check C13,3−C12,3=286−220=66.",
+      "adaptation": "Rewrites subscripts in accessible plain text; preserves regular polygons.",
+      "adapted": true,
+      "verifiedAt": "2026-11-25T14:07:37+05:30",
+      "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+    },
+    {
+      "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121156",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift2 Q6, PDF page3",
+      "answer": "m=33",
+      "correctOptionId": "691121533",
+      "independentSolution": "Symmetry changes indices to r,r−1,r−2,r−3. Count r items from30 ordinary plus3 special: sum C3,j C30,r−j=C33,r. Exact integer check for every r3..30.",
+      "adaptation": "Uses C(n,r) notation and states integer r and m≥r, as implicit in ordinary combinations.",
+      "adapted": true,
+      "verifiedAt": "2026-11-25T14:07:37+05:30",
+      "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+    }
+  ],
+  "closestPriorSlugs": [
+    "how-do-you-find-a-constant-term-in-a-binomial",
+    "how-do-you-count-functions-that-miss-an-output"
+  ],
+  "difference": "Disjoint include/exclude counting proves Pascal’s identity; earlier work balances powers or corrects overlapping missing-output sets.",
+  "researchedAt": "2026-11-25T14:07:37+05:30",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main2027, current official homepage checked25November",
+    "scope": "Mathematics Unit4: combinations and simple applications; Unit5: binomial coefficients."
+  },
+  "corpus": {
+    "papersExamined": 5,
+    "coverageNotes": "Targeted original-page examination of 2April S1/S2,4April S2,5April S2,8April S2. Cumulative prior corpus nine papers. Not full-paper classification or five-year analysis.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two verified PYQs support a focused misconception or prerequisite. Targeted April2026 corpus; no exhaustive shift, marks or frequency estimate."
+  },
+  "sources": [
+    {
+      "title": "Primary educational explanation",
+      "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-6-binomial-theorem"
+    },
+    {
+      "title": "Official syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121157",
+  "targetQuestionText": "Let p_n be the number of triangles formed by joining vertices of a regular n-sided polygon. If p_(n+1) − p_n = 66, find the sum of the distinct prime divisors of n.",
+  "verificationNotes": "Original page images and final-key option IDs examined. Independent solutions recorded, including SI-unit flow checks, ionic starting states, and exact combinatorial checks for all28 allowed r. Chemistry supporting exercise explicitly uses statementI only."
+}

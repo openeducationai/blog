@@ -2207,6 +2207,177 @@
       "releaseConfirmedAt": "2026-11-24T07:10:33+05:30",
       "liveVerifiedAt": "2026-11-24T07:12:01+05:30",
       "liveHtmlSha256": "65f05003b81cc0d4161d6e19f3c1cc4895290042a4c124a659a08a4f688a9b96"
+    },
+    {
+      "slug": "why-does-water-speed-up-in-a-narrow-pipe",
+      "title": "Why does water speed up in a narrow pipe?",
+      "category": "physics",
+      "chapter": "properties-of-solids-and-liquids",
+      "conceptKey": "physics/fluids/continuity-before-bernoulli",
+      "learningObjective": "Conserve volume flow to find speed before using Bernoulli’s equation to compare pressures at equal height.",
+      "example": "Follow the same volume of water through the wide and narrow parts of one horizontal tube.",
+      "briefPath": "editorial/research/2026-11-25-physics.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121558",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "8 April 2026 Shift2 Q33, PDF page13",
+          "answer": "72 Pa",
+          "correctOptionId": "6911211902",
+          "independentSolution": "Areas100 and20 mm² give vB=5vA=0.5m/s. pA−pB=600(0.25−0.01)/2=72Pa. Faster B has lower pressure.",
+          "adaptation": "Makes ideal incompressible flow and the sign pA−pB explicit.",
+          "adapted": true,
+          "verifiedAt": "2026-11-25T14:07:37+05:30",
+          "sourceSha256": "079e3b7ae67b70309f22b33e37b720cba65b47c6d96760113a4302cee1122416"
+        },
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278407",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift2 Q32, PDF page12",
+          "answer": "10 m/s",
+          "correctOptionId": "6952781386",
+          "independentSolution": "Inlet30cm²=3000mm². Ten holes total150mm². vout=(3000/150)*0.50=10m/s. Flow rates both0.0015m³/s.",
+          "adaptation": "Paraphrases; assumes equal flow through identical holes as in the question.",
+          "adapted": true,
+          "verifiedAt": "2026-11-25T14:07:37+05:30",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        }
+      ],
+      "sourcePath": "src/content/blog/why-does-water-speed-up-in-a-narrow-pipe.mdx",
+      "sourceSha256": "46fa78f7aaff6154aa2a8b640b294e2ea486ec04abab794a27211391810c2387",
+      "url": "https://padho.ai/blog/why-does-water-speed-up-in-a-narrow-pipe/",
+      "publishedAt": "2026-11-25T14:11:12+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121558",
+      "targetQuestionText": "A liquid of density 600 kg/m³ flows steadily through a horizontal tube. Its cross-sectional areas at A and B are 1.0 cm² and 20 mm². The speed at A is 10 cm/s. For ideal incompressible flow, find the pressure difference p_A − p_B.",
+      "review": {
+        "sourceSha256": "46fa78f7aaff6154aa2a8b640b294e2ea486ec04abab794a27211391810c2387",
+        "reviewedAt": "2026-11-25T14:12:12+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "All six solutions independently derived: flow-unit/sign and outlet-count checks; correct starting ionic states; Pascal selection cases and exact integer identity for every allowed r. Full prose read sequentially and checked for plain meaning. Original diagrams visually inspected. Real-app viewport checks follow."
+      }
+    },
+    {
+      "slug": "why-does-the-next-electron-need-more-ionisation-energy",
+      "title": "Why does the next electron need more ionisation energy?",
+      "category": "chemistry",
+      "chapter": "periodicity",
+      "conceptKey": "chemistry/periodicity/successive-ionisation-starting-ion",
+      "learningObjective": "Identify the gaseous ion before each electron removal and use charge and electronic configuration to compare successive ionisation energies.",
+      "example": "Remove the two outer 3s electrons from magnesium one at a time, then identify the different shell needed for a third removal.",
+      "briefPath": "editorial/research/2026-11-25-chemistry.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278432",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift2 Q57, PDF page22",
+          "answer": "+1450 kJ/mol",
+          "correctOptionId": "6952781472",
+          "independentSolution": "Ionisation of an isolated ground-state species requires energy; IE2>IE1 for Mg. Only1450 is positive and above737. No rule computes1450 from737 alone.",
+          "adaptation": "Original choices retained, with a plain-language question.",
+          "adapted": true,
+          "verifiedAt": "2026-11-25T14:07:37+05:30",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121210",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift2 Q60 statement I, PDF pages23–24",
+          "answer": "True: Zn highest, Sc lowest among Zn, Mn, Sc and Cu.",
+          "correctOptionId": "691121717",
+          "independentSolution": "Third removal starts at M2+. Sc2+=[Ar]3d1 reaches[Ar]; Mn2+=[Ar]3d5,Cu2+=[Ar]3d9,Zn2+=[Ar]3d10. Zn3+ disrupts filled3d under higher nuclear charge; Sc loses its only3d electron. Final full-question key says both statements true and confirmsI.",
+          "adaptation": "Uses only statement I; does not ask or teach the unrelated CFSE statement II.",
+          "adapted": true,
+          "verifiedAt": "2026-11-25T14:07:37+05:30",
+          "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+        }
+      ],
+      "sourcePath": "src/content/blog/why-does-the-next-electron-need-more-ionisation-energy.mdx",
+      "sourceSha256": "9b87f3132e4b258baf5cf1ad80509b45f638d8535cdc5d384b1cc0e64dfdcc73",
+      "url": "https://padho.ai/blog/why-does-the-next-electron-need-more-ionisation-energy/",
+      "publishedAt": "2026-11-25T14:11:12+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278432",
+      "targetQuestionText": "The first ionisation enthalpy of magnesium is +737 kJ/mol. Which is the most plausible second ionisation enthalpy: −906, −856, +1450 or +590 kJ/mol?",
+      "review": {
+        "sourceSha256": "9b87f3132e4b258baf5cf1ad80509b45f638d8535cdc5d384b1cc0e64dfdcc73",
+        "reviewedAt": "2026-11-25T14:12:12+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "All six solutions independently derived: flow-unit/sign and outlet-count checks; correct starting ionic states; Pascal selection cases and exact integer identity for every allowed r. Full prose read sequentially and checked for plain meaning. Original diagrams visually inspected. Real-app viewport checks follow."
+      }
+    },
+    {
+      "slug": "how-does-adding-one-choice-lead-to-pascals-identity",
+      "title": "How does adding one choice lead to Pascal’s identity?",
+      "category": "maths",
+      "chapter": "permutations-and-combinations",
+      "conceptKey": "maths/combinations/pascal-identity-by-inclusion",
+      "learningObjective": "Split selections by whether they include a new item, using Pascal’s identity to simplify differences and repeated sums of combinations.",
+      "example": "Add one new vertex to a convex polygon and count the triangles that include it.",
+      "briefPath": "editorial/research/2026-11-25-maths.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121157",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift2 Q7, PDF page3",
+          "answer": "5",
+          "correctOptionId": "691121537",
+          "independentSolution": "p_n=C(n,3). Difference=C(n,2)=66; n(n−1)=132 gives n12 (reject−11). Distinct primes2,3 sum5. Direct check C13,3−C12,3=286−220=66.",
+          "adaptation": "Rewrites subscripts in accessible plain text; preserves regular polygons.",
+          "adapted": true,
+          "verifiedAt": "2026-11-25T14:07:37+05:30",
+          "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121156",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift2 Q6, PDF page3",
+          "answer": "m=33",
+          "correctOptionId": "691121533",
+          "independentSolution": "Symmetry changes indices to r,r−1,r−2,r−3. Count r items from30 ordinary plus3 special: sum C3,j C30,r−j=C33,r. Exact integer check for every r3..30.",
+          "adaptation": "Uses C(n,r) notation and states integer r and m≥r, as implicit in ordinary combinations.",
+          "adapted": true,
+          "verifiedAt": "2026-11-25T14:07:37+05:30",
+          "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+        }
+      ],
+      "sourcePath": "src/content/blog/how-does-adding-one-choice-lead-to-pascals-identity.mdx",
+      "sourceSha256": "e4a01e06a48668f8fe102f59370292e3cb989aebf3798e2bd7ceb11b7aee5525",
+      "url": "https://padho.ai/blog/how-does-adding-one-choice-lead-to-pascals-identity/",
+      "publishedAt": "2026-11-25T14:11:12+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121157",
+      "targetQuestionText": "Let p_n be the number of triangles formed by joining vertices of a regular n-sided polygon. If p_(n+1) − p_n = 66, find the sum of the distinct prime divisors of n.",
+      "review": {
+        "sourceSha256": "e4a01e06a48668f8fe102f59370292e3cb989aebf3798e2bd7ceb11b7aee5525",
+        "reviewedAt": "2026-11-25T14:12:12+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "All six solutions independently derived: flow-unit/sign and outlet-count checks; correct starting ionic states; Pascal selection cases and exact integer identity for every allowed r. Full prose read sequentially and checked for plain meaning. Original diagrams visually inspected. Real-app viewport checks follow."
+      }
     }
   ]
 }

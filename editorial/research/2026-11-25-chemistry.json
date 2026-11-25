@@ -1,0 +1,72 @@
+{
+  "id": "successive-ionisation",
+  "category": "chemistry",
+  "conceptKey": "chemistry/periodicity/successive-ionisation-starting-ion",
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278432",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "4 April 2026 Shift2 Q57, PDF page22",
+      "answer": "+1450 kJ/mol",
+      "correctOptionId": "6952781472",
+      "independentSolution": "Ionisation of an isolated ground-state species requires energy; IE2>IE1 for Mg. Only1450 is positive and above737. No rule computes1450 from737 alone.",
+      "adaptation": "Original choices retained, with a plain-language question.",
+      "adapted": true,
+      "verifiedAt": "2026-11-25T14:07:37+05:30",
+      "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+    },
+    {
+      "id": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121210",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift2 Q60 statement I, PDF pages23–24",
+      "answer": "True: Zn highest, Sc lowest among Zn, Mn, Sc and Cu.",
+      "correctOptionId": "691121717",
+      "independentSolution": "Third removal starts at M2+. Sc2+=[Ar]3d1 reaches[Ar]; Mn2+=[Ar]3d5,Cu2+=[Ar]3d9,Zn2+=[Ar]3d10. Zn3+ disrupts filled3d under higher nuclear charge; Sc loses its only3d electron. Final full-question key says both statements true and confirmsI.",
+      "adaptation": "Uses only statement I; does not ask or teach the unrelated CFSE statement II.",
+      "adapted": true,
+      "verifiedAt": "2026-11-25T14:07:37+05:30",
+      "sourceSha256": "7c9f31086094684cb7cf5ca9ce884b8991a3c19315dab282c7d320ed86eaf405"
+    }
+  ],
+  "closestPriorSlugs": [
+    "how-do-quantum-numbers-tell-you-the-number-of-orbital-nodes"
+  ],
+  "difference": "Energy cost and starting ionic state, rather than geometry or nodes of an orbital.",
+  "researchedAt": "2026-11-25T14:07:37+05:30",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "JEE Main2027, current official homepage checked25November",
+    "scope": "Chemistry Unit3: periodic properties and ionisation enthalpy; Unit4/11 electronic configuration of ions."
+  },
+  "corpus": {
+    "papersExamined": 5,
+    "coverageNotes": "Targeted original-page examination of 2April S1/S2,4April S2,5April S2,8April S2. Cumulative prior corpus nine papers. Not full-paper classification or five-year analysis.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409481957146.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two verified PYQs support a focused misconception or prerequisite. Targeted April2026 corpus; no exhaustive shift, marks or frequency estimate."
+  },
+  "sources": [
+    {
+      "title": "Primary educational explanation",
+      "url": "https://openstax.org/books/chemistry-2e/pages/6-5-periodic-variations-in-element-properties"
+    },
+    {
+      "title": "Official syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278432",
+  "targetQuestionText": "The first ionisation enthalpy of magnesium is +737 kJ/mol. Which is the most plausible second ionisation enthalpy: −906, −856, +1450 or +590 kJ/mol?",
+  "verificationNotes": "Original page images and final-key option IDs examined. Independent solutions recorded, including SI-unit flow checks, ionic starting states, and exact combinatorial checks for all28 allowed r. Chemistry supporting exercise explicitly uses statementI only."
+}
