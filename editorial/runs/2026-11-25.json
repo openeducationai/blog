@@ -223,13 +223,47 @@
       "evidence": "Six complete editable native views passed exact-copy, fonts, image and structure checks and composition review. Capture submission RPC timed out after service completed; all three completed captures confirmed by generate_figma_design and canvas reads, discrete covers transferred, temporary captures removed."
     },
     "git": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-25T14:21:20+05:30",
+      "sourceCommit": "360879b3a5e6f95fbb6f575c44e7879c91de8d0f",
+      "branch": "main",
+      "pushed": true
     },
     "publication": {
-      "status": "pending"
+      "status": "failed",
+      "startedAt": "2026-11-25T14:21:20+05:30",
+      "scope": "https://padho.ai/blog only",
+      "command": "node scripts/publish.mjs",
+      "sourceCommit": "360879b3a5e6f95fbb6f575c44e7879c91de8d0f",
+      "failedAt": "2026-11-25T14:22:49+05:30",
+      "exitCode": 1,
+      "log": "/private/tmp/padho-pcm-2026-11-25/publish.log",
+      "error": "ERROR: (gcloud.auth.print-access-token) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.",
+      "requiredAction": "Run gcloud auth login interactively.",
+      "uploadsStarted": false,
+      "evidence": "Publisher passed editorial, build-search and analytics preflights, then failed obtaining its access token before storage inspection or any upload. No release retry attempted."
     },
     "liveVerification": {
-      "status": "pending"
+      "status": "pending",
+      "blockedBy": "publication",
+      "readOnlyUrlCheck": {
+        "checkedAt": "2026-11-25T14:22:26+05:30",
+        "articles": [
+          {
+            "url": "https://padho.ai/blog/why-does-water-speed-up-in-a-narrow-pipe/",
+            "status": 404
+          },
+          {
+            "url": "https://padho.ai/blog/why-does-the-next-electron-need-more-ionisation-energy/",
+            "status": 404
+          },
+          {
+            "url": "https://padho.ai/blog/how-does-adding-one-choice-lead-to-pascals-identity/",
+            "status": 404
+          }
+        ]
+      },
+      "evidence": "All three prepared URLs return404. Full post-release checks deferred because no upload occurred."
     }
   },
   "figmaFeedback": {
@@ -238,10 +272,28 @@
     "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
     "comments": []
   },
-  "lastCheckpointAt": "2026-11-25T14:20:09+05:30",
+  "lastCheckpointAt": "2026-11-25T14:22:49+05:30",
   "resume": {
-    "nextStage": "git",
+    "nextStage": "publication",
     "reuseExistingArticles": true,
-    "reuseFigmaPageId": "157:2"
-  }
+    "reuseFigmaPageId": "157:2",
+    "requiredAction": "Run gcloud auth login interactively, then resume the existing verified batch on an authorised invocation. Refresh dates and rebuild only if the publication date changes."
+  },
+  "sourceCommit": "360879b3a5e6f95fbb6f575c44e7879c91de8d0f",
+  "publicationAttempts": [
+    {
+      "status": "failed",
+      "startedAt": "2026-11-25T14:21:20+05:30",
+      "scope": "https://padho.ai/blog only",
+      "command": "node scripts/publish.mjs",
+      "sourceCommit": "360879b3a5e6f95fbb6f575c44e7879c91de8d0f",
+      "failedAt": "2026-11-25T14:22:49+05:30",
+      "exitCode": 1,
+      "log": "/private/tmp/padho-pcm-2026-11-25/publish.log",
+      "error": "ERROR: (gcloud.auth.print-access-token) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.",
+      "requiredAction": "Run gcloud auth login interactively.",
+      "uploadsStarted": false,
+      "evidence": "Publisher passed editorial, build-search and analytics preflights, then failed obtaining its access token before storage inspection or any upload. No release retry attempted."
+    }
+  ]
 }
