@@ -1149,8 +1149,10 @@
         }
       ],
       "briefPath": "editorial/research/2026-11-25-physics.json",
-      "status": "writing",
-      "rationale": "Two verified PYQs support a focused misconception or prerequisite. Targeted April2026 corpus; no exhaustive shift, marks or frequency estimate."
+      "status": "published",
+      "rationale": "Two verified PYQs support a focused misconception or prerequisite. Targeted April2026 corpus; no exhaustive shift, marks or frequency estimate.",
+      "publishedAt": "2026-11-25T14:11:12+05:30",
+      "releaseVerifiedAt": "2026-11-25T15:59:43+05:30"
     },
     {
       "id": "successive-ionisation",
@@ -1201,8 +1203,10 @@
         }
       ],
       "briefPath": "editorial/research/2026-11-25-chemistry.json",
-      "status": "writing",
-      "rationale": "Two verified PYQs support a focused misconception or prerequisite. Targeted April2026 corpus; no exhaustive shift, marks or frequency estimate."
+      "status": "published",
+      "rationale": "Two verified PYQs support a focused misconception or prerequisite. Targeted April2026 corpus; no exhaustive shift, marks or frequency estimate.",
+      "publishedAt": "2026-11-25T14:11:12+05:30",
+      "releaseVerifiedAt": "2026-11-25T15:59:43+05:30"
     },
     {
       "id": "pascal-counting-difference",
@@ -1254,8 +1258,10 @@
         }
       ],
       "briefPath": "editorial/research/2026-11-25-maths.json",
-      "status": "writing",
-      "rationale": "Two verified PYQs support a focused misconception or prerequisite. Targeted April2026 corpus; no exhaustive shift, marks or frequency estimate."
+      "status": "published",
+      "rationale": "Two verified PYQs support a focused misconception or prerequisite. Targeted April2026 corpus; no exhaustive shift, marks or frequency estimate.",
+      "publishedAt": "2026-11-25T14:11:12+05:30",
+      "releaseVerifiedAt": "2026-11-25T15:59:43+05:30"
     }
   ]
 }

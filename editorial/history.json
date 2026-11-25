@@ -2250,7 +2250,7 @@
       "url": "https://padho.ai/blog/why-does-water-speed-up-in-a-narrow-pipe/",
       "publishedAt": "2026-11-25T14:11:12+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121558",
       "targetQuestionText": "A liquid of density 600 kg/m³ flows steadily through a horizontal tube. Its cross-sectional areas at A and B are 1.0 cm² and 20 mm². The speed at A is 10 cm/s. For ideal incompressible flow, find the pressure difference p_A − p_B.",
       "review": {
@@ -2263,7 +2263,8 @@
           "visuals": true
         },
         "notes": "All six solutions independently derived: flow-unit/sign and outlet-count checks; correct starting ionic states; Pascal selection cases and exact integer identity for every allowed r. Full prose read sequentially and checked for plain meaning. Original diagrams visually inspected. Real-app viewport checks follow."
-      }
+      },
+      "releaseVerifiedAt": "2026-11-25T15:59:43+05:30"
     },
     {
       "slug": "why-does-the-next-electron-need-more-ionisation-energy",
@@ -2307,7 +2308,7 @@
       "url": "https://padho.ai/blog/why-does-the-next-electron-need-more-ionisation-energy/",
       "publishedAt": "2026-11-25T14:11:12+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278432",
       "targetQuestionText": "The first ionisation enthalpy of magnesium is +737 kJ/mol. Which is the most plausible second ionisation enthalpy: −906, −856, +1450 or +590 kJ/mol?",
       "review": {
@@ -2320,7 +2321,8 @@
           "visuals": true
         },
         "notes": "All six solutions independently derived: flow-unit/sign and outlet-count checks; correct starting ionic states; Pascal selection cases and exact integer identity for every allowed r. Full prose read sequentially and checked for plain meaning. Original diagrams visually inspected. Real-app viewport checks follow."
-      }
+      },
+      "releaseVerifiedAt": "2026-11-25T15:59:43+05:30"
     },
     {
       "slug": "how-does-adding-one-choice-lead-to-pascals-identity",
@@ -2364,7 +2366,7 @@
       "url": "https://padho.ai/blog/how-does-adding-one-choice-lead-to-pascals-identity/",
       "publishedAt": "2026-11-25T14:11:12+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-02-Shift-2-Paper1-QID-691121157",
       "targetQuestionText": "Let p_n be the number of triangles formed by joining vertices of a regular n-sided polygon. If p_(n+1) − p_n = 66, find the sum of the distinct prime divisors of n.",
       "review": {
@@ -2377,7 +2379,8 @@
           "visuals": true
         },
         "notes": "All six solutions independently derived: flow-unit/sign and outlet-count checks; correct starting ionic states; Pascal selection cases and exact integer identity for every allowed r. Full prose read sequentially and checked for plain meaning. Original diagrams visually inspected. Real-app viewport checks follow."
-      }
+      },
+      "releaseVerifiedAt": "2026-11-25T15:59:43+05:30"
     }
   ]
 }

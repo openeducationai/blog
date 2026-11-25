@@ -1,6 +1,6 @@
 {
   "date": "2026-11-25",
-  "status": "partial",
+  "status": "published",
   "startedAt": "2026-11-25T13:59:07+05:30",
   "articleSlugs": [
     "why-does-water-speed-up-in-a-narrow-pipe",
@@ -230,6 +230,79 @@
       "pushed": true
     },
     "publication": {
+      "status": "complete",
+      "startedAt": "2026-11-25T15:56:38+05:30",
+      "completedAt": "2026-11-25T15:56:55+05:30",
+      "scope": "blog/* and exact blog object only",
+      "command": "node scripts/publish.mjs",
+      "sourceCommit": "360879b3a5e6f95fbb6f575c44e7879c91de8d0f",
+      "log": "/private/tmp/padho-blog-2026-11-25-resume-publish.log",
+      "exitCode": 0,
+      "uploadedObjects": 78,
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ],
+      "authorisation": "Owner requested checking and completing today’s publication, then renewed Google Cloud login in this conversation.",
+      "evidence": "Resumed the existing verified batch after interactive reauthentication. Publisher completed both scoped CDN invalidations. Article source and Figma copies were reused unchanged."
+    },
+    "liveVerification": {
+      "status": "complete",
+      "completedAt": "2026-11-25T15:59:43+05:30",
+      "articles": [
+        {
+          "url": "https://padho.ai/blog/why-does-water-speed-up-in-a-narrow-pipe/",
+          "status": 200,
+          "sha256": "ed5306e0ebed720a52a3b75b65107d1d56d816f131e68167770b8911e33722a1",
+          "matchesBuild": true
+        },
+        {
+          "url": "https://padho.ai/blog/why-does-the-next-electron-need-more-ionisation-energy/",
+          "status": 200,
+          "sha256": "f17bce122b3bb831342f133d2f746b67ebbf4eee6e0cab679061e33eac631b2e",
+          "matchesBuild": true
+        },
+        {
+          "url": "https://padho.ai/blog/how-does-adding-one-choice-lead-to-pascals-identity/",
+          "status": 200,
+          "sha256": "b70ae071ee5dda3c48c6243c5da9f62aadd6d5fa23c05d785e7382a3078229ae",
+          "matchesBuild": true
+        }
+      ],
+      "sitemapPages": 48,
+      "publishedArticles": 42,
+      "images": 42,
+      "internalLinks": 49,
+      "metadataMatchesVisibleContent": true,
+      "crawlerProbes": 168,
+      "allCrawlerProbesPassed": true,
+      "articleViewports": 6,
+      "navigationViewports": 8,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-25-browser/checks-live.json",
+      "navigationEvidence": "/private/tmp/padho-blog-2026-11-25-browser/index-checks-live.json",
+      "searchEvidence": "/private/tmp/padho-blog-2026-11-25-search-live.json",
+      "evidence": "All three live HTML responses match the checked build byte for byte. Six desktop/phone article views and eight homepage/category views passed, including images, reading typography, overflow and keyboard disclosures. Representative live openings, target solution and both homepage widths were visually inspected. Public crawler probes do not establish indexing.",
+      "searchConsole": "No indexing submission performed; owner handles Search Console."
+    }
+  },
+  "figmaFeedback": {
+    "checkedAt": "2026-11-25T14:07:37+05:30",
+    "tool": "get_comments",
+    "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+    "comments": []
+  },
+  "lastCheckpointAt": "2026-11-25T15:59:43+05:30",
+  "resume": {
+    "nextStage": null,
+    "reuseExistingArticles": true,
+    "reuseFigmaPageId": "157:2",
+    "instructions": [
+      "This date is published and live-verified. Do not create or publish a second set."
+    ]
+  },
+  "sourceCommit": "360879b3a5e6f95fbb6f575c44e7879c91de8d0f",
+  "publicationAttempts": [
+    {
       "status": "failed",
       "startedAt": "2026-11-25T14:21:20+05:30",
       "scope": "https://padho.ai/blog only",
@@ -241,11 +314,7 @@
       "error": "ERROR: (gcloud.auth.print-access-token) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.",
       "requiredAction": "Run gcloud auth login interactively.",
       "uploadsStarted": false,
-      "evidence": "Publisher passed editorial, build-search and analytics preflights, then failed obtaining its access token before storage inspection or any upload. No release retry attempted."
-    },
-    "liveVerification": {
-      "status": "pending",
-      "blockedBy": "publication",
+      "evidence": "Publisher passed editorial, build-search and analytics preflights, then failed obtaining its access token before storage inspection or any upload. No release retry attempted.",
       "readOnlyUrlCheck": {
         "checkedAt": "2026-11-25T14:22:26+05:30",
         "articles": [
@@ -262,38 +331,40 @@
             "status": 404
           }
         ]
-      },
-      "evidence": "All three prepared URLs return404. Full post-release checks deferred because no upload occurred."
-    }
-  },
-  "figmaFeedback": {
-    "checkedAt": "2026-11-25T14:07:37+05:30",
-    "tool": "get_comments",
-    "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
-    "comments": []
-  },
-  "lastCheckpointAt": "2026-11-25T14:22:49+05:30",
-  "resume": {
-    "nextStage": "publication",
-    "reuseExistingArticles": true,
-    "reuseFigmaPageId": "157:2",
-    "requiredAction": "Run gcloud auth login interactively, then resume the existing verified batch on an authorised invocation. Refresh dates and rebuild only if the publication date changes."
-  },
-  "sourceCommit": "360879b3a5e6f95fbb6f575c44e7879c91de8d0f",
-  "publicationAttempts": [
+      }
+    },
     {
-      "status": "failed",
-      "startedAt": "2026-11-25T14:21:20+05:30",
-      "scope": "https://padho.ai/blog only",
+      "status": "complete",
+      "startedAt": "2026-11-25T15:56:38+05:30",
+      "completedAt": "2026-11-25T15:56:55+05:30",
+      "scope": "blog/* and exact blog object only",
       "command": "node scripts/publish.mjs",
       "sourceCommit": "360879b3a5e6f95fbb6f575c44e7879c91de8d0f",
-      "failedAt": "2026-11-25T14:22:49+05:30",
-      "exitCode": 1,
-      "log": "/private/tmp/padho-pcm-2026-11-25/publish.log",
-      "error": "ERROR: (gcloud.auth.print-access-token) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.",
-      "requiredAction": "Run gcloud auth login interactively.",
-      "uploadsStarted": false,
-      "evidence": "Publisher passed editorial, build-search and analytics preflights, then failed obtaining its access token before storage inspection or any upload. No release retry attempted."
+      "log": "/private/tmp/padho-blog-2026-11-25-resume-publish.log",
+      "exitCode": 0,
+      "uploadedObjects": 78,
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ],
+      "authorisation": "Owner requested checking and completing today’s publication, then renewed Google Cloud login in this conversation.",
+      "evidence": "Resumed the existing verified batch after interactive reauthentication. Publisher completed both scoped CDN invalidations. Article source and Figma copies were reused unchanged."
     }
-  ]
+  ],
+  "resumeChecks": {
+    "completedAt": "2026-11-25T15:59:43+05:30",
+    "sourceReviewsMatch": true,
+    "branch": "main",
+    "headMatchedOriginBeforeRelease": "16e2db7d82a2b01e5e691f881f663771e14bcf21",
+    "commands": [
+      "npm run check:editorial",
+      "npm run build",
+      "npm run check:search",
+      "npm run check:analytics",
+      "git diff --check"
+    ],
+    "buildLog": "/private/tmp/padho-blog-2026-11-25-resume-build.log",
+    "browserNote": "Interactive browser host was unavailable; the existing real-app verification scripts passed using the installed headless Chromium test browser."
+  },
+  "completedAt": "2026-11-25T15:59:43+05:30"
 }
