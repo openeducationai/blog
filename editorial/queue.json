@@ -1312,8 +1312,10 @@
         }
       ],
       "briefPath": "editorial/research/2026-11-26-physics.json",
-      "status": "writing",
-      "rationale": "Two unused official PYQs address a distinct misconception or prerequisite. Five official April2026 papers examined for selection; cumulative corpus remains a targeted nine-paper sample, not a frequency or marks census."
+      "status": "published",
+      "rationale": "Two unused official PYQs address a distinct misconception or prerequisite. Five official April2026 papers examined for selection; cumulative corpus remains a targeted nine-paper sample, not a frequency or marks census.",
+      "publishedAt": "2026-11-26T07:08:23+05:30",
+      "releaseVerifiedAt": "2026-11-26T07:23:23+05:30"
     },
     {
       "id": "hess-formation-enthalpy",
@@ -1365,8 +1367,10 @@
         }
       ],
       "briefPath": "editorial/research/2026-11-26-chemistry.json",
-      "status": "writing",
-      "rationale": "Two unused official PYQs address a distinct misconception or prerequisite. Five official April2026 papers examined for selection; cumulative corpus remains a targeted nine-paper sample, not a frequency or marks census."
+      "status": "published",
+      "rationale": "Two unused official PYQs address a distinct misconception or prerequisite. Five official April2026 papers examined for selection; cumulative corpus remains a targeted nine-paper sample, not a frequency or marks census.",
+      "publishedAt": "2026-11-26T07:08:23+05:30",
+      "releaseVerifiedAt": "2026-11-26T07:23:23+05:30"
     },
     {
       "id": "cross-product-perpendicularity",
@@ -1417,8 +1421,10 @@
         }
       ],
       "briefPath": "editorial/research/2026-11-26-maths.json",
-      "status": "writing",
-      "rationale": "Two unused official PYQs address a distinct misconception or prerequisite. Five official April2026 papers examined for selection; cumulative corpus remains a targeted nine-paper sample, not a frequency or marks census."
+      "status": "published",
+      "rationale": "Two unused official PYQs address a distinct misconception or prerequisite. Five official April2026 papers examined for selection; cumulative corpus remains a targeted nine-paper sample, not a frequency or marks census.",
+      "publishedAt": "2026-11-26T07:08:23+05:30",
+      "releaseVerifiedAt": "2026-11-26T07:23:23+05:30"
     }
   ]
 }

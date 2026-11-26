@@ -2424,7 +2424,7 @@
       "url": "https://padho.ai/blog/how-does-a-change-in-speed-tell-you-the-net-work/",
       "publishedAt": "2026-11-26T07:08:23+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211229",
       "targetQuestionText": "A 1 kg particle moves along a straight line with v = 2x², where x is in metres and v is in metres per second. Find the net work done on it as it moves from x = 0 to x = 5 m.",
       "review": {
@@ -2437,7 +2437,8 @@
           "visuals": true
         },
         "notes": "All six original questions and final keys inspected; independently derived solutions and checked work signs/units, Hess equation cancellation and physical states, dot-cross orthogonality and acute-angle restriction. Read every paragraph sequentially for plain meaning; separated chemistry data equations for readability. Original figures reviewed; corrected Hess label overlap. Real-app checks follow."
-      }
+      },
+      "releaseVerifiedAt": "2026-11-26T07:23:23+05:30"
     },
     {
       "slug": "why-do-reaction-enthalpies-use-products-minus-reactants",
@@ -2481,7 +2482,7 @@
       "url": "https://padho.ai/blog/why-do-reaction-enthalpies-use-products-minus-reactants/",
       "publishedAt": "2026-11-26T07:08:23+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121599",
       "targetQuestionText": "For 2H₂S(g) + 3O₂(g) → 2H₂O(l) + 2SO₂(g), the standard formation enthalpies of H₂S(g), H₂O(l) and SO₂(g) are −20.1, −286.0 and −297.0 kJ/mol. Find the magnitude of the reaction enthalpy, to the nearest integer, for the equation as written.",
       "review": {
@@ -2494,7 +2495,8 @@
           "visuals": true
         },
         "notes": "All six original questions and final keys inspected; independently derived solutions and checked work signs/units, Hess equation cancellation and physical states, dot-cross orthogonality and acute-angle restriction. Read every paragraph sequentially for plain meaning; separated chemistry data equations for readability. Original figures reviewed; corrected Hess label overlap. Real-app checks follow."
-      }
+      },
+      "releaseVerifiedAt": "2026-11-26T07:23:23+05:30"
     },
     {
       "slug": "how-does-perpendicularity-simplify-dot-and-cross-products",
@@ -2538,7 +2540,7 @@
       "url": "https://padho.ai/blog/how-does-perpendicularity-simplify-dot-and-cross-products/",
       "publishedAt": "2026-11-26T07:08:23+05:30",
       "mode": "daily",
-      "status": "staged",
+      "status": "published",
       "targetQuestionId": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782158",
       "targetQuestionText": "Let a = i + j + k and b = j − k. A vector c satisfies a × c = b and a · c = 3. Find c · (a − 2b).",
       "review": {
@@ -2551,7 +2553,8 @@
           "visuals": true
         },
         "notes": "All six original questions and final keys inspected; independently derived solutions and checked work signs/units, Hess equation cancellation and physical states, dot-cross orthogonality and acute-angle restriction. Read every paragraph sequentially for plain meaning; separated chemistry data equations for readability. Original figures reviewed; corrected Hess label overlap. Real-app checks follow."
-      }
+      },
+      "releaseVerifiedAt": "2026-11-26T07:23:23+05:30"
     }
   ]
 }

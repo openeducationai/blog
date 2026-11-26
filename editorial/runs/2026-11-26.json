@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "status": "partial",
+  "status": "published",
   "startedAt": "2026-11-26T07:01:03+05:30",
   "articleSlugs": [
     "how-does-a-change-in-speed-tell-you-the-net-work",
@@ -225,13 +225,93 @@
       "evidence": "Six complete native editable copies match all article text. Shared components already reside on permanent Shared UI; expired page contained no main components. Three completed captures supplied discrete covers and were removed."
     },
     "git": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-26T07:20:58+05:30",
+      "sourceCommit": "00f4ba7f82eb66dad4544adc9a5843316d6e1ae4",
+      "branch": "main",
+      "pushed": true
     },
     "publication": {
-      "status": "pending"
+      "status": "complete",
+      "startedAt": "2026-11-26T07:20:58+05:30",
+      "scope": "blog/* and exact blog object only",
+      "command": "node scripts/publish.mjs",
+      "sourceCommit": "00f4ba7f82eb66dad4544adc9a5843316d6e1ae4",
+      "log": "/private/tmp/padho-pcm-2026-11-26/publish.log",
+      "completedAt": "2026-11-26T07:21:51+05:30",
+      "exitCode": 0,
+      "uploadedObjects": 84,
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ],
+      "evidence": "Existing Google Cloud authentication valid after source and Figma preparation; scoped publisher completed both invalidations."
     },
     "liveVerification": {
-      "status": "pending"
+      "status": "complete",
+      "startedAt": "2026-11-26T07:21:51+05:30",
+      "completedAt": "2026-11-26T07:23:23+05:30",
+      "articles": [
+        {
+          "url": "https://padho.ai/blog/how-does-a-change-in-speed-tell-you-the-net-work/",
+          "status": 200,
+          "sha256": "000c92fed63a806334363f193de6cf26cb76e3596f4e2102bffce60756616c29",
+          "matchesBuild": true,
+          "analyticsContext": {
+            "product_surface": "blog",
+            "blog_analytics_version": 1,
+            "blog_page_type": "article",
+            "blog_category": "physics",
+            "article_slug": "how-does-a-change-in-speed-tell-you-the-net-work",
+            "article_title": "How does a change in speed tell you the net work?"
+          },
+          "analyticsBundleMatchesBuild": true
+        },
+        {
+          "url": "https://padho.ai/blog/why-do-reaction-enthalpies-use-products-minus-reactants/",
+          "status": 200,
+          "sha256": "213d44e1bd6d33196f24b47418a6fdb354e62facb158fa68f3912f30fa17ae8c",
+          "matchesBuild": true,
+          "analyticsContext": {
+            "product_surface": "blog",
+            "blog_analytics_version": 1,
+            "blog_page_type": "article",
+            "blog_category": "chemistry",
+            "article_slug": "why-do-reaction-enthalpies-use-products-minus-reactants",
+            "article_title": "Why do reaction enthalpies use products minus reactants?"
+          },
+          "analyticsBundleMatchesBuild": true
+        },
+        {
+          "url": "https://padho.ai/blog/how-does-perpendicularity-simplify-dot-and-cross-products/",
+          "status": 200,
+          "sha256": "c1e06caeca09277218ffb7c0cd4c2a5970693e28daf40da2c2731b6cb4f1d58d",
+          "matchesBuild": true,
+          "analyticsContext": {
+            "product_surface": "blog",
+            "blog_analytics_version": 1,
+            "blog_page_type": "article",
+            "blog_category": "maths",
+            "article_slug": "how-does-perpendicularity-simplify-dot-and-cross-products",
+            "article_title": "How does perpendicularity simplify dot and cross products?"
+          },
+          "analyticsBundleMatchesBuild": true
+        }
+      ],
+      "sitemapPages": 51,
+      "publishedArticles": 45,
+      "images": 45,
+      "internalLinks": 52,
+      "metadataMatchesVisibleContent": true,
+      "crawlerProbes": 180,
+      "allCrawlerProbesPassed": true,
+      "articleViewports": 6,
+      "navigationViewports": 8,
+      "browserEvidence": "/private/tmp/padho-blog-2026-11-26-browser/checks-live.json",
+      "navigationEvidence": "/private/tmp/padho-blog-2026-11-26-browser/index-checks-live.json",
+      "searchEvidence": "/private/tmp/padho-pcm-2026-11-26/search-live.json",
+      "evidence": "All three live HTML responses and shared analytics bundles match the checked build byte for byte. Six article and eight homepage/category views passed at desktop and phone widths. Representative live openings, target solution and both homepage widths visually reviewed. Public crawler probes do not establish indexing.",
+      "searchConsole": "No indexing submission performed; owner handles Search Console."
     }
   },
   "preflight": {
@@ -240,7 +320,7 @@
     "scheduleEnabled": true,
     "priorDatePublished": true
   },
-  "lastCheckpointAt": "2026-11-26T07:20:25+05:30",
+  "lastCheckpointAt": "2026-11-26T07:23:23+05:30",
   "figmaFeedback": {
     "checkedAt": "2026-11-26T07:06:27+05:30",
     "tool": "get_comments",
@@ -253,8 +333,13 @@
     }
   },
   "resume": {
-    "nextStage": "git",
+    "nextStage": null,
     "reuseExistingArticles": true,
-    "reuseFigmaPageId": "163:2"
-  }
+    "reuseFigmaPageId": "163:2",
+    "instructions": [
+      "This date is published and live-verified. Do not create or publish a second set."
+    ]
+  },
+  "sourceCommit": "00f4ba7f82eb66dad4544adc9a5843316d6e1ae4",
+  "completedAt": "2026-11-26T07:23:23+05:30"
 }
