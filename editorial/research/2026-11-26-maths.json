@@ -1,0 +1,72 @@
+{
+  "id": "cross-product-perpendicularity",
+  "category": "maths",
+  "conceptKey": "maths/vector-algebra/dot-cross-orthogonality",
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782158",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "6 April 2026 Shift 1, Q23, PDF page 8–9",
+      "answer": "3",
+      "correctOptionId": "3",
+      "independentSolution": "b=a×c is perpendicular to c, so c·b=0. c·(a−2b)=3. Direct feasible c=(5/3,2/3,2/3) gives cross=(0,1,−1) and dot3.",
+      "adaptation": "Uses bold-free coordinate-basis labels i,j,k; preserves all data.",
+      "adapted": true,
+      "verifiedAt": "2026-11-26T07:06:27+05:30",
+      "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+    },
+    {
+      "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278390",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "4 April 2026 Shift 2, Q15, PDF page 6",
+      "answer": "λ = (4/3)(A·u) − (2/3)(A·v)",
+      "correctOptionId": "6952781332",
+      "independentSolution": "Acute angle and |u×v|=√3/2 imply cosθ=1/2. A·u=λ+1/2,A·v=λ/2+1. Subtract half second from first:3λ/4. λ=4(A·u)/3−2(A·v)/3.",
+      "adaptation": "Uses u,v for the unit-vector hats and asks for the expression in the two named dot products.",
+      "adapted": true,
+      "verifiedAt": "2026-11-26T07:06:27+05:30",
+      "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+    }
+  ],
+  "closestPriorSlugs": [
+    "which-angle-gives-the-torque-on-a-current-loop"
+  ],
+  "difference": "The Physics article uses a loop normal to calculate torque. This Maths lesson uses dot-product orthogonality to eliminate terms in vector equations.",
+  "researchedAt": "2026-11-26T07:06:27+05:30",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "Current JEE Main 2027 syllabus linked from NTA homepage on26November",
+    "scope": "Mathematics Unit 12: vector components, scalar and vector products."
+  },
+  "corpus": {
+    "papersExamined": 5,
+    "coverageNotes": "Targeted original-page examination:2AprS1,4AprS2,6AprS1/S2,8AprS2. No complete shift classification, five-year analysis or rate estimate.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two unused official PYQs address a distinct misconception or prerequisite. Five official April2026 papers examined for selection; cumulative corpus remains a targeted nine-paper sample, not a frequency or marks census."
+  },
+  "sources": [
+    {
+      "title": "Primary educational explanation",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/2-4-the-cross-product"
+    },
+    {
+      "title": "NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782158",
+  "targetQuestionText": "Let a = i + j + k and b = j − k. A vector c satisfies a × c = b and a · c = 3. Find c · (a − 2b).",
+  "verificationNotes": "Original question images and exact final-key IDs inspected; independent solutions and boundary/sign checks recorded. Adaptations explicitly disclosed. No human reviewer claimed."
+}

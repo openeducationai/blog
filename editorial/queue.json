@@ -1262,6 +1262,163 @@
       "rationale": "Two verified PYQs support a focused misconception or prerequisite. Targeted April2026 corpus; no exhaustive shift, marks or frequency estimate.",
       "publishedAt": "2026-11-25T14:11:12+05:30",
       "releaseVerifiedAt": "2026-11-25T15:59:43+05:30"
+    },
+    {
+      "id": "net-work-from-speed",
+      "category": "physics",
+      "chapter": "work-energy-and-power",
+      "conceptKey": "physics/work-energy-and-power/net-work-versus-individual-work",
+      "title": "How does a change in speed tell you the net work?",
+      "slug": "how-does-a-change-in-speed-tell-you-the-net-work",
+      "question": "A 1 kg particle moves along a straight line with v = 2x², where x is in metres and v is in metres per second. Find the net work done on it as it moves from x = 0 to x = 5 m.",
+      "learningObjective": "Use the change in kinetic energy to find net work, then subtract known work contributions to isolate one force.",
+      "example": "Track the kinetic energy of one moving cart before separating a pull from resistance.",
+      "asset": "net-work-energy",
+      "kind": "netWorkEnergy",
+      "description": "Use the starting and ending speeds to find net work, and separate the work of one force from the total.",
+      "alt": "A cart gains kinetic energy from a forward pull while resistance removes some of the transferred energy.",
+      "scope": "Physics Unit 4: work by constant and variable forces, kinetic energy and the work-energy theorem.",
+      "reference": "https://openstax.org/books/university-physics-volume-1/pages/7-3-work-energy-theorem",
+      "closestPriorSlugs": [
+        "why-does-mgh-fail-far-above-earth"
+      ],
+      "difference": "The prior article compares gravitational potential at different radii. This one finds total work from speed and separates an unknown resistive contribution.",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211229",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 2, Q29, PDF page 12",
+          "answer": "1250 J",
+          "correctOptionId": "6911214180",
+          "independentSolution": "v(0)=0;v(5)=50m/s. ΔK=1*2500/2=1250J. Cross-check F=m v dv/dx=8x³; integral0..5=2*625=1250J.",
+          "adaptation": "Replaces the original ambiguous work done by the body with net work done on it, consistent with the key; makes SI units explicit.",
+          "adapted": true,
+          "verifiedAt": "2026-11-26T07:06:27+05:30",
+          "sourceSha256": "2983baca258ad15a77a4bc66968aa57239a217298a73e3f4e51caad1777368d5"
+        },
+        {
+          "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782163",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 1, Q28, PDF page 10",
+          "answer": "−9.9875 J exactly; closest listed choice −9.98 J",
+          "correctOptionId": "6952787592",
+          "independentSolution": "m=0.001kg,h=1000m; gravity work=10J;ΔK=0.0125J. Wres=−9.9875J. Keyed−9.98 is closest option, not correct rounding to0.01J (−9.99).",
+          "adaptation": "Asks for calculated work and explains the closest keyed choice without treating it as exact or correctly rounded.",
+          "adapted": true,
+          "verifiedAt": "2026-11-26T07:06:27+05:30",
+          "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+        }
+      ],
+      "briefPath": "editorial/research/2026-11-26-physics.json",
+      "status": "writing",
+      "rationale": "Two unused official PYQs address a distinct misconception or prerequisite. Five official April2026 papers examined for selection; cumulative corpus remains a targeted nine-paper sample, not a frequency or marks census."
+    },
+    {
+      "id": "hess-formation-enthalpy",
+      "category": "chemistry",
+      "chapter": "chemical-thermodynamics",
+      "conceptKey": "chemistry/chemical-thermodynamics/hess-law-formation-enthalpy",
+      "title": "Why do reaction enthalpies use products minus reactants?",
+      "slug": "why-do-reaction-enthalpies-use-products-minus-reactants",
+      "question": "For 2H₂S(g) + 3O₂(g) → 2H₂O(l) + 2SO₂(g), the standard formation enthalpies of H₂S(g), H₂O(l) and SO₂(g) are −20.1, −286.0 and −297.0 kJ/mol. Find the magnitude of the reaction enthalpy, to the nearest integer, for the equation as written.",
+      "learningObjective": "Use Hess’s law to reverse and scale enthalpy changes and derive the products-minus-reactants rule with stoichiometric coefficients and physical states.",
+      "example": "Compare a direct reaction path with a route through the same elements in their reference states.",
+      "asset": "hess-enthalpy-path",
+      "kind": "hessEnthalpy",
+      "description": "Follow an imagined route through the elements to understand the signs, coefficients and states in an enthalpy calculation.",
+      "alt": "Reactants reach products directly or by reversing their formation and then forming the products from the same elements.",
+      "scope": "Chemistry Unit 4: enthalpy, Hess’s law, formation and solution enthalpies.",
+      "reference": "https://openstax.org/books/chemistry-2e/pages/5-3-enthalpy",
+      "closestPriorSlugs": [
+        "how-do-heat-and-work-signs-fit-a-complete-cycle",
+        "how-does-rewriting-a-reaction-change-its-equilibrium-constant"
+      ],
+      "difference": "Uses reaction enthalpy and additive Hess cycles. Earlier lessons teach gas internal-energy heat/work signs and multiplicative equilibrium-constant transformations.",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121599",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "8 April 2026 Shift 2, Q74, PDF page 30–31",
+          "answer": "Magnitude 1126 kJ/mol of reaction as written; ΔrH°=−1125.8 kJ/mol",
+          "correctOptionId": "1126",
+          "independentSolution": "Products=2(−286)+2(−297)=−1166;reactants=2(−20.1)+3(0)=−40.2;difference=−1125.8. Magnitude rounds1126. Halving equation would halve reaction enthalpy.",
+          "adaptation": "Paraphrases and specifies the equation as written to remove a per-mole-of-H₂S ambiguity.",
+          "adapted": true,
+          "verifiedAt": "2026-11-26T07:06:27+05:30",
+          "sourceSha256": "079e3b7ae67b70309f22b33e37b720cba65b47c6d96760113a4302cee1122416"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112154",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift 1, Q54, PDF page 21–22",
+          "answer": "−1527 kJ/mol for Al₂Cl₆(s)",
+          "correctOptionId": "691121186",
+          "independentSolution": "HCl(aq) formation per mole=−164/2−83=−165. Then ΔfH(Al₂Cl₆ aq)=−1200+6(−165)=−2190; subtract dissolution−663: solid=−1527. Direct Hess sum−1200+3(−164)+6(−83)+663=−1527.",
+          "adaptation": "Writes heat released as negative ΔH; retains original formal Al₂Cl₆ notation and all states without asserting the aqueous molecular species.",
+          "adapted": true,
+          "verifiedAt": "2026-11-26T07:06:27+05:30",
+          "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+        }
+      ],
+      "briefPath": "editorial/research/2026-11-26-chemistry.json",
+      "status": "writing",
+      "rationale": "Two unused official PYQs address a distinct misconception or prerequisite. Five official April2026 papers examined for selection; cumulative corpus remains a targeted nine-paper sample, not a frequency or marks census."
+    },
+    {
+      "id": "cross-product-perpendicularity",
+      "category": "maths",
+      "chapter": "vector-algebra",
+      "conceptKey": "maths/vector-algebra/dot-cross-orthogonality",
+      "title": "How does perpendicularity simplify dot and cross products?",
+      "slug": "how-does-perpendicularity-simplify-dot-and-cross-products",
+      "question": "Let a = i + j + k and b = j − k. A vector c satisfies a × c = b and a · c = 3. Find c · (a − 2b).",
+      "learningObjective": "Use the perpendicular direction of a cross product to eliminate dot-product terms before solving vector components.",
+      "example": "Place two arrows on a flat sheet and follow the cross-product arrow perpendicular to that sheet.",
+      "asset": "cross-product-normal",
+      "kind": "crossNormal",
+      "description": "Recognise the dot products that vanish because a cross product is perpendicular to its two input vectors.",
+      "alt": "Vectors u and v lie in a plane; their cross product n is perpendicular to that plane and has zero dot product with either vector.",
+      "scope": "Mathematics Unit 12: vector components, scalar and vector products.",
+      "reference": "https://openstax.org/books/calculus-volume-3/pages/2-4-the-cross-product",
+      "closestPriorSlugs": [
+        "which-angle-gives-the-torque-on-a-current-loop"
+      ],
+      "difference": "The Physics article uses a loop normal to calculate torque. This Maths lesson uses dot-product orthogonality to eliminate terms in vector equations.",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782158",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 1, Q23, PDF page 8–9",
+          "answer": "3",
+          "correctOptionId": "3",
+          "independentSolution": "b=a×c is perpendicular to c, so c·b=0. c·(a−2b)=3. Direct feasible c=(5/3,2/3,2/3) gives cross=(0,1,−1) and dot3.",
+          "adaptation": "Uses bold-free coordinate-basis labels i,j,k; preserves all data.",
+          "adapted": true,
+          "verifiedAt": "2026-11-26T07:06:27+05:30",
+          "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+        },
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278390",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift 2, Q15, PDF page 6",
+          "answer": "λ = (4/3)(A·u) − (2/3)(A·v)",
+          "correctOptionId": "6952781332",
+          "independentSolution": "Acute angle and |u×v|=√3/2 imply cosθ=1/2. A·u=λ+1/2,A·v=λ/2+1. Subtract half second from first:3λ/4. λ=4(A·u)/3−2(A·v)/3.",
+          "adaptation": "Uses u,v for the unit-vector hats and asks for the expression in the two named dot products.",
+          "adapted": true,
+          "verifiedAt": "2026-11-26T07:06:27+05:30",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        }
+      ],
+      "briefPath": "editorial/research/2026-11-26-maths.json",
+      "status": "writing",
+      "rationale": "Two unused official PYQs address a distinct misconception or prerequisite. Five official April2026 papers examined for selection; cumulative corpus remains a targeted nine-paper sample, not a frequency or marks census."
     }
   ]
 }

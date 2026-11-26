@@ -1,0 +1,82 @@
+---
+title: "Why do reaction enthalpies use products minus reactants?"
+description: "Follow an imagined route through the elements to understand the signs, coefficients and states in an enthalpy calculation."
+category: "chemistry"
+author: "padho"
+pubDate: "2026-11-26T07:08:23+05:30"
+heroImage: "../../assets/articles/hess-enthalpy-path.png"
+heroImageAlt: "Reactants reach products directly or by reversing their formation and then forming the products from the same elements."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**For 2H₂S(g) + 3O₂(g) → 2H₂O(l) + 2SO₂(g), the standard formation enthalpies of H₂S(g), H₂O(l) and SO₂(g) are −20.1, −286.0 and −297.0 kJ/mol. Find the magnitude of the reaction enthalpy, to the nearest integer, for the equation as written.**
+
+Adapted from [JEE Main, 8 April 2026 Shift 2 Q74](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf#page=30), question ID 691121599. “For the equation as written” means that the calculation uses two moles of H₂S. You need balanced equations, signed numbers and multiplication.
+
+## Compare the same start and finish
+
+A reaction changes one set of substances into another. Its enthalpy change, ΔH, compares the final state with the initial state. At constant pressure, with only pressure-volume work, ΔH is the heat absorbed by the reacting system. A negative value means the system releases heat.
+
+[Hess’s law](https://openstax.org/books/chemistry-2e/pages/5-3-enthalpy) says that the total enthalpy change depends on the starting and ending states. We can calculate it by adding changes along an imagined route between those same states. The imagined steps do not have to be the reaction’s actual mechanism.
+
+Suppose A changes to B with ΔH = −20 kJ, and B changes to C with ΔH = −30 kJ, for specified amounts and states. Adding the steps cancels B and gives A → C with ΔH = −50 kJ. Going back from C to A would require +50 kJ.
+
+## Use the elements as a common starting point
+
+The standard formation enthalpy of a compound, written ΔfH°, is the enthalpy change when one mole of that compound forms from its elements in their reference states, under standard conditions at the stated temperature.
+
+The word “formation” fixes the direction: elements → compound. For an element already in its reference state, the standard formation enthalpy is zero by convention. Thus O₂(g) contributes zero in our opening question. That does not mean oxygen contains no energy.
+
+To turn reactants into products, imagine two steps. First, undo the formation of the reactants to return to the elements. Then form the products from those elements. Because the equation is balanced, both sides use the same amounts of each element.
+
+<ArticleDiagram kind="hessEnthalpy">The two routes have the same start and finish. Returning reactants to the elements reverses their formation, so its sign changes. Forming the products keeps their formation signs. The arrows describe an imagined calculation route.</ArticleDiagram>
+
+The first step contributes the negative of the reactants’ formation total. The second contributes the products’ formation total. Adding the steps explains the rule: ΔrH° = total formation enthalpy of products − total formation enthalpy of reactants. The subscript r means reaction.
+
+## Count the amounts before subtracting
+
+A formation value is given per mole of a substance. If the equation contains two moles of that substance, multiply its value by two. This is why every term in the products-minus-reactants calculation carries its balanced-equation coefficient.
+
+For our target, write the product total as 2ΔfH°[H₂O(l)] + 2ΔfH°[SO₂(g)]. Write the reactant total as 2ΔfH°[H₂S(g)] + 3ΔfH°[O₂(g)]. Only after writing these totals should you substitute the numbers.
+
+<KeyIdea id="hess-states">Keep the coefficient, physical state and sign together. Reverse a reaction and reverse ΔH. Multiply the whole equation by a number and multiply ΔH by that number.</KeyIdea>
+
+Liquid water and water vapour have different formation enthalpies. Do not replace H₂O(l) by H₂O(g) while keeping the same value. Similarly, halving a chemical equation halves its reaction enthalpy. A value for the equation as written is not automatically a value per mole of any chosen reactant.
+
+## Combine other measured steps in the same way
+
+Sometimes a question supplies reaction enthalpies instead of formation values. The method is unchanged: reverse and multiply the supplied equations until their sum gives the wanted equation. Cancel a substance only when the same amount and physical state appears on both sides.
+
+If a source writes heat on the product side, the forward reaction releases that heat. Its ΔH is negative. Reversing that step makes ΔH positive. This sign rule will matter in the aluminium-chloride exercise below.
+
+These operations resemble [rewriting equilibrium reactions](/blog/how-does-rewriting-a-reaction-change-its-equilibrium-constant/), but the quantities follow different rules. Enthalpy changes add when reactions add. Equilibrium constants multiply.
+
+## Try the past questions
+
+**1. Find the formation enthalpy of solid Al₂Cl₆ using the following four equations and their ΔH values.**
+
+Adapted from [JEE Main, 2 April 2026 Shift 1 Q54](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf#page=21), question ID 69112154. Each value below applies to one occurrence of its written equation. We retain the paper’s formal Al₂Cl₆ notation and write its released heat as negative ΔH.
+
+(i) 2Al(s) + 6HCl(aq) → Al₂Cl₆(aq) + 3H₂(g), ΔH = −1200 kJ.
+
+(ii) H₂(g) + Cl₂(g) → 2HCl(g), ΔH = −164 kJ.
+
+(iii) HCl(g) → HCl(aq), ΔH = −83 kJ.
+
+(iv) Al₂Cl₆(s) → Al₂Cl₆(aq), ΔH = −663 kJ.
+
+<details class="reading-check"><summary>Show hint</summary><p>Keep the first equation. Multiply the second by three and the third by six. Reverse the last equation so that solid Al₂Cl₆ is the final product.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The scaled second and third steps make 6HCl(aq) from 3H₂(g) and 3Cl₂(g). Adding the first step cancels the HCl and H₂. Reversing the last step converts the aqueous product to solid. The net equation is 2Al(s) + 3Cl₂(g) → Al₂Cl₆(s).</p><p>Its enthalpy change is −1200 + 3(−164) + 6(−83) + 663 = <strong>−1527 kJ/mol</strong> of Al₂Cl₆(s). The +663 term is positive because dissolution was reversed.</p></details>
+
+**2. Return to the opening question: find the magnitude of ΔrH° for 2H₂S(g) + 3O₂(g) → 2H₂O(l) + 2SO₂(g), using formation values −20.1, −286.0 and −297.0 kJ/mol for H₂S, H₂O and SO₂.**
+
+<details class="reading-check"><summary>Show hint</summary><p>Multiply each formation value by its coefficient. Subtract the whole reactant total, including its negative sign. Take the magnitude only at the end.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The products contribute 2(−286.0) + 2(−297.0) = −1166.0. The reactants contribute 2(−20.1) + 3(0) = −40.2. Hence ΔrH° = −1166.0 − (−40.2) = <strong>−1125.8 kJ/mol</strong> of reaction as written.</p><p>The negative sign means heat is released. Its magnitude is 1125.8, so the requested nearest integer is <strong>1126</strong>. If the equation were divided by two, its enthalpy change would also be divided by two.</p></details>
+
+These results agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 69112154 and 691121599.

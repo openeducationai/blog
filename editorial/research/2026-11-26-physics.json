@@ -1,0 +1,72 @@
+{
+  "id": "net-work-from-speed",
+  "category": "physics",
+  "conceptKey": "physics/work-energy-and-power/net-work-versus-individual-work",
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211229",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "6 April 2026 Shift 2, Q29, PDF page 12",
+      "answer": "1250 J",
+      "correctOptionId": "6911214180",
+      "independentSolution": "v(0)=0;v(5)=50m/s. ΔK=1*2500/2=1250J. Cross-check F=m v dv/dx=8x³; integral0..5=2*625=1250J.",
+      "adaptation": "Replaces the original ambiguous work done by the body with net work done on it, consistent with the key; makes SI units explicit.",
+      "adapted": true,
+      "verifiedAt": "2026-11-26T07:06:27+05:30",
+      "sourceSha256": "2983baca258ad15a77a4bc66968aa57239a217298a73e3f4e51caad1777368d5"
+    },
+    {
+      "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782163",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "6 April 2026 Shift 1, Q28, PDF page 10",
+      "answer": "−9.9875 J exactly; closest listed choice −9.98 J",
+      "correctOptionId": "6952787592",
+      "independentSolution": "m=0.001kg,h=1000m; gravity work=10J;ΔK=0.0125J. Wres=−9.9875J. Keyed−9.98 is closest option, not correct rounding to0.01J (−9.99).",
+      "adaptation": "Asks for calculated work and explains the closest keyed choice without treating it as exact or correctly rounded.",
+      "adapted": true,
+      "verifiedAt": "2026-11-26T07:06:27+05:30",
+      "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+    }
+  ],
+  "closestPriorSlugs": [
+    "why-does-mgh-fail-far-above-earth"
+  ],
+  "difference": "The prior article compares gravitational potential at different radii. This one finds total work from speed and separates an unknown resistive contribution.",
+  "researchedAt": "2026-11-26T07:06:27+05:30",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "Current JEE Main 2027 syllabus linked from NTA homepage on26November",
+    "scope": "Physics Unit 4: work by constant and variable forces, kinetic energy and the work-energy theorem."
+  },
+  "corpus": {
+    "papersExamined": 5,
+    "coverageNotes": "Targeted original-page examination:2AprS1,4AprS2,6AprS1/S2,8AprS2. No complete shift classification, five-year analysis or rate estimate.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two unused official PYQs address a distinct misconception or prerequisite. Five official April2026 papers examined for selection; cumulative corpus remains a targeted nine-paper sample, not a frequency or marks census."
+  },
+  "sources": [
+    {
+      "title": "Primary educational explanation",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/7-3-work-energy-theorem"
+    },
+    {
+      "title": "NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211229",
+  "targetQuestionText": "A 1 kg particle moves along a straight line with v = 2x², where x is in metres and v is in metres per second. Find the net work done on it as it moves from x = 0 to x = 5 m.",
+  "verificationNotes": "Original question images and exact final-key IDs inspected; independent solutions and boundary/sign checks recorded. Adaptations explicitly disclosed. No human reviewer claimed."
+}

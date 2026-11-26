@@ -1,0 +1,74 @@
+---
+title: "How does perpendicularity simplify dot and cross products?"
+description: "Recognise the dot products that vanish because a cross product is perpendicular to its two input vectors."
+category: "maths"
+author: "padho"
+pubDate: "2026-11-26T07:08:23+05:30"
+heroImage: "../../assets/articles/cross-product-normal.png"
+heroImageAlt: "Vectors u and v lie in a plane; their cross product n is perpendicular to that plane and has zero dot product with either vector."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**Let a = i + j + k and b = j − k. A vector c satisfies a × c = b and a · c = 3. Find c · (a − 2b).**
+
+Adapted from [JEE Main, 6 April 2026 Shift 1 Q23](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf#page=8), question ID 6952782158. Here i, j and k are unit vectors along the three coordinate axes. The letters a, b and c denote vectors. You need vector addition and simple algebra; we will explain both products.
+
+## A dot product measures alignment
+
+Imagine two arrows u and v drawn from the same point on a flat sheet. Their lengths are |u| and |v|. If the angle between them is θ, their dot product is u · v = |u||v| cos θ. The result is a number, not another arrow.
+
+If the arrows are perpendicular, θ = 90° and cos θ = 0. Their dot product is therefore zero. For nonzero vectors, a zero dot product also tells us that they are perpendicular. The zero vector has zero dot product with every vector, although it has no direction.
+
+In coordinates, the same dot product is uₓvₓ + uᵧvᵧ + u_zv_z. For instance, (1, 0, 0) · (0, 1, 0) = 0. The two coordinate-axis arrows meet at a right angle, so the geometry and calculation agree.
+
+## A cross product points out of the plane
+
+The cross product u × v is a vector. When u and v are not parallel, their [cross product is perpendicular to both](https://openstax.org/books/calculus-volume-3/pages/2-4-the-cross-product). In our sheet picture, it points straight out of the sheet or straight into it. The order of the two input vectors chooses the direction by the right-hand rule.
+
+Call this cross product n. Since n is perpendicular to each input, n · u = 0 and n · v = 0. This is the useful connection: a cross product creates a perpendicular vector, and a dot product with either input then vanishes.
+
+<ArticleDiagram kind="crossNormal">The blue arrows u and v lie in the shaded plane. The orange arrow n = u × v is normal, or perpendicular, to that plane. Thus n · u and n · v are both zero. This is a schematic perspective drawing.</ArticleDiagram>
+
+If the two input vectors are parallel, their cross product is the zero vector. The two dot products are still zero. We should not assign a direction to that zero result.
+
+<KeyIdea id="cross-dot-zero">A cross product has zero dot product with either of the vectors that formed it: (u × v) · u = 0 and (u × v) · v = 0.</KeyIdea>
+
+The magnitude gives another piece of information: |u × v| = |u||v| sin θ. For unit vectors, both lengths are one, so this reduces to sin θ. If an angle is stated to be acute, a known sine determines its positive cosine. Without the acute-angle condition, the cosine could have either sign.
+
+## Expand only what the question asks for
+
+Dot products distribute over addition and subtraction. For example, c · (a − 2b) = c · a − 2(c · b). This follows directly by multiplying corresponding components. Also, c · a = a · c: swapping the inputs leaves a dot product unchanged.
+
+The opening question already gives a · c. It also describes b as a cross product. Before solving three unknown components of c, check whether those two facts determine the dot products in the expanded expression.
+
+Keep the two multiplication symbols distinct. A dot product returns a number and can be swapped. A cross product returns a vector and changes sign when its inputs are swapped: u × v = −v × u.
+
+## Remove a perpendicular term before solving
+
+Suppose a vector A is built as A = λu + v + (u × v), where λ is an unknown number. Taking its dot product with u removes the cross-product term. We get A · u = λ(u · u) + v · u.
+
+Taking its dot product with v removes that term again: A · v = λ(u · v) + v · v. If u and v are unit vectors, u · u = v · v = 1. We have turned the vector expression into two ordinary equations.
+
+Notice that u · v need not be zero. Unit vectors have length one; they are not necessarily perpendicular. The supplied angle information decides their dot product in the first exercise.
+
+## Try the past questions
+
+**1. Unit vectors u and v make an acute angle and satisfy |u × v| = √3/2. If A = λu + v + (u × v), express λ in terms of A · u and A · v.**
+
+Adapted from [JEE Main, 4 April 2026 Shift 2 Q15](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf#page=6), question ID 695278390. We replace the unit-vector hats by the labels u and v and retain the acute-angle condition.
+
+<details class="reading-check"><summary>Show hint</summary><p>First find u · v from the angle. Then dot the equation for A with u and with v. In each equation, the cross-product term vanishes.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Since the vectors are unit vectors, sin θ = √3/2. The angle is acute, so cos θ = 1/2 and u · v = 1/2. Hence A · u = λ + 1/2 and A · v = λ/2 + 1.</p><p>Subtract half the second equation from the first: A · u − ½(A · v) = ¾λ. Therefore <strong>λ = (4/3)(A · u) − (2/3)(A · v)</strong>. Substitution into the two expressions cancels the constant terms, leaving λ.</p></details>
+
+**2. Return to the opening question: a = i + j + k, b = j − k, a × c = b and a · c = 3. Find c · (a − 2b).**
+
+<details class="reading-check"><summary>Show hint</summary><p>Since b = a × c, what is the angle between b and c? Expand the requested dot product before finding any components.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The vector b = a × c is perpendicular to c, so c · b = 0. Also c · a = a · c = 3. Therefore c · (a − 2b) = 3 − 2(0) = <strong>3</strong>.</p><p>The supplied coordinates are consistent with this reasoning: c = (5/3, 2/3, 2/3) gives a × c = (0, 1, −1) = b and a · c = 3. Finding c was optional; recognising perpendicularity already determined the answer.</p></details>
+
+The answers agree with the [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf), question IDs 695278390 and 6952782158.

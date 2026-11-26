@@ -1,0 +1,74 @@
+---
+title: "How does a change in speed tell you the net work?"
+description: "Use the starting and ending speeds to find net work, and separate the work of one force from the total."
+category: "physics"
+author: "padho"
+pubDate: "2026-11-26T07:08:23+05:30"
+heroImage: "../../assets/articles/net-work-energy.png"
+heroImageAlt: "A cart gains kinetic energy from a forward pull while resistance removes some of the transferred energy."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**A 1 kg particle moves along a straight line with v = 2x², where x is in metres and v is in metres per second. Find the net work done on it as it moves from x = 0 to x = 5 m.**
+
+Adapted from [JEE Main, 6 April 2026 Shift 2 Q29](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf#page=12), question ID 6911211229. The paper says “work done by the body”; we ask for the net work done **on** it, which is the quantity determined by its motion and matches the keyed answer. You need substitution and squares.
+
+## Start with the energy of motion
+
+Imagine a cart moving along a straight track. A force can make the cart faster, but we may not know that force at every point. We can still compare the cart’s energy of motion at the start and finish.
+
+This energy is called kinetic energy. For a particle of mass m moving at speed v, it is K = ½mv². Use kilograms and metres per second to get energy in joules. We treat the cart as a particle here, so there is no separate energy of rotating wheels to include.
+
+For example, a 2 kg cart moving at 2 m/s has 4 J of kinetic energy. If it later moves at 4 m/s, its kinetic energy is 16 J. The cart has gained 12 J. Doubling its speed has made its kinetic energy four times as large.
+
+## Net work means all the work added together
+
+A force does work when it acts through a displacement. A forward pull on our forward-moving cart does positive work. Resistance acting backwards does negative work. A force perpendicular to the motion, such as the upward support on a level track, does no work on this particle.
+
+The [work-energy theorem](https://openstax.org/books/university-physics-volume-1/pages/7-3-work-energy-theorem) connects these contributions: the net work on the particle equals its change in kinetic energy. In symbols, W_net = K_final − K_initial = ½m(v_final² − v_initial²).
+
+“Net” is the crucial word. If the pull does 18 J of work and resistance does −6 J, the total is 12 J. The cart’s 12 J gain does not tell us that each force did 12 J of work.
+
+<ArticleDiagram kind="netWorkEnergy">The cart starts with 4 J of kinetic energy. A pull supplies 18 J and resistance contributes −6 J. The net work is 12 J, so the final kinetic energy is 16 J. The arrows show the force directions; their labels give the work done by each force.</ArticleDiagram>
+
+<KeyIdea id="net-work-total">The change in kinetic energy gives the sum of the work done by all forces on the particle. To find the work of just one force, subtract the contributions of the others.</KeyIdea>
+
+The signs provide a quick check. Positive net work means the particle speeds up. Negative net work means it slows down. If the starting and ending speeds are equal, the net work is zero, even if individual forces have done nonzero work.
+
+## Read speed from position before calculating work
+
+The opening question gives v as a function of position x. That means we put a position into the formula to find the velocity there. We do not put the travel time into x, and we do not treat x as the speed.
+
+Find the two endpoint speeds first. Then calculate their kinetic energies and subtract. The force may vary between the endpoints; the work-energy theorem still gives its total effect. We do not need to assume constant acceleration.
+
+For a different example, suppose v = x + 1 in SI units. At x = 1 m the speed is 2 m/s, and at x = 3 m it is 4 m/s. Those are the speeds used in K = ½mv². The two positions themselves do not go into the kinetic-energy formula.
+
+## Separate resistance from gravity
+
+Now apply the same bookkeeping to a falling drop. Gravity does positive work because gravity and the drop’s displacement both point down. For a fall through height h with constant g, gravity does mgh of work.
+
+Air resistance does negative work. If gravity and resistance are the only forces doing work, then W_gravity + W_resistance = ΔK. Therefore W_resistance = ΔK − mgh. This is useful even when air resistance changes throughout the fall.
+
+If the drop gains less kinetic energy than mgh, the missing mechanical energy has been transferred to the air and the drop’s surroundings. Energy has not disappeared. The earlier lesson on [gravity over large distances](/blog/why-does-mgh-fail-far-above-earth/) explains when the constant-g expression mgh needs replacing.
+
+## Try the past questions
+
+**1. A drop of mass 1 g falls from rest through 1 km and reaches a speed of 5 m/s. Take g = 10 m/s². Calculate the work done by the resistive force.**
+
+Adapted from [JEE Main, 6 April 2026 Shift 1 Q28](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf#page=10), question ID 6952782163. Treat the drop as a constant-mass particle and use the stated constant g.
+
+<details class="reading-check"><summary>Show hint</summary><p>Convert grams to kilograms and kilometres to metres. Calculate ΔK, then subtract gravity’s work.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Here m = 0.001 kg and h = 1000 m. Gravity does 0.001 × 10 × 1000 = 10 J. The kinetic-energy gain is ½ × 0.001 × 5² = 0.0125 J. Thus W_resistance = 0.0125 − 10 = <strong>−9.9875 J</strong>.</p><p>The negative sign agrees with resistance opposing the fall. The official key selects −9.98 J, the closest listed option. It is not the exact result; rounding our calculation to two decimal places would give −9.99 J.</p></details>
+
+**2. Return to the opening question: a 1 kg particle has v = 2x² in SI units. Find the net work on it from x = 0 to x = 5 m.**
+
+<details class="reading-check"><summary>Show hint</summary><p>Use the formula for v at each endpoint. Square those speeds in the kinetic-energy calculation.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>At x = 0, v = 0. At x = 5 m, v = 2 × 5² = 50 m/s. The net work is ½ × 1 × (50² − 0²) = <strong>1250 J</strong>.</p><p>This is the work of all forces combined. The speed increased, so the positive answer has the expected sign. The motion alone does not tell us how much work each individual force did.</p></details>
+
+The [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf) selects 1250 J for question ID 6911211229 and −9.98 J for question ID 6952782163, with the numerical distinction explained above.

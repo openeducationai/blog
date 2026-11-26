@@ -3,54 +3,6 @@
   "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
   "pages": [
     {
-      "date": "2026-11-19",
-      "name": "2026-11-19",
-      "pageId": "105:302",
-      "generated": true,
-      "verified": true,
-      "articles": [
-        {
-          "slug": "why-does-mgh-fail-far-above-earth",
-          "desktopFrameId": "107:632",
-          "phoneFrameId": "107:900"
-        },
-        {
-          "slug": "how-does-concentration-change-a-cells-voltage",
-          "desktopFrameId": "107:1164",
-          "phoneFrameId": "107:1431"
-        },
-        {
-          "slug": "how-do-you-find-an-arithmetic-progression-from-its-sum",
-          "desktopFrameId": "107:1694",
-          "phoneFrameId": "107:1977"
-        }
-      ],
-      "verifiedAt": "2026-11-19T10:29:45+05:30",
-      "verification": {
-        "frames": 6,
-        "widths": [
-          1440,
-          390
-        ],
-        "matchedTextBlocksPerArticle": [
-          35,
-          37,
-          37
-        ],
-        "missingTextBlocks": 0,
-        "overlappingBodyBlocks": 0,
-        "disclosuresPerFrame": 4,
-        "nativeDiagrams": true,
-        "sharedHeaderFooter": true,
-        "screenshotsReviewed": 6,
-        "completeCopyMatch": true,
-        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
-        "coverFit": "FIT; discrete cover assets only",
-        "comments": "Supported get_comments returned no comments; archived in dated run before retention."
-      },
-      "sourceCommit": "e51aacf30f9236d0fe71370b1b9b518f542f2985"
-    },
-    {
       "pageId": "110:722",
       "name": "2026-11-20",
       "date": "2026-11-20",
@@ -315,6 +267,58 @@
         "comments": "Supported get_comments returned no comments; archived in this run."
       },
       "sourceCommit": "360879b3a5e6f95fbb6f575c44e7879c91de8d0f"
+    },
+    {
+      "pageId": "163:2",
+      "name": "2026-11-26",
+      "date": "2026-11-26",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "how-does-a-change-in-speed-tell-you-the-net-work",
+          "desktopFrameId": "165:422",
+          "phoneFrameId": "165:674"
+        },
+        {
+          "slug": "why-do-reaction-enthalpies-use-products-minus-reactants",
+          "desktopFrameId": "165:922",
+          "phoneFrameId": "165:1184"
+        },
+        {
+          "slug": "how-does-perpendicularity-simplify-dot-and-cross-products",
+          "desktopFrameId": "165:1442",
+          "phoneFrameId": "165:1691"
+        }
+      ],
+      "verifiedAt": "2026-11-26T07:20:25+05:30",
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          37,
+          41,
+          37
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "coverFit": "FIT; discrete cover assets only",
+        "captureReferencesRemoved": true,
+        "comments": "Supported get_comments returned no comments; archived before retention."
+      }
     }
   ],
   "removedPages": [
@@ -722,6 +726,60 @@
       "removedOn": "2026-11-24",
       "reason": "Registered generated page precedes inclusive seven-day cutoff 2026-11-18.",
       "feedbackArchive": "editorial/runs/2026-11-24.json#figmaFeedback",
+      "preservedComponentIds": [],
+      "verifiedAbsent": true
+    },
+    {
+      "date": "2026-11-19",
+      "name": "2026-11-19",
+      "pageId": "105:302",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "why-does-mgh-fail-far-above-earth",
+          "desktopFrameId": "107:632",
+          "phoneFrameId": "107:900"
+        },
+        {
+          "slug": "how-does-concentration-change-a-cells-voltage",
+          "desktopFrameId": "107:1164",
+          "phoneFrameId": "107:1431"
+        },
+        {
+          "slug": "how-do-you-find-an-arithmetic-progression-from-its-sum",
+          "desktopFrameId": "107:1694",
+          "phoneFrameId": "107:1977"
+        }
+      ],
+      "verifiedAt": "2026-11-19T10:29:45+05:30",
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          35,
+          37,
+          37
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "coverFit": "FIT; discrete cover assets only",
+        "comments": "Supported get_comments returned no comments; archived in dated run before retention."
+      },
+      "sourceCommit": "e51aacf30f9236d0fe71370b1b9b518f542f2985",
+      "removedAt": "2026-11-26T07:20:25+05:30",
+      "removedOn": "2026-11-26",
+      "reason": "Registered generated page precedes inclusive seven-day cutoff 2026-11-20.",
+      "feedbackArchive": "editorial/runs/2026-11-26.json#figmaFeedback",
       "preservedComponentIds": [],
       "verifiedAbsent": true
     }

@@ -2381,6 +2381,177 @@
         "notes": "All six solutions independently derived: flow-unit/sign and outlet-count checks; correct starting ionic states; Pascal selection cases and exact integer identity for every allowed r. Full prose read sequentially and checked for plain meaning. Original diagrams visually inspected. Real-app viewport checks follow."
       },
       "releaseVerifiedAt": "2026-11-25T15:59:43+05:30"
+    },
+    {
+      "slug": "how-does-a-change-in-speed-tell-you-the-net-work",
+      "title": "How does a change in speed tell you the net work?",
+      "category": "physics",
+      "chapter": "work-energy-and-power",
+      "conceptKey": "physics/work-energy-and-power/net-work-versus-individual-work",
+      "learningObjective": "Use the change in kinetic energy to find net work, then subtract known work contributions to isolate one force.",
+      "example": "Track the kinetic energy of one moving cart before separating a pull from resistance.",
+      "briefPath": "editorial/research/2026-11-26-physics.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211229",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 2, Q29, PDF page 12",
+          "answer": "1250 J",
+          "correctOptionId": "6911214180",
+          "independentSolution": "v(0)=0;v(5)=50m/s. ΔK=1*2500/2=1250J. Cross-check F=m v dv/dx=8x³; integral0..5=2*625=1250J.",
+          "adaptation": "Replaces the original ambiguous work done by the body with net work done on it, consistent with the key; makes SI units explicit.",
+          "adapted": true,
+          "verifiedAt": "2026-11-26T07:06:27+05:30",
+          "sourceSha256": "2983baca258ad15a77a4bc66968aa57239a217298a73e3f4e51caad1777368d5"
+        },
+        {
+          "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782163",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 1, Q28, PDF page 10",
+          "answer": "−9.9875 J exactly; closest listed choice −9.98 J",
+          "correctOptionId": "6952787592",
+          "independentSolution": "m=0.001kg,h=1000m; gravity work=10J;ΔK=0.0125J. Wres=−9.9875J. Keyed−9.98 is closest option, not correct rounding to0.01J (−9.99).",
+          "adaptation": "Asks for calculated work and explains the closest keyed choice without treating it as exact or correctly rounded.",
+          "adapted": true,
+          "verifiedAt": "2026-11-26T07:06:27+05:30",
+          "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+        }
+      ],
+      "sourcePath": "src/content/blog/how-does-a-change-in-speed-tell-you-the-net-work.mdx",
+      "sourceSha256": "bae3f43740aeca9a6908559105386b110fd9a545e197bccf579983e192ec0de4",
+      "url": "https://padho.ai/blog/how-does-a-change-in-speed-tell-you-the-net-work/",
+      "publishedAt": "2026-11-26T07:08:23+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211229",
+      "targetQuestionText": "A 1 kg particle moves along a straight line with v = 2x², where x is in metres and v is in metres per second. Find the net work done on it as it moves from x = 0 to x = 5 m.",
+      "review": {
+        "sourceSha256": "bae3f43740aeca9a6908559105386b110fd9a545e197bccf579983e192ec0de4",
+        "reviewedAt": "2026-11-26T07:09:44+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "All six original questions and final keys inspected; independently derived solutions and checked work signs/units, Hess equation cancellation and physical states, dot-cross orthogonality and acute-angle restriction. Read every paragraph sequentially for plain meaning; separated chemistry data equations for readability. Original figures reviewed; corrected Hess label overlap. Real-app checks follow."
+      }
+    },
+    {
+      "slug": "why-do-reaction-enthalpies-use-products-minus-reactants",
+      "title": "Why do reaction enthalpies use products minus reactants?",
+      "category": "chemistry",
+      "chapter": "chemical-thermodynamics",
+      "conceptKey": "chemistry/chemical-thermodynamics/hess-law-formation-enthalpy",
+      "learningObjective": "Use Hess’s law to reverse and scale enthalpy changes and derive the products-minus-reactants rule with stoichiometric coefficients and physical states.",
+      "example": "Compare a direct reaction path with a route through the same elements in their reference states.",
+      "briefPath": "editorial/research/2026-11-26-chemistry.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121599",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "8 April 2026 Shift 2, Q74, PDF page 30–31",
+          "answer": "Magnitude 1126 kJ/mol of reaction as written; ΔrH°=−1125.8 kJ/mol",
+          "correctOptionId": "1126",
+          "independentSolution": "Products=2(−286)+2(−297)=−1166;reactants=2(−20.1)+3(0)=−40.2;difference=−1125.8. Magnitude rounds1126. Halving equation would halve reaction enthalpy.",
+          "adaptation": "Paraphrases and specifies the equation as written to remove a per-mole-of-H₂S ambiguity.",
+          "adapted": true,
+          "verifiedAt": "2026-11-26T07:06:27+05:30",
+          "sourceSha256": "079e3b7ae67b70309f22b33e37b720cba65b47c6d96760113a4302cee1122416"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112154",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift 1, Q54, PDF page 21–22",
+          "answer": "−1527 kJ/mol for Al₂Cl₆(s)",
+          "correctOptionId": "691121186",
+          "independentSolution": "HCl(aq) formation per mole=−164/2−83=−165. Then ΔfH(Al₂Cl₆ aq)=−1200+6(−165)=−2190; subtract dissolution−663: solid=−1527. Direct Hess sum−1200+3(−164)+6(−83)+663=−1527.",
+          "adaptation": "Writes heat released as negative ΔH; retains original formal Al₂Cl₆ notation and all states without asserting the aqueous molecular species.",
+          "adapted": true,
+          "verifiedAt": "2026-11-26T07:06:27+05:30",
+          "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+        }
+      ],
+      "sourcePath": "src/content/blog/why-do-reaction-enthalpies-use-products-minus-reactants.mdx",
+      "sourceSha256": "b58df0f052cac0b43f1258e6dafa0389f68c02464d6fdd6515f9917252c44fdf",
+      "url": "https://padho.ai/blog/why-do-reaction-enthalpies-use-products-minus-reactants/",
+      "publishedAt": "2026-11-26T07:08:23+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121599",
+      "targetQuestionText": "For 2H₂S(g) + 3O₂(g) → 2H₂O(l) + 2SO₂(g), the standard formation enthalpies of H₂S(g), H₂O(l) and SO₂(g) are −20.1, −286.0 and −297.0 kJ/mol. Find the magnitude of the reaction enthalpy, to the nearest integer, for the equation as written.",
+      "review": {
+        "sourceSha256": "b58df0f052cac0b43f1258e6dafa0389f68c02464d6fdd6515f9917252c44fdf",
+        "reviewedAt": "2026-11-26T07:09:44+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "All six original questions and final keys inspected; independently derived solutions and checked work signs/units, Hess equation cancellation and physical states, dot-cross orthogonality and acute-angle restriction. Read every paragraph sequentially for plain meaning; separated chemistry data equations for readability. Original figures reviewed; corrected Hess label overlap. Real-app checks follow."
+      }
+    },
+    {
+      "slug": "how-does-perpendicularity-simplify-dot-and-cross-products",
+      "title": "How does perpendicularity simplify dot and cross products?",
+      "category": "maths",
+      "chapter": "vector-algebra",
+      "conceptKey": "maths/vector-algebra/dot-cross-orthogonality",
+      "learningObjective": "Use the perpendicular direction of a cross product to eliminate dot-product terms before solving vector components.",
+      "example": "Place two arrows on a flat sheet and follow the cross-product arrow perpendicular to that sheet.",
+      "briefPath": "editorial/research/2026-11-26-maths.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782158",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 1, Q23, PDF page 8–9",
+          "answer": "3",
+          "correctOptionId": "3",
+          "independentSolution": "b=a×c is perpendicular to c, so c·b=0. c·(a−2b)=3. Direct feasible c=(5/3,2/3,2/3) gives cross=(0,1,−1) and dot3.",
+          "adaptation": "Uses bold-free coordinate-basis labels i,j,k; preserves all data.",
+          "adapted": true,
+          "verifiedAt": "2026-11-26T07:06:27+05:30",
+          "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+        },
+        {
+          "id": "JEE-Main-2026-04-04-Shift-2-Paper1-QID-695278390",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409432593766.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift 2, Q15, PDF page 6",
+          "answer": "λ = (4/3)(A·u) − (2/3)(A·v)",
+          "correctOptionId": "6952781332",
+          "independentSolution": "Acute angle and |u×v|=√3/2 imply cosθ=1/2. A·u=λ+1/2,A·v=λ/2+1. Subtract half second from first:3λ/4. λ=4(A·u)/3−2(A·v)/3.",
+          "adaptation": "Uses u,v for the unit-vector hats and asks for the expression in the two named dot products.",
+          "adapted": true,
+          "verifiedAt": "2026-11-26T07:06:27+05:30",
+          "sourceSha256": "2146491216c3ef79b210b8e4e4a2ed3c7afca1e9db198d4adcc23dd346cf5fc5"
+        }
+      ],
+      "sourcePath": "src/content/blog/how-does-perpendicularity-simplify-dot-and-cross-products.mdx",
+      "sourceSha256": "0955851b70e8505ffa66594e390c72c68122ad7be5a1a9d9f800b8011ee669d5",
+      "url": "https://padho.ai/blog/how-does-perpendicularity-simplify-dot-and-cross-products/",
+      "publishedAt": "2026-11-26T07:08:23+05:30",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782158",
+      "targetQuestionText": "Let a = i + j + k and b = j − k. A vector c satisfies a × c = b and a · c = 3. Find c · (a − 2b).",
+      "review": {
+        "sourceSha256": "0955851b70e8505ffa66594e390c72c68122ad7be5a1a9d9f800b8011ee669d5",
+        "reviewedAt": "2026-11-26T07:09:44+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "All six original questions and final keys inspected; independently derived solutions and checked work signs/units, Hess equation cancellation and physical states, dot-cross orthogonality and acute-angle restriction. Read every paragraph sequentially for plain meaning; separated chemistry data equations for readability. Original figures reviewed; corrected Hess label overlap. Real-app checks follow."
+      }
     }
   ]
 }

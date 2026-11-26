@@ -1,0 +1,73 @@
+{
+  "id": "hess-formation-enthalpy",
+  "category": "chemistry",
+  "conceptKey": "chemistry/chemical-thermodynamics/hess-law-formation-enthalpy",
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121599",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "8 April 2026 Shift 2, Q74, PDF page 30–31",
+      "answer": "Magnitude 1126 kJ/mol of reaction as written; ΔrH°=−1125.8 kJ/mol",
+      "correctOptionId": "1126",
+      "independentSolution": "Products=2(−286)+2(−297)=−1166;reactants=2(−20.1)+3(0)=−40.2;difference=−1125.8. Magnitude rounds1126. Halving equation would halve reaction enthalpy.",
+      "adaptation": "Paraphrases and specifies the equation as written to remove a per-mole-of-H₂S ambiguity.",
+      "adapted": true,
+      "verifiedAt": "2026-11-26T07:06:27+05:30",
+      "sourceSha256": "079e3b7ae67b70309f22b33e37b720cba65b47c6d96760113a4302cee1122416"
+    },
+    {
+      "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112154",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "2 April 2026 Shift 1, Q54, PDF page 21–22",
+      "answer": "−1527 kJ/mol for Al₂Cl₆(s)",
+      "correctOptionId": "691121186",
+      "independentSolution": "HCl(aq) formation per mole=−164/2−83=−165. Then ΔfH(Al₂Cl₆ aq)=−1200+6(−165)=−2190; subtract dissolution−663: solid=−1527. Direct Hess sum−1200+3(−164)+6(−83)+663=−1527.",
+      "adaptation": "Writes heat released as negative ΔH; retains original formal Al₂Cl₆ notation and all states without asserting the aqueous molecular species.",
+      "adapted": true,
+      "verifiedAt": "2026-11-26T07:06:27+05:30",
+      "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+    }
+  ],
+  "closestPriorSlugs": [
+    "how-do-heat-and-work-signs-fit-a-complete-cycle",
+    "how-does-rewriting-a-reaction-change-its-equilibrium-constant"
+  ],
+  "difference": "Uses reaction enthalpy and additive Hess cycles. Earlier lessons teach gas internal-energy heat/work signs and multiplicative equilibrium-constant transformations.",
+  "researchedAt": "2026-11-26T07:06:27+05:30",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "Current JEE Main 2027 syllabus linked from NTA homepage on26November",
+    "scope": "Chemistry Unit 4: enthalpy, Hess’s law, formation and solution enthalpies."
+  },
+  "corpus": {
+    "papersExamined": 5,
+    "coverageNotes": "Targeted original-page examination:2AprS1,4AprS2,6AprS1/S2,8AprS2. No complete shift classification, five-year analysis or rate estimate.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409932754345.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two unused official PYQs address a distinct misconception or prerequisite. Five official April2026 papers examined for selection; cumulative corpus remains a targeted nine-paper sample, not a frequency or marks census."
+  },
+  "sources": [
+    {
+      "title": "Primary educational explanation",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-3-enthalpy"
+    },
+    {
+      "title": "NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-08-Shift-2-Paper1-QID-691121599",
+  "targetQuestionText": "For 2H₂S(g) + 3O₂(g) → 2H₂O(l) + 2SO₂(g), the standard formation enthalpies of H₂S(g), H₂O(l) and SO₂(g) are −20.1, −286.0 and −297.0 kJ/mol. Find the magnitude of the reaction enthalpy, to the nearest integer, for the equation as written.",
+  "verificationNotes": "Original question images and exact final-key IDs inspected; independent solutions and boundary/sign checks recorded. Adaptations explicitly disclosed. No human reviewer claimed."
+}
