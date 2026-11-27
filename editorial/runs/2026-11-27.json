@@ -229,13 +229,44 @@
       }
     },
     "git": {
-      "status": "pending"
+      "status": "complete",
+      "completedAt": "2026-11-27T08:39:21+05:30",
+      "sourceCommit": "b8bf7003ec837841a9d601c6a8e357cb10a54467",
+      "branch": "main",
+      "pushed": true
     },
     "publication": {
-      "status": "pending"
+      "status": "failed",
+      "startedAt": "2026-11-27T08:39:21+05:30",
+      "scope": "padho.ai/blog only",
+      "command": "node scripts/publish.mjs",
+      "failedAt": "2026-11-27T08:40:09+05:30",
+      "exitCode": 1,
+      "error": "ERROR: (gcloud.auth.print-access-token) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.",
+      "requiredAction": "Run gcloud auth login interactively to renew the existing Google Cloud login.",
+      "uploadsStarted": false,
+      "log": "/private/tmp/padho-pcm-2026-11-27/publish.log"
     },
     "liveVerification": {
-      "status": "pending"
+      "status": "pending",
+      "reason": "Publication failed before upload; new article responses are 404. Full post-release search, content and browser checks remain pending.",
+      "readOnlyStatusCheck": {
+        "checkedAt": "2026-11-27T08:39:48+05:30",
+        "urls": [
+          {
+            "url": "https://padho.ai/blog/how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy/",
+            "status": 404
+          },
+          {
+            "url": "https://padho.ai/blog/why-is-solubility-not-always-the-square-root-of-ksp/",
+            "status": 404
+          },
+          {
+            "url": "https://padho.ai/blog/how-can-pairing-x-and-minus-x-simplify-a-definite-integral/",
+            "status": 404
+          }
+        ]
+      }
     }
   },
   "preflight": {
@@ -244,7 +275,7 @@
     "scheduleEnabled": true,
     "noExistingRun": true
   },
-  "lastCheckpointAt": "2026-11-27T08:38:13+05:30",
+  "lastCheckpointAt": "2026-11-27T08:40:09+05:30",
   "figmaFeedback": {
     "checkedAt": "2026-11-27T07:06:28+05:30",
     "tool": "get_comments",
@@ -259,5 +290,12 @@
       "componentIds": [],
       "componentSetIds": []
     }
+  },
+  "sourceCommit": "b8bf7003ec837841a9d601c6a8e357cb10a54467",
+  "resume": {
+    "stage": "publication",
+    "instructions": "After renewed Google Cloud login, reuse the verified source and six Figma copies. Do not create another article set. If the release date changes, refresh unpublished dates and the visible Figma date, rebuild and reverify before release.",
+    "sourceCommit": "b8bf7003ec837841a9d601c6a8e357cb10a54467",
+    "preparedArticleCount": 3
   }
 }
