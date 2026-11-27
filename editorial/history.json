@@ -2555,6 +2555,177 @@
         "notes": "All six original questions and final keys inspected; independently derived solutions and checked work signs/units, Hess equation cancellation and physical states, dot-cross orthogonality and acute-angle restriction. Read every paragraph sequentially for plain meaning; separated chemistry data equations for readability. Original figures reviewed; corrected Hess label overlap. Real-app checks follow."
       },
       "releaseVerifiedAt": "2026-11-26T07:23:23+05:30"
+    },
+    {
+      "slug": "how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy",
+      "title": "How does binding energy tell you whether a nuclear reaction releases energy?",
+      "category": "physics",
+      "chapter": "atoms-and-nuclei",
+      "conceptKey": "physics/atoms-and-nuclei/total-binding-energy-reaction-sign",
+      "learningObjective": "Convert binding energy per nucleon to total binding energy, count every nucleus, and use the change in total binding to distinguish energy release from energy input.",
+      "example": "Compare the energy of the same four nucleons when separated, in two pairs, and in one nucleus.",
+      "publishedAt": "2026-11-27T07:08:30+05:30",
+      "briefPath": "editorial/research/2026-11-27-physics.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211241",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 2, Q41, PDF page 16–17",
+          "answer": "24.4 MeV released",
+          "correctOptionId": "6911214227",
+          "independentSolution": "Initial binding=2*2*1.1=4.4MeV; final=4*7.2=28.8MeV; Q=28.8−4.4=24.4MeV. Same two protons/two neutrons on both sides; positive Q means reduced rest mass.",
+          "adaptation": "Specifies two deuterium nuclei rather than the paper’s hydrogen atoms, using its explicit isotope data; omits negligible electronic binding.",
+          "adapted": true,
+          "verifiedAt": "2026-11-27T07:06:28+05:30",
+          "sourceSha256": "2983baca258ad15a77a4bc66968aa57239a217298a73e3f4e51caad1777368d5"
+        },
+        {
+          "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278254",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift 1, Q29, PDF page 10",
+          "answer": "2.2 MeV supplied; Q=−2.2 MeV",
+          "correctOptionId": "695278865",
+          "independentSolution": "Initial binding=2*3*5.6+4*7.4=63.2MeV; final=10*6.1=61MeV. Q=−2.2MeV; (Mfinal−Minitial)c²=+2.2MeV. The final key selects magnitude2.2; the paper does not define ΔM sign.",
+          "adaptation": "Asks whether energy is supplied or released and defines the sign, rather than copying the paper’s undefined ΔM; treats the stated reaction as conserving nucleon species.",
+          "adapted": true,
+          "verifiedAt": "2026-11-27T07:06:28+05:30",
+          "sourceSha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a"
+        }
+      ],
+      "sourcePath": "src/content/blog/how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy.mdx",
+      "sourceSha256": "741f26a03be3cb1de5a3ba2dc87ff9967f76376dfdcdbc0c766f8dc777ecfc11",
+      "url": "https://padho.ai/blog/how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy/",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211241",
+      "targetQuestionText": "Two deuterium nuclei, each with mass number 2, combine to form one helium-4 nucleus. Their binding energies per nucleon are 1.1 MeV and 7.2 MeV respectively. How much energy is released?",
+      "review": {
+        "sourceSha256": "741f26a03be3cb1de5a3ba2dc87ff9967f76376dfdcdbc0c766f8dc777ecfc11",
+        "reviewedAt": "2026-11-27T07:24:20+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Full prose read sequentially and each paragraph paraphrased for clarity. Opening and final target agree. Six original NTA questions and exact keyed options visually checked; solutions independently recalculated, including numerical quadrature for both integrals. Nuclear binding totals and Q sign, salt charge balance/stoichiometric powers, and positive even denominator checked. Original SVGs visually inspected; paired strips corrected to equal opposite heights. Real-app layout verification recorded separately in run validation."
+      }
+    },
+    {
+      "slug": "why-is-solubility-not-always-the-square-root-of-ksp",
+      "title": "Why is solubility not always the square root of Ksp?",
+      "category": "chemistry",
+      "chapter": "equilibrium",
+      "conceptKey": "chemistry/equilibrium/solubility-stoichiometry-ksp",
+      "learningObjective": "Convert mass solubility to molar solubility and use dissolution coefficients for both ion concentrations and exponents in Ksp.",
+      "example": "One formula unit of M₃A₂ separates into three M²⁺ ions and two A³⁻ ions.",
+      "publishedAt": "2026-11-27T07:08:30+05:30",
+      "briefPath": "editorial/research/2026-11-27-chemistry.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278355",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "5 April 2026 Shift 1, Q55, PDF page 20–21",
+          "answer": "y⁴/(54x⁴)",
+          "correctOptionId": "6952781207",
+          "independentSolution": "s=x/y mol/L; [M2+]=3s,[A3−]=2s. Ksp=(3s)^3(2s)^2=108s^5. Ratio=2s/(108s^5)=1/(54s^4)=y^4/(54x^4). Charge balance:3*2−2*3=0.",
+          "adaptation": "Makes saturated pure-water and ideal dilute concentration assumptions explicit; keeps the original x,y quantities.",
+          "adapted": true,
+          "verifiedAt": "2026-11-27T07:06:28+05:30",
+          "sourceSha256": "20a14808d521007d48289171297030a4ac18710abc180bb7e3b2d23e2a0a19fb"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112156",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift 1, Q56, PDF page 22",
+          "answer": "cube root(x)/square root(y)",
+          "correctOptionId": "691121194",
+          "independentSolution": "Ag2CrO4:Ksp=4s1^3=32x,so s1=2*cuberoot(x). AgBr:Ksp=s2^2=4y,so s2=2*sqrt(y). Ratio=cuberoot(x)/sqrt(y);x,y positive.",
+          "adaptation": "Clarifies that the salts form separate saturated solutions in pure water; original says molarity without stating saturation.",
+          "adapted": true,
+          "verifiedAt": "2026-11-27T07:06:28+05:30",
+          "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+        }
+      ],
+      "sourcePath": "src/content/blog/why-is-solubility-not-always-the-square-root-of-ksp.mdx",
+      "sourceSha256": "54806623b9f9f29fadc8c8fbe58db59f724dd05b8033e443dd93c7fa00d0cf12",
+      "url": "https://padho.ai/blog/why-is-solubility-not-always-the-square-root-of-ksp/",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278355",
+      "targetQuestionText": "A sparingly soluble salt M₃A₂ has molar mass y g/mol and solubility x g/L. In its saturated solution in pure water, find the ratio of the anion concentration [A³⁻] to Ksp.",
+      "review": {
+        "sourceSha256": "54806623b9f9f29fadc8c8fbe58db59f724dd05b8033e443dd93c7fa00d0cf12",
+        "reviewedAt": "2026-11-27T07:24:20+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Full prose read sequentially and each paragraph paraphrased for clarity. Opening and final target agree. Six original NTA questions and exact keyed options visually checked; solutions independently recalculated, including numerical quadrature for both integrals. Nuclear binding totals and Q sign, salt charge balance/stoichiometric powers, and positive even denominator checked. Original SVGs visually inspected; paired strips corrected to equal opposite heights. Real-app layout verification recorded separately in run validation."
+      }
+    },
+    {
+      "slug": "how-can-pairing-x-and-minus-x-simplify-a-definite-integral",
+      "title": "How can pairing x and −x simplify a definite integral?",
+      "category": "maths",
+      "chapter": "integral-calculus",
+      "conceptKey": "maths/integral-calculus/symmetric-limits-reflected-pairs",
+      "learningObjective": "Pair values at x and −x on symmetric limits to cancel odd contributions or simplify complementary expressions before integrating.",
+      "example": "Pair equal-width strips at x and −x and compare their combined signed heights.",
+      "publishedAt": "2026-11-27T07:08:30+05:30",
+      "briefPath": "editorial/research/2026-11-27-maths.json",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211220",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 2, Q20, PDF page 8–9",
+          "answer": "2 ln 2",
+          "correctOptionId": "6911214158",
+          "independentSolution": "Denominator=(1+|x|)^2 is positive/even. x^3 divided by it is odd and integrates0. Remaining=1/(1+|x|); integral=2*int0..1 dx/(1+x)=2ln2. Independent quadrature1.3862943611198906.",
+          "adaptation": "Writes the integral in accessible plain text without changing its integrand or limits.",
+          "adapted": true,
+          "verifiedAt": "2026-11-27T07:06:28+05:30",
+          "sourceSha256": "2983baca258ad15a77a4bc66968aa57239a217298a73e3f4e51caad1777368d5"
+        },
+        {
+          "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782153",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 1, Q18, PDF page 7",
+          "answer": "3π+8",
+          "correctOptionId": "6952787565",
+          "independentSolution": "f(x)+f(−x)=32cos^4x because 1/(1+e^u)+1/(1+e^(−u))=1. Integral=32*int0..π/4 cos^4x dx. cos^4=(3+4cos2x+cos4x)/8; value3π+8. Independent quadrature17.42477796076938.",
+          "adaptation": "Uses exp(sin x) for the original exponential and spells out the limits; retains all data.",
+          "adapted": true,
+          "verifiedAt": "2026-11-27T07:06:28+05:30",
+          "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+        }
+      ],
+      "sourcePath": "src/content/blog/how-can-pairing-x-and-minus-x-simplify-a-definite-integral.mdx",
+      "sourceSha256": "0c9c9110239e17e8307c3127b46a84a86fcbe12870e3742be19affbebd8e07a8",
+      "url": "https://padho.ai/blog/how-can-pairing-x-and-minus-x-simplify-a-definite-integral/",
+      "mode": "daily",
+      "status": "staged",
+      "targetQuestionId": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211220",
+      "targetQuestionText": "Evaluate the integral from −1 to 1 of (x³ + |x| + 1)/(x² + 2|x| + 1) with respect to x.",
+      "review": {
+        "sourceSha256": "0c9c9110239e17e8307c3127b46a84a86fcbe12870e3742be19affbebd8e07a8",
+        "reviewedAt": "2026-11-27T07:24:20+05:30",
+        "checks": {
+          "science": true,
+          "readability": true,
+          "pyqSolutions": true,
+          "visuals": true
+        },
+        "notes": "Full prose read sequentially and each paragraph paraphrased for clarity. Opening and final target agree. Six original NTA questions and exact keyed options visually checked; solutions independently recalculated, including numerical quadrature for both integrals. Nuclear binding totals and Q sign, salt charge balance/stoichiometric powers, and positive even denominator checked. Original SVGs visually inspected; paired strips corrected to equal opposite heights. Real-app layout verification recorded separately in run validation."
+      }
     }
   ]
 }

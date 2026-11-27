@@ -1,0 +1,74 @@
+{
+  "id": "integral-reflected-pairs",
+  "category": "maths",
+  "conceptKey": "maths/integral-calculus/symmetric-limits-reflected-pairs",
+  "pyqs": [
+    {
+      "id": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211220",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "6 April 2026 Shift 2, Q20, PDF page 8–9",
+      "answer": "2 ln 2",
+      "correctOptionId": "6911214158",
+      "independentSolution": "Denominator=(1+|x|)^2 is positive/even. x^3 divided by it is odd and integrates0. Remaining=1/(1+|x|); integral=2*int0..1 dx/(1+x)=2ln2. Independent quadrature1.3862943611198906.",
+      "adaptation": "Writes the integral in accessible plain text without changing its integrand or limits.",
+      "adapted": true,
+      "verifiedAt": "2026-11-27T07:06:28+05:30",
+      "sourceSha256": "2983baca258ad15a77a4bc66968aa57239a217298a73e3f4e51caad1777368d5"
+    },
+    {
+      "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782153",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+      "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+      "locator": "6 April 2026 Shift 1, Q18, PDF page 7",
+      "answer": "3π+8",
+      "correctOptionId": "6952787565",
+      "independentSolution": "f(x)+f(−x)=32cos^4x because 1/(1+e^u)+1/(1+e^(−u))=1. Integral=32*int0..π/4 cos^4x dx. cos^4=(3+4cos2x+cos4x)/8; value3π+8. Independent quadrature17.42477796076938.",
+      "adaptation": "Uses exp(sin x) for the original exponential and spells out the limits; retains all data.",
+      "adapted": true,
+      "verifiedAt": "2026-11-27T07:06:28+05:30",
+      "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+    }
+  ],
+  "closestPriorSlugs": [
+    "does-an-absolute-value-always-make-a-sharp-corner",
+    "how-do-you-simplify-a-sum-inside-another-sum"
+  ],
+  "difference": "Pairs integrand values across symmetric limits to simplify an integral; prior work tests local differentiability or simplifies discrete nested sums.",
+  "researchedAt": "2026-11-27T07:06:28+05:30",
+  "syllabus": {
+    "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf",
+    "edition": "Current JEE Main 2027 syllabus linked from NTA homepage on 27 November 2026",
+    "scope": "Mathematics Unit 8: properties of definite integrals and integration using trigonometric identities."
+  },
+  "corpus": {
+    "papersExamined": 6,
+    "coverageNotes": "Targeted scans of 2AprS1,4AprS1/S2,5AprS1,6AprS1/S2. Original selected pages visually inspected. Cumulative coverage remains a nine-paper April sample, not a five-year or all-shift frequency census.",
+    "selectedRelevantQuestions": 2,
+    "selectedPaperUrls": [
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf",
+      "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf"
+    ]
+  },
+  "priority": {
+    "rationale": "Two unused official questions address a distinct prerequisite or common mistake. Six targeted April2026 papers scanned today; five supply selected questions. No complete classification or frequency/marks estimate."
+  },
+  "sources": [
+    {
+      "title": "Primary educational explanation",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/5-4-integration-formulas-and-the-net-change-theorem"
+    },
+    {
+      "title": "NTA syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf"
+    },
+    {
+      "title": "NTA final key",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf"
+    }
+  ],
+  "targetQuestionId": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211220",
+  "targetQuestionText": "Evaluate the integral from −1 to 1 of (x³ + |x| + 1)/(x² + 2|x| + 1) with respect to x.",
+  "verificationNotes": "Original question images and exact final-key option IDs inspected. Independent solutions, sign/charge balance, positive denominators and units recorded; adaptations explicit. No human review claimed.",
+  "answerKeySha256": "07c89e20741c17f14a000501d6f79055d09834692de0dcb792bf237b77e1c7f9"
+}

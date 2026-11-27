@@ -1,0 +1,74 @@
+---
+title: "How can pairing x and −x simplify a definite integral?"
+description: "Use the symmetry of the interval to add reflected values before looking for an antiderivative."
+category: "maths"
+author: "padho"
+pubDate: "2026-11-27T07:08:30+05:30"
+heroImage: "../../assets/articles/integral-reflected-pairs.png"
+heroImageAlt: "Equal-width strips at x and −x pair up; opposite signed contributions cancel while equal contributions add."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**Evaluate the integral from −1 to 1 of (x³ + |x| + 1)/(x² + 2|x| + 1) with respect to x.**
+
+Adapted from [JEE Main, 6 April 2026 Shift 2 Q20](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf#page=8), question ID 6911211220. The integrand and limits are unchanged. You need basic integration, including the integral of 1/(1 + x). For the second past question, we will also use the cosine double-angle identity.
+
+## Look at the interval before integrating
+
+The limits −1 and 1 are equally far from zero. Every positive x in the interval has a matching point −x. Those two points may make contributions that are easier to add than to integrate separately.
+
+Think of a definite integral as adding thin vertical strips, with a negative contribution where the graph lies below the horizontal axis. A strip near x and a strip near −x can be chosen with the same width. Their combined contribution depends on f(x) + f(−x).
+
+For an integrable function on [−a, a], this gives the pairing rule: the integral of f(x) from −a to a equals the integral of f(x) + f(−x) from 0 to a, where a is positive. The left half has been reflected onto the right half, and each pair is counted once.
+
+## Odd parts cancel; even parts add
+
+An odd function changes sign when x becomes −x. For example, f(x) = x³ has f(−x) = −f(x). Its two strip heights add to zero. Its integral over symmetric limits is therefore zero.
+
+An even function keeps the same value when x becomes −x. For example, x² and |x| are even. Their two strip heights are equal, so we can integrate the positive half and double the result.
+
+<ArticleDiagram kind="integralPairs">The left graph shows the odd function y = x: equal-width strips at −x and x have opposite signed heights. The right graph shows the even function y = x²: the reflected strips have equal heights. Both graphs use the interval from −1 to 1.</ArticleDiagram>
+
+These [odd and even integral rules](https://openstax.org/books/calculus-volume-1/pages/5-4-integration-formulas-and-the-net-change-theorem) concern the whole integrand. Seeing an x³ somewhere in a fraction does not make the entire fraction odd.
+
+<KeyIdea id="integral-pair">Replace x by −x in the whole expression. Add the reflected expression to the original. If that sum is simpler, integrate the pair over the positive half of the interval.</KeyIdea>
+
+The function must also be integrable across the interval. For example, 1/x is odd but has a singularity at zero; its ordinary improper integral from −1 to 1 does not exist. Symmetry is not permission to ignore a singularity.
+
+## Separate the pieces in the opening fraction
+
+The denominator x² + 2|x| + 1 equals (1 + |x|)². It is even and always positive. So there is no division by zero anywhere in our interval.
+
+Now split the numerator into x³ and |x| + 1. The first piece, x³/(1 + |x|)², has an odd numerator and an even denominator. Replacing x by −x changes only its sign, so its integral cancels.
+
+The other piece is (|x| + 1)/(1 + |x|)². Cancel one common factor to get 1/(1 + |x|). This is even. On the positive half, |x| = x, so only a simple logarithmic integral remains. We will finish that calculation in the final solution.
+
+## Pairing also works when neither part looks odd
+
+Consider a denominator containing an exponential. For any real u, 1/(1 + eᵘ) + 1/(1 + e⁻ᵘ) = 1. To see why, multiply the numerator and denominator of the second fraction by eᵘ. The two numerators then add to 1 + eᵘ.
+
+If u = sin x, reflection changes u to −u because sin(−x) = −sin x. Meanwhile cos⁴(−x) = cos⁴x. A fraction with cos⁴x on top and 1 + exp(sin x) below therefore becomes much simpler when paired with its reflected value. Here exp(sin x) means e raised to sin x.
+
+To integrate the remaining cosine power, use cos²x = (1 + cos 2x)/2 twice. Squaring and simplifying gives cos⁴x = (3 + 4 cos 2x + cos 4x)/8. Its antiderivative is 3x/8 + sin 2x/4 + sin 4x/32.
+
+## Try the past questions
+
+**1. Evaluate the integral from −π/4 to π/4 of 32 cos⁴x/(1 + exp(sin x)) with respect to x. Angles are in radians.**
+
+Adapted from [JEE Main, 6 April 2026 Shift 1 Q18](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf#page=7), question ID 6952782153. Only the notation for the exponential and the written integral limits have changed.
+
+<details class="reading-check"><summary>Show hint</summary><p>Call the integrand f(x). Add f(x) and f(−x) using the exponential identity, then integrate the sum from 0 to π/4.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The paired sum is f(x) + f(−x) = 32 cos⁴x. The original integral is therefore 32 times the integral of cos⁴x from 0 to π/4.</p><p>Using the antiderivative above, the bracket at π/4 is 3π/32 + 1/4, and the bracket at 0 is zero. Multiplication by 32 gives <strong>3π + 8</strong>.</p><p>There is no extra factor of 2: the paired sum already includes both halves of the original interval.</p></details>
+
+**2. Return to the opening question: evaluate the integral from −1 to 1 of (x³ + |x| + 1)/(x² + 2|x| + 1) with respect to x.**
+
+<details class="reading-check"><summary>Show hint</summary><p>Factor the denominator as (1 + |x|)². The term with x³ cancels over the symmetric interval.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>After the odd term cancels, the integral is that of 1/(1 + |x|) from −1 to 1. This function is even, so the result is 2 times the integral of 1/(1 + x) from 0 to 1.</p><p>The antiderivative is ln(1 + x). Thus the answer is 2[ln 2 − ln 1] = <strong>2 ln 2</strong>. Here ln means the natural logarithm.</p><p>The remaining integrand is positive, so the positive answer is sensible. We used symmetry to remove the difficult-looking part before integrating.</p></details>
+
+The [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf) selects 3π + 8 for question ID 6952782153 and 2 ln 2 for question ID 6911211220.

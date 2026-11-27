@@ -1425,6 +1425,168 @@
       "rationale": "Two unused official PYQs address a distinct misconception or prerequisite. Five official April2026 papers examined for selection; cumulative corpus remains a targeted nine-paper sample, not a frequency or marks census.",
       "publishedAt": "2026-11-26T07:08:23+05:30",
       "releaseVerifiedAt": "2026-11-26T07:23:23+05:30"
+    },
+    {
+      "id": "binding-energy-total",
+      "category": "physics",
+      "chapter": "atoms-and-nuclei",
+      "conceptKey": "physics/atoms-and-nuclei/total-binding-energy-reaction-sign",
+      "title": "How does binding energy tell you whether a nuclear reaction releases energy?",
+      "slug": "how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy",
+      "question": "Two deuterium nuclei, each with mass number 2, combine to form one helium-4 nucleus. Their binding energies per nucleon are 1.1 MeV and 7.2 MeV respectively. How much energy is released?",
+      "learningObjective": "Convert binding energy per nucleon to total binding energy, count every nucleus, and use the change in total binding to distinguish energy release from energy input.",
+      "example": "Compare the energy of the same four nucleons when separated, in two pairs, and in one nucleus.",
+      "asset": "nuclear-binding-totals",
+      "kind": "bindingTotals",
+      "description": "Count all the nucleons before subtracting binding energies, and use the sign to distinguish energy released from energy needed.",
+      "alt": "The same four nucleons have lower energy when more tightly bound; the decrease can leave as released energy.",
+      "scope": "Physics Unit 18: mass-energy relation, mass defect, binding energy per nucleon, nuclear fission and fusion.",
+      "reference": "https://openstax.org/books/university-physics-volume-3/pages/10-2-nuclear-binding-energy",
+      "closestPriorSlugs": [
+        "why-do-reaction-enthalpies-use-products-minus-reactants"
+      ],
+      "difference": "A nuclear rest-energy calculation from positive binding magnitudes. The earlier Chemistry lesson concerns enthalpies of chemical formation, with a different sign convention.",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211241",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 2, Q41, PDF page 16–17",
+          "answer": "24.4 MeV released",
+          "correctOptionId": "6911214227",
+          "independentSolution": "Initial binding=2*2*1.1=4.4MeV; final=4*7.2=28.8MeV; Q=28.8−4.4=24.4MeV. Same two protons/two neutrons on both sides; positive Q means reduced rest mass.",
+          "adaptation": "Specifies two deuterium nuclei rather than the paper’s hydrogen atoms, using its explicit isotope data; omits negligible electronic binding.",
+          "adapted": true,
+          "verifiedAt": "2026-11-27T07:06:28+05:30",
+          "sourceSha256": "2983baca258ad15a77a4bc66968aa57239a217298a73e3f4e51caad1777368d5"
+        },
+        {
+          "id": "JEE-Main-2026-04-04-Shift-1-Paper1-QID-695278254",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "4 April 2026 Shift 1, Q29, PDF page 10",
+          "answer": "2.2 MeV supplied; Q=−2.2 MeV",
+          "correctOptionId": "695278865",
+          "independentSolution": "Initial binding=2*3*5.6+4*7.4=63.2MeV; final=10*6.1=61MeV. Q=−2.2MeV; (Mfinal−Minitial)c²=+2.2MeV. The final key selects magnitude2.2; the paper does not define ΔM sign.",
+          "adaptation": "Asks whether energy is supplied or released and defines the sign, rather than copying the paper’s undefined ΔM; treats the stated reaction as conserving nucleon species.",
+          "adapted": true,
+          "verifiedAt": "2026-11-27T07:06:28+05:30",
+          "sourceSha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a"
+        }
+      ],
+      "briefPath": "editorial/research/2026-11-27-physics.json",
+      "status": "writing",
+      "rationale": "Two unused official questions address a distinct prerequisite or common mistake. Six targeted April2026 papers scanned today; five supply selected questions. No complete classification or frequency/marks estimate.",
+      "publishedAt": "2026-11-27T07:08:30+05:30"
+    },
+    {
+      "id": "solubility-ion-counts",
+      "category": "chemistry",
+      "chapter": "equilibrium",
+      "conceptKey": "chemistry/equilibrium/solubility-stoichiometry-ksp",
+      "title": "Why is solubility not always the square root of Ksp?",
+      "slug": "why-is-solubility-not-always-the-square-root-of-ksp",
+      "question": "A sparingly soluble salt M₃A₂ has molar mass y g/mol and solubility x g/L. In its saturated solution in pure water, find the ratio of the anion concentration [A³⁻] to Ksp.",
+      "learningObjective": "Convert mass solubility to molar solubility and use dissolution coefficients for both ion concentrations and exponents in Ksp.",
+      "example": "One formula unit of M₃A₂ separates into three M²⁺ ions and two A³⁻ ions.",
+      "asset": "solubility-ion-counts",
+      "kind": "solubilityCounts",
+      "description": "Write the dissolution equation, count the ions, and turn molar solubility into the correct solubility-product expression.",
+      "alt": "One dissolved formula unit of M₃A₂ produces three positive ions and two negative ions; their concentrations are 3s and 2s.",
+      "scope": "Chemistry Unit 6: ionic equilibrium, solubility product and solubility.",
+      "reference": "https://openstax.org/books/chemistry-2e/pages/15-1-precipitation-and-dissolution",
+      "closestPriorSlugs": [
+        "why-does-osmotic-pressure-depend-on-particle-count",
+        "how-do-you-turn-mass-percentage-into-mole-fraction",
+        "how-does-rewriting-a-reaction-change-its-equilibrium-constant"
+      ],
+      "difference": "Equilibrium ion concentrations and stoichiometric powers in Ksp, rather than total osmotic particle counts, mole fractions or transformations of a given K.",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278355",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "5 April 2026 Shift 1, Q55, PDF page 20–21",
+          "answer": "y⁴/(54x⁴)",
+          "correctOptionId": "6952781207",
+          "independentSolution": "s=x/y mol/L; [M2+]=3s,[A3−]=2s. Ksp=(3s)^3(2s)^2=108s^5. Ratio=2s/(108s^5)=1/(54s^4)=y^4/(54x^4). Charge balance:3*2−2*3=0.",
+          "adaptation": "Makes saturated pure-water and ideal dilute concentration assumptions explicit; keeps the original x,y quantities.",
+          "adapted": true,
+          "verifiedAt": "2026-11-27T07:06:28+05:30",
+          "sourceSha256": "20a14808d521007d48289171297030a4ac18710abc180bb7e3b2d23e2a0a19fb"
+        },
+        {
+          "id": "JEE-Main-2026-04-02-Shift-1-Paper1-QID-69112156",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "2 April 2026 Shift 1, Q56, PDF page 22",
+          "answer": "cube root(x)/square root(y)",
+          "correctOptionId": "691121194",
+          "independentSolution": "Ag2CrO4:Ksp=4s1^3=32x,so s1=2*cuberoot(x). AgBr:Ksp=s2^2=4y,so s2=2*sqrt(y). Ratio=cuberoot(x)/sqrt(y);x,y positive.",
+          "adaptation": "Clarifies that the salts form separate saturated solutions in pure water; original says molarity without stating saturation.",
+          "adapted": true,
+          "verifiedAt": "2026-11-27T07:06:28+05:30",
+          "sourceSha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b"
+        }
+      ],
+      "briefPath": "editorial/research/2026-11-27-chemistry.json",
+      "status": "writing",
+      "rationale": "Two unused official questions address a distinct prerequisite or common mistake. Six targeted April2026 papers scanned today; five supply selected questions. No complete classification or frequency/marks estimate.",
+      "publishedAt": "2026-11-27T07:08:30+05:30"
+    },
+    {
+      "id": "integral-reflected-pairs",
+      "category": "maths",
+      "chapter": "integral-calculus",
+      "conceptKey": "maths/integral-calculus/symmetric-limits-reflected-pairs",
+      "title": "How can pairing x and −x simplify a definite integral?",
+      "slug": "how-can-pairing-x-and-minus-x-simplify-a-definite-integral",
+      "question": "Evaluate the integral from −1 to 1 of (x³ + |x| + 1)/(x² + 2|x| + 1) with respect to x.",
+      "learningObjective": "Pair values at x and −x on symmetric limits to cancel odd contributions or simplify complementary expressions before integrating.",
+      "example": "Pair equal-width strips at x and −x and compare their combined signed heights.",
+      "asset": "integral-reflected-pairs",
+      "kind": "integralPairs",
+      "description": "Use the symmetry of the interval to add reflected values before looking for an antiderivative.",
+      "alt": "Equal-width strips at x and −x pair up; opposite signed contributions cancel while equal contributions add.",
+      "scope": "Mathematics Unit 8: properties of definite integrals and integration using trigonometric identities.",
+      "reference": "https://openstax.org/books/calculus-volume-1/pages/5-4-integration-formulas-and-the-net-change-theorem",
+      "closestPriorSlugs": [
+        "does-an-absolute-value-always-make-a-sharp-corner",
+        "how-do-you-simplify-a-sum-inside-another-sum"
+      ],
+      "difference": "Pairs integrand values across symmetric limits to simplify an integral; prior work tests local differentiability or simplifies discrete nested sums.",
+      "pyqs": [
+        {
+          "id": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211220",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 2, Q20, PDF page 8–9",
+          "answer": "2 ln 2",
+          "correctOptionId": "6911214158",
+          "independentSolution": "Denominator=(1+|x|)^2 is positive/even. x^3 divided by it is odd and integrates0. Remaining=1/(1+|x|); integral=2*int0..1 dx/(1+x)=2ln2. Independent quadrature1.3862943611198906.",
+          "adaptation": "Writes the integral in accessible plain text without changing its integrand or limits.",
+          "adapted": true,
+          "verifiedAt": "2026-11-27T07:06:28+05:30",
+          "sourceSha256": "2983baca258ad15a77a4bc66968aa57239a217298a73e3f4e51caad1777368d5"
+        },
+        {
+          "id": "JEE-Main-2026-04-06-Shift-1-Paper1-QID-6952782153",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+          "answerKeyUrl": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+          "locator": "6 April 2026 Shift 1, Q18, PDF page 7",
+          "answer": "3π+8",
+          "correctOptionId": "6952787565",
+          "independentSolution": "f(x)+f(−x)=32cos^4x because 1/(1+e^u)+1/(1+e^(−u))=1. Integral=32*int0..π/4 cos^4x dx. cos^4=(3+4cos2x+cos4x)/8; value3π+8. Independent quadrature17.42477796076938.",
+          "adaptation": "Uses exp(sin x) for the original exponential and spells out the limits; retains all data.",
+          "adapted": true,
+          "verifiedAt": "2026-11-27T07:06:28+05:30",
+          "sourceSha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb"
+        }
+      ],
+      "briefPath": "editorial/research/2026-11-27-maths.json",
+      "status": "writing",
+      "rationale": "Two unused official questions address a distinct prerequisite or common mistake. Six targeted April2026 papers scanned today; five supply selected questions. No complete classification or frequency/marks estimate.",
+      "publishedAt": "2026-11-27T07:08:30+05:30"
     }
   ]
 }

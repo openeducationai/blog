@@ -3,59 +3,6 @@
   "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
   "pages": [
     {
-      "pageId": "110:722",
-      "name": "2026-11-20",
-      "date": "2026-11-20",
-      "generated": true,
-      "verified": true,
-      "articles": [
-        {
-          "slug": "how-do-measurement-errors-combine-in-a-formula",
-          "desktopFrameId": "112:722",
-          "phoneFrameId": "112:970"
-        },
-        {
-          "slug": "how-do-you-find-partial-pressures-at-equilibrium",
-          "desktopFrameId": "112:1214",
-          "phoneFrameId": "112:1470"
-        },
-        {
-          "slug": "how-does-new-information-change-a-probability",
-          "desktopFrameId": "112:1722",
-          "phoneFrameId": "112:1990"
-        }
-      ],
-      "verification": {
-        "frames": 6,
-        "widths": [
-          1440,
-          390
-        ],
-        "matchedTextBlocksPerArticle": [
-          35,
-          36,
-          36
-        ],
-        "missingTextBlocks": 0,
-        "overlappingBodyBlocks": 0,
-        "disclosuresPerFrame": 4,
-        "nativeDiagrams": true,
-        "sharedHeaderFooter": true,
-        "screenshotsReviewed": 6,
-        "completeCopyMatch": true,
-        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
-        "fonts": [
-          "Inter",
-          "Literata"
-        ],
-        "coverFit": "FIT; discrete cover assets only",
-        "captureReferencesRemoved": true,
-        "comments": "Supported get_comments returned no comments; result archived before retention."
-      },
-      "verifiedAt": "2026-11-20T07:21:49+05:30",
-      "sourceCommit": "b8bf8a9376511ea07effed3cbb57fdf2c60d7090"
-    },
-    {
       "pageId": "119:722",
       "name": "2026-11-21",
       "date": "2026-11-21",
@@ -320,6 +267,58 @@
         "comments": "Supported get_comments returned no comments; archived before retention."
       },
       "sourceCommit": "00f4ba7f82eb66dad4544adc9a5843316d6e1ae4"
+    },
+    {
+      "pageId": "171:2",
+      "name": "2026-11-27",
+      "date": "2026-11-27",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy",
+          "desktopFrameId": "172:422",
+          "phoneFrameId": "172:672"
+        },
+        {
+          "slug": "why-is-solubility-not-always-the-square-root-of-ksp",
+          "desktopFrameId": "172:918",
+          "phoneFrameId": "172:1175"
+        },
+        {
+          "slug": "how-can-pairing-x-and-minus-x-simplify-a-definite-integral",
+          "desktopFrameId": "172:1428",
+          "phoneFrameId": "172:1687"
+        }
+      ],
+      "verifiedAt": "2026-11-27T08:38:13+05:30",
+      "verification": {
+        "screenshotsReviewed": 6,
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "matchedTextBlocksPerArticle": [
+          37,
+          38,
+          39
+        ],
+        "coverFit": "FIT",
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "disclosuresPerFrame": 4,
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "captureReferencesRemoved": true,
+        "comments": "Supported get_comments returned no comments; archived before retention."
+      }
     }
   ],
   "removedPages": [
@@ -781,6 +780,65 @@
       "removedOn": "2026-11-26",
       "reason": "Registered generated page precedes inclusive seven-day cutoff 2026-11-20.",
       "feedbackArchive": "editorial/runs/2026-11-26.json#figmaFeedback",
+      "preservedComponentIds": [],
+      "verifiedAbsent": true
+    },
+    {
+      "pageId": "110:722",
+      "name": "2026-11-20",
+      "date": "2026-11-20",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "how-do-measurement-errors-combine-in-a-formula",
+          "desktopFrameId": "112:722",
+          "phoneFrameId": "112:970"
+        },
+        {
+          "slug": "how-do-you-find-partial-pressures-at-equilibrium",
+          "desktopFrameId": "112:1214",
+          "phoneFrameId": "112:1470"
+        },
+        {
+          "slug": "how-does-new-information-change-a-probability",
+          "desktopFrameId": "112:1722",
+          "phoneFrameId": "112:1990"
+        }
+      ],
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          35,
+          36,
+          36
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "coverFit": "FIT; discrete cover assets only",
+        "captureReferencesRemoved": true,
+        "comments": "Supported get_comments returned no comments; result archived before retention."
+      },
+      "verifiedAt": "2026-11-20T07:21:49+05:30",
+      "sourceCommit": "b8bf8a9376511ea07effed3cbb57fdf2c60d7090",
+      "removedAt": "2026-11-27T08:38:13+05:30",
+      "removedOn": "2026-11-27",
+      "reason": "Registered generated page precedes inclusive seven-day cutoff 2026-11-21.",
+      "feedbackArchive": "editorial/runs/2026-11-27.json#figmaFeedback",
       "preservedComponentIds": [],
       "verifiedAbsent": true
     }

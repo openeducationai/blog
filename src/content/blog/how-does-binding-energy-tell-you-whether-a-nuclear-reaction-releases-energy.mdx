@@ -1,0 +1,74 @@
+---
+title: "How does binding energy tell you whether a nuclear reaction releases energy?"
+description: "Count all the nucleons before subtracting binding energies, and use the sign to distinguish energy released from energy needed."
+category: "physics"
+author: "padho"
+pubDate: "2026-11-27T07:08:30+05:30"
+heroImage: "../../assets/articles/nuclear-binding-totals.png"
+heroImageAlt: "The same four nucleons have lower energy when more tightly bound; the decrease can leave as released energy."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**Two deuterium nuclei, each with mass number 2, combine to form one helium-4 nucleus. Their binding energies per nucleon are 1.1 MeV and 7.2 MeV respectively. How much energy is released?**
+
+Adapted from [JEE Main, 6 April 2026 Shift 2 Q41](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf#page=16), question ID 6911211241. The paper says hydrogen atoms and supplies deuterium data. We make the two deuterium nuclei explicit and neglect the much smaller electronic binding energies. You need multiplication and subtraction.
+
+## What does binding energy measure?
+
+A nucleus contains protons and neutrons. We call both kinds of particle nucleons. The mass number A tells us how many nucleons the nucleus contains. A deuterium nucleus has one proton and one neutron, so its mass number is 2.
+
+Imagine separating a nucleus into all its protons and neutrons, with those particles far apart and at rest. We must supply energy to do that. The energy required is the nucleus’s total binding energy, B. Binding energy is quoted as a positive amount, even though the bound nucleus has less energy than the separated particles.
+
+This lower energy also means a lower mass. The relation is B = Δm c², where Δm is the mass of the separated particles minus the mass of the nucleus, and c is the speed of light. The [definition of nuclear binding energy](https://openstax.org/books/university-physics-volume-3/pages/10-2-nuclear-binding-energy) gives us the sign: more binding means less rest energy for the same set of particles.
+
+## First turn “per nucleon” into a total
+
+Binding energy per nucleon is an average. It is the total binding energy divided by A. To recover the total, multiply that average by the number of nucleons: B = A × binding energy per nucleon.
+
+Suppose a model nucleus has four nucleons and a binding energy of 2 MeV per nucleon. Its total binding energy is 8 MeV. MeV is an energy unit: one million electron volts. We can keep every energy in MeV throughout the calculation.
+
+Now count the nuclei as well. Two copies of that model nucleus have a combined binding energy of 2 × 8 = 16 MeV. The factor 4 counts nucleons in each nucleus; the factor 2 counts how many nuclei there are. They do different jobs.
+
+The opening question has two deuterium nuclei on the starting side and one helium nucleus on the final side. We must include all of them before subtracting.
+
+## Compare the same nucleons before and after
+
+For the nuclear reactions considered here, the total numbers of protons and neutrons stay the same. The energy of those particles when completely separated is therefore a shared reference.
+
+If the starting nuclei have total binding B_initial, their rest energy lies B_initial below that reference. The final nuclei lie B_final below it. Moving to a lower rest energy makes energy available to leave the system as radiation or kinetic energy.
+
+<ArticleDiagram kind="bindingTotals">This schematic uses example energies, not the numbers in the question. Both arrangements contain the same four nucleons. The initial arrangement is 8 MeV below the separated-particle reference; the final arrangement is 14 MeV below it. The downward difference is 6 MeV of released energy.</ArticleDiagram>
+
+Subtract the final rest energy from the initial rest energy. The shared reference cancels, leaving Q = B_final − B_initial. Here Q is the energy released by the reaction.
+
+<KeyIdea id="binding-sign">Add the binding energies of every nucleus on each side. A positive B_final − B_initial means energy is released. A negative result means the reaction needs that amount of energy supplied.</KeyIdea>
+
+This is why simply subtracting two values labelled “per nucleon” is unsafe. The nuclei may contain different numbers of nucleons, and there may be more than one nucleus on a side. Compare totals, with the same particles accounted for.
+
+## What if the final binding is smaller?
+
+Then the final nuclei sit higher in energy. The reaction needs an energy input. Combining nuclei does not by itself guarantee an energy release; the binding-energy totals decide.
+
+There is also a useful mass check. With Q defined as energy released, Q = (M_initial − M_final)c². If Q is negative, the final rest mass is larger. A question that uses an undefined ΔM needs care: state which mass is subtracted from which.
+
+## Try the past questions
+
+**1. Two nuclei of mass number 3 combine with one nucleus of mass number 4 to form a nucleus of mass number 10. The binding energies per nucleon are 5.6, 7.4 and 6.1 MeV respectively. Using these data, is energy released or supplied, and how much?**
+
+Adapted from [JEE Main, 4 April 2026 Shift 1 Q29](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf#page=10), question ID 695278254. The original asks for ΔMc² without defining the sign of ΔM. We state the energy direction explicitly, treating the stated reaction as conserving the constituent protons and neutrons.
+
+<details class="reading-check"><summary>Show hint</summary><p>There are two mass-3 nuclei. Calculate 2 × 3 × 5.6 + 4 × 7.4 for the starting total, then compare it with 10 × 6.1.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The initial binding is 33.6 + 29.6 = 63.2 MeV. The final binding is 61 MeV. Therefore Q = 61 − 63.2 = −2.2 MeV: <strong>2.2 MeV must be supplied</strong>.</p><p>The final rest mass is larger, so (M_final − M_initial)c² = +2.2 MeV. The official key selects the positive magnitude 2.2. It must not be described as energy released from these data.</p></details>
+
+**2. Return to the opening question: two deuterium nuclei combine into helium-4. The binding energies per nucleon are 1.1 and 7.2 MeV respectively. Find the energy released.**
+
+<details class="reading-check"><summary>Show hint</summary><p>Each deuterium nucleus contains two nucleons, and there are two such nuclei. Helium-4 contains four nucleons.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The starting binding is 2 × (2 × 1.1) = 4.4 MeV. The final binding is 4 × 7.2 = 28.8 MeV. Thus Q = 28.8 − 4.4 = <strong>24.4 MeV released</strong>.</p><p>Both sides contain two protons and two neutrons. The final nucleus is more tightly bound and has less rest energy, so the positive release has the expected sign.</p></details>
+
+The [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf) selects 24.4 MeV for question ID 6911211241 and the magnitude 2.2 MeV for question ID 695278254.

@@ -1,0 +1,74 @@
+---
+title: "Why is solubility not always the square root of Ksp?"
+description: "Write the dissolution equation, count the ions, and turn molar solubility into the correct solubility-product expression."
+category: "chemistry"
+author: "padho"
+pubDate: "2026-11-27T07:08:30+05:30"
+heroImage: "../../assets/articles/solubility-ion-counts.png"
+heroImageAlt: "One dissolved formula unit of M₃A₂ produces three positive ions and two negative ions; their concentrations are 3s and 2s."
+---
+
+import ArticleDiagram from '../../components/articles/ArticleDiagram.astro';
+import KeyIdea from '../../components/KeyIdea.astro';
+
+We’ll learn how to solve this question:
+
+**A sparingly soluble salt M₃A₂ has molar mass y g/mol and solubility x g/L. In its saturated solution in pure water, find the ratio of the anion concentration [A³⁻] to Ksp.**
+
+Adapted from [JEE Main, 5 April 2026 Shift 1 Q55](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf#page=20), question ID 695278355. We make the saturated, pure-water setting explicit. Use the usual dilute-solution concentration approximation and assume no other reaction changes the ion concentrations. You need mole conversion and powers.
+
+## Solubility counts dissolved formula units
+
+Add a little solid salt to water and stir. Some of the solid dissolves. If we keep adding the salt, eventually some solid remains even after equilibrium is reached. The solution is then saturated at that temperature.
+
+Molar solubility, written s, is the number of moles of salt that dissolve per litre of saturated solution. It counts the amount of dissolved salt, not the total number of moles of its separate ions.
+
+For example, suppose a salt has molar mass 100 g/mol and solubility 0.20 g/L. Dividing mass by molar mass gives s = 0.20/100 = 0.0020 mol/L. In our opening question, the same conversion uses x and y instead of these numbers.
+
+The [mass-to-moles idea](/blog/how-do-you-turn-mass-percentage-into-mole-fraction/) is the same as before. Here, however, the result is an amount per litre of solution. We do not choose a 100 g solution basis or calculate a mole fraction.
+
+## The dissolution equation gives each ion concentration
+
+Consider calcium fluoride as a simple example. Its dissolution equation is CaF₂(s) ⇌ Ca²⁺(aq) + 2F⁻(aq). Each formula unit that dissolves produces one calcium ion and two fluoride ions.
+
+If s mol/L dissolves in pure water, the calcium-ion concentration is s and the fluoride-ion concentration is 2s. The square brackets in [Ca²⁺] mean the molar concentration of that ion. They do not mean the concentration of the solid.
+
+Apply the same counting to M₃A₂. Three M²⁺ ions balance two A³⁻ ions: their charges are +6 and −6. If the dissolved salt has molar solubility s, then [M²⁺] = 3s and [A³⁻] = 2s.
+
+<ArticleDiagram kind="solubilityCounts">The symbols show the ratio produced by one dissolved formula unit, not the full contents of a real solution. Three M²⁺ ions appear for every two A³⁻ ions. That is why the ion concentrations are 3s and 2s when the salt’s molar solubility is s.</ArticleDiagram>
+
+## The coefficients also become powers
+
+The [solubility product](https://openstax.org/books/chemistry-2e/pages/15-1-precipitation-and-dissolution), Ksp, is the equilibrium product formed from the dissolved-ion activities. In the dilute-solution approximation used here, we use their molar concentrations. The pure solid is omitted because its activity is constant.
+
+For CaF₂, the expression is Ksp = [Ca²⁺][F⁻]². The coefficient 2 in the equation becomes the power 2 on the fluoride concentration. Substituting the concentrations gives Ksp = s(2s)² = 4s³.
+
+Notice both appearances of the number 2. There are twice as many fluoride ions, giving 2s. There is also a power of 2 in the equilibrium expression. Squaring 2s squares the 2 as well as the s.
+
+<KeyIdea id="solubility-count-first">Write the balanced dissolution equation first. Use its coefficients to find each ion concentration, then use those coefficients again as powers in Ksp.</KeyIdea>
+
+For a 1:1 salt such as AgBr, both ion concentrations are s, so Ksp = s². Only in that setting does s equal the square root of Ksp. For a 1:2 salt, Ksp = 4s³. A different ion ratio gives a different relation.
+
+## Keep the solution conditions in view
+
+These simple substitutions assume that the salt supplies the ions to otherwise pure water. If another dissolved salt already supplies one of those ions, its starting concentration must be included. For example, added fluoride would make the total fluoride concentration larger than just 2s.
+
+We also hold temperature fixed and neglect effects such as complex formation or reaction with water. These assumptions let us focus on the ion counts in the two questions below. Comparing Ksp values alone cannot rank the solubilities of salts with different dissolution ratios.
+
+## Try the past questions
+
+**1. At 298 K, Ksp for Ag₂CrO₄ is 32x and Ksp for AgBr is 4y, with x and y positive. Find the ratio of their molar solubilities in separate saturated solutions in pure water.**
+
+Adapted from [JEE Main, 2 April 2026 Shift 1 Q56](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf#page=22), question ID 69112156. The original says “molarity”; we specify the separate saturated solutions that its solubility-product calculation requires.
+
+<details class="reading-check"><summary>Show hint</summary><p>Ag₂CrO₄ gives two Ag⁺ ions and one CrO₄²⁻ ion. AgBr gives one ion of each kind. Write a different Ksp expression for each salt.</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>Let the molar solubilities be s₁ and s₂. For Ag₂CrO₄, Ksp = (2s₁)²s₁ = 4s₁³ = 32x. Hence s₁ = 2∛x. For AgBr, Ksp = s₂² = 4y, so s₂ = 2√y.</p><p>The ratio is therefore s₁/s₂ = <strong>∛x/√y</strong>. The different roots come from the different numbers of ions in the dissolution equations.</p></details>
+
+**2. Return to the opening question: M₃A₂ has molar mass y g/mol and solubility x g/L. Find [A³⁻]/Ksp in its saturated pure-water solution.**
+
+<details class="reading-check"><summary>Show hint</summary><p>First use s = x/y. The dissolution equation is M₃A₂(s) ⇌ 3M²⁺(aq) + 2A³⁻(aq).</p></details>
+
+<details class="reading-check"><summary>Show solution</summary><p>The concentrations are [M²⁺] = 3s and [A³⁻] = 2s. Thus Ksp = (3s)³(2s)² = 27s³ × 4s² = 108s⁵.</p><p>Divide the anion concentration by this result: [A³⁻]/Ksp = 2s/(108s⁵) = 1/(54s⁴). Substituting s = x/y gives <strong>y⁴/(54x⁴)</strong>.</p><p>The anion concentration is 2s, not s or the total ion concentration 5s. Keeping that distinction prevents the last factor-of-two error.</p></details>
+
+The [NTA final key](https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf) selects ∛x/√y for question ID 69112156 and y⁴/(54x⁴) for question ID 695278355.
