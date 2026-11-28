@@ -265,7 +265,8 @@
         ],
         "captureReferencesRemoved": true,
         "comments": "Supported whole-file and expired-page get_comments calls returned no comments; results archived in the dated run before retention."
-      }
+      },
+      "sourceCommit": "3a9eec452edfc583b1c1382c1e2a2055f66b1a75"
     }
   ],
   "removedPages": [

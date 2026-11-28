@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "status": "partial",
+  "status": "published",
   "startedAt": "2026-11-27T07:01:42+05:30",
   "articleSlugs": [
     "how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy",
@@ -230,43 +230,95 @@
     },
     "git": {
       "status": "complete",
-      "completedAt": "2026-11-27T08:39:21+05:30",
-      "sourceCommit": "b8bf7003ec837841a9d601c6a8e357cb10a54467",
+      "completedAt": "2026-11-28T07:13:27+05:30",
+      "sourceCommit": "3a9eec452edfc583b1c1382c1e2a2055f66b1a75",
       "branch": "main",
       "pushed": true
     },
     "publication": {
-      "status": "failed",
-      "startedAt": "2026-11-27T08:39:21+05:30",
-      "scope": "padho.ai/blog only",
+      "status": "complete",
+      "startedAt": "2026-11-28T07:13:27+05:30",
+      "scope": "https://padho.ai/blog only",
       "command": "node scripts/publish.mjs",
-      "failedAt": "2026-11-27T08:40:09+05:30",
-      "exitCode": 1,
-      "error": "ERROR: (gcloud.auth.print-access-token) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.",
-      "requiredAction": "Run gcloud auth login interactively to renew the existing Google Cloud login.",
-      "uploadsStarted": false,
-      "log": "/private/tmp/padho-pcm-2026-11-27/publish.log"
+      "sourceCommit": "3a9eec452edfc583b1c1382c1e2a2055f66b1a75",
+      "authorisation": "Owner-authorised recurring invocation explicitly resumes prior partial batch.",
+      "completedAt": "2026-11-28T07:14:18+05:30",
+      "log": "/private/tmp/padho-pcm-2026-11-28/publish.log",
+      "exitCode": 0,
+      "evidence": "Existing Google Cloud authentication succeeded. Scoped publisher uploaded blog build and completed both /blog and /blog/* CDN invalidations.",
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ]
     },
     "liveVerification": {
-      "status": "pending",
-      "reason": "Publication failed before upload; new article responses are 404. Full post-release search, content and browser checks remain pending.",
-      "readOnlyStatusCheck": {
-        "checkedAt": "2026-11-27T08:39:48+05:30",
-        "urls": [
-          {
-            "url": "https://padho.ai/blog/how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy/",
-            "status": 404
+      "status": "complete",
+      "completedAt": "2026-11-28T07:16:13+05:30",
+      "searchEvidence": "/tmp/padho-blog-search-live.json",
+      "searchResult": {
+        "mode": "live",
+        "pages": 54,
+        "articles": 48,
+        "images": 48,
+        "internalLinks": 55,
+        "metadataMatchesVisibleContent": true,
+        "crawlerEvidenceLimit": "Public user-agent probes and robots rules; not proof of a visit from official crawler IPs or of indexing.",
+        "crawlerProbes": 192
+      },
+      "articleViewports": 6,
+      "navigationViewports": 8,
+      "browserEvidence": "/tmp/padho-blog-2026-11-28-browser/checks-live.json",
+      "navigationEvidence": "/tmp/padho-blog-2026-11-28-browser/index-checks-live.json",
+      "visualEvidence": "/tmp/padho-blog-2026-11-28-browser/review-live.png",
+      "contentEvidence": "/private/tmp/padho-pcm-2026-11-28/live-match.json",
+      "articles": [
+        {
+          "url": "https://padho.ai/blog/how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy/",
+          "status": 200,
+          "sha256": "96cd41e2197627ff7060b7161a06e6edf68c2302081b6e622ef85c6eabb45771",
+          "matchesBuild": true,
+          "analyticsContext": {
+            "product_surface": "blog",
+            "blog_analytics_version": 1,
+            "blog_page_type": "article",
+            "blog_category": "physics",
+            "article_slug": "how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy",
+            "article_title": "How does binding energy tell you whether a nuclear reaction releases energy?"
           },
-          {
-            "url": "https://padho.ai/blog/why-is-solubility-not-always-the-square-root-of-ksp/",
-            "status": 404
+          "analyticsBundleMatchesBuild": true
+        },
+        {
+          "url": "https://padho.ai/blog/why-is-solubility-not-always-the-square-root-of-ksp/",
+          "status": 200,
+          "sha256": "88f47499f1561aed0aa6265c19fb6ba518a654932586d710087a50918ef846e2",
+          "matchesBuild": true,
+          "analyticsContext": {
+            "product_surface": "blog",
+            "blog_analytics_version": 1,
+            "blog_page_type": "article",
+            "blog_category": "chemistry",
+            "article_slug": "why-is-solubility-not-always-the-square-root-of-ksp",
+            "article_title": "Why is solubility not always the square root of Ksp?"
           },
-          {
-            "url": "https://padho.ai/blog/how-can-pairing-x-and-minus-x-simplify-a-definite-integral/",
-            "status": 404
-          }
-        ]
-      }
+          "analyticsBundleMatchesBuild": true
+        },
+        {
+          "url": "https://padho.ai/blog/how-can-pairing-x-and-minus-x-simplify-a-definite-integral/",
+          "status": 200,
+          "sha256": "83d599a9c7f969bc551a40ff648798a0ae591510c62f59fccc19aa45a6e10027",
+          "matchesBuild": true,
+          "analyticsContext": {
+            "product_surface": "blog",
+            "blog_analytics_version": 1,
+            "blog_page_type": "article",
+            "blog_category": "maths",
+            "article_slug": "how-can-pairing-x-and-minus-x-simplify-a-definite-integral",
+            "article_title": "How can pairing x and −x simplify a definite integral?"
+          },
+          "analyticsBundleMatchesBuild": true
+        }
+      ],
+      "evidence": "All three live HTML responses and shared analytics bundles exactly match the verified build. Live dates, covers and openings visually inspected at both widths. Search metadata, images, internal links, root sitemap advertisement and public crawler probes pass. No indexing claim."
     }
   },
   "preflight": {
@@ -275,7 +327,7 @@
     "scheduleEnabled": true,
     "noExistingRun": true
   },
-  "lastCheckpointAt": "2026-11-27T08:40:09+05:30",
+  "lastCheckpointAt": "2026-11-28T07:16:13+05:30",
   "figmaFeedback": {
     "checkedAt": "2026-11-27T07:06:28+05:30",
     "tool": "get_comments",
@@ -291,20 +343,56 @@
       "componentSetIds": []
     }
   },
-  "sourceCommit": "b8bf7003ec837841a9d601c6a8e357cb10a54467",
+  "sourceCommit": "3a9eec452edfc583b1c1382c1e2a2055f66b1a75",
   "resume": {
-    "stage": "publication",
-    "instructions": "After renewed Google Cloud login, reuse the verified source and six Figma copies. Do not create another article set. If the release date changes, refresh unpublished dates and the visible Figma date, rebuild and reverify before release.",
-    "sourceCommit": "b8bf7003ec837841a9d601c6a8e357cb10a54467",
-    "preparedArticleCount": 3
+    "nextStage": "complete",
+    "continuedIn": "editorial/runs/2026-11-28.json",
+    "reuseExistingArticles": true,
+    "reuseFigmaPageId": "171:2",
+    "reason": "Prepared batch successfully published on 28 November; the original failed attempt remains in publicationAttempts."
   },
   "retries": [
     {
       "startedAt": "2026-11-28T07:02:27+05:30",
       "authorisation": "Owner-authorised recurring 28 November invocation resumes prepared batch.",
       "runRecord": "editorial/runs/2026-11-28.json",
-      "status": "partial",
-      "evidence": "Same articles reused; unpublished date and existing Figma page refreshed after revalidation."
+      "status": "published",
+      "evidence": "Same articles reused; unpublished date and existing Figma page refreshed after revalidation.",
+      "completedAt": "2026-11-28T07:16:13+05:30",
+      "sourceCommit": "3a9eec452edfc583b1c1382c1e2a2055f66b1a75"
     }
-  ]
+  ],
+  "publicationAttempts": [
+    {
+      "status": "failed",
+      "startedAt": "2026-11-27T08:39:21+05:30",
+      "scope": "padho.ai/blog only",
+      "command": "node scripts/publish.mjs",
+      "failedAt": "2026-11-27T08:40:09+05:30",
+      "exitCode": 1,
+      "error": "ERROR: (gcloud.auth.print-access-token) There was a problem refreshing your current auth tokens: Reauthentication failed. cannot prompt during non-interactive execution.",
+      "requiredAction": "Run gcloud auth login interactively to renew the existing Google Cloud login.",
+      "uploadsStarted": false,
+      "log": "/private/tmp/padho-pcm-2026-11-27/publish.log"
+    },
+    {
+      "status": "complete",
+      "startedAt": "2026-11-28T07:13:27+05:30",
+      "scope": "https://padho.ai/blog only",
+      "command": "node scripts/publish.mjs",
+      "sourceCommit": "3a9eec452edfc583b1c1382c1e2a2055f66b1a75",
+      "authorisation": "Owner-authorised recurring invocation explicitly resumes prior partial batch.",
+      "completedAt": "2026-11-28T07:14:18+05:30",
+      "log": "/private/tmp/padho-pcm-2026-11-28/publish.log",
+      "exitCode": 0,
+      "evidence": "Existing Google Cloud authentication succeeded. Scoped publisher uploaded blog build and completed both /blog and /blog/* CDN invalidations.",
+      "cdnInvalidations": [
+        "/blog",
+        "/blog/*"
+      ]
+    }
+  ],
+  "previousSourceCommit": "b8bf7003ec837841a9d601c6a8e357cb10a54467",
+  "completedAt": "2026-11-28T07:16:13+05:30",
+  "completionRunPath": "editorial/runs/2026-11-28.json"
 }
