@@ -1,0 +1,330 @@
+{
+  "date": "2026-11-28",
+  "status": "partial",
+  "startedAt": "2026-11-28T07:02:27+05:30",
+  "articleSlugs": [
+    "how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy",
+    "why-is-solubility-not-always-the-square-root-of-ksp",
+    "how-can-pairing-x-and-minus-x-simplify-a-definite-integral"
+  ],
+  "resumedFrom": "editorial/runs/2026-11-27.json",
+  "preflight": {
+    "branch": "main",
+    "clean": true,
+    "scheduleEnabled": true,
+    "headMatchesOriginMain": true,
+    "priorPartialReconciliation": {
+      "checkedAt": "2026-11-28T07:01:59+05:30",
+      "urls": [
+        {
+          "url": "https://padho.ai/blog/how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy/",
+          "httpStatus": 404
+        },
+        {
+          "url": "https://padho.ai/blog/why-is-solubility-not-always-the-square-root-of-ksp/",
+          "httpStatus": 404
+        },
+        {
+          "url": "https://padho.ai/blog/how-can-pairing-x-and-minus-x-simplify-a-definite-integral/",
+          "httpStatus": 404
+        }
+      ]
+    },
+    "sourceHashMatchesPriorReview": true
+  },
+  "stages": {
+    "research": {
+      "status": "complete",
+      "completedAt": "2026-11-28T07:03:32+05:30",
+      "reusedFrom": "editorial/runs/2026-11-27.json#stages.research",
+      "briefs": [
+        "editorial/research/2026-11-27-physics.json",
+        "editorial/research/2026-11-27-chemistry.json",
+        "editorial/research/2026-11-27-maths.json"
+      ],
+      "sourceRecheck": {
+        "checkedAt": "2026-11-28T07:02:59+05:30",
+        "sources": [
+          {
+            "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409725707538.pdf",
+            "httpStatus": 200,
+            "sha256": "2983baca258ad15a77a4bc66968aa57239a217298a73e3f4e51caad1777368d5",
+            "matchesPreviouslyVerifiedSource": true
+          },
+          {
+            "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604091916616339.pdf",
+            "httpStatus": 200,
+            "sha256": "1d8b98a5ebe417b5e9456996d00cf55a890ed87898919a2bbf2d580ef3685b4a",
+            "matchesPreviouslyVerifiedSource": true
+          },
+          {
+            "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260409828731207.pdf",
+            "httpStatus": 200,
+            "sha256": "20a14808d521007d48289171297030a4ac18710abc180bb7e3b2d23e2a0a19fb",
+            "matchesPreviouslyVerifiedSource": true
+          },
+          {
+            "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092096865379.pdf",
+            "httpStatus": 200,
+            "sha256": "ba8b5256533e0a29e2eb71df3e322885335219d48259f4083365662f5ad7933b",
+            "matchesPreviouslyVerifiedSource": true
+          },
+          {
+            "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/202604092007095665.pdf",
+            "httpStatus": 200,
+            "sha256": "a95fbbd91673783722fe98e0455860fac1585135d2e84e31f147cbd893226eeb",
+            "matchesPreviouslyVerifiedSource": true
+          },
+          {
+            "url": "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/04/20260420409057044.pdf",
+            "httpStatus": 200,
+            "sha256": "07c89e20741c17f14a000501d6f79055d09834692de0dcb792bf237b77e1c7f9",
+            "matchesPreviouslyVerifiedSource": true
+          }
+        ]
+      },
+      "evidence": "Reused the same six verified PYQs. Current NTA homepage and syllabus reopened; all five original paper PDFs and the final key exactly match previously inspected source hashes. Prepared lessons reread with explicit opening targets and final worked solutions; no new or duplicated articles.",
+      "queueCoverage": "Three selected verified briefs reused. Three remaining candidates need research; seven-day advance-brief goal remains unmet."
+    },
+    "writing": {
+      "status": "complete",
+      "completedAt": "2026-11-28T07:03:32+05:30",
+      "reusedFrom": "editorial/runs/2026-11-27.json#stages.writing",
+      "publicationTimestamp": "2026-11-28T07:03:32+05:30",
+      "evidence": "Reused all three articles and assets. Only unpublished pubDate refreshed from the actual clock; prior source hashes preserved in existing history revision records. Target IDs/text unchanged."
+    },
+    "validation": {
+      "status": "complete",
+      "completedAt": "2026-11-28T07:10:26+05:30",
+      "commands": [
+        "npm run check:editorial",
+        "npm run build",
+        "npm run check:search",
+        "npm run check:analytics",
+        "git diff --check"
+      ],
+      "articleViewports": 6,
+      "navigationViewports": 8,
+      "browserEvidence": "/tmp/padho-blog-2026-11-28-browser/checks.json",
+      "navigationEvidence": "/tmp/padho-blog-2026-11-28-browser/index-checks.json",
+      "buildEvidence": "/private/tmp/padho-pcm-2026-11-28/build.log",
+      "browserDiagnostics": {
+        "attempts": [
+          "Initial isolated browser stalled on Page.navigate before rendering localhost.",
+          "Restart with GPU disabled still stalled."
+        ],
+        "serverStatus": "Actual article endpoint returns HTTP 200 with Nov 28 date.",
+        "evidence": "/private/tmp/padho-blog-2026-11-28-browser/check.log",
+        "checksWeakened": false,
+        "resolution": "Installed Playwright chromium_headless_shell-1223 loaded the same actual app. All unchanged checks pass. CUA browser host was unavailable; no UI operation performed."
+      },
+      "evidence": "Six real Astro article views and eight listings pass. All six updated dates, visible covers and target openings visually inspected. Literata, justified paragraphs, no horizontal overflow, keyboard disclosures, static content and reduced motion checks pass. Same complete source except unpublished pubDate; prior solution and diagram review remains applicable. Search validates 54 sitemap pages and 48 articles/images; analytics validates 55 pages."
+    },
+    "figma": {
+      "status": "complete",
+      "completedAt": "2026-11-28T07:12:23+05:30",
+      "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+      "pageId": "171:2",
+      "sessionId": "e3a7f534-a9a0-44ad-9ce5-191560485a8e",
+      "reviewUrl": "https://www.figma.com/design/GsBNGG7jIMvsPyhP7w0zXK?node-id=171-2",
+      "reusedFrom": "editorial/runs/2026-11-27.json#stages.figma",
+      "evidence": "Reused all six editable article frames and IDs, updated visible dates and renamed unpublished batch page. Full compositions visually inspected; complete rebuilt HTML text matches at both widths. Native figures, Inter/Literata, cover assets and shared controls preserved.",
+      "articles": [
+        {
+          "slug": "how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy",
+          "desktopFrameId": "172:422",
+          "phoneFrameId": "172:672"
+        },
+        {
+          "slug": "why-is-solubility-not-always-the-square-root-of-ksp",
+          "desktopFrameId": "172:918",
+          "phoneFrameId": "172:1175"
+        },
+        {
+          "slug": "how-can-pairing-x-and-minus-x-simplify-a-definite-integral",
+          "desktopFrameId": "172:1428",
+          "phoneFrameId": "172:1687"
+        }
+      ],
+      "frames": [
+        {
+          "id": "172:422",
+          "slug": "how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy",
+          "width": 1440,
+          "height": 5609,
+          "columnId": "172:568",
+          "bodyId": "172:574",
+          "coverId": "172:573",
+          "textNodes": 47,
+          "figureIds": [
+            "172:607"
+          ],
+          "solutionIds": [
+            "172:641",
+            "172:648",
+            "172:657",
+            "172:664"
+          ]
+        },
+        {
+          "id": "172:672",
+          "slug": "how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy",
+          "width": 390,
+          "height": 7123,
+          "columnId": "172:814",
+          "bodyId": "172:820",
+          "coverId": "172:819",
+          "textNodes": 47,
+          "figureIds": [
+            "172:853"
+          ],
+          "solutionIds": [
+            "172:887",
+            "172:894",
+            "172:903",
+            "172:910"
+          ]
+        },
+        {
+          "id": "172:918",
+          "slug": "why-is-solubility-not-always-the-square-root-of-ksp",
+          "width": 1440,
+          "height": 5511,
+          "columnId": "172:1064",
+          "bodyId": "172:1070",
+          "coverId": "172:1069",
+          "textNodes": 52,
+          "figureIds": [
+            "172:1097"
+          ],
+          "solutionIds": [
+            "172:1144",
+            "172:1151",
+            "172:1160",
+            "172:1167"
+          ]
+        },
+        {
+          "id": "172:1175",
+          "slug": "why-is-solubility-not-always-the-square-root-of-ksp",
+          "width": 390,
+          "height": 6872,
+          "columnId": "172:1317",
+          "bodyId": "172:1323",
+          "coverId": "172:1322",
+          "textNodes": 52,
+          "figureIds": [
+            "172:1350"
+          ],
+          "solutionIds": [
+            "172:1397",
+            "172:1404",
+            "172:1413",
+            "172:1420"
+          ]
+        },
+        {
+          "id": "172:1428",
+          "slug": "how-can-pairing-x-and-minus-x-simplify-a-definite-integral",
+          "width": 1440,
+          "height": 5473,
+          "columnId": "172:1574",
+          "bodyId": "172:1580",
+          "coverId": "172:1579",
+          "textNodes": 52,
+          "figureIds": [
+            "172:1603"
+          ],
+          "solutionIds": [
+            "172:1656",
+            "172:1663",
+            "172:1672",
+            "172:1679"
+          ]
+        },
+        {
+          "id": "172:1687",
+          "slug": "how-can-pairing-x-and-minus-x-simplify-a-definite-integral",
+          "width": 390,
+          "height": 6640,
+          "columnId": "172:1829",
+          "bodyId": "172:1835",
+          "coverId": "172:1834",
+          "textNodes": 52,
+          "figureIds": [
+            "172:1858"
+          ],
+          "solutionIds": [
+            "172:1911",
+            "172:1918",
+            "172:1927",
+            "172:1934"
+          ]
+        }
+      ],
+      "verification": {
+        "screenshotsReviewed": 6,
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "matchedTextBlocksPerArticle": [
+          37,
+          38,
+          39
+        ],
+        "coverFit": "FIT",
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "disclosuresPerFrame": 4,
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "captureReferencesRemoved": true,
+        "comments": "Supported whole-file and expired-page get_comments calls returned no comments; results archived in the dated run before retention."
+      },
+      "structuralEvidence": "/tmp/padho-blog-2026-11-28-browser/figma-verification.json",
+      "retention": {
+        "cutoff": "2026-11-22",
+        "removedPageIds": [
+          "119:722"
+        ],
+        "absenceVerified": true,
+        "sharedUIPageId": "100:202",
+        "sharedUIPreserved": true
+      }
+    },
+    "git": {
+      "status": "pending"
+    },
+    "publication": {
+      "status": "pending"
+    },
+    "liveVerification": {
+      "status": "pending"
+    }
+  },
+  "figmaFeedback": {
+    "checkedAt": "2026-11-28T07:02:27+05:30",
+    "tool": "get_comments",
+    "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
+    "comments": [],
+    "paginationComplete": true,
+    "retentionCheck": {
+      "tool": "get_comments",
+      "pageId": "119:722",
+      "comments": [],
+      "paginationComplete": true,
+      "componentIds": [],
+      "componentSetIds": [],
+      "checkedAt": "2026-11-28T07:12:23+05:30"
+    }
+  },
+  "lastCheckpointAt": "2026-11-28T07:12:23+05:30"
+}

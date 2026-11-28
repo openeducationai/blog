@@ -3,59 +3,6 @@
   "fileKey": "GsBNGG7jIMvsPyhP7w0zXK",
   "pages": [
     {
-      "pageId": "119:722",
-      "name": "2026-11-21",
-      "date": "2026-11-21",
-      "generated": true,
-      "verified": true,
-      "articles": [
-        {
-          "slug": "why-does-splitting-a-liquid-drop-need-energy",
-          "desktopFrameId": "121:722",
-          "phoneFrameId": "121:971"
-        },
-        {
-          "slug": "how-do-you-calculate-crystal-field-energy-in-a-tetrahedral-complex",
-          "desktopFrameId": "121:1216",
-          "phoneFrameId": "121:1463"
-        },
-        {
-          "slug": "which-side-should-you-multiply-by-a-matrix-inverse",
-          "desktopFrameId": "121:1706",
-          "phoneFrameId": "121:1953"
-        }
-      ],
-      "verifiedAt": "2026-11-21T07:19:42+05:30",
-      "verification": {
-        "frames": 6,
-        "widths": [
-          1440,
-          390
-        ],
-        "matchedTextBlocksPerArticle": [
-          34,
-          34,
-          39
-        ],
-        "missingTextBlocks": 0,
-        "overlappingBodyBlocks": 0,
-        "disclosuresPerFrame": 4,
-        "nativeDiagrams": true,
-        "sharedHeaderFooter": true,
-        "screenshotsReviewed": 6,
-        "completeCopyMatch": true,
-        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
-        "fonts": [
-          "Inter",
-          "Literata"
-        ],
-        "coverFit": "FIT; discrete cover assets only",
-        "captureReferencesRemoved": true,
-        "comments": "Supported get_comments returned no comments; result archived before retention."
-      },
-      "sourceCommit": "d92e8a4ae69c2ad978a30d67bd8bdd8d2893ef2a"
-    },
-    {
       "pageId": "127:302",
       "name": "2026-11-22",
       "date": "2026-11-22",
@@ -270,8 +217,8 @@
     },
     {
       "pageId": "171:2",
-      "name": "2026-11-27",
-      "date": "2026-11-27",
+      "name": "2026-11-28",
+      "date": "2026-11-28",
       "generated": true,
       "verified": true,
       "articles": [
@@ -291,7 +238,7 @@
           "phoneFrameId": "172:1687"
         }
       ],
-      "verifiedAt": "2026-11-27T08:38:13+05:30",
+      "verifiedAt": "2026-11-28T07:12:23+05:30",
       "verification": {
         "screenshotsReviewed": 6,
         "missingTextBlocks": 0,
@@ -317,9 +264,8 @@
           "Literata"
         ],
         "captureReferencesRemoved": true,
-        "comments": "Supported get_comments returned no comments; archived before retention."
-      },
-      "sourceCommit": "b8bf7003ec837841a9d601c6a8e357cb10a54467"
+        "comments": "Supported whole-file and expired-page get_comments calls returned no comments; results archived in the dated run before retention."
+      }
     }
   ],
   "removedPages": [
@@ -840,6 +786,65 @@
       "removedOn": "2026-11-27",
       "reason": "Registered generated page precedes inclusive seven-day cutoff 2026-11-21.",
       "feedbackArchive": "editorial/runs/2026-11-27.json#figmaFeedback",
+      "preservedComponentIds": [],
+      "verifiedAbsent": true
+    },
+    {
+      "pageId": "119:722",
+      "name": "2026-11-21",
+      "date": "2026-11-21",
+      "generated": true,
+      "verified": true,
+      "articles": [
+        {
+          "slug": "why-does-splitting-a-liquid-drop-need-energy",
+          "desktopFrameId": "121:722",
+          "phoneFrameId": "121:971"
+        },
+        {
+          "slug": "how-do-you-calculate-crystal-field-energy-in-a-tetrahedral-complex",
+          "desktopFrameId": "121:1216",
+          "phoneFrameId": "121:1463"
+        },
+        {
+          "slug": "which-side-should-you-multiply-by-a-matrix-inverse",
+          "desktopFrameId": "121:1706",
+          "phoneFrameId": "121:1953"
+        }
+      ],
+      "verifiedAt": "2026-11-21T07:19:42+05:30",
+      "verification": {
+        "frames": 6,
+        "widths": [
+          1440,
+          390
+        ],
+        "matchedTextBlocksPerArticle": [
+          34,
+          34,
+          39
+        ],
+        "missingTextBlocks": 0,
+        "overlappingBodyBlocks": 0,
+        "disclosuresPerFrame": 4,
+        "nativeDiagrams": true,
+        "sharedHeaderFooter": true,
+        "screenshotsReviewed": 6,
+        "completeCopyMatch": true,
+        "readingStyleModes": "DS Approved Typography: Desktop and Mobile",
+        "fonts": [
+          "Inter",
+          "Literata"
+        ],
+        "coverFit": "FIT; discrete cover assets only",
+        "captureReferencesRemoved": true,
+        "comments": "Supported get_comments returned no comments; result archived before retention."
+      },
+      "sourceCommit": "d92e8a4ae69c2ad978a30d67bd8bdd8d2893ef2a",
+      "removedAt": "2026-11-28T07:12:23+05:30",
+      "removedOn": "2026-11-28",
+      "reason": "Registered generated page precedes inclusive seven-day cutoff 2026-11-22.",
+      "feedbackArchive": "editorial/runs/2026-11-28.json#figmaFeedback",
       "preservedComponentIds": [],
       "verifiedAbsent": true
     }

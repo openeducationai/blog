@@ -2564,7 +2564,7 @@
       "conceptKey": "physics/atoms-and-nuclei/total-binding-energy-reaction-sign",
       "learningObjective": "Convert binding energy per nucleon to total binding energy, count every nucleus, and use the change in total binding to distinguish energy release from energy input.",
       "example": "Compare the energy of the same four nucleons when separated, in two pairs, and in one nucleus.",
-      "publishedAt": "2026-11-27T07:08:30+05:30",
+      "publishedAt": "2026-11-28T07:03:32+05:30",
       "briefPath": "editorial/research/2026-11-27-physics.json",
       "pyqs": [
         {
@@ -2595,23 +2595,30 @@
         }
       ],
       "sourcePath": "src/content/blog/how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy.mdx",
-      "sourceSha256": "741f26a03be3cb1de5a3ba2dc87ff9967f76376dfdcdbc0c766f8dc777ecfc11",
+      "sourceSha256": "b6c084d4e4044f13cf568ecdd8290a8b510f5d300447b7963e3bf611f8473345",
       "url": "https://padho.ai/blog/how-does-binding-energy-tell-you-whether-a-nuclear-reaction-releases-energy/",
       "mode": "daily",
       "status": "staged",
       "targetQuestionId": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211241",
       "targetQuestionText": "Two deuterium nuclei, each with mass number 2, combine to form one helium-4 nucleus. Their binding energies per nucleon are 1.1 MeV and 7.2 MeV respectively. How much energy is released?",
       "review": {
-        "sourceSha256": "741f26a03be3cb1de5a3ba2dc87ff9967f76376dfdcdbc0c766f8dc777ecfc11",
-        "reviewedAt": "2026-11-27T07:24:20+05:30",
+        "sourceSha256": "b6c084d4e4044f13cf568ecdd8290a8b510f5d300447b7963e3bf611f8473345",
+        "reviewedAt": "2026-11-28T07:03:32+05:30",
         "checks": {
           "science": true,
           "readability": true,
           "pyqSolutions": true,
           "visuals": true
         },
-        "notes": "Full prose read sequentially and each paragraph paraphrased for clarity. Opening and final target agree. Six original NTA questions and exact keyed options visually checked; solutions independently recalculated, including numerical quadrature for both integrals. Nuclear binding totals and Q sign, salt charge balance/stoichiometric powers, and positive even denominator checked. Original SVGs visually inspected; paired strips corrected to equal opposite heights. Real-app layout verification recorded separately in run validation."
-      }
+        "notes": "Full prose read sequentially and each paragraph paraphrased for clarity. Opening and final target agree. Six original NTA questions and exact keyed options visually checked; solutions independently recalculated, including numerical quadrature for both integrals. Nuclear binding totals and Q sign, salt charge balance/stoichiometric powers, and positive even denominator checked. Original SVGs visually inspected; paired strips corrected to equal opposite heights. Real-app layout verification recorded separately in run validation. 28 November: complete prose reread; only unpublished pubDate changed. Original source PDFs/key match previous verified hashes. Prior solution and diagram review remains applicable; refreshed build and viewport checks recorded in today’s run."
+      },
+      "revisions": [
+        {
+          "previousSourceSha256": "741f26a03be3cb1de5a3ba2dc87ff9967f76376dfdcdbc0c766f8dc777ecfc11",
+          "reason": "Refresh unpublished publication date for the authorised 28 November retry after the 27 November release failed before upload; lesson content unchanged.",
+          "updatedAt": "2026-11-28T07:03:32+05:30"
+        }
+      ]
     },
     {
       "slug": "why-is-solubility-not-always-the-square-root-of-ksp",
@@ -2621,7 +2628,7 @@
       "conceptKey": "chemistry/equilibrium/solubility-stoichiometry-ksp",
       "learningObjective": "Convert mass solubility to molar solubility and use dissolution coefficients for both ion concentrations and exponents in Ksp.",
       "example": "One formula unit of M₃A₂ separates into three M²⁺ ions and two A³⁻ ions.",
-      "publishedAt": "2026-11-27T07:08:30+05:30",
+      "publishedAt": "2026-11-28T07:03:32+05:30",
       "briefPath": "editorial/research/2026-11-27-chemistry.json",
       "pyqs": [
         {
@@ -2652,23 +2659,30 @@
         }
       ],
       "sourcePath": "src/content/blog/why-is-solubility-not-always-the-square-root-of-ksp.mdx",
-      "sourceSha256": "54806623b9f9f29fadc8c8fbe58db59f724dd05b8033e443dd93c7fa00d0cf12",
+      "sourceSha256": "84b8fe93f148aa1849ae32895b5d3a68244fbd3e12c38a1716df0105b2c30eca",
       "url": "https://padho.ai/blog/why-is-solubility-not-always-the-square-root-of-ksp/",
       "mode": "daily",
       "status": "staged",
       "targetQuestionId": "JEE-Main-2026-04-05-Shift-1-Paper1-QID-695278355",
       "targetQuestionText": "A sparingly soluble salt M₃A₂ has molar mass y g/mol and solubility x g/L. In its saturated solution in pure water, find the ratio of the anion concentration [A³⁻] to Ksp.",
       "review": {
-        "sourceSha256": "54806623b9f9f29fadc8c8fbe58db59f724dd05b8033e443dd93c7fa00d0cf12",
-        "reviewedAt": "2026-11-27T07:24:20+05:30",
+        "sourceSha256": "84b8fe93f148aa1849ae32895b5d3a68244fbd3e12c38a1716df0105b2c30eca",
+        "reviewedAt": "2026-11-28T07:03:32+05:30",
         "checks": {
           "science": true,
           "readability": true,
           "pyqSolutions": true,
           "visuals": true
         },
-        "notes": "Full prose read sequentially and each paragraph paraphrased for clarity. Opening and final target agree. Six original NTA questions and exact keyed options visually checked; solutions independently recalculated, including numerical quadrature for both integrals. Nuclear binding totals and Q sign, salt charge balance/stoichiometric powers, and positive even denominator checked. Original SVGs visually inspected; paired strips corrected to equal opposite heights. Real-app layout verification recorded separately in run validation."
-      }
+        "notes": "Full prose read sequentially and each paragraph paraphrased for clarity. Opening and final target agree. Six original NTA questions and exact keyed options visually checked; solutions independently recalculated, including numerical quadrature for both integrals. Nuclear binding totals and Q sign, salt charge balance/stoichiometric powers, and positive even denominator checked. Original SVGs visually inspected; paired strips corrected to equal opposite heights. Real-app layout verification recorded separately in run validation. 28 November: complete prose reread; only unpublished pubDate changed. Original source PDFs/key match previous verified hashes. Prior solution and diagram review remains applicable; refreshed build and viewport checks recorded in today’s run."
+      },
+      "revisions": [
+        {
+          "previousSourceSha256": "54806623b9f9f29fadc8c8fbe58db59f724dd05b8033e443dd93c7fa00d0cf12",
+          "reason": "Refresh unpublished publication date for the authorised 28 November retry after the 27 November release failed before upload; lesson content unchanged.",
+          "updatedAt": "2026-11-28T07:03:32+05:30"
+        }
+      ]
     },
     {
       "slug": "how-can-pairing-x-and-minus-x-simplify-a-definite-integral",
@@ -2678,7 +2692,7 @@
       "conceptKey": "maths/integral-calculus/symmetric-limits-reflected-pairs",
       "learningObjective": "Pair values at x and −x on symmetric limits to cancel odd contributions or simplify complementary expressions before integrating.",
       "example": "Pair equal-width strips at x and −x and compare their combined signed heights.",
-      "publishedAt": "2026-11-27T07:08:30+05:30",
+      "publishedAt": "2026-11-28T07:03:32+05:30",
       "briefPath": "editorial/research/2026-11-27-maths.json",
       "pyqs": [
         {
@@ -2709,23 +2723,30 @@
         }
       ],
       "sourcePath": "src/content/blog/how-can-pairing-x-and-minus-x-simplify-a-definite-integral.mdx",
-      "sourceSha256": "0c9c9110239e17e8307c3127b46a84a86fcbe12870e3742be19affbebd8e07a8",
+      "sourceSha256": "4a97dbc62575ac8e5b62d02ed297dbe1b76ccde6bdcfb3b86ab47678c060ecb7",
       "url": "https://padho.ai/blog/how-can-pairing-x-and-minus-x-simplify-a-definite-integral/",
       "mode": "daily",
       "status": "staged",
       "targetQuestionId": "JEE-Main-2026-04-06-Shift-2-Paper1-QID-6911211220",
       "targetQuestionText": "Evaluate the integral from −1 to 1 of (x³ + |x| + 1)/(x² + 2|x| + 1) with respect to x.",
       "review": {
-        "sourceSha256": "0c9c9110239e17e8307c3127b46a84a86fcbe12870e3742be19affbebd8e07a8",
-        "reviewedAt": "2026-11-27T07:24:20+05:30",
+        "sourceSha256": "4a97dbc62575ac8e5b62d02ed297dbe1b76ccde6bdcfb3b86ab47678c060ecb7",
+        "reviewedAt": "2026-11-28T07:03:32+05:30",
         "checks": {
           "science": true,
           "readability": true,
           "pyqSolutions": true,
           "visuals": true
         },
-        "notes": "Full prose read sequentially and each paragraph paraphrased for clarity. Opening and final target agree. Six original NTA questions and exact keyed options visually checked; solutions independently recalculated, including numerical quadrature for both integrals. Nuclear binding totals and Q sign, salt charge balance/stoichiometric powers, and positive even denominator checked. Original SVGs visually inspected; paired strips corrected to equal opposite heights. Real-app layout verification recorded separately in run validation."
-      }
+        "notes": "Full prose read sequentially and each paragraph paraphrased for clarity. Opening and final target agree. Six original NTA questions and exact keyed options visually checked; solutions independently recalculated, including numerical quadrature for both integrals. Nuclear binding totals and Q sign, salt charge balance/stoichiometric powers, and positive even denominator checked. Original SVGs visually inspected; paired strips corrected to equal opposite heights. Real-app layout verification recorded separately in run validation. 28 November: complete prose reread; only unpublished pubDate changed. Original source PDFs/key match previous verified hashes. Prior solution and diagram review remains applicable; refreshed build and viewport checks recorded in today’s run."
+      },
+      "revisions": [
+        {
+          "previousSourceSha256": "0c9c9110239e17e8307c3127b46a84a86fcbe12870e3742be19affbebd8e07a8",
+          "reason": "Refresh unpublished publication date for the authorised 28 November retry after the 27 November release failed before upload; lesson content unchanged.",
+          "updatedAt": "2026-11-28T07:03:32+05:30"
+        }
+      ]
     }
   ]
 }

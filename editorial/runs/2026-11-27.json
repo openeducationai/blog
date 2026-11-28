@@ -297,5 +297,14 @@
     "instructions": "After renewed Google Cloud login, reuse the verified source and six Figma copies. Do not create another article set. If the release date changes, refresh unpublished dates and the visible Figma date, rebuild and reverify before release.",
     "sourceCommit": "b8bf7003ec837841a9d601c6a8e357cb10a54467",
     "preparedArticleCount": 3
-  }
+  },
+  "retries": [
+    {
+      "startedAt": "2026-11-28T07:02:27+05:30",
+      "authorisation": "Owner-authorised recurring 28 November invocation resumes prepared batch.",
+      "runRecord": "editorial/runs/2026-11-28.json",
+      "status": "partial",
+      "evidence": "Same articles reused; unpublished date and existing Figma page refreshed after revalidation."
+    }
+  ]
 }
